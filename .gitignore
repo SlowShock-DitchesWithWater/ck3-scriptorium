@@ -1,0 +1,33 @@
+# CK3WIKI_MOD 发布边界（spec「发布边界（合规决策）」+ 工单10）
+# 原则：游戏衍生内容与内部数据一律不发布；公开仓库只含脚本、pages/ 清洗文本、
+# catalog、manifest、测试与文档。注意：gitignore 不支持行内注释，注释独占一行。
+
+# ---- 游戏衍生层（DMCA 风险面，永不发布）----
+game_docs/
+game logs/
+
+# ---- 内部数据与状态 ----
+# api.php 原始存档（重放清洗用，维护者本地保留）
+raw/
+# cookies、限速时间戳、运行日志、一次性脚本、本地路径配置（含 cookies.json）
+scripts/state/
+__pycache__/
+*.pyc
+
+# ---- 私有规划与参考（不入公开仓库）----
+# 工单拆分与执行状态
+.scratch/
+# 第三方合集解包（无 LICENSE，保留所有权利，永不发布）
+_reference/
+.playwright-mcp/
+# spec 环境附录含本机绝对路径与个人环境；spec 属私有规划文档
+docs/spec.md
+
+# ---- 工具杂项 ----
+Thumbs.db
+Desktop.ini
+manifest.json.tmp
+manifest.json.lock
+
+# skill 每机知识库路径配置（单行路径，不发布）
+skills/ck3-mod-standards/kb_location.txt

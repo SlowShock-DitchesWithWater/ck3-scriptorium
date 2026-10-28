@@ -1,0 +1,6831 @@
+{
+  "schema_version": 1,
+  "pages": {
+    "Scripting": {
+      "title": "Scripting",
+      "oldid": 33911,
+      "fetched_at": "2026-10-22T21:20:31+08:00",
+      "game_version": "timeless",
+      "size_bytes": 27053,
+      "raw_file": "raw/Scripting.json",
+      "raw_bytes": 85901,
+      "cleaned_file": "pages/Scripting.md",
+      "cleaned_at": "2026-10-22T21:21:38+08:00",
+      "cleaned_bytes": 23896,
+      "clean_stats": {
+        "html_bytes": 81790,
+        "md_bytes": 23896,
+        "h1": 0,
+        "h2": 11,
+        "h3": 5,
+        "tables": 0,
+        "code_blocks": 25,
+        "pruned_editsections": 35,
+        "pruned_navboxes": 1
+      },
+      "cleaned_sha256": "96eadaeafebe2ac127c20054742cd34687cba8ef85ae47460e1f64dd40d14799",
+      "organize": {
+        "split": false
+      }
+    },
+    "Effects": {
+      "title": "Effects",
+      "oldid": 20200,
+      "fetched_at": "2026-10-22T21:36:40+08:00",
+      "game_version": "1.7",
+      "size_bytes": 283898,
+      "raw_file": "raw/Effects.json",
+      "raw_bytes": 382306,
+      "cleaned_file": "pages/Effects.md",
+      "cleaned_at": "2026-10-22T22:05:27+08:00",
+      "cleaned_bytes": 270122,
+      "cleaned_sha256": "4c393bc93af1684b268361a92f246837a3b34c83f689387ef15a2817684fa702",
+      "clean_stats": {
+        "html_bytes": 366193,
+        "md_bytes": 270122,
+        "h1": 0,
+        "h2": 6,
+        "h3": 3,
+        "tables": 7,
+        "code_blocks": 16,
+        "pruned_editsections": 12,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Effects",
+        "index_bytes": 1070,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Effect blocks",
+            "file": "pages/Effects/01-Effect-blocks.md",
+            "bytes": 961,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Effect syntax",
+            "file": "pages/Effects/02-Effect-syntax.md",
+            "bytes": 1601,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Code effects",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "scripted_effects",
+            "file": "pages/Effects/03-scripted_effects.md",
+            "bytes": 3494,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Simple form",
+                "file": null
+              },
+              {
+                "h3": "Complex form",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Conditional effects",
+            "file": "pages/Effects/04-Conditional-effects.md",
+            "bytes": 24,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Control effects",
+            "file": "pages/Effects/05-Control-effects.md",
+            "bytes": 4560,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Dump Export",
+            "file": "pages/Effects/06-Dump-Export.md",
+            "bytes": 259036,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Scopes": {
+      "title": "Scopes",
+      "oldid": 28429,
+      "fetched_at": "2026-10-22T21:36:57+08:00",
+      "game_version": "1.1",
+      "size_bytes": 18118,
+      "raw_file": "raw/Scopes.json",
+      "raw_bytes": 50048,
+      "cleaned_file": "pages/Scopes.md",
+      "cleaned_at": "2026-10-22T22:05:27+08:00",
+      "cleaned_bytes": 17951,
+      "cleaned_sha256": "9e54247a732ac2b3586c1116733b77aefdc3162b4cb14489de227532bb0d1a47",
+      "clean_stats": {
+        "html_bytes": 47948,
+        "md_bytes": 17951,
+        "h1": 0,
+        "h2": 3,
+        "h3": 9,
+        "tables": 5,
+        "code_blocks": 27,
+        "pruned_editsections": 19,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Triggers": {
+      "title": "Triggers",
+      "oldid": 26702,
+      "fetched_at": "2026-10-22T21:37:10+08:00",
+      "game_version": "1.7",
+      "size_bytes": 14454,
+      "raw_file": "raw/Triggers.json",
+      "raw_bytes": 41026,
+      "cleaned_file": "pages/Triggers.md",
+      "cleaned_at": "2026-10-22T22:05:27+08:00",
+      "cleaned_bytes": 13703,
+      "cleaned_sha256": "fc12356e0d176f3904126e5c9fc3dd998d8b8a0c797ec1874530959071a81eea",
+      "clean_stats": {
+        "html_bytes": 39311,
+        "md_bytes": 13703,
+        "h1": 0,
+        "h2": 4,
+        "h3": 7,
+        "tables": 1,
+        "code_blocks": 27,
+        "pruned_editsections": 23,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Variables": {
+      "title": "Variables",
+      "oldid": 30166,
+      "fetched_at": "2026-10-22T21:37:55+08:00",
+      "game_version": null,
+      "size_bytes": 5150,
+      "raw_file": "raw/Variables.json",
+      "raw_bytes": 17776,
+      "cleaned_file": "pages/Variables.md",
+      "cleaned_at": "2026-10-22T22:05:27+08:00",
+      "cleaned_bytes": 4955,
+      "cleaned_sha256": "f622d591469200854ad00ec3482ac419f0f4d6388f744a44b7048d95e7518976",
+      "clean_stats": {
+        "html_bytes": 16957,
+        "md_bytes": 4955,
+        "h1": 0,
+        "h2": 7,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 15,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Modifier list": {
+      "title": "Modifier list",
+      "oldid": 27588,
+      "fetched_at": "2026-10-22T21:38:10+08:00",
+      "game_version": "1.12",
+      "size_bytes": 35191,
+      "raw_file": "raw/Modifier list.json",
+      "raw_bytes": 95638,
+      "cleaned_file": "pages/Modifier list.md",
+      "cleaned_at": "2026-10-22T22:05:27+08:00",
+      "cleaned_bytes": 34764,
+      "cleaned_sha256": "4d90c6b245eab7f5adf01ce7287812482e42f7a505f9afb6d5cae71c362e2285",
+      "clean_stats": {
+        "html_bytes": 88023,
+        "md_bytes": 34764,
+        "h1": 0,
+        "h2": 2,
+        "h3": 7,
+        "tables": 8,
+        "code_blocks": 1,
+        "pruned_editsections": 9,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "AI modding": {
+      "title": "AI modding",
+      "oldid": 35063,
+      "fetched_at": "2026-10-22T21:38:25+08:00",
+      "game_version": null,
+      "size_bytes": 3482,
+      "raw_file": "raw/AI modding.json",
+      "raw_bytes": 15620,
+      "cleaned_file": "pages/AI modding.md",
+      "cleaned_at": "2026-10-22T22:05:27+08:00",
+      "cleaned_bytes": 3314,
+      "cleaned_sha256": "974c292d8263d0d87da14c5c592b8e7cf48dbc5ffac196ef0768531bea21d5ca",
+      "clean_stats": {
+        "html_bytes": 14793,
+        "md_bytes": 3314,
+        "h1": 0,
+        "h2": 4,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 1,
+        "pruned_editsections": 4,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Bookmarks modding": {
+      "title": "Bookmarks modding",
+      "oldid": 19306,
+      "fetched_at": "2026-10-22T21:38:40+08:00",
+      "game_version": "1.1",
+      "size_bytes": 6316,
+      "raw_file": "raw/Bookmarks modding.json",
+      "raw_bytes": 20078,
+      "cleaned_file": "pages/Bookmarks modding.md",
+      "cleaned_at": "2026-10-22T22:44:30+08:00",
+      "cleaned_bytes": 6092,
+      "cleaned_sha256": "992a1d8dc80b8e8f544b5a86b8e201c11657fc97b3d25e49d0b0743b800f8731",
+      "clean_stats": {
+        "html_bytes": 19120,
+        "md_bytes": 6092,
+        "h1": 0,
+        "h2": 6,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 2,
+        "pruned_editsections": 8,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Characters modding": {
+      "title": "Characters modding",
+      "oldid": 37252,
+      "fetched_at": "2026-10-22T21:38:55+08:00",
+      "game_version": "timeless",
+      "size_bytes": 14072,
+      "raw_file": "raw/Characters modding.json",
+      "raw_bytes": 32318,
+      "cleaned_file": "pages/Characters modding.md",
+      "cleaned_at": "2026-10-22T22:44:30+08:00",
+      "cleaned_bytes": 12851,
+      "cleaned_sha256": "eb300ebb1c2ceccb8f3f7d89518b5d842925311fcaa3a97afac0774d4a7b793b",
+      "clean_stats": {
+        "html_bytes": 30959,
+        "md_bytes": 12851,
+        "h1": 0,
+        "h2": 5,
+        "h3": 4,
+        "tables": 0,
+        "code_blocks": 9,
+        "pruned_editsections": 9,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Commands": {
+      "title": "Commands",
+      "oldid": 25990,
+      "fetched_at": "2026-10-22T21:39:10+08:00",
+      "game_version": "1.0",
+      "size_bytes": 49303,
+      "raw_file": "raw/Commands.json",
+      "raw_bytes": 82789,
+      "cleaned_file": "pages/Commands.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 50785,
+      "cleaned_sha256": "12d50b6c74c4a15b2eadae99d5319bc2bef8f637037c043a8a5adae3eb38ab10",
+      "clean_stats": {
+        "html_bytes": 77535,
+        "md_bytes": 50785,
+        "h1": 0,
+        "h2": 1,
+        "h3": 0,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 1,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Council modding": {
+      "title": "Council modding",
+      "oldid": 33854,
+      "fetched_at": "2026-10-22T21:39:25+08:00",
+      "game_version": null,
+      "size_bytes": 3952,
+      "raw_file": "raw/Council modding.json",
+      "raw_bytes": 10835,
+      "cleaned_file": "pages/Council modding.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 4031,
+      "cleaned_sha256": "c69d3bbcea269b5405583d1441239a7224df85d24acc68a6bc12b18f3353362e",
+      "clean_stats": {
+        "html_bytes": 10303,
+        "md_bytes": 4031,
+        "h1": 0,
+        "h2": 1,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 1,
+        "pruned_editsections": 1,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Culture modding": {
+      "title": "Culture modding",
+      "oldid": 34599,
+      "fetched_at": "2026-10-22T21:39:40+08:00",
+      "game_version": "1.4",
+      "size_bytes": 11702,
+      "raw_file": "raw/Culture modding.json",
+      "raw_bytes": 24940,
+      "cleaned_file": "pages/Culture modding.md",
+      "cleaned_at": "2026-10-22T22:44:31+08:00",
+      "cleaned_bytes": 11565,
+      "cleaned_sha256": "5a7da611b767bf1382d2d9174b051b4ca2448205f64bbd3aae330db1119648aa",
+      "clean_stats": {
+        "html_bytes": 23470,
+        "md_bytes": 11565,
+        "h1": 0,
+        "h2": 4,
+        "h3": 0,
+        "tables": 4,
+        "code_blocks": 2,
+        "pruned_editsections": 4,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Decisions modding": {
+      "title": "Decisions modding",
+      "oldid": 26456,
+      "fetched_at": "2026-10-22T21:39:55+08:00",
+      "game_version": "1.14",
+      "size_bytes": 13029,
+      "raw_file": "raw/Decisions modding.json",
+      "raw_bytes": 31189,
+      "cleaned_file": "pages/Decisions modding.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 12647,
+      "cleaned_sha256": "621ed28748f3a90121d601dcc6f46652db4c0e398b6c033cda90fc7888134882",
+      "clean_stats": {
+        "html_bytes": 29661,
+        "md_bytes": 12647,
+        "h1": 0,
+        "h2": 6,
+        "h3": 3,
+        "tables": 3,
+        "code_blocks": 4,
+        "pruned_editsections": 9,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Dynasties modding": {
+      "title": "Dynasties modding",
+      "oldid": 11523,
+      "fetched_at": "2026-10-22T21:40:10+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3601,
+      "raw_file": "raw/Dynasties modding.json",
+      "raw_bytes": 14722,
+      "cleaned_file": "pages/Dynasties modding.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 3585,
+      "cleaned_sha256": "1ee5d53dd161985da74d6e82f2566609c731a33c807458307c48ac746b7c6d58",
+      "clean_stats": {
+        "html_bytes": 13930,
+        "md_bytes": 3585,
+        "h1": 0,
+        "h2": 5,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 6,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Event modding": {
+      "title": "Event modding",
+      "oldid": 37279,
+      "fetched_at": "2026-10-22T21:40:25+08:00",
+      "game_version": "timeless",
+      "size_bytes": 66856,
+      "raw_file": "raw/Event modding.json",
+      "raw_bytes": 203040,
+      "cleaned_file": "pages/Event modding.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 60191,
+      "cleaned_sha256": "1fbcb7ae5b2acdb6791122c0a4fa6879a3742513fb75f4ae2819aba04fecf6dc",
+      "clean_stats": {
+        "html_bytes": 190561,
+        "md_bytes": 60191,
+        "h1": 0,
+        "h2": 13,
+        "h3": 16,
+        "tables": 14,
+        "code_blocks": 22,
+        "pruned_editsections": 30,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Event modding",
+        "index_bytes": 1756,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Scripting Tools",
+            "file": "pages/Event modding/01-Scripting-Tools.md",
+            "bytes": 14152,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Visual Studio Code",
+                "file": null
+              },
+              {
+                "h3": "Sublime Text",
+                "file": null
+              },
+              {
+                "h3": "Notepad++",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Location",
+            "file": "pages/Event modding/02-Location.md",
+            "bytes": 262,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Structure",
+            "file": "pages/Event modding/03-Structure.md",
+            "bytes": 2712,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "ID and namespace",
+                "file": null
+              },
+              {
+                "h3": "Flags",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Portraits",
+            "file": "pages/Event modding/04-Portraits.md",
+            "bytes": 7678,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Portrait Positions",
+                "file": null
+              },
+              {
+                "h3": "Animations",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Themes",
+            "file": "pages/Event modding/05-Themes.md",
+            "bytes": 4851,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Environments",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Trigger",
+            "file": "pages/Event modding/06-Trigger.md",
+            "bytes": 1784,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "on_trigger_fail",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Description",
+            "file": "pages/Event modding/07-Description.md",
+            "bytes": 8746,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Immediate",
+            "file": "pages/Event modding/08-Immediate.md",
+            "bytes": 577,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Options",
+            "file": "pages/Event modding/09-Options.md",
+            "bytes": 4403,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "After",
+            "file": "pages/Event modding/10-After.md",
+            "bytes": 950,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Widgets",
+            "file": "pages/Event modding/11-Widgets.md",
+            "bytes": 96,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "On Actions (on_action)",
+            "file": "pages/Event modding/12-On-Actions-on_action.md",
+            "bytes": 12311,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Common examples",
+                "file": null
+              },
+              {
+                "h3": "Appending",
+                "file": null
+              },
+              {
+                "h3": "Scopes",
+                "file": null
+              },
+              {
+                "h3": "Properties",
+                "file": null
+              },
+              {
+                "h3": "On_actions from code",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Strategy",
+            "file": "pages/Event modding/13-Strategy.md",
+            "bytes": 799,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Triggering the event",
+                "file": null
+              },
+              {
+                "h3": "Techniques and design patterns",
+                "file": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "Governments modding": {
+      "title": "Governments modding",
+      "oldid": 13009,
+      "fetched_at": "2026-10-22T21:40:41+08:00",
+      "game_version": null,
+      "size_bytes": 2610,
+      "raw_file": "raw/Governments modding.json",
+      "raw_bytes": 8768,
+      "cleaned_file": "pages/Governments modding.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 2627,
+      "cleaned_sha256": "e0904e1a5fa6c6e2193e0549481599d66bd2fc1268cbfd1784f7ddbb09fde163",
+      "clean_stats": {
+        "html_bytes": 8329,
+        "md_bytes": 2627,
+        "h1": 0,
+        "h2": 0,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 1,
+        "pruned_editsections": 0,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "History modding": {
+      "title": "History modding",
+      "oldid": 17535,
+      "fetched_at": "2026-10-22T21:40:55+08:00",
+      "game_version": "1.1",
+      "size_bytes": 8887,
+      "raw_file": "raw/History modding.json",
+      "raw_bytes": 19260,
+      "cleaned_file": "pages/History modding.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 9006,
+      "cleaned_sha256": "63ac83b0958b9aa1ea53f03c91836b97a5d2a8b69c06ead49ac2745c8ba68644",
+      "clean_stats": {
+        "html_bytes": 18189,
+        "md_bytes": 9006,
+        "h1": 0,
+        "h2": 3,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 6,
+        "pruned_editsections": 3,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Holdings modding": {
+      "title": "Holdings modding",
+      "oldid": 33465,
+      "fetched_at": "2026-10-22T21:41:10+08:00",
+      "game_version": "1.3",
+      "size_bytes": 10110,
+      "raw_file": "raw/Holdings modding.json",
+      "raw_bytes": 23658,
+      "cleaned_file": "pages/Holdings modding.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 10340,
+      "cleaned_sha256": "35312fb9d6266a468ec87d55ad0daf83ed8dcb2138368582c684c99e649c857a",
+      "clean_stats": {
+        "html_bytes": 22364,
+        "md_bytes": 10340,
+        "h1": 0,
+        "h2": 0,
+        "h3": 6,
+        "tables": 1,
+        "code_blocks": 6,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Lifestyles modding": {
+      "title": "Lifestyles modding",
+      "oldid": 35087,
+      "fetched_at": "2026-10-22T21:41:26+08:00",
+      "game_version": null,
+      "size_bytes": 21782,
+      "raw_file": "raw/Lifestyles modding.json",
+      "raw_bytes": 64541,
+      "cleaned_file": "pages/Lifestyles modding.md",
+      "cleaned_at": "2026-10-22T22:44:31+08:00",
+      "cleaned_bytes": 19063,
+      "cleaned_sha256": "7cd0168d06d1462f978f4c27c3656702484cfe1f7f55a4d6f868619df776ef30",
+      "clean_stats": {
+        "html_bytes": 60501,
+        "md_bytes": 19063,
+        "h1": 0,
+        "h2": 4,
+        "h3": 9,
+        "tables": 7,
+        "code_blocks": 3,
+        "pruned_editsections": 14,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Regiments modding": {
+      "title": "Regiments modding",
+      "oldid": 16675,
+      "fetched_at": "2026-10-22T21:41:44+08:00",
+      "game_version": "1.3",
+      "size_bytes": 4710,
+      "raw_file": "raw/Regiments modding.json",
+      "raw_bytes": 16654,
+      "cleaned_file": "pages/Regiments modding.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 4754,
+      "cleaned_sha256": "84adad7827081ffc84d234c984f1de3ab46cd25f77022a9f470691e0e00753fa",
+      "clean_stats": {
+        "html_bytes": 15743,
+        "md_bytes": 4754,
+        "h1": 0,
+        "h2": 0,
+        "h3": 2,
+        "tables": 1,
+        "code_blocks": 6,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Religions modding": {
+      "title": "Religions modding",
+      "oldid": 37089,
+      "fetched_at": "2026-10-22T21:41:55+08:00",
+      "game_version": null,
+      "size_bytes": 23683,
+      "raw_file": "raw/Religions modding.json",
+      "raw_bytes": 42275,
+      "cleaned_file": "pages/Religions modding.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 23691,
+      "cleaned_sha256": "c107f4e802beca5dca81a7db02a43882c2bc116b3370d4113a8de9110445c2b1",
+      "clean_stats": {
+        "html_bytes": 40236,
+        "md_bytes": 23691,
+        "h1": 0,
+        "h2": 8,
+        "h3": 0,
+        "tables": 6,
+        "code_blocks": 6,
+        "pruned_editsections": 8,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Script values": {
+      "title": "Script values",
+      "oldid": 35088,
+      "fetched_at": "2026-10-22T21:42:10+08:00",
+      "game_version": null,
+      "size_bytes": 5779,
+      "raw_file": "raw/Script values.json",
+      "raw_bytes": 40516,
+      "cleaned_file": "pages/Script values.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 5286,
+      "cleaned_sha256": "42ddab56e7884386fe2cbf4ee660bd3f56ea9f2bdb707c8fe898e1c198afe931",
+      "clean_stats": {
+        "html_bytes": 37877,
+        "md_bytes": 5286,
+        "h1": 0,
+        "h2": 0,
+        "h3": 9,
+        "tables": 0,
+        "code_blocks": 10,
+        "pruned_editsections": 9,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Story cycles modding": {
+      "title": "Story cycles modding",
+      "oldid": 24141,
+      "fetched_at": "2026-10-22T21:42:26+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3079,
+      "raw_file": "raw/Story cycles modding.json",
+      "raw_bytes": 11178,
+      "cleaned_file": "pages/Story cycles modding.md",
+      "cleaned_at": "2026-10-22T22:05:28+08:00",
+      "cleaned_bytes": 2987,
+      "cleaned_sha256": "3e545db50458bbbf141b2c1e63231a0e92716411e9bab963f2d9ce7c03f5008e",
+      "clean_stats": {
+        "html_bytes": 10569,
+        "md_bytes": 2987,
+        "h1": 0,
+        "h2": 1,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 2,
+        "pruned_editsections": 1,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Struggle modding": {
+      "title": "Struggle modding",
+      "oldid": 35994,
+      "fetched_at": "2026-10-22T21:42:40+08:00",
+      "game_version": "timeless",
+      "size_bytes": 17309,
+      "raw_file": "raw/Struggle modding.json",
+      "raw_bytes": 44932,
+      "cleaned_file": "pages/Struggle modding.md",
+      "cleaned_at": "2026-10-22T22:44:31+08:00",
+      "cleaned_bytes": 17777,
+      "cleaned_sha256": "a943801c892484d785ed82327c0321a1b58b5bbe54016b1d23c911988e7a3344",
+      "clean_stats": {
+        "html_bytes": 42384,
+        "md_bytes": 17777,
+        "h1": 0,
+        "h2": 5,
+        "h3": 7,
+        "tables": 5,
+        "code_blocks": 13,
+        "pruned_editsections": 19,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Title modding": {
+      "title": "Title modding",
+      "oldid": 32469,
+      "fetched_at": "2026-10-22T21:42:56+08:00",
+      "game_version": "1.1",
+      "size_bytes": 11657,
+      "raw_file": "raw/Title modding.json",
+      "raw_bytes": 29889,
+      "cleaned_file": "pages/Title modding.md",
+      "cleaned_at": "2026-10-22T22:05:29+08:00",
+      "cleaned_bytes": 11756,
+      "cleaned_sha256": "adc7c1d565d57c04e56b245b3da6b7b152037c0231e91dafd1afb6be6cf85f39",
+      "clean_stats": {
+        "html_bytes": 28451,
+        "md_bytes": 11756,
+        "h1": 0,
+        "h2": 7,
+        "h3": 0,
+        "tables": 3,
+        "code_blocks": 4,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Trait modding": {
+      "title": "Trait modding",
+      "oldid": 35953,
+      "fetched_at": "2026-10-22T21:43:11+08:00",
+      "game_version": "1.0",
+      "size_bytes": 12518,
+      "raw_file": "raw/Trait modding.json",
+      "raw_bytes": 31926,
+      "cleaned_file": "pages/Trait modding.md",
+      "cleaned_at": "2026-10-22T22:44:31+08:00",
+      "cleaned_bytes": 12491,
+      "cleaned_sha256": "aded47819fcc999d34011022e44eadea8eed67abe0f34f491673a1dbeee5a213",
+      "clean_stats": {
+        "html_bytes": 30134,
+        "md_bytes": 12491,
+        "h1": 0,
+        "h2": 5,
+        "h3": 5,
+        "tables": 4,
+        "code_blocks": 3,
+        "pruned_editsections": 10,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Interface": {
+      "title": "Interface",
+      "oldid": 35928,
+      "fetched_at": "2026-10-22T21:43:25+08:00",
+      "game_version": "timeless",
+      "size_bytes": 59225,
+      "raw_file": "raw/Interface.json",
+      "raw_bytes": 106866,
+      "cleaned_file": "pages/Interface.md",
+      "cleaned_at": "2026-10-22T22:05:29+08:00",
+      "cleaned_bytes": 55303,
+      "cleaned_sha256": "d2b286bc7341dd5888ec6bb8c16d239598ab412ba51e9027a53a07bde5edcc1b",
+      "clean_stats": {
+        "html_bytes": 102813,
+        "md_bytes": 55303,
+        "h1": 0,
+        "h2": 9,
+        "h3": 14,
+        "tables": 3,
+        "code_blocks": 38,
+        "pruned_editsections": 35,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Interface",
+        "index_bytes": 1755,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Basics",
+            "file": "pages/Interface/01-Basics.md",
+            "bytes": 2388,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Creating a GUI mod",
+            "file": "pages/Interface/02-Creating-a-GUI-mod.md",
+            "bytes": 481,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Inspecting GUI",
+            "file": "pages/Interface/03-Inspecting-GUI.md",
+            "bytes": 5643,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "GUI Debug",
+                "file": null
+              },
+              {
+                "h3": "GUI Editor",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "UI code",
+            "file": "pages/Interface/04-UI-code.md",
+            "bytes": 23024,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Promotes and Functions",
+                "file": null
+              },
+              {
+                "h3": "UI Components",
+                "file": null
+              },
+              {
+                "h3": "Templates",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Scripted GUIs",
+            "file": "pages/Interface/05-Scripted-GUIs.md",
+            "bytes": 6943,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Displaying a variable or script value",
+                "file": null
+              },
+              {
+                "h3": "Displaying data lists",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "New windows and toggles",
+            "file": "pages/Interface/06-New-windows-and-toggles.md",
+            "bytes": 12737,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Create a window as a scripted widget",
+                "file": null
+              },
+              {
+                "h3": "Toggle window visibility",
+                "file": null
+              },
+              {
+                "h3": "Toggles with PdxGuiWidget",
+                "file": null
+              },
+              {
+                "h3": "Toggles with animation",
+                "file": null
+              },
+              {
+                "h3": "System Variables",
+                "file": null
+              },
+              {
+                "h3": "Creating a new Widget",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "List of existing game views",
+            "file": "pages/Interface/07-List-of-existing-game-views.md",
+            "bytes": 2147,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Troubleshooting",
+            "file": "pages/Interface/08-Troubleshooting.md",
+            "bytes": 796,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Known crash reasons",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Useful links",
+            "file": "pages/Interface/09-Useful-links.md",
+            "bytes": 191,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Data types": {
+      "title": "Data types",
+      "oldid": 14585,
+      "fetched_at": "2026-10-22T21:43:41+08:00",
+      "game_version": null,
+      "size_bytes": 90743,
+      "raw_file": "raw/Data types.json",
+      "raw_bytes": 204110,
+      "cleaned_file": "pages/Data types.md",
+      "cleaned_at": "2026-10-22T22:05:29+08:00",
+      "cleaned_bytes": 92621,
+      "cleaned_sha256": "bd0a67c2e2dad0dda3ad6fa2e77337091d33aa9c01378ea96e1825123ae0defa",
+      "clean_stats": {
+        "html_bytes": 187628,
+        "md_bytes": 92621,
+        "h1": 0,
+        "h2": 4,
+        "h3": 24,
+        "tables": 26,
+        "code_blocks": 3,
+        "pruned_editsections": 28,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Data types",
+        "index_bytes": 801,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Data Types",
+            "file": "pages/Data types/01-Data-Types.md",
+            "bytes": 1202,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "List of Global Promotes",
+            "file": "pages/Data types/02-List-of-Global-Promotes.md",
+            "bytes": 6381,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "List of Global Functions",
+            "file": "pages/Data types/03-List-of-Global-Functions.md",
+            "bytes": 13928,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Types",
+            "file": "pages/Data types/04-Types.md",
+            "bytes": 70834,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "ActiveCasusBelli",
+                "file": null
+              },
+              {
+                "h3": "ActiveCouncilTask",
+                "file": null
+              },
+              {
+                "h3": "Activity",
+                "file": null
+              },
+              {
+                "h3": "Army",
+                "file": null
+              },
+              {
+                "h3": "Artifact",
+                "file": null
+              },
+              {
+                "h3": "Character",
+                "file": null
+              },
+              {
+                "h3": "Combat",
+                "file": null
+              },
+              {
+                "h3": "CombatSide",
+                "file": null
+              },
+              {
+                "h3": "County",
+                "file": null
+              },
+              {
+                "h3": "Culture",
+                "file": null
+              },
+              {
+                "h3": "CultureGroup",
+                "file": null
+              },
+              {
+                "h3": "Dynasty",
+                "file": null
+              },
+              {
+                "h3": "DynastyHouse",
+                "file": null
+              },
+              {
+                "h3": "Faction",
+                "file": null
+              },
+              {
+                "h3": "Faith",
+                "file": null
+              },
+              {
+                "h3": "Holding",
+                "file": null
+              },
+              {
+                "h3": "Province",
+                "file": null
+              },
+              {
+                "h3": "Religion",
+                "file": null
+              },
+              {
+                "h3": "ReligionFamily",
+                "file": null
+              },
+              {
+                "h3": "Scope",
+                "file": null
+              },
+              {
+                "h3": "ScriptedGui",
+                "file": null
+              },
+              {
+                "h3": "Title",
+                "file": null
+              },
+              {
+                "h3": "TopScope",
+                "file": null
+              },
+              {
+                "h3": "War",
+                "file": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "Localization": {
+      "title": "Localization",
+      "oldid": 32485,
+      "fetched_at": "2026-10-22T21:43:56+08:00",
+      "game_version": "1.4",
+      "size_bytes": 22728,
+      "raw_file": "raw/Localization.json",
+      "raw_bytes": 49394,
+      "cleaned_file": "pages/Localization.md",
+      "cleaned_at": "2026-10-22T22:44:32+08:00",
+      "cleaned_bytes": 22533,
+      "cleaned_sha256": "df6a67d0dadc0f0b80874635be52cfe7f3dfb456abed905e5e8f53d58b2d1947",
+      "clean_stats": {
+        "html_bytes": 47062,
+        "md_bytes": 22533,
+        "h1": 0,
+        "h2": 10,
+        "h3": 7,
+        "tables": 7,
+        "code_blocks": 19,
+        "pruned_editsections": 17,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Customizable localization": {
+      "title": "Customizable localization",
+      "oldid": 35064,
+      "fetched_at": "2026-10-22T21:44:11+08:00",
+      "game_version": null,
+      "size_bytes": 2209,
+      "raw_file": "raw/Customizable localization.json",
+      "raw_bytes": 11257,
+      "cleaned_file": "pages/Customizable localization.md",
+      "cleaned_at": "2026-10-22T22:05:29+08:00",
+      "cleaned_bytes": 2172,
+      "cleaned_sha256": "50bf688f7836d5642d846fb4819bfa9925907000b14b82df95a194df5ad794c2",
+      "clean_stats": {
+        "html_bytes": 10588,
+        "md_bytes": 2172,
+        "h1": 0,
+        "h2": 2,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 1,
+        "pruned_editsections": 2,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Flavorization": {
+      "title": "Flavorization",
+      "oldid": 31792,
+      "fetched_at": "2026-10-22T21:44:25+08:00",
+      "game_version": null,
+      "size_bytes": 10048,
+      "raw_file": "raw/Flavorization.json",
+      "raw_bytes": 27342,
+      "cleaned_file": "pages/Flavorization.md",
+      "cleaned_at": "2026-10-22T22:05:29+08:00",
+      "cleaned_bytes": 8746,
+      "cleaned_sha256": "3f19e98c14f7fe0859161a38a25e285c151b2f52fd5bd6579fa02a9ae895ceb1",
+      "clean_stats": {
+        "html_bytes": 25919,
+        "md_bytes": 8746,
+        "h1": 0,
+        "h2": 4,
+        "h3": 0,
+        "tables": 1,
+        "code_blocks": 6,
+        "pruned_editsections": 4,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Map modding": {
+      "title": "Map modding",
+      "oldid": 34676,
+      "fetched_at": "2026-10-22T21:44:41+08:00",
+      "game_version": "1.1",
+      "size_bytes": 32886,
+      "raw_file": "raw/Map modding.json",
+      "raw_bytes": 80214,
+      "cleaned_file": "pages/Map modding.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 31947,
+      "cleaned_sha256": "15fe688e6da5faac23beb2108113cb419b4f7cefad23971a299c50133fcc1e1d",
+      "clean_stats": {
+        "html_bytes": 76725,
+        "md_bytes": 31947,
+        "h1": 1,
+        "h2": 11,
+        "h3": 17,
+        "tables": 1,
+        "code_blocks": 15,
+        "pruned_editsections": 31,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Terrain modding": {
+      "title": "Terrain modding",
+      "oldid": 30475,
+      "fetched_at": "2026-10-22T21:44:55+08:00",
+      "game_version": "timeless",
+      "size_bytes": 8165,
+      "raw_file": "raw/Terrain modding.json",
+      "raw_bytes": 27353,
+      "cleaned_file": "pages/Terrain modding.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 7763,
+      "cleaned_sha256": "912cbccc337e6e08a1a6388122feb105c67ea2e40098088dcda197809084bb30",
+      "clean_stats": {
+        "html_bytes": 25778,
+        "md_bytes": 7763,
+        "h1": 0,
+        "h2": 3,
+        "h3": 5,
+        "tables": 3,
+        "code_blocks": 4,
+        "pruned_editsections": 8,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "3D models": {
+      "title": "3D models",
+      "oldid": 28182,
+      "fetched_at": "2026-10-22T21:45:10+08:00",
+      "game_version": "timeless",
+      "size_bytes": 12466,
+      "raw_file": "raw/3D models.json",
+      "raw_bytes": 35548,
+      "cleaned_file": "pages/3D models.md",
+      "cleaned_at": "2026-10-22T22:44:32+08:00",
+      "cleaned_bytes": 11814,
+      "cleaned_sha256": "44351eec68574e2924f1e54eee8a2417d60cfc525f304cdf8d1006c79332fbb9",
+      "clean_stats": {
+        "html_bytes": 33998,
+        "md_bytes": 11814,
+        "h1": 0,
+        "h2": 4,
+        "h3": 5,
+        "tables": 4,
+        "code_blocks": 2,
+        "pruned_editsections": 19,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Exporters": {
+      "title": "Exporters",
+      "oldid": 8918,
+      "fetched_at": "2026-10-22T21:45:26+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3192,
+      "raw_file": "raw/Exporters.json",
+      "raw_bytes": 13851,
+      "cleaned_file": "pages/Exporters.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 2969,
+      "cleaned_sha256": "07819b0eb5cb9dc605bb57b3fb231b0a826ae4d2d7de809a080bbdf21e6f6262",
+      "clean_stats": {
+        "html_bytes": 13155,
+        "md_bytes": 2969,
+        "h1": 0,
+        "h2": 2,
+        "h3": 3,
+        "tables": 0,
+        "code_blocks": 2,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Coat of arms modding": {
+      "title": "Coat of arms modding",
+      "oldid": 26714,
+      "fetched_at": "2026-10-22T21:45:40+08:00",
+      "game_version": "timeless",
+      "size_bytes": 14663,
+      "raw_file": "raw/Coat of arms modding.json",
+      "raw_bytes": 30893,
+      "cleaned_file": "pages/Coat of arms modding.md",
+      "cleaned_at": "2026-10-22T22:44:32+08:00",
+      "cleaned_bytes": 14840,
+      "cleaned_sha256": "1663b76afc3b1761e3bc44877823caa99bf5d8697c953f7c7ad8a6537a3011a0",
+      "clean_stats": {
+        "html_bytes": 29539,
+        "md_bytes": 14840,
+        "h1": 0,
+        "h2": 6,
+        "h3": 3,
+        "tables": 1,
+        "code_blocks": 13,
+        "pruned_editsections": 9,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Graphical assets": {
+      "title": "Graphical assets",
+      "oldid": 19440,
+      "fetched_at": "2026-10-22T22:04:57+08:00",
+      "game_version": "timeless",
+      "size_bytes": 323,
+      "raw_file": "raw/Graphical assets.json",
+      "raw_bytes": 7277,
+      "cleaned_file": "pages/Graphical assets.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 474,
+      "cleaned_sha256": "f452544d73027d812af800e5c45dfdadbf7caec26cfe7391b0e6c2fb685a8f77",
+      "clean_stats": {
+        "html_bytes": 6849,
+        "md_bytes": 474,
+        "h1": 0,
+        "h2": 1,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 1,
+        "pruned_editsections": 1,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Fonts": {
+      "title": "Fonts",
+      "oldid": 35219,
+      "fetched_at": "2026-10-22T21:46:09+08:00",
+      "game_version": null,
+      "size_bytes": 3763,
+      "raw_file": "raw/Fonts.json",
+      "raw_bytes": 14987,
+      "cleaned_file": "pages/Fonts.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 3222,
+      "cleaned_sha256": "c4df2d1a2c9748f06f11afd271ade55597d9a3e4b278814807dde039c1997d1f",
+      "clean_stats": {
+        "html_bytes": 14251,
+        "md_bytes": 3222,
+        "h1": 0,
+        "h2": 2,
+        "h3": 2,
+        "tables": 2,
+        "code_blocks": 0,
+        "pruned_editsections": 4,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Music modding": {
+      "title": "Music modding",
+      "oldid": 34736,
+      "fetched_at": "2026-10-22T21:46:25+08:00",
+      "game_version": null,
+      "size_bytes": 1918,
+      "raw_file": "raw/Music modding.json",
+      "raw_bytes": 14698,
+      "cleaned_file": "pages/Music modding.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 2915,
+      "cleaned_sha256": "a8b4cd401ae6802834df698933463f381bc3b44fdcaee41ed50ca5493d717c65",
+      "clean_stats": {
+        "html_bytes": 13883,
+        "md_bytes": 2915,
+        "h1": 0,
+        "h2": 2,
+        "h3": 0,
+        "tables": 5,
+        "code_blocks": 5,
+        "pruned_editsections": 2,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Sound modding": {
+      "title": "Sound modding",
+      "oldid": 29990,
+      "fetched_at": "2026-10-22T21:46:40+08:00",
+      "game_version": null,
+      "size_bytes": 12657,
+      "raw_file": "raw/Sound modding.json",
+      "raw_bytes": 38698,
+      "cleaned_file": "pages/Sound modding.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 11462,
+      "cleaned_sha256": "be0689823fac3f25540455612c80d557e12ce42c87b419e3a47dfa8ebc23e0ed",
+      "clean_stats": {
+        "html_bytes": 36993,
+        "md_bytes": 11462,
+        "h1": 0,
+        "h2": 8,
+        "h3": 6,
+        "tables": 0,
+        "code_blocks": 5,
+        "pruned_editsections": 14,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Console commands": {
+      "title": "Console commands",
+      "oldid": 37115,
+      "fetched_at": "2026-10-22T21:46:56+08:00",
+      "game_version": null,
+      "size_bytes": 56859,
+      "raw_file": "raw/Console commands.json",
+      "raw_bytes": 156737,
+      "cleaned_file": "pages/Console commands.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 49070,
+      "cleaned_sha256": "e866c592d7418aa3468a767cea71d59a21ff1f2be1da275efe9ef80e3ed4c41e",
+      "clean_stats": {
+        "html_bytes": 148354,
+        "md_bytes": 49070,
+        "h1": 0,
+        "h2": 8,
+        "h3": 8,
+        "tables": 12,
+        "code_blocks": 0,
+        "pruned_editsections": 22,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Patches": {
+      "title": "Patches",
+      "oldid": 34713,
+      "fetched_at": "2026-10-22T21:47:11+08:00",
+      "game_version": "timeless",
+      "size_bytes": 7605,
+      "raw_file": "raw/Patches.json",
+      "raw_bytes": 38876,
+      "cleaned_file": "pages/Patches.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 9212,
+      "cleaned_sha256": "dcaae88ab2efc47ad790abb7a30d702f4b3e9a653b4a8f05b135d17989654ba4",
+      "clean_stats": {
+        "html_bytes": 36122,
+        "md_bytes": 9212,
+        "h1": 0,
+        "h2": 3,
+        "h3": 0,
+        "tables": 6,
+        "code_blocks": 0,
+        "pruned_editsections": 3,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Mod structure": {
+      "title": "Mod structure",
+      "oldid": 18579,
+      "fetched_at": "2026-10-22T21:47:25+08:00",
+      "game_version": "1.1",
+      "size_bytes": 7450,
+      "raw_file": "raw/Mod structure.json",
+      "raw_bytes": 21113,
+      "cleaned_file": "pages/Mod structure.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 7291,
+      "cleaned_sha256": "bb8087ad4f03ed7f59bb1d816de74eec1af8d0127248d16085bd8a4e0a1d2887",
+      "clean_stats": {
+        "html_bytes": 20095,
+        "md_bytes": 7291,
+        "h1": 0,
+        "h2": 4,
+        "h3": 3,
+        "tables": 3,
+        "code_blocks": 2,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Mod compatibility": {
+      "title": "Mod compatibility",
+      "oldid": 32474,
+      "fetched_at": "2026-10-22T21:47:40+08:00",
+      "game_version": null,
+      "size_bytes": 9351,
+      "raw_file": "raw/Mod compatibility.json",
+      "raw_bytes": 22132,
+      "cleaned_file": "pages/Mod compatibility.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 9236,
+      "cleaned_sha256": "1e95c1b7ec0337d0fa61873a6d8e69d029412a5e92bdc5c1e7ffb6b9776f92a1",
+      "clean_stats": {
+        "html_bytes": 21364,
+        "md_bytes": 9236,
+        "h1": 0,
+        "h2": 3,
+        "h3": 5,
+        "tables": 0,
+        "code_blocks": 6,
+        "pruned_editsections": 8,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Modding tools": {
+      "title": "Modding tools",
+      "oldid": 35501,
+      "fetched_at": "2026-10-22T21:47:56+08:00",
+      "game_version": "timeless",
+      "size_bytes": 5756,
+      "raw_file": "raw/Modding tools.json",
+      "raw_bytes": 15776,
+      "cleaned_file": "pages/Modding tools.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 4634,
+      "cleaned_sha256": "ad51622ac017847914338166cbd0c8d66a5cdb7d8116c1ebd16877a77ed4ab0f",
+      "clean_stats": {
+        "html_bytes": 15017,
+        "md_bytes": 4634,
+        "h1": 0,
+        "h2": 1,
+        "h3": 0,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 1,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Mod troubleshooting": {
+      "title": "Mod troubleshooting",
+      "oldid": 31655,
+      "fetched_at": "2026-10-22T22:02:49+08:00",
+      "game_version": null,
+      "size_bytes": 10879,
+      "raw_file": "raw/Mod troubleshooting.json",
+      "raw_bytes": 30316,
+      "cleaned_file": "pages/Mod troubleshooting.md",
+      "cleaned_at": "2026-10-22T22:05:30+08:00",
+      "cleaned_bytes": 9624,
+      "cleaned_sha256": "929ef1b51746157d3b8b5f1789f771378f36332a97015c8f4b88788817fc8792",
+      "clean_stats": {
+        "html_bytes": 29011,
+        "md_bytes": 9624,
+        "h1": 0,
+        "h2": 3,
+        "h3": 6,
+        "tables": 1,
+        "code_blocks": 1,
+        "pruned_editsections": 9,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Artifact modding": {
+      "title": "Artifact modding",
+      "oldid": 33020,
+      "fetched_at": "2026-10-22T22:26:54+08:00",
+      "game_version": "1.8",
+      "size_bytes": 8779,
+      "raw_file": "raw/Artifact modding.json",
+      "raw_bytes": 22672,
+      "cleaned_file": "pages/Artifact modding.md",
+      "cleaned_at": "2026-10-22T22:30:27+08:00",
+      "cleaned_bytes": 9033,
+      "cleaned_sha256": "bfef6df1e7dc2af3b1e4f54df720979b58c35c60b36ecdc2690996c53203279d",
+      "clean_stats": {
+        "html_bytes": 21512,
+        "md_bytes": 9033,
+        "h1": 0,
+        "h2": 1,
+        "h3": 4,
+        "tables": 1,
+        "code_blocks": 5,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Defines": {
+      "title": "Defines",
+      "oldid": 34030,
+      "fetched_at": "2026-10-22T22:27:10+08:00",
+      "game_version": null,
+      "size_bytes": 17828,
+      "raw_file": "raw/Defines.json",
+      "raw_bytes": 35366,
+      "cleaned_file": "pages/Defines.md",
+      "cleaned_at": "2026-10-22T22:30:28+08:00",
+      "cleaned_bytes": 16777,
+      "cleaned_sha256": "b7710a81ee97d5eb3f7d5f239a1853b3a6e89b1ecf2b71bb5e41a7599d2a75ca",
+      "clean_stats": {
+        "html_bytes": 33813,
+        "md_bytes": 16777,
+        "h1": 0,
+        "h2": 2,
+        "h3": 5,
+        "tables": 5,
+        "code_blocks": 1,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Effects list": {
+      "title": "Effects list",
+      "oldid": 35939,
+      "fetched_at": "2026-10-22T22:27:25+08:00",
+      "game_version": null,
+      "size_bytes": 273280,
+      "raw_file": "raw/Effects list.json",
+      "raw_bytes": 361405,
+      "cleaned_file": "pages/Effects list.md",
+      "cleaned_at": "2026-10-22T22:30:29+08:00",
+      "cleaned_bytes": 259901,
+      "cleaned_sha256": "2897cd351a6706a92abe08aa50235519e2e68f663e05eda26ac136bc17196d75",
+      "clean_stats": {
+        "html_bytes": 346109,
+        "md_bytes": 259901,
+        "h1": 0,
+        "h2": 0,
+        "h3": 0,
+        "tables": 6,
+        "code_blocks": 0,
+        "pruned_editsections": 0,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false,
+        "reason": "H2 章节数 0 < 2，无可拆边界（整页大表型）"
+      }
+    },
+    "Interactions modding": {
+      "title": "Interactions modding",
+      "oldid": 20307,
+      "fetched_at": "2026-10-22T22:27:42+08:00",
+      "game_version": null,
+      "size_bytes": 1405,
+      "raw_file": "raw/Interactions modding.json",
+      "raw_bytes": 2989,
+      "cleaned_file": "pages/Interactions modding.md",
+      "cleaned_at": "2026-10-22T22:30:29+08:00",
+      "cleaned_bytes": 1327,
+      "cleaned_sha256": "c239a03d57878314da12c1702c0d5035c59739fb9d1814cff9c0f253736b0a69",
+      "clean_stats": {
+        "html_bytes": 2786,
+        "md_bytes": 1327,
+        "h1": 0,
+        "h2": 1,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 1,
+        "pruned_editsections": 1,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Lists": {
+      "title": "Lists",
+      "oldid": 20403,
+      "fetched_at": "2026-10-22T22:28:03+08:00",
+      "game_version": null,
+      "size_bytes": 3398,
+      "raw_file": "raw/Lists.json",
+      "raw_bytes": 8912,
+      "cleaned_file": "pages/Lists.md",
+      "cleaned_at": "2026-10-22T22:30:29+08:00",
+      "cleaned_bytes": 3251,
+      "cleaned_sha256": "71767224a57e8ae076e9bf77b26878a7bea10edfbc42715ead25a4556e9cb98a",
+      "clean_stats": {
+        "html_bytes": 8486,
+        "md_bytes": 3251,
+        "h1": 0,
+        "h2": 3,
+        "h3": 3,
+        "tables": 0,
+        "code_blocks": 8,
+        "pruned_editsections": 6,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Scopes list": {
+      "title": "Scopes list",
+      "oldid": 20023,
+      "fetched_at": "2026-10-22T22:28:27+08:00",
+      "game_version": null,
+      "size_bytes": 10596,
+      "raw_file": "raw/Scopes list.json",
+      "raw_bytes": 38117,
+      "cleaned_file": "pages/Scopes list.md",
+      "cleaned_at": "2026-10-22T22:30:34+08:00",
+      "cleaned_bytes": 8809,
+      "cleaned_sha256": "a0e08e8f159c3995a4cb8c0f444878f53db23a4587834976adb317873192e7be",
+      "clean_stats": {
+        "html_bytes": 35607,
+        "md_bytes": 8809,
+        "h1": 0,
+        "h2": 22,
+        "h3": 0,
+        "tables": 22,
+        "code_blocks": 0,
+        "pruned_editsections": 22,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Scripted effects": {
+      "title": "Scripted effects",
+      "oldid": 12486,
+      "fetched_at": "2026-10-22T22:28:43+08:00",
+      "game_version": "timeless",
+      "size_bytes": 1425,
+      "raw_file": "raw/Scripted effects.json",
+      "raw_bytes": 8047,
+      "cleaned_file": "pages/Scripted effects.md",
+      "cleaned_at": "2026-10-22T22:30:34+08:00",
+      "cleaned_bytes": 1579,
+      "cleaned_sha256": "3989f27748c1ff40b629e3fd3901af923bf57a3548326cae5bcf78a7ef40ed98",
+      "clean_stats": {
+        "html_bytes": 7595,
+        "md_bytes": 1579,
+        "h1": 0,
+        "h2": 0,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 2,
+        "pruned_editsections": 0,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Triggers list": {
+      "title": "Triggers list",
+      "oldid": 33864,
+      "fetched_at": "2026-10-22T22:28:57+08:00",
+      "game_version": null,
+      "size_bytes": 166095,
+      "raw_file": "raw/Triggers list.json",
+      "raw_bytes": 260087,
+      "cleaned_file": "pages/Triggers list.md",
+      "cleaned_at": "2026-10-22T22:30:35+08:00",
+      "cleaned_bytes": 173808,
+      "cleaned_sha256": "28de21616021f2183d7736cc515cf4e1ad8ecbb6082f13c77f09fae39e232f44",
+      "clean_stats": {
+        "html_bytes": 245413,
+        "md_bytes": 173808,
+        "h1": 0,
+        "h2": 0,
+        "h3": 0,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 0,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false,
+        "reason": "H2 章节数 0 < 2，无可拆边界（整页大表型）"
+      }
+    },
+    "Weight modifier": {
+      "title": "Weight modifier",
+      "oldid": 20105,
+      "fetched_at": "2026-10-22T22:29:14+08:00",
+      "game_version": null,
+      "size_bytes": 3384,
+      "raw_file": "raw/Weight modifier.json",
+      "raw_bytes": 13918,
+      "cleaned_file": "pages/Weight modifier.md",
+      "cleaned_at": "2026-10-22T22:30:35+08:00",
+      "cleaned_bytes": 3321,
+      "cleaned_sha256": "3af5bf525490f133899a6714504bf2bc81c3efe0fb209a23446883e34cb3a2f6",
+      "clean_stats": {
+        "html_bytes": 13233,
+        "md_bytes": 3321,
+        "h1": 0,
+        "h2": 3,
+        "h3": 2,
+        "tables": 0,
+        "code_blocks": 8,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Modding": {
+      "title": "Modding",
+      "oldid": 36869,
+      "fetched_at": "2026-10-22T22:29:46+08:00",
+      "game_version": "timeless",
+      "size_bytes": 40351,
+      "raw_file": "raw/Modding.json",
+      "raw_bytes": 89344,
+      "cleaned_file": "pages/Modding.md",
+      "cleaned_at": "2026-10-22T22:44:34+08:00",
+      "cleaned_bytes": 38268,
+      "cleaned_sha256": "07293988ccf681977ae74993c369e338798e964a97406b3d1b4438e96ec91cee",
+      "clean_stats": {
+        "html_bytes": 85382,
+        "md_bytes": 38268,
+        "h1": 0,
+        "h2": 12,
+        "h3": 14,
+        "tables": 14,
+        "code_blocks": 7,
+        "pruned_editsections": 33,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Achievement": {
+      "title": "Achievement",
+      "oldid": 37349,
+      "fetched_at": "2026-10-23T09:12:09+08:00",
+      "game_version": "1.9",
+      "size_bytes": 179097,
+      "raw_file": "raw/Achievement.json",
+      "raw_bytes": 481151,
+      "cleaned_file": "pages/Achievement.md",
+      "cleaned_at": "2026-10-23T09:38:40+08:00",
+      "cleaned_bytes": 146199,
+      "cleaned_sha256": "185a820cef60798ab5d7aea002e590abf6a3cc29de71b58fbe4a8c4c0f9d5500",
+      "clean_stats": {
+        "html_bytes": 456523,
+        "md_bytes": 146199,
+        "h1": 0,
+        "h2": 2,
+        "h3": 11,
+        "tables": 17,
+        "code_blocks": 0,
+        "pruned_editsections": 13,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Achievement",
+        "index_bytes": 2376,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "List of achievements",
+            "file": "pages/Achievement/01-List-of-achievements.md",
+            "bytes": 143091,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Base game",
+                "file": null
+              },
+              {
+                "h3": "Northern Lords",
+                "file": null
+              },
+              {
+                "h3": "Royal Court",
+                "file": null
+              },
+              {
+                "h3": "Fate of Iberia",
+                "file": null
+              },
+              {
+                "h3": "Tours and Tournaments",
+                "file": null
+              },
+              {
+                "h3": "Legacy of Persia",
+                "file": null
+              },
+              {
+                "h3": "Legend of the Dead",
+                "file": null
+              },
+              {
+                "h3": "Roads to Power",
+                "file": null
+              },
+              {
+                "h3": "Khans of the Steppe",
+                "file": null
+              },
+              {
+                "h3": "All Under Heaven",
+                "file": null
+              },
+              {
+                "h3": "By God Alone",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "References",
+            "file": "pages/Achievement/02-References.md",
+            "bytes": 1141,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Activity": {
+      "title": "Activity",
+      "oldid": 37341,
+      "fetched_at": "2026-10-23T09:12:26+08:00",
+      "game_version": null,
+      "size_bytes": 86075,
+      "raw_file": "raw/Activity.json",
+      "raw_bytes": 589161,
+      "cleaned_file": "pages/Activity.md",
+      "cleaned_at": "2026-10-23T09:38:40+08:00",
+      "cleaned_bytes": 51206,
+      "cleaned_sha256": "a4fe8cc76cf7b3d2b2fdefd0aa726d62bb135b864d1f2f2c55be1e2cf4014305",
+      "clean_stats": {
+        "html_bytes": 543706,
+        "md_bytes": 51206,
+        "h1": 0,
+        "h2": 5,
+        "h3": 8,
+        "tables": 24,
+        "code_blocks": 0,
+        "pruned_editsections": 15,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Activity",
+        "index_bytes": 1860,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Cost",
+            "file": "pages/Activity/01-Cost.md",
+            "bytes": 519,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Regular activities",
+            "file": "pages/Activity/02-Regular-activities.md",
+            "bytes": 33753,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "University Visit",
+                "file": null
+              },
+              {
+                "h3": "Examinations",
+                "file": null
+              },
+              {
+                "h3": "Funeral",
+                "file": null
+              },
+              {
+                "h3": "Camp Revelry",
+                "file": null
+              },
+              {
+                "h3": "Coronation",
+                "file": null
+              },
+              {
+                "h3": "Blót",
+                "file": null
+              },
+              {
+                "h3": "Chariot Race",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Grand activities",
+            "file": "pages/Activity/03-Grand-activities.md",
+            "bytes": 9173,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Grand Tournament",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Intents",
+            "file": "pages/Activity/04-Intents.md",
+            "bytes": 5452,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "References",
+            "file": "pages/Activity/05-References.md",
+            "bytes": 982,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Adventurer": {
+      "title": "Adventurer",
+      "oldid": 37359,
+      "fetched_at": "2026-10-23T09:12:41+08:00",
+      "game_version": null,
+      "size_bytes": 43070,
+      "raw_file": "raw/Adventurer.json",
+      "raw_bytes": 225423,
+      "cleaned_file": "pages/Adventurer.md",
+      "cleaned_at": "2026-10-23T09:38:40+08:00",
+      "cleaned_bytes": 31953,
+      "cleaned_sha256": "a49b183b80d05b1e03fa7f39fb62276a3b42430502da06ca25ad2037ee6573a4",
+      "clean_stats": {
+        "html_bytes": 210045,
+        "md_bytes": 31953,
+        "h1": 0,
+        "h2": 10,
+        "h3": 5,
+        "tables": 15,
+        "code_blocks": 0,
+        "pruned_editsections": 19,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "All Under Heaven": {
+      "title": "All Under Heaven",
+      "oldid": 37046,
+      "fetched_at": "2026-10-23T09:12:58+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3545,
+      "raw_file": "raw/All Under Heaven.json",
+      "raw_bytes": 16644,
+      "cleaned_file": "pages/All Under Heaven.md",
+      "cleaned_at": "2026-10-23T09:38:40+08:00",
+      "cleaned_bytes": 4720,
+      "cleaned_sha256": "80f16173213843c1525ab4adfef843f03d4a53399c67d6caacc1211f79e1b617",
+      "clean_stats": {
+        "html_bytes": 15778,
+        "md_bytes": 4720,
+        "h1": 0,
+        "h2": 3,
+        "h3": 2,
+        "tables": 2,
+        "code_blocks": 0,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Alliance": {
+      "title": "Alliance",
+      "oldid": 37277,
+      "fetched_at": "2026-10-23T09:13:11+08:00",
+      "game_version": null,
+      "size_bytes": 8495,
+      "raw_file": "raw/Alliance.json",
+      "raw_bytes": 31120,
+      "cleaned_file": "pages/Alliance.md",
+      "cleaned_at": "2026-10-23T09:38:40+08:00",
+      "cleaned_bytes": 8292,
+      "cleaned_sha256": "64a697496bae42b257196d2a5a9fddbf6225d7d4d12b1aaeeaa0400ca1d13e81",
+      "clean_stats": {
+        "html_bytes": 29365,
+        "md_bytes": 8292,
+        "h1": 0,
+        "h2": 4,
+        "h3": 1,
+        "tables": 8,
+        "code_blocks": 0,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Army": {
+      "title": "Army",
+      "oldid": 37365,
+      "fetched_at": "2026-10-23T09:13:26+08:00",
+      "game_version": null,
+      "size_bytes": 87773,
+      "raw_file": "raw/Army.json",
+      "raw_bytes": 430249,
+      "cleaned_file": "pages/Army.md",
+      "cleaned_at": "2026-10-23T09:38:41+08:00",
+      "cleaned_bytes": 43553,
+      "cleaned_sha256": "a3faf960968bc46c51eae86beabddda14003cfc071a610f54db8407908139e21",
+      "clean_stats": {
+        "html_bytes": 398422,
+        "md_bytes": 43553,
+        "h1": 0,
+        "h2": 12,
+        "h3": 12,
+        "tables": 19,
+        "code_blocks": 0,
+        "pruned_editsections": 24,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Artifacts": {
+      "title": "Artifacts",
+      "oldid": 37362,
+      "fetched_at": "2026-10-23T09:13:42+08:00",
+      "game_version": null,
+      "size_bytes": 127727,
+      "raw_file": "raw/Artifacts.json",
+      "raw_bytes": 565236,
+      "cleaned_file": "pages/Artifacts.md",
+      "cleaned_at": "2026-10-23T09:38:41+08:00",
+      "cleaned_bytes": 91914,
+      "cleaned_sha256": "3e1cfaf2827eb633659b69ae3c3c12f79fa4cec3584adf7617609d8f25e0a914",
+      "clean_stats": {
+        "html_bytes": 529851,
+        "md_bytes": 91914,
+        "h1": 0,
+        "h2": 14,
+        "h3": 18,
+        "tables": 48,
+        "code_blocks": 0,
+        "pruned_editsections": 32,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Artifacts",
+        "index_bytes": 3397,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Rarity",
+            "file": "pages/Artifacts/01-Rarity.md",
+            "bytes": 2100,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Creating artifacts",
+            "file": "pages/Artifacts/02-Creating-artifacts.md",
+            "bytes": 7631,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Hunt trophies",
+                "file": null
+              },
+              {
+                "h3": "Inspirations",
+                "file": null
+              },
+              {
+                "h3": "Travels journal",
+                "file": null
+              },
+              {
+                "h3": "Icons",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Sanctifying artifacts",
+            "file": "pages/Artifacts/03-Sanctifying-artifacts.md",
+            "bytes": 2353,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Historical artifacts",
+            "file": "pages/Artifacts/04-Historical-artifacts.md",
+            "bytes": 45199,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Byzantine artifacts",
+                "file": null
+              },
+              {
+                "h3": "Holy Roman artifacts",
+                "file": null
+              },
+              {
+                "h3": "Shia artifacts",
+                "file": null
+              },
+              {
+                "h3": "Pagan Kingdom artifacts",
+                "file": null
+              },
+              {
+                "h3": "Hegemony of China artifacts",
+                "file": null
+              },
+              {
+                "h3": "Swords of El Cid",
+                "file": null
+              },
+              {
+                "h3": "Bells of Santiago",
+                "file": null
+              },
+              {
+                "h3": "The Double-Moon Tome",
+                "file": null
+              },
+              {
+                "h3": "Adventure artifacts",
+                "file": null
+              },
+              {
+                "h3": "Coronation artifacts",
+                "file": null
+              },
+              {
+                "h3": "Easter egg artifacts",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Holy relics",
+            "file": "pages/Artifacts/05-Holy-relics.md",
+            "bytes": 17168,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Adventure holy relics",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Dynasty banners",
+            "file": "pages/Artifacts/06-Dynasty-banners.md",
+            "bytes": 917,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Mummification artifacts",
+            "file": "pages/Artifacts/07-Mummification-artifacts.md",
+            "bytes": 1627,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Travel itineraries",
+            "file": "pages/Artifacts/08-Travel-itineraries.md",
+            "bytes": 3656,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Paizas",
+            "file": "pages/Artifacts/09-Paizas.md",
+            "bytes": 1391,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Talismans",
+            "file": "pages/Artifacts/10-Talismans.md",
+            "bytes": 945,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Cranial trophies",
+            "file": "pages/Artifacts/11-Cranial-trophies.md",
+            "bytes": 858,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Holy Myron",
+            "file": "pages/Artifacts/12-Holy-Myron.md",
+            "bytes": 885,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Improving artifacts",
+            "file": "pages/Artifacts/13-Improving-artifacts.md",
+            "bytes": 3875,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Courtier improves artifact",
+                "file": null
+              },
+              {
+                "h3": "Grand Tournament Artisan improves artifact",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "References",
+            "file": "pages/Artifacts/14-References.md",
+            "bytes": 982,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Attributes": {
+      "title": "Attributes",
+      "oldid": 37258,
+      "fetched_at": "2026-10-23T09:37:40+08:00",
+      "game_version": null,
+      "size_bytes": 71514,
+      "raw_file": "raw/Attributes.json",
+      "raw_bytes": 335366,
+      "cleaned_file": "pages/Attributes.md",
+      "cleaned_at": "2026-10-23T09:38:42+08:00",
+      "cleaned_bytes": 57769,
+      "cleaned_sha256": "fa0d4d9b61b7f4b233848cbe56ff042fa7b0ec55d9c1f8da62b54814b0fa5972",
+      "clean_stats": {
+        "html_bytes": 314171,
+        "md_bytes": 57769,
+        "h1": 0,
+        "h2": 20,
+        "h3": 13,
+        "tables": 38,
+        "code_blocks": 0,
+        "pruned_editsections": 33,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Attributes",
+        "index_bytes": 1607,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Age",
+            "file": "pages/Attributes/01-Age.md",
+            "bytes": 678,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Skills",
+            "file": "pages/Attributes/02-Skills.md",
+            "bytes": 3602,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Value thresholds",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Candidate Score",
+            "file": "pages/Attributes/03-Candidate-Score.md",
+            "bytes": 528,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Domain",
+            "file": "pages/Attributes/04-Domain.md",
+            "bytes": 2214,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Dread",
+            "file": "pages/Attributes/05-Dread.md",
+            "bytes": 3601,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Intimidation and terror",
+                "file": null
+              },
+              {
+                "h3": "Natural dread",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Education",
+            "file": "pages/Attributes/06-Education.md",
+            "bytes": 7638,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Point modifiers",
+                "file": null
+              },
+              {
+                "h3": "Education roll calculations",
+                "file": null
+              },
+              {
+                "h3": "Prowess trait",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Fertility",
+            "file": "pages/Attributes/07-Fertility.md",
+            "bytes": 2583,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Pregnancy and Complications",
+                "file": null
+              },
+              {
+                "h3": "Disease resistance (fertility)",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Governor efficiency",
+            "file": "pages/Attributes/08-Governor-efficiency.md",
+            "bytes": 984,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Health",
+            "file": "pages/Attributes/09-Health.md",
+            "bytes": 1911,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Health boosts and penalties",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Known languages",
+            "file": "pages/Attributes/10-Known-languages.md",
+            "bytes": 815,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Legitimacy",
+            "file": "pages/Attributes/11-Legitimacy.md",
+            "bytes": 13869,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Nomadic legitimacy",
+                "file": null
+              },
+              {
+                "h3": "Mandala legitimacy",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Mandala Radiance",
+            "file": "pages/Attributes/12-Mandala-Radiance.md",
+            "bytes": 607,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Merit",
+            "file": "pages/Attributes/13-Merit.md",
+            "bytes": 4037,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Merit Rank",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Movement Power",
+            "file": "pages/Attributes/14-Movement-Power.md",
+            "bytes": 731,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Obedience",
+            "file": "pages/Attributes/15-Obedience.md",
+            "bytes": 2511,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Stress",
+            "file": "pages/Attributes/16-Stress.md",
+            "bytes": 4548,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Mental Breaks",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Spiritual fulfillment",
+            "file": "pages/Attributes/17-Spiritual-fulfillment.md",
+            "bytes": 3099,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Personal tenet slots",
+            "file": "pages/Attributes/18-Personal-tenet-slots.md",
+            "bytes": 783,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Weight",
+            "file": "pages/Attributes/19-Weight.md",
+            "bytes": 1686,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "References",
+            "file": "pages/Attributes/20-References.md",
+            "bytes": 982,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Tenet": {
+      "title": "Tenet",
+      "oldid": 37301,
+      "fetched_at": "2026-10-23T09:34:28+08:00",
+      "game_version": null,
+      "size_bytes": 121107,
+      "raw_file": "raw/Tenet.json",
+      "raw_bytes": 601204,
+      "cleaned_file": "pages/Tenet.md",
+      "cleaned_at": "2026-10-23T09:38:42+08:00",
+      "cleaned_bytes": 68756,
+      "cleaned_sha256": "0254ef9e4b3ba6347d1b891ac3780e6f0c2cb7aae0a528ff07f81f6b5abf1a91",
+      "clean_stats": {
+        "html_bytes": 559679,
+        "md_bytes": 68756,
+        "h1": 0,
+        "h2": 6,
+        "h3": 1,
+        "tables": 12,
+        "code_blocks": 0,
+        "pruned_editsections": 8,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Tenet",
+        "index_bytes": 1437,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Tenet status",
+            "file": "pages/Tenet/01-Tenet-status.md",
+            "bytes": 870,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Common tenets",
+            "file": "pages/Tenet/02-Common-tenets.md",
+            "bytes": 23990,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Restricted tenets",
+            "file": "pages/Tenet/03-Restricted-tenets.md",
+            "bytes": 37546,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Religion-specific tenets",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Syncretism",
+            "file": "pages/Tenet/04-Syncretism.md",
+            "bytes": 3083,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Tenet popularity",
+            "file": "pages/Tenet/05-Tenet-popularity.md",
+            "bytes": 1452,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "References",
+            "file": "pages/Tenet/06-References.md",
+            "bytes": 982,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Barony": {
+      "title": "Barony",
+      "oldid": 37108,
+      "fetched_at": "2026-10-23T09:34:42+08:00",
+      "game_version": null,
+      "size_bytes": 32469,
+      "raw_file": "raw/Barony.json",
+      "raw_bytes": 155232,
+      "cleaned_file": "pages/Barony.md",
+      "cleaned_at": "2026-10-23T09:38:42+08:00",
+      "cleaned_bytes": 25097,
+      "cleaned_sha256": "cd3566a3f2c2b2e780c3860e22ea48cdfe2a6b3b48bf5fde3f6c1f4dc1567047",
+      "clean_stats": {
+        "html_bytes": 144789,
+        "md_bytes": 25097,
+        "h1": 0,
+        "h2": 6,
+        "h3": 9,
+        "tables": 19,
+        "code_blocks": 0,
+        "pruned_editsections": 15,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Bookmarks": {
+      "title": "Bookmarks",
+      "oldid": 35952,
+      "fetched_at": "2026-10-23T09:14:42+08:00",
+      "game_version": "1.19",
+      "size_bytes": 67400,
+      "raw_file": "raw/Bookmarks.json",
+      "raw_bytes": 332440,
+      "cleaned_file": "pages/Bookmarks.md",
+      "cleaned_at": "2026-10-23T09:38:43+08:00",
+      "cleaned_bytes": 53623,
+      "cleaned_sha256": "dd7dd8a535dcf7c7477f922c5154c127ec4d75faf7773f6ade309cec31cd21ab",
+      "clean_stats": {
+        "html_bytes": 312193,
+        "md_bytes": 53623,
+        "h1": 0,
+        "h2": 3,
+        "h3": 19,
+        "tables": 5,
+        "code_blocks": 0,
+        "pruned_editsections": 118,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Bookmarks",
+        "index_bytes": 1170,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "867 start date",
+            "file": "pages/Bookmarks/01-867-start-date.md",
+            "bytes": 26583,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "The Iranian Intermezzo",
+                "file": null
+              },
+              {
+                "h3": "The Struggle for Iberia",
+                "file": null
+              },
+              {
+                "h3": "Wrath of The Northmen",
+                "file": null
+              },
+              {
+                "h3": "Humble Beginnings",
+                "file": null
+              },
+              {
+                "h3": "The Carolingians",
+                "file": null
+              },
+              {
+                "h3": "Living Gods on Earth",
+                "file": null
+              },
+              {
+                "h3": "Autumn of Virtue",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "1066 start date",
+            "file": "pages/Bookmarks/02-1066-start-date.md",
+            "bytes": 19217,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "The Fate of England",
+                "file": null
+              },
+              {
+                "h3": "Rags to Riches",
+                "file": null
+              },
+              {
+                "h3": "Iberia in Pieces",
+                "file": null
+              },
+              {
+                "h3": "The Wandering Exiles",
+                "file": null
+              },
+              {
+                "h3": "At the Gates",
+                "file": null
+              },
+              {
+                "h3": "Song of Splendor",
+                "file": null
+              },
+              {
+                "h3": "A Never-Waning Moon",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "1178 start date",
+            "file": "pages/Bookmarks/03-1178-start-date.md",
+            "bytes": 7114,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Call of the Empire",
+                "file": null
+              },
+              {
+                "h3": "Sword of Faith",
+                "file": null
+              },
+              {
+                "h3": "The Endless Sky",
+                "file": null
+              },
+              {
+                "h3": "Heaven in Turmoil",
+                "file": null
+              },
+              {
+                "h3": "Rise of the Bushi",
+                "file": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "Building": {
+      "title": "Building",
+      "oldid": 36514,
+      "fetched_at": "2026-10-23T09:14:57+08:00",
+      "game_version": null,
+      "size_bytes": 19716,
+      "raw_file": "raw/Building.json",
+      "raw_bytes": 127297,
+      "cleaned_file": "pages/Building.md",
+      "cleaned_at": "2026-10-23T09:38:43+08:00",
+      "cleaned_bytes": 15124,
+      "cleaned_sha256": "92d97adcd5883d90298f53f2ebc9fd4a4beecfb2057c2ed5f9c501f6adf85cf8",
+      "clean_stats": {
+        "html_bytes": 118095,
+        "md_bytes": 15124,
+        "h1": 0,
+        "h2": 4,
+        "h3": 11,
+        "tables": 9,
+        "code_blocks": 0,
+        "pruned_editsections": 15,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "By God Alone": {
+      "title": "By God Alone",
+      "oldid": 36840,
+      "fetched_at": "2026-10-23T09:15:11+08:00",
+      "game_version": "timeless",
+      "size_bytes": 4131,
+      "raw_file": "raw/By God Alone.json",
+      "raw_bytes": 11598,
+      "cleaned_file": "pages/By God Alone.md",
+      "cleaned_at": "2026-10-23T09:38:43+08:00",
+      "cleaned_bytes": 3725,
+      "cleaned_sha256": "8945291e47bb8d85afb2345dc83f22782e751aab5015057f172c1fede43e8324",
+      "clean_stats": {
+        "html_bytes": 11005,
+        "md_bytes": 3725,
+        "h1": 0,
+        "h2": 2,
+        "h3": 1,
+        "tables": 0,
+        "code_blocks": 0,
+        "pruned_editsections": 3,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "CK3AGOT": {
+      "title": "CK3AGOT",
+      "oldid": 27940,
+      "fetched_at": "2026-10-23T09:15:25+08:00",
+      "game_version": "1.12.5",
+      "size_bytes": 14438,
+      "raw_file": "raw/CK3AGOT.json",
+      "raw_bytes": 241838,
+      "cleaned_file": "pages/CK3AGOT.md",
+      "cleaned_at": "2026-10-23T09:38:43+08:00",
+      "cleaned_bytes": 104260,
+      "cleaned_sha256": "b2b367ba03b5aa0fdd3620a1cddaa9839cf3130e106c7b10f17ae9df0ad3aca6",
+      "clean_stats": {
+        "html_bytes": 233974,
+        "md_bytes": 104260,
+        "h1": 0,
+        "h2": 7,
+        "h3": 16,
+        "tables": 4,
+        "code_blocks": 0,
+        "pruned_editsections": 157,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/CK3AGOT",
+        "index_bytes": 900,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Latest news",
+            "file": "pages/CK3AGOT/01-Latest-news.md",
+            "bytes": 651,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "About this mod",
+            "file": "pages/CK3AGOT/02-About-this-mod.md",
+            "bytes": 401,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Important pages",
+            "file": "pages/CK3AGOT/03-Important-pages.md",
+            "bytes": 465,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Want to help improve the CK3AGOT subwiki?",
+            "file": "pages/CK3AGOT/04-Want-to-help-improve-the-CK3AGOT-subwiki.md",
+            "bytes": 387,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Bookmarks",
+            "file": "pages/CK3AGOT/05-Bookmarks.md",
+            "bytes": 2771,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Robert's Rebellion",
+                "file": null
+              },
+              {
+                "h3": "Crowned Stag",
+                "file": null
+              },
+              {
+                "h3": "War of the Ninepenny Kings",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Features",
+            "file": "pages/CK3AGOT/06-Features.md",
+            "bytes": 6876,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Mega Wars",
+                "file": null
+              },
+              {
+                "h3": "Kingsguard",
+                "file": null
+              },
+              {
+                "h3": "Expanded Councilors",
+                "file": null
+              },
+              {
+                "h3": "Knights and Squires",
+                "file": null
+              },
+              {
+                "h3": "The Night’s Watch & Beyond The Wall",
+                "file": null
+              },
+              {
+                "h3": "Deeper Roleplay",
+                "file": null
+              },
+              {
+                "h3": "Armors, Crowns, Artifacts, and Swords",
+                "file": null
+              },
+              {
+                "h3": "More Cultures & Religions",
+                "file": null
+              },
+              {
+                "h3": "Spy Networks",
+                "file": null
+              },
+              {
+                "h3": "An Enormous Map",
+                "file": null
+              },
+              {
+                "h3": "A Meticulously Detailed Map",
+                "file": null
+              },
+              {
+                "h3": "Roads, Roads, Roads",
+                "file": null
+              },
+              {
+                "h3": "And so much more…",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Patches",
+            "file": "pages/CK3AGOT/07-Patches.md",
+            "bytes": 92493,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Casus belli": {
+      "title": "Casus belli",
+      "oldid": 37036,
+      "fetched_at": "2026-10-23T09:15:41+08:00",
+      "game_version": null,
+      "size_bytes": 47275,
+      "raw_file": "raw/Casus belli.json",
+      "raw_bytes": 177309,
+      "cleaned_file": "pages/Casus belli.md",
+      "cleaned_at": "2026-10-23T09:38:43+08:00",
+      "cleaned_bytes": 41549,
+      "cleaned_sha256": "ffc2b3676002575aadb736f2b03c76c1609869abc18e87cbf138859af81af43d",
+      "clean_stats": {
+        "html_bytes": 167352,
+        "md_bytes": 41549,
+        "h1": 0,
+        "h2": 27,
+        "h3": 6,
+        "tables": 25,
+        "code_blocks": 0,
+        "pruned_editsections": 33,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Character": {
+      "title": "Character",
+      "oldid": 37343,
+      "fetched_at": "2026-10-23T09:15:56+08:00",
+      "game_version": null,
+      "size_bytes": 62516,
+      "raw_file": "raw/Character.json",
+      "raw_bytes": 274754,
+      "cleaned_file": "pages/Character.md",
+      "cleaned_at": "2026-10-23T09:38:43+08:00",
+      "cleaned_bytes": 46074,
+      "cleaned_sha256": "1f5162bf52a7d4b369ad712e346bb4491310ce1ca50f626830a3e9a7c21339fb",
+      "clean_stats": {
+        "html_bytes": 256359,
+        "md_bytes": 46074,
+        "h1": 0,
+        "h2": 9,
+        "h3": 10,
+        "tables": 19,
+        "code_blocks": 0,
+        "pruned_editsections": 23,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Coronations": {
+      "title": "Coronations",
+      "oldid": 33057,
+      "fetched_at": "2026-10-23T09:16:13+08:00",
+      "game_version": "timeless",
+      "size_bytes": 1612,
+      "raw_file": "raw/Coronations.json",
+      "raw_bytes": 9056,
+      "cleaned_file": "pages/Coronations.md",
+      "cleaned_at": "2026-10-23T09:38:43+08:00",
+      "cleaned_bytes": 1890,
+      "cleaned_sha256": "5d98f2d9f5710c4510eba4babbb22915c581b61dced6555bc45003aa25c4857a",
+      "clean_stats": {
+        "html_bytes": 8544,
+        "md_bytes": 1890,
+        "h1": 0,
+        "h2": 3,
+        "h3": 2,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Council": {
+      "title": "Council",
+      "oldid": 36988,
+      "fetched_at": "2026-10-23T09:16:25+08:00",
+      "game_version": null,
+      "size_bytes": 39035,
+      "raw_file": "raw/Council.json",
+      "raw_bytes": 158273,
+      "cleaned_file": "pages/Council.md",
+      "cleaned_at": "2026-10-23T09:38:44+08:00",
+      "cleaned_bytes": 29519,
+      "cleaned_sha256": "fabf44403d86fc0db449835c068edb9c2ad5be54dd20871aa267b4042a242123",
+      "clean_stats": {
+        "html_bytes": 148079,
+        "md_bytes": 29519,
+        "h1": 0,
+        "h2": 7,
+        "h3": 6,
+        "tables": 17,
+        "code_blocks": 0,
+        "pruned_editsections": 13,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "County": {
+      "title": "County",
+      "oldid": 37276,
+      "fetched_at": "2026-10-23T09:16:40+08:00",
+      "game_version": null,
+      "size_bytes": 12141,
+      "raw_file": "raw/County.json",
+      "raw_bytes": 54708,
+      "cleaned_file": "pages/County.md",
+      "cleaned_at": "2026-10-23T09:38:44+08:00",
+      "cleaned_bytes": 10598,
+      "cleaned_sha256": "fa500bde9720e61f79359625873739942f06985c794d9dd7e3c3dc1a8288569c",
+      "clean_stats": {
+        "html_bytes": 51492,
+        "md_bytes": 10598,
+        "h1": 0,
+        "h2": 7,
+        "h3": 2,
+        "tables": 12,
+        "code_blocks": 0,
+        "pruned_editsections": 10,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Court": {
+      "title": "Court",
+      "oldid": 37354,
+      "fetched_at": "2026-10-23T09:16:55+08:00",
+      "game_version": null,
+      "size_bytes": 130302,
+      "raw_file": "raw/Court.json",
+      "raw_bytes": 727844,
+      "cleaned_file": "pages/Court.md",
+      "cleaned_at": "2026-10-23T09:38:44+08:00",
+      "cleaned_bytes": 73723,
+      "cleaned_sha256": "1bf5b3217cc1f31a6a48f8fba67a422b3ff2c9d4a5f6b9e56f3ed2d5fe8d9506",
+      "clean_stats": {
+        "html_bytes": 678264,
+        "md_bytes": 73723,
+        "h1": 0,
+        "h2": 4,
+        "h3": 6,
+        "tables": 22,
+        "code_blocks": 0,
+        "pruned_editsections": 16,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Court",
+        "index_bytes": 1018,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Courtiers and followers",
+            "file": "pages/Court/01-Courtiers-and-followers.md",
+            "bytes": 3198,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Hostages",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Guests",
+            "file": "pages/Court/02-Guests.md",
+            "bytes": 1019,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Court positions",
+            "file": "pages/Court/03-Court-positions.md",
+            "bytes": 68008,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Aptitude",
+                "file": null
+              },
+              {
+                "h3": "Recruit for a Court Position",
+                "file": null
+              },
+              {
+                "h3": "Common positions",
+                "file": null
+              },
+              {
+                "h3": "Ruler positions",
+                "file": null
+              },
+              {
+                "h3": "Officers",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "References",
+            "file": "pages/Court/04-References.md",
+            "bytes": 982,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Crusader Kings III": {
+      "title": "Crusader Kings III",
+      "oldid": 24009,
+      "fetched_at": "2026-10-23T09:17:12+08:00",
+      "game_version": "timeless",
+      "size_bytes": 9010,
+      "raw_file": "raw/Crusader Kings III.json",
+      "raw_bytes": 79380,
+      "cleaned_file": "pages/Crusader Kings III.md",
+      "cleaned_at": "2026-10-23T09:38:45+08:00",
+      "cleaned_bytes": 8312,
+      "cleaned_sha256": "5ab590222486d0815e8526c436695b4ba63cecdd4357b86c0a84498b505cde95",
+      "clean_stats": {
+        "html_bytes": 74962,
+        "md_bytes": 8312,
+        "h1": 0,
+        "h2": 4,
+        "h3": 3,
+        "tables": 3,
+        "code_blocks": 0,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Culture": {
+      "title": "Culture",
+      "oldid": 37145,
+      "fetched_at": "2026-10-23T09:17:26+08:00",
+      "game_version": null,
+      "size_bytes": 137195,
+      "raw_file": "raw/Culture.json",
+      "raw_bytes": 624206,
+      "cleaned_file": "pages/Culture.md",
+      "cleaned_at": "2026-10-23T09:38:45+08:00",
+      "cleaned_bytes": 81041,
+      "cleaned_sha256": "e1335ab97c7af3f1207e1be9d129cb4992e35f4b0c1d8cb04e688589ed9a1c85",
+      "clean_stats": {
+        "html_bytes": 580862,
+        "md_bytes": 81041,
+        "h1": 0,
+        "h2": 11,
+        "h3": 8,
+        "tables": 19,
+        "code_blocks": 0,
+        "pruned_editsections": 20,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Culture",
+        "index_bytes": 2045,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Culture head",
+            "file": "pages/Culture/01-Culture-head.md",
+            "bytes": 1393,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Cultural acceptance",
+            "file": "pages/Culture/02-Cultural-acceptance.md",
+            "bytes": 1214,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Cultural pillars",
+            "file": "pages/Culture/03-Cultural-pillars.md",
+            "bytes": 5229,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Ethos",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Traditions",
+            "file": "pages/Culture/04-Traditions.md",
+            "bytes": 1107,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "New cultures",
+            "file": "pages/Culture/05-New-cultures.md",
+            "bytes": 3226,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Hybrid cultures",
+                "file": null
+              },
+              {
+                "h3": "Divergent cultures",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "List of cultures",
+            "file": "pages/Culture/06-List-of-cultures.md",
+            "bytes": 51033,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Nomadic cultures",
+                "file": null
+              },
+              {
+                "h3": "North Germanic cultures",
+                "file": null
+              },
+              {
+                "h3": "Ancient cultures",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "List of unique formable cultures",
+            "file": "pages/Culture/07-List-of-unique-formable-cultures.md",
+            "bytes": 11219,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Unique divergent cultures",
+                "file": null
+              },
+              {
+                "h3": "Unique hybrid cultures",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Culture splits",
+            "file": "pages/Culture/08-Culture-splits.md",
+            "bytes": 643,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Sicilian melting pot",
+            "file": "pages/Culture/09-Sicilian-melting-pot.md",
+            "bytes": 1063,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Harrying of the North",
+            "file": "pages/Culture/10-Harrying-of-the-North.md",
+            "bytes": 2837,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "References",
+            "file": "pages/Culture/11-References.md",
+            "bytes": 982,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Downloadable content": {
+      "title": "Downloadable content",
+      "oldid": 34452,
+      "fetched_at": "2026-10-23T09:19:10+08:00",
+      "game_version": "timeless",
+      "size_bytes": 53992,
+      "raw_file": "raw/Downloadable content.json",
+      "raw_bytes": 131849,
+      "cleaned_file": "pages/Downloadable content.md",
+      "cleaned_at": "2026-10-23T09:38:45+08:00",
+      "cleaned_bytes": 36517,
+      "cleaned_sha256": "fec468cab8599eaa7224d3e06dbdd0a748c10ea2fd7f027699c8f99c3833fdb5",
+      "clean_stats": {
+        "html_bytes": 125585,
+        "md_bytes": 36517,
+        "h1": 0,
+        "h2": 9,
+        "h3": 0,
+        "tables": 12,
+        "code_blocks": 0,
+        "pruned_editsections": 9,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Decisions": {
+      "title": "Decisions",
+      "oldid": 35680,
+      "fetched_at": "2026-10-23T09:18:10+08:00",
+      "game_version": "timeless",
+      "size_bytes": 723,
+      "raw_file": "raw/Decisions.json",
+      "raw_bytes": 8784,
+      "cleaned_file": "pages/Decisions.md",
+      "cleaned_at": "2026-10-23T09:38:45+08:00",
+      "cleaned_bytes": 1899,
+      "cleaned_sha256": "ccd006e9de02fef9ba0ea4133e031c75e386b8635eb97ad64fa28b530050578c",
+      "clean_stats": {
+        "html_bytes": 8237,
+        "md_bytes": 1899,
+        "h1": 0,
+        "h2": 0,
+        "h3": 0,
+        "tables": 5,
+        "code_blocks": 0,
+        "pruned_editsections": 0,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Developer diaries": {
+      "title": "Developer diaries",
+      "oldid": 37334,
+      "fetched_at": "2026-10-23T09:18:25+08:00",
+      "game_version": "timeless",
+      "size_bytes": 36768,
+      "raw_file": "raw/Developer diaries.json",
+      "raw_bytes": 113928,
+      "cleaned_file": "pages/Developer diaries.md",
+      "cleaned_at": "2026-10-23T09:38:46+08:00",
+      "cleaned_bytes": 29775,
+      "cleaned_sha256": "62015d6b94d6ee70f93dc429ff20d9bb42ecf1ba4ebfd44ffe448fe889388f07",
+      "clean_stats": {
+        "html_bytes": 107772,
+        "md_bytes": 29775,
+        "h1": 0,
+        "h2": 19,
+        "h3": 0,
+        "tables": 28,
+        "code_blocks": 0,
+        "pruned_editsections": 19,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Doctrines": {
+      "title": "Doctrines",
+      "oldid": 37118,
+      "fetched_at": "2026-10-23T09:18:40+08:00",
+      "game_version": null,
+      "size_bytes": 67972,
+      "raw_file": "raw/Doctrines.json",
+      "raw_bytes": 231056,
+      "cleaned_file": "pages/Doctrines.md",
+      "cleaned_at": "2026-10-23T09:38:46+08:00",
+      "cleaned_bytes": 52886,
+      "cleaned_sha256": "c98844073af628b118ea5669a1628a59a8e6d17d3d7cd8ed33a3c9f5f4344324",
+      "clean_stats": {
+        "html_bytes": 217351,
+        "md_bytes": 52886,
+        "h1": 0,
+        "h2": 7,
+        "h3": 1,
+        "tables": 13,
+        "code_blocks": 0,
+        "pruned_editsections": 8,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Doctrines",
+        "index_bytes": 1183,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Main doctrines",
+            "file": "pages/Doctrines/01-Main-doctrines.md",
+            "bytes": 9782,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Religion doctrines",
+            "file": "pages/Doctrines/02-Religion-doctrines.md",
+            "bytes": 5192,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Marriage doctrines",
+            "file": "pages/Doctrines/03-Marriage-doctrines.md",
+            "bytes": 6929,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Crime doctrines",
+            "file": "pages/Doctrines/04-Crime-doctrines.md",
+            "bytes": 8230,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Clergy doctrines",
+            "file": "pages/Doctrines/05-Clergy-doctrines.md",
+            "bytes": 14154,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Coronation Tradition",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Special doctrines",
+            "file": "pages/Doctrines/06-Special-doctrines.md",
+            "bytes": 7129,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "References",
+            "file": "pages/Doctrines/07-References.md",
+            "bytes": 982,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Domicile": {
+      "title": "Domicile",
+      "oldid": 37142,
+      "fetched_at": "2026-10-23T09:18:56+08:00",
+      "game_version": null,
+      "size_bytes": 1045,
+      "raw_file": "raw/Domicile.json",
+      "raw_bytes": 14101,
+      "cleaned_file": "pages/Domicile.md",
+      "cleaned_at": "2026-10-23T09:38:46+08:00",
+      "cleaned_bytes": 2016,
+      "cleaned_sha256": "80e7618f62e3720dfdf1d8a993e0acbdc20acd7d97889160f17d86da80fa7ac5",
+      "clean_stats": {
+        "html_bytes": 13194,
+        "md_bytes": 2016,
+        "h1": 0,
+        "h2": 1,
+        "h3": 0,
+        "tables": 5,
+        "code_blocks": 0,
+        "pruned_editsections": 1,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Duel": {
+      "title": "Duel",
+      "oldid": 36520,
+      "fetched_at": "2026-10-23T09:19:26+08:00",
+      "game_version": null,
+      "size_bytes": 13533,
+      "raw_file": "raw/Duel.json",
+      "raw_bytes": 49505,
+      "cleaned_file": "pages/Duel.md",
+      "cleaned_at": "2026-10-23T09:38:46+08:00",
+      "cleaned_bytes": 10822,
+      "cleaned_sha256": "365c639f27be900de02b9afcb3dc14af361f1769f9b44e389436239a6679a9f8",
+      "clean_stats": {
+        "html_bytes": 46330,
+        "md_bytes": 10822,
+        "h1": 0,
+        "h2": 3,
+        "h3": 1,
+        "tables": 8,
+        "code_blocks": 0,
+        "pruned_editsections": 4,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Dynasty": {
+      "title": "Dynasty",
+      "oldid": 37137,
+      "fetched_at": "2026-10-23T09:19:40+08:00",
+      "game_version": null,
+      "size_bytes": 44577,
+      "raw_file": "raw/Dynasty.json",
+      "raw_bytes": 161956,
+      "cleaned_file": "pages/Dynasty.md",
+      "cleaned_at": "2026-10-23T09:38:46+08:00",
+      "cleaned_bytes": 34692,
+      "cleaned_sha256": "196ffc8e73b0fe1d929d3dde1be97a089a4d81af02476dfea8eff10c3e8b37d7",
+      "clean_stats": {
+        "html_bytes": 152748,
+        "md_bytes": 34692,
+        "h1": 0,
+        "h2": 5,
+        "h3": 6,
+        "tables": 37,
+        "code_blocks": 0,
+        "pruned_editsections": 21,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Elder Kings II": {
+      "title": "Elder Kings II",
+      "oldid": 23398,
+      "fetched_at": "2026-10-23T09:20:13+08:00",
+      "game_version": null,
+      "size_bytes": 6974,
+      "raw_file": "raw/Elder Kings II.json",
+      "raw_bytes": 22151,
+      "cleaned_file": "pages/Elder Kings II.md",
+      "cleaned_at": "2026-10-23T09:38:46+08:00",
+      "cleaned_bytes": 7394,
+      "cleaned_sha256": "5a4d25c045b7486be65114ac453d730c113035426a731ac71034e3bdf2b63d7e",
+      "clean_stats": {
+        "html_bytes": 21174,
+        "md_bytes": 7394,
+        "h1": 0,
+        "h2": 7,
+        "h3": 9,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 16,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Events": {
+      "title": "Events",
+      "oldid": 19880,
+      "fetched_at": "2026-10-23T09:20:25+08:00",
+      "game_version": "timeless",
+      "size_bytes": 2204,
+      "raw_file": "raw/Events.json",
+      "raw_bytes": 9087,
+      "cleaned_file": "pages/Events.md",
+      "cleaned_at": "2026-10-23T09:38:46+08:00",
+      "cleaned_bytes": 3364,
+      "cleaned_sha256": "c771f6ccd595f1929fd95f189a6dbf75d39f16d254b93e873d1c8f7ce0a665fa",
+      "clean_stats": {
+        "html_bytes": 8620,
+        "md_bytes": 3364,
+        "h1": 0,
+        "h2": 0,
+        "h3": 1,
+        "tables": 6,
+        "code_blocks": 0,
+        "pruned_editsections": 1,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Family (relation)": {
+      "title": "Family (relation)",
+      "oldid": 34905,
+      "fetched_at": "2026-10-23T09:20:40+08:00",
+      "game_version": "1.10",
+      "size_bytes": 27947,
+      "raw_file": "raw/Family (relation).json",
+      "raw_bytes": 87249,
+      "cleaned_file": "pages/Family (relation).md",
+      "cleaned_at": "2026-10-23T09:38:46+08:00",
+      "cleaned_bytes": 21622,
+      "cleaned_sha256": "7ed3fc435ef759573ada0dde5aca4af9f527287a6fca307ef9423a44d53a1aff",
+      "clean_stats": {
+        "html_bytes": 82486,
+        "md_bytes": 21622,
+        "h1": 0,
+        "h2": 5,
+        "h3": 7,
+        "tables": 14,
+        "code_blocks": 0,
+        "pruned_editsections": 20,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Fate of Iberia": {
+      "title": "Fate of Iberia",
+      "oldid": 33544,
+      "fetched_at": "2026-10-23T09:20:56+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3976,
+      "raw_file": "raw/Fate of Iberia.json",
+      "raw_bytes": 22469,
+      "cleaned_file": "pages/Fate of Iberia.md",
+      "cleaned_at": "2026-10-23T09:38:46+08:00",
+      "cleaned_bytes": 3851,
+      "cleaned_sha256": "8211cebe8bff7853d84d5c041ed91073705e644b4af4e7c82674d265c567a844",
+      "clean_stats": {
+        "html_bytes": 21281,
+        "md_bytes": 3851,
+        "h1": 0,
+        "h2": 4,
+        "h3": 2,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 6,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Fertility (disambiguation)": {
+      "title": "Fertility (disambiguation)",
+      "oldid": 36885,
+      "fetched_at": "2026-10-23T09:21:10+08:00",
+      "game_version": null,
+      "size_bytes": 414,
+      "raw_file": "raw/Fertility (disambiguation).json",
+      "raw_bytes": 1997,
+      "cleaned_file": "pages/Fertility (disambiguation).md",
+      "cleaned_at": "2026-10-23T09:38:46+08:00",
+      "cleaned_bytes": 595,
+      "cleaned_sha256": "50c153e9d7834b85ce07d97bf1b3776c44c6b14fd62042e642e437b88d317c21",
+      "clean_stats": {
+        "html_bytes": 1815,
+        "md_bytes": 595,
+        "h1": 0,
+        "h2": 0,
+        "h3": 0,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 0,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Lifestyle": {
+      "title": "Lifestyle",
+      "oldid": 37104,
+      "fetched_at": "2026-10-23T09:28:55+08:00",
+      "game_version": null,
+      "size_bytes": 62187,
+      "raw_file": "raw/Lifestyle.json",
+      "raw_bytes": 172135,
+      "cleaned_file": "pages/Lifestyle.md",
+      "cleaned_at": "2026-10-23T09:38:47+08:00",
+      "cleaned_bytes": 46164,
+      "cleaned_sha256": "c1bfde65af9d361acda3a06e0b4a96894a3e50d2200ed0a958a65b2c994ead83",
+      "clean_stats": {
+        "html_bytes": 162856,
+        "md_bytes": 46164,
+        "h1": 0,
+        "h2": 3,
+        "h3": 7,
+        "tables": 44,
+        "code_blocks": 0,
+        "pruned_editsections": 28,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Form of address": {
+      "title": "Form of address",
+      "oldid": 35069,
+      "fetched_at": "2026-10-23T09:21:41+08:00",
+      "game_version": "1.18",
+      "size_bytes": 42358,
+      "raw_file": "raw/Form of address.json",
+      "raw_bytes": 118378,
+      "cleaned_file": "pages/Form of address.md",
+      "cleaned_at": "2026-10-23T09:38:47+08:00",
+      "cleaned_bytes": 49545,
+      "cleaned_sha256": "f79516273b86129fff38b59c74bc4ada84068035603e891f1b39971c5271befb",
+      "clean_stats": {
+        "html_bytes": 109940,
+        "md_bytes": 49545,
+        "h1": 0,
+        "h2": 4,
+        "h3": 0,
+        "tables": 16,
+        "code_blocks": 0,
+        "pruned_editsections": 4,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Friends and Foes": {
+      "title": "Friends and Foes",
+      "oldid": 24007,
+      "fetched_at": "2026-10-23T09:21:56+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3368,
+      "raw_file": "raw/Friends and Foes.json",
+      "raw_bytes": 15320,
+      "cleaned_file": "pages/Friends and Foes.md",
+      "cleaned_at": "2026-10-23T09:38:47+08:00",
+      "cleaned_bytes": 3979,
+      "cleaned_sha256": "e0080f92e0f236b04706a681dbbf75352eb49c51b524140e9ef9656fa51dcf4d",
+      "clean_stats": {
+        "html_bytes": 14507,
+        "md_bytes": 3979,
+        "h1": 0,
+        "h2": 4,
+        "h3": 1,
+        "tables": 2,
+        "code_blocks": 0,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Game rules": {
+      "title": "Game rules",
+      "oldid": 36445,
+      "fetched_at": "2026-10-23T09:22:10+08:00",
+      "game_version": "1.9.X",
+      "size_bytes": 58557,
+      "raw_file": "raw/Game rules.json",
+      "raw_bytes": 178188,
+      "cleaned_file": "pages/Game rules.md",
+      "cleaned_at": "2026-10-23T09:38:47+08:00",
+      "cleaned_bytes": 46995,
+      "cleaned_sha256": "8f82ebd1843244f85a12cb0ad3545061984c5e3dce06c23083a1a4e72f5be3e2",
+      "clean_stats": {
+        "html_bytes": 167231,
+        "md_bytes": 46995,
+        "h1": 0,
+        "h2": 4,
+        "h3": 5,
+        "tables": 15,
+        "code_blocks": 0,
+        "pruned_editsections": 9,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Government": {
+      "title": "Government",
+      "oldid": 37119,
+      "fetched_at": "2026-10-23T09:22:27+08:00",
+      "game_version": null,
+      "size_bytes": 46199,
+      "raw_file": "raw/Government.json",
+      "raw_bytes": 193703,
+      "cleaned_file": "pages/Government.md",
+      "cleaned_at": "2026-10-23T09:38:47+08:00",
+      "cleaned_bytes": 39654,
+      "cleaned_sha256": "6d5ec453fbca8911a7abce438090fe1bdfba79ab14557aac703edf2b9bdcccfe",
+      "clean_stats": {
+        "html_bytes": 181437,
+        "md_bytes": 39654,
+        "h1": 0,
+        "h2": 3,
+        "h3": 6,
+        "tables": 14,
+        "code_blocks": 0,
+        "pruned_editsections": 12,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Great projects": {
+      "title": "Great projects",
+      "oldid": 37165,
+      "fetched_at": "2026-10-23T09:22:41+08:00",
+      "game_version": null,
+      "size_bytes": 38779,
+      "raw_file": "raw/Great projects.json",
+      "raw_bytes": 173729,
+      "cleaned_file": "pages/Great projects.md",
+      "cleaned_at": "2026-10-23T09:38:47+08:00",
+      "cleaned_bytes": 32868,
+      "cleaned_sha256": "759895d810f48fea106b81f1065d4cb8f274d5b38a30e3f71dc952f483dd96b9",
+      "clean_stats": {
+        "html_bytes": 162356,
+        "md_bytes": 32868,
+        "h1": 0,
+        "h2": 5,
+        "h3": 0,
+        "tables": 14,
+        "code_blocks": 0,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Hired forces": {
+      "title": "Hired forces",
+      "oldid": 36467,
+      "fetched_at": "2026-10-23T09:23:10+08:00",
+      "game_version": null,
+      "size_bytes": 19691,
+      "raw_file": "raw/Hired forces.json",
+      "raw_bytes": 60966,
+      "cleaned_file": "pages/Hired forces.md",
+      "cleaned_at": "2026-10-23T09:38:47+08:00",
+      "cleaned_bytes": 18548,
+      "cleaned_sha256": "8fc9dc637b9ace248ebd07db08453d209824e08ee470f8b3e5c4a5b221ed2ef8",
+      "clean_stats": {
+        "html_bytes": 57271,
+        "md_bytes": 18548,
+        "h1": 0,
+        "h2": 3,
+        "h3": 5,
+        "tables": 11,
+        "code_blocks": 0,
+        "pruned_editsections": 8,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Holy sites": {
+      "title": "Holy sites",
+      "oldid": 37248,
+      "fetched_at": "2026-10-23T09:23:44+08:00",
+      "game_version": null,
+      "size_bytes": 98227,
+      "raw_file": "raw/Holy sites.json",
+      "raw_bytes": 540803,
+      "cleaned_file": "pages/Holy sites.md",
+      "cleaned_at": "2026-10-23T09:38:48+08:00",
+      "cleaned_bytes": 54340,
+      "cleaned_sha256": "53a8181510d9aa88b92ec246998fb2c722e638235d5ce09768fa510d2669c85e",
+      "clean_stats": {
+        "html_bytes": 501381,
+        "md_bytes": 54340,
+        "h1": 0,
+        "h2": 4,
+        "h3": 0,
+        "tables": 3,
+        "code_blocks": 0,
+        "pruned_editsections": 4,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Holy sites",
+        "index_bytes": 2513,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Enshrined Relics",
+            "file": "pages/Holy sites/01-Enshrined-Relics.md",
+            "bytes": 1187,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Holy site status",
+            "file": "pages/Holy sites/02-Holy-site-status.md",
+            "bytes": 1168,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Creating holy sites",
+            "file": "pages/Holy sites/03-Creating-holy-sites.md",
+            "bytes": 3103,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "List of holy sites",
+            "file": "pages/Holy sites/04-List-of-holy-sites.md",
+            "bytes": 46907,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Hooks": {
+      "title": "Hooks",
+      "oldid": 36442,
+      "fetched_at": "2026-10-23T09:23:56+08:00",
+      "game_version": null,
+      "size_bytes": 16491,
+      "raw_file": "raw/Hooks.json",
+      "raw_bytes": 63079,
+      "cleaned_file": "pages/Hooks.md",
+      "cleaned_at": "2026-10-23T09:38:48+08:00",
+      "cleaned_bytes": 14152,
+      "cleaned_sha256": "ed78a52acaa7f19c0a71664577c581c826b60052f1fad36bbea7553fc26afeea",
+      "clean_stats": {
+        "html_bytes": 59069,
+        "md_bytes": 14152,
+        "h1": 0,
+        "h2": 6,
+        "h3": 1,
+        "tables": 10,
+        "code_blocks": 0,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Innovation": {
+      "title": "Innovation",
+      "oldid": 37366,
+      "fetched_at": "2026-10-23T09:24:10+08:00",
+      "game_version": null,
+      "size_bytes": 61900,
+      "raw_file": "raw/Innovation.json",
+      "raw_bytes": 251519,
+      "cleaned_file": "pages/Innovation.md",
+      "cleaned_at": "2026-10-23T09:38:49+08:00",
+      "cleaned_bytes": 47315,
+      "cleaned_sha256": "499215320b89f2e0e931c9a5cd872c6b40911f9d0e32e8aa4e1c9737b8005072",
+      "clean_stats": {
+        "html_bytes": 236887,
+        "md_bytes": 47315,
+        "h1": 0,
+        "h2": 6,
+        "h3": 17,
+        "tables": 27,
+        "code_blocks": 0,
+        "pruned_editsections": 25,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Interactions": {
+      "title": "Interactions",
+      "oldid": 36911,
+      "fetched_at": "2026-10-23T09:24:26+08:00",
+      "game_version": "1.4",
+      "size_bytes": 80939,
+      "raw_file": "raw/Interactions.json",
+      "raw_bytes": 385515,
+      "cleaned_file": "pages/Interactions.md",
+      "cleaned_at": "2026-10-23T09:38:49+08:00",
+      "cleaned_bytes": 70784,
+      "cleaned_sha256": "7654ca9cd418f4c61fd81e5e3cc4142761f006bffaec23ff9e5bb241299c69e5",
+      "clean_stats": {
+        "html_bytes": 361076,
+        "md_bytes": 70784,
+        "h1": 0,
+        "h2": 8,
+        "h3": 75,
+        "tables": 49,
+        "code_blocks": 0,
+        "pruned_editsections": 100,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Interactions",
+        "index_bytes": 1511,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Diplomacy actions",
+            "file": "pages/Interactions/01-Diplomacy-actions.md",
+            "bytes": 7643,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "War-related actions",
+                "file": null
+              },
+              {
+                "h3": "Forming Alliances",
+                "file": null
+              },
+              {
+                "h3": "Marriages & Concubines",
+                "file": null
+              },
+              {
+                "h3": "Legitimize Bastard",
+                "file": null
+              },
+              {
+                "h3": "Demand Payment",
+                "file": null
+              },
+              {
+                "h3": "Buy Claim",
+                "file": null
+              },
+              {
+                "h3": "Request Claim",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Personal actions",
+            "file": "pages/Interactions/02-Personal-actions.md",
+            "bytes": 6877,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Send Gift",
+                "file": null
+              },
+              {
+                "h3": "Sway",
+                "file": null
+              },
+              {
+                "h3": "Befriend",
+                "file": null
+              },
+              {
+                "h3": "Seduce",
+                "file": null
+              },
+              {
+                "h3": "Romance",
+                "file": null
+              },
+              {
+                "h3": "Elope",
+                "file": null
+              },
+              {
+                "h3": "Educate Child",
+                "file": null
+              },
+              {
+                "h3": "Offer Ward",
+                "file": null
+              },
+              {
+                "h3": "Offer Guardianship",
+                "file": null
+              },
+              {
+                "h3": "Influence Ward's Personality",
+                "file": null
+              },
+              {
+                "h3": "Ward's Martial Drill",
+                "file": null
+              },
+              {
+                "h3": "Host as Honored Guest",
+                "file": null
+              },
+              {
+                "h3": "Send Poem",
+                "file": null
+              },
+              {
+                "h3": "Challenge to Boardgame",
+                "file": null
+              },
+              {
+                "h3": "Make Shieldmaiden",
+                "file": null
+              },
+              {
+                "h3": "Abandon Hook",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Hostile actions",
+            "file": "pages/Interactions/03-Hostile-actions.md",
+            "bytes": 3846,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Disinherit",
+                "file": null
+              },
+              {
+                "h3": "Blackmail",
+                "file": null
+              },
+              {
+                "h3": "Murder",
+                "file": null
+              },
+              {
+                "h3": "Abduct",
+                "file": null
+              },
+              {
+                "h3": "Claim Throne",
+                "file": null
+              },
+              {
+                "h3": "Fabricate Hook",
+                "file": null
+              },
+              {
+                "h3": "Dismiss hook",
+                "file": null
+              },
+              {
+                "h3": "Excommunicate",
+                "file": null
+              },
+              {
+                "h3": "Request Excommunication",
+                "file": null
+              },
+              {
+                "h3": "Challenge Rival to Fight",
+                "file": null
+              },
+              {
+                "h3": "Punish Criminal",
+                "file": null
+              },
+              {
+                "h3": "Release your Anger",
+                "file": null
+              },
+              {
+                "h3": "Trial-by-Combat",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Appointment Actions",
+            "file": "pages/Interactions/04-Appointment-Actions.md",
+            "bytes": 16321,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Influence Candidacy",
+                "file": null
+              },
+              {
+                "h3": "Ask to Influence Candidacy",
+                "file": null
+              },
+              {
+                "h3": "Expand Power Base",
+                "file": null
+              },
+              {
+                "h3": "Slander",
+                "file": null
+              },
+              {
+                "h3": "Promote",
+                "file": null
+              },
+              {
+                "h3": "Retire Governor",
+                "file": null
+              },
+              {
+                "h3": "Request Retirement",
+                "file": null
+              },
+              {
+                "h3": "Force Retirement",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Vassal actions",
+            "file": "pages/Interactions/05-Vassal-actions.md",
+            "bytes": 5095,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Grant Landed Title",
+                "file": null
+              },
+              {
+                "h3": "Offer Vassalage",
+                "file": null
+              },
+              {
+                "h3": "Swear Fealty",
+                "file": null
+              },
+              {
+                "h3": "Grant Independence",
+                "file": null
+              },
+              {
+                "h3": "Grant Vassal",
+                "file": null
+              },
+              {
+                "h3": "Retract Vassal",
+                "file": null
+              },
+              {
+                "h3": "Factions",
+                "file": null
+              },
+              {
+                "h3": "Stop Vassal War",
+                "file": null
+              },
+              {
+                "h3": "Demand Council Position",
+                "file": null
+              },
+              {
+                "h3": "Ask for Pardon",
+                "file": null
+              },
+              {
+                "h3": "Grant Pardon",
+                "file": null
+              },
+              {
+                "h3": "Petition Liege",
+                "file": null
+              },
+              {
+                "h3": "Pay Homage",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Courtier Actions",
+            "file": "pages/Interactions/06-Courtier-Actions.md",
+            "bytes": 2225,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Ask to Take Vows",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Imprisonment actions",
+            "file": "pages/Interactions/07-Imprisonment-actions.md",
+            "bytes": 19422,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Negotiate Release",
+                "file": null
+              },
+              {
+                "h3": "Execute",
+                "file": null
+              },
+              {
+                "h3": "Ransom",
+                "file": null
+              },
+              {
+                "h3": "Pay Ransom",
+                "file": null
+              },
+              {
+                "h3": "Ransom Yourself",
+                "file": null
+              },
+              {
+                "h3": "Move to House Arrest",
+                "file": null
+              },
+              {
+                "h3": "Move to Dungeon",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Religious actions",
+            "file": "pages/Interactions/08-Religious-actions.md",
+            "bytes": 8623,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Demand Conversion",
+                "file": null
+              },
+              {
+                "h3": "Adopt Faith",
+                "file": null
+              },
+              {
+                "h3": "Seek Indulgences",
+                "file": null
+              },
+              {
+                "h3": "Make Declaration of Repentance",
+                "file": null
+              },
+              {
+                "h3": "Lift Excommunication",
+                "file": null
+              },
+              {
+                "h3": "Condemn Sins",
+                "file": null
+              },
+              {
+                "h3": "Ask for Gold",
+                "file": null
+              },
+              {
+                "h3": "Literalist Debate",
+                "file": null
+              },
+              {
+                "h3": "Designate Sacrifice",
+                "file": null
+              },
+              {
+                "h3": "Refute Sacrifice",
+                "file": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "Interesting characters": {
+      "title": "Interesting characters",
+      "oldid": 35740,
+      "fetched_at": "2026-10-23T09:24:41+08:00",
+      "game_version": "timeless",
+      "size_bytes": 359746,
+      "raw_file": "raw/Interesting characters.json",
+      "raw_bytes": 659000,
+      "cleaned_file": "pages/Interesting characters.md",
+      "cleaned_at": "2026-10-23T09:38:49+08:00",
+      "cleaned_bytes": 338430,
+      "cleaned_sha256": "227a75ae0ec42b8d37aecc00bcf456fc19e03e1cd5c468e60e09613dca1676c3",
+      "clean_stats": {
+        "html_bytes": 641924,
+        "md_bytes": 338430,
+        "h1": 4,
+        "h2": 22,
+        "h3": 78,
+        "tables": 6,
+        "code_blocks": 0,
+        "pruned_editsections": 305,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Interesting characters",
+        "index_bytes": 2349,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Christian characters",
+            "file": "pages/Interesting characters/01-Christian-characters.md",
+            "bytes": 112323,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Catholic",
+                "file": null
+              },
+              {
+                "h3": "Orthodox",
+                "file": null
+              },
+              {
+                "h3": "Apostolic",
+                "file": null
+              },
+              {
+                "h3": "Insular",
+                "file": null
+              },
+              {
+                "h3": "Coptic",
+                "file": null
+              },
+              {
+                "h3": "Nestorian",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Muslim characters",
+            "file": "pages/Interesting characters/02-Muslim-characters.md",
+            "bytes": 25084,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Ash'ari",
+                "file": null
+              },
+              {
+                "h3": "Ibadi",
+                "file": null
+              },
+              {
+                "h3": "Maturidi",
+                "file": null
+              },
+              {
+                "h3": "Mu'tazili",
+                "file": null
+              },
+              {
+                "h3": "Muwalladi",
+                "file": null
+              },
+              {
+                "h3": "Zayidi",
+                "file": null
+              },
+              {
+                "h3": "Isma'ili",
+                "file": null
+              },
+              {
+                "h3": "Azariqa",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Jewish characters",
+            "file": "pages/Interesting characters/03-Jewish-characters.md",
+            "bytes": 2427,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Haymanot",
+                "file": null
+              },
+              {
+                "h3": "Kuzarite",
+                "file": null
+              },
+              {
+                "h3": "Rabbinic",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Dualist characters",
+            "file": "pages/Interesting characters/04-Dualist-characters.md",
+            "bytes": 594,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Manichean",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Pagan characters",
+            "file": "pages/Interesting characters/05-Pagan-characters.md",
+            "bytes": 51833,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Ásatrú",
+                "file": null
+              },
+              {
+                "h3": "Akom",
+                "file": null
+              },
+              {
+                "h3": "Bidaic",
+                "file": null
+              },
+              {
+                "h3": "Bori",
+                "file": null
+              },
+              {
+                "h3": "Donyi-Poloist",
+                "file": null
+              },
+              {
+                "h3": "Kiratist",
+                "file": null
+              },
+              {
+                "h3": "Kushite",
+                "file": null
+              },
+              {
+                "h3": "Melie",
+                "file": null
+              },
+              {
+                "h3": "Orisan",
+                "file": null
+              },
+              {
+                "h3": "Roogan",
+                "file": null
+              },
+              {
+                "h3": "Sedist",
+                "file": null
+              },
+              {
+                "h3": "Shintō",
+                "file": null
+              },
+              {
+                "h3": "Siguic",
+                "file": null
+              },
+              {
+                "h3": "Slovianskan",
+                "file": null
+              },
+              {
+                "h3": "Táltosist",
+                "file": null
+              },
+              {
+                "h3": "Tengri",
+                "file": null
+              },
+              {
+                "h3": "Turumic",
+                "file": null
+              },
+              {
+                "h3": "Ukonusko",
+                "file": null
+              },
+              {
+                "h3": "Vidilist",
+                "file": null
+              },
+              {
+                "h3": "Waaqi",
+                "file": null
+              },
+              {
+                "h3": "Yumaist",
+                "file": null
+              },
+              {
+                "h3": "Achamánic",
+                "file": null
+              },
+              {
+                "h3": "Khyarwé Bönpo",
+                "file": null
+              },
+              {
+                "h3": "Muist",
+                "file": null
+              },
+              {
+                "h3": "Ezo",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Eastern religions",
+            "file": "pages/Interesting characters/06-Eastern-religions.md",
+            "bytes": 29339,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Buddhist",
+                "file": null
+              },
+              {
+                "h3": "Hindu",
+                "file": null
+              },
+              {
+                "h3": "Jain",
+                "file": null
+              },
+              {
+                "h3": "Taoist",
+                "file": null
+              },
+              {
+                "h3": "Confucian",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Landless Adventurers",
+            "file": "pages/Interesting characters/07-Landless-Adventurers.md",
+            "bytes": 5990,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Unlanded characters",
+            "file": "pages/Interesting characters/08-Unlanded-characters.md",
+            "bytes": 1758,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Legends of Crusader Kings III",
+            "file": "pages/Interesting characters/09-Legends-of-Crusader-Kings-III.md",
+            "bytes": 641,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Christian characters",
+            "file": "pages/Interesting characters/10-Christian-characters.md",
+            "bytes": 37562,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Catholic",
+                "file": null
+              },
+              {
+                "h3": "Orthodox",
+                "file": null
+              },
+              {
+                "h3": "Apostolic",
+                "file": null
+              },
+              {
+                "h3": "Insular",
+                "file": null
+              },
+              {
+                "h3": "Mozarabic",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Muslim characters",
+            "file": "pages/Interesting characters/11-Muslim-characters.md",
+            "bytes": 9298,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Ash'ari",
+                "file": null
+              },
+              {
+                "h3": "Isma'ili",
+                "file": null
+              },
+              {
+                "h3": "Druze",
+                "file": null
+              },
+              {
+                "h3": "Maturidi",
+                "file": null
+              },
+              {
+                "h3": "Muwalladi",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Pagan characters",
+            "file": "pages/Interesting characters/12-Pagan-characters.md",
+            "bytes": 2280,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Ásatrú",
+                "file": null
+              },
+              {
+                "h3": "Bidaic",
+                "file": null
+              },
+              {
+                "h3": "Slovianskan",
+                "file": null
+              },
+              {
+                "h3": "Ukonusko",
+                "file": null
+              },
+              {
+                "h3": "Shinto",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Eastern religions",
+            "file": "pages/Interesting characters/13-Eastern-religions.md",
+            "bytes": 3715,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Buddhist",
+                "file": null
+              },
+              {
+                "h3": "Hindu - Shaivism",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Landless Adventurers",
+            "file": "pages/Interesting characters/14-Landless-Adventurers.md",
+            "bytes": 5648,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Unlanded characters",
+            "file": "pages/Interesting characters/15-Unlanded-characters.md",
+            "bytes": 3389,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Christian characters",
+            "file": "pages/Interesting characters/16-Christian-characters.md",
+            "bytes": 10940,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Catholic",
+                "file": null
+              },
+              {
+                "h3": "Orthodox",
+                "file": null
+              },
+              {
+                "h3": "Apostolic",
+                "file": null
+              },
+              {
+                "h3": "Nestorian",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Muslim characters",
+            "file": "pages/Interesting characters/17-Muslim-characters.md",
+            "bytes": 3341,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Ash'ari",
+                "file": null
+              },
+              {
+                "h3": "Maturidi",
+                "file": null
+              },
+              {
+                "h3": "Isma'ili",
+                "file": null
+              },
+              {
+                "h3": "Nizari",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Buddhist Characters",
+            "file": "pages/Interesting characters/18-Buddhist-Characters.md",
+            "bytes": 683,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Mahayana",
+                "file": null
+              },
+              {
+                "h3": "Theravada",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Hindu Characters",
+            "file": "pages/Interesting characters/19-Hindu-Characters.md",
+            "bytes": 394,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Shaivism",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Pagan characters",
+            "file": "pages/Interesting characters/20-Pagan-characters.md",
+            "bytes": 1551,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Slovianskan",
+                "file": null
+              },
+              {
+                "h3": "Tengri",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Landless Adventurers",
+            "file": "pages/Interesting characters/21-Landless-Adventurers.md",
+            "bytes": 6518,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Unlanded characters",
+            "file": "pages/Interesting characters/22-Unlanded-characters.md",
+            "bytes": 22494,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Jargon": {
+      "title": "Jargon",
+      "oldid": 36758,
+      "fetched_at": "2026-10-23T09:24:56+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3563,
+      "raw_file": "raw/Jargon.json",
+      "raw_bytes": 12078,
+      "cleaned_file": "pages/Jargon.md",
+      "cleaned_at": "2026-10-23T09:38:49+08:00",
+      "cleaned_bytes": 4488,
+      "cleaned_sha256": "ee580ac50e65f9b605b8bcbd83c3dd970f0ba361517b633f0a9fbfd75575f5a2",
+      "clean_stats": {
+        "html_bytes": 11405,
+        "md_bytes": 4488,
+        "h1": 0,
+        "h2": 2,
+        "h3": 0,
+        "tables": 5,
+        "code_blocks": 0,
+        "pruned_editsections": 2,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Khans of the Steppe": {
+      "title": "Khans of the Steppe",
+      "oldid": 37047,
+      "fetched_at": "2026-10-23T09:25:10+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3442,
+      "raw_file": "raw/Khans of the Steppe.json",
+      "raw_bytes": 16414,
+      "cleaned_file": "pages/Khans of the Steppe.md",
+      "cleaned_at": "2026-10-23T09:38:49+08:00",
+      "cleaned_bytes": 3546,
+      "cleaned_sha256": "b4f2962e08ba93ef534e14b60a1142cf432dbee0753278ea63b05b44977ac2e0",
+      "clean_stats": {
+        "html_bytes": 15552,
+        "md_bytes": 3546,
+        "h1": 0,
+        "h2": 4,
+        "h3": 3,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Kingdom of Heaven": {
+      "title": "Kingdom of Heaven",
+      "oldid": 13709,
+      "fetched_at": "2026-10-23T09:25:25+08:00",
+      "game_version": null,
+      "size_bytes": 2324,
+      "raw_file": "raw/Kingdom of Heaven.json",
+      "raw_bytes": 10413,
+      "cleaned_file": "pages/Kingdom of Heaven.md",
+      "cleaned_at": "2026-10-23T09:38:49+08:00",
+      "cleaned_bytes": 2440,
+      "cleaned_sha256": "f97ba32bfe166255d0780689c60debdd88f13cdc8f9ac27139f413791530d1c1",
+      "clean_stats": {
+        "html_bytes": 9897,
+        "md_bytes": 2440,
+        "h1": 0,
+        "h2": 1,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 0,
+        "pruned_editsections": 1,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Kinslayer (disambiguation)": {
+      "title": "Kinslayer (disambiguation)",
+      "oldid": 6510,
+      "fetched_at": "2026-10-23T09:25:40+08:00",
+      "game_version": null,
+      "size_bytes": 515,
+      "raw_file": "raw/Kinslayer (disambiguation).json",
+      "raw_bytes": 2953,
+      "cleaned_file": "pages/Kinslayer (disambiguation).md",
+      "cleaned_at": "2026-10-23T09:38:49+08:00",
+      "cleaned_bytes": 688,
+      "cleaned_sha256": "a5d4d766a92cff7bfb9b7e232495629b43101be1e8fdeb2eacaecb6cbd79ab40",
+      "clean_stats": {
+        "html_bytes": 2716,
+        "md_bytes": 688,
+        "h1": 0,
+        "h2": 0,
+        "h3": 0,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 0,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Knight": {
+      "title": "Knight",
+      "oldid": 36532,
+      "fetched_at": "2026-10-23T09:25:55+08:00",
+      "game_version": null,
+      "size_bytes": 40279,
+      "raw_file": "raw/Knight.json",
+      "raw_bytes": 188997,
+      "cleaned_file": "pages/Knight.md",
+      "cleaned_at": "2026-10-23T09:38:50+08:00",
+      "cleaned_bytes": 26730,
+      "cleaned_sha256": "8720e41cc3f29482cf5e651d9b48f6ac142bbc6dbf6d3b59fc62afa3df76a772",
+      "clean_stats": {
+        "html_bytes": 176364,
+        "md_bytes": 26730,
+        "h1": 0,
+        "h2": 6,
+        "h3": 2,
+        "tables": 11,
+        "code_blocks": 0,
+        "pruned_editsections": 9,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Laws": {
+      "title": "Laws",
+      "oldid": 37112,
+      "fetched_at": "2026-10-23T09:26:11+08:00",
+      "game_version": null,
+      "size_bytes": 10835,
+      "raw_file": "raw/Laws.json",
+      "raw_bytes": 49949,
+      "cleaned_file": "pages/Laws.md",
+      "cleaned_at": "2026-10-23T09:38:50+08:00",
+      "cleaned_bytes": 9913,
+      "cleaned_sha256": "8f5452b9a0783ffffc04eba86100b54feb1c0ba9705c1588276ea95e708f49ab",
+      "clean_stats": {
+        "html_bytes": 46960,
+        "md_bytes": 9913,
+        "h1": 0,
+        "h2": 7,
+        "h3": 1,
+        "tables": 13,
+        "code_blocks": 0,
+        "pruned_editsections": 8,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Legacy of Persia": {
+      "title": "Legacy of Persia",
+      "oldid": 37050,
+      "fetched_at": "2026-10-23T09:26:25+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3773,
+      "raw_file": "raw/Legacy of Persia.json",
+      "raw_bytes": 17989,
+      "cleaned_file": "pages/Legacy of Persia.md",
+      "cleaned_at": "2026-10-23T09:38:50+08:00",
+      "cleaned_bytes": 2557,
+      "cleaned_sha256": "8701516477a69a9f656f0bdc59bd0a6cdf3ca79321ab874b24d310dbf0efce32",
+      "clean_stats": {
+        "html_bytes": 17014,
+        "md_bytes": 2557,
+        "h1": 0,
+        "h2": 4,
+        "h3": 2,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 6,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Legends of the Dead": {
+      "title": "Legends of the Dead",
+      "oldid": 37042,
+      "fetched_at": "2026-10-23T09:26:40+08:00",
+      "game_version": "timeless",
+      "size_bytes": 4698,
+      "raw_file": "raw/Legends of the Dead.json",
+      "raw_bytes": 20211,
+      "cleaned_file": "pages/Legends of the Dead.md",
+      "cleaned_at": "2026-10-23T09:38:50+08:00",
+      "cleaned_bytes": 3207,
+      "cleaned_sha256": "eaf53f31d580b92b68b6da26ab302e0ea2f574813bc839e14f1a9a55a77638b9",
+      "clean_stats": {
+        "html_bytes": 19145,
+        "md_bytes": 3207,
+        "h1": 0,
+        "h2": 4,
+        "h3": 2,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 6,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "LotR: Realms in Exile": {
+      "title": "LotR: Realms in Exile",
+      "oldid": 34810,
+      "fetched_at": "2026-10-23T09:27:10+08:00",
+      "game_version": null,
+      "size_bytes": 12785,
+      "raw_file": "raw/LotR_ Realms in Exile.json",
+      "raw_bytes": 27941,
+      "cleaned_file": "pages/LotR_ Realms in Exile.md",
+      "cleaned_at": "2026-10-23T09:38:50+08:00",
+      "cleaned_bytes": 7715,
+      "cleaned_sha256": "851a6837d9d9153bbd1ccc132a769d9bb232b99fd30c155dd95c4034346cd902",
+      "clean_stats": {
+        "html_bytes": 26675,
+        "md_bytes": 7715,
+        "h1": 0,
+        "h2": 4,
+        "h3": 1,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 0,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Mechanics": {
+      "title": "Mechanics",
+      "oldid": 37022,
+      "fetched_at": "2026-10-23T09:27:25+08:00",
+      "game_version": "1.4",
+      "size_bytes": 5308,
+      "raw_file": "raw/Mechanics.json",
+      "raw_bytes": 30506,
+      "cleaned_file": "pages/Mechanics.md",
+      "cleaned_at": "2026-10-23T09:38:50+08:00",
+      "cleaned_bytes": 3383,
+      "cleaned_sha256": "d01c24ad0b572efe462f85301cc89741bbdfbe29ea1b1990ec5f30123427ac22",
+      "clean_stats": {
+        "html_bytes": 28236,
+        "md_bytes": 3383,
+        "h1": 0,
+        "h2": 5,
+        "h3": 0,
+        "tables": 10,
+        "code_blocks": 0,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Medieval Arts": {
+      "title": "Medieval Arts",
+      "oldid": 32564,
+      "fetched_at": "2026-10-23T09:27:40+08:00",
+      "game_version": null,
+      "size_bytes": 73102,
+      "raw_file": "raw/Medieval Arts.json",
+      "raw_bytes": 310542,
+      "cleaned_file": "pages/Medieval Arts.md",
+      "cleaned_at": "2026-10-23T09:38:50+08:00",
+      "cleaned_bytes": 59341,
+      "cleaned_sha256": "18f7ff11beb4cea701d19aa20d07a44d560162f2701e15879e5096339c66a280",
+      "clean_stats": {
+        "html_bytes": 291241,
+        "md_bytes": 59341,
+        "h1": 0,
+        "h2": 2,
+        "h3": 3,
+        "tables": 2,
+        "code_blocks": 0,
+        "pruned_editsections": 8,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Medieval Arts",
+        "index_bytes": 3048,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Special buildings",
+            "file": "pages/Medieval Arts/01-Special-buildings.md",
+            "bytes": 55505,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Upgradable Special buildings",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Map objects",
+            "file": "pages/Medieval Arts/02-Map-objects.md",
+            "bytes": 1193,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "For base game Special buildings",
+                "file": null
+              },
+              {
+                "h3": "Unique cities",
+                "file": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "Modifiers": {
+      "title": "Modifiers",
+      "oldid": 37348,
+      "fetched_at": "2026-10-23T09:27:56+08:00",
+      "game_version": null,
+      "size_bytes": 80563,
+      "raw_file": "raw/Modifiers.json",
+      "raw_bytes": 422233,
+      "cleaned_file": "pages/Modifiers.md",
+      "cleaned_at": "2026-10-23T09:38:51+08:00",
+      "cleaned_bytes": 49117,
+      "cleaned_sha256": "6c3e1dca61903b6c9f0386606da1cd58b8ceac98d2b2aa2b8cdb422a0db42174",
+      "clean_stats": {
+        "html_bytes": 392927,
+        "md_bytes": 49117,
+        "h1": 0,
+        "h2": 15,
+        "h3": 7,
+        "tables": 37,
+        "code_blocks": 0,
+        "pruned_editsections": 25,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Nickname": {
+      "title": "Nickname",
+      "oldid": 35899,
+      "fetched_at": "2026-10-23T09:28:11+08:00",
+      "game_version": "1.4",
+      "size_bytes": 77876,
+      "raw_file": "raw/Nickname.json",
+      "raw_bytes": 272392,
+      "cleaned_file": "pages/Nickname.md",
+      "cleaned_at": "2026-10-23T09:38:51+08:00",
+      "cleaned_bytes": 60354,
+      "cleaned_sha256": "5702d0c7e9d20f2d8c8ad8901875037d3b07555034fc5bb0c4b6db249292c73a",
+      "clean_stats": {
+        "html_bytes": 253533,
+        "md_bytes": 60354,
+        "h1": 0,
+        "h2": 6,
+        "h3": 4,
+        "tables": 8,
+        "code_blocks": 0,
+        "pruned_editsections": 10,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Nickname",
+        "index_bytes": 1412,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "List of obtainable nicknames",
+            "file": "pages/Nickname/01-List-of-obtainable-nicknames.md",
+            "bytes": 43390,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Obtained from Decisions",
+                "file": null
+              },
+              {
+                "h3": "Obtained from Events",
+                "file": null
+              },
+              {
+                "h3": "Obtained from Traits and Stats",
+                "file": null
+              },
+              {
+                "h3": "Obtainable Nicknames from other sources",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Unobtainable nicknames",
+            "file": "pages/Nickname/02-Unobtainable-nicknames.md",
+            "bytes": 767,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "List of historical nicknames",
+            "file": "pages/Nickname/03-List-of-historical-nicknames.md",
+            "bytes": 13202,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "List of unused nicknames",
+            "file": "pages/Nickname/04-List-of-unused-nicknames.md",
+            "bytes": 1180,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Nickname ID",
+            "file": "pages/Nickname/05-Nickname-ID.md",
+            "bytes": 1085,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "References",
+            "file": "pages/Nickname/06-References.md",
+            "bytes": 14,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Nightmare in Britain": {
+      "title": "Nightmare in Britain",
+      "oldid": 26078,
+      "fetched_at": "2026-10-23T09:28:26+08:00",
+      "game_version": null,
+      "size_bytes": 13559,
+      "raw_file": "raw/Nightmare in Britain.json",
+      "raw_bytes": 26856,
+      "cleaned_file": "pages/Nightmare in Britain.md",
+      "cleaned_at": "2026-10-23T09:38:51+08:00",
+      "cleaned_bytes": 13442,
+      "cleaned_sha256": "1493d8d56844f31868a3bf48b43a421d4e3cb7d29761660b3d5402687322466f",
+      "clean_stats": {
+        "html_bytes": 26062,
+        "md_bytes": 13442,
+        "h1": 0,
+        "h2": 1,
+        "h3": 5,
+        "tables": 0,
+        "code_blocks": 0,
+        "pruned_editsections": 11,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Northern Lords": {
+      "title": "Northern Lords",
+      "oldid": 33543,
+      "fetched_at": "2026-10-23T09:28:40+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3623,
+      "raw_file": "raw/Northern Lords.json",
+      "raw_bytes": 20403,
+      "cleaned_file": "pages/Northern Lords.md",
+      "cleaned_at": "2026-10-23T09:38:51+08:00",
+      "cleaned_bytes": 4434,
+      "cleaned_sha256": "23e2b6e4e960e580da64a308de76fb0e578924730f4389484685022fd55ad646",
+      "clean_stats": {
+        "html_bytes": 19358,
+        "md_bytes": 4434,
+        "h1": 0,
+        "h2": 5,
+        "h3": 2,
+        "tables": 2,
+        "code_blocks": 0,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Power sharing": {
+      "title": "Power sharing",
+      "oldid": 36719,
+      "fetched_at": "2026-10-23T09:29:10+08:00",
+      "game_version": null,
+      "size_bytes": 20976,
+      "raw_file": "raw/Power sharing.json",
+      "raw_bytes": 80044,
+      "cleaned_file": "pages/Power sharing.md",
+      "cleaned_at": "2026-10-23T09:38:51+08:00",
+      "cleaned_bytes": 18662,
+      "cleaned_sha256": "ce9cb151d972988a723106077943a2f7a306ae994602efe634e43719456c67fa",
+      "clean_stats": {
+        "html_bytes": 75054,
+        "md_bytes": 18662,
+        "h1": 0,
+        "h2": 8,
+        "h3": 1,
+        "tables": 16,
+        "code_blocks": 0,
+        "pruned_editsections": 9,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Prisoner": {
+      "title": "Prisoner",
+      "oldid": 36542,
+      "fetched_at": "2026-10-23T09:29:25+08:00",
+      "game_version": null,
+      "size_bytes": 19788,
+      "raw_file": "raw/Prisoner.json",
+      "raw_bytes": 79122,
+      "cleaned_file": "pages/Prisoner.md",
+      "cleaned_at": "2026-10-23T09:38:51+08:00",
+      "cleaned_bytes": 16967,
+      "cleaned_sha256": "5d0c7b14ec16cd769eaf30b3910c09b44d2674604179d937e86611b1da958de1",
+      "clean_stats": {
+        "html_bytes": 73751,
+        "md_bytes": 16967,
+        "h1": 0,
+        "h2": 7,
+        "h3": 6,
+        "tables": 12,
+        "code_blocks": 0,
+        "pruned_editsections": 13,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Traits": {
+      "title": "Traits",
+      "oldid": 37335,
+      "fetched_at": "2026-10-23T09:36:25+08:00",
+      "game_version": null,
+      "size_bytes": 172576,
+      "raw_file": "raw/Traits.json",
+      "raw_bytes": 860516,
+      "cleaned_file": "pages/Traits.md",
+      "cleaned_at": "2026-10-23T09:38:52+08:00",
+      "cleaned_bytes": 103148,
+      "cleaned_sha256": "1d52a634248f6a02e8442e75db820fa9d761d034984fbbcba27dc4de19439bf2",
+      "clean_stats": {
+        "html_bytes": 801541,
+        "md_bytes": 103148,
+        "h1": 0,
+        "h2": 17,
+        "h3": 8,
+        "tables": 29,
+        "code_blocks": 0,
+        "pruned_editsections": 25,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Traits",
+        "index_bytes": 1878,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Personality traits",
+            "file": "pages/Traits/01-Personality-traits.md",
+            "bytes": 16189,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Education traits",
+            "file": "pages/Traits/02-Education-traits.md",
+            "bytes": 4217,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Congenital traits",
+            "file": "pages/Traits/03-Congenital-traits.md",
+            "bytes": 7873,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Leveled congenital traits",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Physical traits",
+            "file": "pages/Traits/04-Physical-traits.md",
+            "bytes": 2006,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Leveled traits",
+            "file": "pages/Traits/05-Leveled-traits.md",
+            "bytes": 17498,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Commander traits",
+                "file": null
+              },
+              {
+                "h3": "Adventurer traits",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Lifestyle traits",
+            "file": "pages/Traits/06-Lifestyle-traits.md",
+            "bytes": 6541,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Infamy traits",
+            "file": "pages/Traits/07-Infamy-traits.md",
+            "bytes": 2759,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Coping mechanisms",
+            "file": "pages/Traits/08-Coping-mechanisms.md",
+            "bytes": 5594,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Childhood traits",
+            "file": "pages/Traits/09-Childhood-traits.md",
+            "bytes": 2206,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Health traits",
+            "file": "pages/Traits/10-Health-traits.md",
+            "bytes": 12596,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Wounds",
+                "file": null
+              },
+              {
+                "h3": "Diseases",
+                "file": null
+              },
+              {
+                "h3": "Old age traits",
+                "file": null
+              },
+              {
+                "h3": "Incapable",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Dynasty traits",
+            "file": "pages/Traits/11-Dynasty-traits.md",
+            "bytes": 7448,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Descendant traits",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Decision traits",
+            "file": "pages/Traits/12-Decision-traits.md",
+            "bytes": 6520,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Faith traits",
+            "file": "pages/Traits/13-Faith-traits.md",
+            "bytes": 3607,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Event traits",
+            "file": "pages/Traits/14-Event-traits.md",
+            "bytes": 3251,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Court type traits",
+            "file": "pages/Traits/15-Court-type-traits.md",
+            "bytes": 2760,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Immortal",
+            "file": "pages/Traits/16-Immortal.md",
+            "bytes": 458,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "References",
+            "file": "pages/Traits/17-References.md",
+            "bytes": 982,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Rajas of Asia": {
+      "title": "Rajas of Asia",
+      "oldid": 26393,
+      "fetched_at": "2026-10-23T09:30:00+08:00",
+      "game_version": null,
+      "size_bytes": 2467,
+      "raw_file": "raw/Rajas of Asia.json",
+      "raw_bytes": 3769,
+      "cleaned_file": "pages/Rajas of Asia.md",
+      "cleaned_at": "2026-10-23T09:38:52+08:00",
+      "cleaned_bytes": 2366,
+      "cleaned_sha256": "82104f704777453694f95f4522082c4643704fcb7fb5e54ace60c163eceaf407",
+      "clean_stats": {
+        "html_bytes": 3611,
+        "md_bytes": 2366,
+        "h1": 0,
+        "h2": 1,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 0,
+        "pruned_editsections": 1,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Religion": {
+      "title": "Religion",
+      "oldid": 37180,
+      "fetched_at": "2026-10-23T09:30:10+08:00",
+      "game_version": null,
+      "size_bytes": 47896,
+      "raw_file": "raw/Religion.json",
+      "raw_bytes": 180267,
+      "cleaned_file": "pages/Religion.md",
+      "cleaned_at": "2026-10-23T09:38:52+08:00",
+      "cleaned_bytes": 40235,
+      "cleaned_sha256": "f2359c60b9de5da22458dd336918d3843a842c58f0d6eed60eb91cdf45e32442",
+      "clean_stats": {
+        "html_bytes": 169689,
+        "md_bytes": 40235,
+        "h1": 0,
+        "h2": 13,
+        "h3": 6,
+        "tables": 22,
+        "code_blocks": 0,
+        "pruned_editsections": 19,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Resources": {
+      "title": "Resources",
+      "oldid": 37127,
+      "fetched_at": "2026-10-23T09:30:44+08:00",
+      "game_version": null,
+      "size_bytes": 29245,
+      "raw_file": "raw/Resources.json",
+      "raw_bytes": 140952,
+      "cleaned_file": "pages/Resources.md",
+      "cleaned_at": "2026-10-23T09:38:53+08:00",
+      "cleaned_bytes": 20744,
+      "cleaned_sha256": "e8bc4da3feddb1b8472430e0ddcb238aa7637777e6786b3a2bad61b690dfe253",
+      "clean_stats": {
+        "html_bytes": 131522,
+        "md_bytes": 20744,
+        "h1": 0,
+        "h2": 8,
+        "h3": 6,
+        "tables": 18,
+        "code_blocks": 0,
+        "pruned_editsections": 15,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Roads to Power": {
+      "title": "Roads to Power",
+      "oldid": 37049,
+      "fetched_at": "2026-10-23T09:31:12+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3905,
+      "raw_file": "raw/Roads to Power.json",
+      "raw_bytes": 16250,
+      "cleaned_file": "pages/Roads to Power.md",
+      "cleaned_at": "2026-10-23T09:38:53+08:00",
+      "cleaned_bytes": 4064,
+      "cleaned_sha256": "459cdede7c569b3aa7a6c9da956c5759df1c06385a6c0804aac31dccf5c1f5b4",
+      "clean_stats": {
+        "html_bytes": 15403,
+        "md_bytes": 4064,
+        "h1": 0,
+        "h2": 4,
+        "h3": 1,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Royal Court (DLC)": {
+      "title": "Royal Court (DLC)",
+      "oldid": 33541,
+      "fetched_at": "2026-10-23T09:31:25+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3481,
+      "raw_file": "raw/Royal Court (DLC).json",
+      "raw_bytes": 35448,
+      "cleaned_file": "pages/Royal Court (DLC).md",
+      "cleaned_at": "2026-10-23T09:38:53+08:00",
+      "cleaned_bytes": 6489,
+      "cleaned_sha256": "3e6cf9378940951d7a4cbbeb2024410988885511d5183fd77b164be746439bf3",
+      "clean_stats": {
+        "html_bytes": 33596,
+        "md_bytes": 6489,
+        "h1": 0,
+        "h2": 4,
+        "h3": 3,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Royal court": {
+      "title": "Royal court",
+      "oldid": 37267,
+      "fetched_at": "2026-10-23T09:31:40+08:00",
+      "game_version": null,
+      "size_bytes": 16417,
+      "raw_file": "raw/Royal court.json",
+      "raw_bytes": 61235,
+      "cleaned_file": "pages/Royal court.md",
+      "cleaned_at": "2026-10-23T09:38:53+08:00",
+      "cleaned_bytes": 14244,
+      "cleaned_sha256": "cf0ef98048c17e8ef1ae871c02962745b05d5bbfacf21166cfb5b710f0416796",
+      "clean_stats": {
+        "html_bytes": 57550,
+        "md_bytes": 14244,
+        "h1": 0,
+        "h2": 2,
+        "h3": 4,
+        "tables": 11,
+        "code_blocks": 0,
+        "pruned_editsections": 10,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Ruler Designer": {
+      "title": "Ruler Designer",
+      "oldid": 36991,
+      "fetched_at": "2026-10-23T09:31:55+08:00",
+      "game_version": "timeless",
+      "size_bytes": 9427,
+      "raw_file": "raw/Ruler Designer.json",
+      "raw_bytes": 19541,
+      "cleaned_file": "pages/Ruler Designer.md",
+      "cleaned_at": "2026-10-23T09:38:53+08:00",
+      "cleaned_bytes": 9230,
+      "cleaned_sha256": "a51689782051667c59dee1051889c38b193207a5ac6b73786129a276dae77c6d",
+      "clean_stats": {
+        "html_bytes": 18822,
+        "md_bytes": 9230,
+        "h1": 0,
+        "h2": 4,
+        "h3": 6,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 10,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Schemes": {
+      "title": "Schemes",
+      "oldid": 37344,
+      "fetched_at": "2026-10-23T09:32:41+08:00",
+      "game_version": null,
+      "size_bytes": 78490,
+      "raw_file": "raw/Schemes.json",
+      "raw_bytes": 417534,
+      "cleaned_file": "pages/Schemes.md",
+      "cleaned_at": "2026-10-23T09:38:53+08:00",
+      "cleaned_bytes": 48923,
+      "cleaned_sha256": "73f6ac13ef4a31cab1d64093eeee8c72ced0ce3ba1b976393ac8cf71dab10329",
+      "clean_stats": {
+        "html_bytes": 388679,
+        "md_bytes": 48923,
+        "h1": 0,
+        "h2": 8,
+        "h3": 5,
+        "tables": 22,
+        "code_blocks": 0,
+        "pruned_editsections": 14,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Situation": {
+      "title": "Situation",
+      "oldid": 37298,
+      "fetched_at": "2026-10-23T09:32:56+08:00",
+      "game_version": null,
+      "size_bytes": 71842,
+      "raw_file": "raw/Situation.json",
+      "raw_bytes": 283201,
+      "cleaned_file": "pages/Situation.md",
+      "cleaned_at": "2026-10-23T09:38:54+08:00",
+      "cleaned_bytes": 51790,
+      "cleaned_sha256": "0ba07ac10969ccff87f524942ca5572b70640fc610fdf579521616845b0af272",
+      "clean_stats": {
+        "html_bytes": 265704,
+        "md_bytes": 51790,
+        "h1": 0,
+        "h2": 6,
+        "h3": 7,
+        "tables": 20,
+        "code_blocks": 0,
+        "pruned_editsections": 14,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Situation",
+        "index_bytes": 1139,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Natural disasters",
+            "file": "pages/Situation/01-Natural-disasters.md",
+            "bytes": 11542,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Earthquake",
+                "file": null
+              },
+              {
+                "h3": "Flood",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Dynastic Cycle",
+            "file": "pages/Situation/02-Dynastic-Cycle.md",
+            "bytes": 16567,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Eras",
+                "file": null
+              },
+              {
+                "h3": "Division",
+                "file": null
+              },
+              {
+                "h3": "Political movements",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "The Silk Road",
+            "file": "pages/Situation/03-The-Silk-Road.md",
+            "bytes": 3678,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Steppe seasons",
+            "file": "pages/Situation/04-Steppe-seasons.md",
+            "bytes": 3600,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "The Christian Church",
+            "file": "pages/Situation/05-The-Christian-Church.md",
+            "bytes": 14912,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Before Great Schism",
+                "file": null
+              },
+              {
+                "h3": "After the Great Schism",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "References",
+            "file": "pages/Situation/06-References.md",
+            "bytes": 982,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Subjects": {
+      "title": "Subjects",
+      "oldid": 36525,
+      "fetched_at": "2026-10-23T09:33:43+08:00",
+      "game_version": null,
+      "size_bytes": 46456,
+      "raw_file": "raw/Subjects.json",
+      "raw_bytes": 206241,
+      "cleaned_file": "pages/Subjects.md",
+      "cleaned_at": "2026-10-23T09:38:54+08:00",
+      "cleaned_bytes": 36703,
+      "cleaned_sha256": "0cd4e12d3fc24a9f6d46b53323cf71ad2361da9dbcd96f474f671bf7927f2174",
+      "clean_stats": {
+        "html_bytes": 192458,
+        "md_bytes": 36703,
+        "h1": 0,
+        "h2": 4,
+        "h3": 10,
+        "tables": 17,
+        "code_blocks": 0,
+        "pruned_editsections": 21,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Succession": {
+      "title": "Succession",
+      "oldid": 35670,
+      "fetched_at": "2026-10-23T09:33:56+08:00",
+      "game_version": "1.10",
+      "size_bytes": 13433,
+      "raw_file": "raw/Succession.json",
+      "raw_bytes": 38673,
+      "cleaned_file": "pages/Succession.md",
+      "cleaned_at": "2026-10-23T09:38:54+08:00",
+      "cleaned_bytes": 11972,
+      "cleaned_sha256": "3c44a3721c8abb5c70f2ea9df1eb0cb7a0d51a8c3e81f22b7f313c29f8064e6d",
+      "clean_stats": {
+        "html_bytes": 36927,
+        "md_bytes": 11972,
+        "h1": 0,
+        "h2": 10,
+        "h3": 2,
+        "tables": 0,
+        "code_blocks": 0,
+        "pruned_editsections": 18,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "The Fallen Eagle": {
+      "title": "The Fallen Eagle",
+      "oldid": 29517,
+      "fetched_at": "2026-10-23T09:34:56+08:00",
+      "game_version": null,
+      "size_bytes": 1937,
+      "raw_file": "raw/The Fallen Eagle.json",
+      "raw_bytes": 3195,
+      "cleaned_file": "pages/The Fallen Eagle.md",
+      "cleaned_at": "2026-10-23T09:38:54+08:00",
+      "cleaned_bytes": 1876,
+      "cleaned_sha256": "ede0e9cbb656f910f67915ff9c9a8193fa6f04ccb93a9c3b04562e8e2b4c62ea",
+      "clean_stats": {
+        "html_bytes": 3042,
+        "md_bytes": 1876,
+        "h1": 0,
+        "h2": 1,
+        "h3": 0,
+        "tables": 0,
+        "code_blocks": 0,
+        "pruned_editsections": 1,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Titles": {
+      "title": "Titles",
+      "oldid": 37353,
+      "fetched_at": "2026-10-23T09:35:10+08:00",
+      "game_version": null,
+      "size_bytes": 33400,
+      "raw_file": "raw/Titles.json",
+      "raw_bytes": 120348,
+      "cleaned_file": "pages/Titles.md",
+      "cleaned_at": "2026-10-23T09:38:54+08:00",
+      "cleaned_bytes": 27008,
+      "cleaned_sha256": "3d87e9802533a8ae868b7d6434575538de1e0033c373d532573b185dbc39cc4b",
+      "clean_stats": {
+        "html_bytes": 113076,
+        "md_bytes": 27008,
+        "h1": 0,
+        "h2": 10,
+        "h3": 3,
+        "tables": 16,
+        "code_blocks": 0,
+        "pruned_editsections": 13,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Tours and Tournaments": {
+      "title": "Tours and Tournaments",
+      "oldid": 33546,
+      "fetched_at": "2026-10-23T09:35:26+08:00",
+      "game_version": "timeless",
+      "size_bytes": 7883,
+      "raw_file": "raw/Tours and Tournaments.json",
+      "raw_bytes": 39409,
+      "cleaned_file": "pages/Tours and Tournaments.md",
+      "cleaned_at": "2026-10-23T09:38:54+08:00",
+      "cleaned_bytes": 4895,
+      "cleaned_sha256": "572e25ca99f5e0285b367160de25f05f71d0da3107150cf1173fa15b63a89e30",
+      "clean_stats": {
+        "html_bytes": 37366,
+        "md_bytes": 4895,
+        "h1": 0,
+        "h2": 4,
+        "h3": 3,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Traditions": {
+      "title": "Traditions",
+      "oldid": 37292,
+      "fetched_at": "2026-10-23T09:35:41+08:00",
+      "game_version": "1.18",
+      "size_bytes": 303858,
+      "raw_file": "raw/Traditions.json",
+      "raw_bytes": 1251756,
+      "cleaned_file": "pages/Traditions.md",
+      "cleaned_at": "2026-10-23T09:38:55+08:00",
+      "cleaned_bytes": 158369,
+      "cleaned_sha256": "2517b8ad9294e733c3a048c56423a1ab38518b8ab03a6ecdae88158d8dad4b7e",
+      "clean_stats": {
+        "html_bytes": 1172998,
+        "md_bytes": 158369,
+        "h1": 0,
+        "h2": 10,
+        "h3": 2,
+        "tables": 12,
+        "code_blocks": 0,
+        "pruned_editsections": 12,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": true,
+        "chapter_dir": "pages/Traditions",
+        "index_bytes": 1959,
+        "reassembled_ok": true,
+        "chapters": [
+          {
+            "h2": "Effects",
+            "file": "pages/Traditions/01-Effects.md",
+            "bytes": 1501,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Requirements",
+            "file": "pages/Traditions/02-Requirements.md",
+            "bytes": 1084,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Prestige Cost",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Establishment",
+            "file": "pages/Traditions/03-Establishment.md",
+            "bytes": 1016,
+            "h3_split": false,
+            "subs": [
+              {
+                "h3": "Cooldown",
+                "file": null
+              }
+            ]
+          },
+          {
+            "h2": "Realm traditions",
+            "file": "pages/Traditions/04-Realm-traditions.md",
+            "bytes": 35718,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Warfare traditions",
+            "file": "pages/Traditions/05-Warfare-traditions.md",
+            "bytes": 22380,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Social traditions",
+            "file": "pages/Traditions/06-Social-traditions.md",
+            "bytes": 26597,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Ritual traditions",
+            "file": "pages/Traditions/07-Ritual-traditions.md",
+            "bytes": 12056,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Regional traditions",
+            "file": "pages/Traditions/08-Regional-traditions.md",
+            "bytes": 55795,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "Parameters",
+            "file": "pages/Traditions/09-Parameters.md",
+            "bytes": 125,
+            "h3_split": false,
+            "subs": []
+          },
+          {
+            "h2": "References",
+            "file": "pages/Traditions/10-References.md",
+            "bytes": 982,
+            "h3_split": false,
+            "subs": []
+          }
+        ]
+      }
+    },
+    "Travel": {
+      "title": "Travel",
+      "oldid": 36519,
+      "fetched_at": "2026-10-23T09:36:15+08:00",
+      "game_version": null,
+      "size_bytes": 20293,
+      "raw_file": "raw/Travel.json",
+      "raw_bytes": 88688,
+      "cleaned_file": "pages/Travel.md",
+      "cleaned_at": "2026-10-23T09:38:55+08:00",
+      "cleaned_bytes": 15948,
+      "cleaned_sha256": "e313d95ed09139b8b3d844f2c991599fbe6a6eace2329dce17826ca8f6f3a72d",
+      "clean_stats": {
+        "html_bytes": 83294,
+        "md_bytes": 15948,
+        "h1": 0,
+        "h2": 4,
+        "h3": 3,
+        "tables": 10,
+        "code_blocks": 0,
+        "pruned_editsections": 7,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Wandering Nobles": {
+      "title": "Wandering Nobles",
+      "oldid": 30304,
+      "fetched_at": "2026-10-23T09:36:42+08:00",
+      "game_version": "timeless",
+      "size_bytes": 1797,
+      "raw_file": "raw/Wandering Nobles.json",
+      "raw_bytes": 7724,
+      "cleaned_file": "pages/Wandering Nobles.md",
+      "cleaned_at": "2026-10-23T09:38:55+08:00",
+      "cleaned_bytes": 2140,
+      "cleaned_sha256": "6ecdea9617421e32f07698ca93ed59f21c0e585d5018de8c6857d8b10940e961",
+      "clean_stats": {
+        "html_bytes": 7289,
+        "md_bytes": 2140,
+        "h1": 0,
+        "h2": 3,
+        "h3": 0,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 3,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Wards and Wardens": {
+      "title": "Wards and Wardens",
+      "oldid": 24008,
+      "fetched_at": "2026-10-23T09:36:56+08:00",
+      "game_version": "timeless",
+      "size_bytes": 3234,
+      "raw_file": "raw/Wards and Wardens.json",
+      "raw_bytes": 12586,
+      "cleaned_file": "pages/Wards and Wardens.md",
+      "cleaned_at": "2026-10-23T09:38:55+08:00",
+      "cleaned_bytes": 3165,
+      "cleaned_sha256": "533f15c52a3119dfaf02fa91278cff84ed8022dc823a45e5cb205d494154b5d5",
+      "clean_stats": {
+        "html_bytes": 11938,
+        "md_bytes": 3165,
+        "h1": 0,
+        "h2": 4,
+        "h3": 1,
+        "tables": 1,
+        "code_blocks": 0,
+        "pruned_editsections": 5,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Warfare": {
+      "title": "Warfare",
+      "oldid": 37159,
+      "fetched_at": "2026-10-23T09:37:10+08:00",
+      "game_version": null,
+      "size_bytes": 38259,
+      "raw_file": "raw/Warfare.json",
+      "raw_bytes": 131669,
+      "cleaned_file": "pages/Warfare.md",
+      "cleaned_at": "2026-10-23T09:38:55+08:00",
+      "cleaned_bytes": 32761,
+      "cleaned_sha256": "6cfc76da55be82115d0a6df4546cb9dc08d17f15cb79b187f991cdea9d7db5b2",
+      "clean_stats": {
+        "html_bytes": 124041,
+        "md_bytes": 32761,
+        "h1": 0,
+        "h2": 8,
+        "h3": 8,
+        "tables": 18,
+        "code_blocks": 0,
+        "pruned_editsections": 22,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "Way of Kings": {
+      "title": "Way of Kings",
+      "oldid": 24022,
+      "fetched_at": "2026-10-23T09:37:26+08:00",
+      "game_version": null,
+      "size_bytes": 23094,
+      "raw_file": "raw/Way of Kings.json",
+      "raw_bytes": 54351,
+      "cleaned_file": "pages/Way of Kings.md",
+      "cleaned_at": "2026-10-23T09:38:56+08:00",
+      "cleaned_bytes": 22745,
+      "cleaned_sha256": "d3c8305a9b375aa55620da23a8e235106962eeeeb58a3464baaa8bb590df6809",
+      "clean_stats": {
+        "html_bytes": 52520,
+        "md_bytes": 22745,
+        "h1": 0,
+        "h2": 2,
+        "h3": 13,
+        "tables": 3,
+        "code_blocks": 0,
+        "pruned_editsections": 21,
+        "pruned_navboxes": 1
+      },
+      "organize": {
+        "split": false
+      }
+    },
+    "When the World Stopped Making Sense": {
+      "title": "When the World Stopped Making Sense",
+      "oldid": 35956,
+      "fetched_at": "2026-10-23T09:37:56+08:00",
+      "game_version": "0.3.0",
+      "size_bytes": 13729,
+      "raw_file": "raw/When the World Stopped Making Sense.json",
+      "raw_bytes": 45655,
+      "cleaned_file": "pages/When the World Stopped Making Sense.md",
+      "cleaned_at": "2026-10-23T09:38:56+08:00",
+      "cleaned_bytes": 9976,
+      "cleaned_sha256": "1f52d7f301cf916135631242637ebe9fc6203cba2ff406250ecd93068e0bb422",
+      "clean_stats": {
+        "html_bytes": 43677,
+        "md_bytes": 9976,
+        "h1": 0,
+        "h2": 6,
+        "h3": 15,
+        "tables": 4,
+        "code_blocks": 0,
+        "pruned_editsections": 28,
+        "pruned_navboxes": 0
+      },
+      "organize": {
+        "split": false
+      }
+    }
+  },
+  "game_docs": {
+    "script_docs": {
+      "effects.md": {
+        "source_file": "game logs/effects.log",
+        "source_bytes": 647989,
+        "source_mtime": "2026-10-22T19:55:11+08:00",
+        "entry_count": 2128,
+        "sections": null,
+        "output_file": "game_docs/script_docs/effects.md",
+        "output_bytes": 607901,
+        "output_sha256": "4ce586da22cb161971c6c7131e0d3801797ab923c3e927e935bcb986f2007502",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      },
+      "triggers.md": {
+        "source_file": "game logs/triggers.log",
+        "source_bytes": 413295,
+        "source_mtime": "2026-10-22T19:55:11+08:00",
+        "entry_count": 1937,
+        "sections": null,
+        "output_file": "game_docs/script_docs/triggers.md",
+        "output_bytes": 376811,
+        "output_sha256": "f95b347fefb1be32f7936450f6178f57d48085c723a0ca4dd9186d9b8cefe646",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      },
+      "event_targets.md": {
+        "source_file": "game logs/event_targets.log",
+        "source_bytes": 54125,
+        "source_mtime": "2026-10-22T19:55:11+08:00",
+        "entry_count": 328,
+        "sections": {
+          "Event Targets Saved from Code:": 384
+        },
+        "output_file": "game_docs/script_docs/event_targets.md",
+        "output_bytes": 48339,
+        "output_sha256": "36a35e68443ba0ca1f72ad984c70a4d75c184f54a4b169067dd6806a655e8f0e",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      },
+      "event_scopes.md": {
+        "source_file": "game logs/event_scopes.log",
+        "source_bytes": 8898,
+        "source_mtime": "2026-10-22T19:55:11+08:00",
+        "entry_count": 74,
+        "sections": null,
+        "output_file": "game_docs/script_docs/event_scopes.md",
+        "output_bytes": 9550,
+        "output_sha256": "7feb033e38c73dd3e299c58003154fd707f0673e82f209f70054c4b4f37ead9c",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      },
+      "modifiers.md": {
+        "source_file": "game logs/modifiers.log",
+        "source_bytes": 46350,
+        "source_mtime": "2026-10-22T19:55:11+08:00",
+        "entry_count": 761,
+        "sections": null,
+        "output_file": "game_docs/script_docs/modifiers.md",
+        "output_bytes": 46685,
+        "output_sha256": "61f9a140c0853339efb4827633a2bbd654864421e569ba2e272f0edbf8a9e603",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      },
+      "on_actions.md": {
+        "source_file": "game logs/on_actions.log",
+        "source_bytes": 84746,
+        "source_mtime": "2026-10-22T19:55:11+08:00",
+        "entry_count": 932,
+        "sections": null,
+        "output_file": "game_docs/script_docs/on_actions.md",
+        "output_bytes": 68313,
+        "output_sha256": "17455c2cfc9f6997c2adc7cb99e3a16d1f8bdde18f6466d293d22f7f529b64ee",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      },
+      "custom_localization.md": {
+        "source_file": "game logs/custom_localization.log",
+        "source_bytes": 857296,
+        "source_mtime": "2026-10-22T19:55:11+08:00",
+        "entry_count": 2782,
+        "sections": null,
+        "output_file": "game_docs/script_docs/custom_localization.md",
+        "output_bytes": 807550,
+        "output_sha256": "00af91e8f3e3c8febe9218b7e979020a08341655d1f68567548f88f65f8fa1da",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      },
+      "data_types_common.md": {
+        "source_file": "game logs/data_types/data_types_common.txt",
+        "source_bytes": 41208,
+        "source_mtime": "2026-10-22T19:56:41+08:00",
+        "entry_count": 368,
+        "sections": null,
+        "output_file": "game_docs/script_docs/data_types_common.md",
+        "output_bytes": 34242,
+        "output_sha256": "bd2ae3278764a49bef17d34d20a4e3a3bdca3aa23a8b3c9b2472cd78fcff2a1f",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      },
+      "data_types_gui.md": {
+        "source_file": "game logs/data_types/data_types_gui.txt",
+        "source_bytes": 91864,
+        "source_mtime": "2026-10-22T19:56:41+08:00",
+        "entry_count": 875,
+        "sections": null,
+        "output_file": "game_docs/script_docs/data_types_gui.md",
+        "output_bytes": 74752,
+        "output_sha256": "6537f161e85d16d8dd27f75087d1b454edff0a7d391370a8ade23025015355f0",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      },
+      "data_types_internalclausewitzgui.md": {
+        "source_file": "game logs/data_types/data_types_internalclausewitzgui.txt",
+        "source_bytes": 264115,
+        "source_mtime": "2026-10-22T19:56:41+08:00",
+        "entry_count": 2479,
+        "sections": null,
+        "output_file": "game_docs/script_docs/data_types_internalclausewitzgui.md",
+        "output_bytes": 214961,
+        "output_sha256": "9ef9426321ef1249e98beefea5c3ba012799b6ef248e9ec35e21f15bfdd21408",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      },
+      "data_types_script.md": {
+        "source_file": "game logs/data_types/data_types_script.txt",
+        "source_bytes": 98395,
+        "source_mtime": "2026-10-22T19:56:41+08:00",
+        "entry_count": 670,
+        "sections": null,
+        "output_file": "game_docs/script_docs/data_types_script.md",
+        "output_bytes": 85389,
+        "output_sha256": "d97d604f674ab6334fb76af58129e5eeee0d5810357ab8e0efbe7e58a48d7140",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      },
+      "data_types_uncategorized.md": {
+        "source_file": "game logs/data_types/data_types_uncategorized.txt",
+        "source_bytes": 2187193,
+        "source_mtime": "2026-10-22T19:56:41+08:00",
+        "entry_count": 20227,
+        "sections": null,
+        "output_file": "game_docs/script_docs/data_types_uncategorized.md",
+        "output_bytes": 1783065,
+        "output_sha256": "82fa11e3a0f39842a91a2da3545e251c7feabf7d8d0f4a6f7d6e8d8c40a77329",
+        "merged_at": "2026-10-22T21:41:38+08:00"
+      }
+    },
+    "game_version": "1.20.0",
+    "game_version_source": "基准事实默认值 1.20.0（docs/spec.md 环境事实附录；code_revisions.log 为空/无版本信息，未能提取）",
+    "merged_at_latest": "2026-10-22T21:41:38+08:00",
+    "vanilla_structure": {
+      "game_dir": "(local game install)/game",
+      "game_version": "1.20.0",
+      "game_version_source": "spec 环境事实附录基准（可用 --game-version 覆盖）",
+      "scanned_at": "2026-10-22T21:42:02+08:00",
+      "fingerprint": "fc3b01caffcda664590dcf28115decb449d214f142cc181a69ba7f0b0502a5ee",
+      "common": {
+        "top_subdir_count": 128,
+        "loose_file_count": 1,
+        "file_total": 2888,
+        "parsed_file_total": 2718,
+        "entry_total": 78167,
+        "unique_entry_total": 77742,
+        "entry_map_rows": 78167
+      },
+      "other_dirs": {
+        "binaries": 3,
+        "content_source": 33,
+        "data_binding": 20,
+        "dlc": 194,
+        "dlc_metadata": 2,
+        "events": 577,
+        "fonts": 39,
+        "gfx": 35135,
+        "gui": 419,
+        "history": 748,
+        "licenses": 16,
+        "localization": 11274,
+        "map_data": 18,
+        "music": 4,
+        "notifications": 1,
+        "reader_export": 1,
+        "sound": 35,
+        "tests": 19,
+        "tools": 6,
+        "tweakergui_assets": 38
+      },
+      "products_dir": "game_docs/vanilla_structure",
+      "products_count": 131,
+      "products_bytes": 8305291,
+      "key_products": {
+        "index": "game_docs/vanilla_structure/INDEX.md",
+        "entry_map": "game_docs/vanilla_structure/entry_map.tsv",
+        "other_dirs": "game_docs/vanilla_structure/other_dirs.md"
+      }
+    }
+  }
+}

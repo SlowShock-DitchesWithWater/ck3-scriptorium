@@ -1,0 +1,18 @@
+<!-- 来源: https://ck3.paradoxwikis.com/Traits oldid=37335 抓取于 2026-10-23T09:36:25+08:00 -->
+
+# Traits — Faith traits
+
+
+These traits can only obtained by characters of certain rites.
+
+| Trait | Effects | AI effects | Cost | Requirements | Alternative names |
+| --- | --- | --- | --- | --- | --- |
+| Seasoned PastoralistThis character has become an expert in the ways of husbandry and can ensure that their cattle make the best possible use of the pasture. | **+20%** County Fertility Growth |  |  | Pastoral Isolation personal tenet |  |
+| BerserkerOnce this character's blood starts to boil it will only be sated by the death of their enemies. | **+2** Martial **+5** Prowess **+15** Natural Dread **+10** Same trait opinion **−2** Diplomacy Character wears a fur cloak but can change it in barbershop | +35 Boldness +20 Energy -35 Rationality | **+40** | Rite has the Warmongering core tenet |  |
+| HajjiThis character has completed the Hajj, a pilgrimage to the House of Allah in Mecca. | **+5** Travel Speed **+5** Travel Safety **+5** Muslim opinion | +20 Zeal | **+30** | Completed a Hajj pilgrimage Obtained automatically if realm capital is Mecca | Hajjah if female |
+| Military Order MemberThis character serves in a military order, bound by holy vows to defend their faith. | **+1** Martial **+4** Prowess **+15** Same trait and faith opinion Cannot marry have children Cannot inherit titles or get claims on them Cannot be set as designated heir Cannot be elected for titles | +10 Zeal +5 Honor -10 Greed |  | Military Order member |  |
+| CrusaderThis character has done their Christian duty and participated in a Crusade. | **+2** Martial **+3** Prowess **+15** Clergy opinion **+5** Same faith opinion Unlocks a Legend Seed | +10 Zeal | **+50** | Participated in a Crusade |  |
+| MujahidThis character has done their Islamic duty and participated in a Jihad. | **+2** Martial **+3** Prowess **+15** Clergy opinion **+5** Same faith opinion Unlocks a Legend Seed | +10 Zeal | **+50** | Participated in a Jihad |  |
+| Warrior of the FaithThis character has participated in a Great Holy War. | **+2** Martial **+3** Prowess **+15** Clergy opinion **+5** Same faith opinion Unlocks a Legend Seed | +10 Zeal | **+50** | Participated in a Great Holy War | Condition: Name；Tibetan: Kailash Guardian；Buddhist: Atoner；Dualist: Guardian of Light；Norse: Valhalla Bound；Hellenic: Ares' Own；Hindu: Shiva's Hand；Jain: Pacifier；Jewish: Kanai；Uralic: Forged of Hadúr；Baltic: Hound of Dievas；Slavic: Perun's Champion；Finno-Ugric: Ukko's Hammer；Siberian: Ulgen's Nimrod；Tengri: Skylord；Mandé: Nyame's Shield；Hausa: Facilitator；Senegambian: Takhar's Arbiter；Zoroastrian: Gond-i Shahanshah；Zunbil: Warrior of the Sun |
+| Holy MonarchA great warrior King who has carved their own kingdom out of the lands of the infidels. | **+3** Martial **+2** Prowess **+5** Faith Hostility Advantage **−20%** Retreat Losses **−15%** Friendly Fatal Casualties **+0.5** Monthly Control Growth **+35** Popular opinion **+15** Same faith opinion **+10** Same trait opinion Ignore Negative Culture Opinion | +25 Zeal | **+120** | Great Holy War beneficiary | Crusader King/Queen if Christian Sky-King/Queen if Tengri Kailash King/Queen if Tibetan Bear King/Queen if Finno-Ugric Sun-King/Queen if Zunbil Archon/Archontess if Hellenic Amir al-Mu'minin if Muslim Nagid if Jewish Chosen of Xradesahr if Dualist Rajarishi if Hindu High Aasaan if Buddhist Irenic Monarch if Jain Argbadh if Zoroastrian Hersir if Norse Galadima if Hausa Roog's Chosen if Senegambian Hadùr's Chosen if Uralic Dievas' Chosen if Baltic Perun's Chosen if Slavic Ulgen's Chosen if Siberian Nyame's Chosen if Mandé |
+

@@ -1,0 +1,39 @@
+# CI：对每次 push / PR 跑全部零网络测试套件。
+# 在"克隆条件"下运行（无 raw/、无 game_docs/——两者不随仓库发布），
+# 因此同时验证了克隆用户拿到的仓库是自洽可测的。
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4
+
+      - name: Quality gate (product assertions, clone mode)
+        run: python scripts/quality_gate.py
+
+      - name: Golden replay (zero network)
+        run: python scripts/clean.py --replay-golden
+
+      - name: Cleaning rule assertion matrix
+        run: python tests/test_cleaner_rules.py
+
+      - name: Catalog human-field protection
+        run: python tests/test_catalog_protection.py
+
+      - name: Table spot check (skips without raw/)
+        run: python tests/spotcheck_tables.py

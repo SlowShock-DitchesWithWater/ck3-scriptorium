@@ -1,0 +1,37 @@
+<!-- 来源: https://ck3.paradoxwikis.com/Traits oldid=37335 抓取于 2026-10-23T09:36:25+08:00 -->
+
+# Traits — Dynasty traits
+
+
+Dynasty traits can be either given or removed by members of the same Dynasty.
+
+| Trait | Effects | Cost | Requirements |
+| --- | --- | --- | --- |
+| BastardThis character was not born of a legal pairing of parents, or a concubine, and will have to live with the stain of illegitimacy their whole life. | **−1** Diplomacy **−15** Dynasty Opinion **−10%** Legitimacy Gain Can not inherit titles or get claims on them Cannot be set as designated heir Cannot be elected for titles **+5** Same Trait Opinion | **0** | Character was born outside marriage or concubinage Rite does not have the No Bastards bastardry doctrine |
+| Bastard FounderA former bastard who has founded their own Dynasty. | **−1** Diplomacy Can not inherit titles or get claims on them |  | Character gained a Landed title while being a Bastard |
+| Born in the PurpleThis character was born to prominent parents, a rich life and high expectations. | **+0.10** Monthly Prestige **+0.75** Monthly Influence **−25%** Short Reign Duration Increased Initial Legitimacy | **+40** | One of the parents had their capital in the Barony of Constantinople when the character was born The same parent owned the Byzantine Empire or Roman Empire title when the character was born A parent's culture had the Byzantine Traditions or Roman Ceremonies tradition If the mother was landless she must have been in Constantinople or a diarch during birth If the mother was landed she must have been at peace with the father during birth Mother was imprisoned during the birth Mother was commanding an army the during birth If Coronation laws are enabled the parents must be crowned |
+| Child of ConcubineThis character was born/fathered of a concubine. | **−1** Diplomacy |  | One of the parents was a Concubine when the character was born |
+| DenouncedThis character has been denounced by the Dynasty Head and can now be imprisoned by any other Dynasty member. | **−1** Diplomacy **−1** Monthly Prestige Crime towards members of the same Dynasty Removed if character becomes Dynasty Head |  | Denounce Dynasty Head interaction |
+| DisinheritedThis character has been disinherited by the Dynasty Head and cannot inherit any title from any Dynasty member. | **−5** Dynasty Opiniongallivan Cannot inherit titles of dynasty members or get claims on them Cannot be set as designated heir Removed if character becomes Dynasty Head |  | Disinherit Dynasty Head interaction |
+| Disputed HeritageCredible rumors surround this character's heritage. Many say that their father is someone else. | **−1** Diplomacy **−10** House Opinion **+10%** Legitimacy Loss |  | Illegitimate Child secret was exposed |
+| Legitimized BastardThis character was born a bastard, but has since been legitimized. | **−1** Diplomacy **−10** Dynasty Opinion **−5%** Legitimacy Gain | **0** | Legitimize House Head interaction |
+| TwinThis character was born a twin. | **+15** Twin Sibling Opinion |  | 2% chance at birth |
+| Wild OatThis character was born out of wedlock. | **−1** Diplomacy | **0** | Character was born outside marriage or concubinage Rite has the No Bastards bastardry doctrine |
+| Accused of DecadenceThis character has been accused of decadence by their House Head. Whether the claims are true or not, his reputation and credibility is significantly tarnished. | **−1** Monthly Piety **+25%** Stress Gain **−15** House Opinion **+10.0%** Initial Hostile Scheme Success Chance **+10%** Scheme Secrecy **+25** Same Trait Opinion Removed if character becomes House Head |  | Accuse of Decadence House Head interaction |
+| Extolled by HouseThis character has had their virtues extolled by their House Head. Whether the attention is deserved or not, they now have a hard time staying away from the prying eyes of the public. | **+1** Monthly Piety **+15** House Opinion **+25.0%** Initial Enemy Hostile Scheme Success Chance Removed if character becomes House Head |  | Extol Virtuousness House Head interaction |
+| Shieldmaiden/ShieldswainThis character defies the normal structures of their society, fighting in the shield wall. | **+3** Martial **+3** Prowess **+10** Same trait opinion Can be knight regardless of doctrines if culture unlocks the trait Can be Marshal regardless of doctrines if culture unlocks the trait Can be Kurultai regardless of doctrines if culture unlocks the trait | **+40** | Make Shieldmaiden/Shieldswain interaction |
+| Venerated AncestorExceptionally holy, the venerated ancestor is a beacon of light for everyone religious. | **+2** Monthly Piety **+25%** Legitimacy Gain Aura character effect if religion is Abrahamic |  | Heroic Bloodline dynasty legacy 3 Completed a Mythical Holy Legend |
+| Living LegendRenowned for their heroic life, this character is known to all as a living legend. | **+2** Monthly Prestige **+25%** Legitimacy Gain |  | Heroic Bloodline dynasty legacy 4 Completed a Mythical Heroic Legend |
+
+### Descendant traits
+
+Descendant traits can be obtained if one of a character's known parents has either a certain founding trait or a descendant trait. Descendant traits are lost if a character's father is revealed to be someone without such traits and the mother does not have it.
+
+| Founding trait | Effects | AI Zeal | Descendant trait | Effects | AI Zeal | Founding requirements | Cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| SaoshyantThis character is here to deliver us all and perhaps bring about Frashokereti, the final renovation of the world. | **+1** Diplomacy **+2** Learning **+2** Prowess **+5** Zoroastrian Opinion | +100 | Saoshyant DescendantThis character is a direct descendant of the Saoshyant. | **+1** Learning **+5** Zoroastrian Opinion | 0 | Become the Saoshyant decision |  |
+| SayyidCoursing through the veins of this character is the Blood of the Prophet. | **+5** Muslim Opinion Increased Initial Legitimacy **+15%** Yearly chance to get a Legend Seed | 0 | SayyidCoursing through the veins of this character is the Blood of the Prophet. | **+5** Muslim Opinion Increased Initial Legitimacy **+15%** Yearly chance to get a Legend Seed | 0 | Descendant of Muhammad | **+25** |
+| ParagonThis character has become an example of religious virtue beyond reproach. | **+20** Zealot Vassal Opinion | +20 | Consecrated BloodThe unwavering devotion shown by some of its members have given this dynasty an impeccable reputation in the eyes of the priesthood. | **+10** Zealot Vassal Opinion | +10 | Consecrate Bloodline decision Head of Faith |  |
+| The SaviorThis character is here to deliver us all. | **+10** Same Faith Opinion Hidden: +75% county conversion speed | +100 | Divine BloodThis character is descended from a person sent from heaven. | **+5** Same Faith Opinion Hidden: +25% county conversion speed | 0 | Consecrate Bloodline decision Head of Faith |  |
+| Golden LineageWhat this character's bloodline has wrought on the world cannot be forgotten. They are a golden scion of fire and conquest. | **+10%** Dread Gain **+200** Vassal Limit **+20%** Terrified Vassal Contribution **+20%** Herd Capacity Increased Initial Legitimacy | 0 | Golden LineageWhat this character's bloodline has wrought on the world cannot be forgotten. They are a golden scion of fire and conquest. | **+10%** Dread Gain **+200** Vassal Limit **+20%** Terrified Vassal Contribution **+20%** Herd Capacity Increased Initial Legitimacy | 0 | Winning the war to become Greatest of Khans |  |
+

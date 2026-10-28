@@ -1,0 +1,23 @@
+<!-- 来源: https://ck3.paradoxwikis.com/Effects oldid=20200 抓取于 2026-10-22T21:36:40+08:00 -->
+
+# Effects — Control effects
+
+
+These are the most important effects that are used to control the execution of other effects.
+
+| Name | Description | Usage | Supported scopes | Supported targets |
+| --- | --- | --- | --- | --- |
+| if | Executes enclosed effects if limit criteria are met | if = { limit = { <triggers> } <effects> } | none |  |
+| else_if | Executes enclosed effects if limit criteria of preceding 'if' or 'else_if' is not met, and its own limit is met | if = { limit = { <triggers> } <effects> } else_if = { limit = { <triggers> } <effects> } | none |  |
+| else | Executes enclosed effects if limit criteria of preceding 'if' or 'else_if' is not met | if = { limit = { <triggers> } <effects> } else = { <effects> } | none |  |
+| while | Repeats enclosed effects while limit criteria are met or until set iteration count is reached | while = { limit = { <triggers> } <effects> } while = { count = 3 <effects> } Default max of 1000. | none |  |
+| switch | Switch on a trigger for the evaluation of another trigger with an optional fallback trigger. | switch = { trigger = simple_assign_trigger case_1 = { <effects> } case_2 = { <effects> } case_n = { <effects> } fallback = { <effects> } } | none |  |
+| hidden_effect | Effect not shown in tooltips | hidden_effect = { <effects> } | none |  |
+| show_as_tooltip | Effect only shown in tooltips (but not executed) |  | none |  |
+| random | a random effect | random = { chance = X modifier = Y effects... } where X is a chance of the enclosed effects being fired and can be modified by optional value modifier list (AKA MTTH) Y | none |  |
+| random_list | a random list effect | random_list = { pick = 2 #Optional \| You can choose how many option will happen unique = yes #Option (With pick) \| You can choose if the repetition can choose the same effect again. X1 = { trigger = { ... } modifier/compare_modifier/opinion_modifier = Y1 effect1 } X2 = { ... } ... } Selects one effect from the list and fires it. The effects are weighted by numbers X1, X2... (the higher the number, the higher the chance of the effect being picked). The chances can be modified by optional value modifier lists Y1, Y2... (AKA MTTH) | none |  |
+| custom_description | Wraps effects that get a custom description instead of the auto-generated one. See also custom_description_no_bullet. | custom_description = { text = <effect_localization_key> subject = <optional subject scope> #defaults to current scope object = <optional object scope> value = <optional script value> ... effects ... } | none |  |
+| custom_tooltip | just a tooltip, the scope as subject (for grouping, localization). | custom_tooltip = { text = key subject = scope (optional) <hidden effects> } or just custom_tooltip = key | none |  |
+| send_interface_message | Sends a message to the player playing the character in the scope and then executes any effects inside. | For the message text and tooltip, $EFFECT$ contains the text description of the effects in the past tense. And $DESC$ contains the text from the desc field. send_interface_message = { type = message_type # default: send_interface_message title = LOCALIZATION # optional, otherwise takes it from the message type desc = LOCALIZATION # optional, otherwise takes it from the message type tooltip = LOCALIZATION # optional, otherwise takes it from the message type left_icon = scope:recipient # optional, character, artifact, or title right_icon = scope:the_title # optional, character, artifact, or title goto = scope:the_title # optional, character, barony title, province will add a goto button # optional effects... add_dread = 5 scope:someone = { add_gold = 5 } } | character |  |
+| send_interface_toast | Sends a message to the player playing the character in the scope and then executes any effects inside. | For the message text and tooltip, $EFFECT$ contains the text description of the effects in the past tense. And $DESC$ contains the text from the desc field. send_interface_toast = { type = message_type # default: send_interface_toast title = LOCALIZATION # optional, otherwise takes it from the message type desc = LOCALIZATION # optional, otherwise takes it from the message type tooltip = LOCALIZATION # optional, otherwise takes it from the message type left_icon = scope:recipient # optional, character, artifact, or title right_icon = scope:the_title # optional, character, artifact, or title goto = scope:the_title # optional, character, barony title, province will add a goto button # optional effects... add_dread = 5 scope:someone = { add_gold = 5 } } | character |  |
+

@@ -1,0 +1,2 @@
+# 统一换行为 LF（仓库产物全部以 LF 写盘，避免 Windows 检出时 CRLF 化造成整库 diff）
+* text=auto eol=lf
