@@ -363,11 +363,12 @@ def assert_whitelist(source_dir: Path) -> list[str]:
                 "  script_docs        （生成 7 个清单 .log）\n"
                 "  dump_data_types    （生成 data_types\\ 下 5 个 .txt）\n"
                 "然后用 --source 指向 <文档目录>\\Paradox Interactive\\Crusader Kings III\\"
-                "script_documentation 重跑本命令。\n"
+                "logs 重跑本命令（CK3 1.20 实测导出位置）。\n"
                 if need_dtypes else
                 "\n发生了什么：游戏 dump 来源缺少清单 .log。\n"
                 "下一步怎么做：CK3 以 -debug_mode 启动后在控制台跑 script_docs，"
-                "再用 --source 指向 script_documentation 目录重跑本命令。\n")
+                "再用 --source 指向 <文档目录>\\Paradox Interactive\\Crusader Kings III\\"
+                "logs 目录重跑本命令。\n")
         raise FileNotFoundError(f"白名单来源缺失: {missing}{hint}")
     present = {p.relative_to(source_dir).as_posix()
                for p in source_dir.rglob("*") if p.is_file()}

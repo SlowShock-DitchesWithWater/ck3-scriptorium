@@ -150,14 +150,19 @@ CK3——完整重建见**手册 A**。
 <python> scripts\quality_gate.py
 
 :: —— 3. 游戏权威层（零网络；需要本机游戏）——
-::    以 -debug_mode 启动 CK3 后，在控制台执行两个命令（缺一不可）：
-::    script_docs      （生成 7 个清单 .log）
-::    dump_data_types  （生成 data_types\ 下 5 个 .txt）  ← 必需
-::    导出落在 %USERPROFILE%\Documents\Paradox Interactive\
-::    Crusader Kings III\script_documentation\。用 --source 直接指向它即可，
-::    无需拷贝（该目录里的运行时日志会被白名单自动忽略）：
-<python> scripts\game_layer.py --source "%USERPROFILE%\Documents\Paradox Interactive\Crusader Kings III\script_documentation"
-::    备选：自建仓库 game logs\ 目录（gitignored，克隆里没有），把导出内容
+::    全新克隆只含 wiki 层；游戏权威层（dump 签名）在你机器上三步重建：
+::    a) 给 CK3 加启动参数 -debug_mode（Steam 启动选项里加）后启动。
+::    b) 开控制台（` 键）执行两个命令——各写一部分，缺一不可：
+::         script_docs      → 7 个清单 .log
+::         dump_data_types  → data_types\ 下 5 个 .txt
+::       导出落在 %USERPROFILE%\Documents\Paradox Interactive\
+::       Crusader Kings III\logs\（已按 CK3 1.20 实测）
+::    c) 用 --source 直接指向该目录，无需拷贝（目录里的其他运行时日志
+::       会被自动忽略）：
+<python> scripts\game_layer.py --source "%USERPROFILE%\Documents\Paradox Interactive\Crusader Kings III\logs"
+::    成功的样子：game_docs\script_docs\ 下出现 12 个 .md，manifest.json
+::    多出 game_docs.script_docs 一节。
+::    备选：自建仓库 game logs\ 目录（gitignored，克隆里没有），把导出
 ::    拷进去后免参运行本命令。
 
 :: —— 4. 原版结构索引层（零网络；需要游戏安装目录）——

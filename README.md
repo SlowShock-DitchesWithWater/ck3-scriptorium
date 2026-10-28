@@ -168,15 +168,22 @@ top of `catalog.md` and in each entry's source line.
 <python> scripts\quality_gate.py
 
 :: —— 3. Game authority layer (offline; needs the game installed locally) ——
-::    Start CK3 with -debug_mode and run BOTH console commands:
-::    script_docs      (writes the 7 list .log files)
-::    dump_data_types  (writes the 5 .txt files under data_types\)  <- required
-::    The dump lands in %USERPROFILE%\Documents\Paradox Interactive\
-::    Crusader Kings III\script_documentation\. Point --source straight at it —
-::    no copying needed (runtime logs in that folder are ignored by whitelist):
-<python> scripts\game_layer.py --source "%USERPROFILE%\Documents\Paradox Interactive\Crusader Kings III\script_documentation"
-::    Alternative: create the repo's `game logs\` directory (gitignored, not
-::    shipped in clones), copy the dump's contents there, run without args.
+::    A fresh clone contains only the wiki layer; the game authority layer
+::    (dump signatures) is built on your machine in three steps:
+::    a) Launch CK3 with -debug_mode (add it to Steam launch options).
+::    b) Open the console (` key) and run BOTH commands — each writes a
+::       different part, both are required:
+::         script_docs      -> the 7 list .log files
+::         dump_data_types  -> the 5 .txt files under data_types\
+::       The export lands in %USERPROFILE%\Documents\Paradox Interactive\
+::       Crusader Kings III\logs\   (verified against CK3 1.20)
+::    c) Point --source straight at that folder — no copying needed (the
+::       other files there are runtime logs, ignored automatically):
+<python> scripts\game_layer.py --source "%USERPROFILE%\Documents\Paradox Interactive\Crusader Kings III\logs"
+::    Success looks like: 12 .md files under game_docs\script_docs\ and a new
+::    game_docs.script_docs section in manifest.json.
+::    Alternative: create the repo's `game logs\` directory (gitignored,
+::    absent in clones), copy the export there, then run without arguments.
 
 :: —— 4. Vanilla structure index (offline; needs the game installation directory) ——
 <python> scripts\vanilla_index.py --game-dir "<your CK3 install directory>\game"
