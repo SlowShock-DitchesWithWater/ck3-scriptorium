@@ -170,6 +170,8 @@ CK3——完整重建见**手册 A**。
 ::    免参配置（三选一，本机长期使用推荐第 3 种）：
 ::    1) 每次传 --game-dir；2) 环境变量 CK3_GAME_DIR；
 ::    3) scripts\state\local_paths.json 写 {"game_dir": "<路径>"}（该目录已 gitignore）
+::    可选：--game-version "<你的版本>"——写入 manifest/catalog 的版本标注
+::    （默认 1.20.0；游戏版本更新时记得传新版本号）
 
 :: —— 5. 游戏层并入目录 + 终检 ——
 <python> scripts\catalog.py

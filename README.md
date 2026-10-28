@@ -190,6 +190,8 @@ top of `catalog.md` and in each entry's source line.
 ::    game-dir configuration (pick one; option 3 is recommended for long-term local use):
 ::    1) pass --game-dir every time; 2) the CK3_GAME_DIR environment variable;
 ::    3) scripts\state\local_paths.json containing {"game_dir": "<path>"} (that directory is gitignored)
+::    Optional: --game-version "<your version>" — the version label written into
+::    manifest/catalog metadata (defaults to 1.20.0; pass yours if newer)
 
 :: —— 5. Merge the game layer into the catalog + final gate ——
 <python> scripts\catalog.py
