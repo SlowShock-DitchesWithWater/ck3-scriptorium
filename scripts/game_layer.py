@@ -356,7 +356,19 @@ def assert_whitelist(source_dir: Path) -> list[str]:
     missing = [s for s in sorted(WHITELIST)
                if not (source_dir / s).is_file()]
     if missing:
-        raise FileNotFoundError(f"白名单来源缺失: {missing}")
+        # 报错即自愈指引（solve, don't defer）：告诉用户缺什么、怎么补
+        need_dtypes = any(m.startswith("data_types/") for m in missing)
+        hint = ("\n发生了什么：游戏 dump 来源缺少白名单文件。\n"
+                "下一步怎么做：确认 CK3 以 -debug_mode 启动后在控制台跑过两个命令：\n"
+                "  script_docs        （生成 7 个清单 .log）\n"
+                "  dump_data_types    （生成 data_types\\ 下 5 个 .txt）\n"
+                "然后用 --source 指向 <文档目录>\\Paradox Interactive\\Crusader Kings III\\"
+                "script_documentation 重跑本命令。\n"
+                if need_dtypes else
+                "\n发生了什么：游戏 dump 来源缺少清单 .log。\n"
+                "下一步怎么做：CK3 以 -debug_mode 启动后在控制台跑 script_docs，"
+                "再用 --source 指向 script_documentation 目录重跑本命令。\n")
+        raise FileNotFoundError(f"白名单来源缺失: {missing}{hint}")
     present = {p.relative_to(source_dir).as_posix()
                for p in source_dir.rglob("*") if p.is_file()}
     excluded = sorted(present - WHITELIST)

@@ -168,11 +168,15 @@ top of `catalog.md` and in each entry's source line.
 <python> scripts\quality_gate.py
 
 :: —— 3. Game authority layer (offline; needs the game installed locally) ——
-::    Start CK3 with -debug_mode, run script_docs in the console (optionally dump_data_types),
-::    then put the generated script_documentation into the repo's `game logs\` directory:
-::    the list logs (effects / triggers / event_targets / event_scopes / modifiers /
-::    on_actions / custom_localization) plus the .txt files under data_types\
-<python> scripts\game_layer.py
+::    Start CK3 with -debug_mode and run BOTH console commands:
+::    script_docs      (writes the 7 list .log files)
+::    dump_data_types  (writes the 5 .txt files under data_types\)  <- required
+::    The dump lands in %USERPROFILE%\Documents\Paradox Interactive\
+::    Crusader Kings III\script_documentation\. Point --source straight at it —
+::    no copying needed (runtime logs in that folder are ignored by whitelist):
+<python> scripts\game_layer.py --source "%USERPROFILE%\Documents\Paradox Interactive\Crusader Kings III\script_documentation"
+::    Alternative: create the repo's `game logs\` directory (gitignored, not
+::    shipped in clones), copy the dump's contents there, run without args.
 
 :: —— 4. Vanilla structure index (offline; needs the game installation directory) ——
 <python> scripts\vanilla_index.py --game-dir "<your CK3 install directory>\game"
