@@ -18,10 +18,9 @@
 **权威顺序：game_docs（dump）> pages（wiki）。** 两层冲突时以 dump 为准，
 并在回答中指出冲突点。
 
-**`game_docs/` 由用户本地生成、不随仓库发布。** 它派生自游戏自身的 debug
-dump，公开仓库不含此目录——全新克隆只有 wiki 层。若 `game_docs/` 缺失，
-告知用户可按 `README.md` 手册 A 的游戏层步骤生成等价物；在此之前只用
-wiki 层回答，并说明 dump 层不可用。
+**`game_docs/` 随仓库发布**（由游戏自身 debug dump 构建；当前对应游戏版本见
+catalog 快照块）。该层为游戏衍生数据，本仓库不主张任何权利（见
+`LICENSES.md`）。CK3 版本更新后可按 `README.md` 手册 A 的游戏层步骤本地刷新。
 
 `catalog.md` 是全部条目的两级摘要目录——**唯一检索入口，但禁止整读，
 先 grep 再按图索骥**（见下）。

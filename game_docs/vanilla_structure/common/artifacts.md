@@ -1,0 +1,1214 @@
+# common/artifacts 结构摘要
+
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 文件数：31（其中 Jomini 解析 24 个）
+- 顶层块条目总数：1085，跨文件唯一条目 1047
+- 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
+
+## 文件清单
+
+| 文件 | 字节 | 顶层块 | 标量键 | 解析 |
+|---|---|---|---|---|
+| `blueprints/00_reforge.txt` | 61448 | 38 | 0 | jomini |
+| `blueprints/_blueprints.info` | 1409 | - | - | 纯文档（非 Jomini） |
+| `feature_groups/00_groups.txt` | 2633 | 59 | 0 | jomini |
+| `feature_groups/_feature_groups.info` | 27 | - | - | 纯文档（非 Jomini） |
+| `features/00_features.txt` | 203127 | 635 | 0 | jomini |
+| `features/_features.info` | 270 | - | - | 纯文档（非 Jomini） |
+| `slots/00_default.txt` | 2411 | 24 | 0 | jomini |
+| `slots/01_holy_site.txt` | 321 | 3 | 0 | jomini |
+| `slots/_slots.info` | 1197 | - | - | 纯文档（非 Jomini） |
+| `templates/00_badge_templates.txt` | 396 | 1 | 0 | jomini |
+| `templates/00_event_templates.txt` | 5454 | 15 | 0 | jomini |
+| `templates/00_historical_artifacts_templates.txt` | 25747 | 47 | 0 | jomini |
+| `templates/00_type_templates.txt` | 2049 | 6 | 0 | jomini |
+| `templates/01_ep2_templates.txt` | 3 | 0 | 0 | jomini |
+| `templates/02_ep3_templates.txt` | 2353 | 5 | 0 | jomini |
+| `templates/_templates.info` | 1750 | - | - | 纯文档（非 Jomini） |
+| `templates/pam_saint_relic_templates.txt` | 1651 | 2 | 0 | jomini |
+| `types/00_types.txt` | 12190 | 66 | 0 | jomini |
+| `types/_types.info` | 585 | - | - | 纯文档（非 Jomini） |
+| `visuals/000_placeholder.txt` | 202 | 1 | 0 | jomini |
+| `visuals/00_court_artifacts.txt` | 106296 | 58 | 0 | jomini |
+| `visuals/00_historical.txt` | 26962 | 48 | 0 | jomini |
+| `visuals/00_personal_misc.txt` | 30872 | 29 | 0 | jomini |
+| `visuals/00_weapon_visuals.txt` | 20708 | 8 | 0 | jomini |
+| `visuals/03_fp2_artifacts.txt` | 1669 | 8 | 0 | jomini |
+| `visuals/04_ep2_artifacts.txt` | 6165 | 18 | 0 | jomini |
+| `visuals/06_ce1_artifacts.txt` | 11700 | 3 | 0 | jomini |
+| `visuals/07_ep3_artifacts.txt` | 609 | 3 | 0 | jomini |
+| `visuals/09_mpo_artifacts.txt` | 328 | 3 | 0 | jomini |
+| `visuals/10_ce3_artifacts.txt` | 2556 | 5 | 0 | jomini |
+| `visuals/_visuals.info` | 1040 | - | - | 纯文档（非 Jomini） |
+
+## 条目名 → 定义文件
+
+（查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
+
+### blueprints/00_reforge.txt（38 条目）
+
+- axe_to_court
+- hammer_to_court
+- spear_to_court
+- mace_to_court
+- dagger_to_court
+- sword_to_court
+- plate_to_court
+- scale_to_court
+- lamellar_to_court
+- laminar_to_court
+- brigandine_to_court
+- mail_to_court
+- crown_to_court
+- regalia_to_court
+- seal_of_investiture_to_court
+- brooch_to_court
+- ring_to_court
+- necklace_to_court
+- monomachus_to_court
+- danda_to_court
+- navaratna_to_court
+- reichskrone_to_court
+- pope_to_court
+- al_taj_to_court
+- chalice_dona_urraca_to_court
+- votive_crown_to_court
+- aquamanile_to_court
+- armillary_sphere_to_court
+- santiago_bells_to_court
+- santiago_aquamanile_to_court
+- 2p_chess_board_to_court
+- go_board_to_court
+- 4p_chess_board_to_court
+- incense_burner_sculpture_to_court
+- fp3_ancient_drinking_vessel
+- fp3_sassanian_sword_to_court
+- fp3_replica_sassanian_sword_to_court
+- longsword_to_court
+
+### feature_groups/00_groups.txt（59 条目）
+
+- decoration_pattern
+- decoration_material_inlay
+- decoration_material_inlay_HSB
+- decoration_material_wire
+- decoration_material_gem
+- decoration_material_slate
+- decoration_material_ink
+- decoration_material_embroidery
+- generic_material_cloth
+- generic_material_cordage
+- generic_material_wood
+- blade_metal
+- head_metal
+- handle_metal
+- shaft_wood
+- blade_decoration
+- hilt_decoration
+- head_decoration
+- shaft_decoration
+- metal_handle_decoration
+- armor_material
+- armor_helmet
+- armor_decoration
+- armor_property
+- regalia_scepter
+- regalia_clothes
+- regalia_accessory
+- crown_decoration
+- brooch_decoration
+- brooch_centerpiece
+- brooch_adornment
+- ring_decoration
+- ring_centerpiece
+- ring_adornment
+- wood_decoration
+- sculpture_material
+- tapestry_scene
+- animal_skull_type
+- animal_hide_type
+- box_material
+- box_decoration
+- goblet_material
+- book_subject
+- book_topic
+- book_title
+- book_cover_material
+- book_decoration
+- elixir_type
+- glass_decoration
+- generic_material_metal
+- generic_material_earthware
+- longbow_wood
+- composite_wood
+- composite_horn
+- bow_wood
+- bow_string
+- animal_trinket_type
+- bird_feather_type
+- icon_decoration
+
+### features/00_features.txt（635 条目）
+
+- decoration_pattern_wolf
+- decoration_pattern_animals
+- decoration_pattern_local_animal
+- decoration_pattern_beasts
+- decoration_pattern_bird
+- decoration_pattern_war_god
+- decoration_pattern_religion
+- decoration_pattern_eschatology
+- decoration_pattern_religious_symbol
+- decoration_pattern_gibberish
+- decoration_pattern_culture_symbol
+- decoration_pattern_culture_style
+- decoration_pattern_dynasty_shield
+- decoration_pattern_dynasty_motifs
+- decoration_pattern_roses
+- decoration_pattern_floral
+- decoration_pattern_geometric
+- decoration_pattern_quotes
+- decoration_pattern_knots
+- decoration_pattern_bodies
+- decoration_material_inlay_gold
+- decoration_material_inlay_electrum
+- decoration_material_inlay_niello
+- decoration_material_inlay_silver
+- decoration_material_inlay_copper
+- decoration_material_inlay_pewter
+- decoration_material_inlay_jade
+- decoration_material_inlay_amber
+- decoration_material_inlay_shakudo
+- decoration_material_inlay_shibuichi
+- decoration_material_inlay_HSB_bone
+- decoration_material_inlay_HSB_camel_bone
+- decoration_material_inlay_HSB_deer_antler
+- decoration_material_inlay_HSB_boar_tusk
+- decoration_material_inlay_HSB_seashell
+- decoration_material_inlay_HSB_tortoiseshell
+- decoration_material_inlay_HSB_mother_of_pearl
+- decoration_material_inlay_HSB_ivory
+- decoration_material_wire_gold
+- decoration_material_wire_electrum
+- decoration_material_wire_silver
+- decoration_material_wire_brass
+- decoration_material_wire_latten
+- decoration_material_wire_bronze
+- decoration_material_wire_copper
+- decoration_material_wire_pewter
+- decoration_material_gem_rock_crystal
+- decoration_material_gem_jet
+- decoration_material_gem_agate
+- decoration_material_gem_onyx
+- decoration_material_gem_jasper
+- decoration_material_gem_zircon
+- decoration_material_gem_garnet
+- decoration_material_gem_sapphire
+- decoration_material_gem_emerald
+- decoration_material_gem_ruby
+- decoration_material_gem_flourite
+- decoration_material_gem_adventurine
+- decoration_material_gem_amethyst
+- decoration_material_gem_amber
+- decoration_material_gem_moonstone
+- decoration_material_gem_turquoise
+- decoration_material_gem_carnelian
+- decoration_material_gem_peridot
+- decoration_material_gem_lapis_lazuli
+- decoration_material_gem_opal
+- decoration_material_gem_spinel
+- decoration_material_gem_jade
+- decoration_material_slate_bamboo
+- decoration_material_slate_soapstone
+- decoration_material_slate_bronze
+- decoration_material_slate_quartz
+- decoration_material_slate_jade
+- decoration_material_slate_ivory
+- decoration_material_slate_rhinocerous_horn
+- decoration_material_ink_pine_soot
+- decoration_material_ink_oil_soot
+- decoration_material_ink_charcoal
+- decoration_material_ink_lacquer_soot
+- decoration_material_ink_cinnabar
+- decoration_material_ink_orpiment
+- decoration_material_ink_lac_dye
+- decoration_material_ink_silver
+- decoration_material_ink_shell_gold
+- decoration_material_embroidery_wool
+- decoration_material_embroidery_linen
+- decoration_material_embroidery_cotton
+- decoration_material_embroidery_silk
+- decoration_material_embroidery_silver_thread
+- decoration_material_embroidery_gold_thread
+- generic_material_cloth_wool
+- generic_material_cloth_lambswool
+- generic_material_cloth_silk
+- generic_material_cloth_satin
+- generic_material_cloth_velvet
+- generic_material_cloth_samite
+- generic_material_cloth_linen
+- generic_material_cloth_fustian
+- generic_material_cloth_cotton
+- generic_material_cloth_worsted_wool
+- generic_material_cordage_wool
+- generic_material_cordage_silk
+- generic_material_cordage_linen
+- generic_material_cordage_cotton
+- generic_material_wood_ash
+- generic_material_wood_oak
+- generic_material_wood_pine
+- generic_material_wood_fir
+- generic_material_wood_elm
+- generic_material_wood_walnut
+- generic_material_wood_maple
+- generic_material_wood_fleroya
+- generic_material_wood_sycomore
+- generic_material_wood_padauk
+- generic_material_wood_sal
+- generic_material_wood_rosewood
+- generic_material_wood_satinwood
+- generic_material_wood_teak
+- generic_material_wood_yew
+- generic_material_wood_olivewood
+- generic_material_wood_coromandel
+- generic_material_wood_ebony
+- generic_material_wood_nanmu
+- generic_material_wood_boxwood
+- generic_material_wood_paulownia
+- generic_material_wood_camphorwood
+- generic_material_wood_narra
+- generic_material_wood_toona_sureni
+- generic_material_wood_agarwood
+- generic_material_wood_sandalwood
+- generic_material_wood_birch
+- generic_material_wood_linden
+- blade_metal_wrought_iron
+- blade_metal_folded_iron
+- blade_metal_wootz_steel
+- blade_metal_damascus_steel
+- blade_metal_bulat_steel
+- head_metal_wrought_iron
+- head_metal_wootz_steel
+- head_metal_damascus_steel
+- head_metal_bulat_steel
+- handle_metal_wrought_iron
+- handle_metal_wootz_steel
+- handle_metal_damascus_steel
+- handle_metal_bulat_steel
+- shaft_wood_ash
+- shaft_wood_pine
+- shaft_wood_fir
+- shaft_wood_elm
+- shaft_wood_walnut
+- shaft_wood_maple
+- shaft_wood_fleroya
+- shaft_wood_sycomore
+- shaft_wood_padauk
+- shaft_wood_sal
+- shaft_wood_rosewood
+- shaft_wood_satinwood
+- shaft_wood_teak
+- shaft_wood_yew
+- shaft_wood_olivewood
+- shaft_wood_coromandel
+- shaft_wood_ebony
+- shaft_wood_oak
+- shaft_wood_nanmu
+- shaft_wood_boxwood
+- shaft_wood_paulownia
+- shaft_wood_camphorwood
+- shaft_wood_narra
+- shaft_wood_toona_sureni
+- shaft_wood_agarwood
+- shaft_wood_sandalwood
+- shaft_wood_birch
+- shaft_wood_linden
+- blade_decoration_etched_pattern
+- blade_decoration_etched_motto
+- blade_decoration_etched_owner
+- hilt_decoration_carved_pattern
+- hilt_decoration_inlay_pattern
+- hilt_decoration_filigree
+- hilt_decoration_rounded_pommels
+- hilt_decoration_wires
+- hilt_decoration_circles
+- hilt_decoration_twisting
+- head_decoration_etched_pattern
+- head_decoration_religious_motifs
+- shaft_decoration_varnish
+- shaft_decoration_grooves
+- shaft_decoration_wavelets
+- shaft_decoration_lines
+- shaft_decoration_inlay
+- shaft_decoration_painted_pattern
+- metal_handle_decoration_etched_pattern
+- metal_handle_decoration_inlay
+- armor_material_hardened_leather
+- armor_material_iron
+- armor_material_steel
+- armor_material_gold
+- armor_material_bronze
+- armor_material_horn
+- armor_material_pangolin_scales
+- armor_material_canvas
+- armor_helmet_spangenhelm
+- armor_helmet_crested
+- armor_helmet_nasal
+- armor_helmet_enclosed
+- armor_helmet_great_helmet
+- armor_helmet_great_helmet_bascinet
+- armor_helmet_great_helmet_cervelliere
+- armor_helmet_turban_helmet
+- armor_helmet_lamellar
+- armor_helmet_cervelliere
+- armor_helmet_kettle
+- armor_helmet_kulah_khud
+- armor_decoration_etched_pattern
+- armor_decoration_inlay_pattern
+- armor_decoration_painted_pattern
+- armor_decoration_lines
+- armor_decoration_gold_plating
+- armor_decoration_lining
+- armor_decoration_embossed
+- armor_decoration_grouped_rivets
+- artifact_armor_descriptor_shiny
+- artifact_armor_descriptor_lustrous
+- artifact_armor_descriptor_burnished
+- artifact_armor_descriptor_flexible
+- artifact_armor_descriptor_powerful
+- artifact_armor_descriptor_silver_inlaid
+- artifact_armor_descriptor_gold_inlaid
+- artifact_armor_descriptor_bronze_inlaid
+- artifact_armor_descriptor_armor_material_hardened_leather
+- artifact_armor_descriptor_armor_material_steel
+- artifact_armor_descriptor_armor_gold_decorated
+- artifact_armor_descriptor_armor_silver_decorated
+- artifact_armor_descriptor_armor_copper_decorated
+- artifact_armor_descriptor_armor_shakudo_decorated
+- artifact_armor_descriptor_armor_shibuichi_decorated
+- regalia_scepter_gemstone
+- regalia_clothes_cloak
+- regalia_clothes_robe
+- regalia_accessory_orb
+- regalia_accessory_necklace
+- regalia_seal_slate
+- regalia_seal_ink
+- crown_decoration_gems
+- crown_decoration_filigree
+- crown_decoration_filigree_and_gem
+- brooch_decoration_adornment
+- brooch_decoration_centerpiece
+- brooch_decoration_centerpiece_and_adornment
+- brooch_centerpiece_cross
+- brooch_centerpiece_sword
+- brooch_centerpiece_cabochon
+- brooch_adornment_gems
+- brooch_adornment_filigree
+- brooch_adornment_runes
+- ring_decoration_adornment
+- ring_decoration_centerpiece
+- ring_decoration_centerpiece_and_adornment
+- ring_centerpiece_cabochon
+- ring_centerpiece_signet
+- ring_centerpiece_religious
+- ring_adornment_filigree
+- ring_adornment_motto
+- ring_adornment_religious
+- ring_adornment_gems
+- ring_adornment_runes
+- wood_decoration_none
+- wood_decoration_varnish
+- wood_decoration_hsb_inlay
+- wood_decoration_painted_pattern
+- sculpture_material_stone
+- sculpture_material_wood
+- tapestry_scene_geometric_patterns
+- tapestry_scene_calligraphic
+- tapestry_scene_animals
+- tapestry_scene_garden
+- tapestry_scene_historical
+- tapestry_scene_religious
+- tapestry_scene_hunt
+- tapestry_scene_myth
+- tapestry_scene_bucolic
+- tapestry_scene_coronation
+- tapestry_scene_ships
+- tapestry_scene_banquet
+- tapestry_scene_hearing
+- tapestry_scene_battle
+- animal_skull_type_roe
+- animal_skull_type_gazelle
+- animal_skull_type_stag
+- animal_skull_type_antelope
+- animal_skull_type_hart
+- animal_skull_type_elk
+- animal_skull_type_aurochs
+- animal_skull_type_bison
+- animal_skull_type_boar
+- animal_skull_type_bear
+- animal_skull_type_leopard
+- animal_skull_type_lion
+- animal_skull_type_tiger
+- animal_skull_type_wolf
+- animal_skull_type_hyena
+- animal_skull_type_lynx
+- animal_skull_type_unicorn
+- animal_skull_type_horse
+- animal_skull_type_rabbit
+- animal_hide_type_roe
+- animal_hide_type_gazelle
+- animal_hide_type_stag
+- animal_hide_type_antelope
+- animal_hide_type_hart
+- animal_hide_type_elk
+- animal_hide_type_aurochs
+- animal_hide_type_bison
+- animal_hide_type_boar
+- animal_hide_type_fox
+- animal_hide_type_hare
+- animal_hide_type_bear
+- animal_hide_type_leopard
+- animal_hide_type_lion
+- animal_hide_type_tiger
+- animal_hide_type_hyena
+- animal_hide_type_lynx
+- animal_hide_type_wolf
+- animal_hide_type_dragon
+- animal_hide_type_unicorn
+- animal_hide_type_cat
+- animal_hide_type_dog
+- animal_hide_type_rabbit
+- box_material_brass
+- box_material_silver
+- box_material_gold
+- box_material_bone
+- box_material_hsb_ivory
+- box_material_oak
+- box_material_pine
+- box_material_walnut
+- box_material_sycomore
+- box_material_teak
+- box_material_ebony
+- box_decoration_painted
+- box_decoration_inlay
+- box_decoration_carved
+- goblet_material_brass
+- goblet_material_silver
+- goblet_material_gold
+- goblet_material_bone
+- goblet_material_ivory
+- goblet_material_glass
+- book_subject_martial
+- book_subject_diplomacy
+- book_subject_stewardship
+- book_subject_intrigue
+- book_subject_learning
+- book_subject_medicine
+- book_subject_witch
+- book_subject_reveler
+- book_subject_blademaster
+- book_subject_hunter
+- book_subject_mystic
+- book_subject_herbalist
+- book_subject_cannibal
+- book_subject_deviant
+- book_subject_torturer
+- book_subject_lunatic
+- book_subject_childhood
+- book_subject_animals
+- book_subject_mystical_animal
+- book_subject_relationship
+- book_subject_dynasty
+- book_subject_empire
+- book_subject_kingdom
+- book_subject_language_manual
+- book_subject_religious_text
+- book_subject_alchemy
+- book_subject_family_epic
+- book_subject_family_epic_great
+- book_topic_mystical_animal
+- book_topic_language_manual
+- book_topic_religious_text
+- book_topic_soulmate
+- book_topic_nemesis
+- book_topic_unification
+- book_topic_creation
+- book_topic_restoration
+- book_topic_martial_troop_compositions
+- book_topic_martial_military_strategies
+- book_topic_martial_ancient_military_campaigns
+- book_topic_martial_military
+- book_topic_martial_duels
+- book_topic_martial_chivalry
+- book_topic_diplomacy_court_politics
+- book_topic_diplomacy_court_alliances
+- book_topic_diplomacy_dynasty
+- book_topic_diplomacy_dynasty_big
+- book_topic_diplomacy_cicero
+- book_topic_diplomacy_art_of_feasting
+- book_topic_diplomacy_hitopadesa
+- book_topic_diplomacy_kalila
+- book_topic_diplomacy_edda
+- book_topic_diplomacy_orkneyinga
+- book_topic_diplomacy_poetry
+- book_topic_diplomacy_jokes
+- book_topic_learning_theological_treaties
+- book_topic_learning_metaphysical_conundrums
+- book_topic_learning_aristotle
+- book_topic_learning_anatomy
+- book_topic_learning_tome_collections
+- book_topic_learning_religious
+- book_topic_learning_religious_big
+- book_topic_learning_prayers
+- book_topic_learning_hours
+- book_topic_learning_golden_legend
+- book_topic_learning_iliad
+- book_topic_learning_mahabharata
+- book_topic_learning_mufaddaliyat
+- book_topic_stewardship_trade_routes
+- book_topic_stewardship_lawmaking
+- book_topic_stewardship_best_practices_tax_collectors
+- book_topic_stewardship_architect
+- book_topic_stewardship_digest
+- book_topic_stewardship_speculum
+- book_topic_stewardship_admin
+- book_topic_stewardship_old_ledger
+- book_topic_intrigue_poisons
+- book_topic_intrigue_punishment
+- book_topic_intrigue_punishment_not_torturer
+- book_topic_intrigue_seduction
+- book_topic_intrigue_the_art_of_love
+- book_topic_intrigue_fertility
+- book_topic_medicine_medicine
+- book_topic_medicine_herbs
+- book_topic_medicine_science
+- book_topic_medicine_science_big
+- book_topic_medicine_galen
+- book_topic_medicine_witch
+- book_topic_witch_artifact_book_topic_witch_bible
+- book_topic_witch_worship_horned_god
+- book_topic_witch_love_sorcery
+- book_topic_witch_curse_sorcery
+- book_topic_cannibal_recipes
+- book_topic_artifact_book_topic_cannibal
+- book_topic_lunatic_lunatic
+- book_topic_lunatic_voynich
+- book_topic_mystic_mystic
+- book_topic_hunter_hunter
+- book_topic_hunter_nature
+- book_topic_hunter_falconry
+- book_topic_hunter_dogs
+- book_topic_animals_your_cat
+- book_topic_animals_your_cat_no_name
+- book_topic_animals_your_dog
+- book_topic_animals_your_dog_no_name
+- book_topic_animals_animals
+- book_topic_childhood_one
+- book_topic_childhood_two
+- book_topic_alchemy_the_great_book_of_mercy
+- book_topic_alchemy_the_book_of_seventy
+- book_topic_alchemy_mercury
+- book_topic_alchemy_arsenic
+- book_topic_alchemy_gold
+- book_topic_alchemy_silver
+- book_topic_family_epic
+- book_topic_family_epic_great
+- book_title_unification
+- book_title_creation
+- book_title_restoration
+- book_title_mystical_animal
+- book_title_language_manual
+- book_title_religious_text
+- book_title_martial
+- book_title_martial_military
+- book_title_martial_duels
+- book_title_martial_chivalry
+- book_title_martial_strategy
+- book_title_diplomacy
+- book_title_diplomacy_cicero
+- book_title_diplomacy_hitopadesa
+- book_title_diplomacy_kalila
+- book_title_diplomacy_edda
+- book_title_diplomacy_orkneyinga
+- book_title_diplomacy_poetry
+- book_title_diplomacy_jokes
+- book_title_diplomacy_feasting
+- book_title_diplomacy_court_alliances
+- book_title_diplomacy_dynasty
+- book_title_stewardship
+- book_title_stewardship_digest
+- book_title_stewardship_architect
+- book_title_stewardship_speculum
+- book_title_stewardship_admin
+- book_title_stewardship_trade_routes
+- book_title_stewardship_best_practices_tax_collectors
+- book_title_stewardship_lawmaking
+- book_title_stewardship_old_ledger
+- book_title_learning
+- book_title_learning_religious
+- book_title_learning_prayers
+- book_title_learning_hours
+- book_title_learning_golden_legend
+- book_title_learning_aristotle
+- book_title_learning_anatomy
+- book_title_learning_iliad
+- book_title_learning_mahabharata
+- book_title_learning_mufaddaliyat
+- book_title_learning_theological_treaties
+- book_title_learning_metaphysical_conundrums
+- book_title_learning_tome_collections
+- book_title_intrigue
+- book_title_intrigue_poisons
+- book_title_intrigue_seduction
+- book_title_intrigue_fertility
+- book_title_intrigue_the_art_of_love_one
+- book_title_intrigue_the_art_of_love_two
+- book_title_intrigue_punishment
+- book_title_witch_love_sorcery
+- book_title_witch_curse_sorcery
+- book_title_witch_witch
+- book_title_medicine_science
+- book_title_medicine_galen
+- book_title_medicine_herbs_one
+- book_title_medicine_herbs_two
+- book_title_medicine_witch
+- book_title_medicine_medicine
+- book_title_alchemy_the_great_book_of_mercy
+- book_title_alchemy_the_book_of_seventy
+- book_title_alchemy_mercury
+- book_title_alchemy_arsenic
+- book_title_alchemy_gold
+- book_title_alchemy_silver
+- book_title_reveler_one
+- book_title_reveler_two
+- book_title_blademaster
+- book_title_hunter_one
+- book_title_hunter_two
+- book_title_hunter_three
+- book_title_hunter_four
+- book_title_hunter_five
+- book_title_hunter_six
+- book_title_hunter_seven
+- book_title_hunter_eight
+- book_title_hunter_nine
+- book_title_hunter_ten
+- book_title_mystic
+- book_title_herbalist
+- book_title_cannibal
+- book_title_cannibal_recipes
+- book_title_deviant_one
+- book_title_deviant_two
+- book_title_deviant_three
+- book_title_voynich
+- book_title_lunatic_one
+- book_title_lunatic_two
+- book_title_lunatic_three
+- book_title_soulmate
+- book_title_nemesis
+- book_title_childhood_one
+- book_title_childhood_two
+- book_title_animals_your_cat
+- book_title_animals_your_dog
+- book_title_animals_no_name
+- book_title_animals
+- book_title_family_epic_song
+- book_title_family_epic_chronicle
+- book_title_family_epic_poem
+- book_title_family_epic_great_song
+- book_title_family_epic_great_chronicle
+- book_title_tome
+- book_title_family_epic_great_poem
+- book_cover_material_HSB_ivory
+- book_cover_material_wood
+- book_cover_material_leather
+- book_cover_material_velvet
+- book_cover_material_gold
+- book_cover_material_silver
+- book_decoration_gems
+- book_decoration_gems_and_clasp
+- book_decoration_pattern_embroidered
+- book_decoration_pattern_carved
+- book_decoration_pattern_painted
+- icon_decoration_pattern_saint
+- elixir_youth
+- elixir_immortality
+- glass_decoration_etched_pattern
+- glass_decoration_inlay_pattern
+- glass_decoration_painted_pattern
+- glass_decoration_mold_blowing_pattern
+- glass_decoration_enamel_pattern
+- generic_material_metal_gold
+- generic_material_metal_silver
+- generic_material_metal_electrum
+- generic_material_metal_iron
+- generic_material_metal_pewter
+- generic_material_metal_brass
+- generic_material_metal_steel
+- generic_material_metal_bronze
+- generic_material_metal_copper
+- generic_material_earthware_clay
+- generic_material_earthware_stone
+- generic_material_earthware_terracotta
+- generic_material_earthware_porcelain
+- longbow_wood_elm
+- longbow_wood_yew
+- composite_wood_bamboo
+- composite_wood_maple
+- composite_wood_mulberry
+- composite_horn_antelope
+- composite_horn_gazelle
+- composite_horn_bison
+- composite_horn_deer
+- composite_horn_aurochs
+- bow_wood_ash
+- bow_wood_bamboo
+- bow_wood_cherry
+- bow_wood_hazel
+- bow_wood_hickory
+- bow_wood_maple
+- bow_wood_mulberry
+- bow_wood_palm
+- bow_wood_oak
+- bow_wood_walnut
+- bow_wood_yew
+- bow_string_hemp
+- bow_string_horse_hair
+- bow_string_linen
+- bow_string_rawhide
+- bow_string_silk
+- bow_string_sinew
+- animal_trinket_type_antler
+- animal_trinket_type_horn
+- animal_trinket_type_tusk
+- animal_trinket_type_claws
+- animal_trinket_type_fangs
+- animal_trinket_type_tail
+- animal_trinket_type_foot
+- bird_feather_type_feather
+
+### slots/00_default.txt（24 条目）
+
+- crown
+- regalia
+- armor
+- weapon
+- brooch
+- trinket_1
+- trinket_2
+- trinket_3
+- journal
+- wall_big_1
+- wall_big_2
+- wall_big_3
+- wall_small_1
+- wall_small_2
+- wall_small_3
+- throne
+- sculpture_1
+- sculpture_2
+- lectern_1
+- lectern_2
+- pedestal_1
+- pedestal_2
+- pedestal_3
+- pedestal_4
+
+### slots/01_holy_site.txt（3 条目）
+
+- holy_relic_1
+- holy_relic_2
+- holy_relic_3
+
+### templates/00_badge_templates.txt（1 条目）
+
+- pilgrim_badge_template
+
+### templates/00_event_templates.txt（15 条目）
+
+- arabic_book_template
+- small_religious_carving_template
+- holy_book_template
+- witchy_shoes_template
+- witchy_book_template
+- witchy_artifact_template
+- mysterious_puzzle_template
+- fp3_zoroastrian_brazier_template
+- ce1_mummy_template
+- marco_polo_book
+- paiza_artifact_template
+- mpo_severed_head_template
+- tgp_severed_head_template
+- ryukyu_shaku_template
+- ryukyu_crown_template
+
+### templates/00_historical_artifacts_templates.txt（47 条目）
+
+- ark_covenant_template
+- banner_thankfulness
+- babr_template
+- justinian_template
+- papal_tiara_template
+- al_taj_template
+- cup_jamshid_template
+- david_harp_template
+- crown_iron_template
+- reichskrone_template
+- throne_charlemagne_template
+- throne_solomon_template
+- byz_throne_template
+- throne_scone_template
+- kaviani_template
+- edessa_template
+- tizona_template
+- muhammad_sword_template
+- sword_goujian_template
+- christian_artifact_template
+- islam_artifact_template
+- buddhism_artifact_template
+- attila_template
+- pentapyrgion_template
+- branch_zoroastr_template
+- branch_germanic_template
+- branch_slavic_template
+- branch_boog_template
+- branch_hinduism_template
+- relic_finno_ugric_template
+- jainism_artifact_template
+- branch_general_template
+- cross_template
+- christian_relic_template
+- islam_relic_template
+- buddhism_relic_template
+- judaism_relic_template
+- religious_statue_template
+- 6050_relic_template
+- saintly_bones_template
+- general_unique_template
+- child_toy_template
+- adults_only_template
+- fp2_chalice_dona_urraca_template
+- fp2_santiago_aquamanile_template
+- fp2_santiago_bells_template
+- crown_christian_relic_template
+
+### templates/00_type_templates.txt（6 条目）
+
+- house_banner_template
+- dynasty_banner_template
+- regalia_template
+- unique_regalia_template
+- crown_wearable_template
+- unique_crown_wearable_template
+
+### templates/01_ep2_templates.txt（0 条目）
+
+（无顶层块）
+
+### templates/02_ep3_templates.txt（5 条目）
+
+- statue_constantine_template
+- tree_automa_template
+- statue_four_tetrarchs_template
+- statue_roman_woman_template
+- hydraulic_organ_template
+
+### templates/pam_saint_relic_templates.txt（2 条目）
+
+- pam_saint_relic_template
+- pam_holy_myron_template
+
+### types/00_types.txt（66 条目）
+
+- helmet
+- helmet_simple
+- regalia
+- regalia_simple
+- seal_of_investiture
+- seal_of_investiture_court
+- armor_mail
+- armor_plate
+- armor_scale
+- armor_lamellar
+- armor_laminar
+- armor_brigandine
+- axe
+- hammer
+- mace
+- spear
+- sword
+- dagger
+- miscellaneous
+- journal
+- miscellaneous_when_not_court
+- brooch
+- badge
+- necklace
+- ring
+- animal_trinket
+- bird_feather
+- sculpture
+- chest
+- box
+- cabinet
+- goblet
+- scientific_apparatus
+- jug
+- brooch_pedestal
+- necklace_pedestal
+- bowl
+- plate
+- urn
+- tun_barrel
+- scepter_pedestal
+- pedestal
+- tapestry
+- animal_skull
+- animal_hide
+- animal_hide_big
+- wall_big
+- wall_small
+- wall_shield
+- wall_shield_special
+- wall_icon_court_large
+- wall_icon_court_small
+- throne
+- throne_special
+- book
+- chronicle
+- elixir
+- panacea
+- philosophers_stone
+- pas_darmes_token
+- pas_darmes_spurs
+- tournament_favor
+- longbow
+- composite
+- bow
+- crossbow
+
+### visuals/000_placeholder.txt（1 条目）
+
+- placeholder
+
+### visuals/00_court_artifacts.txt（58 条目）
+
+- chest
+- diwan
+- table
+- cabinet
+- throne
+- tapestry
+- small_animal_hide
+- large_animal_hide
+- small_box
+- medium_box
+- goblet
+- banner
+- wall_shield
+- wall_shield_medi
+- animal_trophy
+- statue
+- statue_mena
+- scroll
+- pouch
+- urn
+- indian_book
+- book
+- reliquary
+- cross
+- rock
+- human_skull
+- diamond
+- riches
+- flask
+- axe_court
+- hammer_court
+- spear_court
+- mace_court
+- dagger_court
+- sword_court
+- regalia_court
+- crown_court
+- imperial_seal
+- special_seal
+- armor_court
+- tiny_throne_trinket
+- brooch_court
+- ring_court
+- necklace_court
+- skull_goblet
+- oxus_bracelet
+- persian_drinking_vessel
+- sassanian_sword_pedestal
+- sassanian_sword
+- fp3_incense_burner_sculpture
+- tgp_sword_of_goujian
+- go_board_game_artifact
+- scroll_bundle_artifact
+- incense_burner_artifact
+- japan_bow
+- seven_branched_sword_artifact
+- gyerimro_dagger_artifact
+- bunga_mas
+
+### visuals/00_historical.txt（48 条目）
+
+- sculpture_ark_of_covenant
+- sculpture_babr_e_bayan
+- pedestal_alexander_armor
+- pedestal_justinian
+- pedestal_cup_jamshid
+- pedestal_david_harp
+- pedestal_crown_iron
+- al_taj_crown
+- throne_charlemagne
+- throne_solomon
+- throne_scone
+- throne_turquoise
+- throne_peacock
+- wall_banner_kaviani
+- wall_banner_edessa
+- wall_cid_sword
+- wall_muhammad_sword
+- wall_khanda_sword
+- wall_szczerbiec_sword
+- ep3_throne_of_solomon
+- pedestal_christian_relic
+- pedestal_islamic_relic
+- pedestal_buddhism_relic
+- wall_sword_attila
+- olifant_court
+- sculpture_cabinet_pentapyrgion
+- pedestal_branch_relic_zoroastr
+- pedestal_branch_relic_germanic
+- pedestal_branch_relic_slavic
+- pedestal_branch_relic_boog
+- pedestal_branch_relic_hinduism
+- banner_islam
+- excalibur
+- easteregg_radzig_sword
+- buddha_tooth
+- head
+- hre_crown
+- pope_tiara
+- pope_court
+- pedestal_longinus
+- statue_constantine
+- tree_automa
+- statue_four_tetarchs
+- statue_roman_woman
+- hydraulic_organ
+- pedestal_sword_japan_single
+- japanese_sword
+- armor_japan
+
+### visuals/00_personal_misc.txt（29 条目）
+
+- regalia
+- crown
+- armor
+- brooch
+- necklace
+- ring
+- flowers
+- pelt
+- bone
+- medallion
+- cabinet_trinket
+- fabric_roll
+- pocket_figurine
+- pocket_toy
+- pocket_pouch
+- pocket_goblet
+- pocket_basic_case
+- pocket_fancy_case
+- cheese
+- pocket_book
+- pocket_tusk
+- pocket_map
+- artifact_scroll
+- ryukyuan_regalia
+- ryukyuan_crown
+- santiago_badge
+- jerusalem_badge
+- rome_badge
+- badge
+
+### visuals/00_weapon_visuals.txt（8 条目）
+
+- axe
+- hammer
+- spear
+- mace
+- dagger
+- dagger_kris
+- sword
+- longsword
+
+### visuals/03_fp2_artifacts.txt（8 条目）
+
+- fp2_chalice_dona_urraca
+- fp2_santiago_aquamanile
+- fp2_santiago_bells
+- fp2_armillary_sphere
+- fp2_2p_chess_board
+- fp2_4p_chess_board
+- fp2_votive_crowns
+- fp2_andalusian_aquamanile
+
+### visuals/04_ep2_artifacts.txt（18 条目）
+
+- longbow
+- composite
+- bow
+- crossbow
+- animal_trinket
+- fox_tail
+- bear_paw
+- tusk
+- bird_feather
+- falconry_glove
+- brooch_pedestal
+- necklace_pedestal
+- bowl
+- plate
+- statuette
+- tun_barrel
+- miniature_monument
+- scepter_pedestal
+
+### visuals/06_ce1_artifacts.txt（3 条目）
+
+- chronicle
+- animal_figurine
+- glazed_jar
+
+### visuals/07_ep3_artifacts.txt（3 条目）
+
+- icon_court_large
+- icon_court_small
+- trinket_icon
+
+### visuals/09_mpo_artifacts.txt（3 条目）
+
+- antlers
+- pocket_severed_head
+- paiza
+
+### visuals/10_ce3_artifacts.txt（5 条目）
+
+- crucifix
+- pam_bible
+- pam_thurible
+- pam_situla
+- pam_crozier
+
+### 未解析文件
+
+- `blueprints/_blueprints.info` — 纯文档（非 Jomini）
+- `feature_groups/_feature_groups.info` — 纯文档（非 Jomini）
+- `features/_features.info` — 纯文档（非 Jomini）
+- `slots/_slots.info` — 纯文档（非 Jomini）
+- `templates/_templates.info` — 纯文档（非 Jomini）
+- `types/_types.info` — 纯文档（非 Jomini）
+- `visuals/_visuals.info` — 纯文档（非 Jomini）

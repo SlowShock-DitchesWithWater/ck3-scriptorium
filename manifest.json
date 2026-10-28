@@ -6651,8 +6651,8 @@
         "sections": null,
         "output_file": "game_docs/script_docs/effects.md",
         "output_bytes": 607901,
-        "output_sha256": "4ce586da22cb161971c6c7131e0d3801797ab923c3e927e935bcb986f2007502",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "eb3aa656058ab0a09d15bd07f44b70104f06c84ebde24358ae65191a227b19a1",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       },
       "triggers.md": {
         "source_file": "game logs/triggers.log",
@@ -6662,8 +6662,8 @@
         "sections": null,
         "output_file": "game_docs/script_docs/triggers.md",
         "output_bytes": 376811,
-        "output_sha256": "f95b347fefb1be32f7936450f6178f57d48085c723a0ca4dd9186d9b8cefe646",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "f9bc9e3df10ca0b21d45f5941a2b65cd58a2715f7b6fbf4504767a5cd9cdb7af",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       },
       "event_targets.md": {
         "source_file": "game logs/event_targets.log",
@@ -6675,8 +6675,8 @@
         },
         "output_file": "game_docs/script_docs/event_targets.md",
         "output_bytes": 48339,
-        "output_sha256": "36a35e68443ba0ca1f72ad984c70a4d75c184f54a4b169067dd6806a655e8f0e",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "0618a227e90c2bd6c6202a66145aee5f6b05686af8adb0866223d8b7c71517e2",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       },
       "event_scopes.md": {
         "source_file": "game logs/event_scopes.log",
@@ -6686,8 +6686,8 @@
         "sections": null,
         "output_file": "game_docs/script_docs/event_scopes.md",
         "output_bytes": 9550,
-        "output_sha256": "7feb033e38c73dd3e299c58003154fd707f0673e82f209f70054c4b4f37ead9c",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "2e1adf6a9889b2ac11f4c980bc47c79199cd53ba2cdc44f6f00cbed77ecc4052",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       },
       "modifiers.md": {
         "source_file": "game logs/modifiers.log",
@@ -6697,8 +6697,8 @@
         "sections": null,
         "output_file": "game_docs/script_docs/modifiers.md",
         "output_bytes": 46685,
-        "output_sha256": "61f9a140c0853339efb4827633a2bbd654864421e569ba2e272f0edbf8a9e603",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "06c334261198b9628db0618a224030fb7324ec16a852df79f4d5ca485e69a201",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       },
       "on_actions.md": {
         "source_file": "game logs/on_actions.log",
@@ -6708,8 +6708,8 @@
         "sections": null,
         "output_file": "game_docs/script_docs/on_actions.md",
         "output_bytes": 68313,
-        "output_sha256": "17455c2cfc9f6997c2adc7cb99e3a16d1f8bdde18f6466d293d22f7f529b64ee",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "c9951770f37820cddda8cc50db5663d5d77790b77a1f77ff6361ead72a844cd2",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       },
       "custom_localization.md": {
         "source_file": "game logs/custom_localization.log",
@@ -6719,8 +6719,8 @@
         "sections": null,
         "output_file": "game_docs/script_docs/custom_localization.md",
         "output_bytes": 807550,
-        "output_sha256": "00af91e8f3e3c8febe9218b7e979020a08341655d1f68567548f88f65f8fa1da",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "e384c745b6dedecaf7e8c23124b1f44a1083077c1e70a9f145f7e286c4820e07",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       },
       "data_types_common.md": {
         "source_file": "game logs/data_types/data_types_common.txt",
@@ -6730,8 +6730,8 @@
         "sections": null,
         "output_file": "game_docs/script_docs/data_types_common.md",
         "output_bytes": 34242,
-        "output_sha256": "bd2ae3278764a49bef17d34d20a4e3a3bdca3aa23a8b3c9b2472cd78fcff2a1f",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "4ed772f0d06ba0f28bc5306453766961ece8f53b120f64875930e575db2d1b5b",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       },
       "data_types_gui.md": {
         "source_file": "game logs/data_types/data_types_gui.txt",
@@ -6741,8 +6741,8 @@
         "sections": null,
         "output_file": "game_docs/script_docs/data_types_gui.md",
         "output_bytes": 74752,
-        "output_sha256": "6537f161e85d16d8dd27f75087d1b454edff0a7d391370a8ade23025015355f0",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "b80ecde7eedd2414b7c685b1caaa8f25774b57b1365ff5fb35c254733c1936c8",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       },
       "data_types_internalclausewitzgui.md": {
         "source_file": "game logs/data_types/data_types_internalclausewitzgui.txt",
@@ -6752,8 +6752,8 @@
         "sections": null,
         "output_file": "game_docs/script_docs/data_types_internalclausewitzgui.md",
         "output_bytes": 214961,
-        "output_sha256": "9ef9426321ef1249e98beefea5c3ba012799b6ef248e9ec35e21f15bfdd21408",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "6e7ca3001fe474faa2f035f734f1f5557029c49f5ded3e46d31c9efe20143a33",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       },
       "data_types_script.md": {
         "source_file": "game logs/data_types/data_types_script.txt",
@@ -6763,8 +6763,8 @@
         "sections": null,
         "output_file": "game_docs/script_docs/data_types_script.md",
         "output_bytes": 85389,
-        "output_sha256": "d97d604f674ab6334fb76af58129e5eeee0d5810357ab8e0efbe7e58a48d7140",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "b8d7b9d3caa975ade5d9a2d3fa536efc23fa44c29164ee57c2ee31660fc491ec",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       },
       "data_types_uncategorized.md": {
         "source_file": "game logs/data_types/data_types_uncategorized.txt",
@@ -6774,19 +6774,19 @@
         "sections": null,
         "output_file": "game_docs/script_docs/data_types_uncategorized.md",
         "output_bytes": 1783065,
-        "output_sha256": "82fa11e3a0f39842a91a2da3545e251c7feabf7d8d0f4a6f7d6e8d8c40a77329",
-        "merged_at": "2026-10-22T21:41:38+08:00"
+        "output_sha256": "af40617e49eb0cb4abd04576ff649fef15f8066525fae92698ca0d16634b62bb",
+        "merged_at": "2026-10-29T00:01:58+08:00"
       }
     },
-    "game_version": "1.20.0",
-    "game_version_source": "基准事实默认值 1.20.0（docs/spec.md 环境事实附录；code_revisions.log 为空/无版本信息，未能提取）",
-    "merged_at_latest": "2026-10-22T21:41:38+08:00",
+    "game_version": "1.20.1",
+    "game_version_source": "code_revisions.log 提取（文件 C:\\Users\\GRRR\\Documents\\Paradox Interactive\\Crusader Kings III\\logs\\code_revisions.log）",
+    "merged_at_latest": "2026-10-29T00:01:58+08:00",
     "vanilla_structure": {
       "game_dir": "(local game install)/game",
-      "game_version": "1.20.0",
+      "game_version": "1.20.1",
       "game_version_source": "spec 环境事实附录基准（可用 --game-version 覆盖）",
-      "scanned_at": "2026-10-22T21:42:02+08:00",
-      "fingerprint": "fc3b01caffcda664590dcf28115decb449d214f142cc181a69ba7f0b0502a5ee",
+      "scanned_at": "2026-10-29T00:02:17+08:00",
+      "fingerprint": "39135644c71ef750c7ada8dabab3327800ac32f8e572f67a0814b63fa8436546",
       "common": {
         "top_subdir_count": 128,
         "loose_file_count": 1,

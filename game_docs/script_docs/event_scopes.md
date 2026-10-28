@@ -1,0 +1,599 @@
+# Event Scopes（script_docs 权威清单）
+
+- 来源：`game logs/event_scopes.log`（CK3 1.20.1 `script_docs` 控制台导出）
+- 源文件时间：2026-10-22T19:55:11+08:00（文件 mtime，视为 dump 生成时间）
+- 源文件大小：8898 字节
+- 条目数：74
+- 正文逐字来自 dump，仅重排为每条目一节；与 wiki 层冲突时以本层为准。
+
+### none
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: none
+Stores Variables: no
+
+### value
+
+Evaluate Triggers: no
+Execute Effects: no
+Change Scopes: no
+Save Token: value
+Stores Variables: no
+
+### boolean
+
+Evaluate Triggers: no
+Execute Effects: no
+Change Scopes: no
+Save Token: boolean
+Stores Variables: no
+
+### flag
+
+Evaluate Triggers: no
+Execute Effects: no
+Change Scopes: no
+Save Token: flag
+Stores Variables: no
+
+### character
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: char
+Stores Variables: yes
+
+### landed_title
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: lt
+Stores Variables: yes
+
+### activity
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: act
+Stores Variables: yes
+
+### secret
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: sec
+Stores Variables: yes
+
+### province
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: prov
+Stores Variables: yes
+
+### scheme
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: scheme
+Stores Variables: yes
+
+### combat
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: com
+Stores Variables: yes
+
+### combat_side
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: combsi
+Stores Variables: yes
+
+### title_and_vassal_change
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: tvc
+Stores Variables: no
+
+### faith
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: faith
+Stores Variables: yes
+
+### ghw
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ghw
+Stores Variables: yes
+
+### religion
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: religion
+Stores Variables: yes
+
+### war
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: war
+Stores Variables: yes
+
+### story
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: story
+Stores Variables: yes
+
+### casus_belli
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: cb
+Stores Variables: no
+
+### dynasty
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: dyn
+Stores Variables: yes
+
+### dynasty_house
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: dyn_house
+Stores Variables: yes
+
+### organization
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: organization
+Stores Variables: no
+
+### house_relation
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: house_relation
+Stores Variables: yes
+
+### holy_site
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: holy_site
+Stores Variables: no
+
+### holy_site_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: holy_site_type
+Stores Variables: no
+
+### faction
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: fac
+Stores Variables: yes
+
+### culture
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: culture
+Stores Variables: yes
+
+### army
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: army
+Stores Variables: yes
+
+### holy_order
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ho
+Stores Variables: no
+
+### council_task
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: council_task
+Stores Variables: no
+
+### mercenary_company
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: mc
+Stores Variables: no
+
+### artifact
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: artifact
+Stores Variables: yes
+
+### inspiration
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: insp
+Stores Variables: yes
+
+### struggle
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: struggle
+Stores Variables: yes
+
+### character_memory
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: char_mem
+Stores Variables: yes
+
+### travel_plan
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: travel_plan
+Stores Variables: yes
+
+### accolade
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: accolade
+Stores Variables: yes
+
+### accolade_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: accolade_type
+Stores Variables: no
+
+### decision
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: decision
+Stores Variables: no
+
+### doctrine
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: doctrine
+Stores Variables: no
+
+### tenet
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: tenet
+Stores Variables: no
+
+### rite_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: rite_type
+Stores Variables: no
+
+### rite
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: rite
+Stores Variables: yes
+
+### activity_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: activity_type
+Stores Variables: no
+
+### culture_tradition
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: culture_tradition
+Stores Variables: no
+
+### culture_pillar
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: culture_pillar
+Stores Variables: no
+
+### government_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: government_type
+Stores Variables: no
+
+### holding_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: holding_type
+Stores Variables: no
+
+### trait
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: trait
+Stores Variables: no
+
+### tax_slot
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: tax_slot
+Stores Variables: yes
+
+### vassal_contract
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: vassal_contract
+Stores Variables: no
+
+### vassal_contract_obligation_level
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: vcol
+Stores Variables: no
+
+### epidemic_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: epty
+Stores Variables: no
+
+### epidemic
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: ep
+Stores Variables: yes
+
+### legend_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: legty
+Stores Variables: no
+
+### legend
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: leg
+Stores Variables: yes
+
+### domicile
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: domicile
+Stores Variables: yes
+
+### geographical_region
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: region
+Stores Variables: no
+
+### agent_slot
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: agent_slot
+Stores Variables: no
+
+### task_contract
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: task_contract
+Stores Variables: yes
+
+### task_contract_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: task_contract_type
+Stores Variables: no
+
+### regiment
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: regiment
+Stores Variables: no
+
+### casus_belli_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: casus_belli_type
+Stores Variables: no
+
+### situation
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: situation
+Stores Variables: yes
+
+### situation_participant_group
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: situation_participant_group
+Stores Variables: yes
+
+### situation_sub_region
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: situation_sub_region
+Stores Variables: yes
+
+### court_position
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: court_position
+Stores Variables: no
+
+### court_position_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: court_position_type
+Stores Variables: no
+
+### confederation
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: confederation
+Stores Variables: yes
+
+### confederation_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: confederation_type
+Stores Variables: no
+
+### great_project
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: great_project
+Stores Variables: yes
+
+### project_contribution
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: project_contribution
+Stores Variables: no
+
+### culture_innovation
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: culture_innovation
+Stores Variables: no
+
+### great_project_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: great_project_type
+Stores Variables: no

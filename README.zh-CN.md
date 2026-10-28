@@ -47,10 +47,11 @@ CK3 语法"的幻觉代码。本库的做法：先读一份摘要目录（`catal
 3. "成就 / on_action / mod 文件夹规则是怎样的？"——在 `catalog.md`
    里搜关键词，再读它列出的 `pages\` 下的 wiki 页。
 
-> **游戏层不随仓库发布。** `game_docs\` 由游戏自带 debug dump 衍生，
-> 分发它等于再分发游戏衍生数据（现实的 DMCA 下架风险），这是刻意的
-> 合规决策。本机装有 CK3 的话，按下方**手册 A** 的游戏层步骤本地
-> 生成等价物即可。
+> **游戏权威层随仓库发布。** `game_docs\`（dump 签名 + 原版结构索引，当前
+> 基于 CK3 1.20.1 dump 构建）已包含在发布仓库中——下载即得完整知识库，
+> 使用不需要安装游戏。CK3 版本更新后，可按**手册 A** 第 3-4 步在几分钟内
+> 本地刷新该层。许可说明：该层为游戏衍生数据，本仓库不主张任何权利
+> （见 `LICENSES.md`）。
 
 ### 路径二：自己重建 / 刷新知识库（需要装 Python）
 
@@ -92,7 +93,7 @@ CK3——完整重建见**手册 A**。
 | 层 | 位置 | 内容 | 权威级 |
 |---|---|---|---|
 | wiki 讲解层 | `pages\` | ck3.paradoxwikis.com Modding 栏目清洗文本（CC BY-SA 3.0）：机制讲解、教程、用法示例 | 低 |
-| 游戏权威层 | `game_docs\script_docs\` | 游戏自带 debug dump（`script_docs` 控制台命令）：effects、triggers、modifiers、on_actions、event_targets、event_scopes、custom_localization 各一份全量机器生成清单 + data types 清单，每条目真实签名。不随仓库发布，本地生成（见手册 A） | **高** |
+| 游戏权威层 | `game_docs\script_docs\` | 游戏自带 debug dump（`script_docs` 控制台命令）：effects、triggers、modifiers、on_actions、event_targets、event_scopes、custom_localization 各一份全量机器生成清单 + data types 清单，每条目真实签名。随仓库发布；游戏更新后按手册 A 刷新 | **高** |
 | 原版结构索引层 | `game_docs\vanilla_structure\` | `entry_map.tsv`：「条目名 → 定义文件 → 行号」映射 + `common` 各子目录摘要。纯导航，零游戏内容 | 导航 |
 
 **权威顺序：游戏 dump 层（game_docs）> wiki 层（pages）**。两层冲突
@@ -112,7 +113,7 @@ CK3——完整重建见**手册 A**。
 | `AGENTS.md`、`AGENTS.zh-CN.md`、`README.md`、`README.zh-CN.md`、`LICENSES.md`、`LICENSE` | agent 检索规约（英/中）；双语手册；许可声明 | 发布 |
 | `manifest.json` | 每页 oldid / 时间 / 版本登记（版本锚点） | 发布 |
 | `raw\` | api.php 原始 JSON 存档（清洗规则改进后离线重放用） | 不发布（本地） |
-| `game_docs\` | 游戏衍生内容：dump 转换产物 + 原版结构索引 | 不发布（本地生成） |
+| `game_docs\` | 游戏衍生内容：dump 转换产物 + 原版结构索引 | 发布（游戏更新后按手册 A 刷新） |
 | `game logs\` | 游戏 script_docs dump 的原始 log（game_layer 的输入） | 不发布（本地） |
 | `scripts\state\` | 运行时状态（导航清单、cookie、运行日志、自检脚本） | 不发布 |
 | `_reference\`、`.scratch\` | 内部工作区 | 不发布 |
@@ -150,7 +151,8 @@ CK3——完整重建见**手册 A**。
 <python> scripts\quality_gate.py
 
 :: —— 3. 游戏权威层（零网络；需要本机游戏）——
-::    全新克隆只含 wiki 层；游戏权威层（dump 签名）在你机器上三步重建：
+::    仓库已随附游戏层（见快照表）；本步骤仅用于 CK3 版本更新后刷新，
+::    三步：
 ::    a) 给 CK3 加启动参数 -debug_mode（Steam 启动选项里加）后启动。
 ::    b) 开控制台（` 键）执行两个命令——各写一部分，缺一不可：
 ::         script_docs      → 7 个清单 .log
@@ -236,10 +238,10 @@ CK3——完整重建见**手册 A**。
 |---|---|
 | wiki 层 · 抓取日期 | 2026-10-22（导航/种子两批）+ 2026-10-23（一跳补抓；Patch 旧版本日志页按决策排除） |
 | wiki 层 · 快照页数 | 141（实时页数见 `catalog.md` 头部快照块） |
-| 游戏层 · dump 游戏版本 | CK3 1.20.0 |
-| 游戏层 · 并入日期 | 2026-10-22 |
+| 游戏层 · dump 游戏版本 | CK3 1.20.1 |
+| 游戏层 · 并入日期 | 2026-10-29 |
 | 游戏层 · 条目数 | effects 2128 · triggers 1937 · modifiers 761 · on_actions 932 · event_targets 328 · event_scopes 74 · custom_localization 2782 |
-| 原版结构索引 | `entry_map.tsv` 78167 行；`common` 128 个子目录摘要；2026-10-22 按 CK3 1.20.0 扫描 |
+| 原版结构索引 | `entry_map.tsv` 78167 行；`common` 128 个子目录摘要；2026-10-29 按 CK3 1.20.1 扫描 |
 | `catalog.md` 体积 | 约 131KB |
 
 时效：超出上述日期的内容（新游戏补丁、抓取日期之后的 wiki 修改）不在

@@ -43,7 +43,7 @@ crawl(阶段1) ──raw/<页>.json──▶ clean(阶段2) ──pages/<页>.md
 ck3-scriptorium/             ← 仓库根（spec 中的存储组织；本地目录名可不同）
   raw/                       ← 阶段1：api.php 原始 JSON 存档（重放清洗用，发布时 gitignore）
   pages/                     ← 阶段2：清洗后结构化 Markdown（发布产物，CC BY-SA 3.0）
-  game_docs/                 ← 工单07/08：script_docs dump 与原版结构索引（不发布）
+  game_docs/                 ← 工单07/08：script_docs dump 与原版结构索引（已发布：2026-10-28 用户决策，见 LICENSES.md）
   manifest.json              ← 每页版本登记（见 §3）
   catalog.md                 ← 唯一检索入口目录（见 §5）
   scripts/

@@ -37,3 +37,6 @@ jobs:
 
       - name: Table spot check (skips without raw/)
         run: python tests/spotcheck_tables.py
+
+      - name: Doc path-reference self-check
+        run: python scripts/check_doc_paths.py

@@ -53,11 +53,13 @@ Three typical lookups this setup handles:
    `catalog.md` for the keyword, then read the wiki page it lists under
    `pages\`.
 
-> **The game layer is not in the published repository.** `game_docs\` is
-> derived from the game's own debug dump, so distributing it would mean
-> redistributing game-derived data — a real takedown (DMCA) risk. This is a
-> deliberate compliance decision. If you have CK3 installed, follow the
-> game-layer steps in **Manual A** below to generate an equivalent locally.
+> **The game authority layer ships with the repository.** `game_docs\`
+> (dump signatures + vanilla structure index, currently built from the CK3
+> 1.20.1 dump) is included in the published repo, so a fresh download is the
+> complete knowledge base — no game install needed to *use* it. After a CK3
+> version update you can refresh this layer locally in a few minutes with the
+> game-layer steps in **Manual A** (steps 3-4). Licensing note: the layer is
+> game-derived data; this repo claims no rights over it (see `LICENSES.md`).
 
 ### Path 2 — rebuild or refresh the knowledge base (needs Python)
 
@@ -105,7 +107,7 @@ the entries and files it points to. (For agents this rule is formalized in
 | Layer | Location | What it is | Authority |
 |---|---|---|---|
 | Wiki explainer layer | `pages\` | Cleaned text of the ck3.paradoxwikis.com Modding pages (CC BY-SA 3.0). Mechanic explainers, tutorials, usage examples. | Lower |
-| Game authority layer | `game_docs\script_docs\` | The game's own debug dump (the `script_docs` console command): one exhaustive, machine-generated list each for effects, triggers, modifiers, on_actions, event_targets, event_scopes, custom_localization, plus the data-type lists. Every entry's real signature. Not in the published repo — generated locally (see Manual A). | **High** |
+| Game authority layer | `game_docs\script_docs\` | The game's own debug dump (the `script_docs` console command): one exhaustive, machine-generated list each for effects, triggers, modifiers, on_actions, event_targets, event_scopes, custom_localization, plus the data-type lists. Every entry's real signature. Shipped with the repo; refresh via Manual A after game updates. | **High** |
 | Vanilla structure index | `game_docs\vanilla_structure\` | `entry_map.tsv` maps entry name → defining vanilla file → line number, plus a summary for every `common` subdirectory. Pure navigation, zero game content. | Navigation |
 
 **Authority order: game dump (`game_docs`) over wiki (`pages`).** When the two
@@ -126,7 +128,7 @@ top of `catalog.md` and in each entry's source line.
 | `AGENTS.md`, `AGENTS.zh-CN.md`, `README.md`, `README.zh-CN.md`, `LICENSES.md`, `LICENSE` | Agent retrieval protocol (EN/CN); this manual in two languages; licensing | Yes |
 | `manifest.json` | Per-page oldid / timestamp / version registry (the version anchors) | Yes |
 | `raw\` | Raw JSON archives of the wiki API (for offline replay when cleaning rules improve) | No (local) |
-| `game_docs\` | Game-derived content: dump conversion products + vanilla structure index | No (local, generated) |
+| `game_docs\` | Game-derived content: dump conversion products + vanilla structure index | Yes (shipped; refresh via Manual A after game updates) |
 | `game logs\` | Raw logs produced by the game's script_docs dump (input of game_layer) | No (local) |
 | `scripts\state\` | Runtime state (navigation lists, cookies, run logs, self-check scripts) | No |
 | `_reference\`, `.scratch\` | Internal workspaces | No |
@@ -168,8 +170,8 @@ top of `catalog.md` and in each entry's source line.
 <python> scripts\quality_gate.py
 
 :: —— 3. Game authority layer (offline; needs the game installed locally) ——
-::    A fresh clone contains only the wiki layer; the game authority layer
-::    (dump signatures) is built on your machine in three steps:
+::    The repo already ships a game layer (see Snapshot); run these steps only
+::    to REFRESH it after a CK3 version update, in three steps:
 ::    a) Launch CK3 with -debug_mode (add it to Steam launch options).
 ::    b) Open the console (` key) and run BOTH commands — each writes a
 ::       different part, both are required:
@@ -261,10 +263,10 @@ snapshot block at the top of `catalog.md`.
 |---|---|
 | Wiki layer — crawl date | 2026-10-22 (nav/seed batches) + 2026-10-23 (one-hop backfill; old Patch changelog pages excluded by design) |
 | Wiki layer — pages in this snapshot | 141 (live count in the snapshot block atop `catalog.md`) |
-| Game layer — CK3 version of the dump | 1.20.0 |
-| Game layer — merged on | 2026-10-22 |
+| Game layer — CK3 version of the dump | 1.20.1 |
+| Game layer — merged on | 2026-10-29 |
 | Game layer — entry counts | effects 2128 · triggers 1937 · modifiers 761 · on_actions 932 · event_targets 328 · event_scopes 74 · custom_localization 2782 |
-| Vanilla structure index | `entry_map.tsv` with 78167 lines; summaries for 128 `common` subdirectories; scanned 2026-10-22 against CK3 1.20.0 |
+| Vanilla structure index | `entry_map.tsv` with 78167 lines; summaries for 128 `common` subdirectories; scanned 2026-10-29 against CK3 1.20.1 |
 | `catalog.md` size | about 131 KB |
 
 Timeliness: anything newer than the dates above — a new game patch, wiki edits

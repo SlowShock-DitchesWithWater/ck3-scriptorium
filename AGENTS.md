@@ -20,11 +20,11 @@ numbers anywhere else — they rot).
 **Authority order: game_docs (dump) > pages (wiki).** When the two layers conflict,
 the dump wins — and say so in your answer, pointing at the conflict.
 
-**`game_docs/` is generated locally, not shipped.** It derives from the game's own
-debug dump, so the published repository does not contain it — a fresh clone has
-only the wiki layer. If `game_docs/` is missing, tell the user they can generate
-an equivalent with the game-layer steps in `README.md` (Manual A); until then,
-answer from the wiki layer and state that the dump layer is unavailable.
+**`game_docs/` ships with the repository** (built from the game's own debug
+dump; see the snapshot block for the current game version). It is game-derived
+data — this repo claims no rights over it (`LICENSES.md`). After a CK3 version
+update the layer can be refreshed locally via the game-layer steps in
+`README.md` (Manual A).
 
 `catalog.md` is the two-level summary catalog of every entry — **the single retrieval
 entry point, but never read it whole: grep it first, then follow the hit** (see below).

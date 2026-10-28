@@ -1,0 +1,497 @@
+# common/dna_data 结构摘要
+
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 文件数：9（其中 Jomini 解析 8 个）
+- 顶层块条目总数：445，跨文件唯一条目 445
+- 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
+
+## 文件清单
+
+| 文件 | 字节 | 顶层块 | 标量键 | 解析 |
+|---|---|---|---|---|
+| `00_dna.txt` | 908053 | 109 | 0 | jomini |
+| `00_ep3_dna.txt` | 756270 | 93 | 0 | jomini |
+| `00_fp3_dna.txt` | 116935 | 14 | 0 | jomini |
+| `00_mpo_dna.txt` | 167742 | 20 | 0 | jomini |
+| `00_tgp_dna.txt` | 557670 | 64 | 0 | jomini |
+| `01_easteregg_dna.txt` | 974952 | 119 | 0 | jomini |
+| `02_easteregg_dna_non_developers.txt` | 32768 | 4 | 0 | jomini |
+| `03_fp2_dna.txt` | 186080 | 22 | 0 | jomini |
+| `_dna_data.info` | 409 | - | - | 纯文档（非 Jomini） |
+
+## 条目名 → 定义文件
+
+（查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
+
+### 00_dna.txt（109 条目）
+
+- 163112_halfdan_whiteshirt
+- 306009_ingjerdr
+- 306010_saga
+- 168336_gudfrid
+- 163111_ivar_the_boneless
+- 306011_freydis
+- 163110_sigurdr_snake_in_the_eye
+- 6861_blaeja
+- 163108_bjorn_ironside
+- 100500_eirikr
+- 6836_aslaug
+- 7627_earl_alfred
+- 33358_aethelred
+- 306020_ealswith
+- 6878_jarl_haesteinn
+- 6879_vigdis
+- 6880_ragnarr
+- 40605_rurik_rurikid
+- 40606_helgi_the_seer
+- 6448_count_eudes
+- 163065_eudes_of_bourbon
+- 6440_robert_the_strong
+- 159137_almos_arpad
+- 306003_mutlu
+- 159136_arpad
+- 306004_hajnal
+- 251187_daurama_daura
+- 90104_charles_the_bald
+- 167830_irmintrud
+- 90123_louis_the_stammerer
+- 90110_judith
+- 144998_king_lothaire
+- 6877_teutberga
+- 90107_ludwig_the_german
+- 90105_karl
+- 42019_ludwig
+- 30228_king_louis
+- 167894_engelberga
+- 42018_karlmann
+- 7945_arnulf
+- 167813_liutswind
+- 7987_hemma
+- 168314_waldrada
+- 6839_iliana_of_uppland
+- 6863_ingrid_bjornsdottir
+- 144000_haraldr_fairhair
+- 122_king_harold
+- 124_tostig
+- 140_william_the_bastard
+- 142_robert_curthose
+- 146_william_the_red
+- 102531_harald_hardrade
+- 102534_olav
+- 102535_ingegerd
+- 101515_king_svend
+- 101517_harald_the_whetstone
+- 101519_knud
+- 984_king_malcom
+- 988_duncan
+- 986_donald
+- 83355_petty_king_murchad
+- 83357_brian
+- 166126_bebinn
+- 7757_duchess_matilda
+- 3924_emir_yahya
+- 20858_zahida
+- 522_duke_vratislav
+- 212881_judita
+- 1128_duke_robert
+- 1140_bohemond
+- 1132_roger_of_messina
+- 1123_sichelgaita
+- 109500_king_garcia
+- 108500_king_alfonso
+- 107511_sancha
+- 70076_nuno
+- 107500_king_sancho
+- 108501_infanta_urraca
+- 107501_elvira
+- 106000_king_antso
+- 106011_ramiro
+- 110500_sancho_of_aragon
+- 110501_isabella_of_aragon
+- 1316_emperor_heinrich
+- 1183_empress_bertha
+- 131_eadgifu_the_fair
+- 123_queen_ealdgyth
+- 214_king_philippe
+- 102505_queen_ingebjorg
+- 367_duchess_mathilde
+- 633_queen_yelizaveta
+- 212892_ota_the_handsome
+- 765_princess_swietoslawa
+- 762_king_boleslaw
+- 161257_queen_wyszeslawa
+- 107590_rodrigo_de_vidar
+- 41552_maria
+- 476_salamon_of_hungary
+- 302866_uzluk
+- additional_karakar_3_gunes
+- animation_test_female
+- animation_test_male
+- animation_test_fat_female
+- animation_test_fat_male
+- gottfried_the_hunchback
+- 209503_afonso
+- 200490_erik_holy
+- 200500_knut_eriksson
+- 1000230518_avital
+
+### 00_ep3_dna.txt（93 条目）
+
+- bookmark_tamar_466517
+- bookmark_kilij_arslan_225000
+- bookmark_andronikos_angelos_215504
+- bookmark_alexios_palaiologos_34281
+- bookmark_saladin_226000
+- bookmark_sibylla_223522
+- bookmark_levon_223000
+- bookmark_gokbori_begteginid_1
+- bookmark_raimon_223650
+- bookmark_tamar_giorgi_216515
+- bookmark_tamar_rusudan_216510
+- bookmark_kilij_arslan_suleyman_225004
+- bookmark_kilij_arslan_kaykhusraw_225002
+- bookmark_angelos_alexios_215503
+- bookmark_angelos_ioannes_215508
+- bookmark_palaiologos_eirene_34408
+- bookmark_saladin_saphadin_226052
+- bookmark_saladin_ali_226051
+- bookmark_sibylla_baudouin_223523
+- bookmark_sibylla_baudouin_son_223541
+- bookmark_levon_roupen_223003
+- bookmark_gokbori_ghazi_144041
+- bookmark_gokbori_yusuf_begteginid_5
+- bookmark_raimon_eschiva_31384
+- bookmark_ioannes_kantakouzenos_34412
+- bookmark_eirene_angelos_215501
+- bookmark_michael_kantakouzenos_34410
+- 163115_ahmad_egypt
+- 163103_aella_northumberland
+- 41505_ashot_armenia
+- 145201_gregorios_napoli
+- 145646_dawit_dembiya
+- 161555_werner_worms
+- 82235_siemowit_wielkopolska
+- 6811_dyre_kiev
+- 159458_dumnarth_cornwall
+- 145611_aba_socotra
+- 81831_rhodri_gwynedd
+- 5788_gudrod_western_isles
+- 1152_richard_capua
+- 20734_fariburz_shirvan
+- 109610_shisnand_coimbra
+- 724_alusian_vidin
+- 670_rostislav_tmutarakan
+- 20289_werner_aargau
+- 418_herbert_vermandois
+- 20770_ishaq_baalbek
+- 100546_erik_svealand
+- 20584_krutoj_nordmark
+- 72048_piarres_albarracin
+- 214000_john_ulster
+- 218800_kulin_bosna
+- 205570_rogier_albi
+- 125501_temujin_ulaanbaatar
+- 144228_nur_al_din_muhammed_nizari
+- 189226_gunda_orangallu
+- 82198_algimantas_lithuanians
+- 232758_sargis_greater_armenia
+- 144139_khusraw_malik_punjab
+- 163096_muhammad_africa
+- 175080_vicayalaya_chola_nadu
+- 71908_lambert_spoleto
+- 175030_amoghavarsha_karnata
+- 34980_badr_acre
+- 110520_berenguer_barcelona
+- 40406_raoul_valois
+- 20829_ali_siracusa
+- 112_eadgar_warwickshire
+- 45035_ali_yemen
+- 1182_pierre_piedmonte
+- burman001_anawrahta_pagan
+- 188142_prithviraja_rajputana
+- 223590_renaud_kerak
+- 205966_henri_champagne
+- 204510_richard_poitiers
+- 161018_maghan_sibi
+- 144052_mohammed_azerbaijan
+- 212600_heinrich_angria
+- 212501_friedrich_barbarossa
+- 90028_hereweard_the_wake
+- norman_crispin_06_robert_phrangopoulos
+- 34220_roussel_de_bailleul
+- 41702_hasan
+- 3046_suleyman
+- andalusian_0003_wallada
+- 1700_basileios_makedon
+- 1761_eudokia
+- 1732_konstantinos_x
+- 1733_eudokia
+- 215530_manuel_i
+- 223743_maria_of_antioch
+- 221521_helena_of_poland
+- 221520_kazimierz_of_poland
+
+### 00_fp3_dna.txt（14 条目）
+
+- 163101_amir_yaqub
+- 163164_amr_i_laith
+- extra_turks_0001_sebuk_eri
+- 1000230509_muhammad_tahirid
+- 34014_caliph
+- 163100_muhammad_tahirid_king
+- 163157_ismail_samani
+- 163099_nasr_samani
+- 45105_rostam
+- 45108_hasan_the_missionary
+- 160295_shervin_II
+- 1230316_suri_of_mandesh
+- extra_habbaris_abdullah
+- scripted_appearence_azariqa_caliph
+
+### 00_mpo_dna.txt（20 条目）
+
+- bookmark_nomads_ghudayya_fadlid_1
+- bookmark_nomads_ghudayya_haditha_fadlid_3
+- bookmark_nomads_hamid_dabbabid_1
+- bookmark_nomads_mihyu_marinid_1
+- bookmark_nomads_mihyu_abd_al_haqq_32993
+- bookmark_nomads_temujin_borte_172004
+- bookmark_nomads_temujin_hoelun_172003
+- bookmark_nomads_togrul_303211
+- bookmark_nomads_toghrul_oghuul_31202
+- bookmark_nomads_qaraqush_155113
+- bookmark_nomads_jamukha_mpo_mongol_1
+- bookmark_nomads_duolubu_188910
+- bookmark_nomads_inanch_bilge_naiman_guchugud_1
+- bookmark_nomads_gurbesu_naiman_guchugud_2
+- bookmark_nomads_tayang_naiman_guchugud_3
+- bookmark_nomads_saru_302783
+- bookmark_nomads_kokotoy_303244
+- bookmark_nomads_tatus_20641
+- bookmark_nomads_muhmud_144107
+- bookmark_nomads_inanch_303226
+
+### 00_tgp_dna.txt（64 条目）
+
+- bookmark_dna_huang_chao
+- bookmark_dna_zhang_huaishen
+- bookmark_dna_zhuye_chixin
+- bookmark_dna_he_quanhao
+- bookmark_dna_gao_pian
+- bookmark_dna_wang_anshi
+- bookmark_dna_sima_guang
+- bookmark_dna_thanh_tong
+- bookmark_dna_duan_silian
+- bookmark_dna_wang_shao
+- bookmark_dna_li_renxiao
+- bookmark_dna_xin_qiji
+- bookmark_dna_tudan_xixian
+- bookmark_dna_zhu_xi
+- bookmark_dna_zhang_shi
+- bookmark_dna_jayavarman
+- bookmark_dna_pyinbya
+- bookmark_dna_indra
+- bookmark_dna_padumaraj
+- bookmark_dna_lokapala
+- bookmark_dna_qin_guan
+- bookmark_dna_taira_kiyomori
+- bookmark_dna_taira_shigemori
+- bookmark_dna_taira_tsunemori
+- bookmark_dna_morofusa
+- bookmark_dna_minamoto_toshifusa
+- bookmark_dna_minamoto_akifusa
+- bookmark_dna_minamoto_yoritomo
+- bookmark_dna_minamoto_noriyori
+- bookmark_dna_minamoto_yoshitsune
+- bookmark_dna_taira_masako
+- bookmark_dna_minamoto_yoshinaka
+- bookmark_dna_minamoto_tomoe
+- bookmark_dna_minamoto_yoshitaka
+- bookmark_dna_fujiwara_hidehira
+- bookmark_dna_fujiwara_yasuhira
+- bookmark_dna_fujiwara_hidehisa
+- bookmark_dna_fujiwara_motofusa
+- bookmark_dna_fujiwara_kanezane
+- bookmark_dna_fujiwara_takatada
+- bookmark_dna_fujiwara_yorimichi
+- bookmark_dna_fujiwara_morozane
+- bookmark_dna_fujiwara_sadatsuna
+- bookmark_dna_yamato_tameyuki
+- bookmark_dna_yamato_sanjo
+- bookmark_dna_kiyohara_takenori
+- bookmark_dna_kiyohara_takehira
+- bookmark_dna_kiyohara_mitsuyori
+- bookmark_dna_minamoto_yoriyoshi
+- bookmark_dna_minamoto_yoshiie
+- bookmark_dna_minamoto_yorisue
+- bookmark_dna_empress_liang
+- bookmark_dna_su_shi
+- bookmark_dna_chikahito
+- han_3641_li_cui
+- japanese_fujiwara_530_yoshifusa
+- korean_gim_silla_33_kim
+- korean_gim_silla_65_kim_munui
+- han_8052_zhao_shu
+- han_8001_gao_jingru
+- korean_wang_goryeo_13
+- korean_wang_goryeo_38
+- han_12651_zhao_dun
+- han_12576_li_fengniang
+
+### 01_easteregg_dna.txt（119 条目）
+
+- easteregg_henrik_fahraeus
+- easteregg_alexander_oltner
+- easteregg_jakub_potapczyk
+- easteregg_joacim_carlberg
+- easteregg_olof_bjork
+- easteregg_petter_lundh
+- easteregg_linnea_thimren
+- easteregg_matthew_clohessy
+- easteregg_steacy_mcilwham
+- easteregg_nils_wadensten
+- easteregg_emil_tisander
+- easteregg_joel_hansson
+- easteregg_peter_johannesson
+- easteregg_malin_jonsson
+- easteregg_linda_tiger
+- easteregg_katya_boestad
+- easteregg_mathilda_bjarnehed
+- easteregg_berrak_oz
+- easteregg_lucia_dzediti
+- easteregg_milla_lankinen
+- easteregg_petter_vilberg
+- easteregg_henrik_lohmander
+- easteregg_max_weltz
+- easteregg_lysann_schlegel
+- easteregg_sean_hughes
+- easteregg_ismael_serrano
+- easteregg_bianca_savazzi
+- easteregg_christian_daflos
+- easteregg_max_collin
+- easteregg_jonas_wickerstrom
+- easteregg_tegan_harris
+- easteregg_paul_depre
+- easteregg_maximilian_olbers
+- easteregg_debbie_lane
+- easteregg_hanna_lohman
+- easteregg_anna_strom
+- easteregg_nikolaos_kaltsogiannis
+- easteregg_pontus_olofsson
+- easteregg_martin_anward
+- easteregg_isabella_welch
+- easteregg_zack_holmgren
+- easteregg_elisabeth_gangenes
+- easteregg_claudia_baldassi
+- easteregg_joe_parkin
+- easteregg_ali_kara
+- easteregg_lukasz_opara
+- easteregg_mateusz_mierzwa
+- easteregg_natalia_lechnata
+- easteregg_natalia_poreba
+- easteregg_struan_mccallum
+- easteregg_riad_deneche
+- easteregg_anton_leirnes
+- easteregg_stella_carrick_dna
+- easteregg_fenni_johansson
+- easteregg_chad_uhl
+- special_fox_1
+- special_wolf_1
+- special_bear_1
+- easteregg_james_beaumont_dna
+- easteregg_bahar_shefket
+- easteregg_hugo_cortell
+- easteregg_alexander_newcombe_dna
+- easteregg_elena_zenko
+- easteregg_fei_berg_hulthen
+- easteregg_stina_arvidsson_radestig
+- easteregg_ola_jentzsch
+- easteregg_sandra_runge_moller
+- easteregg_alessandro_bragalini
+- easteregg_jon_astrup_hallkvist
+- easteregg_maxence_voleau
+- easteregg_jason_cantalini_dna
+- easteregg_fabian_franzen_dna
+- easteregg_veronica_pazos_dna
+- easteregg_weronika_kowalczyk_dna
+- easteregg_jakob_jorstedt_dna
+- easteregg_tess_lindholm_dna
+- easteregg_luke_bean_dna
+- easteregg_artur_kacprzak_dna
+- easteregg_tomas_versekys_dna
+- easteregg_ida_hedberg_dna
+- easteregg_alexander_windahl
+- easteregg_lucas_ribeiro_dna
+- easteregg_johan_husen_dna
+- easteregg_alva_granholm_dna
+- easteregg_daan_broekhof_dna
+- easteregg_david_drake
+- easteregg_ernesto_lopez_dna
+- easteregg_nikola_stokic_dna
+- easteregg_daniel_velasquez_dna
+- easteregg_francesca_passoni_dna
+- easteregg_emelie_verdugo_dna
+- easteregg_carsten_mannetje_dna
+- easteregg_celine_jensen_dna
+- easteregg_johanna_uddstahl_dna
+- easteregg_anton_holmqvist_dna
+- easteregg_samet_atasoy_dna
+- easteregg_daniel_tolman_dna
+- easteregg_jakob_eklund_dna
+- easteregg_rebecca_gottfredsson_dna
+- easteregg_melanie_albarn_dna
+- easteregg_neyla_garcia_dna
+- easteregg_mathias_frostewarn_dna
+- easteregg_richard_lindkvist_dna
+- easteregg_tomasz_ender_dna
+- easteregg_marcus_bose_dna
+- easteregg_jesse_kopparvall_dna
+- easteregg_david_ostlund_dna
+- easteregg_jacopo_freddi_dna
+- easteregg_philip_wessman_dna
+- easteregg_jonathan_collinder_dna
+- easteregg_liana_tosunyan_dna
+- easteregg_laurence_kennedy_dna
+- easteregg_thea_ariens
+- easteregg_bozdar_janiak
+- easteregg_maksymilian_nowakowski
+- easteregg_piotr_szmil_dna
+- easteregg_shehabulddin_alessawey
+- easteregg_anon_saltfish_dna
+- easteregg_Az_dna
+
+### 02_easteregg_dna_non_developers.txt（4 条目）
+
+- easteregg_alexia_belfort
+- easteregg_tamara_stokic
+- easteregg_ida_lilja
+- easteregg_henry_of_skalitz
+
+### 03_fp2_dna.txt（22 条目）
+
+- 73857_mendo_guterres
+- 73759_ermesenda
+- 73893_arias
+- 73813_lupp_ibn_musa
+- 73814_emira_ayab
+- 73783_oria
+- 73815_mohamed
+- 70150_wilfred_the_hairy
+- barcelona_00003_count_sunyer
+- 168137_bernat_of_gothia
+- 168147_fulcrade_of_gothia
+- 73957_ibn_marwan
+- surunbaqi0001_emir_sadun
+- 73958_emira_isra
+- andalusian0095_rahman
+- danis0005_emir_adanis
+- danis0007_emira_daw
+- 70292_king_gartzia
+- 73754_queen_leodegundis
+- 73683_sultan_muhammad
+- 73927_sultana_ushar
+- 70019_king_adelfonso
+
+### 未解析文件
+
+- `_dna_data.info` — 纯文档（非 Jomini）

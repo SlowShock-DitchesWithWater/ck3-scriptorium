@@ -1,9 +1,11 @@
-# CK3WIKI_MOD 发布边界（spec「发布边界（合规决策）」+ 工单10）
-# 原则：游戏衍生内容与内部数据一律不发布；公开仓库只含脚本、pages/ 清洗文本、
+# ck3-scriptorium 发布边界（工单10 起草；2026-10-28 用户决策修订）
+# 公开仓库含：脚本、pages/ 清洗文本、game_docs/ 游戏层（决策见 LICENSES.md）、
 # catalog、manifest、测试与文档。注意：gitignore 不支持行内注释，注释独占一行。
 
-# ---- 游戏衍生层（DMCA 风险面，永不发布）----
-game_docs/
+# ---- 游戏衍生层 ----
+# game_docs/ 已随仓库发布（2026-10-28 决策：降低新用户门槛，风险已权衡，
+# 许可声明见 LICENSES.md——不主张权利，版权归 Paradox）
+# 原始 dump 日志不发布（README 手册 A 可本地再生成）
 game logs/
 
 # ---- 内部数据与状态 ----
