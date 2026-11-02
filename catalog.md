@@ -6,7 +6,7 @@
 > 内容来源：ck3.paradoxwikis.com（CC BY-SA 3.0），每条目标注 oldid 与抓取日期。
 
 <!-- ck3wiki-mod-kb:snapshot BEGIN -->
-> 快照：抓取 2026-10-23 · wiki 141 页 · 游戏 1.20.1（dump 并入 2026-10-29） · 锚点 oldid：Effects=20200，Triggers=26702，Event modding=37279
+> 快照：抓取 2026-10-23 · wiki 141 页 · 游戏 1.20.1（dump 并入 2026-10-29） · 锚点 oldid：Effects=20200，Triggers=26702，Event modding=37279 · 地图层并入 2026-11-02
 <!-- ck3wiki-mod-kb:snapshot END -->
 
 <!-- ck3wiki-mod-kb:entry BEGIN Scripting -->
@@ -2822,3 +2822,36 @@
 - **中文摘要**：78167 行 条目名→定义文件/行号 TSV；grep -P "^<条目名>	" 定位。
 - **英文关键词**：entry_map；tsv
 <!-- ck3wiki-mod-kb:entry END game:entry_map.tsv -->
+
+<!-- ck3wiki-mod-kb:entry BEGIN game:map_data_dossier.md -->
+## 地图数据档案 dossier
+
+- **文件位置**：`game_docs/map_docs/map_data_dossier.md`
+- **来源**：游戏 1.20.1 地图层实测（13270 活动省份，并入 2026-11-02）
+- **权威层**：与 wiki 冲突时以本条目为准（dump 层）
+- **何时查**：做任何地图 MOD（heightmap/省份/河流/自定义分辨率）前查实测格式与尺寸约束；与 wiki Map modding（1.1 时代）冲突时以此为准。
+- **中文摘要**：地图侧实测档案：map_data 文件规格、heightmap=省份图 2 倍、河流调色板实测、default.map/adjacencies 结构、编辑器灰盒证据、视觉层蒙版新布局。
+- **英文关键词**：map_data；heightmap；rivers；definition.csv；default.map
+<!-- ck3wiki-mod-kb:entry END game:map_data_dossier.md -->
+
+<!-- ck3wiki-mod-kb:entry BEGIN game:province_index.tsv -->
+## 省份索引 province_index
+
+- **文件位置**：`game_docs/map_docs/province_index.tsv`
+- **来源**：游戏 1.20.1 地图层实测（13270 活动省份，并入 2026-11-02）
+- **权威层**：与 wiki 冲突时以本条目为准（dump 层）
+- **何时查**：查某省份 id 的 RGB/名称，或反查某颜色/名称对应哪个省份时。
+- **中文摘要**：definition.csv 全量省份 TSV（id/r/g/b/名称/状态/源行号）；grep -P "^<id>	" 定位。
+- **英文关键词**：province_index；province；RGB
+<!-- ck3wiki-mod-kb:entry END game:province_index.tsv -->
+
+<!-- ck3wiki-mod-kb:entry BEGIN game:nudger_parameters.md -->
+## auto-nudge 摆放参数表
+
+- **文件位置**：`game_docs/map_docs/nudger_parameters.md`
+- **来源**：游戏 1.20.1 地图层实测（13270 活动省份，并入 2026-11-02）
+- **权威层**：与 wiki 冲突时以本条目为准（dump 层）
+- **何时查**：调编辑器 auto-nudge 自动摆放参数或排查地图对象摆放问题时。
+- **中文摘要**：随游戏分发的约 60 个自动摆放参数实测表（语义为推断注解）。
+- **英文关键词**：nudger；auto_nudge；locator
+<!-- ck3wiki-mod-kb:entry END game:nudger_parameters.md -->

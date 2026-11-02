@@ -16,6 +16,7 @@ numbers anywhere else — they rot).
 | Wiki explainer layer | `pages/` | Cleaned text from ck3.paradoxwikis.com Modding section | Low |
 | Game authority layer | `game_docs/script_docs/` | Debug dump from the game itself: effects / triggers / modifiers / on_actions / event_targets / event_scopes / custom_localization lists + 5 data_types files | **High** |
 | Vanilla structure index | `game_docs/vanilla_structure/` | entry-name → defining-file map + summaries of all 128 `common` subdirectories | Navigation |
+| Map knowledge layer | `game_docs/map_docs/` | Measured map facts: `map_data_dossier.md` (formats / dimensions / rivers palette / editor evidence), `province_index.tsv` (id↔RGB↔name), `nudger_parameters.md` | **High** (game-measured) |
 
 **Authority order: game_docs (dump) > pages (wiki).** When the two layers conflict,
 the dump wins — and say so in your answer, pointing at the conflict.
@@ -31,7 +32,7 @@ entry point, but never read it whole: grep it first, then follow the hit** (see 
 
 ## 1. Standard retrieval flow (four steps)
 
-1. **Classify the question**, then pick a recipe from section 2 (A signatures / B explainers / C entry location / D version-sensitive).
+1. **Classify the question**, then pick a recipe from section 2 (A signatures / B explainers / C entry location / D version-sensitive / E maps).
 2. **Query the catalog**: grep `catalog.md` for a keyword; when an entry hits, read only
    the file named in its `文件位置` (file-location) field — not the whole catalog, and
    not the whole target page either.
@@ -143,6 +144,25 @@ vanilla files).
 3. A page stating `timeless` means the wiki claims version-independence; if it still
    conflicts with prose, the dump layer wins.
 
+### Recipe E: map modding (heightmap / provinces / rivers / editor)
+
+The wiki `Map modding` page is 1.1-era and self-flagged outdated since 1.18/1.19 —
+for any format/dimension/palette/constraint question, **start at the measured map
+layer, not the wiki**:
+
+1. Format & constraints (image specs, `definition.csv`, `rivers.png` palette,
+   `default.map`, editor state): read the relevant section of
+   `game_docs/map_docs/map_data_dossier.md` (grep it, don't read whole).
+2. Province lookup (which RGB/name is id N, or reverse): grep the TSV
+   `game_docs/map_docs/province_index.tsv` for a line starting with the id
+   followed by a Tab, or simply grep the province name.
+3. How-to prose (drawing rivers, creating titles, locators): wiki layer
+   `pages/Map modding.md` — but cross-check against the dossier when it touches
+   sizes/formats; the dossier wins and the conflict must be named.
+4. Practical workflow, failure modes, and the validator:
+   `map_room/WORKFLOW.md` + `map_room/validate_map.py` (the "Map Room" —
+   see `map_room/README.md`).
+
 ## 3. Context discipline (hard rules)
 
 - **Never read whole** these large files (always grep-locate, then read the needed
@@ -169,6 +189,10 @@ vanilla files).
 | `_reference/`, `.scratch/` | Internal workspaces (not shipped) |
 | `docs/pipeline.md`, `docs/spec.md` | Pipeline contract and project spec (maintainer-facing) |
 | `skills/` | The bundled `ck3-mod-standards` scripting-standards skill (install into an agent when writing mod code; not knowledge) |
+
+Note: `map_room/` (Map Room) is **not** in this table — its validator and
+`WORKFLOW.md` are knowledge-adjacent player-facing tools and are legitimate
+answer sources for map questions (recipe E).
 
 ## 5. Timeliness self-check
 

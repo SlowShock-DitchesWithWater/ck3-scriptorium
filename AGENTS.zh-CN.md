@@ -14,6 +14,7 @@
 | wiki 讲解层 | `pages/` | ck3.paradoxwikis.com Modding 栏目清洗文本 | 低 |
 | 游戏权威层 | `game_docs/script_docs/` | 游戏 debug dump：effects / triggers / modifiers / on_actions / event_targets / event_scopes / custom_localization 清单 + data_types×5 文件 | **高** |
 | 原版结构索引层 | `game_docs/vanilla_structure/` | 条目名→定义文件映射 + common 128 子目录摘要 | 导航 |
+| 地图知识层 | `game_docs/map_docs/` | 地图实测档案：`map_data_dossier.md`（格式/尺寸/河流调色板/编辑器证据）、`province_index.tsv`（id↔RGB↔名称）、`nudger_parameters.md` | **高**（游戏实测） |
 
 **权威顺序：game_docs（dump）> pages（wiki）。** 两层冲突时以 dump 为准，
 并在回答中指出冲突点。
@@ -27,7 +28,7 @@ catalog 快照块）。该层为游戏衍生数据，本仓库不主张任何权
 
 ## 1. 标准检索流程（四步）
 
-1. **判断问题类型**，选第 2 节的配方（A 签名 / B 讲解 / C 条目定位 / D 版本敏感）。
+1. **判断问题类型**，选第 2 节的配方（A 签名 / B 讲解 / C 条目定位 / D 版本敏感 / E 地图）。
 2. **查目录**：grep `catalog.md` 关键词，命中条目后按其「文件位置」「章节」字段
    只读对应文件——不要整读 catalog，也不要整读命中页。
 3. **目录未命中 → pages 兜底**：对 `pages/` 全目录做关键词 grep（命令见配方 B），
@@ -128,6 +129,22 @@ grep -P "^education_intrigue_1\t" game_docs/vanilla_structure/entry_map.tsv
    - dump：`game_docs/script_docs/` 各文件头部的游戏版本来源行。
 3. 页面标注 `timeless` 表示 wiki 自称版本无关；与正文表述冲突时仍以 dump 为准。
 
+### 配方 E：地图 modding（heightmap / 省份 / 河流 / 编辑器）
+
+wiki 的 Map modding 页是 1.1 时代内容且自我标注"1.18/1.19 起部分过时"——
+凡格式/尺寸/调色板/约束类问题，**先查地图实测层，不要先信 wiki**：
+
+1. 格式与约束（图像规格、definition.csv、rivers 调色板、default.map、编辑器
+   状态）：grep 定位后读 `game_docs/map_docs/map_data_dossier.md` 对应章节
+   （勿整读）。
+2. 省份查询（id N 是什么颜色/名称，或反查）：对
+   `game_docs/map_docs/province_index.tsv` 按行首「id＋Tab」grep 定位
+   （或直接按名称 grep）。
+3. 操作讲解（画河流、建头衔、locator）：wiki 层 `pages/Map modding.md`——
+   但凡涉及尺寸/格式都要与 dossier 交叉核对，冲突以 dossier 为准且必须点名。
+4. 实操工作流、故障对照、校验器：`map_room/WORKFLOW.md` +
+   `map_room/validate_map.py`（"地图室"，总览见 `map_room/README.md`）。
+
 ## 3. 上下文纪律（硬规则）
 
 - **禁止整读**这些大文件（一律先 grep 定位再读所需段）：
@@ -151,6 +168,9 @@ grep -P "^education_intrigue_1\t" game_docs/vanilla_structure/entry_map.tsv
 | `_reference/`、`.scratch/` | 内部工作区（clone 用户没有） |
 | `docs/pipeline.md`、`docs/spec.md` | 管线契约与项目 spec（维护者用） |
 | `skills/` | 本仓库附带的 ck3-mod-standards 编码规约 skill（写 mod 代码时装到 agent，不是知识） |
+
+注意：`map_room/`（地图室）**不在此表**——其校验器与 `WORKFLOW.md` 是面向玩家的
+工具与向导，属于地图问题（配方 E）的合法回答来源。
 
 ## 5. 时效自检
 

@@ -132,6 +132,10 @@ def build_snapshot(data: dict) -> str:
     line = (f"> 快照：抓取 {snap_date} · wiki {len(pages)} 页 · "
             f"游戏 {ver}（dump 并入 {merged}）"
             + (f" · 锚点 oldid：{anchors}" if anchors else ""))
+    md = data.get("game_docs", {}).get("map_docs") or {}
+    map_merged = (md.get("scanned_at") or "")[:10]
+    if map_merged:
+        line += f" · 地图层并入 {map_merged}"
     return f"{SNAP_BEGIN}\n{line}\n{SNAP_END}"
 
 
@@ -244,6 +248,30 @@ GAME_LAYER_META: dict[str, dict[str, object]] = {
         "summary": "78167 行 条目名→定义文件/行号 TSV；grep -P \"^<条目名>\\t\" 定位。",
         "keywords": ["entry_map", "tsv"],
     },
+    # 地图室·知识层（game_docs/map_docs，scripts/map_layer.py 产物）
+    "game:map_data_dossier.md": {
+        "display": "地图数据档案 dossier",
+        "when": "做任何地图 MOD（heightmap/省份/河流/自定义分辨率）前查实测格式"
+                "与尺寸约束；与 wiki Map modding（1.1 时代）冲突时以此为准。",
+        "summary": "地图侧实测档案：map_data 文件规格、heightmap=省份图 2 倍、"
+                   "河流调色板实测、default.map/adjacencies 结构、编辑器灰盒证据、"
+                   "视觉层蒙版新布局。",
+        "keywords": ["map_data", "heightmap", "rivers", "definition.csv",
+                     "default.map"],
+    },
+    "game:province_index.tsv": {
+        "display": "省份索引 province_index",
+        "when": "查某省份 id 的 RGB/名称，或反查某颜色/名称对应哪个省份时。",
+        "summary": "definition.csv 全量省份 TSV（id/r/g/b/名称/状态/源行号）；"
+                   "grep -P \"^<id>\\t\" 定位。",
+        "keywords": ["province_index", "province", "RGB"],
+    },
+    "game:nudger_parameters.md": {
+        "display": "auto-nudge 摆放参数表",
+        "when": "调编辑器 auto-nudge 自动摆放参数或排查地图对象摆放问题时。",
+        "summary": "随游戏分发的约 60 个自动摆放参数实测表（语义为推断注解）。",
+        "keywords": ["nudger", "auto_nudge", "locator"],
+    },
 }
 
 
@@ -291,6 +319,19 @@ def game_layer_mech(gd: dict) -> dict[str, dict]:
         if kp.get("entry_map"):
             mech["game:entry_map.tsv"] = {"file": kp["entry_map"],
                                           "source": base}
+    # 地图室·知识层（game_docs/map_docs）
+    md = gd.get("map_docs") or {}
+    if md:
+        scanned = (md.get("scanned_at") or "")[:10]
+        prov = (md.get("stats") or {}).get("province_active", "?")
+        base = (f"游戏 {md.get('game_version', ver)} 地图层实测"
+                f"（{prov} 活动省份，并入 {scanned}）")
+        kp = md.get("key_products") or {}
+        for gid, key in (("game:map_data_dossier.md", "dossier"),
+                         ("game:province_index.tsv", "province_index"),
+                         ("game:nudger_parameters.md", "nudger")):
+            if kp.get(key):
+                mech[gid] = {"file": kp[key], "source": base}
     # 只输出 manifest 里确有产物的条目（dump 未并入时不留死条目）
     return {gid: m for gid, m in mech.items() if gid in GAME_LAYER_META}
 

@@ -6826,6 +6826,25 @@
         "entry_map": "game_docs/vanilla_structure/entry_map.tsv",
         "other_dirs": "game_docs/vanilla_structure/other_dirs.md"
       }
+    },
+    "map_docs": {
+      "game_dir": "(local game install)/game",
+      "game_version": "1.20.1",
+      "game_version_source": "默认与 vanilla_structure 快照一致（可用 --game-version 覆盖）",
+      "scanned_at": "2026-11-02T17:49:44+08:00",
+      "fingerprint": "9278c17e8391b433ca42d672a7db720e316fd7d067dbb7cc16949fac21f17692",
+      "stats": {
+        "province_active": 13270,
+        "province_commented": 874,
+        "province_id_max": 13269
+      },
+      "products_dir": "game_docs/map_docs",
+      "products_count": 3,
+      "key_products": {
+        "dossier": "game_docs/map_docs/map_data_dossier.md",
+        "province_index": "game_docs/map_docs/province_index.tsv",
+        "nudger": "game_docs/map_docs/nudger_parameters.md"
+      }
     }
   }
 }

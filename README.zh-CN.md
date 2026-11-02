@@ -95,6 +95,7 @@ CK3——完整重建见**手册 A**。
 | wiki 讲解层 | `pages\` | ck3.paradoxwikis.com Modding 栏目清洗文本（CC BY-SA 3.0）：机制讲解、教程、用法示例 | 低 |
 | 游戏权威层 | `game_docs\script_docs\` | 游戏自带 debug dump（`script_docs` 控制台命令）：effects、triggers、modifiers、on_actions、event_targets、event_scopes、custom_localization 各一份全量机器生成清单 + data types 清单，每条目真实签名。随仓库发布；游戏更新后按手册 A 刷新 | **高** |
 | 原版结构索引层 | `game_docs\vanilla_structure\` | `entry_map.tsv`：「条目名 → 定义文件 → 行号」映射 + `common` 各子目录摘要。纯导航，零游戏内容 | 导航 |
+| 地图知识层 | `game_docs\map_docs\` | **地图室**的知识半边：地图实测档案 `map_data_dossier.md`（图像规格/河流调色板/编辑器证据）、省份索引 `province_index.tsv`（id↔RGB↔名称）、`nudger_parameters.md`。游戏更新后用 `scripts\map_layer.py` 刷新；工具半边（校验器+工作流向导）在 `map_room\` | **高**（游戏实测） |
 
 **权威顺序：游戏 dump 层（game_docs）> wiki 层（pages）**。两层冲突
 以 dump 为准，回答时应指出冲突点。各层体积、来源与版本标注见
@@ -106,8 +107,9 @@ CK3——完整重建见**手册 A**。
 |---|---|---|
 | `catalog.md` | 唯一检索入口目录（原创） | 发布 |
 | `pages\` | wiki 清洗文本（衍生自 CK3 Wiki，CC BY-SA 3.0；见 `pages\CONTENT-LICENSE.md`） | 发布 |
-| `scripts\` | 管线：crawl / clean / organize / catalog / quality_gate / game_layer / vanilla_index | 发布 |
-| `tests\` | 清洗规则断言、catalog 保护测试、金样本夹具 | 发布 |
+| `scripts\` | 管线：crawl / clean / organize / catalog / quality_gate / game_layer / vanilla_index / map_layer | 发布 |
+| `map_room\` | **地图室**——地图 MOD 支持：`validate_map.py`（离线 map_data 校验器，需 Pillow）、`WORKFLOW.md`（编辑器启动/改图循环/故障对照）、`README.md`（总览；地图生成器已规划、待下次地图管线大版本后开工） | 发布 |
+| `tests\` | 清洗规则断言、catalog 保护测试、地图校验器夹具测试、金样本夹具 | 发布 |
 | `skills\` | 自研程序性 skill：`ck3-mod-standards`——CK3 mod 脚本编码规约（作用域纪律、on_action 桥接、加载顺序兼容、本地化规范；签名强制对本知识库核对防幻觉）。安装：复制到 agent 的 skills 目录，如 `~/.agents/skills/` | 发布 |
 | `docs\` | `docs\pipeline.md`（管线契约）、`docs\reports\`（清洗统计报告）；`docs\spec.md` 为内部规划文档 | 部分发布 |
 | `AGENTS.md`、`AGENTS.zh-CN.md`、`README.md`、`README.zh-CN.md`、`LICENSES.md`、`LICENSE` | agent 检索规约（英/中）；双语手册；许可声明 | 发布 |
@@ -175,6 +177,11 @@ CK3——完整重建见**手册 A**。
 ::    可选：--game-version "<你的版本>"——写入 manifest/catalog 的版本标注
 ::    （默认 1.20.0；游戏版本更新时记得传新版本号）
 
+:: —— 4b. 地图知识层（零网络；免参配置同上）——
+<python> scripts\map_layer.py --game-dir "<你的 CK3 安装目录>\game"
+::    成功标志：game_docs\map_docs\ 三件产物（dossier + province_index.tsv
+::    + nudger_parameters.md），manifest.json 多出 game_docs.map_docs 一节。
+
 :: —— 5. 游戏层并入目录 + 终检 ——
 <python> scripts\catalog.py
 <python> scripts\quality_gate.py
@@ -189,6 +196,7 @@ CK3——完整重建见**手册 A**。
 :: 2. 游戏层重并入（产物按新 dump 整体重生成，版本标注自动更新；零网络）
 <python> scripts\game_layer.py
 <python> scripts\vanilla_index.py --game-dir "<你的 CK3 安装目录>\game"
+<python> scripts\map_layer.py --game-dir "<你的 CK3 安装目录>\game"
 :: 3. wiki 侧增量刷新（需要联网：批量核对各页 revid，未变的页零请求）
 <python> scripts\crawl.py --nav --refresh
 ::    若一跳补充页也要核对：重跑 <python> scripts\onehop.py --crawl
@@ -217,6 +225,7 @@ CK3——完整重建见**手册 A**。
 <python> scripts\quality_gate.py          :: 全部页面产物断言
 <python> tests\test_cleaner_rules.py      :: 清洗规则→断言映射（真实夹具）
 <python> tests\test_catalog_protection.py :: catalog 人工字段保护/幂等
+<python> tests\test_map_validator.py   :: 地图校验器夹具测试（需 Pillow，缺失则明确跳过）
 <python> tests\spotcheck_tables.py        :: 表格零丢失抽查（raw 针式）
 <python> scripts\clean.py --replay-golden :: 金样本回放（Scripting+Effects 固定夹具）
 <python> scripts\check_doc_paths.py       :: AGENTS / README 路径引用自检
@@ -242,6 +251,7 @@ CK3——完整重建见**手册 A**。
 | 游戏层 · 并入日期 | 2026-10-29 |
 | 游戏层 · 条目数 | effects 2128 · triggers 1937 · modifiers 761 · on_actions 932 · event_targets 328 · event_scopes 74 · custom_localization 2782 |
 | 原版结构索引 | `entry_map.tsv` 78167 行；`common` 128 个子目录摘要；2026-10-29 按 CK3 1.20.1 扫描 |
+| 地图知识层 | 档案 + 13270 省份索引 + nudger 参数表；2026-11-02 按 CK3 1.20.1 实测 |
 | `catalog.md` 体积 | 约 131KB |
 
 时效：超出上述日期的内容（新游戏补丁、抓取日期之后的 wiki 修改）不在

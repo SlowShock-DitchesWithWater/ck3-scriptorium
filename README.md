@@ -109,6 +109,7 @@ the entries and files it points to. (For agents this rule is formalized in
 | Wiki explainer layer | `pages\` | Cleaned text of the ck3.paradoxwikis.com Modding pages (CC BY-SA 3.0). Mechanic explainers, tutorials, usage examples. | Lower |
 | Game authority layer | `game_docs\script_docs\` | The game's own debug dump (the `script_docs` console command): one exhaustive, machine-generated list each for effects, triggers, modifiers, on_actions, event_targets, event_scopes, custom_localization, plus the data-type lists. Every entry's real signature. Shipped with the repo; refresh via Manual A after game updates. | **High** |
 | Vanilla structure index | `game_docs\vanilla_structure\` | `entry_map.tsv` maps entry name → defining vanilla file → line number, plus a summary for every `common` subdirectory. Pure navigation, zero game content. | Navigation |
+| Map knowledge layer | `game_docs\map_docs\` | The knowledge half of the **Map Room**: measured map facts — `map_data_dossier.md` (image specs, rivers palette, editor evidence), `province_index.tsv` (id ↔ RGB ↔ name), `nudger_parameters.md`. Refresh via `scripts\map_layer.py` after game updates; the tool half (validator + workflow guide) lives in `map_room\`. | **High** (game-measured) |
 
 **Authority order: game dump (`game_docs`) over wiki (`pages`).** When the two
 layers disagree, the dump wins and the answer should point out the conflict.
@@ -121,8 +122,9 @@ top of `catalog.md` and in each entry's source line.
 |---|---|---|
 | `catalog.md` | The single lookup entry point (original work) | Yes |
 | `pages\` | Cleaned wiki text (derived from CK3 Wiki, CC BY-SA 3.0; see `pages\CONTENT-LICENSE.md`) | Yes |
-| `scripts\` | Pipeline: crawl / clean / organize / catalog / quality_gate / game_layer / vanilla_index | Yes |
-| `tests\` | Cleaning-rule assertions, catalog-protection tests, golden fixtures | Yes |
+| `scripts\` | Pipeline: crawl / clean / organize / catalog / quality_gate / game_layer / vanilla_index / map_layer | Yes |
+| `map_room\` | **Map Room** — map-mod support: `validate_map.py` (offline map_data validator, needs Pillow), `WORKFLOW.md` (editor launch, edit loop, failure table), `README.md` (overview; a map generator is planned but deferred until the next big map-pipeline version) | Yes |
+| `tests\` | Cleaning-rule assertions, catalog-protection tests, map-validator fixture tests, golden fixtures | Yes |
 | `skills\` | Original procedural skill for AI agents: `ck3-mod-standards` — CK3 mod scripting standards (scope discipline, on_action bridging, load-order compatibility, localization rules; anti-hallucination via this knowledge base). Install: copy to your agent's skills dir, e.g. `~/.agents/skills/` | Yes |
 | `docs\` | `docs\pipeline.md` (pipeline contract), `docs\reports\` (cleaning statistics); `docs\spec.md` is internal planning and stays local | Partially |
 | `AGENTS.md`, `AGENTS.zh-CN.md`, `README.md`, `README.zh-CN.md`, `LICENSES.md`, `LICENSE` | Agent retrieval protocol (EN/CN); this manual in two languages; licensing | Yes |
@@ -192,6 +194,11 @@ top of `catalog.md` and in each entry's source line.
 ::    game-dir configuration (pick one; option 3 is recommended for long-term local use):
 ::    1) pass --game-dir every time; 2) the CK3_GAME_DIR environment variable;
 ::    3) scripts\state\local_paths.json containing {"game_dir": "<path>"} (that directory is gitignored)
+
+:: —— 5. Map knowledge layer (offline; same game-dir configuration as above) ——
+<python> scripts\map_layer.py --game-dir "<your CK3 install directory>\game"
+::    Success looks like: game_docs\map_docs\ (dossier + province_index.tsv
+::    + nudger_parameters.md) and a new game_docs.map_docs section in manifest.json.
 ::    Optional: --game-version "<your version>" — the version label written into
 ::    manifest/catalog metadata (defaults to 1.20.0; pass yours if newer)
 
@@ -210,6 +217,7 @@ Single-page full run (debugging): `<python> scripts\run.py --page Scripting`.
 ::    annotations update automatically; offline)
 <python> scripts\game_layer.py
 <python> scripts\vanilla_index.py --game-dir "<your CK3 install directory>\game"
+<python> scripts\map_layer.py --game-dir "<your CK3 install directory>\game"
 :: 3. Incremental wiki refresh (needs internet: batch-checks each page's revid; unchanged pages cost zero requests)
 <python> scripts\crawl.py --nav --refresh
 ::    To also re-check the one-hop extra pages: re-run <python> scripts\onehop.py --crawl
@@ -239,6 +247,7 @@ Single-page full run (debugging): `<python> scripts\run.py --page Scripting`.
 <python> scripts\quality_gate.py          :: product assertions for every page
 <python> tests\test_cleaner_rules.py      :: cleaning rules → assertion mapping (real fixtures)
 <python> tests\test_catalog_protection.py :: catalog human-field protection / idempotency
+<python> tests\test_map_validator.py  :: map validator fixture tests (needs Pillow; skips with a notice if absent)
 <python> tests\spotcheck_tables.py        :: table zero-loss spot check (raw-needle based)
 <python> scripts\clean.py --replay-golden :: golden replay (Scripting + Effects fixed fixtures)
 <python> scripts\check_doc_paths.py       :: AGENTS / README path-reference self-check
@@ -267,6 +276,7 @@ snapshot block at the top of `catalog.md`.
 | Game layer — merged on | 2026-10-29 |
 | Game layer — entry counts | effects 2128 · triggers 1937 · modifiers 761 · on_actions 932 · event_targets 328 · event_scopes 74 · custom_localization 2782 |
 | Vanilla structure index | `entry_map.tsv` with 78167 lines; summaries for 128 `common` subdirectories; scanned 2026-10-29 against CK3 1.20.1 |
+| Map knowledge layer | dossier + 13270-province index + nudger table; measured 2026-11-02 against CK3 1.20.1 |
 | `catalog.md` size | about 131 KB |
 
 Timeliness: anything newer than the dates above — a new game patch, wiki edits

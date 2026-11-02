@@ -24,7 +24,8 @@ English first, 中文在后。All code and docs live in one repo — clone it an
 
 ## Before you open a PR
 
-1. Install Python ≥3.10 with `beautifulsoup4` (`pip install beautifulsoup4`).
+1. Install Python ≥3.10 with `beautifulsoup4` and `pillow`
+   (`pip install beautifulsoup4 pillow`).
 2. Run the offline test suites — all must pass (raw-dependent checks auto-skip
    if you have no `raw/`):
 
@@ -33,6 +34,7 @@ English first, 中文在后。All code and docs live in one repo — clone it an
    python scripts/clean.py --replay-golden
    python tests/test_cleaner_rules.py
    python tests/test_catalog_protection.py
+   python tests/test_map_validator.py
    python tests/spotcheck_tables.py
    ```
 

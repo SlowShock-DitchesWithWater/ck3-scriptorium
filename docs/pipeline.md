@@ -108,6 +108,10 @@ raw 与 pages 用同一函数，同名一一对应。例：`Scripting` →
   实际路径由 `--game-dir` 参数 / 环境变量 `CK3_GAME_DIR` /
   `scripts\state\local_paths.json`（gitignored）三者之一提供，见
   `vanilla_index.py` 的 `resolve_game_dir`）、`subdirs`/`products` 指纹。
+- `game_docs.map_docs`（地图室·知识层，`map_layer.py` 写入）：`scanned_at`、
+  `game_dir`（同上，只记标签）、`game_version`、`stats`（省份行计数）、
+  `key_products`（dossier / province_index / nudger 三产物路径）、内容
+  `fingerprint`（不变则 `scanned_at` 保留，幂等语义同 vanilla_structure）。
 
 ## 4. 阶段1：抓取（crawl）契约
 
