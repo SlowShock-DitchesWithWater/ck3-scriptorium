@@ -41,7 +41,7 @@ REPO_ROOT = config.REPO_ROOT
 # 仓库内已知根目录/根文件首段（反引号 span 整体采信的条件）
 KNOWN_ROOTS = {
     "pages", "game_docs", "game logs", "scripts", "tests", "docs", "raw", "lib",
-    "_reference", ".scratch", ".playwright-mcp", "state",
+    "_reference", ".scratch", ".playwright-mcp", "state", "map_room",
 }
 # 仓库外（用户本机游戏安装目录）顶层目录首段 → EXTERNAL，不做存在性检查
 EXTERNAL_ROOTS = {
@@ -141,6 +141,9 @@ def check_one(token: str, repo_files: dict[str, Path],
     """
     norm = token.replace("/", "\\")
     first = norm.split("\\")[0].lower()
+    # 存在性/glob 一律用正斜杠形态：文档写的是 Windows 风格路径，反斜杠在
+    # posix（CI 的 ubuntu）上不是分隔符只是普通字符；Windows 对两态皆认。
+    posix = token.replace("\\", "/")
 
     # 仓库外引用：首段是原版游戏安装目录，或已知仓库外裸文件名
     if first in EXTERNAL_ROOTS:
@@ -156,7 +159,7 @@ def check_one(token: str, repo_files: dict[str, Path],
         return "SKIP", "非路径文本（斜线连词）"
 
     # 仓库内直查（字面路径，含目录引用）
-    if (REPO_ROOT / norm).exists():
+    if (REPO_ROOT / posix).exists():
         return "PASS", str(Path(norm))
 
     # 按设计不随仓库发布/由用户本地生成的路径：克隆中不存在属正常状态，
@@ -176,11 +179,11 @@ def check_one(token: str, repo_files: dict[str, Path],
 
     # 占位符/通配：glob 命中即 PASS；否则检查最长字面前缀（父目录）
     if "<" in token or "*" in token:
-        glob_pat = re.sub(r"<[^<>]*>", "*", token).replace("/", "\\")
+        glob_pat = re.sub(r"<[^<>]*>", "*", posix)
         hits = list(REPO_ROOT.glob(glob_pat))
         if hits:
             return "PASS", f"通配命中 {len(hits)} 处（如 {hits[0].relative_to(REPO_ROOT)}）"
-        prefix = re.split(r"[<*]", norm)[0].rstrip("\\")
+        prefix = re.split(r"[<*]", posix)[0].rstrip("/")
         if prefix and (REPO_ROOT / prefix).exists():
             return "PASS", f"占位符父目录存在：{prefix}"
 
@@ -192,7 +195,7 @@ def check_one(token: str, repo_files: dict[str, Path],
 
     # 文档相对路径（含 ..）：按引用所在文档的目录解析（如 skill 内 ../../catalog.md）
     if ".." in token and doc_dir is not None:
-        resolved = (doc_dir / token).resolve()
+        resolved = (doc_dir / posix).resolve()
         try:
             resolved.relative_to(REPO_ROOT)
         except ValueError:
