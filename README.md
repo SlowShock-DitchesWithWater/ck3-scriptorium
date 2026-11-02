@@ -140,9 +140,12 @@ top of `catalog.md` and in each entry's source line.
 ### Requirements (common to all three manuals)
 
 - Python 3.10 or newer (this project was developed and tested on 3.13).
-  Exactly three third-party libraries are needed — `selenium`, `requests`,
-  `beautifulsoup4` — and one pip command installs all three. Any virtual
-  environment or install method works; `<python>` below means "the Python
+  The wiki pipeline needs three third-party libraries — `selenium`,
+  `requests`, `beautifulsoup4` — and one pip command installs all three.
+  The Map Room validator (`map_room\`) additionally needs `pillow`
+  (pixel decoding) and, for its pixel-level checks, `numpy` — the offline
+  tests auto-skip those when absent. Any virtual environment or install
+  method works; `<python>` below means "the Python
   executable of that environment".
 - The Chrome browser: the target wiki sits behind an anti-bot shield. The
   pipeline passes the shield with a real browser session and then accesses the

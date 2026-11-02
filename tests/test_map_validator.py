@@ -19,6 +19,12 @@ except ImportError:                 # clone/CI 环境可能未装 Pillow：明�
     print("SKIP  缺少 Pillow（pip install pillow）——地图校验器测试整体跳过")
     raise SystemExit(0)
 
+try:
+    import numpy                    # M05/M06 像素级检查依赖 numpy
+    HAS_NUMPY = True
+except ImportError:
+    HAS_NUMPY = False
+
 import validate_map as vm
 
 _passed = 0
@@ -95,30 +101,33 @@ def main() -> int:
         rep, out = run(root)
         check("干净夹具：0 ERROR", rep.errors == 0, out)
 
-        # --- 2. 注入缺陷：每项都应开火 ---
+        # --- 2. 注入缺陷：每项都应开火（numpy 用例在其缺失时跳过） ---
         cases = [
             ("M02 id 缺口", lambda r: (r / "map_data/definition.csv").write_text(
-                "0;0;0;0;x;x;\n2;0;0;255;BLUELAND;x;\n", encoding="utf-8"), "M02"),
+                "0;0;0;0;x;x;\n2;0;0;255;BLUELAND;x;\n", encoding="utf-8"), "M02", True),
             ("M03 非 id0 用黑+重复", lambda r: (r / "map_data/definition.csv").write_text(
                 "0;0;0;0;x;x;\n1;0;0;0;BLACK;x;\n1;0;0;0;DUP;x;\n",
-                encoding="utf-8"), "M03"),
-            ("M05 杂色", lambda r: _repaint(r, (254, 0, 0)), "M05"),
-            ("M06 非法调色板", lambda r: _bad_palette(r), "M06"),
+                encoding="utf-8"), "M03", True),
+            ("M05 杂色", lambda r: _repaint(r, (254, 0, 0)), "M05", HAS_NUMPY),
+            ("M06 非法调色板", lambda r: _bad_palette(r), "M06", True),
             ("M07 高度图尺寸错", lambda r: Image.new(
-                "I;16", (8, 4), 100).save(r / "map_data/heightmap.png"), "M07"),
+                "I;16", (8, 4), 100).save(r / "map_data/heightmap.png"), "M07", True),
             ("M08 元数据尺寸错", lambda r: (r / "map_data/heightmap.heightmap").write_text(
-                "original_heightmap_size={ 99 99 }\n", encoding="utf-8"), "M08"),
+                "original_heightmap_size={ 99 99 }\n", encoding="utf-8"), "M08", True),
             ("M09 引用坏 id", lambda r: (r / "map_data/adjacencies.csv").write_text(
                 "From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment\n"
-                "1;77;sea;2;-1;-1;-1;-1;bad\n", encoding="utf-8"), "M09"),
+                "1;77;sea;2;-1;-1;-1;-1;bad\n", encoding="utf-8"), "M09", True),
             ("M10 sea_zones 坏 id", lambda r: (r / "map_data/default.map").write_text(
-                "sea_zones = LIST { 42 }\n", encoding="utf-8"), "M10"),
+                "sea_zones = LIST { 42 }\n", encoding="utf-8"), "M10", True),
             ("M11 地形名非法", lambda r: (r / "common/province_terrain/00_province_terrain.txt").write_text(
-                "default_land=plains\n1=mars terrain\n", encoding="utf-8"), "M11"),
+                "default_land=plains\n1=mars terrain\n", encoding="utf-8"), "M11", True),
             ("M12 头衔引用坏 id", lambda r: (r / "common/landed_titles/00_titles.txt").write_text(
-                "b_barony = { province = 99 }\n", encoding="utf-8"), "M12"),
+                "b_barony = { province = 99 }\n", encoding="utf-8"), "M12", True),
         ]
-        for label, mutate, code in cases:
+        for label, mutate, code, runnable in cases:
+            if not runnable:
+                check(f"缺陷检测：{label}（缺 numpy，跳过）", True)
+                continue
             case_dir = tmp / ("case_" + code)
             root2 = build_fixture(case_dir)
             mutate(root2)

@@ -24,8 +24,8 @@ English first, 中文在后。All code and docs live in one repo — clone it an
 
 ## Before you open a PR
 
-1. Install Python ≥3.10 with `beautifulsoup4` and `pillow`
-   (`pip install beautifulsoup4 pillow`).
+1. Install Python ≥3.10 with `beautifulsoup4`, `pillow` and `numpy`
+   (`pip install beautifulsoup4 pillow numpy`).
 2. Run the offline test suites — all must pass (raw-dependent checks auto-skip
    if you have no `raw/`):
 

@@ -250,10 +250,11 @@ def validate(root: Path, game_root: Path | None, deep: bool) -> Report:
             try:    # 只检查被像素实际引用的槽位（GIMP 等工具的 padding 槽任意）
                 import numpy as np
                 used = np.unique(np.asarray(im)).tolist()
-                cols = {(pal[3 * i], pal[3 * i + 1], pal[3 * i + 2])
-                        for i in used if 3 * i + 2 < len(pal)}
             except ImportError:
-                cols = cols_all
+                # 纯 PIL 回退：索引图槽位 ≤256，getcolors(256) 必能枚举
+                used = [idx for _, idx in (im.getcolors(256) or [])]
+            cols = {(pal[3 * i], pal[3 * i + 1], pal[3 * i + 2])
+                    for i in used if 3 * i + 2 < len(pal)}
             unknown = cols - RIVERS_PALETTE_1_20_1 - RIVERS_TOLERATED
             if game_root and (game_root / "map_data/rivers.png").is_file():
                 vp = Image.open(game_root / "map_data/rivers.png").getpalette() or []

@@ -21,7 +21,7 @@ jobs:
           python-version: "3.13"
 
       - name: Install dependencies
-        run: pip install beautifulsoup4 pillow
+        run: pip install beautifulsoup4 pillow numpy
 
       - name: Quality gate (product assertions, clone mode)
         run: python scripts/quality_gate.py

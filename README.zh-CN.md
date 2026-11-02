@@ -63,8 +63,11 @@ CK3 语法"的幻觉代码。本库的做法：先读一份摘要目录（`catal
 ::    上开发与测试），装完检查：
 python --version
 
-:: 2) 安装三个第三方库（pip 是 Python 的包安装器）：
+:: 2) 安装 wiki 管线所需的三个第三方库（pip 是 Python 的包安装器）：
 pip install selenium requests beautifulsoup4
+::    地图室校验器（map_room\）另需 pillow（像素解码）与 numpy（像素级
+::    检查；缺失时相关测试自动跳过）：
+pip install pillow numpy
 
 :: 3) 爬取 wiki（需联网 + 已装 Chrome；可断点续跑，已抓过的页自动跳过）：
 <python> scripts\crawl.py --nav
