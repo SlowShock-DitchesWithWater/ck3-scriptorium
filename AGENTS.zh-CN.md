@@ -15,9 +15,11 @@
 | 游戏权威层 | `game_docs/script_docs/` | 游戏 debug dump：effects / triggers / modifiers / on_actions / event_targets / event_scopes / custom_localization 清单 + data_types×5 文件 | **高** |
 | 原版结构索引层 | `game_docs/vanilla_structure/` | 条目名→定义文件映射 + common 128 子目录摘要 | 导航 |
 | 地图知识层 | `game_docs/map_docs/` | 地图实测档案：`map_data_dossier.md`（格式/尺寸/河流调色板/编辑器证据）、`province_index.tsv`（id↔RGB↔名称）、`nudger_parameters.md` | **高**（游戏实测） |
+| 阅览室（自选文章） | `reading_room/articles/` | 用户自选外部文章的自写笔记（论坛深扒/攻略等）+ 出处链接；添加方式见 `reading_room/README.md` | 参考（最低） |
 
-**权威顺序：game_docs（dump）> pages（wiki）。** 两层冲突时以 dump 为准，
-并在回答中指出冲突点。
+**权威顺序：game_docs（dump）> pages（wiki）> reading_room（参考）。**
+多层冲突时以 dump 为准，并在回答中指出冲突点。阅览室是用户自策的笔记，
+不得作为唯一依据推翻 dump/wiki；引用时标注"阅览室笔记"并附其来源行。
 
 **`game_docs/` 随仓库发布**（由游戏自身 debug dump 构建；当前对应游戏版本见
 catalog 快照块）。该层为游戏衍生数据，本仓库不主张任何权利（见
@@ -32,7 +34,8 @@ catalog 快照块）。该层为游戏衍生数据，本仓库不主张任何权
 2. **查目录**：grep `catalog.md` 关键词，命中条目后按其「文件位置」「章节」字段
    只读对应文件——不要整读 catalog，也不要整读命中页。
 3. **目录未命中 → pages 兜底**：对 `pages/` 全目录做关键词 grep（命令见配方 B），
-   仍然只读命中文件。catalog 不可能收录每个事实，兜底是正常路径，不算弯路。
+   仍只读命中文件；wiki 层也没有时，再 grep `reading_room/articles/`
+   （社区洞见，参考级）。catalog 不可能收录每个事实，兜底是正常路径，不算弯路。
 4. **回答必须带来源**：`pages/<页名>.md` 或 `game_docs/<层>/<产物>.md` 的具体文件
    + 章节/条目名。没读到就不回答：禁止凭模型记忆写 effect/trigger/modifier/字段名。
 

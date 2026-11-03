@@ -124,6 +124,7 @@ top of `catalog.md` and in each entry's source line.
 | `pages\` | Cleaned wiki text (derived from CK3 Wiki, CC BY-SA 3.0; see `pages\CONTENT-LICENSE.md`) | Yes |
 | `scripts\` | Pipeline: crawl / clean / organize / catalog / quality_gate / game_layer / vanilla_index / map_layer | Yes |
 | `map_room\` | **Map Room** — map-mod support: `validate_map.py` (offline map_data validator, needs Pillow), `WORKFLOW.md` (editor launch, edit loop, failure table), `README.md` (overview; a map generator is planned but deferred until the next big map-pipeline version) | Yes |
+| `reading_room\` | **Reading Room** — self-curated article layer: drop your own digests of external articles (forum deep-dives, guides) into `reading_room\articles\` with the template header; `scripts\reading_room.py --sync` merges them into `catalog.md`. Digests + source links only — no full-text copies (licensing, see its README) | Yes |
 | `tests\` | Cleaning-rule assertions, catalog-protection tests, map-validator fixture tests, golden fixtures | Yes |
 | `skills\` | Original procedural skill for AI agents: `ck3-mod-standards` — CK3 mod scripting standards (scope discipline, on_action bridging, load-order compatibility, localization rules; anti-hallucination via this knowledge base). Install: copy to your agent's skills dir, e.g. `~/.agents/skills/` | Yes |
 | `docs\` | `docs\pipeline.md` (pipeline contract), `docs\reports\` (cleaning statistics); `docs\spec.md` is internal planning and stays local | Partially |

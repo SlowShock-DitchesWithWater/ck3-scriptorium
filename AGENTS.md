@@ -17,9 +17,12 @@ numbers anywhere else — they rot).
 | Game authority layer | `game_docs/script_docs/` | Debug dump from the game itself: effects / triggers / modifiers / on_actions / event_targets / event_scopes / custom_localization lists + 5 data_types files | **High** |
 | Vanilla structure index | `game_docs/vanilla_structure/` | entry-name → defining-file map + summaries of all 128 `common` subdirectories | Navigation |
 | Map knowledge layer | `game_docs/map_docs/` | Measured map facts: `map_data_dossier.md` (formats / dimensions / rivers palette / editor evidence), `province_index.tsv` (id↔RGB↔name), `nudger_parameters.md` | **High** (game-measured) |
+| Reading room (self-curated) | `reading_room/articles/` | User-written digests of external articles (forum deep-dives, guides) with source links; adding your own: `reading_room/README.md` | Reference (lowest) |
 
-**Authority order: game_docs (dump) > pages (wiki).** When the two layers conflict,
-the dump wins — and say so in your answer, pointing at the conflict.
+**Authority order: game_docs (dump) > pages (wiki) > reading_room (reference).**
+When layers conflict, the dump wins — and say so in your answer, pointing at the
+conflict. Reading-room notes are user-curated digests: never let them override
+dump/wiki, and cite them as "reading-room note" with their source line.
 
 **`game_docs/` ships with the repository** (built from the game's own debug
 dump; see the snapshot block for the current game version). It is game-derived
@@ -37,8 +40,10 @@ entry point, but never read it whole: grep it first, then follow the hit** (see 
    the file named in its `文件位置` (file-location) field — not the whole catalog, and
    not the whole target page either.
 3. **No catalog hit → pages fallback**: grep the whole `pages/` tree for the keyword
-   (commands in recipe B), still reading only the matching file. The catalog cannot
-   index every fact; the fallback is a normal path, not a detour.
+   (commands in recipe B), still reading only the matching file — and if the wiki
+   layer has nothing either, grep `reading_room/articles/` (community insights,
+   reference-grade). The catalog cannot index every fact; the fallback is a normal
+   path, not a detour.
 4. **Every answer must cite its source**: a concrete file (`pages/<name>.md` or
    `game_docs/<layer>/<product>.md`) plus the section/entry name. If you did not read
    it, do not answer: writing effect/trigger/modifier/field names from model memory is

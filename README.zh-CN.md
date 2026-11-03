@@ -112,6 +112,7 @@ CK3——完整重建见**手册 A**。
 | `pages\` | wiki 清洗文本（衍生自 CK3 Wiki，CC BY-SA 3.0；见 `pages\CONTENT-LICENSE.md`） | 发布 |
 | `scripts\` | 管线：crawl / clean / organize / catalog / quality_gate / game_layer / vanilla_index / map_layer | 发布 |
 | `map_room\` | **地图室**——地图 MOD 支持：`validate_map.py`（离线 map_data 校验器，需 Pillow）、`WORKFLOW.md`（编辑器启动/改图循环/故障对照）、`README.md`（总览；地图生成器已规划、待下次地图管线大版本后开工） | 发布 |
+| `reading_room\` | **阅览室**——自选文章层：把你找到的外部好文章（论坛深扒/攻略等）以**自写笔记+出处链接**的形式存入 `reading_room\articles\`（模板 `_template.md`）；`scripts\reading_room.py --sync` 并入 `catalog.md`。只收笔记不收原文全文（许可红线，见其 README） | 发布 |
 | `tests\` | 清洗规则断言、catalog 保护测试、地图校验器夹具测试、金样本夹具 | 发布 |
 | `skills\` | 自研程序性 skill：`ck3-mod-standards`——CK3 mod 脚本编码规约（作用域纪律、on_action 桥接、加载顺序兼容、本地化规范；签名强制对本知识库核对防幻觉）。安装：复制到 agent 的 skills 目录，如 `~/.agents/skills/` | 发布 |
 | `docs\` | `docs\pipeline.md`（管线契约）、`docs\reports\`（清洗统计报告）；`docs\spec.md` 为内部规划文档 | 部分发布 |

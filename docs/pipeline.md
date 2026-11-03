@@ -272,6 +272,18 @@ raw 与 pages 用同一函数，同名一一对应。例：`Scripting` →
 6. manifest 记录了版本标注的页，该标注串保留在清洗产物中（横幅保留检查）；
 7. catalog 含该页条目标记。
 
+## 7.5 阅览室（reading_room/，2026-10-29 新增；独立于管线阶段）
+
+自选文章层：用户把外部文章的**自写笔记**（含出处链接，不收原文全文——
+许可红线）放入 `reading_room/articles/`，头部字段见 `reading_room/_template.md`
+（title/source/author/found/game_version/tags/digest，单层 key: value）。
+
+- `scripts/reading_room.py --sync`：把条目再生进 `catalog.md` 末尾的
+  `ck3wiki-mod-kb:reading-room BEGIN/END` 标记区块（整块机械生成；
+  catalog.py 的重跑不触碰该区块）；`--check` 校验头部与同步（CI 跑）。
+- 权威级：参考（最低），dump > wiki > reading_room（AGENTS §0）。
+- 许可：笔记正文 MIT（自写）；短引用标注原出处（LICENSES.md）。
+
 ## 8. 后续工单的衔接点
 
 - **工单02（批量抓取）**：已完成（46 导航页 + 工单05 种子页）。crawl 循环多页，

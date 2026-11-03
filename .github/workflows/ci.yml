@@ -43,3 +43,6 @@ jobs:
 
       - name: Doc path-reference self-check
         run: python scripts/check_doc_paths.py
+
+      - name: Reading Room catalog sync check
+        run: python scripts/reading_room.py --check

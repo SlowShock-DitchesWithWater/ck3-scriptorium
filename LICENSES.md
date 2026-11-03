@@ -8,6 +8,7 @@
 | `pages/`（含章节子目录） | CK3 Wiki 抓取清洗文本 | **CC BY-SA 3.0**，署名 CK3 Wiki —— 详见 [`pages/CONTENT-LICENSE.md`](pages/CONTENT-LICENSE.md) |
 | `game_docs/`（script_docs 12 清单 + vanilla_structure 结构索引 + map_docs 地图实测档案） | 游戏自生 debug dump 的转换产物 + 原版文件结构元数据 + 地图侧实测事实 | 见下方「游戏衍生数据」节 |
 | `tests/fixtures/`（金样本 raw JSON 与 golden 期望产物） | CK3 Wiki api.php 响应的逐字副本及其清洗产物 | 同 pages/ 层：CC BY-SA 3.0，来源标注见 `tests/fixtures/fixtures.json` |
+| `reading_room/`（阅览室自选文章） | 用户自写的外部文章笔记 + 出处链接（**不含原文全文**——许可红线见其 README） | 笔记正文随仓库 **MIT**（自写内容）；引用的短片段版权归原出处，条目内已标注 |
 
 ## 游戏衍生数据（game_docs/）
 

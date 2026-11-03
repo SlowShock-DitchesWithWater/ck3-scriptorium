@@ -2855,3 +2855,15 @@
 - **中文摘要**：随游戏分发的约 60 个自动摆放参数实测表（语义为推断注解）。
 - **英文关键词**：nudger；auto_nudge；locator
 <!-- ck3wiki-mod-kb:entry END game:nudger_parameters.md -->
+
+<!-- ck3wiki-mod-kb:reading-room BEGIN -->
+## 阅览室 · 自选文章（reading_room，参考级：与 wiki/dump 冲突时以后者为准）
+
+### 阅览室 · is_king 不存在——判定"国王级角色"用 highest_held_title_tier
+- **文件**：`reading_room/articles/example-is-king-does-not-exist.md`
+- **来源**：个人笔记（依据：本仓库 game_docs/script_docs/triggers.md 实测核对）（作者 缮写室维护者，发现于 2026-10-23，适用版本 1.20.1）
+- **摘要**：想写"对方是国王"的判定时，is_king 这个 trigger 不存在（模型常见幻觉）；正确写法是 highest_held_title_tier = kingdom（或 >= kingdom 连皇帝一起算），已在 dump 层核实。
+- **标签**：trigger, title-tier, anti-hallucination
+- **权威级**：参考（自写笔记+出处，非权威来源；冲突以 dump/wiki 为准）
+
+<!-- ck3wiki-mod-kb:reading-room END -->
