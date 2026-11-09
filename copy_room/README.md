@@ -16,6 +16,7 @@ scriptorium（缮写室）诸房间之一。抄写室是缮写室里**对着底�
 |---|---|---|
 | 签名层（权威） | `mods_docs/<mod>/script_docs/`（12 清单，mod 加载态 dump 转换） | **用户以目标 mod 加载态进游戏跑 `script_docs` + `dump_data_types`**（两条都要，产物在 Documents\...\Crusader Kings III\logs\） |
 | 结构层（导航） | `mods_docs/<mod>/structure/`（INDEX + entry_map.tsv + common 逐子目录摘要） | 无需启动游戏，直接扫 mod 文件夹 |
+| 地图层（换图 mod） | `mods_docs/<mod>/map_docs/`（dossier + province_index.tsv + nudger 参数，同地图室三件套） | 无需启动游戏；mod 自带 `map_data/definition.csv` 时自动构建（EK2 这类全架空 mod 的核心知识），否则跳过 |
 | 差异报告 | `mods_docs/<mod>/DIFF_vs_vanilla.md` | 自动生成：该 mod 相对原版新增/移除的签名条目清单（子 mod 可调用的新 API 面） |
 
 **实测依据（2026-11-09，Elder Kings 2）**：加载 mod 后 dump 为"原版+mod"合并

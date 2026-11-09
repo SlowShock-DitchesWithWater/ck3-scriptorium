@@ -573,19 +573,26 @@ def main(argv: list[str] | None = None) -> int:
     hm_meta = (md / "heightmap.heightmap").read_text(encoding="utf-8-sig")
 
     products = {
-        "game_docs/map_docs/map_data_dossier.md":
+        "map_data_dossier.md":
             render_dossier(game_dir, args.game_version, defn, dmap, adj,
                            exe, art, gfx, hm_meta),
-        "game_docs/map_docs/province_index.tsv":
+        "province_index.tsv":
             render_province_index(defn),
-        "game_docs/map_docs/nudger_parameters.md": render_nudger(game_dir),
+        "nudger_parameters.md": render_nudger(game_dir),
     }
-    for rel, content in products.items():
-        _atomic_write(REPO_ROOT / rel, content)
-        print(f"[map_layer] 已写 {rel}（{len(content):,} 字符）")
+    # --out 真正生效（此前产物路径硬编码 game_docs/map_docs，--out 被忽略——
+    # 2026-11-09 抄写室复用时发现并修复；默认用途行为不变）
+    for name, content in products.items():
+        _atomic_write(out_dir / name, content)
+        print(f"[map_layer] 已写 {out_dir / name}（{len(content):,} 字符）")
 
     if not args.no_manifest:
-        _update_manifest(game_dir, args.game_version, products, defn)
+        try:
+            rel_base = out_dir.resolve().relative_to(REPO_ROOT).as_posix()
+        except ValueError:
+            rel_base = str(out_dir)
+        products_rel = {f"{rel_base}/{n}": c for n, c in products.items()}
+        _update_manifest(game_dir, args.game_version, products_rel, defn)
     print(f"[map_layer] 完成：省份活动行 {defn['active']}（连续 "
           f"{defn['id_min']}..{defn['id_max']}），注释行 {defn['commented']}")
     return 0

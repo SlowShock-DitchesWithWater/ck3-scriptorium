@@ -140,6 +140,20 @@ def build(mod: dict, dump_dir: Path | None) -> int:
         return r.returncode
     print("[copy_room] 结构层完成")
 
+    # 通道 3：地图层（mod 自带 map_data/definition.csv 时——全架空/换图 mod 的核心知识）
+    has_map = (Path(mod["path"]) / "map_data" / "definition.csv").is_file()
+    if has_map:
+        r = subprocess.run([PY, "-X", "utf8", str(SCRIPTS / "map_layer.py"),
+                            "--game-dir", mod["path"], "--out", str(target / "map_docs"),
+                            "--no-manifest"], capture_output=True, text=True,
+                           encoding="utf-8", errors="replace")
+        if r.returncode != 0:
+            print(r.stdout[-300:], r.stderr[-300:])
+            return r.returncode
+        print("[copy_room] 地图层完成（mod 自定义地图）")
+    else:
+        print("[copy_room] 无自定义地图（map_data/ 缺失），地图层跳过")
+
     # 差异报告 + 元信息 README
     write_diff(target, mod)
     write_readme(target, mod, sig_out.is_dir())
@@ -186,6 +200,10 @@ def write_diff(target: Path, mod: dict) -> None:
 def write_readme(target: Path, mod: dict, has_sig: bool) -> None:
     entry_map = target / "structure" / "entry_map.tsv"
     n_entries = sum(1 for _ in entry_map.open(encoding="utf-8")) - 1 if entry_map.is_file() else 0
+    prov = target / "map_docs" / "province_index.tsv"
+    n_prov = sum(1 for _ in prov.open(encoding="utf-8")) - 1 if prov.is_file() else 0
+    map_part = (f"`map_docs/`（自定义地图档案，{n_prov} 省份索引）" if n_prov
+                else "无自定义地图")
     text = (f"# Mod 知识库 · {mod['name']}\n\n"
             f"- 来源：{mod.get('origin', '?')}（工坊/本地 ID：{mod.get('id') or '—'}）\n"
             f"- mod 文件夹：`{mod['path']}`\n"
@@ -193,9 +211,11 @@ def write_readme(target: Path, mod: dict, has_sig: bool) -> None:
             f"- 组成：`script_docs/`（mod 加载态签名层"
             f"{'✓' if has_sig else '✗ 未生成——需游戏内跑两条 dump 命令'}）、"
             f"`structure/`（结构索引，{n_entries} 条目映射）、"
+            f"{map_part}、"
             f"`DIFF_vs_vanilla.md`（与原版差异）\n"
             f"- 检索：签名 grep `script_docs/*.md` 的 `### 名称`；"
             f"条目定位 grep `structure/entry_map.tsv`；"
+            f"地图问题（省份/规格/调色板）查 `map_docs/`（用法同地图室规约）；"
             f"子 mod 场景同名条目以本层为准，原版行为回查 `game_docs/`\n")
     (target / "README.md").write_text(text, encoding="utf-8", newline="\n")
 
