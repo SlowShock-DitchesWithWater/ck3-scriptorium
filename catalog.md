@@ -2867,3 +2867,12 @@
 - **权威级**：参考（自写笔记+出处，非权威来源；冲突以 dump/wiki 为准）
 
 <!-- ck3wiki-mod-kb:reading-room END -->
+
+<!-- ck3wiki-mod-kb:copy-room BEGIN -->
+## 抄写室 · 其他 Mod 知识库（mods_docs，本地生成不发布；构建方式见 `copy_room/README.md`）
+
+### 2887120253-elder-kings-2
+- Mod 知识库 · Elder Kings 2
+- **位置**：`mods_docs/2887120253-elder-kings-2/`（README / script_docs / structure / DIFF_vs_vanilla）
+
+<!-- ck3wiki-mod-kb:copy-room END -->

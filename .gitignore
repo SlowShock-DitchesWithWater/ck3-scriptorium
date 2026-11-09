@@ -33,3 +33,6 @@ manifest.json.lock
 
 # skill 每机知识库路径配置（单行路径，不发布）
 skills/ck3-mod-standards/kb_location.txt
+
+# 抄写室：mod 知识库产物（mod 版权归各作者且体积大，不发布；本地可随时重建）
+mods_docs/
