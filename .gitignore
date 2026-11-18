@@ -35,6 +35,8 @@ manifest.json.lock
 skills/ck3-mod-standards/kb_location.txt
 
 # 抄写室：mod 知识库产物 copy_room/<mod-id>/（mod 版权归各作者且体积大，
-# 不发布；本地可随时重建）。copy_room/README.md 文档本身随仓库发布。
+# 不发布；本地可随时重建）。copy_room/README.md（英）与 README.zh-CN.md
+# （中）文档本身随仓库发布。
 copy_room/*
 !copy_room/README.md
+!copy_room/README.zh-CN.md
