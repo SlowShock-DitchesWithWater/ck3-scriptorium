@@ -1,9 +1,9 @@
 # Data Types: gui（script_docs 权威清单）
 
-- 来源：`game logs/data_types/data_types_gui.txt`（CK3 1.20.1 `script_docs` 控制台导出）
-- 源文件时间：2026-10-22T19:56:41+08:00（文件 mtime，视为 dump 生成时间）
-- 源文件大小：91864 字节
-- 条目数：875
+- 来源：`game logs/data_types/data_types_gui.txt`（CK3 1.21.0 `script_docs` 控制台导出）
+- 源文件时间：2026-11-18T19:02:24+08:00（文件 mtime，视为 dump 生成时间）
+- 源文件大小：92480 字节
+- 条目数：880
 - 正文逐字来自 dump，仅重排为每条目一节；与 wiki 层冲突时以本层为准。
 
 ### GetScriptedGui( Arg0 )
@@ -1831,6 +1831,31 @@ Return type: CVector2f
 
 Definition type: Function
 Return type: [unregistered]
+
+### GuiCurrentDrag
+
+Description: For use in drag_widget, inside of draggable_behavior. Contains data regarding current ongoing drag, such as mouse positions
+Definition type: Type
+
+### GuiCurrentDrag.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### GuiCurrentDrag.CurrentPosition
+
+Definition type: Function
+Return type: CVector2f
+
+### GuiCurrentDrag.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### GuiCurrentDrag.StartPosition
+
+Definition type: Function
+Return type: CVector2f
 
 ### InputActionBinding
 

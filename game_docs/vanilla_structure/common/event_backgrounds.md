@@ -1,23 +1,23 @@
 # common/event_backgrounds 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：3（其中 Jomini 解析 2 个）
-- 顶层块条目总数：313，跨文件唯一条目 313
+- 顶层块条目总数：331，跨文件唯一条目 331
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `01_event_backgrounds.txt` | 621282 | 304 | 0 | jomini |
+| `01_event_backgrounds.txt` | 650014 | 322 | 0 | jomini |
 | `_event_backgrounds.info` | 1042 | - | - | 纯文档（非 Jomini） |
-| `activity_backgrounds.txt` | 124661 | 9 | 0 | jomini |
+| `activity_backgrounds.txt` | 124065 | 9 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 01_event_backgrounds.txt（304 条目）
+### 01_event_backgrounds.txt（322 条目）
 
 - alley_night
 - alley_day
@@ -62,6 +62,7 @@
 - garden
 - garden_location
 - market
+- market_crowd
 - market_scope
 - market_east
 - market_india
@@ -137,6 +138,7 @@
 - holy_site_unique
 - holy_site_scope
 - holy_site_mecca
+- ep2_travel_settlement
 - ep2_travel_settlement_farm
 - ep2_travel_settlement_ruin_desert
 - ep2_travel_nomad_settlement_desert
@@ -323,6 +325,22 @@
 - pam_the_christian_church_stability
 - pam_the_christian_church_zeal
 - pam_the_christian_church_crusade
+- gdp_smithy_workshop
+- gdp_tannery
+- gdp_carpentry_workshop
+- gdp_carnival_event_background
+- gdp_western_merchant_domicile
+- gdp_mena_merchant_domicile
+- gdp_merchant_domicile
+- gdp_italian_market
+- gdp_artisan_street
+- gdp_artisan_street_crowd
+- gdp_fullscreen_merchant_positive
+- gdp_fullscreen_ghibelline_victory
+- gdp_fullscreen_guelph_victory
+- gdp_fullscreen_gg_compromise
+- gdp_fullscreen_gg_start
+- gdp_jewish_temple
 
 ### activity_backgrounds.txt（9 条目）
 

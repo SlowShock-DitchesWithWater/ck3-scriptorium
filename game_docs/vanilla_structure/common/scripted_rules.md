@@ -1,15 +1,15 @@
 # common/scripted_rules 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：3（其中 Jomini 解析 3 个）
-- 顶层块条目总数：72，跨文件唯一条目 72
+- 顶层块条目总数：76，跨文件唯一条目 76
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_rules.txt` | 43456 | 66 | 0 | jomini |
+| `00_rules.txt` | 47142 | 70 | 0 | jomini |
 | `01_grant_title_rules.txt` | 8410 | 3 | 0 | jomini |
 | `02_holy_sites.txt` | 2110 | 3 | 0 | jomini |
 
@@ -17,7 +17,7 @@
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_rules.txt（66 条目）
+### 00_rules.txt（70 条目）
 
 - can_command_troops
 - can_command_troops_now
@@ -37,7 +37,7 @@
 - is_alliance_valid
 - can_designate_heir
 - cares_about_powerful_vassal_council_position
-- approves_of_succession_law_change
+- approves_of_law_change
 - has_natural_death_second_chance
 - can_refund_perks
 - can_defensively_join_holy_war
@@ -85,6 +85,10 @@
 - can_build_in_tributaries
 - can_build_in_liege_tributaries
 - can_build_in_same_realm
+- can_build_external_trade_post
+- can_be_trader
+- can_hire_mercenaries
+- can_hire_holy_orders
 
 ### 01_grant_title_rules.txt（3 条目）
 

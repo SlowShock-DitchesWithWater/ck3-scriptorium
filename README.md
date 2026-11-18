@@ -55,7 +55,7 @@ Three typical lookups this setup handles:
 
 > **The game authority layer ships with the repository.** `game_docs\`
 > (dump signatures + vanilla structure index, currently built from the CK3
-> 1.20.1 dump) is included in the published repo, so a fresh download is the
+> 1.21.0 dump) is included in the published repo, so a fresh download is the
 > complete knowledge base — no game install needed to *use* it. After a CK3
 > version update you can refresh this layer locally in a few minutes with the
 > game-layer steps in **Manual A** (steps 3-4). Licensing note: the layer is
@@ -110,6 +110,7 @@ the entries and files it points to. (For agents this rule is formalized in
 | Game authority layer | `game_docs\script_docs\` | The game's own debug dump (the `script_docs` console command): one exhaustive, machine-generated list each for effects, triggers, modifiers, on_actions, event_targets, event_scopes, custom_localization, plus the data-type lists. Every entry's real signature. Shipped with the repo; refresh via Manual A after game updates. | **High** |
 | Vanilla structure index | `game_docs\vanilla_structure\` | `entry_map.tsv` maps entry name → defining vanilla file → line number, plus a summary for every `common` subdirectory. Pure navigation, zero game content. | Navigation |
 | Map knowledge layer | `game_docs\map_docs\` | The knowledge half of the **Map Room**: measured map facts — `map_data_dossier.md` (image specs, rivers palette, editor evidence), `province_index.tsv` (id ↔ RGB ↔ name), `nudger_parameters.md`. Refresh via `scripts\map_layer.py` after game updates; the tool half (validator + workflow guide) lives in `map_room\`. | **High** (game-measured) |
+| Mod knowledge bases (**Copy Room**) | `copy_room\<mod-id>\` | Optional, locally built per-mod KBs with the same three channels (merged-view signatures, structure index, map dossier) plus a `DIFF_vs_vanilla.md` API-surface diff — for sub-mod development against a parent mod. Local-only (not shipped); see `copy_room\README.md` and **Manual D**. | Highest *within that mod's scope* |
 
 **Authority order: game dump (`game_docs`) over wiki (`pages`).** When the two
 layers disagree, the dump wins and the answer should point out the conflict.
@@ -125,6 +126,7 @@ top of `catalog.md` and in each entry's source line.
 | `scripts\` | Pipeline: crawl / clean / organize / catalog / quality_gate / game_layer / vanilla_index / map_layer | Yes |
 | `map_room\` | **Map Room** — map-mod support: `validate_map.py` (offline map_data validator, needs Pillow), `WORKFLOW.md` (editor launch, edit loop, failure table), `README.md` (overview; a map generator is planned but deferred until the next big map-pipeline version) | Yes |
 | `reading_room\` | **Reading Room** — self-curated article layer: drop your own digests of external articles (forum deep-dives, guides) into `reading_room\articles\` with the template header; `scripts\reading_room.py` (`--sync`) merges them into `catalog.md`. Digests + source links only — no full-text copies (licensing, see its README) | Yes |
+| `copy_room\` | **Copy Room** — per-mod knowledge bases for sub-mod development: `scripts\copy_room.py` with `--build --id <workshop id>` builds `copy_room\<mod-id>\` (merged-view signatures + structure index + map dossier + diff vs vanilla) by reusing the three game-layer channels. Only this README is published; the KB folders are local (rebuildable anytime) | Partially (README only) |
 | `tests\` | Cleaning-rule assertions, catalog-protection tests, map-validator fixture tests, golden fixtures | Yes |
 | `skills\` | Original procedural skill for AI agents: `ck3-mod-standards` — CK3 mod scripting standards (scope discipline, on_action bridging, load-order compatibility, localization rules; anti-hallucination via this knowledge base). Install: copy to your agent's skills dir, e.g. `~/.agents/skills/` | Yes |
 | `docs\` | `docs\pipeline.md` (pipeline contract), `docs\reports\` (cleaning statistics); `docs\spec.md` is internal planning and stays local | Partially |
@@ -177,7 +179,11 @@ top of `catalog.md` and in each entry's source line.
 
 :: —— 3. Game authority layer (offline; needs the game installed locally) ——
 ::    The repo already ships a game layer (see Snapshot); run these steps only
-::    to REFRESH it after a CK3 version update, in three steps:
+::    to REFRESH it after a CK3 version update.
+::    One-command shortcut (runs steps 3+4+5 below, resolves the dump folder
+::    and the game version automatically, then updates catalog + gate):
+<python> scripts\run.py --stage game
+::    What it does under the hood (equivalent manual form), in three steps:
 ::    a) Launch CK3 with -debug_mode (add it to Steam launch options).
 ::    b) Open the console (` key) and run BOTH commands — each writes a
 ::       different part, both are required:
@@ -204,7 +210,8 @@ top of `catalog.md` and in each entry's source line.
 ::    Success looks like: game_docs\map_docs\ (dossier + province_index.tsv
 ::    + nudger_parameters.md) and a new game_docs.map_docs section in manifest.json.
 ::    Optional: --game-version "<your version>" — the version label written into
-::    manifest/catalog metadata (defaults to 1.20.0; pass yours if newer)
+::    manifest/catalog metadata (defaults to the built-in baseline; the one-command
+::    shortcut above passes the version auto-extracted from the dump)
 
 :: —— 5. Merge the game layer into the catalog + final gate ——
 <python> scripts\catalog.py
@@ -216,12 +223,19 @@ Single-page full run (debugging): `<python> scripts\run.py --page Scripting`.
 ### Manual B: refresh after a game update
 
 ```bat
-:: 1. Re-run script_docs on the new game version and replace the dump files under game logs\
-:: 2. Rebuild the game layer (products are fully regenerated from the new dump; version
-::    annotations update automatically; offline)
-<python> scripts\game_layer.py
-<python> scripts\vanilla_index.py --game-dir "<your CK3 install directory>\game"
-<python> scripts\map_layer.py --game-dir "<your CK3 install directory>\game"
+:: 1. Re-run script_docs + dump_data_types on the new game version (console,
+::    -debug_mode; the export lands in Documents\...\Crusader Kings III\logs\)
+:: 2. Rebuild all three game channels in one command (signature + structure
+::    + map layers, then catalog game-layer section + quality gate; offline.
+::    It picks the newer dump automatically — repo game logs\ or Documents
+::    logs\ — and extracts the game version from the dump itself):
+<python> scripts\run.py --stage game
+::    Equivalent manual form (what it runs under the hood):
+::      <python> scripts\game_layer.py --source "<dump folder>"
+::      <python> scripts\vanilla_index.py --game-dir "<your CK3 install directory>\game"
+::      <python> scripts\map_layer.py --game-dir "<your CK3 install directory>\game"
+::      <python> scripts\catalog.py
+::      <python> scripts\quality_gate.py
 :: 3. Incremental wiki refresh (needs internet: batch-checks each page's revid; unchanged pages cost zero requests)
 <python> scripts\crawl.py --nav --refresh
 ::    To also re-check the one-hop extra pages: re-run <python> scripts\onehop.py --crawl
@@ -245,6 +259,32 @@ Single-page full run (debugging): `<python> scripts\run.py --page Scripting`.
    `<python> scripts\check_doc_paths.py` (verifies that path references
    in AGENTS and the READMEs are not dangling).
 
+### Manual D: building a knowledge base for another mod (Copy Room)
+
+For sub-mod / compatibility-patch development against a **parent mod** — the
+same three-channel knowledge base, built from the parent mod instead of
+vanilla (details in `copy_room\README.md`):
+
+```bat
+:: 1) List mods found on this machine (Steam workshop, multi-library, + local):
+<python> scripts\copy_room.py --list
+
+:: 2) Launch CK3 with the target mod enabled (-debug_mode), run BOTH console
+::    commands (script_docs AND dump_data_types), quit — the dump is a
+::    "vanilla + mod" merged view, so both commands are required.
+
+:: 3) Build the mod KB under copy_room\<mod-id>\ (signature + structure
+::    + map channels + DIFF_vs_vanilla.md; --path for local mod folders,
+::    --dump to point at a dump copy elsewhere):
+<python> scripts\copy_room.py --build --id 2887120253
+```
+
+Retrieval convention: for that mod's scope, the mod KB outranks `game_docs\`
+(a sub-mod runs inside the parent mod's environment); for vanilla behaviour
+fall back to `game_docs\`. Mod KBs are local-only and never published
+(mod content belongs to its authors; anyone can rebuild an equivalent with
+the three steps above).
+
 ## Testing (all offline)
 
 ```bat
@@ -255,6 +295,8 @@ Single-page full run (debugging): `<python> scripts\run.py --page Scripting`.
 <python> tests\spotcheck_tables.py        :: table zero-loss spot check (raw-needle based)
 <python> scripts\clean.py --replay-golden :: golden replay (Scripting + Effects fixed fixtures)
 <python> scripts\check_doc_paths.py       :: AGENTS / README path-reference self-check
+<python> scripts\reading_room.py --check  :: Reading Room catalog-section sync check
+<python> scripts\copy_room.py --check     :: Copy Room catalog-section check (passes without local KBs)
 :: maintainer-only (need unpublished local data):
 <python> scripts\game_layer.py --check    :: game-layer products match their sources (needs game logs/)
 <python> scripts\vanilla_index.py --check :: structure index matches the game directory (needs the game dir)
@@ -276,11 +318,11 @@ snapshot block at the top of `catalog.md`.
 |---|---|
 | Wiki layer — crawl date | 2026-10-22 (nav/seed batches) + 2026-10-23 (one-hop backfill; old Patch changelog pages excluded by design) |
 | Wiki layer — pages in this snapshot | 141 (live count in the snapshot block atop `catalog.md`) |
-| Game layer — CK3 version of the dump | 1.20.1 |
-| Game layer — merged on | 2026-10-29 |
-| Game layer — entry counts | effects 2128 · triggers 1937 · modifiers 761 · on_actions 932 · event_targets 328 · event_scopes 74 · custom_localization 2782 |
-| Vanilla structure index | `entry_map.tsv` with 78167 lines; summaries for 128 `common` subdirectories; scanned 2026-10-29 against CK3 1.20.1 |
-| Map knowledge layer | dossier + 13270-province index + nudger table; measured 2026-11-02 against CK3 1.20.1 |
+| Game layer — CK3 version of the dump | 1.21.0 (auto-extracted from the dump) |
+| Game layer — merged on | 2026-11-18 (CK3 1.21.0 refresh) |
+| Game layer — entry counts | effects 2399 · triggers 2163 · modifiers 976 · on_actions 1061 · event_targets 377 · event_scopes 88 · custom_localization 2993 |
+| Vanilla structure index | `entry_map.tsv` with 96296 lines; summaries for 137 `common` subdirectories; scanned 2026-11-18 against CK3 1.21.0 |
+| Map knowledge layer | dossier + 13475-province index + nudger table; measured 2026-11-18 against CK3 1.21.0 |
 | `catalog.md` size | about 131 KB |
 
 Timeliness: anything newer than the dates above — a new game patch, wiki edits
@@ -302,6 +344,10 @@ Two layers, split by directory — the full statement lives in `LICENSES.md`:
   and the golden fixtures under `tests\fixtures\`: **CC BY-SA 3.0**,
   attribution: CK3 Wiki (<https://ck3.paradoxwikis.com>). Redistribution must
   share alike under the same license; details in `pages\CONTENT-LICENSE.md`.
-- **Not distributed** — `game_docs\`, `raw\`, `game logs\`, `scripts\state\`,
-  `_reference\`: game-derived data, raw crawl archives, session state and
-  third-party reference material never leave the local machine.
+- **Game-derived data** — `game_docs\` ships with the repo (see the note in
+  Quick Start): this repo claims no rights over it; all rights belong to
+  Paradox Interactive (full statement in `LICENSES.md`).
+- **Not distributed** — `copy_room\<mod-id>\`, `raw\`, `game logs\`,
+  `scripts\state\`, `_reference\`: mod-derived knowledge bases (rebuilt via
+  Manual D), raw crawl archives, session state and third-party reference
+  material never leave the local machine.

@@ -42,6 +42,7 @@ REPO_ROOT = config.REPO_ROOT
 KNOWN_ROOTS = {
     "pages", "game_docs", "game logs", "scripts", "tests", "docs", "raw", "lib",
     "_reference", ".scratch", ".playwright-mcp", "state", "map_room",
+    "reading_room", "copy_room",
 }
 # 仓库外（用户本机游戏安装目录）顶层目录首段 → EXTERNAL，不做存在性检查
 EXTERNAL_ROOTS = {
@@ -172,7 +173,10 @@ def check_one(token: str, repo_files: dict[str, Path],
                         "event_targets.md", "event_scopes.md",
                         "custom_localization.md", "data_types_common.md",
                         "data_types_gui.md", "data_types_internalclausewitzgui.md",
-                        "data_types_script.md", "data_types_uncategorized.md"}
+                        "data_types_script.md", "data_types_uncategorized.md",
+                        # 抄写室 mod 知识库产物裸文件名（copy_room/<mod-id>/，
+                        # 本地产物，克隆中不存在属正常；判等用小写）
+                        "diff_vs_vanilla.md"}
     if first in not_shipped_roots or norm.lower() in not_shipped_full \
             or norm.lower().startswith("scripts\\state"):
         return "EXTERNAL", "按设计不随仓库发布（本地生成/维护者侧）"

@@ -1,8 +1,8 @@
 # common/character_interactions 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：68（其中 Jomini 解析 67 个）
-- 顶层块条目总数：560，跨文件唯一条目 560
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：75（其中 Jomini 解析 74 个）
+- 顶层块条目总数：652，跨文件唯一条目 652
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -10,72 +10,79 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `00_accolade_interactions.txt` | 3702 | 1 | 0 | jomini |
-| `00_adoption.txt` | 16950 | 2 | 0 | jomini |
-| `00_alliance.txt` | 90662 | 6 | 0 | jomini |
-| `00_artifact_interactions.txt` | 108938 | 7 | 0 | jomini |
-| `00_blackmail_interactions.txt` | 13121 | 1 | 0 | jomini |
-| `00_ce1_interactions.txt` | 8601 | 1 | 0 | jomini |
-| `00_character_interactions.txt` | 44927 | 6 | 0 | jomini |
-| `00_choose_favorite_interaction.txt` | 3873 | 2 | 0 | jomini |
-| `00_court_amenities_interactions.txt` | 3324 | 1 | 0 | jomini |
-| `00_courtier_and_guest_interactions.txt` | 27878 | 3 | 0 | jomini |
-| `00_culture_interactions.txt` | 9351 | 2 | 0 | jomini |
-| `00_debug_interactions.txt` | 115119 | 53 | 0 | jomini |
+| `00_adoption.txt` | 23512 | 3 | 0 | jomini |
+| `00_alliance.txt` | 98427 | 6 | 0 | jomini |
+| `00_artifact_interactions.txt` | 121575 | 8 | 0 | jomini |
+| `00_blackmail_interactions.txt` | 13410 | 1 | 0 | jomini |
+| `00_ce1_interactions.txt` | 8778 | 1 | 0 | jomini |
+| `00_character_interactions.txt` | 47291 | 7 | 0 | jomini |
+| `00_choose_favorite_interaction.txt` | 3928 | 2 | 0 | jomini |
+| `00_court_amenities_interactions.txt` | 3325 | 1 | 0 | jomini |
+| `00_courtier_and_guest_interactions.txt` | 31336 | 3 | 0 | jomini |
+| `00_culture_interactions.txt` | 9421 | 2 | 0 | jomini |
+| `00_debug_interactions.txt` | 125712 | 59 | 0 | jomini |
 | `00_demand_church_succession_interactions.txt` | 13953 | 2 | 0 | jomini |
-| `00_diarch_interactions.txt` | 286074 | 26 | 6 | jomini |
-| `00_dynast_interactions.txt` | 46922 | 10 | 0 | jomini |
-| `00_education_interactions.txt` | 100604 | 5 | 0 | jomini |
-| `00_faction_interactions.txt` | 4132 | 1 | 0 | jomini |
-| `00_fp3_interactions.txt` | 61835 | 6 | 0 | jomini |
-| `00_gift.txt` | 22244 | 1 | 0 | jomini |
-| `00_grant_titles_interaction.txt` | 63173 | 3 | 0 | jomini |
-| `00_heir.txt` | 5268 | 1 | 0 | jomini |
-| `00_house_head_interactions.txt` | 25386 | 4 | 0 | jomini |
-| `00_invite_agent_to_scheme.txt` | 25945 | 1 | 0 | jomini |
+| `00_diarch_interactions.txt` | 286245 | 26 | 6 | jomini |
+| `00_dynast_interactions.txt` | 46362 | 10 | 0 | jomini |
+| `00_education_interactions.txt` | 101030 | 5 | 0 | jomini |
+| `00_faction_interactions.txt` | 4133 | 1 | 0 | jomini |
+| `00_fp3_interactions.txt` | 62662 | 6 | 0 | jomini |
+| `00_gdp_guelph_ghibelline_interactions.txt` | 54884 | 10 | 0 | jomini |
+| `00_gift.txt` | 22093 | 1 | 0 | jomini |
+| `00_grant_titles_interaction.txt` | 67947 | 3 | 0 | jomini |
+| `00_heir.txt` | 5309 | 1 | 0 | jomini |
+| `00_house_head_interactions.txt` | 25168 | 4 | 0 | jomini |
+| `00_invite_agent_to_scheme.txt` | 26018 | 1 | 0 | jomini |
 | `00_invite_to_activity.txt` | 3128 | 1 | 0 | jomini |
 | `00_lease_interactions.txt` | 5004 | 1 | 0 | jomini |
-| `00_lover_interactions.txt` | 1058 | 1 | 0 | jomini |
-| `00_marriage_interactions.txt` | 170817 | 14 | 0 | jomini |
-| `00_modifiy_vassal_contract.txt` | 73497 | 12 | 0 | jomini |
+| `00_lover_interactions.txt` | 1059 | 1 | 0 | jomini |
+| `00_marriage_interactions.txt` | 176237 | 14 | 0 | jomini |
+| `00_modifiy_vassal_contract.txt` | 76241 | 12 | 0 | jomini |
 | `00_mongol_interactions.txt` | 1213 | 1 | 0 | jomini |
-| `00_perk_interactions.txt` | 36879 | 5 | 0 | jomini |
-| `00_poetry_interactions.txt` | 10920 | 1 | 0 | jomini |
-| `00_prison_interactions.txt` | 224594 | 14 | 0 | jomini |
-| `00_puppet_interactions.txt` | 24167 | 4 | 0 | jomini |
-| `00_religious_interactions.txt` | 287264 | 33 | 0 | jomini |
-| `00_revoke_title_interaction.txt` | 43622 | 1 | 0 | jomini |
-| `00_scheme_interactions.txt` | 78098 | 9 | 0 | jomini |
-| `00_test_interactions.txt` | 24511 | 32 | 0 | jomini |
+| `00_perk_interactions.txt` | 37605 | 5 | 0 | jomini |
+| `00_poetry_interactions.txt` | 10532 | 1 | 0 | jomini |
+| `00_prison_interactions.txt` | 229428 | 14 | 0 | jomini |
+| `00_puppet_interactions.txt` | 24736 | 4 | 0 | jomini |
+| `00_religious_interactions.txt` | 290320 | 33 | 0 | jomini |
+| `00_revoke_title_interaction.txt` | 44957 | 1 | 0 | jomini |
+| `00_scheme_interactions.txt` | 85739 | 10 | 0 | jomini |
+| `00_test_interactions.txt` | 24628 | 32 | 0 | jomini |
 | `00_tradition_interactions.txt` | 10344 | 2 | 0 | jomini |
-| `00_trait_interactions.txt` | 19431 | 5 | 0 | jomini |
-| `00_tribal_interactions.txt` | 14198 | 4 | 0 | jomini |
-| `00_tributary_interactions.txt` | 153402 | 12 | 0 | jomini |
-| `00_vassal_interactions.txt` | 95831 | 15 | 0 | jomini |
-| `00_war.txt` | 45372 | 6 | 0 | jomini |
-| `00_witch_interactions.txt` | 6632 | 2 | 0 | jomini |
-| `01_fp1_interactions.txt` | 25100 | 4 | 0 | jomini |
+| `00_trait_interactions.txt` | 19571 | 5 | 0 | jomini |
+| `00_tribal_interactions.txt` | 14222 | 4 | 0 | jomini |
+| `00_tributary_interactions.txt` | 154873 | 12 | 0 | jomini |
+| `00_vassal_interactions.txt` | 96518 | 15 | 0 | jomini |
+| `00_war.txt` | 46408 | 6 | 0 | jomini |
+| `00_witch_interactions.txt` | 6633 | 2 | 0 | jomini |
+| `01_fp1_interactions.txt` | 25001 | 4 | 0 | jomini |
 | `01_puppet_interactions.txt` | 71566 | 6 | 0 | jomini |
-| `02_ep1_interactions.txt` | 12713 | 2 | 0 | jomini |
-| `03_fp2_interactions.txt` | 140881 | 12 | 0 | jomini |
+| `02_ep1_interactions.txt` | 12960 | 2 | 0 | jomini |
+| `03_fp2_interactions.txt` | 140417 | 12 | 0 | jomini |
 | `04_ep2_interactions.txt` | 3 | 0 | 0 | jomini |
-| `05_bp2_interactions.txt` | 117796 | 6 | 0 | jomini |
-| `06_ep3_interactions.txt` | 325133 | 31 | 0 | jomini |
-| `06_ep3_laamp_interactions.txt` | 206192 | 19 | 0 | jomini |
-| `06_ep3_scheme_interactions.txt` | 100079 | 14 | 0 | jomini |
-| `06_ep3_test_interactions_.txt` | 2060 | 4 | 0 | jomini |
-| `09_mpo_interactions.txt` | 231718 | 22 | 0 | jomini |
-| `10_ach_interactions.txt` | 19671 | 1 | 0 | jomini |
-| `10_tgp_interactions.txt` | 271703 | 34 | 0 | jomini |
-| `10_tgp_japan_interactions.txt` | 65769 | 8 | 0 | jomini |
-| `10_tgp_test_interactions.txt` | 7180 | 3 | 0 | jomini |
+| `05_bp2_interactions.txt` | 119004 | 6 | 0 | jomini |
+| `06_ep3_interactions.txt` | 326870 | 31 | 0 | jomini |
+| `06_ep3_laamp_interactions.txt` | 203092 | 19 | 0 | jomini |
+| `06_ep3_scheme_interactions.txt` | 100373 | 14 | 0 | jomini |
+| `06_ep3_test_interactions_.txt` | 1981 | 4 | 0 | jomini |
+| `09_mpo_interactions.txt` | 232119 | 22 | 0 | jomini |
+| `10_ach_interactions.txt` | 19960 | 1 | 0 | jomini |
+| `10_tgp_interactions.txt` | 271846 | 34 | 0 | jomini |
+| `10_tgp_japan_interactions.txt` | 66633 | 8 | 0 | jomini |
+| `10_tgp_test_interactions.txt` | 7105 | 3 | 0 | jomini |
+| `11_gdp_merchant_interactions.txt` | 256277 | 29 | 0 | jomini |
+| `11_gdp_trade_scheme_interactions.txt` | 5632 | 1 | 0 | jomini |
 | `11_petition_head_of_faith_interactions.txt` | 3874 | 2 | 0 | jomini |
-| `_character_interactions.info` | 34479 | - | - | 纯文档（非 Jomini） |
-| `clerical_chastity_interaction.txt` | 11205 | 1 | 0 | jomini |
-| `demand_child_as_monk_interaction.txt` | 22792 | 1 | 0 | jomini |
-| `pam_interactions.txt` | 733341 | 56 | 0 | jomini |
+| `_character_interactions.info` | 36451 | - | - | 纯文档（非 Jomini） |
+| `clerical_chastity_interaction.txt` | 11261 | 1 | 0 | jomini |
+| `demand_child_as_monk_interaction.txt` | 22895 | 1 | 0 | jomini |
+| `gdp_burgher_interactions.txt` | 7260 | 3 | 0 | jomini |
+| `gdp_merchant_sponsor_construction_interaction.txt` | 6723 | 1 | 0 | jomini |
+| `gdp_republic_interactions.txt` | 201161 | 32 | 0 | jomini |
+| `gdp_test_interactions.txt` | 29116 | 6 | 0 | jomini |
+| `pam_interactions.txt` | 739073 | 56 | 0 | jomini |
 | `sanctify_artifact_interaction.txt` | 10345 | 2 | 0 | jomini |
 | `spiritual_counsel_interaction.txt` | 12195 | 1 | 0 | jomini |
-| `tgp_east_asia_interactions.txt` | 24506 | 5 | 0 | jomini |
+| `tgp_east_asia_interactions.txt` | 24507 | 5 | 0 | jomini |
 | `tgp_tribute_mission_interactions.txt` | 18825 | 6 | 0 | jomini |
 
 ## 条目名 → 定义文件
@@ -86,10 +93,11 @@
 
 - make_accolade_into_mercenary_decision
 
-### 00_adoption.txt（2 条目）
+### 00_adoption.txt（3 条目）
 
 - adopt_interaction
 - adventurer_adopt_interaction
+- merchant_adopt_interaction
 
 ### 00_alliance.txt（6 条目）
 
@@ -100,9 +108,10 @@
 - join_vassal_war_interaction
 - religious_head_call_to_war_interaction
 
-### 00_artifact_interactions.txt（7 条目）
+### 00_artifact_interactions.txt（8 条目）
 
 - gift_artifact_interaction
+- sell_artifact_interaction
 - demand_artifact_interaction
 - challenge_for_artifact_interaction
 - start_stealing_back_artifact
@@ -118,11 +127,12 @@
 
 - ce1_ask_to_promote_legend_interaction
 
-### 00_character_interactions.txt（6 条目）
+### 00_character_interactions.txt（7 条目）
 
 - offer_vassalization_interaction
 - offer_fealty_interaction
 - force_vote_in_succession_election_interaction
+- force_assembly_vote_interaction
 - set_primary_spouse_interaction
 - grant_independence_interaction
 - expose_secret_interaction
@@ -147,7 +157,7 @@
 - request_culture_conversion_interaction
 - ai_cultural_hybridization_interaction
 
-### 00_debug_interactions.txt（53 条目）
+### 00_debug_interactions.txt（59 条目）
 
 - change_hunt_success_chance
 - debug_give_animal_interaction
@@ -165,6 +175,7 @@
 - start_bout_interaction
 - add_artifact_interaction
 - take_artifact_interaction
+- give_trade_post_interaction
 - add_artifact_claim_interaction
 - debug_destroy_artifact_interaction
 - inspire_interaction
@@ -185,6 +196,7 @@
 - debug_buff_schemes
 - debug_clear_agents_from_schemes
 - debug_make_laamp
+- debug_make_merchant
 - debug_add_to_contact_list_interaction
 - debug_alliance_interaction
 - create_task_contract_interaction
@@ -201,6 +213,10 @@
 - debug_change_silk_road_cycle
 - debug_set_mandala_aspect
 - debug_change_the_christian_church
+- debug_set_gg_phase
+- debug_make_guelph_ghibelline
+- debug_change_house_unity_interaction
+- debug_set_republican_war_law
 - debug_add_schism_progress
 
 ### 00_demand_church_succession_interactions.txt（2 条目）
@@ -270,6 +286,19 @@
 - fp3_change_allegiance
 - fp3_request_honorary_titles_interaction
 - fp3_request_house_unity_change_interaction
+
+### 00_gdp_guelph_ghibelline_interactions.txt（10 条目）
+
+- gg_compromise_interaction
+- gg_invite_guelph_exiles_interaction
+- gg_invite_ghibelline_exiles_interaction
+- gg_recruit_partisan_interaction
+- gg_banish_guelph_ghibelline_family_interaction
+- start_gg_switch_sides_interaction
+- start_gg_claim_leadership_interaction
+- start_gg_align_undecided_interaction
+- start_gg_replace_ruler_interaction
+- join_lombard_league_interaction
 
 ### 00_gift.txt（1 条目）
 
@@ -420,7 +449,7 @@
 
 - revoke_title_interaction
 
-### 00_scheme_interactions.txt（9 条目）
+### 00_scheme_interactions.txt（10 条目）
 
 - start_murder_interaction
 - start_abduct
@@ -431,6 +460,7 @@
 - sway_interaction
 - learn_language_interaction
 - study_faith_interaction
+- influence_house_ambition_interaction
 
 ### 00_test_interactions.txt（32 条目）
 
@@ -746,6 +776,42 @@
 - debug_spawn_natural_disaster
 - debug_change_bloc_cohesion
 
+### 11_gdp_merchant_interactions.txt（29 条目）
+
+- merchant_patron_request_interaction
+- patron_request_interaction
+- merchant_purchase_land_interaction
+- merchant_join_republic_interaction
+- merchant_procure_estate_interaction
+- loan_money_interaction
+- demand_repayment_interaction
+- sponsor_war_interaction
+- request_trade_monopoly_for_character_interaction
+- grant_merchant_charter_interaction
+- request_merchant_charter_interaction
+- revoke_merchant_charter_interaction
+- put_on_notice_interaction
+- leverage_charter_authority_interaction
+- drive_them_hard_interaction
+- commission_trade_route_interaction
+- gdp_merchant_seize_realm_call_debtor_interaction
+- merge_company_interaction
+- company_commission_inspiration_interaction
+- start_hostile_takeover_interaction
+- share_market_insights_interaction
+- steal_market_insights_interaction
+- merchant_ransom_interaction
+- evict_merchant_interaction
+- merchant_trade_hook_interaction
+- request_toll_exception_interaction
+- revoke_toll_exception_interaction
+- grant_toll_exception_interaction
+- share_market_competitiveness_interaction
+
+### 11_gdp_trade_scheme_interactions.txt（1 条目）
+
+- start_gdp_disrupt_trade_routes_interaction
+
 ### 11_petition_head_of_faith_interactions.txt（2 条目）
 
 - petition_head_of_faith_repentance_setup_interaction
@@ -758,6 +824,60 @@
 ### demand_child_as_monk_interaction.txt（1 条目）
 
 - demand_child_as_monk_interaction
+
+### gdp_burgher_interactions.txt（3 条目）
+
+- bestow_civic_liberties_interaction
+- revoke_civic_liberties_interaction
+- agitate_civic_unrest_interaction
+
+### gdp_merchant_sponsor_construction_interaction.txt（1 条目）
+
+- merchant_sponsor_construction_interaction
+
+### gdp_republic_interactions.txt（32 条目）
+
+- ask_for_permission_to_found_republic_interaction
+- grant_free_city_status_interaction
+- revoke_free_city_status_interaction
+- gdp_republic_aquire_land_interaction
+- invite_to_trade_league_interaction
+- request_trade_league_membership_interaction
+- remove_from_trade_league_interaction
+- request_league_leadership_interaction
+- gdp_pay_off_debt_for_hook_interaction
+- gdp_request_trade_support_interaction
+- gdp_trade_post_solicit_alliance_interaction
+- gdp_petition_governorate_interaction
+- gdp_republic_promote_for_title_interaction
+- gdp_incite_unrest_start_interaction
+- gdp_sway_to_approve_decree_interaction
+- secure_assembly_vote_interaction
+- gdp_republic_appoint_senator_interaction
+- gdp_republic_revoke_senator_interaction
+- revoke_trade_post_interaction
+- dismantle_trade_post_interaction
+- oust_trade_post_interaction
+- start_patrician_promote_interaction
+- start_patrician_slander_interaction
+- start_patrician_find_secrets_interaction
+- gdp_indict_before_assembly_interaction
+- start_steal_trade_post_interaction
+- request_trade_post_interaction
+- request_trade_monopoly_for_republic_interaction
+- request_trade_monopoly_for_trade_league_interaction
+- rescind_trade_monopoly_interaction
+- expel_rival_leagues_interaction
+- gdp_republic_request_patrician_support_interaction
+
+### gdp_test_interactions.txt（6 条目）
+
+- debug_spawn_merchant_contract_interaction
+- debug_spawn_domicile_artifact_interaction
+- debug_grant_monopoly_interaction
+- debug_request_trade_monopoly_for_confederation_interaction
+- debug_request_trade_monopoly_for_title_interaction
+- debug_trade_expertise_interaction
 
 ### pam_interactions.txt（56 条目）
 

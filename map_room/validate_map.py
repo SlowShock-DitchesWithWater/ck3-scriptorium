@@ -3,7 +3,7 @@
 """CK3 地图校验器（地图室·工具层）——对 mod 的 map_data 做机器可查的硬约束检查。
 
 规则来源（权威顺序同知识库）：
-1. game_docs/map_docs/map_data_dossier.md（游戏 1.20.1 实测档案，最高权威）；
+1. game_docs/map_docs/map_data_dossier.md（游戏 1.21.0 实测档案，最高权威）；
 2. pages/Map modding.md（wiki oldid 34676，1.1 时代，冲突时以上者为准）。
 严重度按原版实测校准：原版自身就违反的规则（如 definition.csv 存在 1 组
 重复色）记 WARN 而非 ERROR。

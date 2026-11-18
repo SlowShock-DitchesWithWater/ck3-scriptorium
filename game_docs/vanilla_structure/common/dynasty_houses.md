@@ -1,8 +1,8 @@
 # common/dynasty_houses 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：6（其中 Jomini 解析 5 个）
-- 顶层块条目总数：604，跨文件唯一条目 604
+- 顶层块条目总数：712，跨文件唯一条目 712
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -10,11 +10,11 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `00_deprecated_dynasty_houses.txt` | 725 | 0 | 0 | jomini |
-| `00_dynasty_houses.txt` | 36781 | 355 | 0 | jomini |
+| `00_dynasty_houses.txt` | 37727 | 366 | 0 | jomini |
 | `99_historical_character_houses.txt` | 9169 | 120 | 0 | jomini |
 | `_dynasty_houses.info` | 1329 | - | - | 纯文档（非 Jomini） |
-| `ep3_dynasty_houses.txt` | 2271 | 24 | 0 | jomini |
-| `tgp_dynasty_houses.txt` | 13756 | 105 | 0 | jomini |
+| `ep3_dynasty_houses.txt` | 2273 | 24 | 0 | jomini |
+| `tgp_dynasty_houses.txt` | 22888 | 202 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -24,7 +24,7 @@
 
 （无顶层块）
 
-### 00_dynasty_houses.txt（355 条目）
+### 00_dynasty_houses.txt（366 条目）
 
 - house_jerome_karling
 - house_bernhard_karling
@@ -365,6 +365,7 @@
 - house_clare
 - house_rocaberti
 - house_chalon
+- house_frangipani
 - house_bregenz
 - house_winterthur
 - house_plotzkau
@@ -381,6 +382,16 @@
 - house_haldensleben
 - house_reginbodonen
 - house_achalm
+- house_geremia
+- house_polenta
+- house_castro
+- house_adorno
+- house_carmadino
+- house_mari
+- house_usodimare
+- house_serra
+- house_salamon
+- house_barbaro
 
 ### 99_historical_character_houses.txt（120 条目）
 
@@ -532,7 +543,7 @@
 - house_lautrec
 - house_rogerios_dalassenos
 
-### tgp_dynasty_houses.txt（105 条目）
+### tgp_dynasty_houses.txt（202 条目）
 
 - house_fujiwara_ashikaga
 - house_fujiwara_hamuro
@@ -639,6 +650,103 @@
 - house_sailendra_sanjaya
 - house_warmadewa_jaya
 - house_cina_kabaena
+- house_pingyang_cai
+- house_sushui_sima
+- house_yichuan_sima
+- house_sanhuai_wang
+- house_boling_dafang_cui
+- house_boling_erfang_cui
+- house_boling_sanfang_cui
+- house_boling_sifang_cui
+- house_boling_wufang_cui
+- house_boling_liufang_cui
+- house_wujun_zhu
+- house_yongcheng_zhu
+- house_puxu_zhu
+- house_jingchuan_zhu
+- house_suiyuli_liu
+- house_qiwang_liu
+- house_meishan_shi
+- house_danleng_shi
+- house_fuyang_xie
+- house_quanzhou_jiang
+- house_xiangxiang_jiang
+- house_wuling_jiang
+- house_fengcheng_jiang
+- house_yinggong_wei
+- house_fuma_wei
+- house_meichenggong_wei
+- house_xiaoyaogong_wei
+- house_xiaoxiaoyaogong_wei
+- house_zhuojun_liu
+- house_guzang_li
+- house_danyang_li
+- house_dunhuang_li
+- house_caowang_li
+- house_lianjiang_li
+- house_dazhengwang_li
+- house_henan_yuan
+- house_caiwang_li
+- house_xunwang_li
+- house_biwang_li
+- house_qiaowang_li
+- house_serin_muke_wanyan
+- house_nalu_hunehe_wanyan
+- house_yelu_yila
+- house_yoyang_dae
+- house_dongjuan_pei
+- house_xijuan_pei
+- house_xima_pei
+- house_zhongjuan_pei
+- house_nanlaiwu_pei
+- house_henan_lu
+- house_south_lanling_xiao
+- house_pingqigong_wei
+- house_huaishuo_hou
+- house_changping_liu
+- house_nanzu_lu
+- house_beizu_dafang_lu
+- house_beizu_erfang_lu
+- house_beizu_sanfang_lu
+- house_beizu_sifang_lu
+- house_dishi_lu
+- house_fuchun_sun
+- house_qinghe_dafang_cui
+- house_qinghe_xiaofang_cui
+- house_qinghe_nanzu_cui
+- house_qinghe_yanling_cui
+- house_qinghe_changan_cui
+- house_weiwang_zhao
+- house_taizu_zhao
+- house_taizong_zhao
+- house_yushan_zhao
+- house_xiabo_kong
+- house_linjiang_kong
+- house_southern_kong
+- house_fenzhou_xin
+- house_beizu_erfang_zheng
+- house_nanzu_zheng
+- house_zhaojun_xizu_li
+- house_zhaojun_dongzu_li
+- house_zhaojun_nanzu_li
+- house_taiyuan_qixian_wang
+- house_taiyuan_jinyang_wang
+- house_ninghai_ma
+- house_baba_zhangsun
+- house_langya_yan
+- house_qingjiao_yan
+- house_fengchi_zhang
+- house_yuezhou_qian_zhang
+- house_yuwen_jieguo
+- house_lujiang_li
+- house_yuegong_yang
+- house_nanzong_zeng
+- house_linjin_yan
+- house_huayin_yan
+- house_qianyang_duan
+- 2003008
+- house_erkim_yelu
+- house_jitian_li
 
 ### 未解析文件
 

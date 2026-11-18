@@ -1,8 +1,8 @@
 # common/story_cycles 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：54（其中 Jomini 解析 53 个）
-- 顶层块条目总数：52，跨文件唯一条目 52
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：57（其中 Jomini 解析 56 个）
+- 顶层块条目总数：55，跨文件唯一条目 55
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -29,12 +29,14 @@
 | `ep3_story_cycle_el_cid.txt` | 4483 | 1 | 0 | jomini |
 | `ep3_story_cycle_frankokratia.txt` | 12858 | 1 | 0 | jomini |
 | `ep3_story_cycle_grand_ambitions.txt` | 5350 | 1 | 0 | jomini |
-| `ep3_story_cycle_harrying_of_the_north.txt` | 14191 | 1 | 0 | jomini |
+| `ep3_story_cycle_harrying_of_the_north.txt` | 14922 | 1 | 0 | jomini |
 | `ep3_story_cycle_hasan_sabbah.txt` | 3000 | 1 | 0 | jomini |
 | `ep3_story_cycle_restoring_rome.txt` | 1827 | 1 | 0 | jomini |
 | `ep3_story_cycle_violet_poet.txt` | 1395 | 1 | 0 | jomini |
 | `fp3_story_cycle_turkic_tribe.txt` | 2566 | 1 | 0 | jomini |
 | `fp3_story_cycle_zanj_rebellion.txt` | 716 | 1 | 0 | jomini |
+| `gdp_story_cycle_guelph_ghibelline.txt` | 31914 | 1 | 0 | jomini |
+| `gdp_story_cycle_menagerie.txt` | 3896 | 1 | 0 | jomini |
 | `mpo_story_cycle_greatest_of_khans.txt` | 5668 | 1 | 0 | jomini |
 | `mpo_story_cycle_temujin_flavor.txt` | 334 | 1 | 0 | jomini |
 | `pam_story_cycle_slavic_rite.txt` | 9292 | 1 | 0 | jomini |
@@ -42,7 +44,8 @@
 | `story_cycle_conqueror.txt` | 9191 | 1 | 0 | jomini |
 | `story_cycle_house_feud.txt` | 12303 | 0 | 0 | jomini |
 | `story_cycle_hunt_mystical_animal.txt` | 2078 | 1 | 0 | jomini |
-| `story_cycle_infidelity_confrontation.txt` | 5286 | 1 | 0 | jomini |
+| `story_cycle_infidelity_confrontation.txt` | 5194 | 1 | 0 | jomini |
+| `story_cycle_loan.txt` | 3768 | 1 | 0 | jomini |
 | `story_cycle_lyonese_monk.txt` | 2246 | 1 | 0 | jomini |
 | `story_cycle_mongol_invasion.txt` | 12753 | 1 | 0 | jomini |
 | `story_cycle_murders_at_court.txt` | 5630 | 1 | 0 | jomini |
@@ -51,7 +54,7 @@
 | `story_cycle_pet_cat.txt` | 4747 | 1 | 0 | jomini |
 | `story_cycle_pet_dog.txt` | 4956 | 1 | 0 | jomini |
 | `story_cycle_pet_eagle.txt` | 4512 | 1 | 0 | jomini |
-| `story_cycle_pledge_loyalty_to_liege_overdue.txt` | 5932 | 1 | 1 | jomini |
+| `story_cycle_pledge_loyalty_to_liege_overdue.txt` | 6107 | 1 | 1 | jomini |
 | `story_cycle_restored_roman_provinces.txt` | 1035 | 1 | 0 | jomini |
 | `story_cycle_seljuk_invasion.txt` | 3332 | 1 | 0 | jomini |
 | `story_cycle_statecraft_lifestyle_respected_liege.txt` | 15 | 0 | 0 | jomini |
@@ -61,7 +64,7 @@
 | `story_cycle_unity_decisions.txt` | 1676 | 2 | 0 | jomini |
 | `story_cycle_warfare_lifestyle_soldier_friend.txt` | 512 | 1 | 0 | jomini |
 | `story_cycle_warfare_lifestyle_warhorse.txt` | 3332 | 1 | 0 | jomini |
-| `tgp_story_cycle_mandala.txt` | 78099 | 1 | 0 | jomini |
+| `tgp_story_cycle_mandala.txt` | 77342 | 1 | 0 | jomini |
 | `tgp_story_cycle_tai_migrations.txt` | 2975 | 1 | 0 | jomini |
 
 ## 条目名 → 定义文件
@@ -168,6 +171,14 @@
 
 - story_zanj_rebellion
 
+### gdp_story_cycle_guelph_ghibelline.txt（1 条目）
+
+- story_guelph_ghibelline
+
+### gdp_story_cycle_menagerie.txt（1 条目）
+
+- story_cycle_menagerie
+
 ### mpo_story_cycle_greatest_of_khans.txt（1 条目）
 
 - story_greatest_of_khans
@@ -199,6 +210,10 @@
 ### story_cycle_infidelity_confrontation.txt（1 条目）
 
 - story_cycle_infidelty_confronter
+
+### story_cycle_loan.txt（1 条目）
+
+- story_cycle_loan
 
 ### story_cycle_lyonese_monk.txt（1 条目）
 

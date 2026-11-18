@@ -1,8 +1,8 @@
 # common/dna_data 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：9（其中 Jomini 解析 8 个）
-- 顶层块条目总数：445，跨文件唯一条目 445
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：10（其中 Jomini 解析 9 个）
+- 顶层块条目总数：465，跨文件唯一条目 465
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -14,10 +14,11 @@
 | `00_fp3_dna.txt` | 116935 | 14 | 0 | jomini |
 | `00_mpo_dna.txt` | 167742 | 20 | 0 | jomini |
 | `00_tgp_dna.txt` | 557670 | 64 | 0 | jomini |
-| `01_easteregg_dna.txt` | 974952 | 119 | 0 | jomini |
+| `01_easteregg_dna.txt` | 991188 | 121 | 0 | jomini |
 | `02_easteregg_dna_non_developers.txt` | 32768 | 4 | 0 | jomini |
 | `03_fp2_dna.txt` | 186080 | 22 | 0 | jomini |
 | `_dna_data.info` | 409 | - | - | 纯文档（非 Jomini） |
+| `gdp_dna.txt` | 159531 | 18 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -338,7 +339,7 @@
 - han_12651_zhao_dun
 - han_12576_li_fengniang
 
-### 01_easteregg_dna.txt（119 条目）
+### 01_easteregg_dna.txt（121 条目）
 
 - easteregg_henrik_fahraeus
 - easteregg_alexander_oltner
@@ -459,6 +460,8 @@
 - easteregg_shehabulddin_alessawey
 - easteregg_anon_saltfish_dna
 - easteregg_Az_dna
+- easteregg_pawel_kucal_dna
+- easteregg_joachim_holmsen
 
 ### 02_easteregg_dna_non_developers.txt（4 条目）
 
@@ -491,6 +494,27 @@
 - 73683_sultan_muhammad
 - 73927_sultana_ushar
 - 70019_king_adelfonso
+
+### gdp_dna.txt（18 条目）
+
+- bookmark_dna_wuhsha_al_dallala
+- bookmark_dna_kun_long
+- bookmark_dna_greek_salvidi_1
+- bookmark_dna_wuhsha_al_dallala_5
+- bookmark_dna_nattal_sahu
+- bookmark_dna_humbert_savoy
+- bookmark_dna_thomas_savoy
+- bookmark_dna_guido_guerra
+- bookmark_dna_rinaldo_guidi
+- bookmark_dna_konrad_urslingen
+- bookmark_dna_jutta_urslingen
+- bookmark_dna_marco_sanudo
+- bookmark_dna_enrico_dandolo
+- bookmark_dna_speronella_dalesmanni
+- bookmark_dna_pietro_iii
+- bookmark_dna_ezzelino_ii
+- bookmark_dna_han_sun
+- bookmark_dna_vitale_faliero
 
 ### 未解析文件
 

@@ -1,15 +1,15 @@
 # common/event_themes 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：3（其中 Jomini 解析 2 个）
-- 顶层块条目总数：195，跨文件唯一条目 195
+- 顶层块条目总数：201，跨文件唯一条目 201
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_event_themes.txt` | 71074 | 155 | 1 | jomini |
+| `00_event_themes.txt` | 73892 | 161 | 1 | jomini |
 | `_event_themes.info` | 3423 | - | - | 纯文档（非 Jomini） |
 | `ep2_tournament_themes.txt` | 14050 | 40 | 0 | jomini |
 
@@ -17,7 +17,7 @@
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_event_themes.txt（155 条目）
+### 00_event_themes.txt（161 条目）
 
 - diplomacy
 - martial
@@ -77,6 +77,7 @@
 - romance_scheme
 - befriend_scheme
 - sway_scheme
+- republic_intrigue_scheme
 - diplomacy_foreign_affairs_focus
 - diplomacy_majesty_focus
 - diplomacy_family_focus
@@ -96,6 +97,7 @@
 - wanderer_destination_focus
 - wanderer_internal_affairs_focus
 - study_faith
+- carnival_activity
 - feast_activity
 - murder_feast_activity
 - hunt_activity
@@ -172,6 +174,10 @@
 - lisp
 - ep2_video_test
 - ecumenical_council
+- trade
+- merchant
+- republic
+- guelph_ghibelline
 - pam_investiture_council
 - lighting_test
 

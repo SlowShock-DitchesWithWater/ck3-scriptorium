@@ -1,6 +1,6 @@
 # common/terrain_types 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：2（其中 Jomini 解析 1 个）
 - 顶层块条目总数：17，跨文件唯一条目 17
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
@@ -9,8 +9,8 @@
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_terrains.txt` | 8328 | 17 | 5 | jomini |
-| `_terrains.info` | 3098 | - | - | 纯文档（非 Jomini） |
+| `00_terrains.txt` | 13872 | 17 | 5 | jomini |
+| `_terrains.info` | 3094 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
 

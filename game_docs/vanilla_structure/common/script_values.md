@@ -1,143 +1,169 @@
 # common/script_values 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：123（其中 Jomini 解析 122 个）
-- 顶层块条目总数：3954，跨文件唯一条目 3953
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：149（其中 Jomini 解析 148 个）
+- 顶层块条目总数：4574，跨文件唯一条目 4574
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_activity_values.txt` | 78895 | 147 | 36 | jomini |
+| `00_activity_values.txt` | 78760 | 152 | 37 | jomini |
 | `00_age_values.txt` | 1743 | 20 | 3 | jomini |
-| `00_ai_values.txt` | 56333 | 49 | 144 | jomini |
-| `00_artifact_values.txt` | 5836 | 10 | 6 | jomini |
-| `00_basic_values.txt` | 50566 | 177 | 424 | jomini |
+| `00_ai_values.txt` | 56673 | 50 | 144 | jomini |
+| `00_artifact_values.txt` | 5837 | 10 | 6 | jomini |
+| `00_basic_values.txt` | 51858 | 189 | 425 | jomini |
 | `00_bastardy_values.txt` | 1103 | 2 | 4 | jomini |
-| `00_building_values.txt` | 103815 | 3 | 1308 | jomini |
+| `00_building_values.txt` | 155288 | 15 | 1919 | jomini |
 | `00_character_legacy_values.txt` | 195 | 1 | 0 | jomini |
 | `00_character_values.txt` | 2285 | 16 | 0 | jomini |
 | `00_combat_values.txt` | 537 | 3 | 0 | jomini |
 | `00_contract_script_values.txt` | 5998 | 15 | 12 | jomini |
-| `00_council_values.txt` | 3003 | 10 | 19 | jomini |
-| `00_county_control_values.txt` | 3466 | 3 | 21 | jomini |
+| `00_council_values.txt` | 3041 | 10 | 20 | jomini |
+| `00_county_control_values.txt` | 7445 | 12 | 23 | jomini |
 | `00_county_fertility.txt` | 2885 | 0 | 54 | jomini |
 | `00_court_amenities_values.txt` | 7569 | 42 | 0 | jomini |
 | `00_court_grandeur_values.txt` | 782 | 3 | 4 | jomini |
-| `00_court_position_values.txt` | 185195 | 131 | 19 | jomini |
-| `00_culture_values.txt` | 24723 | 46 | 33 | jomini |
-| `00_decision_values.txt` | 3432 | 19 | 4 | jomini |
-| `00_diarchy_values.txt` | 99160 | 85 | 87 | jomini |
-| `00_difficulty_values.txt` | 23671 | 8 | 12 | jomini |
+| `00_court_position_values.txt` | 207190 | 141 | 22 | jomini |
+| `00_culture_values.txt` | 24995 | 46 | 34 | jomini |
+| `00_decision_values.txt` | 3491 | 20 | 4 | jomini |
+| `00_diarchy_values.txt` | 105009 | 86 | 87 | jomini |
+| `00_difficulty_values.txt` | 23729 | 8 | 12 | jomini |
 | `00_distance_values.txt` | 770 | 1 | 8 | jomini |
-| `00_dlc_fp3_script_values.txt` | 33505 | 68 | 42 | jomini |
-| `00_dynasty_values.txt` | 2516 | 3 | 20 | jomini |
+| `00_dlc_fp3_script_values.txt` | 33829 | 68 | 42 | jomini |
+| `00_domicile_production_values.txt` | 1193 | 0 | 12 | jomini |
+| `00_domicile_values.txt` | 2032 | 3 | 0 | jomini |
+| `00_dynasty_values.txt` | 3189 | 5 | 23 | jomini |
+| `00_east_asian_estate_income_values.txt` | 1429 | 0 | 23 | jomini |
+| `00_east_asian_estate_opinion_values.txt` | 332 | 0 | 3 | jomini |
+| `00_east_asian_estate_prosperity_values.txt` | 895 | 0 | 8 | jomini |
 | `00_education_values.txt` | 1360 | 2 | 14 | jomini |
 | `00_ep1_artifact_values.txt` | 6550 | 20 | 6 | jomini |
-| `00_ep1_script_values.txt` | 16918 | 34 | 13 | jomini |
-| `00_faction_values.txt` | 4785 | 11 | 20 | jomini |
+| `00_ep1_script_values.txt` | 17681 | 34 | 13 | jomini |
+| `00_estate_income_values.txt` | 1277 | 0 | 26 | jomini |
+| `00_faction_values.txt` | 5301 | 13 | 21 | jomini |
 | `00_game_rule_values.txt` | 5063 | 1 | 11 | jomini |
-| `00_goverment_values.txt` | 5105 | 18 | 74 | jomini |
+| `00_gdp_guelph_ghibelline_values.txt` | 23812 | 71 | 31 | jomini |
+| `00_goverment_values.txt` | 5251 | 18 | 75 | jomini |
 | `00_governance_lifestyle_values.txt` | 1576 | 3 | 5 | jomini |
 | `00_hold_court_values.txt` | 4552 | 24 | 1 | jomini |
-| `00_holy_order_values.txt` | 4112 | 11 | 1 | jomini |
-| `00_holy_site_values.txt` | 1191 | 3 | 0 | jomini |
-| `00_interaction_values.txt` | 23322 | 73 | 4 | jomini |
+| `00_holy_order_values.txt` | 4109 | 11 | 1 | jomini |
+| `00_holy_site_values.txt` | 1108 | 3 | 2 | jomini |
+| `00_interaction_values.txt` | 23681 | 76 | 4 | jomini |
 | `00_intrigue_lifestyle_values.txt` | 331 | 0 | 6 | jomini |
 | `00_invasion_values.txt` | 239 | 1 | 1 | jomini |
-| `00_law_values.txt` | 15014 | 16 | 11 | jomini |
-| `00_legitimacy_values.txt` | 28779 | 53 | 25 | jomini |
-| `00_lifestyle_values.txt` | 22216 | 62 | 61 | jomini |
+| `00_law_values.txt` | 15276 | 17 | 11 | jomini |
+| `00_legitimacy_values.txt` | 29241 | 54 | 26 | jomini |
+| `00_lifestyle_values.txt` | 23454 | 65 | 74 | jomini |
 | `00_memory_values.txt` | 753 | 1 | 0 | jomini |
-| `00_men_at_arms_values.txt` | 31023 | 19 | 315 | jomini |
+| `00_men_at_arms_values.txt` | 31222 | 19 | 318 | jomini |
 | `00_mongol_values.txt` | 4566 | 5 | 0 | jomini |
 | `00_poetry_values.txt` | 204 | 0 | 1 | jomini |
 | `00_prison_values.txt` | 54 | 1 | 0 | jomini |
-| `00_regional_values.txt` | 602 | 3 | 0 | jomini |
-| `00_relation_values.txt` | 911 | 2 | 14 | jomini |
-| `00_scheme_values.txt` | 118100 | 119 | 132 | jomini |
+| `00_regional_values.txt` | 624 | 3 | 0 | jomini |
+| `00_relation_values.txt` | 1355 | 4 | 14 | jomini |
+| `00_resource_building_values.txt` | 80314 | 0 | 1534 | jomini |
+| `00_scheme_values.txt` | 138780 | 144 | 133 | jomini |
 | `00_scholarship_lifestyle_values.txt` | 108 | 0 | 2 | jomini |
 | `00_single_combat_values.txt` | 4634 | 6 | 50 | jomini |
+| `00_special_building_need_values.txt` | 1506 | 0 | 29 | jomini |
 | `00_stress_values.txt` | 3852 | 4 | 52 | jomini |
 | `00_struggle_values.txt` | 5659 | 10 | 37 | jomini |
 | `00_suggestion_values.txt` | 149 | 1 | 0 | jomini |
+| `00_tenet_faith_affinity_values.txt` | 5973 | 4 | 4 | jomini |
 | `00_title_tiers_values.txt` | 4748 | 9 | 7 | jomini |
 | `00_trait_values.txt` | 604 | 0 | 16 | jomini |
-| `00_travel_values.txt` | 5918 | 9 | 80 | jomini |
-| `00_unity_values.txt` | 2198 | 16 | 15 | jomini |
+| `00_travel_values.txt` | 6200 | 9 | 82 | jomini |
+| `00_tribal_resource_building_values.txt` | 38955 | 0 | 557 | jomini |
+| `00_unity_values.txt` | 2817 | 20 | 17 | jomini |
 | `00_visit_settlement_values.txt` | 2041 | 9 | 14 | jomini |
-| `00_war_values.txt` | 24632 | 45 | 10 | jomini |
+| `00_war_values.txt` | 27526 | 55 | 11 | jomini |
 | `01_character_weighting_values.txt` | 4331 | 4 | 0 | jomini |
 | `01_dlc_bp1_script_values.txt` | 502 | 1 | 3 | jomini |
 | `01_dlc_bp2_script_values.txt` | 825 | 8 | 0 | jomini |
-| `01_dlc_fp1_script_values.txt` | 21262 | 35 | 13 | jomini |
-| `01_dynamic_values.txt` | 49325 | 123 | 12 | jomini |
-| `01_starting_values.txt` | 15141 | 8 | 0 | jomini |
+| `01_dlc_fp1_script_values.txt` | 21257 | 35 | 13 | jomini |
+| `01_dynamic_values.txt` | 49848 | 126 | 12 | jomini |
+| `01_starting_values.txt` | 15484 | 8 | 0 | jomini |
 | `02_dlc_ep1_script_values.txt` | 1917 | 14 | 1 | jomini |
-| `02_religion_values.txt` | 118720 | 55 | 82 | jomini |
+| `02_religion_values.txt` | 118757 | 55 | 82 | jomini |
 | `02_ruler_designer_values.txt` | 2095 | 7 | 0 | jomini |
 | `02_vassal_values.txt` | 5068 | 7 | 0 | jomini |
-| `03_dlc_fp2_script_values.txt` | 29058 | 84 | 56 | jomini |
-| `04_ep2_accolade_values.txt` | 23417 | 23 | 56 | jomini |
-| `04_ep2_hunt_values.txt` | 39934 | 48 | 32 | jomini |
+| `03_dlc_fp2_script_values.txt` | 28831 | 82 | 56 | jomini |
+| `04_ep2_accolade_values.txt` | 23415 | 23 | 56 | jomini |
+| `04_ep2_hunt_values.txt` | 38836 | 48 | 32 | jomini |
 | `04_ep2_tour_values.txt` | 2319 | 2 | 3 | jomini |
-| `04_ep2_tournament_values.txt` | 50622 | 93 | 41 | jomini |
-| `04_ep2_wedding_values.txt` | 24656 | 16 | 0 | jomini |
-| `05_bp2_hostage_values.txt` | 21620 | 38 | 1 | jomini |
-| `06_ce1_epidemics_values.txt` | 37419 | 21 | 44 | jomini |
-| `06_ce1_legends_values.txt` | 30189 | 41 | 25 | jomini |
-| `07_appointment_values.txt` | 38557 | 29 | 7 | jomini |
-| `07_ep3_values.txt` | 147367 | 263 | 384 | jomini |
-| `08_bp3_values.txt` | 4002 | 14 | 0 | jomini |
+| `04_ep2_tournament_values.txt` | 50621 | 93 | 41 | jomini |
+| `04_ep2_wedding_values.txt` | 24696 | 16 | 0 | jomini |
+| `05_bp2_hostage_values.txt` | 21500 | 37 | 1 | jomini |
+| `06_ce1_epidemics_values.txt` | 38499 | 22 | 46 | jomini |
+| `06_ce1_legends_values.txt` | 29681 | 41 | 25 | jomini |
+| `07_appointment_values.txt` | 38836 | 29 | 7 | jomini |
+| `07_ep3_values.txt` | 130296 | 266 | 382 | jomini |
+| `08_bp3_values.txt` | 3870 | 13 | 0 | jomini |
 | `09_mpo_domicile_values.txt` | 14544 | 43 | 98 | jomini |
 | `09_mpo_the_great_steppe_values.txt` | 198 | 0 | 4 | jomini |
-| `09_mpo_values.txt` | 62598 | 156 | 75 | jomini |
-| `10_ach_values.txt` | 31787 | 62 | 0 | jomini |
-| `10_dlc_tgp_china_values.txt` | 26876 | 82 | 123 | jomini |
-| `10_health_values.txt` | 15014 | 14 | 37 | jomini |
+| `09_mpo_values.txt` | 62779 | 156 | 75 | jomini |
+| `10_ach_values.txt` | 33155 | 64 | 3 | jomini |
+| `10_dlc_tgp_china_values.txt` | 28776 | 86 | 124 | jomini |
+| `10_health_values.txt` | 15063 | 14 | 37 | jomini |
+| `10_japanese_manor_income_values.txt` | 524 | 0 | 8 | jomini |
 | `10_tgp_dynastic_cycle_values.txt` | 38566 | 51 | 15 | jomini |
-| `10_tgp_japan_values.txt` | 14788 | 52 | 9 | jomini |
+| `10_tgp_japan_values.txt` | 13748 | 51 | 9 | jomini |
 | `11_petition_head_of_faith_values.txt` | 2206 | 6 | 3 | jomini |
-| `50_major_decision_values.txt` | 1123 | 3 | 3 | jomini |
+| `50_major_decision_values.txt` | 793 | 2 | 3 | jomini |
 | `50_pilgrimage_values.txt` | 11353 | 34 | 9 | jomini |
 | `50_province_values.txt` | 97 | 0 | 3 | jomini |
-| `50_tribal_values.txt` | 1474 | 1 | 0 | jomini |
-| `99_casus_belli_values.txt` | 31628 | 17 | 0 | jomini |
-| `99_chancellor_values.txt` | 21174 | 66 | 1 | jomini |
-| `99_court_chaplain_values.txt` | 60594 | 107 | 8 | jomini |
+| `50_tribal_values.txt` | 1602 | 1 | 0 | jomini |
+| `99_casus_belli_values.txt` | 38930 | 27 | 0 | jomini |
+| `99_chancellor_values.txt` | 23380 | 75 | 2 | jomini |
+| `99_court_chaplain_values.txt` | 64729 | 106 | 18 | jomini |
 | `99_debug_values.txt` | 962 | 6 | 0 | jomini |
-| `99_kurultai_values.txt` | 5973 | 36 | 0 | jomini |
-| `99_marshal_values.txt` | 14102 | 58 | 1 | jomini |
-| `99_spouse_councillor_values.txt` | 13933 | 21 | 3 | jomini |
-| `99_spymaster_values.txt` | 14228 | 49 | 1 | jomini |
-| `99_steward_values.txt` | 31528 | 87 | 3 | jomini |
+| `99_kurultai_values.txt` | 6116 | 37 | 0 | jomini |
+| `99_marshal_values.txt` | 15805 | 60 | 1 | jomini |
+| `99_spouse_councillor_values.txt` | 12453 | 21 | 3 | jomini |
+| `99_spymaster_values.txt` | 17975 | 52 | 1 | jomini |
+| `99_steward_values.txt` | 47412 | 132 | 4 | jomini |
 | `99_vizier_councillor_values.txt` | 8519 | 18 | 3 | jomini |
 | `_script_values.info` | 4956 | - | - | 纯文档（非 Jomini） |
 | `court_events_values.txt` | 8228 | 9 | 0 | jomini |
 | `destiny_score_interest_value.txt` | 30294 | 7 | 0 | jomini |
+| `district_values.txt` | 10435 | 3 | 77 | jomini |
+| `gdp_achievement_values.txt` | 1139 | 2 | 0 | jomini |
+| `gdp_activity_values.txt` | 137 | 1 | 1 | jomini |
+| `gdp_burgher_values.txt` | 7664 | 12 | 46 | jomini |
+| `gdp_domicile_values.txt` | 12279 | 50 | 24 | jomini |
+| `gdp_merchant_company_direction_gui_values.txt` | 848 | 2 | 8 | jomini |
+| `gdp_merchant_trade_opportunity_values.txt` | 3015 | 18 | 0 | jomini |
+| `gdp_merchant_values.txt` | 41666 | 110 | 81 | jomini |
+| `gdp_merchant_visit_holding_values.txt` | 468 | 4 | 1 | jomini |
+| `gdp_republic_ai_values.txt` | 31700 | 26 | 5 | jomini |
+| `gdp_republic_values.txt` | 102345 | 106 | 84 | jomini |
+| `gdp_toll_values.txt` | 4539 | 15 | 0 | jomini |
+| `gdp_trade_post_building_values.txt` | 4122 | 0 | 77 | jomini |
 | `pam_heresy_values.txt` | 4790 | 7 | 5 | jomini |
 | `pam_saint_values.txt` | 6531 | 14 | 2 | jomini |
 | `pam_tenet_values.txt` | 7208 | 24 | 7 | jomini |
-| `pam_values.txt` | 278345 | 284 | 148 | jomini |
+| `pam_values.txt` | 283099 | 290 | 155 | jomini |
 | `passive_rite_learning_values.txt` | 710 | 3 | 0 | jomini |
+| `regular_building_values.txt` | 19873 | 1 | 463 | jomini |
 | `situation_values.txt` | 2266 | 12 | 22 | jomini |
-| `tgp_debate_values.txt` | 2748 | 5 | 0 | jomini |
+| `tgp_debate_values.txt` | 2639 | 5 | 0 | jomini |
 | `tgp_festival_values.txt` | 832 | 1 | 0 | jomini |
-| `tgp_great_project_values.txt` | 1535 | 8 | 7 | jomini |
-| `tgp_imperial_examination_values.txt` | 24447 | 41 | 22 | jomini |
+| `tgp_great_project_values.txt` | 2154 | 10 | 7 | jomini |
+| `tgp_imperial_examination_values.txt` | 24234 | 41 | 22 | jomini |
 | `tgp_japan_values.txt` | 29866 | 27 | 9 | jomini |
-| `tgp_mandala_values.txt` | 23650 | 62 | 118 | jomini |
-| `tgp_natural_disaster_values.txt` | 12288 | 25 | 7 | jomini |
+| `tgp_mandala_values.txt` | 23605 | 62 | 118 | jomini |
+| `tgp_natural_disaster_values.txt` | 12460 | 26 | 7 | jomini |
 | `tgp_tribute_mission_values.txt` | 13121 | 15 | 14 | jomini |
-| `tgp_values.txt` | 20171 | 52 | 86 | jomini |
+| `tgp_values.txt` | 20031 | 55 | 78 | jomini |
 | `tutorial_values.txt` | 1750 | 2 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_activity_values.txt（147 条目）
+### 00_activity_values.txt（152 条目）
 
 - activity_general_ai_will_do_value
 - activity_option_expense_gold_low_value
@@ -164,6 +190,8 @@
 - feast_opinion_mediocre_food_value
 - pilgrimage_base_cost
 - standard_activity_base_cost
+- standard_activity_base_gold_cost
+- standard_activity_base_cost_scale_value
 - max_playdate_duration
 - standard_playdate_activity_cost
 - activity_medium_gold_value
@@ -183,10 +211,10 @@
 - petition_liege_county_control_modifier_value
 - petition_liege_county_convert_count_value
 - petition_liege_county_convert_modifier_value
-- petition_liege_county_opinion_count_value
+- petition_liege_popular_opinion_count_value
 - petition_liege_fortify_border_count_value
-- petitioner_development_difference_decision_value
-- petitioner_development_difference_value
+- petitioner_prosperity_difference_decision_value
+- petitioner_prosperity_difference_value
 - petition_war_aid_score_value
 - petition_liege_defender_strength_value
 - petition_liege_attacker_strength_value
@@ -194,7 +222,7 @@
 - petition_war_aid_vassal_strength_value
 - petition_war_aid_vassal_liege_combined_value
 - petition_war_aid_difference_value
-- petition_county_opinion_value
+- petition_popular_opinion_value
 - petition_war_aid_liege_ally_value
 - petition_war_aid_liege_merc_value
 - petition_war_aid_liege_ally_advantage_value
@@ -250,7 +278,7 @@
 - standard_survey_activity_cost
 - survey_province_reference_value
 - inspection_success_chance_value
-- survey_province_development_info_value
+- survey_province_prosperity_info_value
 - survey_province_control_info_value
 - survey_province_tax_info_value
 - survey_province_levy_info_value
@@ -286,6 +314,9 @@
 - feast_food_good_value
 - feast_courses_normal_value
 - feast_courses_good_value
+- standard_carnival_cooldown_time
+- carnival_activity_base_cost
+- activity_guests_with_trait_in_common_value
 
 ### 00_age_values.txt（20 条目）
 
@@ -310,7 +341,7 @@
 - grand_wedding_timeout_notification
 - ritual_suicide_age
 
-### 00_ai_values.txt（49 条目）
+### 00_ai_values.txt（50 条目）
 
 - high_positive_ai_value_inverse
 - high_negative_ai_value_inverse
@@ -325,6 +356,7 @@
 - cautious_ai_minimum_war_chest_gold
 - excess_over_cautious_ai_minimum_war_chest_gold
 - conqueror_safe_spending_gold
+- ai_baron_excess_gold_purge_amount
 - ai_war_chest_treasury_minus_100
 - halved_ai_war_chest_treasury
 - excess_over_halved_ai_war_chest_treasury
@@ -375,7 +407,7 @@
 - num_badge_collection_prestige_single
 - num_badge_collection_prestige_payout
 
-### 00_basic_values.txt（177 条目）
+### 00_basic_values.txt（189 条目）
 
 - tiny_gold_max_value
 - minor_gold_max_value
@@ -421,6 +453,18 @@
 - sum_of_all_skills_threshold_good
 - sum_of_all_skills_threshold_excellent
 - highest_skill_value
+- diplomacy_double_value
+- martial_double_value
+- stewardship_double_value
+- intrigue_double_value
+- learning_double_value
+- prowess_double_value
+- diplomacy_half_value
+- martial_half_value
+- stewardship_half_value
+- intrigue_half_value
+- learning_half_value
+- prowess_half_value
 - remove_piety_levels_value
 - intimidated_reason_value
 - cowed_reason_value
@@ -560,11 +604,23 @@
 - bastard_legitimization_prestige_cost
 - house_head_legitimize_approval_rating
 
-### 00_building_values.txt（3 条目）
+### 00_building_values.txt（15 条目）
 
 - building_disable_inefficient_value
+- province_regular_district_slot_limit
+- fill_district_slot_chance
 - fill_building_slot_chance
 - upgrade_building_chance
+- ai_building_local_defer_count
+- ai_building_domicile_owner_factor
+- ai_building_domicile_new_value
+- ai_building_domicile_new_income_value
+- ai_building_domicile_upgrade_value
+- ai_building_domicile_upgrade_income_value
+- ai_building_domicile_main_upgrade_value
+- ai_building_domicile_deprioritised_value
+- ai_maa_regiment_count_value
+- ai_military_station_slots_value
 
 ### 00_character_legacy_values.txt（1 条目）
 
@@ -623,11 +679,20 @@
 - council_scaled_by_liege_tier_nomad
 - council_scaled_by_liege_tier_not_nomad
 - council_scaled_admin_value
-- convert_faith_development_value
-- convert_faith_development_loss
+- convert_faith_prosperity_value
+- convert_faith_prosperity_loss
 
-### 00_county_control_values.txt（3 条目）
+### 00_county_control_values.txt（12 条目）
 
+- high_county_control_limit
+- county_control_relative_20
+- county_control_relative_25
+- county_control_relative_40
+- county_control_relative_60
+- county_control_relative_65
+- county_control_relative_70
+- county_control_relative_75
+- county_control_relative_80
 - county_corruption_modifier_count
 - county_control_corruption_gain_chance
 - in_debt_county_corruption_gain_chance
@@ -687,9 +752,10 @@
 - indebt_guest_interaction_lost_test_grandeur_cost_value
 - indebt_guest_interaction_get_intrigue_difference_value
 
-### 00_court_position_values.txt（131 条目）
+### 00_court_position_values.txt（141 条目）
 
 - general_aptitude_bonus_exclude_other_court_position
+- merchant_inspiring_rule_court_position_aptitude_value
 - general_aptitude_bonus
 - tiny_court_position_salary
 - minor_court_position_salary
@@ -710,6 +776,9 @@
 - major_court_position_prestige_revoke_cost
 - executioner_control_value
 - executioner_control_value_tooltip
+- regular_court_position_opinion
+- ceremonial_court_position_opinion
+- merchant_benevolent_intent_court_position_opinion_value
 - court_jester_position_opinion
 - adjust_court_position_score_for_unity
 - seneschal_improve_court_value
@@ -743,6 +812,11 @@
 - travel_leader_total_salary_value
 - antiquarian_total_salary_value
 - seneschal_total_salary_value
+- partner_total_salary_value
+- fixer_total_salary_value
+- translator_total_salary_value
+- market_agent_total_salary_value
+- bailiff_total_salary_value
 - seneschal_prestige_salary_value
 - khlon_glan_prestige_salary_value
 - court_tutor_total_salary_value
@@ -820,6 +894,7 @@
 - khlon_glan_total_salary_value
 - court_brahmin_total_salary_value
 - minister_bureaucrat_total_salary_value
+- roman_censor_total_salary_value
 
 ### 00_culture_values.txt（46 条目）
 
@@ -870,11 +945,12 @@
 - court_position_aptitude_eunuch_tradition_value
 - court_position_aptitude_boon_voyager_trait
 
-### 00_decision_values.txt（19 条目）
+### 00_decision_values.txt（20 条目）
 
 - replace_bhakti_piety_loss
 - negotiate_the_danelaw_preferable_opponent_value
 - standard_commission_artifact_cooldown_time
+- standard_craft_artifact_cooldown_time
 - found_witch_coven_member_count_value
 - found_witch_coven_member_percent_value
 - found_witch_coven_member_percent_display_value
@@ -892,7 +968,7 @@
 - powerful_vassals_count_value
 - hre_potential_prince_electors_value
 
-### 00_diarchy_values.txt（85 条目）
+### 00_diarchy_values.txt（86 条目）
 
 - raise_diarch_opinion_with_loyalty_update_value
 - adult_co_ruler_power_balance_scaling_value
@@ -924,6 +1000,7 @@
 - massive_diarch_candidate_loss
 - monumental_diarch_candidate_loss
 - diarchy_regent_succession_score_value
+- diarchy_regent_succession_score_ai_value
 - diarchy_vizier_succession_score_value
 - liege_trust_diarch_trilateral_interaction_default_value
 - liege_diarchy_surcharge_interaction_revoke_title_interaction_value
@@ -1066,11 +1143,35 @@
 - rescue_house_members_cb_house_unity_gain
 - fp3_struggle_switch_sides_value
 
-### 00_dynasty_values.txt（3 条目）
+### 00_domicile_production_values.txt（0 条目）
+
+（无顶层块）
+
+### 00_domicile_values.txt（3 条目）
+
+- estate_move_cost_value
+- east_asian_estate_move_cost_value
+- japanese_manor_move_cost_value
+
+### 00_dynasty_values.txt（5 条目）
 
 - kin_legacy_5_age_modulo
 - fp1_adventure_legacy_2_prestige_value
 - ep2_activities_legacy_1_pilgrimages_learning_cap_value
+- gdp_merchant_legacy_3_trader_aptitude_bonus_value
+- gdp_merchant_legacy_4_entrepot_stewardship_cap_value
+
+### 00_east_asian_estate_income_values.txt（0 条目）
+
+（无顶层块）
+
+### 00_east_asian_estate_opinion_values.txt（0 条目）
+
+（无顶层块）
+
+### 00_east_asian_estate_prosperity_values.txt（0 条目）
+
+（无顶层块）
 
 ### 00_education_values.txt（2 条目）
 
@@ -1137,7 +1238,11 @@
 - 50_percent_of_owned_gold
 - 80_percent_of_owned_gold
 
-### 00_faction_values.txt（11 条目）
+### 00_estate_income_values.txt（0 条目）
+
+（无顶层块）
+
+### 00_faction_values.txt（13 条目）
 
 - faction_power_minimal
 - faction_power_halfway_threshold
@@ -1150,10 +1255,86 @@
 - county_maa_to_raise
 - liege_opinion_value
 - peasant_leader_xp_value
+- faction_county_high_control_suppression
+- faction_county_garrison_suppression
 
 ### 00_game_rule_values.txt（1 条目）
 
 - harm_game_rule_likelihood_value
+
+### 00_gdp_guelph_ghibelline_values.txt（71 条目）
+
+- gg_months_until_dictatus_papae
+- gg_years_until_dictatus_papae
+- gg_months_until_concordat_of_worms
+- gg_years_until_concordat_of_worms
+- gg_pope_opinion_negative_value
+- house_members_to_banish_tier_value
+- num_lombard_league_titles
+- num_lombard_league_members
+- num_half_lombard_league_titles
+- displace_gg_ai_score_value
+- reinstate_gg_ai_score_value
+- gg_involvement_scheme_success_value
+- gg_involvement_scheme_failure_value
+- gg_involvement_change_phase_decision_value
+- gg_involvement_triggered_catalyst_value
+- gg_involvement_interaction_value
+- gg_involvement_catalyst_interaction_value
+- gg_involvement_cb_success_value
+- gg_involvement_cb_participant_value
+- gg_involvement_cb_failure_value
+- gg_leader_involvement_renown
+- gg_compromise_leader_involvement_renown
+- gg_supporter_involvement_renown
+- gg_ghibelline_compromise_control_negative_value
+- gg_involvement_position
+- gg_leader_victory_renown
+- gg_supporter_victory_renown
+- gg_independent_guelph_supporters_factor
+- gg_independent_ghibelline_supporters_factor
+- gg_leader_compromise_renown
+- gg_supporter_compromise_renown
+- gg_leader_compromise_display_renown
+- gg_supporter_compromise_display_renown
+- situation_ghibelline_leader_primary_title_value
+- situation_guelph_leader_primary_title_value
+- situation_ghibelline_emperors_num
+- situation_ghibelline_kings_num
+- situation_ghibelline_dukes_num
+- situation_ghibelline_num
+- situation_guelph_emperors_num
+- situation_guelph_kings_num
+- situation_guelph_dukes_num
+- situation_guelph_num
+- situation_guelph_ghibelline_total_percentage
+- situation_ghibelline_percentage
+- situation_guelph_percentage
+- gg_precursor_phase_positive_score_factor
+- gg_precursor_phase_negative_score_factor
+- situation_ghibelline_group_score
+- situation_ghibelline_emperor_score
+- situation_ghibelline_king_score
+- situation_ghibelline_duke_score
+- situation_ghibelline_count_score
+- situation_ghibelline_rest_score
+- situation_ghibelline_total_member_score
+- situation_guelph_group_score
+- situation_guelph_emperor_score
+- situation_guelph_king_score
+- situation_guelph_duke_score
+- situation_guelph_count_score
+- situation_guelph_rest_score
+- situation_guelph_total_member_score
+- situation_ghibelline_score_percentage
+- situation_guelph_score_percentage
+- situation_guelph_ghibelline_score_total
+- situation_guelph_score_factor
+- situation_ghibelline_score_factor
+- situation_score_advantage_threshold
+- situation_score_advantage_keep_threshold
+- situation_guelph_ghibelline_score_diff_factor
+- gg_pope_excommunicates_emperor_chance_value
 
 ### 00_goverment_values.txt（18 条目）
 
@@ -1221,7 +1402,7 @@
 - holy_order_barony_value_calculation
 - monastic_order_barony_value_calculation
 - yearly_monastic_xp_gain_value
-- revoking_lease_development_cost
+- revoking_lease_prosperity_cost
 
 ### 00_holy_site_values.txt（3 条目）
 
@@ -1229,7 +1410,7 @@
 - holy_site_action_cooldown_years
 - holy_site_decision_cooldown_value
 
-### 00_interaction_values.txt（73 条目）
+### 00_interaction_values.txt（76 条目）
 
 - golden_obligation_value
 - golden_obligation_value_check_current_situation
@@ -1237,6 +1418,8 @@
 - ransom_herd_value
 - ransom_cost_value
 - normal_ransom_cost_value
+- half_normal_ransom_cost_value
+- quarter_normal_ransom_cost_value
 - current_situation_gold_ransom
 - half_ransom_cost_value
 - half_increased_ransom_cost_value
@@ -1286,6 +1469,7 @@
 - eighty_percent_of_max_military_strength
 - fifty_percent_of_max_military_strength
 - twenty_percent_of_max_military_strength
+- half_current_influence_value
 - marry_close_family_tiers_acceptance_value
 - elope_close_family_tiers_acceptance_value
 - duchy_confederation_vassals_value
@@ -1313,7 +1497,7 @@
 
 - titles_held_in_k_maghreb
 
-### 00_law_values.txt（16 条目）
+### 00_law_values.txt（17 条目）
 
 - subrealm_size_modifier
 - learning_law_cost_modifier
@@ -1326,13 +1510,14 @@
 - increase_nomadic_authority_prestige_cost
 - change_succession_law_prestige_cost
 - change_title_succession_law_prestige_cost
+- gdp_republican_despot_law_prestige_cost
 - change_hre_title_succession_law_prestige_cost
 - admin_law_realm_size_cost
 - admin_law_prestige_cost
 - change_admin_budget_law_prestige_cost
 - realm_authority_level
 
-### 00_legitimacy_values.txt（53 条目）
+### 00_legitimacy_values.txt（54 条目）
 
 - legitimacy_title_tier_value
 - legitimacy_era_value
@@ -1371,8 +1556,9 @@
 - base_legitimacy_dynasty_prestige_level_value
 - succession_legitimacy_dynasty_prestige_level_value
 - base_legitimacy_track_perks_value
-- base_legitimacy_county_opinion_value
-- base_legitimacy_county_opinion_county_count_value
+- base_legitimacy_popular_opinion_value
+- base_legitimacy_popular_opinion_county_count_value
+- succession_legitimacy_dynastic_crypt_value
 - base_legitimacy_dynasty_of_predecessor_value
 - succession_legitimacy_ancestor_tier_value
 - base_legitimacy_relation_to_predecessor_value
@@ -1388,7 +1574,7 @@
 - nomadic_legitimacy_claimant_multiplier
 - max_legitimacy_level_value
 
-### 00_lifestyle_values.txt（62 条目）
+### 00_lifestyle_values.txt（65 条目）
 
 - travel_miniscule_lifestyle_xp
 - travel_minor_lifestyle_xp
@@ -1437,6 +1623,9 @@
 - lifestyle_blademaster_xp_gain_minor_value
 - pilgrim_xp_gain_minor_value
 - scholar_xp_gain_minor_value
+- lifestyle_merchant_xp_gain_miniscule_value
+- lifestyle_merchant_xp_gain_minor_value
+- lifestyle_merchant_xp_gain_medium_value
 - wanderer_current_lifestyle_monthly_bonus
 - voyager_journey_planner_value
 - wanderer_destination_prestige_value
@@ -1501,12 +1690,18 @@
 - slaver_reparations_value
 - selfish_liege_slave_gold_value
 
-### 00_relation_values.txt（2 条目）
+### 00_relation_values.txt（4 条目）
 
 - sum_friends_and_rivals_tally_value
 - sum_potential_friends_and_potential_rivals_tally_value
+- sum_debtors_owed_gold_value
+- debtor_owed_gold_value
 
-### 00_scheme_values.txt（119 条目）
+### 00_resource_building_values.txt（0 条目）
+
+（无顶层块）
+
+### 00_scheme_values.txt（144 条目）
 
 - scheme_progress_gain
 - scheme_progress_loss
@@ -1544,6 +1739,7 @@
 - agent_cleric_contribution_value
 - agent_theologian_contribution_value
 - agent_lookout_contribution_value
+- agent_alibi_contribution_value
 - agent_gabbler_contribution_value
 - scheme_charge_to_advance_threshold_value
 - multi_ending_scheme_charge_to_advance_threshold_t1_value
@@ -1570,6 +1766,7 @@
 - base_odds_prediction_target_is_title_value
 - base_odds_prediction_target_is_char_value
 - base_odds_prediction_guts_value
+- base_odds_prediction_target_is_char_gg_value
 - agent_groups_owner_perspective_value
 - agent_groups_target_character_perspective_value
 - hostile_scheme_base_odds_prediction_target_is_title_value
@@ -1627,6 +1824,29 @@
 - odds_their_realm_size_value
 - odds_their_suzerain_radiance_value
 - odds_coup_ceremonial_liege_scheme_misc_value
+- odds_gg_switch_sides_scheme_misc_value
+- odds_gg_is_guelph_leader_negative_value
+- odds_gg_is_ghibelline_leader_negative_value
+- odds_gg_is_pope_negative_value
+- odds_gg_is_kaiser_negative_value
+- odds_gg_is_theocratic_negative_value
+- odds_gg_is_theocratic_positive_value
+- odds_gg_you_are_guelph_leader_positive_value
+- odds_gg_you_are_ghibelline_leader_positive_value
+- odds_gg_phase_is_dictatus_negative_value
+- odds_gg_same_side_positive_value
+- odds_gg_opposite_side_negative_value
+- gg_claim_leadership_involvement_difference_value
+- gg_claim_leadership_prestige_level_difference_value
+- odds_gg_claim_leadership_scheme_misc_value
+- odds_gg_align_undecided_scheme_misc_value
+- odds_gg_replace_ruler_scheme_misc_value
+- odd_target_is_at_war_value
+- influence_house_ambition_scheme_misc_value
+- odds_hostile_takeover_scheme_misc_value
+- odds_steal_market_insights_scheme_misc_value
+- odds_steal_trade_post_scheme_misc_value
+- odds_craft_artifact_scheme_misc_value
 
 ### 00_scholarship_lifestyle_values.txt（0 条目）
 
@@ -1640,6 +1860,10 @@
 - combat_move_butchery_dread_value
 - combat_move_blade_dance_value
 - sce_has_single_combat_special_traits_value
+
+### 00_special_building_need_values.txt（0 条目）
+
+（无顶层块）
 
 ### 00_stress_values.txt（4 条目）
 
@@ -1664,6 +1888,13 @@
 ### 00_suggestion_values.txt（1 条目）
 
 - recommended_num_maa_regiments_value
+
+### 00_tenet_faith_affinity_values.txt（4 条目）
+
+- anathema_to_faith
+- intrinsic_to_faith
+- anathema_to_faith_personal_tenet_weight_factor
+- intrinsic_to_faith_personal_tenet_weight_factor
 
 ### 00_title_tiers_values.txt（9 条目）
 
@@ -1693,15 +1924,21 @@
 - struggle_high_danger_impact
 - food_poison_value
 
-### 00_unity_values.txt（16 条目）
+### 00_tribal_resource_building_values.txt（0 条目）
+
+（无顶层块）
+
+### 00_unity_values.txt（20 条目）
 
 - miniscule_unity_loss
 - minor_unity_loss
 - medium_unity_loss
 - major_unity_loss
 - massive_unity_loss
+- monumental_unity_loss
 - number_of_landed_house_members_value
 - number_of_landed_house_unity_members_value
+- number_of_merchant_or_employed_house_unity_members_value
 - unity_antagonistic_cb_cost_value
 - unity_competitive_cb_cost_value
 - unity_friendly_cb_cost_value
@@ -1711,6 +1948,8 @@
 - clan_vassal_no_alliance_opinion_penalty_value
 - unity_major_decision_piety_cost
 - unity_minor_decision_piety_cost
+- unity_major_decision_prestige_cost
+- unity_minor_decision_prestige_cost
 
 ### 00_visit_settlement_values.txt（9 条目）
 
@@ -1724,7 +1963,7 @@
 - half_to_max_provisions_value
 - visit_settlement_piety_gain_value
 
-### 00_war_values.txt（45 条目）
+### 00_war_values.txt（55 条目）
 
 - standard_truce_duration_days
 - raid_gold_value
@@ -1734,7 +1973,14 @@
 - byzantium_conquests_ai_score_value
 - muslim_invasions_prefer_nonmuslims_ai_score_value
 - pam_peace_of_god_coreligionist_war_ai_score_value
+- frankokratia_leader_protection_value
+- mongol_invader_regular_cb_ai_score_value
+- common_cb_ai_score_mult
+- aggressive_cb_ai_score_mult
+- religious_cb_ai_score_mult
+- vassalization_cb_ai_score_mult
 - zealous_war_on_head_of_faith_ai_score_value
+- common_cb_ai_score_mult_additive
 - raid_for_captives_ai_score_value
 - relic_artifact_war_ai_score_value
 - artifact_war_ai_score_value
@@ -1769,7 +2015,10 @@
 - total_war_attacker_strength_value
 - total_war_enemy_strength_value
 - house_relation_ai_score_value
-- frankokratia_leader_protection_value
+- reparations_gold_debt_divisor_value
+- reparations_treasury_debt_divisor_value
+- reparations_max_payment_value
+- reparations_max_gold_payment_value
 - ai_overlord_defensive_power_impact
 
 ### 01_character_weighting_values.txt（4 条目）
@@ -1832,7 +2081,7 @@
 - bondi_gold_value
 - north_sea_held_value
 
-### 01_dynamic_values.txt（123 条目）
+### 01_dynamic_values.txt（126 条目）
 
 - tiny_gold_value
 - tiny_gold_value_static_max
@@ -1862,6 +2111,7 @@
 - head_of_faith_gold_value
 - head_of_faith_treasury_value
 - head_of_faith_treasury_or_gold_value
+- medium_gold_value_twice
 - hof_ask_for_gold_request_value
 - hof_ask_for_gold_cleric_capacity_value
 - tiny_treasury_value
@@ -1876,6 +2126,7 @@
 - major_treasury_or_gold_value
 - massive_treasury_or_gold_value
 - monumental_treasury_or_gold_value
+- pope_modifiers_multiplier
 - seek_indulgences_major_criminal_trait_value
 - seek_indulgences_medium_criminal_trait_value
 - seek_indulgences_minor_criminal_trait_value
@@ -1925,6 +2176,7 @@
 - recipient_soldier_female_chance
 - root_faith_dominant_gender_female_chance
 - activity_location_faith_dominant_gender_female_chance
+- scope_faith_dominant_gender_female_chance
 - location_faith_dominant_gender_female_chance
 - title_faith_dominant_gender_female_chance
 - root_faith_dominant_gender_female_reversed_chance
@@ -1944,7 +2196,7 @@
 - ai_inspiration_desired_gold_value
 - ai_war_chest_defender_holy_war_gold_value
 - steward_convert_culture_value
-- steward_increase_development_value
+- steward_increase_prosperity_value
 - minimum_ai_gold_value_for_tyranny_wars
 - comfortable_ai_gold_value_for_tyranny_wars
 - minimum_ai_treasury_value_for_tyranny_wars
@@ -1988,9 +2240,9 @@
 
 ### 02_religion_values.txt（55 条目）
 
-- faction_county_opinion_astray
-- faction_county_opinion_hostile
-- faction_county_opinion_evil
+- faction_popular_opinion_astray
+- faction_popular_opinion_hostile
+- faction_popular_opinion_evil
 - head_of_faith_selection_weight
 - demand_conversion_learning_difference
 - demand_conversion_fervor_difference
@@ -2064,7 +2316,7 @@
 - stop_war_attacker_bribe_size
 - stop_war_defender_bribe_size
 
-### 03_dlc_fp2_script_values.txt（84 条目）
+### 03_dlc_fp2_script_values.txt（82 条目）
 
 - purchase_truce_interaction_small_sum
 - purchase_truce_interaction_medium_sum
@@ -2106,7 +2358,7 @@
 - fp2_border_raid_ai_targeting_value
 - siege_occupier_county_soldier_value
 - destroy_building_soldier_multiplier_value
-- destroy_building_development_multiplier_value
+- destroy_building_prosperity_multiplier_value
 - fp2_expel_interloper_ai_targeting_value
 - fp2_urbanism_legacy_1_bonus_value_percentage
 - struggle_iberia_ending_ending_decision_region_total_value
@@ -2145,8 +2397,6 @@
 - fp2_bargain_fealty_half_max_strength_value
 - fp2_lyonese_monk_age_value
 - fp2_lyonese_monk_conversion_bonus_actual_value
-- floored_development_value
-- floored_current_development_value
 - pt_sum_small_value
 - pt_sum_medium_value
 - pt_sum_large_value
@@ -2192,8 +2442,8 @@
 - hunt_activity_success_decrease_major_value
 - hunt_activity_success_decrease_massive_value
 - hunt_hunting_grounds_success_value
-- hunt_logging_camps_success_value
 - hunt_royal_reserves_success_value
+- hunt_royal_stables_success_value
 - hunt_success_chance_roco_amenity_level_value
 - hunt_success_chance_value
 - hunt_success_chance_inverse_value
@@ -2348,7 +2598,7 @@
 - dolt_stewardship_adjusted_difficulty_value
 - break_betrothal_prestige_cost
 
-### 05_bp2_hostage_values.txt（38 条目）
+### 05_bp2_hostage_values.txt（37 条目）
 
 - actor_current_military_strength
 - recipient_current_military_strength
@@ -2361,7 +2611,6 @@
 - max_allies_strength_value
 - max_strength_with_allies_fifty_percent_value
 - max_strength_with_allies_seventy_five_percent_value
-- max_strength_with_allies_value
 - current_strength_ninety_percent_value
 - current_strength_seventy_five_percent_value
 - current_strength_with_allies_value
@@ -2389,7 +2638,7 @@
 - demand_hostage_military_strength_value
 - hostage_tier_check_value
 
-### 06_ce1_epidemics_values.txt（21 条目）
+### 06_ce1_epidemics_values.txt（22 条目）
 
 - outbreak_chance_minor_default_value
 - outbreak_chance_minor_mult_value
@@ -2402,13 +2651,14 @@
 - outbreak_chance_black_plague_default_value
 - outbreak_chance_black_plague_mult_value
 - spread_chance_epidemics_default_value
+- spread_settlement_size_mult_value
 - spread_chance_epidemics_mult_value
 - infection_rate_change_value
 - would_follow_social_distancing_value
 - character_infection_chance_default_value
 - character_contagious_value
 - recent_epidemics_outbreak_mult_value
-- epidemic_development_loss_value
+- epidemic_prosperity_loss_value
 - epidemic_fertility_loss_value
 - epidemic_fromdust_value
 - former_infected_county_count
@@ -2489,7 +2739,7 @@
 - appointment_score_regent
 - appointment_score_celestial
 
-### 07_ep3_values.txt（263 条目）
+### 07_ep3_values.txt（266 条目）
 
 - miniscule_influence_loss
 - minor_influence_loss
@@ -2502,6 +2752,10 @@
 - estate_external_building_high_base_cost_value
 - estate_internal_building_normal_base_cost_value
 - estate_internal_building_high_base_cost_value
+- estate_building_cost_tier_3_multiplier_value
+- estate_building_cost_tier_4_multiplier_value
+- estate_building_cost_tier_5_multiplier_value
+- estate_building_cost_tier_6_multiplier_value
 - estate_external_building_normal_cost_tier_1_value
 - estate_external_building_normal_cost_tier_2_value
 - estate_external_building_normal_cost_tier_3_value
@@ -2527,7 +2781,6 @@
 - estate_internal_building_high_cost_tier_5_value
 - estate_internal_building_high_cost_tier_6_value
 - estate_location_cost_modifier_value
-- estate_building_ai_modifier_value
 - granary_modifier_scaling_value
 - estate_construction_influence_gain_value
 - admin_title_troop_command_cost_value
@@ -2558,7 +2811,6 @@
 - ep3_laamp_invasion_ai_targeting_value
 - ep3_laamp_invasion_cb_cost
 - ep3_laamp_invasion_base_piety_cost
-- governor_efficiency
 - governor_efficiency_presented
 - governance_task_contract_tier_value
 - governance_modifier_scaling_tier_value
@@ -2631,7 +2883,7 @@
 - proving_grounds_main_path_value
 - camp_perimeter_main_path_value
 - prison_break_value
-- house_power_score
+- administrative_house_power_score
 - ep3_governor_yearly_8150_total_count_value
 - court_position_aptitude_traveling_friends_value
 - ep3_foreign_ruler_interest_in_coup_value
@@ -2674,6 +2926,8 @@
 - gather_provisions_hunt_base_value
 - camp_improves_gather_provisions_foraging_loc_value
 - adventurers_make_local_deals_option_value
+- make_local_deals_haggle_bandit_chance_value
+- local_deals_bandit_demand_gold_value
 - strong_governor_military_value
 - ep3_emperors_war_strength_value
 - ep3_emperors_war_strength_double_value
@@ -2748,14 +3002,13 @@
 - laamp_marriable_women_realistic_value
 - laamp_marriable_men_value
 - laamp_marriable_men_realistic_value
-- laamp_city_construction_year_value
 - force_step_down_interaction_gold_cost_value
 - force_step_down_interaction_influence_cost_value
 - number_of_held_governorships
 - building_construction_dynasty_prestige_gain_value
 - swing_scales_cost_multipler_value
 
-### 08_bp3_values.txt（14 条目）
+### 08_bp3_values.txt（13 条目）
 
 - wayfarer_the_real_threat_value
 - max_regiment_count_plus_one
@@ -2763,14 +3016,13 @@
 - inspection_levy_reward_value
 - extra_building_resources_value
 - court_brewmaster_multiplier
-- brewery_counter_value
-- brewery_counter_25
 - church_investment_value
 - of_the_people_perk_value
 - bosporan_kingdom_modifier_scale_value
 - tally_current_followers
 - tally_roll_of_patrons
 - camp_pavillion_level
+- survey_cooldown_value
 
 ### 09_mpo_domicile_values.txt（43 条目）
 
@@ -2981,7 +3233,7 @@
 - two_thirds_max_herd_value
 - nomad_invasion_cb_prestige_cost
 
-### 10_ach_values.txt（62 条目）
+### 10_ach_values.txt（64 条目）
 
 - coronation_cost_factor_for_ai
 - coronation_cost_realm_size_factor
@@ -2989,6 +3241,8 @@
 - coronation_cost
 - coronation_cost_herd_additive
 - coronation_cost_herd
+- coronation_no_anointment_cost_mult_value
+- coronation_anointment_piety_mult_value
 - coronation_option_cost_ai_factor
 - coronation_medium_ceremony_realm_size_cost
 - coronation_large_ceremony_realm_size_cost
@@ -3012,7 +3266,7 @@
 - oath_conquest_value_1
 - oath_conquest_value_2
 - oath_university_gold_value
-- oath_university_development_value
+- oath_university_prosperity_value
 - coronation_ceremony_magnificence_adjustment_value
 - peace_oath_value
 - alliance_oath_value
@@ -3046,7 +3300,7 @@
 - coronation_artifact_ai_instant_creation_chance
 - medium_gold_value_tripled
 
-### 10_dlc_tgp_china_values.txt（82 条目）
+### 10_dlc_tgp_china_values.txt（86 条目）
 
 - miniscule_merit_loss
 - minor_merit_loss
@@ -3054,6 +3308,10 @@
 - major_merit_loss
 - massive_merit_loss
 - monumental_merit_loss
+- military_province_war_victory_enemy_tier_value
+- military_province_war_victory_merit_value
+- military_career_battle_commander_merit_value
+- military_career_battle_knight_merit_value
 - maximum_merit_level
 - celestial_province_protectorate_max_value
 - celestial_province_metropolitan_max_value
@@ -3148,6 +3406,10 @@
 - pregnancy_month
 - vigorous_sex_age_difference_value
 
+### 10_japanese_manor_income_values.txt（0 条目）
+
+（无顶层块）
+
 ### 10_tgp_dynastic_cycle_values.txt（51 条目）
 
 - mandate_of_heaven_level_2
@@ -3202,7 +3464,7 @@
 - not_conservative_ministers_value
 - needed_conservative_ministers_value
 
-### 10_tgp_japan_values.txt（52 条目）
+### 10_tgp_japan_values.txt（51 条目）
 
 - japanese_manor_external_building_normal_cost_tier_1_value
 - japanese_manor_external_building_normal_cost_tier_2_value
@@ -3230,7 +3492,6 @@
 - japanese_manor_internal_building_high_cost_tier_5_value
 - japanese_manor_internal_building_high_cost_tier_6_value
 - japanese_manor_location_cost_modifier_value
-- japanese_manor_building_ai_modifier_value
 - japanese_kampaku_house_past_kampaku_value
 - japanese_kampaku_house_past_kampaku_value_actual
 - japanese_kampaku_house_imperial_parent_score_value
@@ -3266,10 +3527,9 @@
 - petition_head_of_faith_cite_sins_chance_value
 - petition_head_of_faith_cite_sins_chance_inverse_value
 
-### 50_major_decision_values.txt（3 条目）
+### 50_major_decision_values.txt（2 条目）
 
 - invite_claimants_decision_prestige_value
-- convert_to_feudalism_development_requirement
 - expand_duchy_max_size_value
 
 ### 50_pilgrimage_values.txt（34 条目）
@@ -3317,7 +3577,7 @@
 
 - feudalize_holding_interaction_cost
 
-### 99_casus_belli_values.txt（17 条目）
+### 99_casus_belli_values.txt（27 条目）
 
 - common_cb_cost_multiplier_core
 - common_cb_cost_multiplier
@@ -3331,13 +3591,23 @@
 - common_cb_prestige_cost_multiplier_sans_struggles
 - common_cb_prestige_cost_multiplier
 - vassalization_cb_prestige_cost_mulitiplier
+- claim_cb_cost_multiplier_legitimacy
 - claim_cb_prestige_cost
 - tribal_subjugation_cb_prestige_cost
+- county_cb_influence_base_cost
+- duchy_cb_influence_base_cost
+- county_cb_prestige_base_cost
+- duchy_cb_prestige_base_cost
+- county_cb_prestige_base_cost_with_influence
+- duchy_cb_prestige_base_cost_with_influence
+- county_cb_piety_base_cost
+- duchy_cb_piety_base_cost
+- conquest_cb_prestige_cost_multiplier
 - ancestor_cb_prestige_cost
 - struggle_cb_phase_modifier_cost
 - common_claim_reduction_cost_multiplier_core
 
-### 99_chancellor_values.txt（66 条目）
+### 99_chancellor_values.txt（75 条目）
 
 - chancellor_foreign_affairs_opinion_base
 - chancellor_foreign_affairs_opinion_max_perk_bonus_modifier
@@ -3405,8 +3675,17 @@
 - chancellor_learn_on_the_job_scale
 - kurultai_chancellor_learn_on_the_job_scale
 - chancellor_reliable_house_scale
+- republic_assembly_preparation_skill_value
+- republic_assembly_preparation_patrician_rating_value
+- republic_assembly_preparation_max_value
+- republic_assembly_preparation_base_monthly_increase
+- republic_assembly_preparation_skill_monthly_increase
+- republic_assembly_preparation_patrician_rating_monthly_increase
+- republic_assembly_preparation_monthly_increase
+- republic_assembly_preparation_final_value
+- republic_assembly_preparation_value_side_effect_loss
 
-### 99_court_chaplain_values.txt（107 条目）
+### 99_court_chaplain_values.txt（106 条目）
 
 - court_chaplain_religious_relations_modifier
 - court_chaplain_religious_relations_perk_bonus_modifier
@@ -3461,7 +3740,6 @@
 - court_chaplain_conversion_contextual_bonuses
 - court_chaplain_conversion_factors
 - rite_conversion_fervor_mult
-- convert_faith_development_penalty
 - court_chaplain_conversion_monthly_increase_perk_bonus
 - court_chaplain_conversion_monthly_increase_dynasty_perk_bonus
 - court_chaplain_conversion_monthly_increase_family_business_bonus
@@ -3525,7 +3803,7 @@
 - debug_percentage_of_dread_affected_vassals
 - debug_percentage_of_cowed_vassals
 
-### 99_kurultai_values.txt（36 条目）
+### 99_kurultai_values.txt（37 条目）
 
 - kurultai_main_yurt_bonus
 - kurultai_manage_herd_skill_tooltip
@@ -3533,6 +3811,7 @@
 - kurultai_manage_herd_skill_value
 - kurultai_manage_herd_final_value
 - kurultai_increased_fertility_skill_tooltip
+- kurultai_county_fertility_current_value
 - kurultai_increased_fertility_base_value
 - kurultai_increased_fertility_skill_value
 - kurultai_increased_fertility_scale_value
@@ -3564,7 +3843,7 @@
 - kurultai_culture_monthly_increase
 - kurultai_culture_final_value
 
-### 99_marshal_values.txt（58 条目）
+### 99_marshal_values.txt（60 条目）
 
 - marshal_organize_levies_base
 - marshal_organize_levies_skill_base
@@ -3594,6 +3873,8 @@
 - task_supress_crime_progress
 - marshal_increase_control_full_progress
 - marshal_increase_control_current_progress
+- marshal_increase_control_max_progress
+- manor_houses_marshal_increase_control_bonus
 - marshal_increase_county_control_monthly_change
 - marshal_increase_control_base_total
 - marshal_increase_control_monthly_increase_friend_bonus
@@ -3649,7 +3930,7 @@
 - spouse_martial_event_troop_size
 - councillor_spouse_martial_1005_a_value
 
-### 99_spymaster_values.txt（49 条目）
+### 99_spymaster_values.txt（52 条目）
 
 - monthly_scheme_discovery_chance_value
 - spymaster_learn_on_the_job_scale
@@ -3677,6 +3958,7 @@
 - spymaster_espionage_consulted_house_bonus
 - spymaster_espionage_court_type_bonus
 - spymaster_espionage_determination_support_schemes_scale
+- spymaster_espionage_ambition_improved_task_support_schemes_phase_bonus
 - spymaster_espionage_modifier_final_scale
 - spymaster_espionage_success_chance_base
 - spymaster_espionage_success_chance_modifier_base_scale
@@ -3685,6 +3967,7 @@
 - spymaster_espionage_success_chance_consulted_house_bonus
 - spymaster_espionage_success_chance_court_type_bonus
 - spymaster_espionage_determination_support_schemes_bonus
+- spymaster_espionage_ambition_improved_task_support_schemes_success_bonus
 - spymaster_espionage_success_chance_total
 - spymaster_find_secrets_secret_discovery_chance
 - spymaster_find_secrets_monthly_increase
@@ -3698,14 +3981,58 @@
 - spymaster_find_secrets_family_business_monthly_increase
 - spymaster_find_secrets_consulted_house_monthly_increase
 - spymaster_court_of_no_secrets_event_increase
+- spymaster_find_secrets_household_inner_court_increase
 - spymaster_find_secrets_determination_house_aspiration_increase
 - chaplain_find_secrets_confession_bonus
 
-### 99_steward_values.txt（87 条目）
+### 99_steward_values.txt（132 条目）
 
 - steward_learn_on_the_job_scale
 - kurultai_steward_learn_on_the_job_scale
 - steward_reliable_house_scale
+- court_of_the_towns_republic_task_mult
+- republic_trade_logistics_base_max_value
+- republic_trade_logistics_capacity_ambition_improved_task_max_bonus
+- republic_trade_logistics_capacity_court_of_the_towns_max_bonus
+- republic_trade_logistics_max_value
+- republic_trade_logistics_expertise_ambition_improved_task_max_bonus
+- republic_trade_logistics_expertise_court_of_the_towns_max_bonus
+- republic_trade_logistics_expertise_base_max_value
+- republic_trade_logistics_expertise_max_value
+- republic_trade_logistics_base_monthly_increase
+- republic_trade_logistics_skill_monthly_increase
+- republic_trade_logistics_ambition_improved_task_monthly_bonus
+- republic_trade_logistics_expertise_base_monthly_increase
+- republic_trade_logistics_expertise_skill_monthly_increase
+- republic_trade_logistics_court_of_the_towns_monthly_bonus
+- republic_trade_logistics_monthly_increase
+- republic_trade_logistics_final_value
+- republic_trade_logistics_expertise_monthly_increase
+- republic_trade_logistics_expertise_final_value
+- republic_trade_logistics_value_side_effect_loss
+- republic_trade_logistics_gold_side_effect_value
+- republic_market_oversight_base_max_value
+- republic_market_oversight_ambition_improved_task_max_bonus
+- republic_market_oversight_court_of_the_towns_max_bonus
+- republic_market_oversight_max_value
+- republic_market_oversight_sell_price_base_max_value
+- republic_market_oversight_ambition_improved_task_sell_price_max_bonus
+- republic_market_oversight_court_of_the_towns_sell_price_max_bonus
+- republic_market_oversight_sell_price_max_value
+- republic_market_oversight_base_monthly_increase
+- republic_market_oversight_skill_monthly_increase
+- republic_market_oversight_sell_price_base_monthly_increase
+- republic_market_oversight_sell_price_skill_monthly_increase
+- republic_trade_market_oversight_ambition_improved_task_monthly_bonus
+- republic_market_oversight_court_of_the_towns_monthly_bonus
+- republic_market_oversight_monthly_increase
+- republic_market_oversight_final_value
+- republic_market_oversight_sell_price_monthly_increase
+- republic_market_oversight_sell_price_final_value
+- republic_market_oversight_value_side_effect_loss
+- reckoning_school_collect_taxes_bonus
+- reckoning_school_develop_county_bonus
+- reckoning_school_promote_culture_bonus
 - steward_collect_taxes_scale_base
 - steward_collect_taxes_perk_bonus_scale
 - steward_collect_taxes_erudition_bonus_scale
@@ -3716,10 +4043,12 @@
 - steward_collect_taxes_bonus_tax_income
 - steward_develop_county_full_progress
 - steward_develop_county_current_progress
+- steward_develop_county_current_level
 - steward_develop_county_base
 - steward_develop_county_monthly_increase
 - steward_develop_county_base_total
 - steward_develop_county_modifier_scale
+- manor_chamber_blocks_steward_develop_county_bonus
 - steward_develop_county_monthly_increase_friend_bonus
 - steward_develop_county_monthly_increase_best_friend_bonus
 - steward_develop_county_monthly_increase_rival_bonus
@@ -3731,7 +4060,7 @@
 - steward_develop_county_total
 - steward_develop_county_tribal_penalty
 - steward_develop_county_perk_bonus_modifier_scale
-- current_development_penalty
+- current_prosperity_penalty
 - steward_promote_culture_monthly_increase
 - steward_promote_culture_contextual_bonuses
 - steward_promote_culture_monthly_increase_friend_bonus
@@ -3757,7 +4086,7 @@
 - promote_culture_defiant_ambushers_penalty
 - promote_culture_shuubiyya_penalty
 - promote_culture_allowed_nomad_settlement_penalty
-- promote_culture_development_penalty
+- promote_culture_prosperity_penalty
 - conversion_culture_easier_to_culture_change_with_heritage_value
 - conversion_culture_resistant_to_culture_change_without_heritage_value
 - conversion_culture_resistant_to_culture_change
@@ -3834,6 +4163,395 @@
 - destiny_score_interesting_traits
 - destiny_score_interesting_circumstances
 
+### district_values.txt（3 条目）
+
+- county_potential_trade_good_count_value
+- ai_capital_rural_districts_refund_value
+- ai_capital_household_district_refund_value
+
+### gdp_achievement_values.txt（2 条目）
+
+- ep5_04_there_can_be_only_one_achievement_monopoly_count_value
+- ep5_10_the_spice_must_flow_achievement_volume_value
+
+### gdp_activity_values.txt（1 条目）
+
+- gdp_merchant_confucian_university_visit_discount_loc
+
+### gdp_burgher_values.txt（12 条目）
+
+- gdp_league_accession_cohesion_value
+- gdp_league_departure_cohesion_value
+- burgher_refusal_revolt_chance_value
+- burgher_crown_debt_value
+- burgher_liege_legitimacy_shortfall_value
+- burgher_county_militia_value
+- burgher_leader_pikemen_stacks_value
+- burgher_leader_bowmen_stacks_value
+- burgher_revoke_liberties_opinion_value
+- burgher_garrison_suppression_value
+- gdp_civic_agitation_league_cohesion_success_value
+- gdp_civic_agitation_resolution_chance_value
+
+### gdp_domicile_values.txt（50 条目）
+
+- merchant_company_main_cost_tier_2_value
+- merchant_company_main_cost_tier_3_value
+- merchant_company_main_cost_tier_4_value
+- merchant_company_main_cost_tier_5_value
+- merchant_company_main_cost_tier_6_value
+- merchant_company_main_prestige_cost_tier_2_value
+- merchant_company_main_prestige_cost_tier_3_value
+- merchant_company_main_prestige_cost_tier_4_value
+- merchant_company_main_prestige_cost_tier_5_value
+- merchant_company_main_prestige_cost_tier_6_value
+- gdp_merchant_company_liquidation_value
+- company_external_prestige_cost_tier_2_value
+- company_external_prestige_cost_tier_3_value
+- company_external_prestige_cost_tier_4_value
+- company_external_prestige_cost_tier_5_value
+- company_external_prestige_cost_tier_6_value
+- merchant_company_ai_capstone_value
+- merchant_company_ai_income_new_internal_value
+- merchant_company_ai_main_upgrade_value
+- merchant_company_ai_capacity_new_internal_value
+- merchant_company_ai_preferred_new_internal_value
+- merchant_company_ai_normal_new_internal_value
+- merchant_company_ai_income_internal_value
+- merchant_company_ai_capacity_internal_value
+- merchant_company_ai_preferred_internal_value
+- merchant_company_ai_normal_internal_value
+- merchant_company_ai_guild_external_upgrade_value
+- merchant_company_ai_external_upgrade_value
+- merchant_company_ai_filler_internal_value
+- merchant_company_ai_off_trade_branch_internal_value
+- merchant_company_upgrade_cost_tier_1_value
+- merchant_company_upgrade_cost_tier_2_value
+- merchant_company_upgrade_cost_tier_3_value
+- merchant_company_upgrade_cost_tier_4_value
+- merchant_company_upgrade_cost_tier_5_value
+- merchant_company_upgrade_cost_tier_6_value
+- gdp_location_building_refund_tier_1_value
+- gdp_location_building_refund_tier_2_value
+- gdp_location_building_refund_tier_3_value
+- gdp_location_building_refund_tier_4_value
+- gdp_location_building_refund_tier_5_value
+- gdp_location_building_refund_tier_6_value
+- gdp_company_contractors_lodge_cost_mult_value
+- merchant_company_move_cost_value
+- merchant_company_move_range_value
+- company_infirmary_court_physician_salary_reduction_01
+- company_infirmary_court_physician_salary_reduction_02
+- company_infirmary_court_physician_salary_reduction_03
+- company_infirmary_court_physician_salary_reduction_04
+- company_infirmary_court_physician_salary_reduction_05
+
+### gdp_merchant_company_direction_gui_values.txt（2 条目）
+
+- merchant_company_direction_header_progress_ennobled_value
+- merchant_company_direction_header_progress_rapacious_value
+
+### gdp_merchant_trade_opportunity_values.txt（18 条目）
+
+- seek_trade_opportunity_decision_cooldown_years_value
+- challenge_competitor_trade_opportunity_weight_value
+- promote_goods_trade_opportunity_weight_value
+- market_investment_trade_opportunity_weight_value
+- exploit_upheaval_trade_opportunity_weight_value
+- alleviate_upheaval_trade_opportunity_weight_value
+- support_guilds_trade_opportunity_weight_value
+- seek_debtors_trade_opportunity_weight_value
+- sabotage_competition_trade_opportunity_weight_value
+- build_category_connections_trade_opportunity_weight_value
+- disrupt_charter_trade_opportunity_weight_value
+- silk_road_network_trade_opportunity_weight_value
+- silk_road_caravan_trade_opportunity_weight_value
+- entrepot_buy_trade_opportunity_weight_value
+- entrepot_sell_trade_opportunity_weight_value
+- negotiate_tolls_trade_opportunity_weight_value
+- smuggle_goods_trade_opportunity_weight_value
+- trade_opportunity_contract_tier_value
+
+### gdp_merchant_values.txt（110 条目）
+
+- merchant_purchase_land_cost_scale_by_era
+- merchant_purchase_land_county_cost_value
+- merchant_purchase_land_duchy_cost_value
+- merchant_purchase_land_total_cost_value
+- merchant_drive_them_hard_dread_cost_loss_value
+- merchant_sponsor_construction_prestige_gain_value
+- merchant_sponsor_construction_actor_cost_value
+- merchant_join_realm_cost_value
+- merchant_promote_diligence_decision_cooldown_years_value
+- merchant_promote_diligence_unity_loss_value
+- merchant_promote_diligence_decision_prestige_cost_value
+- merchant_competitive_pressure_hard_bargaining_max_add_value
+- merchant_competitive_pressure_current_max_value
+- merchant_competitive_pressure_value
+- merchant_chance_score_value
+- sponsor_war_value
+- merchant_marriage_gold_value
+- merchant_marriage_prestige_value
+- merchant_competetiveness_prestige_value
+- gdp_merchant_ai_market_recruit_gold_value
+- gdp_merchant_ai_prestige_purchase_gold_value
+- gdp_merchant_ai_prestige_purchase_target_value
+- find_curio_prestige_reward_value
+- menagerie_acquisition_prestige_reward_value
+- merchant_contract_prestige_reward_mult_value
+- merchant_contract_gold_reward_value
+- merchant_contract_gold_reward_critical_value
+- merchant_charter_abuse_patron_reaction_value
+- merchant_charter_benefit_patron_reaction_value
+- merchant_charter_abuse_stance_shown_value
+- merchant_charter_abuse_stance_level_value
+- gdp_capital_province_merchant_count_value
+- entice_merchants_order_value
+- gdp_seed_capital_investment_value
+- gdp_seed_capital_investment_hook_value
+- merchant_monopoly_trade_expertise_acceptance_value
+- merchant_monopoly_held_penalty_value
+- republic_monopoly_num_of_monopolies_value
+- league_monopoly_num_of_monopolies_value
+- merchant_monopoly_num_of_monopolies_value
+- merchant_monopoly_base_gold_cost_value
+- merchant_monopoly_high_gold_cost_value
+- gdp_merchant_ai_trade_monopoly_chance_per_mille_value
+- gdp_republic_ai_trade_monopoly_chance_per_mille_value
+- gdp_trade_league_ai_trade_monopoly_chance_per_mille_value
+- gdp_merchant_ai_trade_monopoly_slots_value
+- gdp_republic_ai_trade_monopoly_slots_value
+- gdp_trade_league_ai_trade_monopoly_slots_value
+- gdp_ai_trade_monopoly_category_preference_value
+- gdp_merchant_caravaneer_xp_min_markets_value
+- gdp_merchant_yearly_caravaneer_xp_value
+- company_debt_grace_flag_months_value
+- company_debt_direction_loss_value
+- company_size_medium_threshold_value
+- company_size_large_threshold_value
+- company_size_huge_threshold_value
+- starting_company_size_potential_value
+- starting_acumen_value
+- trade_expertise_xp_five_levels_value
+- trade_expertise_xp_monumental_value
+- gdp_tgf_sold_expertise_xp_value
+- gdp_tgf_renown_tier_value
+- gdp_trader_pilgrimage_expertise_reward_value
+- gdp_trader_feast_expertise_reward_value
+- gdp_trader_hunt_expertise_reward_value
+- early_starting_expertise_value
+- mid_starting_expertise_value
+- late_starting_expertise_value
+- company_size_value
+- merchant_court_position_company_size_mult
+- merchant_associate_task_cost
+- gdp_merchant_unity_intermarriage_value
+- gdp_merchant_unity_noble_marriage_value
+- commission_trade_route_yearly_chance
+- gdp_average_duchy_prosperity_value
+- gdp_duchy_county_count_value
+- gdp_share_market_insights_opinion
+- gdp_steal_market_insights_category_count
+- merchant_company_spawn_threshold_value
+- max_desired_merchant_companies_value
+- merchant_company_republic_headroom_value
+- merchant_companies_to_cull_value
+- gdp_merchant_company_strength_value
+- merchant_current_trade_routes_value
+- merchant_max_trade_routes_value
+- binding_oaths_broken_word_acumen_loss_value
+- gdp_loan_money_max_gold_value
+- gdp_loan_money_full_gold_value
+- gdp_loan_money_gold_value
+- gdp_loan_principal_value
+- gdp_loan_open_interest_rate_value
+- gdp_loan_disguised_interest_rate_value
+- gdp_loan_open_interest_premium_value
+- gdp_loan_disguised_interest_premium_value
+- gdp_loan_disguised_principal_value
+- gdp_loan_disguised_interest_portion_value
+- gdp_interest_free_loan_opinion_value
+- gdp_loan_ruinous_debt_value
+- gdp_loan_less_interest_value
+- gdp_commission_route_cost_value
+- gdp_commission_route_reimbursement_value
+- gdp_trade_route_maturity_milestones_value
+- bailiff_collect_loans_payment_value
+- gdp_merchant_sell_artifact_value
+- gdp_sponsor_merchant_company_cost_small_value
+- gdp_sponsor_merchant_company_cost_medium_value
+- gdp_sponsor_merchant_company_cost_large_value
+- gdp_sponsor_merchant_company_cost_huge_value
+- merchant_trade_hook_ransom_repayment_value
+- merchant_trade_hook_sponsor_repayment_value
+
+### gdp_merchant_visit_holding_values.txt（4 条目）
+
+- visit_holding_lock_days
+- visit_holding_associate_recruit_gold_min
+- visit_holding_associate_recruit_gold_max
+- visit_holding_associate_physician_gold_value
+
+### gdp_republic_ai_values.txt（26 条目）
+
+- ai_will_do_republic_type_communal_value
+- ai_will_do_republic_type_civic_value
+- ai_will_do_republic_type_popular_value
+- ai_will_do_republic_type_maritime_value
+- ai_will_do_republic_type_noble_value
+- ai_will_do_republic_type_roman_value
+- gdp_ai_landless_republic_maa_expense_gold_share_value
+- gdp_ai_landless_republic_maa_expense_gold_ideal_share_value
+- law_ai_will_do_republic_assembly_term_length_1_value
+- law_ai_will_do_republic_assembly_term_length_2_value
+- law_ai_will_do_republic_assembly_term_length_3_value
+- law_ai_will_do_republic_assembly_term_length_4_value
+- law_ai_will_do_republic_assembly_term_length_5_value
+- law_ai_will_do_republic_assembly_term_length_indefinite_value
+- ai_will_do_republic_assembly_composition_patrician_value
+- ai_will_do_republic_assembly_composition_council_value
+- ai_will_do_republic_assembly_composition_general_value
+- ai_will_do_republic_assembly_composition_parliament_value
+- ai_will_do_republic_assembly_composition_communal_value
+- ai_will_do_republic_assembly_composition_roman_senate_value
+- ai_will_do_republic_assembly_authority_constitutional_value
+- ai_will_do_republic_assembly_authority_legislative_value
+- ai_will_do_republic_assembly_authority_ceremonial_value
+- ai_approval_increase_senate_size_value
+- ai_approval_decrease_senate_size_value
+- ai_law_approval_self_proposer_value
+
+### gdp_republic_values.txt（106 条目）
+
+- gdp_attacking_republic_cb_cost_value
+- gdp_republic_tier_modifier_scale_value
+- gdp_trade_league_monthly_change_base_value
+- gdp_trade_league_monthly_change_per_title_value
+- gdp_confederation_title_member_count_value
+- gdp_league_leadership_bribe_value
+- gdp_league_expulsion_bribe_value
+- gdp_trade_league_automatic_leader_score_value
+- gdp_republic_revoke_title_law_monetary_cost_value
+- gdp_republic_pass_title_law_monetary_cost_value
+- gdp_republic_revoke_title_law_cost_scale_value
+- ai_law_approval_republic_base_value
+- republic_assembly_preparation_approval_value
+- republic_procedural_advantage_approval_value
+- republic_caucus_room_approval_value
+- republic_pledged_law_support_approval_value
+- ai_law_approval_opinion_value
+- ai_law_approval_house_relation_value
+- ai_law_grace_period_value
+- ai_law_approval_republic_army_organization_levy_value
+- ai_law_approval_republic_army_organization_maa_value
+- ai_law_approval_republic_army_organization_merc_value
+- ai_law_approval_title_revocation_1_value
+- ai_law_approval_title_revocation_2_value
+- ai_law_approval_retract_vassal_1_value
+- ai_law_approval_retract_vassal_2_value
+- ai_law_approval_vassal_refusal_1_value
+- ai_law_approval_vassal_refusal_2_value
+- ai_law_approval_despot_bonus_value
+- ai_law_approval_despot_penalty_value
+- ai_law_approval_despot_mild_bonus_value
+- ai_law_approval_despot_mild_penalty_value
+- ai_law_approval_democratic_bonus_value
+- ai_law_approval_democratic_penalty_value
+- ai_law_approval_democratic_mild_penalty_value
+- ai_law_approval_criminal_bonus_value
+- ai_law_approval_criminal_penalty_value
+- ai_law_approval_criminal_mild_bonus_value
+- ai_law_approval_criminal_mild_penalty_value
+- ai_law_approval_banishment_1_value
+- ai_law_approval_banishment_2_value
+- ai_law_approval_banishment_3_value
+- ai_law_approval_execution_1_value
+- ai_law_approval_execution_2_value
+- ai_law_approval_execution_3_value
+- ai_law_approval_assembly_composition_patrician_value
+- ai_law_approval_assembly_composition_council_value
+- ai_law_approval_assembly_composition_general_value
+- ai_law_approval_assembly_composition_parliament_value
+- ai_law_approval_assembly_authority_constitutional_value
+- ai_law_approval_assembly_authority_legislative_value
+- ai_law_approval_assembly_authority_ceremonial_value
+- ai_law_approval_assembly_voting_thresholds_simple_majority_value
+- ai_law_approval_assembly_voting_thresholds_large_majority_value
+- ai_law_approval_increase_term_length_value
+- ai_law_approval_decrease_term_length_value
+- ai_law_approval_republic_end_term_law_1_value
+- ai_law_approval_republic_end_term_law_2_value
+- ai_law_approval_republic_end_term_law_3_value
+- ai_approval_republic_trade_specialization_trading_value
+- ai_approval_republic_trade_specialization_else_value
+- ai_decree_approval_opinion_value
+- ai_decree_approval_house_relation_value
+- ai_decree_approval_punitive_reluctance_value
+- ai_decree_approval_indicted_kin_value
+- ai_decree_approval_indicted_pledged_kin_value
+- ai_decree_approval_indicted_character_value
+- ai_decree_approval_indicted_grounds_value
+- ai_decree_approval_proscription_grounds_value
+- republic_commerce_ai_score_value
+- republic_aggrandizement_ai_score_value
+- republic_communal_ai_score_value
+- republic_signorial_ai_score_value
+- republic_agitation_ai_score_value
+- total_republic_law_prestige_cost
+- total_republic_law_gold_cost
+- base_republic_decree_gold_cost
+- total_republic_decree_gold_cost
+- total_republic_decree_prestige_cost
+- total_republic_proscription_decree_prestige_cost
+- republic_aquire_land_gold_bribe_value
+- republic_aquire_land_treasury_bribe_value
+- title_held_for_term_length_value
+- republic_senate_size_max_value
+- patrician_house_score_value
+- council_scaled_republic_value
+- gdp_republic_legacy_change_law_cost_display_value
+- gdp_republic_legacy_cheaper_great_plaza_contributions_display_value
+- gdp_republic_large_levies_perk_law_cost_display_value
+- overthrow_government_start_public_opinion_value
+- overthrow_government_start_control_value
+- great_plaza_building_base_starting_cost
+- great_plaza_building_base_contribution_cost
+- gdp_republic_trade_experience_modifier_scale_value
+- gdp_republic_trade_post_modifier_scale_value
+- gdp_popular_opinion_modifier_scale_value
+- gdp_count_realm_patrician_houses_aggrandizement
+- gdp_count_realm_patrician_houses_signorial
+- gdp_count_realm_patrician_houses_agitation
+- gdp_count_realm_patrician_houses_communal
+- gdp_profit_route_count_value
+- gdp_patrician_profit_route_count_value
+- gdp_realm_profit_route_count_value
+- gdp_patrician_trade_post_count_value
+- gdp_realm_trade_post_count_value
+- republic_slander_election_value
+
+### gdp_toll_values.txt（15 条目）
+
+- ai_market_owner_no_tolls_desire
+- ai_market_owner_minimal_tolls_desire
+- ai_market_owner_low_tolls_desire
+- ai_market_owner_medium_tolls_desire
+- ai_market_owner_high_tolls_desire
+- ai_market_owner_very_high_tolls_desire
+- request_toll_exception_tier_cut_value
+- grant_toll_exception_tier_cut_value
+- request_toll_exception_opinion_value
+- grant_toll_exception_opinion_value
+- request_toll_exception_lost_tolls_value
+- request_toll_exception_lost_income_acceptance_value
+- request_toll_exception_recipient_debt_acceptance_value
+- market_toll_level_minus_1_value
+- market_toll_level_minus_2_value
+
+### gdp_trade_post_building_values.txt（0 条目）
+
+（无顶层块）
+
 ### pam_heresy_values.txt（7 条目）
 
 - pam_heresy_pulse_cooldown_days
@@ -3888,7 +4606,7 @@
 - pam_five_bonds_tally_value
 - pam_bedside_support_avert_chance_value
 
-### pam_values.txt（284 条目）
+### pam_values.txt（290 条目）
 
 - pam_investiture_crisis_duration_years
 - pam_investiture_crisis_years_left_value
@@ -3949,6 +4667,7 @@
 - medium_spiritual_fulfillment_loss
 - major_spiritual_fulfillment_loss
 - massive_spiritual_fulfillment_loss
+- pam_largest_branched_rite_holding_tenet_counties_value
 - miniscule_tenet_popularity_gain
 - minor_tenet_popularity_gain
 - medium_tenet_popularity_gain
@@ -3959,6 +4678,8 @@
 - medium_tenet_popularity_loss
 - major_tenet_popularity_loss
 - massive_tenet_popularity_loss
+- prohibited_tenet_popularity_ceiling
+- pam_tenet_popularity_gap_to_prohibited_ceiling_value
 - pam_personal_tenet_popularity_gain
 - pam_personal_tenet_popularity_loss
 - pam_evangelize_tenet_popularity_gain
@@ -3967,6 +4688,7 @@
 - pam_faith_tenet_popularity_value
 - pam_tenet_popularity_impact_value
 - pam_tenet_unpopularity_impact_value
+- pam_ec_permit_option_ai_weight_value
 - pam_christian_vice_restraint_value
 - pam_ec_sway_tenet_impact_value
 - tenet_popularity_rite_created_gain
@@ -4035,6 +4757,8 @@
 - ecumenical_council_doctrine_attendee_base_support_value
 - ecumenical_council_doctrine_social_alignment_value
 - ecumenical_council_doctrine_attendee_support_value
+- ecumenical_council_current_proposal_attendee_support_value
+- ecumenical_council_current_proposal_innovator_threshold_value
 - ecumenical_council_doctrine_change_divergence_value
 - ecumenical_council_doctrine_host_pick_value
 - ecumenical_council_doctrine_pick_step_desire_value
@@ -4107,7 +4831,6 @@
 - ecumenical_council_innovator_sort_value
 - ecumenical_council_conservative_sort_value
 - pam_ecumenical_council_rite_champion_sort_value
-- ecclesiastical_domicile_building_ai_modifier_value
 - pam_sell_claim_gold_cost_value
 - pam_sell_claim_piety_cost_value
 - prevent_schism_requirement_value
@@ -4127,6 +4850,7 @@
 - demand_conversion_minister_rites_treasury_cost_value
 - lift_excommunication_interaction_cost_value
 - take_vows_dynasty_prestige_cost_value
+- take_vows_prestige_cost_value
 - attempt_conversion_of_local_ruler_piety_cost_value
 - pam_sway_ruler_to_my_rite_cost_value
 - pam_request_legitimacy_cost_value
@@ -4181,6 +4905,10 @@
 - passive_rite_learning_travel_province_chance
 - passive_rite_learning_hor_yearly_chance
 
+### regular_building_values.txt（1 条目）
+
+- roman_law_university_cost_mult
+
 ### situation_values.txt（12 条目）
 
 - minimal_situation_catalyst_loss
@@ -4208,10 +4936,12 @@
 
 - tgp_festival_scheduling_value
 
-### tgp_great_project_values.txt（8 条目）
+### tgp_great_project_values.txt（10 条目）
 
 - great_project_base_starting_cost
 - great_project_base_contribution_cost
+- great_project_base_piety_starting_cost
+- great_project_base_piety_contribution_cost
 - great_wall_treasury_cost_value
 - great_wall_gold_cost_value
 - common_great_project_construction_time_multiplier_value
@@ -4358,23 +5088,24 @@
 - mandala_contract_aspect_multiplier
 - mandala_scheme_minor_piety_cost_value
 
-### tgp_natural_disaster_values.txt（25 条目）
+### tgp_natural_disaster_values.txt（26 条目）
 
 - natural_disaster_contributions_cost_value
 - natural_disaster_contributions_cost_treasury_value
 - natural_disaster_contributions_cost_base_discount
 - natural_disaster_realm_counties_in_situation_value
-- natural_disaster_realm_counties_total_development_contributions_cost_factor
+- natural_disaster_realm_counties_total_prosperity_contributions_cost_factor
 - natural_disaster_legitimacy_loss_value
 - natural_disaster_great_project_mandatory_investment_legitimacy_gain_value
 - natural_disaster_great_project_optional_investment_legitimacy_gain_value
-- natural_disaster_earthquake_epicenter_development_loss_value
-- natural_disaster_earthquake_development_loss_value
-- natural_disaster_flood_development_loss_value
-- natural_disaster_flood_development_loss_fraction_value
+- natural_disaster_earthquake_epicenter_prosperity_loss_value
+- natural_disaster_earthquake_prosperity_loss_value
+- natural_disaster_flood_prosperity_loss_value
+- natural_disaster_flood_prosperity_loss_fraction_value
 - natural_disaster_flood_fertility_loss_value
 - natural_disaster_earthquake_control_loss_value
 - natural_disaster_flood_control_loss_value
+- natural_disaster_province_size_loss_value
 - natural_disaster_army_supply_loss_value
 - natural_disaster_army_deplete_value
 - natural_disaster_earthquake_max_severity
@@ -4404,7 +5135,7 @@
 - excessive_gold_tribute_value
 - tribute_generic_legitimacy_reward_value
 
-### tgp_values.txt（52 条目）
+### tgp_values.txt（55 条目）
 
 - house_relation_actions_to_damage_level_threshold_value
 - house_relation_damage_minor_value
@@ -4456,7 +5187,10 @@
 - silk_road_mongol_devastation_negative_value
 - silk_road_byzantium_destroyed_negative_value
 - silk_road_steppe_iranian_intermezzo_unrest_negative_value
+- silk_road_persia_civil_war_negative_value
+- silk_road_china_destroyed_negative_value
 - silk_road_steppe_china_consolidation_negative_value
+- silk_road_china_civil_war_negative_value
 - treasury_budget_law_change_legitimacy_loss_base
 
 ### tutorial_values.txt（2 条目）

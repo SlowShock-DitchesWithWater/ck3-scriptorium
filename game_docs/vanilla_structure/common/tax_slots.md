@@ -1,6 +1,6 @@
 # common/tax_slots 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：4（其中 Jomini 解析 2 个）
 - 顶层块条目总数：9，跨文件唯一条目 9
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
@@ -10,7 +10,7 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `obligations/_tax_obligation.info` | 2056 | - | - | 纯文档（非 Jomini） |
-| `obligations/clan_tax_collector.txt` | 5986 | 8 | 0 | jomini |
+| `obligations/clan_tax_collector.txt` | 5999 | 8 | 0 | jomini |
 | `types/00_tax_slot_types.txt` | 1867 | 1 | 0 | jomini |
 | `types/_tax_slot_type.info` | 3201 | - | - | 纯文档（非 Jomini） |
 

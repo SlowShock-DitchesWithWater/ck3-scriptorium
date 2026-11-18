@@ -1,109 +1,110 @@
 # common/religion 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：80（其中 Jomini 解析 68 个）
-- 顶层块条目总数：983，跨文件唯一条目 914
+- 顶层块条目总数：1006，跨文件唯一条目 936
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `doctrine_category_types/00_doctrine_category_types.txt` | 281 | 6 | 0 | jomini |
+| `doctrine_category_types/00_doctrine_category_types.txt` | 317 | 7 | 0 | jomini |
 | `doctrine_category_types/_doctrine_category_types.info` | 552 | - | - | 纯文档（非 Jomini） |
-| `doctrine_group_types/00_doctrine_group_types.txt` | 5215 | 49 | 0 | jomini |
+| `doctrine_group_types/00_doctrine_group_types.txt` | 5765 | 54 | 0 | jomini |
 | `doctrine_group_types/_doctrine_group_types.info` | 2214 | - | - | 纯文档（非 Jomini） |
 | `doctrine_types/10_doctrines_religions.txt` | 984 | 4 | 0 | jomini |
-| `doctrine_types/20_doctrines.txt` | 60031 | 85 | 0 | jomini |
+| `doctrine_types/20_doctrines.txt` | 64147 | 89 | 0 | jomini |
 | `doctrine_types/20_doctrines_islam.txt` | 1988 | 4 | 0 | jomini |
-| `doctrine_types/20_doctrines_judaism.txt` | 3410 | 4 | 0 | jomini |
-| `doctrine_types/20_doctrines_zoroastrianism.txt` | 840 | 2 | 0 | jomini |
-| `doctrine_types/40_doctrines_special.txt` | 12253 | 27 | 0 | jomini |
+| `doctrine_types/20_doctrines_judaism.txt` | 3720 | 4 | 0 | jomini |
+| `doctrine_types/20_doctrines_zoroastrianism.txt` | 1057 | 2 | 0 | jomini |
+| `doctrine_types/40_doctrines_special.txt` | 24836 | 39 | 0 | jomini |
 | `doctrine_types/_doctrine_types.info` | 12834 | - | - | 纯文档（非 Jomini） |
-| `faith_types/00_faith_types.txt` | 118710 | 103 | 0 | jomini |
+| `faith_types/00_faith_types.txt` | 119212 | 104 | 0 | jomini |
 | `faith_types/_faith_types.info` | 4770 | - | - | 纯文档（非 Jomini） |
 | `great_holy_wars.info` | 2682 | - | - | 纯文档（非 Jomini） |
-| `holy_site_types/00_holy_site_types.txt` | 143456 | 273 | 0 | jomini |
-| `holy_site_types/01_dynamic_holy_site_types.txt` | 5129 | 10 | 0 | jomini |
-| `holy_site_types/_holy_site_types.info` | 3621 | - | - | 纯文档（非 Jomini） |
+| `holy_site_types/00_holy_site_types.txt` | 229736 | 273 | 0 | jomini |
+| `holy_site_types/01_dynamic_holy_site_types.txt` | 7709 | 10 | 0 | jomini |
+| `holy_site_types/_holy_site_types.info` | 3631 | - | - | 纯文档（非 Jomini） |
 | `religion_family_types/00_religion_family_types.txt` | 1483 | 4 | 0 | jomini |
 | `religion_family_types/_religion_family_types.info` | 1693 | - | - | 纯文档（非 Jomini） |
-| `religion_types/00_akom.txt` | 28078 | 1 | 0 | jomini |
-| `religion_types/00_aluk.txt` | 28017 | 1 | 0 | jomini |
-| `religion_types/00_baltic.txt` | 28311 | 1 | 0 | jomini |
-| `religion_types/00_basque_paganism.txt` | 28742 | 1 | 0 | jomini |
-| `religion_types/00_bilikuism.txt` | 29889 | 1 | 0 | jomini |
-| `religion_types/00_bimoism.txt` | 28374 | 1 | 0 | jomini |
-| `religion_types/00_bon.txt` | 28012 | 1 | 0 | jomini |
-| `religion_types/00_buddhism.txt` | 28769 | 1 | 0 | jomini |
-| `religion_types/00_christianity.txt` | 29656 | 1 | 0 | jomini |
-| `religion_types/00_confucianism.txt` | 28527 | 1 | 0 | jomini |
-| `religion_types/00_dayawism.txt` | 28382 | 1 | 0 | jomini |
-| `religion_types/00_donyipoloism.txt` | 28409 | 1 | 0 | jomini |
-| `religion_types/00_dualism.txt` | 28954 | 1 | 0 | jomini |
-| `religion_types/00_finno_ugric.txt` | 28632 | 1 | 0 | jomini |
-| `religion_types/00_germanic.txt` | 29345 | 1 | 0 | jomini |
-| `religion_types/00_hantuism.txt` | 27974 | 1 | 0 | jomini |
-| `religion_types/00_hellenism.txt` | 28689 | 1 | 0 | jomini |
-| `religion_types/00_hinduism.txt` | 28728 | 1 | 0 | jomini |
-| `religion_types/00_hmongism.txt` | 28055 | 1 | 0 | jomini |
-| `religion_types/00_islam.txt` | 29384 | 1 | 0 | jomini |
-| `religion_types/00_jainism.txt` | 28590 | 1 | 0 | jomini |
-| `religion_types/00_judaism.txt` | 29070 | 1 | 0 | jomini |
-| `religion_types/00_kaharingan.txt` | 28445 | 1 | 0 | jomini |
-| `religion_types/00_kamuyism.txt` | 28556 | 1 | 0 | jomini |
-| `religion_types/00_kushitism.txt` | 28624 | 1 | 0 | jomini |
-| `religion_types/00_magyarism.txt` | 28152 | 1 | 0 | jomini |
-| `religion_types/00_moism.txt` | 28019 | 1 | 0 | jomini |
-| `religion_types/00_muism.txt` | 27869 | 1 | 0 | jomini |
-| `religion_types/00_mundhumism.txt` | 28706 | 1 | 0 | jomini |
-| `religion_types/00_north_african.txt` | 29488 | 1 | 0 | jomini |
-| `religion_types/00_paganism.txt` | 28300 | 1 | 0 | jomini |
-| `religion_types/00_qiangic.txt` | 28311 | 1 | 0 | jomini |
-| `religion_types/00_satsana_phi.txt` | 28634 | 1 | 0 | jomini |
-| `religion_types/00_shamanism.txt` | 28062 | 1 | 0 | jomini |
-| `religion_types/00_shintoism.txt` | 28212 | 1 | 0 | jomini |
-| `religion_types/00_siberian.txt` | 28939 | 1 | 0 | jomini |
-| `religion_types/00_slavic.txt` | 28207 | 1 | 0 | jomini |
-| `religion_types/00_taoism.txt` | 28317 | 1 | 0 | jomini |
-| `religion_types/00_tengrism.txt` | 28421 | 1 | 0 | jomini |
-| `religion_types/00_tolotang.txt` | 28329 | 1 | 0 | jomini |
-| `religion_types/00_utaki.txt` | 28209 | 1 | 0 | jomini |
-| `religion_types/00_waaqism.txt` | 28285 | 1 | 0 | jomini |
-| `religion_types/00_west_african.txt` | 28539 | 1 | 0 | jomini |
-| `religion_types/00_west_african_bori.txt` | 28874 | 1 | 0 | jomini |
-| `religion_types/00_west_african_orisha.txt` | 28324 | 1 | 0 | jomini |
-| `religion_types/00_west_african_roog.txt` | 28948 | 1 | 0 | jomini |
-| `religion_types/00_yazidi.txt` | 29016 | 1 | 0 | jomini |
-| `religion_types/00_zoroastrianism.txt` | 29692 | 1 | 0 | jomini |
-| `religion_types/00_zunism.txt` | 28280 | 1 | 0 | jomini |
+| `religion_types/00_akom.txt` | 28114 | 1 | 0 | jomini |
+| `religion_types/00_aluk.txt` | 28053 | 1 | 0 | jomini |
+| `religion_types/00_baltic.txt` | 28347 | 1 | 0 | jomini |
+| `religion_types/00_basque_paganism.txt` | 28778 | 1 | 0 | jomini |
+| `religion_types/00_bilikuism.txt` | 29881 | 1 | 0 | jomini |
+| `religion_types/00_bimoism.txt` | 28410 | 1 | 0 | jomini |
+| `religion_types/00_bon.txt` | 28048 | 1 | 0 | jomini |
+| `religion_types/00_buddhism.txt` | 28805 | 1 | 0 | jomini |
+| `religion_types/00_christianity.txt` | 29693 | 1 | 0 | jomini |
+| `religion_types/00_confucianism.txt` | 28571 | 1 | 0 | jomini |
+| `religion_types/00_dayawism.txt` | 28415 | 1 | 0 | jomini |
+| `religion_types/00_donyipoloism.txt` | 28445 | 1 | 0 | jomini |
+| `religion_types/00_dualism.txt` | 28994 | 1 | 0 | jomini |
+| `religion_types/00_finno_ugric.txt` | 28668 | 1 | 0 | jomini |
+| `religion_types/00_germanic.txt` | 29382 | 1 | 0 | jomini |
+| `religion_types/00_hantuism.txt` | 28010 | 1 | 0 | jomini |
+| `religion_types/00_hellenism.txt` | 28728 | 1 | 0 | jomini |
+| `religion_types/00_hinduism.txt` | 28767 | 1 | 0 | jomini |
+| `religion_types/00_hmongism.txt` | 28091 | 1 | 0 | jomini |
+| `religion_types/00_islam.txt` | 29460 | 1 | 0 | jomini |
+| `religion_types/00_jainism.txt` | 28824 | 1 | 0 | jomini |
+| `religion_types/00_judaism.txt` | 29113 | 1 | 0 | jomini |
+| `religion_types/00_kaharingan.txt` | 28481 | 1 | 0 | jomini |
+| `religion_types/00_kamuyism.txt` | 28592 | 1 | 0 | jomini |
+| `religion_types/00_kushitism.txt` | 28660 | 1 | 0 | jomini |
+| `religion_types/00_magyarism.txt` | 28188 | 1 | 0 | jomini |
+| `religion_types/00_moism.txt` | 28055 | 1 | 0 | jomini |
+| `religion_types/00_muism.txt` | 27905 | 1 | 0 | jomini |
+| `religion_types/00_mundhumism.txt` | 28742 | 1 | 0 | jomini |
+| `religion_types/00_north_african.txt` | 29524 | 1 | 0 | jomini |
+| `religion_types/00_paganism.txt` | 28336 | 1 | 0 | jomini |
+| `religion_types/00_qiangic.txt` | 28347 | 1 | 0 | jomini |
+| `religion_types/00_satsana_phi.txt` | 28670 | 1 | 0 | jomini |
+| `religion_types/00_shamanism.txt` | 28098 | 1 | 0 | jomini |
+| `religion_types/00_shintoism.txt` | 28248 | 1 | 0 | jomini |
+| `religion_types/00_siberian.txt` | 28975 | 1 | 0 | jomini |
+| `religion_types/00_slavic.txt` | 28243 | 1 | 0 | jomini |
+| `religion_types/00_taoism.txt` | 28353 | 1 | 0 | jomini |
+| `religion_types/00_tengrism.txt` | 28457 | 1 | 0 | jomini |
+| `religion_types/00_tolotang.txt` | 28365 | 1 | 0 | jomini |
+| `religion_types/00_utaki.txt` | 28245 | 1 | 0 | jomini |
+| `religion_types/00_waaqism.txt` | 28321 | 1 | 0 | jomini |
+| `religion_types/00_west_african.txt` | 28575 | 1 | 0 | jomini |
+| `religion_types/00_west_african_bori.txt` | 28910 | 1 | 0 | jomini |
+| `religion_types/00_west_african_orisha.txt` | 28360 | 1 | 0 | jomini |
+| `religion_types/00_west_african_roog.txt` | 28984 | 1 | 0 | jomini |
+| `religion_types/00_yazidi.txt` | 29172 | 1 | 0 | jomini |
+| `religion_types/00_zoroastrianism.txt` | 29729 | 1 | 0 | jomini |
+| `religion_types/00_zunism.txt` | 28316 | 1 | 0 | jomini |
 | `religion_types/_religion_types.info` | 5564 | - | - | 纯文档（非 Jomini） |
 | `rite_icons/00_rite_icons.txt` | 40560 | 75 | 0 | jomini |
 | `rite_icons/_rite_icons.info` | 824 | - | - | 纯文档（非 Jomini） |
 | `rite_names/00_rite_names.txt` | 10406 | 39 | 0 | jomini |
 | `rite_names/_rite_names.info` | 1349 | - | - | 纯文档（非 Jomini） |
-| `rite_types/00_rite_types.txt` | 45351 | 76 | 0 | jomini |
-| `rite_types/01_christian_heresy_rite_types.txt` | 6355 | 10 | 0 | jomini |
-| `rite_types/02_mainline_rite_types.txt` | 20666 | 66 | 0 | jomini |
+| `rite_types/00_rite_types.txt` | 49629 | 76 | 0 | jomini |
+| `rite_types/01_christian_heresy_rite_types.txt` | 7057 | 10 | 0 | jomini |
+| `rite_types/02_mainline_rite_types.txt` | 24551 | 66 | 0 | jomini |
 | `rite_types/_rite_types.info` | 3658 | - | - | 纯文档（非 Jomini） |
-| `tenet_types/00_pam_tenets.txt` | 64954 | 26 | 0 | jomini |
-| `tenet_types/00_tenet_types.txt` | 142993 | 71 | 0 | jomini |
+| `tenet_types/00_pam_tenets.txt` | 67651 | 26 | 0 | jomini |
+| `tenet_types/00_tenet_types.txt` | 153121 | 71 | 0 | jomini |
 | `tenet_types/_tenet_types.info` | 5507 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### doctrine_category_types/00_doctrine_category_types.txt（6 条目）
+### doctrine_category_types/00_doctrine_category_types.txt（7 条目）
 
 - main_group
 - marriage
 - crimes
 - clergy
 - special
+- precepts
 - not_creatable
 
-### doctrine_group_types/00_doctrine_group_types.txt（49 条目）
+### doctrine_group_types/00_doctrine_group_types.txt（54 条目）
 
 - hostility_group
 - doctrine_marriage_type
@@ -140,10 +141,14 @@
 - christian_tradition_classification
 - preservation
 - is_gnostic_faith
+- is_yazidi_faith
 - special_tolerance
 - has_clerical_electors
 - heresy_hostility
 - nudity_doctrine
+- ahimsa_doctrine
+- alcohol_restrictions
+- dietary_restrictions
 - unreformed_faith
 - divine_destiny
 - adoptionist_school
@@ -153,6 +158,7 @@
 - immaterial_harmony
 - monasticism_group
 - sacraments_group
+- doctrine_usury
 - pope_blessing
 
 ### doctrine_types/10_doctrines_religions.txt（4 条目）
@@ -162,7 +168,7 @@
 - eastern_hostility_doctrine
 - sinitic_hostility_doctrine
 
-### doctrine_types/20_doctrines.txt（85 条目）
+### doctrine_types/20_doctrines.txt（89 条目）
 
 - doctrine_monogamy
 - doctrine_polygamy
@@ -249,6 +255,10 @@
 - doctrine_monasticism_forbidden
 - doctrine_sacraments_central
 - doctrine_sacraments_absent
+- doctrine_usury_accepted
+- doctrine_usury_discouraged
+- doctrine_usury_outsiders_only
+- doctrine_usury_forbidden
 
 ### doctrine_types/20_doctrines_islam.txt（4 条目）
 
@@ -269,7 +279,7 @@
 - doctrine_major_branch_behdin
 - doctrine_heretic_branch_zandik
 
-### doctrine_types/40_doctrines_special.txt（27 条目）
+### doctrine_types/40_doctrines_special.txt（39 条目）
 
 - special_doctrine_is_christian_faith
 - special_doctrine_is_islamic_faith
@@ -277,11 +287,23 @@
 - special_doctrine_is_eastern_faith
 - special_doctrine_is_sinitic_faith
 - special_doctrine_is_gnostic_faith
+- special_doctrine_is_yazidi_faith
 - special_doctrine_ecumenical_christian
 - special_doctrine_ecumenical_miaphysite
 - special_doctrine_has_clerical_electors
 - heresy_hostility_doctrine
 - special_doctrine_naked_priests
+- special_doctrine_ahimsa
+- doctrine_alcohol_permitted
+- doctrine_alcohol_highborn_only
+- special_doctrine_alcohol_forbidden
+- special_doctrine_meat_only
+- doctrine_diet_unrestricted
+- special_doctrine_meat_forbidden_temples
+- special_doctrine_meat_forbidden_temples_fish
+- special_doctrine_meat_forbidden_fish
+- special_doctrine_meat_forbidden
+- special_doctrine_nothing_of_the_slain
 - unreformed_faith_doctrine
 - west_african_unreformed_faith_doctrine
 - divine_destiny_doctrine
@@ -299,7 +321,7 @@
 - special_doctrine_is_eastern_christian_faith
 - special_doctrine_pope_blessing
 
-### faith_types/00_faith_types.txt（103 条目）
+### faith_types/00_faith_types.txt（104 条目）
 
 - akom_pagan
 - aluk
@@ -309,6 +331,7 @@
 - pulugaism
 - bimoism
 - bon_faith
+- old_bon
 - theravada_faith
 - mahayana_faith
 - maitreya_faith

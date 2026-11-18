@@ -1,8 +1,8 @@
 # common/messages 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：43（其中 Jomini 解析 42 个）
-- 顶层块条目总数：728，跨文件唯一条目 728
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：46（其中 Jomini 解析 45 个）
+- 顶层块条目总数：823，跨文件唯一条目 823
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -11,7 +11,7 @@
 |---|---|---|---|---|
 | `00_messages.txt` | 5631 | 26 | 5 | jomini |
 | `01_activity_messages.txt` | 2261 | 11 | 0 | jomini |
-| `01_alliance_messages.txt` | 3120 | 19 | 0 | jomini |
+| `01_alliance_messages.txt` | 3286 | 20 | 0 | jomini |
 | `01_artifact_messages.txt` | 1936 | 10 | 0 | jomini |
 | `01_character_messages.txt` | 4256 | 27 | 0 | jomini |
 | `01_childhood_messages.txt` | 1751 | 9 | 0 | jomini |
@@ -22,25 +22,27 @@
 | `01_currency_messages.txt` | 702 | 3 | 0 | jomini |
 | `01_death_messages.txt` | 2012 | 10 | 0 | jomini |
 | `01_diarch_messages.txt` | 3318 | 16 | 1 | jomini |
-| `01_domain_messages.txt` | 1854 | 8 | 1 | jomini |
-| `01_dynasty_messages.txt` | 7067 | 41 | 0 | jomini |
+| `01_domain_messages.txt` | 2054 | 9 | 1 | jomini |
+| `01_dynasty_messages.txt` | 8482 | 49 | 0 | jomini |
 | `01_faction_messages.txt` | 2829 | 17 | 0 | jomini |
 | `01_family_messages.txt` | 1396 | 7 | 0 | jomini |
+| `01_gdp_guelph_ghibelline_messages.txt` | 2743 | 14 | 0 | jomini |
 | `01_hook_messages.txt` | 1131 | 8 | 0 | jomini |
 | `01_interaction_messages.txt` | 356 | 2 | 0 | jomini |
 | `01_law_messages.txt` | 1107 | 8 | 0 | jomini |
 | `01_marriage_messages.txt` | 1652 | 12 | 0 | jomini |
 | `01_multiplayer_messages.txt` | 686 | 3 | 0 | jomini |
 | `01_relationship_messages.txt` | 2154 | 10 | 0 | jomini |
-| `01_religious_messages.txt` | 8639 | 49 | 0 | jomini |
-| `01_scheme_messages.txt` | 5602 | 32 | 0 | jomini |
-| `01_secret_messages.txt` | 1168 | 5 | 0 | jomini |
+| `01_religious_messages.txt` | 8632 | 49 | 0 | jomini |
+| `01_scheme_messages.txt` | 7468 | 42 | 0 | jomini |
+| `01_secret_messages.txt` | 1654 | 8 | 0 | jomini |
 | `01_skill_messages.txt` | 5892 | 33 | 0 | jomini |
 | `01_struggle_messages.txt` | 1939 | 10 | 0 | jomini |
 | `01_title_messages.txt` | 1792 | 12 | 0 | jomini |
 | `01_travel_messages.txt` | 927 | 4 | 0 | jomini |
 | `01_vassal_messages.txt` | 2336 | 12 | 0 | jomini |
-| `01_war_messages.txt` | 11792 | 73 | 0 | jomini |
+| `01_voting_session_messages.txt` | 290 | 1 | 0 | jomini |
+| `01_war_messages.txt` | 11809 | 73 | 0 | jomini |
 | `02_ep1_messages.txt` | 609 | 2 | 0 | jomini |
 | `04_ep2_messages.txt` | 2245 | 11 | 0 | jomini |
 | `04_fp3_messages.txt` | 785 | 3 | 0 | jomini |
@@ -50,8 +52,9 @@
 | `09_mpo_messages.txt` | 2737 | 12 | 0 | jomini |
 | `10_pam_messages.txt` | 4146 | 17 | 0 | jomini |
 | `_messages.info` | 3485 | - | - | 纯文档（非 Jomini） |
+| `gdp_messages.txt` | 9615 | 52 | 0 | jomini |
 | `passive_rite_learning_messages.txt` | 884 | 4 | 0 | jomini |
-| `tgp_messages.txt` | 8156 | 40 | 1 | jomini |
+| `tgp_messages.txt` | 9059 | 45 | 1 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -100,7 +103,7 @@
 - event_activity_bad_with_text
 - event_chariot_race_sow_discord
 
-### 01_alliance_messages.txt（19 条目）
+### 01_alliance_messages.txt（20 条目）
 
 - msg_alliance
 - msg_broken_alliance
@@ -112,6 +115,7 @@
 - msg_joined_confederation
 - msg_joined_house_bloc
 - msg_house_joined_house_bloc
+- msg_left_confederation
 - msg_left_house_bloc
 - msg_house_left_house_bloc
 - msg_house_bloc_created
@@ -310,18 +314,19 @@
 - msg_diarchy_more_power
 - msg_diarchy_less_power
 
-### 01_domain_messages.txt（8 条目）
+### 01_domain_messages.txt（9 条目）
 
 - msg_county_corruption_bad
 - msg_county_corruption_good
 - msg_county_corruption_good_increase_control
 - msg_building_done
+- msg_district_became_inactive
 - event_domain_good
 - event_domain_good_with_text
 - event_domain_bad
 - event_domain_bad_with_text
 
-### 01_dynasty_messages.txt（41 条目）
+### 01_dynasty_messages.txt（49 条目）
 
 - msg_cadet_branch_created
 - msg_created_new_house
@@ -358,12 +363,20 @@
 - house_feud_stole_artifact_good_message
 - msg_house_unity_change_stage
 - msg_house_unity_change_value
+- msg_house_unity_effect_good
+- msg_house_unity_effect_bad
 - event_dynasty_good
 - event_dynasty_good_with_text
 - event_dynasty_neutral
 - event_dynasty_neutral_with_text
 - event_dynasty_bad
 - event_dynasty_bad_with_text
+- event_house_unity_good
+- event_house_unity_good_text
+- event_house_unity_neutral
+- event_house_unity_neutral_text
+- event_house_unity_bad
+- event_house_unity_bad_text
 
 ### 01_faction_messages.txt（17 条目）
 
@@ -394,6 +407,23 @@
 - msg_child_language
 - msg_child_faith
 - msg_known_pregnancy
+
+### 01_gdp_guelph_ghibelline_messages.txt（14 条目）
+
+- msg_guelph_ghibelline_neutral
+- msg_guelph_ghibelline_neutral_text
+- msg_guelph_ghibelline_neutral_with_text
+- msg_guelph_neutral
+- msg_guelph_neutral_text
+- msg_guelph_neutral_with_text
+- msg_ghibelline_neutral
+- msg_ghibelline_neutral_text
+- msg_ghibelline_neutral_with_text
+- msg_guelph_advantage_neutral_text
+- msg_ghibelline_advantage_neutral_text
+- msg_guelph_ghibelline_repose_neutral_text
+- msg_guelph_ghibelline_agitation_neutral_text
+- msg_guelph_ghibelline_dictatus_papae_neutral_text
 
 ### 01_hook_messages.txt（8 条目）
 
@@ -508,7 +538,7 @@
 - event_religious_neutral_text
 - event_religious_neutral
 
-### 01_scheme_messages.txt（32 条目）
+### 01_scheme_messages.txt（42 条目）
 
 - sway_good_message
 - sway_bad_message
@@ -540,16 +570,29 @@
 - study_scheme_bad_message
 - siphon_scheme_good_message
 - siphon_scheme_bad_message
+- republic_promote_candidate_scheme_good_message
+- republic_promote_candidate_scheme_bad_message
 - event_sway_neutral
+- event_scheme_good
+- event_scheme_neutral
 - event_scheme_bad
+- trade_opportunity_scheme_invalidated_message
+- influence_house_ambition_good_message
+- influence_house_ambition_bad_message
+- gdp_incite_unrest_scheme_success_message
+- gdp_incite_unrest_scheme_failure_message
+- gdp_incite_unrest_scheme_discovered_message
 
-### 01_secret_messages.txt（5 条目）
+### 01_secret_messages.txt（8 条目）
 
 - secret_exposed_message
 - secret_discovered_message
 - event_witchcraft_good
 - event_witchcraft_neutral
 - event_witchcraft_bad
+- event_secret_good
+- event_secret_neutral
+- event_secret_bad
 
 ### 01_skill_messages.txt（33 条目）
 
@@ -636,6 +679,10 @@
 - msg_refused_pledge_loyalty_to_liege
 - msg_vassal_decision_good
 - msg_tributary_invalidated
+
+### 01_voting_session_messages.txt（1 条目）
+
+- msg_voting_session_passed_change
 
 ### 01_war_messages.txt（73 条目）
 
@@ -861,6 +908,61 @@
 - msg_order_espousing_beliefs
 - msg_order_took_over_monastery
 
+### gdp_messages.txt（52 条目）
+
+- event_merchant_good
+- event_merchant_good_with_text
+- event_merchant_neutral
+- event_merchant_neutral_with_text
+- event_merchant_bad
+- event_merchant_bad_with_text
+- event_republic_good
+- event_republic_good_with_text
+- event_republic_neutral
+- event_republic_neutral_with_text
+- event_republic_bad
+- event_republic_bad_with_text
+- event_republic_popular_opinion_good
+- event_republic_popular_opinion_bad
+- event_trade_good
+- event_trade_good_with_text
+- event_trade_neutral
+- event_trade_neutral_with_text
+- event_trade_bad
+- event_trade_bad_with_text
+- msg_merchant_contracts
+- msg_trade_opportunity_appear
+- msg_merchant_unity_contracts
+- msg_merchant_nearby
+- msg_merchant_enticed
+- msg_trade_route_created
+- msg_trade_route_edited
+- msg_trade_monopoly
+- msg_trade_route_income_increased
+- msg_trade_route_income_decreased
+- msg_trade_route_owner_cannot_trade
+- msg_trade_route_suspended
+- msg_trade_route_resumed
+- msg_trade_route_stopped_trading
+- msg_trade_route_trading_again
+- msg_market_toll_changed
+- msg_toll_exception_changed
+- msg_toll_exception_ended
+- msg_trade_good_category_level_up
+- msg_trade_good_category_level_down
+- msg_distribution_route_market_lost
+- msg_trade_route_maturity_gained
+- msg_army_affects_trade
+- msg_patrician_joined
+- msg_trade_league_leadership_changed
+- msg_house_aspiration_level_up
+- msg_trader_activity_success
+- msg_sponsored_building_done
+- event_msg_patron_changed
+- event_msg_patron_lost
+- msg_build_queue_item_invalidated
+- msg_build_queue_item_started
+
 ### passive_rite_learning_messages.txt（4 条目）
 
 - msg_passive_learned_rite
@@ -868,7 +970,7 @@
 - msg_passive_learned_tenet_special
 - msg_passive_learned_doctrine
 
-### tgp_messages.txt（40 条目）
+### tgp_messages.txt（45 条目）
 
 - msg_house_relation_level_changed_good
 - msg_house_relation_level_changed_neutral
@@ -890,9 +992,14 @@
 - msg_natural_disaster_army_damaged_good
 - msg_natural_disaster_army_damaged_bad
 - msg_natural_disaster_army_events
-- msg_tributary_capital_province_development_growth
+- msg_tributary_capital_province_prosperity_growth
 - event_msg_merit_effect_good
 - event_msg_merit_effect_bad
+- msg_military_merit_gain
+- event_msg_tributary_gained
+- event_msg_tributary_lost
+- event_msg_suzerain_changed
+- event_msg_suzerain_lost
 - msg_mandala_temple_completed_01
 - msg_mandala_temple_completed_02up
 - msg_mandala_contracts_text_neutral

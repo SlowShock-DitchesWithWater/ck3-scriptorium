@@ -1,27 +1,28 @@
 # common/law_groups 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：7（其中 Jomini 解析 6 个）
-- 顶层块条目总数：30，跨文件唯一条目 30
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：8（其中 Jomini 解析 7 个）
+- 顶层块条目总数：49，跨文件唯一条目 49
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_realm_law_groups.txt` | 1891 | 11 | 0 | jomini |
-| `00_succession_law_groups.txt` | 544 | 4 | 0 | jomini |
+| `00_realm_law_groups.txt` | 2469 | 13 | 0 | jomini |
+| `00_succession_law_groups.txt` | 714 | 4 | 0 | jomini |
 | `01_title_succession_law_groups.txt` | 73 | 1 | 0 | jomini |
-| `02_admininistrative_law_groups.txt` | 2326 | 11 | 0 | jomini |
+| `02_admininistrative_law_groups.txt` | 2270 | 11 | 0 | jomini |
 | `03_imperial_policie_groups.txt` | 260 | 1 | 0 | jomini |
 | `04_pam_ecclesiastical_law_groups.txt` | 587 | 2 | 0 | jomini |
-| `_law_groups.info` | 1607 | - | - | 纯文档（非 Jomini） |
+| `04_republic_law_groups.txt` | 4158 | 17 | 0 | jomini |
+| `_law_groups.info` | 2042 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_realm_law_groups.txt（11 条目）
+### 00_realm_law_groups.txt（13 条目）
 
 - crown_authority
 - tribal_authority
@@ -34,6 +35,8 @@
 - meritocratic_bureaucracy
 - japanese_bureaucracy
 - crowned_laws
+- company_size
+- company_purpose
 
 ### 00_succession_law_groups.txt（4 条目）
 
@@ -68,6 +71,26 @@
 
 - budget_allocation_cardinal_law
 - church_benefices_law
+
+### 04_republic_law_groups.txt（17 条目）
+
+- republic_type
+- republic_tier_law
+- republic_assembly_composition_laws
+- republic_assembly_authority_laws
+- republic_assembly_voting_thresholds
+- republic_assembly_term_length_laws
+- republic_senate_size_laws
+- republic_war_declaration
+- republic_army_organization
+- republic_banishment
+- republic_execution
+- republic_title_revocation
+- republic_retract_vassal
+- republic_vassal_refusal
+- republic_trade_specialization
+- republic_trade_pricing
+- republic_end_term_laws
 
 ### 未解析文件
 

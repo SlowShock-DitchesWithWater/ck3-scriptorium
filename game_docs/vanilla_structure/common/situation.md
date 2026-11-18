@@ -1,8 +1,8 @@
 # common/situation 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：21（其中 Jomini 解析 18 个）
-- 顶层块条目总数：287，跨文件唯一条目 287
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：23（其中 Jomini 解析 20 个）
+- 顶层块条目总数：331，跨文件唯一条目 331
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -11,24 +11,26 @@
 |---|---|---|---|---|
 | `catalysts/10_tgp_dynastic_cycle_catalysts.txt` | 4609 | 92 | 0 | jomini |
 | `catalysts/10_tgp_natural_disaster_catalysts.txt` | 191 | 3 | 0 | jomini |
-| `catalysts/10_tgp_silk_road_catalysts.txt` | 2976 | 20 | 0 | jomini |
+| `catalysts/10_tgp_silk_road_catalysts.txt` | 3230 | 24 | 0 | jomini |
 | `catalysts/_catalysts.info` | 293 | - | - | 纯文档（非 Jomini） |
 | `catalysts/catalysts.txt` | 120 | 2 | 0 | jomini |
+| `catalysts/gdp_guelph_ghibelline_catalysts.txt` | 1613 | 38 | 0 | jomini |
 | `catalysts/mpo_the_great_steppe_catalysts.txt` | 237 | 4 | 0 | jomini |
-| `catalysts/pam_the_christian_church_catalysts.txt` | 8285 | 148 | 0 | jomini |
+| `catalysts/pam_the_christian_church_catalysts.txt` | 8323 | 149 | 0 | jomini |
 | `situation_group_types/00_situation_group_types.txt` | 671 | 6 | 0 | jomini |
 | `situation_group_types/_situation_group_types.info` | 342 | - | - | 纯文档（非 Jomini） |
-| `situations/_situations.info` | 16236 | - | - | 纯文档（非 Jomini） |
-| `situations/debug_situation.txt` | 9177 | 1 | 0 | jomini |
+| `situations/_situations.info` | 18071 | - | - | 纯文档（非 Jomini） |
+| `situations/debug_situation.txt` | 9205 | 1 | 0 | jomini |
 | `situations/game_extra_nomads_arabs.txt` | 9754 | 1 | 0 | jomini |
 | `situations/game_extra_nomads_horn.txt` | 9761 | 1 | 0 | jomini |
 | `situations/game_extra_nomads_sahel.txt` | 9905 | 1 | 0 | jomini |
 | `situations/game_extra_nomads_sami.txt` | 16736 | 1 | 0 | jomini |
 | `situations/game_extra_nomads_tibet.txt` | 16874 | 1 | 0 | jomini |
-| `situations/pam_christian_situation.txt` | 87595 | 1 | 6 | jomini |
-| `situations/tgp_dynastic_cycle.txt` | 69916 | 1 | 5 | jomini |
-| `situations/tgp_natural_disaster.txt` | 10185 | 2 | 0 | jomini |
-| `situations/tgp_silk_road.txt` | 17618 | 1 | 0 | jomini |
+| `situations/gdp_guelph_ghibelline_situation.txt` | 66867 | 1 | 0 | jomini |
+| `situations/pam_christian_situation.txt` | 88190 | 1 | 6 | jomini |
+| `situations/tgp_dynastic_cycle.txt` | 71135 | 1 | 5 | jomini |
+| `situations/tgp_natural_disaster.txt` | 10179 | 2 | 0 | jomini |
+| `situations/tgp_silk_road.txt` | 22060 | 1 | 0 | jomini |
 | `situations/the_great_steppe.txt` | 30271 | 1 | 0 | jomini |
 
 ## 条目名 → 定义文件
@@ -136,7 +138,7 @@
 - catalyst_natural_disaster_great_project_investment
 - catalyst_natural_disaster_great_project_completion
 
-### catalysts/10_tgp_silk_road_catalysts.txt（20 条目）
+### catalysts/10_tgp_silk_road_catalysts.txt（24 条目）
 
 - catalyst_silk_road_region_war
 - catalyst_silk_road_adjacent_upstream_region_war
@@ -152,10 +154,14 @@
 - catalyst_silk_road_china_grand_canal_expanded_secondary
 - catalyst_silk_road_china_grand_canal_expanded_tertiary
 - catalyst_silk_road_mpo_region_resettled
+- catalyst_silk_road_china_no_war
 - catalyst_silk_road_byzantium_blew_up
+- catalyst_silk_road_china_blew_up
 - catalyst_silk_road_mpo_region_to_steppe
 - catalyst_silk_road_raided
 - catalyst_silk_road_mongol_devastation
+- catalyst_silk_road_china_civil_war
+- catalyst_silk_road_persia_civil_war
 - catalyst_silk_road_low_control_at_peace
 - catalyst_silk_road_famous_market_built
 
@@ -164,6 +170,47 @@
 - catalyst_win_any_war_within_the_region
 - catalyst_gift_independent_ruler
 
+### catalysts/gdp_guelph_ghibelline_catalysts.txt（38 条目）
+
+- catalyst_torture_opposite_party
+- catalyst_maim_opposite_party
+- catalyst_attempt_imprison_opposite_party
+- catalyst_execute_opposite_party
+- catalyst_attempt_abduct_opposite_party
+- catalyst_attempt_murder_opposite_party
+- catalyst_banish_opposite_party
+- catalyst_gg_leader_imprisoned
+- catalyst_gg_antipope_declared
+- catalyst_gg_lay_investiture
+- catalyst_gg_papal_election_interference
+- catalyst_excommunicated_hre
+- catalyst_excommunicated_ghibellines
+- catalyst_gg_emperor_crowned_by_antipope
+- catalyst_gg_anointment_refused
+- catalyst_gg_investiture_council_settled
+- catalyst_grudge_hre_pope
+- catalyst_rival_hre_pope
+- catalyst_nemesis_hre_pope
+- catalyst_gg_war_declared_on_opposite_party
+- catalyst_gg_war_won_against_opposite_party
+- catalyst_gg_rome_occupied
+- catalyst_gg_imperial_overreach
+- catalyst_gg_title_revoked_from_opposite_party
+- catalyst_gg_coup
+- catalyst_gg_ruler_displaced
+- catalyst_gg_house_feud
+- catalyst_gg_partisan_poached
+- catalyst_gg_undecided_aligned
+- catalyst_gg_hostile_scheme_discovered
+- catalyst_gg_cross_party_alliance
+- catalyst_gg_cross_party_marriage
+- catalyst_gg_excommunication_lifted
+- catalyst_gg_antipope_removed
+- catalyst_gg_emperor_crowned_by_pope
+- catalyst_gg_emperor_took_the_cross
+- catalyst_gg_submission_to_pope
+- catalyst_hostility_decay
+
 ### catalysts/mpo_the_great_steppe_catalysts.txt（4 条目）
 
 - catalyst_situation_passing_of_time_blessing
@@ -171,7 +218,7 @@
 - catalyst_situation_passing_of_time_havsarsan
 - catalyst_situation_passing_of_time_lucky_chance_havsarsan
 
-### catalysts/pam_the_christian_church_catalysts.txt（148 条目）
+### catalysts/pam_the_christian_church_catalysts.txt（149 条目）
 
 - catalyst_clergy_appointed_from_same_family
 - catalyst_clergy_hor_short_reign
@@ -318,6 +365,7 @@
 - catalyst_the_christian_church_antipope_declared
 - catalyst_the_christian_church_antipope_sponsored
 - catalyst_the_christian_church_antipope_removed
+- catalyst_challenge_hof_replaced
 - catalyst_heresy_light_outbreak
 - catalyst_heresy_dangerous_rite
 - catalyst_heresy_historical_outbreak
@@ -354,6 +402,10 @@
 ### situations/game_extra_nomads_tibet.txt（1 条目）
 
 - game_rule_extra_nomads_tibet
+
+### situations/gdp_guelph_ghibelline_situation.txt（1 条目）
+
+- guelph_ghibelline
 
 ### situations/pam_christian_situation.txt（1 条目）
 

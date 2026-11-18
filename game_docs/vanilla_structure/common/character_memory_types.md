@@ -1,8 +1,8 @@
 # common/character_memory_types 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：23（其中 Jomini 解析 22 个）
-- 顶层块条目总数：398，跨文件唯一条目 398
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：24（其中 Jomini 解析 23 个）
+- 顶层块条目总数：421，跨文件唯一条目 421
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -12,10 +12,10 @@
 | `_character_memories.info` | 3029 | - | - | 纯文档（非 Jomini） |
 | `ach_memories.txt` | 14087 | 25 | 0 | jomini |
 | `bp2_hostage_memories.txt` | 5356 | 9 | 0 | jomini |
-| `bp2_memories.txt` | 25570 | 32 | 0 | jomini |
+| `bp2_memories.txt` | 25988 | 32 | 0 | jomini |
 | `bp3_memories.txt` | 1007 | 2 | 0 | jomini |
 | `ce1_memories.txt` | 4753 | 9 | 0 | jomini |
-| `character_memories_1.txt` | 104504 | 97 | 0 | jomini |
+| `character_memories_1.txt` | 104985 | 98 | 0 | jomini |
 | `character_memories_events.txt` | 26885 | 46 | 0 | jomini |
 | `character_memories_events_jason_ep2.txt` | 1521 | 3 | 0 | jomini |
 | `character_memories_filippa_events.txt` | 26952 | 33 | 0 | jomini |
@@ -25,7 +25,8 @@
 | `ep2_memories_james.txt` | 3563 | 7 | 0 | jomini |
 | `ep2_tournament_memories.txt` | 2540 | 2 | 0 | jomini |
 | `ep2_wedding_memories.txt` | 6873 | 12 | 0 | jomini |
-| `ep3_memories.txt` | 22686 | 33 | 0 | jomini |
+| `ep3_memories.txt` | 23748 | 35 | 0 | jomini |
+| `gdp_memories.txt` | 13431 | 20 | 0 | jomini |
 | `jason_first_event_ep2_memories.txt` | 1009 | 2 | 0 | jomini |
 | `mpo_memories.txt` | 9733 | 18 | 0 | jomini |
 | `pam_memories.txt` | 6905 | 11 | 0 | jomini |
@@ -129,12 +130,13 @@
 - ce1_contracted_epidemic
 - ce1_contracted_black_death
 
-### character_memories_1.txt（97 条目）
+### character_memories_1.txt（98 条目）
 
 - relative_died
 - spouse_died
 - lost_duel
 - won_duel
+- cat_adopted_memory
 - cat_died
 - dog_died
 - imprisoned
@@ -388,7 +390,7 @@
 - grand_wedding_completed_host
 - grand_wedding_completed_guest
 
-### ep3_memories.txt（33 条目）
+### ep3_memories.txt（35 条目）
 
 - byz_held_triumph
 - deposed_liege_memory
@@ -415,6 +417,8 @@
 - was_noble_family_adopted
 - adventurer_family_adopted
 - was_adventurer_family_adopted
+- merchant_family_adopted
+- was_merchant_family_adopted
 - procured_estate_memory
 - frankokratia_byz_independent_memory
 - frankokratia_byz_kingdom_memory
@@ -423,6 +427,29 @@
 - wedding_infidelity_spouse
 - wedding_infidelity_kin
 - wedding_infidelity_victim
+
+### gdp_memories.txt（20 条目）
+
+- became_guelph_leader_memory
+- became_ghibelline_leader_memory
+- lost_guelph_leadership_memory
+- lost_ghibelline_leadership_memory
+- guelph_won_gg_memory
+- ghibelline_won_gg_memory
+- overthrew_government_memory
+- was_overthrown_memory
+- became_merchant_memory
+- carnival_stopped_duel_memory
+- carnival_recruited_entertainer_memory
+- carnival_dance_memory
+- carnival_juggle_knives_memory
+- carnival_Holy_fools_memory
+- carnival_survived_assassins_memory
+- carnival_horse_assassinated_target_memory
+- carnival_horse_thugs_assassinated_target_memory
+- carnival_cut_in_two_memory
+- carnival_warhorse_memory
+- carnival_arrow_assassinated_memory
 
 ### jason_first_event_ep2_memories.txt（2 条目）
 

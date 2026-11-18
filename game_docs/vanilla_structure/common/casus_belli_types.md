@@ -1,43 +1,47 @@
 # common/casus_belli_types 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：29（其中 Jomini 解析 28 个）
-- 顶层块条目总数：126，跨文件唯一条目 126
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：33（其中 Jomini 解析 32 个）
+- 顶层块条目总数：138，跨文件唯一条目 138
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_casus_belli_types.txt` | 3778 | 2 | 0 | jomini |
-| `00_civil_war.txt` | 61252 | 9 | 0 | jomini |
-| `00_claim.txt` | 20235 | 1 | 0 | jomini |
-| `00_conquest.txt` | 41849 | 4 | 0 | jomini |
-| `00_dejure_war.txt` | 40705 | 6 | 0 | jomini |
-| `00_dissolve_empire_cb.txt` | 5870 | 1 | 0 | jomini |
-| `00_event_war.txt` | 97481 | 10 | 0 | jomini |
-| `00_invasion_war.txt` | 53982 | 5 | 0 | jomini |
-| `00_nomadic_conquest.txt` | 17531 | 2 | 0 | jomini |
-| `00_peasant_war_new.txt` | 5930 | 1 | 0 | jomini |
-| `00_religious_war.txt` | 114785 | 7 | 0 | jomini |
-| `00_struggle_war.txt` | 9134 | 1 | 0 | jomini |
-| `00_subjugation.txt` | 15012 | 1 | 0 | jomini |
-| `00_tributarize.txt` | 19649 | 2 | 0 | jomini |
-| `00_vassalization.txt` | 9411 | 1 | 0 | jomini |
-| `01_ep1_wars.txt` | 16701 | 2 | 0 | jomini |
-| `01_fp1_wars.txt` | 35165 | 1 | 0 | jomini |
-| `03_fp2_wars.txt` | 27010 | 3 | 0 | jomini |
-| `05_fp3_wars.txt` | 42498 | 6 | 0 | jomini |
-| `06_ce1_wars.txt` | 51939 | 3 | 0 | jomini |
-| `07_ep3_admin_cbs.txt` | 48609 | 5 | 0 | jomini |
-| `07_ep3_wars.txt` | 179456 | 14 | 0 | jomini |
-| `09_mpo_wars.txt` | 140717 | 10 | 0 | jomini |
-| `10_tgp_china_wars.txt` | 83779 | 9 | 0 | jomini |
-| `10_tgp_faction_wars.txt` | 20386 | 4 | 0 | jomini |
-| `10_tgp_japan_wars.txt` | 77772 | 10 | 0 | jomini |
-| `_casus_belli.info` | 11130 | - | - | 纯文档（非 Jomini） |
-| `pam_wars.txt` | 20575 | 4 | 0 | jomini |
-| `tgp_eastasia_wars.txt` | 14551 | 2 | 0 | jomini |
+| `00_casus_belli_types.txt` | 3173 | 2 | 0 | jomini |
+| `00_civil_war.txt` | 49973 | 9 | 0 | jomini |
+| `00_claim.txt` | 13845 | 1 | 0 | jomini |
+| `00_conquest.txt` | 25965 | 4 | 0 | jomini |
+| `00_dejure_war.txt` | 30878 | 6 | 0 | jomini |
+| `00_dissolve_empire_cb.txt` | 5231 | 1 | 0 | jomini |
+| `00_event_war.txt` | 72205 | 10 | 0 | jomini |
+| `00_gdp_burgher_wars.txt` | 12011 | 2 | 0 | jomini |
+| `00_gdp_guelph_ghibelline_wars.txt` | 31500 | 3 | 0 | jomini |
+| `00_invasion_war.txt` | 35631 | 5 | 0 | jomini |
+| `00_nomadic_conquest.txt` | 11718 | 2 | 0 | jomini |
+| `00_peasant_war_new.txt` | 5065 | 1 | 0 | jomini |
+| `00_religious_war.txt` | 89758 | 7 | 0 | jomini |
+| `00_struggle_war.txt` | 7363 | 1 | 0 | jomini |
+| `00_subjugation.txt` | 12086 | 1 | 0 | jomini |
+| `00_tributarize.txt` | 17421 | 2 | 0 | jomini |
+| `00_vassalization.txt` | 8209 | 1 | 0 | jomini |
+| `01_ep1_wars.txt` | 13552 | 2 | 0 | jomini |
+| `01_fp1_wars.txt` | 32080 | 1 | 0 | jomini |
+| `03_fp2_wars.txt` | 19936 | 3 | 0 | jomini |
+| `05_fp3_wars.txt` | 35800 | 6 | 0 | jomini |
+| `06_ce1_wars.txt` | 47042 | 3 | 0 | jomini |
+| `07_ep3_admin_cbs.txt` | 32091 | 5 | 1 | jomini |
+| `07_ep3_wars.txt` | 136760 | 14 | 0 | jomini |
+| `09_mpo_wars.txt` | 128671 | 10 | 0 | jomini |
+| `10_tgp_china_wars.txt` | 64455 | 9 | 0 | jomini |
+| `10_tgp_faction_wars.txt` | 15741 | 4 | 0 | jomini |
+| `10_tgp_japan_wars.txt` | 63494 | 10 | 0 | jomini |
+| `_casus_belli.info` | 11142 | - | - | 纯文档（非 Jomini） |
+| `gdp_merchant_wars.txt` | 12762 | 3 | 0 | jomini |
+| `gdp_republic_wars.txt` | 25993 | 4 | 0 | jomini |
+| `pam_wars.txt` | 22212 | 4 | 0 | jomini |
+| `tgp_eastasia_wars.txt` | 10708 | 2 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -96,6 +100,17 @@
 - fp1_scandi_adventurer_conquest
 - diarch_vassalisation_cb
 - remove_regent_cb
+
+### 00_gdp_burgher_wars.txt（2 条目）
+
+- burgher_war
+- dissolve_the_hanse_cb
+
+### 00_gdp_guelph_ghibelline_wars.txt（3 条目）
+
+- displace_guelph_ghibelline_ruler_cb
+- reinstate_guelph_ghibelline_ruler_cb
+- dissolve_lombard_league_cb
 
 ### 00_invasion_war.txt（5 条目）
 
@@ -240,6 +255,19 @@
 - eradicate_house_cb
 - japan_establish_soryo_administration_cb
 - japan_bloc_war_cb
+
+### gdp_merchant_wars.txt（3 条目）
+
+- seize_realm_county_cb
+- seize_realm_duchy_cb
+- seize_realm_kingdom_cb
+
+### gdp_republic_wars.txt（4 条目）
+
+- trade_league_commune_cb
+- trade_league_monopoly_cb
+- trade_league_trade_war_cb
+- trade_county_conquest_cb
 
 ### pam_wars.txt（4 条目）
 

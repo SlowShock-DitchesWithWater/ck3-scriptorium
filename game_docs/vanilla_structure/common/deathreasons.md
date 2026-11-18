@@ -1,8 +1,8 @@
 # common/deathreasons 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：4（其中 Jomini 解析 3 个）
-- 顶层块条目总数：317，跨文件唯一条目 317
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：5（其中 Jomini 解析 4 个）
+- 顶层块条目总数：326，跨文件唯一条目 326
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -10,8 +10,9 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `00_activity_deaths.txt` | 1800 | 19 | 0 | jomini |
-| `00_event_deaths.txt` | 19698 | 253 | 0 | jomini |
+| `00_event_deaths.txt` | 19975 | 257 | 0 | jomini |
 | `00_natural_deaths.txt` | 5872 | 45 | 0 | jomini |
+| `01_history_only_deaths.txt` | 437 | 5 | 0 | jomini |
 | `_death_reasons.info` | 1268 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
@@ -40,7 +41,7 @@
 - death_crushed_in_chariot_race
 - death_chariot_race_trick
 
-### 00_event_deaths.txt（253 条目）
+### 00_event_deaths.txt（257 条目）
 
 - death_murder
 - death_duel
@@ -188,6 +189,7 @@
 - death_lost
 - death_lost_in_the_forest
 - death_trampled_by_horse
+- death_sliced_in_two
 - death_cuteness_overload
 - death_maimed_by_wild_beast
 - death_crushed_by_elephant
@@ -292,9 +294,12 @@
 - death_avoid_dishonor
 - death_eradicated
 - death_ritual_suicide
+- death_juggling_knives
+- death_ambushed_during_detente
 - death_strangled
 - death_immurement
 - death_abandonment
+- death_single_arrow
 
 ### 00_natural_deaths.txt（45 条目）
 
@@ -343,6 +348,14 @@
 - death_inbred
 - death_physician_mistreatment
 - death_apoplexy
+
+### 01_history_only_deaths.txt（5 条目）
+
+- death_thirsty_for_honey
+- death_dismemberment
+- death_imperial_forced_suicide
+- death_drowned_in_alcohol
+- death_lacquered_head
 
 ### 未解析文件
 

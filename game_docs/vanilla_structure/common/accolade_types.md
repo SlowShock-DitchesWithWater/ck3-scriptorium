@@ -1,6 +1,6 @@
 # common/accolade_types 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：6（其中 Jomini 解析 5 个）
 - 顶层块条目总数：31，跨文件唯一条目 31
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
@@ -10,10 +10,10 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `00_accolade_categories.txt` | 1143 | 0 | 0 | jomini |
-| `04_ep2_common_attributes.txt` | 39526 | 9 | 0 | jomini |
-| `04_ep2_eminent_attributes.txt` | 15336 | 4 | 7 | jomini |
+| `04_ep2_common_attributes.txt` | 39525 | 9 | 0 | jomini |
+| `04_ep2_eminent_attributes.txt` | 15378 | 4 | 7 | jomini |
 | `04_ep2_maa_attributes.txt` | 55171 | 12 | 150 | jomini |
-| `04_ep2_skilled_attributes.txt` | 19466 | 6 | 26 | jomini |
+| `04_ep2_skilled_attributes.txt` | 19464 | 6 | 26 | jomini |
 | `_accolade_type.info` | 3542 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件

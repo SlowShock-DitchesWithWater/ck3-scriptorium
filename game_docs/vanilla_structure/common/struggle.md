@@ -1,6 +1,6 @@
 # common/struggle 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：5（其中 Jomini 解析 3 个）
 - 顶层块条目总数：129，跨文件唯一条目 129
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
@@ -10,10 +10,10 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `catalysts/_catalysts.info` | 279 | - | - | 纯文档（非 Jomini） |
-| `catalysts/catalysts.txt` | 6894 | 127 | 0 | jomini |
+| `catalysts/catalysts.txt` | 6893 | 127 | 0 | jomini |
 | `struggles/_struggles.info` | 5085 | - | - | 纯文档（非 Jomini） |
-| `struggles/iberian_struggle_script.txt` | 26041 | 1 | 0 | jomini |
-| `struggles/persian_struggle_script.txt` | 20943 | 1 | 0 | jomini |
+| `struggles/iberian_struggle_script.txt` | 26126 | 1 | 0 | jomini |
+| `struggles/persian_struggle_script.txt` | 21013 | 1 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -93,7 +93,7 @@
 - catalyst_new_building_in_city
 - catalyst_new_building_in_temple
 - catalyst_new_islamic_temple_construction
-- catalyst_improve_development_vassal_diff_faith_culture
+- catalyst_improve_prosperity_vassal_diff_faith_culture
 - catalyst_grant_land_local_noble
 - catalyst_revoke_title
 - catalyst_new_building_in_holdings

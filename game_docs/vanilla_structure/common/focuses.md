@@ -1,8 +1,8 @@
 # common/focuses 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：4（其中 Jomini 解析 3 个）
-- 顶层块条目总数：28，跨文件唯一条目 28
+- 顶层块条目总数：33，跨文件唯一条目 33
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -10,7 +10,7 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `00_education_focuses.txt` | 12235 | 5 | 0 | jomini |
-| `00_lifestyle_focuses.txt` | 15544 | 23 | 0 | jomini |
+| `00_lifestyle_focuses.txt` | 20802 | 28 | 0 | jomini |
 | `00_test_focuses.txt` | 1289 | 0 | 0 | jomini |
 | `_focuses.info` | 3824 | - | - | 纯文档（非 Jomini） |
 
@@ -26,27 +26,32 @@
 - education_learning
 - education_intrigue
 
-### 00_lifestyle_focuses.txt（23 条目）
+### 00_lifestyle_focuses.txt（28 条目）
 
 - diplomacy_foreign_affairs_focus
 - diplomacy_majesty_focus
 - diplomacy_family_focus
+- diplomacy_merchant_focus
 - diplomacy_adventurer_focus
 - martial_strategy_focus
 - martial_authority_focus
 - martial_chivalry_focus
+- martial_merchant_focus
 - martial_adventurer_focus
 - intrigue_skulduggery_focus
 - intrigue_temptation_focus
 - intrigue_intimidation_focus
+- intrigue_merchant_focus
 - intrigue_adventurer_focus
 - stewardship_wealth_focus
 - stewardship_domain_focus
 - stewardship_duty_focus
+- stewardship_merchant_focus
 - stewardship_adventurer_focus
 - learning_medicine_focus
 - learning_scholarship_focus
 - learning_theology_focus
+- learning_merchant_focus
 - learning_adventurer_focus
 - wanderer_internal_affairs_focus
 - wanderer_journey_focus

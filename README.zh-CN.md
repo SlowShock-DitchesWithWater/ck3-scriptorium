@@ -48,7 +48,7 @@ CK3 语法"的幻觉代码。本库的做法：先读一份摘要目录（`catal
    里搜关键词，再读它列出的 `pages\` 下的 wiki 页。
 
 > **游戏权威层随仓库发布。** `game_docs\`（dump 签名 + 原版结构索引，当前
-> 基于 CK3 1.20.1 dump 构建）已包含在发布仓库中——下载即得完整知识库，
+> 基于 CK3 1.21.0 dump 构建）已包含在发布仓库中——下载即得完整知识库，
 > 使用不需要安装游戏。CK3 版本更新后，可按**手册 A** 第 3-4 步在几分钟内
 > 本地刷新该层。许可说明：该层为游戏衍生数据，本仓库不主张任何权利
 > （见 `LICENSES.md`）。
@@ -99,6 +99,7 @@ CK3——完整重建见**手册 A**。
 | 游戏权威层 | `game_docs\script_docs\` | 游戏自带 debug dump（`script_docs` 控制台命令）：effects、triggers、modifiers、on_actions、event_targets、event_scopes、custom_localization 各一份全量机器生成清单 + data types 清单，每条目真实签名。随仓库发布；游戏更新后按手册 A 刷新 | **高** |
 | 原版结构索引层 | `game_docs\vanilla_structure\` | `entry_map.tsv`：「条目名 → 定义文件 → 行号」映射 + `common` 各子目录摘要。纯导航，零游戏内容 | 导航 |
 | 地图知识层 | `game_docs\map_docs\` | **地图室**的知识半边：地图实测档案 `map_data_dossier.md`（图像规格/河流调色板/编辑器证据）、省份索引 `province_index.tsv`（id↔RGB↔名称）、`nudger_parameters.md`。游戏更新后用 `scripts\map_layer.py` 刷新；工具半边（校验器+工作流向导）在 `map_room\` | **高**（游戏实测） |
+| mod 知识库（**抄写室**） | `copy_room\<mod-id>\` | 可选、本机按需为其他 mod 建的同构知识库（三通道 + `DIFF_vs_vanilla.md` 差异报告），服务**子 mod 开发**。本地生成不发布；见 `copy_room\README.md` 与**手册 D** | 该 mod 范围内**最高** |
 
 **权威顺序：游戏 dump 层（game_docs）> wiki 层（pages）**。两层冲突
 以 dump 为准，回答时应指出冲突点。各层体积、来源与版本标注见
@@ -113,6 +114,7 @@ CK3——完整重建见**手册 A**。
 | `scripts\` | 管线：crawl / clean / organize / catalog / quality_gate / game_layer / vanilla_index / map_layer | 发布 |
 | `map_room\` | **地图室**——地图 MOD 支持：`validate_map.py`（离线 map_data 校验器，需 Pillow）、`WORKFLOW.md`（编辑器启动/改图循环/故障对照）、`README.md`（总览；地图生成器已规划、待下次地图管线大版本后开工） | 发布 |
 | `reading_room\` | **阅览室**——自选文章层：把你找到的外部好文章（论坛深扒/攻略等）以**自写笔记+出处链接**的形式存入 `reading_room\articles\`（模板 `_template.md`）；`scripts\reading_room.py`（`--sync`）并入 `catalog.md`。只收笔记不收原文全文（许可红线，见其 README） | 发布 |
+| `copy_room\` | **抄写室**——其他 mod 的知识库：`scripts\copy_room.py` 加 `--build --id <工坊id>` 复用游戏层三通道，为父 mod 建 `copy_room\<mod-id>\`（加载态签名 + 结构索引 + 地图档案 + 与原版差异），服务子 mod 开发。仅 README 发布，KB 目录为本地产物（可随时重建） | 部分（仅 README） |
 | `tests\` | 清洗规则断言、catalog 保护测试、地图校验器夹具测试、金样本夹具 | 发布 |
 | `skills\` | 自研程序性 skill：`ck3-mod-standards`——CK3 mod 脚本编码规约（作用域纪律、on_action 桥接、加载顺序兼容、本地化规范；签名强制对本知识库核对防幻觉）。安装：复制到 agent 的 skills 目录，如 `~/.agents/skills/` | 发布 |
 | `docs\` | `docs\pipeline.md`（管线契约）、`docs\reports\`（清洗统计报告）；`docs\spec.md` 为内部规划文档 | 部分发布 |
@@ -157,8 +159,11 @@ CK3——完整重建见**手册 A**。
 <python> scripts\quality_gate.py
 
 :: —— 3. 游戏权威层（零网络；需要本机游戏）——
-::    仓库已随附游戏层（见快照表）；本步骤仅用于 CK3 版本更新后刷新，
-::    三步：
+::    仓库已随附游戏层（见快照表）；本步骤仅用于 CK3 版本更新后刷新。
+::    一条命令捷径（自动跑下面 3/4/4b/5 步：自动定位 dump 目录与游戏
+::    版本，随后并入 catalog 并跑质量门）：
+<python> scripts\run.py --stage game
+::    它在底下做的事（等价手动形式），三步：
 ::    a) 给 CK3 加启动参数 -debug_mode（Steam 启动选项里加）后启动。
 ::    b) 开控制台（` 键）执行两个命令——各写一部分，缺一不可：
 ::         script_docs      → 7 个清单 .log
@@ -179,7 +184,8 @@ CK3——完整重建见**手册 A**。
 ::    1) 每次传 --game-dir；2) 环境变量 CK3_GAME_DIR；
 ::    3) scripts\state\local_paths.json 写 {"game_dir": "<路径>"}（该目录已 gitignore）
 ::    可选：--game-version "<你的版本>"——写入 manifest/catalog 的版本标注
-::    （默认 1.20.0；游戏版本更新时记得传新版本号）
+::    （默认自动从 dump 提取，失败用内置基准；run.py --stage game
+::    会统一传三通道）
 
 :: —— 4b. 地图知识层（零网络；免参配置同上）——
 <python> scripts\map_layer.py --game-dir "<你的 CK3 安装目录>\game"
@@ -196,11 +202,18 @@ CK3——完整重建见**手册 A**。
 ### 手册 B：游戏版本更新后刷新
 
 ```bat
-:: 1. 换新版本游戏重跑 script_docs，替换 game logs\ 下的全部 dump 文件
-:: 2. 游戏层重并入（产物按新 dump 整体重生成，版本标注自动更新；零网络）
-<python> scripts\game_layer.py
-<python> scripts\vanilla_index.py --game-dir "<你的 CK3 安装目录>\game"
-<python> scripts\map_layer.py --game-dir "<你的 CK3 安装目录>\game"
+:: 1. 换新版本游戏重跑两条 dump 命令（控制台，-debug_mode；导出落在
+::    Documents\...\Crusader Kings III\logs\）
+:: 2. 三通道一条命令重刷新（签名+结构+地图层，随后 catalog 游戏层区块
+::    + 质量门；零网络。自动取较新的 dump——仓库 game logs\ 或 Documents
+::    logs\——并从 dump 自身提取游戏版本、三通道统一标注）：
+<python> scripts\run.py --stage game
+::    等价手动形式（它在底下跑的命令）：
+::      <python> scripts\game_layer.py --source "<dump 目录>"
+::      <python> scripts\vanilla_index.py --game-dir "<你的 CK3 安装目录>\game"
+::      <python> scripts\map_layer.py --game-dir "<你的 CK3 安装目录>\game"
+::      <python> scripts\catalog.py
+::      <python> scripts\quality_gate.py
 :: 3. wiki 侧增量刷新（需要联网：批量核对各页 revid，未变的页零请求）
 <python> scripts\crawl.py --nav --refresh
 ::    若一跳补充页也要核对：重跑 <python> scripts\onehop.py --crawl
@@ -223,6 +236,28 @@ CK3——完整重建见**手册 A**。
    `<python> scripts\check_doc_paths.py`（验证 AGENTS / README
    引用路径无空指）。
 
+### 手册 D：为其他 mod 建知识库（抄写室）
+
+面向**子 mod / 兼容补丁**开发——用**父 mod** 代替原版建同构知识库
+（详见 `copy_room\README.md`）：
+
+```bat
+:: 1) 枚举本机可建的 mod（Steam 工坊多库 + 本地）：
+<python> scripts\copy_room.py --list
+
+:: 2) 带目标 mod 启动游戏（-debug_mode），控制台跑齐两条命令
+::    （script_docs 与 dump_data_types——dump 是"原版+mod"合并视图，
+::    两条都要），退出游戏。
+
+:: 3) 在 copy_room\<mod-id>\ 下建 mod 知识库（签名+结构+地图三通道
+::    + DIFF_vs_vanilla.md；本地 mod 用 --path，dump 副本在别处用 --dump）：
+<python> scripts\copy_room.py --build --id 2887120253
+```
+
+检索约定：在该 mod 的范围内，mod 知识库优先于 `game_docs\`（子 mod
+运行在父 mod 环境里）；查原版行为回退 `game_docs\`。mod 知识库只留在
+本机不发布（mod 内容版权归各作者；任何人都可用上面三步重建等价物）。
+
 ## 测试与自检（全部零网络）
 
 ```bat
@@ -233,6 +268,8 @@ CK3——完整重建见**手册 A**。
 <python> tests\spotcheck_tables.py        :: 表格零丢失抽查（raw 针式）
 <python> scripts\clean.py --replay-golden :: 金样本回放（Scripting+Effects 固定夹具）
 <python> scripts\check_doc_paths.py       :: AGENTS / README 路径引用自检
+<python> scripts\reading_room.py --check  :: 阅览室 catalog 区块同步校验
+<python> scripts\copy_room.py --check     :: 抄写室 catalog 区块校验（无本机 KB 也通过）
 :: 仅维护者可跑（依赖不发布的本地数据）：
 <python> scripts\game_layer.py --check    :: 游戏层产物与源一致（需 game logs/）
 <python> scripts\vanilla_index.py --check :: 结构索引与游戏目录一致（需游戏目录）
@@ -251,11 +288,11 @@ CK3——完整重建见**手册 A**。
 |---|---|
 | wiki 层 · 抓取日期 | 2026-10-22（导航/种子两批）+ 2026-10-23（一跳补抓；Patch 旧版本日志页按决策排除） |
 | wiki 层 · 快照页数 | 141（实时页数见 `catalog.md` 头部快照块） |
-| 游戏层 · dump 游戏版本 | CK3 1.20.1 |
-| 游戏层 · 并入日期 | 2026-10-29 |
-| 游戏层 · 条目数 | effects 2128 · triggers 1937 · modifiers 761 · on_actions 932 · event_targets 328 · event_scopes 74 · custom_localization 2782 |
-| 原版结构索引 | `entry_map.tsv` 78167 行；`common` 128 个子目录摘要；2026-10-29 按 CK3 1.20.1 扫描 |
-| 地图知识层 | 档案 + 13270 省份索引 + nudger 参数表；2026-11-02 按 CK3 1.20.1 实测 |
+| 游戏层 · dump 游戏版本 | CK3 1.21.0（自 dump 自动提取） |
+| 游戏层 · 并入日期 | 2026-11-18（CK3 1.21.0 刷新） |
+| 游戏层 · 条目数 | effects 2399 · triggers 2163 · modifiers 976 · on_actions 1061 · event_targets 377 · event_scopes 88 · custom_localization 2993 |
+| 原版结构索引 | `entry_map.tsv` 96296 行；`common` 137 个子目录摘要；2026-11-18 按 CK3 1.21.0 扫描 |
+| 地图知识层 | 档案 + 13475 省份索引 + nudger 参数表；2026-11-18 按 CK3 1.21.0 实测 |
 | `catalog.md` 体积 | 约 131KB |
 
 时效：超出上述日期的内容（新游戏补丁、抓取日期之后的 wiki 修改）不在
@@ -275,6 +312,9 @@ CK3——完整重建见**手册 A**。
   金样本——**CC BY-SA 3.0**，署名 CK3 Wiki
   （<https://ck3.paradoxwikis.com>）；再分发须同许可共享，详见
   `pages\CONTENT-LICENSE.md`。
-- **不随仓库分发**：`game_docs\`、`raw\`、`game logs\`、
-  `scripts\state\`、`_reference\`——游戏衍生数据、抓取原始存档、
-  会话状态与第三方参考资料，只留在本机。
+- **游戏衍生数据**：`game_docs\` 随仓库发布（见快速开始的说明）——
+  本仓库不对其主张任何权利，全部相关权利归 Paradox Interactive
+  （完整声明见 `LICENSES.md`）。
+- **不随仓库分发**：`copy_room\<mod-id>\`、`raw\`、`game logs\`、
+  `scripts\state\`、`_reference\`——mod 知识库（手册 D 可重建）、
+  抓取原始存档、会话状态与第三方参考资料，只留在本机。

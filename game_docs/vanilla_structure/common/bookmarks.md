@@ -1,17 +1,17 @@
 # common/bookmarks 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：6（其中 Jomini 解析 3 个）
-- 顶层块条目总数：75，跨文件唯一条目 75
+- 顶层块条目总数：77，跨文件唯一条目 77
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `bookmarks/00_bookmarks.txt` | 96199 | 20 | 0 | jomini |
+| `bookmarks/00_bookmarks.txt` | 104433 | 22 | 0 | jomini |
 | `bookmarks/_bookmarks.info` | 4957 | - | - | 纯文档（非 Jomini） |
-| `challenge_characters/00_challenge_characters.txt` | 32180 | 52 | 0 | jomini |
+| `challenge_characters/00_challenge_characters.txt` | 32181 | 52 | 0 | jomini |
 | `challenge_characters/_challenge_characters.info` | 350 | - | - | 纯文档（非 Jomini） |
 | `groups/00_bookmark_groups.txt` | 167 | 3 | 0 | jomini |
 | `groups/_bookmark_groups.info` | 353 | - | - | 纯文档（非 Jomini） |
@@ -20,7 +20,7 @@
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### bookmarks/00_bookmarks.txt（20 条目）
+### bookmarks/00_bookmarks.txt（22 条目）
 
 - bm_867_persia
 - bm_867_iberia
@@ -42,6 +42,8 @@
 - bm_1178_china
 - bm_1066_japan
 - bm_1178_genpei
+- bm_1066_merchants
+- bm_1178_merchants
 
 ### challenge_characters/00_challenge_characters.txt（52 条目）
 

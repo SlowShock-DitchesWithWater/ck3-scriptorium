@@ -1,18 +1,19 @@
 # common/house_aspirations 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：5（其中 Jomini 解析 4 个）
-- 顶层块条目总数：29，跨文件唯一条目 29
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：6（其中 Jomini 解析 5 个）
+- 顶层块条目总数：35，跨文件唯一条目 35
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_admin_house_powers.txt` | 31720 | 13 | 4 | jomini |
-| `10_tgp_celestial_house_powers.txt` | 15436 | 4 | 6 | jomini |
-| `10_tgp_japan_house_aspirations.txt` | 16586 | 7 | 0 | jomini |
-| `_house_aspiration.info` | 2634 | - | - | 纯文档（非 Jomini） |
+| `00_admin_house_powers.txt` | 31729 | 13 | 4 | jomini |
+| `10_tgp_celestial_house_powers.txt` | 15514 | 4 | 6 | jomini |
+| `10_tgp_japan_house_aspirations.txt` | 16623 | 7 | 0 | jomini |
+| `_house_aspiration.info` | 3093 | - | - | 纯文档（非 Jomini） |
+| `gdp_republic_ambitions.txt` | 19495 | 6 | 5 | jomini |
 | `tgp_mandala_devaraja_aspects.txt` | 24630 | 5 | 0 | jomini |
 
 ## 条目名 → 定义文件
@@ -51,6 +52,15 @@
 - prosperity
 - service
 - strength
+
+### gdp_republic_ambitions.txt（6 条目）
+
+- republic_no_ambition
+- republic_commerce
+- republic_aggrandizement
+- republic_communal
+- republic_signorial
+- republic_agitation
 
 ### tgp_mandala_devaraja_aspects.txt（5 条目）
 

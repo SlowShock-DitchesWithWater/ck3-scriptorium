@@ -1,8 +1,8 @@
 # common/coat_of_arms 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：24（其中 Jomini 解析 23 个）
-- 顶层块条目总数：3333，跨文件唯一条目 3061
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：25（其中 Jomini 解析 24 个）
+- 顶层块条目总数：3716，跨文件唯一条目 3438
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -11,12 +11,13 @@
 |---|---|---|---|---|
 | `coat_of_arms/01_cardinal_coas.txt` | 17584 | 42 | 0 | jomini |
 | `coat_of_arms/01_clerical_region_coas.txt` | 29791 | 70 | 0 | jomini |
+| `coat_of_arms/01_confederation_coas.txt` | 247 | 1 | 0 | jomini |
 | `coat_of_arms/01_holy_order_coas.txt` | 25528 | 50 | 0 | jomini |
-| `coat_of_arms/01_landed_titles.txt` | 837078 | 1884 | 15 | jomini |
+| `coat_of_arms/01_landed_titles.txt` | 848128 | 1918 | 49 | jomini |
 | `coat_of_arms/01_mercenary_coas.txt` | 3819 | 18 | 0 | jomini |
 | `coat_of_arms/01_random_templates.txt` | 253414 | 1 | 0 | jomini |
 | `coat_of_arms/03_religious_icons.txt` | 26194 | 1 | 0 | jomini |
-| `coat_of_arms/90_dynasties.txt` | 513890 | 1127 | 269 | jomini |
+| `coat_of_arms/90_dynasties.txt` | 665894 | 1475 | 285 | jomini |
 | `coat_of_arms/91_laamp_coas.txt` | 775 | 1 | 15 | jomini |
 | `coat_of_arms/99_coa_designer_templates.txt` | 330 | 1 | 0 | jomini |
 | `coat_of_arms/99_historical_character_coa.txt` | 7075 | 0 | 239 | jomini |
@@ -30,7 +31,7 @@
 | `template_lists/coa_designer_templates.txt` | 518 | 1 | 0 | jomini |
 | `template_lists/coa_templates.txt` | 29173 | 1 | 0 | jomini |
 | `template_lists/color_lists.txt` | 6116 | 1 | 0 | jomini |
-| `template_lists/colored_emblem_lists.txt` | 147804 | 1 | 0 | jomini |
+| `template_lists/colored_emblem_lists.txt` | 155611 | 1 | 0 | jomini |
 | `template_lists/pattern_lists.txt` | 2312 | 1 | 0 | jomini |
 | `template_lists/textured_emblem_lists.txt` | 41 | 0 | 0 | jomini |
 
@@ -156,6 +157,10 @@
 - d_et_seleucia_ctesiphon
 - d_et_tyre
 
+### coat_of_arms/01_confederation_coas.txt（1 条目）
+
+- lombard_league
+
 ### coat_of_arms/01_holy_order_coas.txt（50 条目）
 
 - ho_christian
@@ -209,7 +214,7 @@
 - ho_community_of_st_catherine
 - ho_franciscans
 
-### coat_of_arms/01_landed_titles.txt（1884 条目）
+### coat_of_arms/01_landed_titles.txt（1918 条目）
 
 - b_appleby
 - b_canterbury
@@ -308,6 +313,7 @@
 - c_breisgau
 - c_breifne
 - c_bremen
+- c_verden
 - c_brescia
 - c_buchan
 - c_caceres
@@ -412,6 +418,7 @@
 - c_lombardia
 - c_lothian
 - c_lubeck
+- c_eutin
 - c_lyon
 - c_mahra
 - c_middlesex
@@ -433,7 +440,7 @@
 - c_nottinghamshire
 - c_ochrid
 - c_oland
-- c_orbetello
+- c_soana
 - c_oriel
 - c_orvieto
 - c_ossory
@@ -551,6 +558,7 @@
 - d_oxford
 - d_powys
 - d_dauphine
+- d_lyonnais
 - d_venice
 - d_ulster
 - d_valois
@@ -578,6 +586,7 @@
 - k_winideheim
 - k_almohad
 - e_france
+- h_carolingian
 - e_italy
 - e_britannia
 - e_germany
@@ -604,6 +613,9 @@
 - k_italy
 - k_sardinia
 - k_papal_state
+- c_roma
+- b_vaticano
+- c_vaticano
 - k_cornwall
 - k_scotland
 - d_palestine
@@ -628,6 +640,8 @@
 - k_switzerland
 - k_carantania
 - k_saxony
+- k_swabia
+- k_franconia
 - k_saxon_electorate
 - k_aquitaine
 - k_genoa
@@ -647,6 +661,7 @@
 - e_maghreb
 - e_slavia
 - h_roman_empire
+- h_roman_republic
 - h_eastern_roman_empire
 - e_illyria
 - e_macedonia
@@ -728,6 +743,7 @@
 - c_samarra
 - c_savoie
 - d_flanders
+- d_artois
 - d_osterreich
 - c_lomza
 - c_passau
@@ -825,17 +841,21 @@
 - d_utrecht
 - d_anhalt
 - d_bavaria
+- d_passau
 - d_lower_silesia
 - d_upper_silesia
 - d_provence
 - d_pommerania
+- d_kolobrzeg
 - d_pomerelia
+- d_slawno
 - d_wielkopolska
 - d_alsace
 - d_currezia
 - d_augsburg
 - c_augsburg
 - d_nordgau
+- d_cham
 - d_transjurania
 - d_genoa
 - c_genoa
@@ -843,12 +863,14 @@
 - d_ancona
 - d_verona
 - d_latium
-- c_roma
+- c_roma_urbs
 - d_moravia
 - d_piedmonte
 - d_emilia
 - d_frisia
+- c_ostringen
 - d_luxembourg
+- d_liege
 - d_gelre
 - d_swabia
 - d_upper_burgundy
@@ -892,6 +914,7 @@
 - d_ostfalen
 - c_mecklenburg
 - d_nordmark
+- d_rugen
 - d_steyermark
 - d_carinthia
 - d_krain
@@ -949,7 +972,9 @@
 - d_ostergotland
 - d_skane
 - d_courland
+- d_semigallia
 - d_lithuanians
+- d_sudovia
 - d_prussia
 - d_latgalians
 - d_samogitia
@@ -1087,6 +1112,7 @@
 - b_grandpre
 - c_meaux
 - c_hainaut
+- c_avesnes
 - c_limousin
 - c_perigord
 - c_bar
@@ -1137,6 +1163,7 @@
 - c_saarbrucken
 - c_neufchateau
 - c_cologne
+- c_soest
 - c_dortmund
 - c_arnsberg
 - c_koblenz
@@ -1184,6 +1211,7 @@
 - c_strassburg
 - c_lobdaburg
 - c_liege
+- c_loon
 - c_regensburg
 - c_ingolstadt
 - c_munchen
@@ -1277,7 +1305,7 @@
 - c_gleichenstein
 - c_schmalkalden
 - c_bamberg
-- c_sankt_gallen
+- c_konstanz
 - c_zurich
 - c_grisons
 - c_marburg
@@ -1301,7 +1329,7 @@
 - c_treviso
 - c_friuli
 - c_veneto
-- c_cuneo
+- c_saluzzo
 - c_novara
 - c_tortona
 - c_cremona
@@ -1311,7 +1339,7 @@
 - c_lucca
 - c_arezzo
 - c_siena
-- c_orbetello
+- c_soana
 - c_gallura
 - c_logudoro
 - c_tortoli
@@ -1325,10 +1353,10 @@
 - c_fermo
 - c_spoleto
 - c_orvieto
-- c_lanciano
+- c_teate
 - c_abruzzi
 - c_viterbo
-- c_tivoli
+- c_segni
 - c_palermo
 - c_messina
 - c_siracusa
@@ -1338,7 +1366,7 @@
 - c_bari
 - c_lecce
 - c_apulia
-- c_foggia
+- c_capitanate
 - c_salerno
 - c_camarda
 - c_rossano
@@ -1564,7 +1592,6 @@
 - b_montfort
 - b_chatellerault
 - b_roanne
-- b_monaco
 - b_ivrea
 - b_salins
 - b_orange
@@ -1574,7 +1601,7 @@
 - b_annonay
 - b_saluzzo
 - b_die
-- b_castellane
+- c_castellane
 - b_veldenz
 - b_kreusnach
 - b_konstanz
@@ -1636,7 +1663,7 @@
 - b_chynov
 - b_chateaudun
 - b_chateaubriant
-- b_piombino
+- c_piombino
 - b_southampton
 - b_saint_albans
 - b_luton
@@ -1905,7 +1932,7 @@
 - c_seleucia
 - c_ghazza
 - c_kakheti
-- d_nf_komnenos_andronikos
+- c_nf_komnenos_andronikos
 - c_figuig
 - c_ulaanbaatar
 - c_qaryatan
@@ -2091,6 +2118,18 @@
 - d_lishui
 - c_yangzhou
 - k_balhae
+- d_hitakami
+- c_merchant_faliero
+- c_merchant_wuhsha
+- c_merchant_long
+- c_merchant_sun_5B6B
+- c_merchant_sahu
+- c_merchant_new_dynasty
+- c_merchant_sanudo
+- c_merchant_dalesmanni
+- c_merchant_starting_holmsen_ski
+- c_tuscolo
+- d_commune_ragusa
 - d_et_aquileia
 - d_et_hamburg
 - d_et_salzburg
@@ -2125,7 +2164,7 @@
 
 - template
 
-### coat_of_arms/90_dynasties.txt（1127 条目）
+### coat_of_arms/90_dynasties.txt（1475 条目）
 
 - 79
 - 278
@@ -2153,6 +2192,7 @@
 - vanity_berg_hulthen
 - vanity_saltfish
 - vanity_Az
+- vanity_Kucal
 - house_lara-castilla
 - jamshid
 - vanity_anward
@@ -2587,12 +2627,12 @@
 - 1043009
 - 12331
 - 1043000
-- 1030000
+- 103
 - 2001159
 - 88
 - 101565
-- 2000000
-- 2000003
+- 200
+- 203
 - 1044312
 - 105800
 - 1045082
@@ -2903,6 +2943,7 @@
 - 12252
 - 24000
 - khitan_yelu
+- norman_crispin
 - house_vivar
 - house_tusi
 - vanity_bean
@@ -3144,6 +3185,157 @@
 - jurchen_tudan
 - zhu_6731_7
 - zhang_5F35_34
+- ao_6556_1
+- dyn_boling_cui
+- house_boling_dafang_cui
+- house_boling_erfang_cui
+- house_boling_sanfang_cui
+- house_boling_sifang_cui
+- house_boling_wufang_cui
+- house_boling_liufang_cui
+- dyn_qinghe_cui
+- house_qinghe_dafang_cui
+- house_qinghe_xiaofang_cui
+- house_qinghe_nanzu_cui
+- fu_5BCC_1
+- house_biwang_li
+- house_caiwang_li
+- house_caowang_li
+- house_danyang_li
+- house_dazhengwang_li
+- house_dunhuang_li
+- house_guzang_li
+- house_qiaowang_li
+- house_xunwang_li
+- lu_76E7_1
+- house_beizu_dafang_lu
+- house_beizu_erfang_lu
+- house_beizu_sanfang_lu
+- house_beizu_sifang_lu
+- house_nanzu_lu
+- house_dishi_lu
+- xiahou_590F_4FAF_1
+- jiang_848B_1
+- cao_66F9_8
+- dyn_taishan_yang
+- wei_97CB_2
+- house_yinggong_wei
+- house_fuma_wei
+- yu_5EBE_2
+- house_changping_liu
+- house_qiwang_liu
+- house_yichuan_sima
+- house_taizu_zhao
+- house_taizong_zhao
+- lu_5442_101
+- house_weiwang_zhao
+- han_97D3_11
+- han_97D3_2
+- zhang_5F35_95
+- hu_80E1_1
+- guo_90ED_39
+- sun_5B6B_75
+- fu_5085_9
+- cai_8521_3
+- li_674E_999
+- zeng_66FE_10
+- zhang_5F35_13
+- shi_77F3_4
+- yang_694A_27
+- fan_8303_6
+- cheng_7A0B_5
+- tang_5510_1
+- liang_6881_5
+- chen_9673_53
+- chen_9673_18
+- house_zhao_tianshui
+- house_zhao_qianshan
+- c_jiangning
+- c_qizhou
+- c_xuzhou_1
+- c_suzhou_2
+- li_674E_28
+- house_zhaojun_xizu_li
+- house_zhaojun_dongzu_li
+- house_zhaojun_nanzu_li
+- sun_5B6B_1
+- wang_738B_1
+- house_taiyuan_jinyang_wang
+- house_taiyuan_qixian_wang
+- house_sanhuai_wang
+- zheng_912D_1
+- house_beizu_erfang_zheng
+- house_nanzu_zheng
+- house_south_lanling_xiao
+- xiao_856D_1
+- 2003012
+- du_675C_1
+- house_xima_pei
+- house_dongjuan_pei
+- house_xijuan_pei
+- house_nanlaiwu_pei
+- house_zhongjuan_pei
+- pei_88F4_1
+- wu_6B66_1
+- dyn_yanmen_tian
+- wang_738B_267
+- dyn_minguo_zhu_6731
+- yang_694A_76
+- dyn_qushan_xu_5F90
+- c_nf_lujiang_li
+- house_lujiang_li
+- dyn_pengcheng_xu_5F90
+- dyn_hefei_li_674E
+- dyn_hefei_zhu_6731
+- dyn_tongan_zhou_5468
+- dyn_lujiang_wang_738B
+- dyn_runan_chai_67F4
+- dyn_runan_li_674E
+- dyn_guangling_zhou_5468
+- dyn_guangling_li_674E
+- dyn_qingyuan_liu_7559
+- dyn_xianyou_chen_9673
+- dyn_jianan_chen_9673
+- dyn_yiyang_li_674E
+- sui_imperial_yang
+- dyn_fufeng_ma
+- dyn_yuancheng_wang
+- han_imperial_liu
+- dyn_runan_yuan
+- dyn_qiaojun_cao
+- house_zhuojun_liu
+- house_fuchun_sun
+- jin_imperial_sima
+- zhang_5F35_58
+- coa_dynasty_westernliang_royal_li
+- coa_dynasty_northernliang_royal_juqu
+- coa_dynasty_yan_royal_murong
+- coa_dynasty_northernyan_royal_feng
+- coa_dynasty_qin_imperial_fu
+- coa_dynasty_laterqin_royal_yao
+- coa_dynasty_westernqin_royal_qifu
+- coa_dynasty_hanzhao_royal_liu
+- coa_dynasty_laterzhao_royal_shi
+- coa_dynasty_chenghan_royal_li
+- coa_dynasty_huxia_royal_helian
+- house_suiyuli_liu
+- chen_9673_41
+- coa_dynasty_northernqi_imperial_gao
+- zhu_6731_29
+- li_674E_zhuye
+- shatuo_shi_77F3_two
+- shatuo_liu_later_han
+- dyn_yaoshan_chai
+- coa_dynasty_yangwu_royal_yang
+- coa_dynasty_shu_royal_wang
+- coa_dynasty_latershu_royal_meng
+- wang_738B_267
+- coa_dynasty_machu_royal_ma
+- coa_dynasty_southernhan_royal_liu
+- coa_dynasty_nanping_royal_gao
+- li_674E_76
+- qian_9322_1
+- hchar_zhu_2
 - khmer_varman
 - mon_camadevi_haripunjaya
 - dayak_segara
@@ -3216,7 +3408,6 @@
 - dali_gao
 - bai_dong
 - bai_li
-- gao_9AD8_5
 - guiyi_yan
 - yang_694A_24
 - 2003098
@@ -3236,24 +3427,220 @@
 - korean_gwon_andong
 - korean_wang_seohae
 - vanity_ceanneidigh
-- levantine_al-ghanawi
-- 101718
-- saxon_dohna
-- 7295
-- house_achalm
-- franconian_tonna
-- sambonifazio
-- house_lechsgemund
-- 12421
-- carcano
-- 13050
-- von_bingen
-- 100349
+- italian_bardi
+- italian_pazzi
+- italian_cavalcanti
+- italian_piccolomini
+- cisalpine_mandelli
+- 1062032
+- cisalpine_buonaparte
+- house_frangipani
+- 8723
+- roman_anicius
+- 13027
+- 7235
+- 8734
+- cisalpine_corner
+- cisalpine_dolfin
+- cisalpine_bembo
+- cisalpine_querini
+- 7218
+- 13006
 - house_colonna
 - lanhoso
 - occitan_saint_amand
 - 101704
 - aragonese_horal
+- italian_massimo
+- italian_bandinelli
+- long_dynasty
+- han_sun_5B6B_merchant
+- wuhsha_karimid_dynasty
+- salvidi_dynasty
+- hindustani_sahu
+- new_merchant_dynasty
+- new_adventurer_dynasty
+- levantine_al-ghanawi
+- 101718
+- saxon_dohna
+- 7295
+- 1042813
+- house_achalm
+- 1042812
+- franconian_tonna
+- 1042810
+- 101562
+- cisalpine_barbolano
+- 1042812
+- 13071
+- sambonifazio
+- 515
+- house_lechsgemund
+- 7236
+- 13076
+- 12421
+- carcano
+- 13050
+- von_bingen
+- 100349
+- 1030000
+- 2000000
+- 2000003
+- 102020
+- italian_alberti
+- 101851
+- italian_barbolani
+- camposampiero
+- rangoni
+- italian_porcari
+- cisalpine_asinelli
+- house_fieschi
+- 13001
+- house_adorno
+- house_pallavicino
+- house_pallavicino_genoa
+- cisalpine_grillo
+- cisalpine_negrone
+- cisalpine_vento
+- italian_gualandi
+- 9521
+- 1042007
+- italian_filippeschi
+- italian_uberti
+- italian_medici
+- 13047
+- 101819
+- house_geremia
+- house_polenta
+- italian_maffei
+- cisalpine_della_volta
+- cisalpine_fornario
+- cisalpine_pevere
+- cisalpine_lungo
+- house_castro
+- cisalpine_ariosti
+- house_carmadino
+- house_mari
+- house_usodimare
+- house_serra
+- cisalpine_cicala
+- cisalpine_lercaro
+- cisalpine_collone
+- cisalpine_lomello
+- croatian_gundulic
+- croatian_binculici
+- croatian_getaldic
+- croatian_krcki
+- house_salamon
+- cisalpine_magadesi
+- house_barbaro
+- italian_crescenzi
+- italian_ottaviani
+- italian_orlandi
+- italian_upezzinghi
+- cisalpine_correr
+- 7237
+- starting_merchant_dynasty_kongo
+- starting_merchant_dynasty_genda
+- starting_merchant_dynasty_tanaka
+- starting_merchant_dynasty_nakamura
+- starting_merchant_dynasty_sudo
+- starting_merchant_dynasty_furukawa
+- starting_merchant_dynasty_hasegawa
+- starting_merchant_dynasty_marinelli
+- starting_merchant_dynasty_ma
+- starting_merchant_dynasty_goulaine
+- starting_merchant_dynasty_quwami
+- starting_merchant_dynasty_chetti
+- starting_merchant_dynasty_shetty
+- starting_merchant_dynasty_comite_maurone
+- starting_merchant_dynasty_domazhirich
+- starting_merchant_dynasty_qusi
+- 1040023
+- cisalpine_badoer
+- cisalpine_franco
+- cisalpine_capoan
+- cisalpine_faraon
+- cisalpine_fontana
+- cisalpine_da_mar
+- croatian_lukarevic
+- croatian_crijevic
+- croatian_bundic
+- croatian_bobalic
+- croatian_bucinic
+- croatian_kaboga
+- croatian_martinusic
+- croatian_palmotic
+- croatian_prodanelic
+- croatian_ranjina
+- croatian_saraka
+- cisalpine_da_carate
+- cisalpine_aliate
+- cisalpine_pisto
+- cisalpine_ermenulfi
+- cisalpine_da_sesto
+- cisalpine_marcellino
+- cisalpine_boltraffio
+- cisalpine_borro
+- 156
+- cisalpine_san_benedetto
+- cisalpine_lucino
+- cisalpine_gambara
+- cisalpine_terzi
+- cisalpine_osa
+- cisalpine_dell_osa
+- 8683
+- cisalpine_sommi
+- cisalpine_ponzoni
+- cisalpine_da_san_nagario
+- cisalpine_sannazzaro
+- cisalpine_arcelli
+- cisalpine_lambertazzi
+- cisalpine_mariscotti
+- cisalpine_malvezzi
+- cisalpine_pepoli
+- 8674
+- cisalpine_ramberti
+- 8672
+- 8721
+- cisalpine_giocoli
+- cisalpine_boschetti
+- cisalpine_savignano
+- 8724
+- 101834
+- cisalpine_onesti
+- italian_ordelaffi
+- cisalpine_arlotti
+- cisalpine_tempesta
+- 101702
+- 8706
+- cisalpine_monticoli
+- cisalpine_turrisendi
+- 100472
+- cattaneo
+- baone
+- 13009
+- cisalpine_borromeo
+- 7377
+- 1042014
+- 1042033
+- italian_casapieri
+- italian_amidei
+- italian_buondelmonti
+- italian_gherardini
+- italian_ricasoli
+- cisalpine_bonsignori
+- cisalpine_tolomei
+- italian_nerli
+- italian_bostoli
+- 13059
+- italian_bonarelli
+- italian_fazioli
+- 101817
+- italian_guinigi
+- 13049
+- cisalpine_bisaccia
+- cisalpine_recalcato
 
 ### coat_of_arms/91_laamp_coas.txt（1 条目）
 

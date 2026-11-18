@@ -11,7 +11,7 @@
 | 内容 | 位置 | 权威级 |
 |---|---|---|
 | 地图数据实测档案（格式/尺寸/调色板/编辑器证据） | `game_docs/map_docs/map_data_dossier.md` | 游戏实测，最高 |
-| 省份索引（id↔RGB↔名称，13270 行） | `game_docs/map_docs/province_index.tsv` | 游戏实测 |
+| 省份索引（id↔RGB↔名称，13475 行） | `game_docs/map_docs/province_index.tsv` | 游戏实测 |
 | auto-nudge 摆放参数表（约 60 参数） | `game_docs/map_docs/nudger_parameters.md` | 数值实测+语义推断 |
 | 地图 modding 讲解（heightmap/河流/省份教程） | `pages/Map modding.md`（wiki，1.1 时代） | 低，冲突以实测为准 |
 
@@ -32,7 +32,7 @@ python map_room/validate_map.py <mod根目录> --game-root "<CK3安装目录>\ga
 python map_room/validate_map.py <mod根目录> --deep        # 附加河流拓扑检查
 ```
 
-退出码 = ERROR 数。原版 1.20.1 全量验收：ERROR 0。
+退出码 = ERROR 数。原版 1.21.0 全量验收（--deep）：ERROR 0 · WARN 4。
 依赖 Pillow（`pip install pillow`）；`--deep` 另需 numpy。
 
 ### 3. 工作流指南（本目录 `WORKFLOW.md`）

@@ -1,32 +1,32 @@
 # common/defines 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：12（其中 Jomini 解析 12 个）
-- 顶层块条目总数：162，跨文件唯一条目 144
+- 顶层块条目总数：168，跨文件唯一条目 149
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_defines.txt` | 125592 | 80 | 0 | jomini |
-| `ai/00_ai.txt` | 66860 | 7 | 0 | jomini |
-| `audio/00_audio.txt` | 3541 | 7 | 0 | jomini |
+| `00_defines.txt` | 137145 | 83 | 0 | jomini |
+| `ai/00_ai.txt` | 71964 | 8 | 0 | jomini |
+| `audio/00_audio.txt` | 4668 | 7 | 0 | jomini |
 | `graphic/00_coa.txt` | 64 | 1 | 0 | jomini |
-| `graphic/00_graphics.txt` | 62518 | 60 | 0 | jomini |
+| `graphic/00_graphics.txt` | 69137 | 62 | 0 | jomini |
 | `jomini/adjacencies.txt` | 325 | 1 | 0 | jomini |
 | `jomini/fog_of_war.txt` | 804 | 1 | 0 | jomini |
 | `jomini/mapeditor.txt` | 95 | 1 | 0 | jomini |
 | `jomini/portraits.txt` | 1275 | 1 | 0 | jomini |
 | `jomini/rivers.txt` | 375 | 1 | 0 | jomini |
-| `jomini/text_coloring.txt` | 72 | 1 | 0 | jomini |
+| `jomini/text_coloring.txt` | 116 | 1 | 0 | jomini |
 | `jomini/text_formatting.txt` | 285 | 1 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_defines.txt（80 条目）
+### 00_defines.txt（83 条目）
 
 - NGame
 - NSetup
@@ -38,6 +38,7 @@
 - NChildbirth
 - NMarriage
 - NCharacterOpinion
+- NLaw
 - NCharacterInteraction
 - NGovernment
 - NActionPoints
@@ -108,8 +109,10 @@
 - NGreatProject
 - NMandala
 - NTreasuryBudgeting
+- NTrade
+- NRoad
 
-### ai/00_ai.txt（7 条目）
+### ai/00_ai.txt（8 条目）
 
 - NAI
 - NFaction
@@ -118,6 +121,7 @@
 - NActivity
 - NMigration
 - NDynastyHouse
+- NTrade
 
 ### audio/00_audio.txt（7 条目）
 
@@ -133,7 +137,7 @@
 
 - NCoatOfArms
 
-### graphic/00_graphics.txt（60 条目）
+### graphic/00_graphics.txt（62 条目）
 
 - NJominiMapGraphics
 - NJominiGraphics
@@ -152,6 +156,7 @@
 - NCoatOfArms
 - NUnitGraphics
 - NTravelRouteGraphics
+- NTradeRouteGraphics
 - NCombatInterface
 - NCombatPrediction
 - NGrantTitleInterface
@@ -190,6 +195,7 @@
 - NStruggle
 - NIntrigue
 - NHouseUnity
+- NHoldingSprawl
 - NEpidemic
 - NSilkRoad
 - NRite

@@ -1,38 +1,39 @@
 # common/game_concepts 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：18（其中 Jomini 解析 17 个）
-- 顶层块条目总数：1142，跨文件唯一条目 1142
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：19（其中 Jomini 解析 18 个）
+- 顶层块条目总数：1269，跨文件唯一条目 1269
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_game_concepts.txt` | 74499 | 640 | 0 | jomini |
+| `00_game_concepts.txt` | 80233 | 669 | 0 | jomini |
 | `01_bp1_game_concepts.txt` | 160 | 1 | 0 | jomini |
 | `01_bp2_game_concepts.txt` | 227 | 2 | 0 | jomini |
-| `01_bp3_game_concepts.txt` | 1130 | 8 | 0 | jomini |
+| `01_bp3_game_concepts.txt` | 1152 | 8 | 0 | jomini |
 | `01_ep1_game_concepts.txt` | 2761 | 14 | 0 | jomini |
 | `01_fp1_game_concepts.txt` | 628 | 3 | 0 | jomini |
 | `03_fp2_game_concepts.txt` | 3445 | 27 | 0 | jomini |
-| `03_fp3_game_concepts.txt` | 3025 | 28 | 0 | jomini |
-| `04_ep2_game_concepts.txt` | 10818 | 66 | 0 | jomini |
+| `03_fp3_game_concepts.txt` | 3077 | 27 | 0 | jomini |
+| `04_ep2_game_concepts.txt` | 10166 | 61 | 0 | jomini |
 | `05_bp2_game_concepts.txt` | 584 | 4 | 0 | jomini |
-| `06_ce1_game_concepts.txt` | 3210 | 22 | 0 | jomini |
-| `07_ep3_game_concepts.txt` | 8712 | 65 | 0 | jomini |
+| `06_ce1_game_concepts.txt` | 3232 | 22 | 0 | jomini |
+| `07_ep3_game_concepts.txt` | 8367 | 60 | 0 | jomini |
 | `10_empire_faith_gate_game_concepts.txt` | 129 | 1 | 0 | jomini |
 | `_game_concepts.info` | 2542 | - | - | 纯文档（非 Jomini） |
 | `ach_game_concepts.txt` | 1079 | 7 | 0 | jomini |
-| `mpo_game_concepts.txt` | 5609 | 47 | 0 | jomini |
-| `pam_game_concepts.txt` | 11857 | 80 | 0 | jomini |
-| `tgp_game_concepts.txt` | 22348 | 127 | 0 | jomini |
+| `gdp_game_concepts.txt` | 15772 | 109 | 0 | jomini |
+| `mpo_game_concepts.txt` | 6025 | 49 | 0 | jomini |
+| `pam_game_concepts.txt` | 11754 | 79 | 0 | jomini |
+| `tgp_game_concepts.txt` | 22177 | 126 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_game_concepts.txt（640 条目）
+### 00_game_concepts.txt（669 条目）
 
 - vassal
 - direct_vassal
@@ -41,6 +42,7 @@
 - vassal_stance
 - ruler
 - title
+- landless_title
 - usurp_title
 - domain_limit
 - recently_acquired_holding
@@ -67,6 +69,7 @@
 - hostile_scheme
 - personal_scheme
 - political_scheme
+- trade_scheme
 - scheme_phase
 - secret_scheme
 - agent_discovery
@@ -100,7 +103,7 @@
 - culture_pillar
 - culture_tradition
 - culture_intermingling
-- county_opinion
+- popular_opinion
 - faith
 - religion
 - religious_family
@@ -124,6 +127,7 @@
 - top_liege
 - holding
 - holding_type
+- food_supply
 - castle_holding
 - temple_holding
 - city_holding
@@ -235,7 +239,6 @@
 - activity
 - activity_option
 - activity_type
-- activity_state_passive
 - activity_state_active
 - activity_phase
 - activity_phase_action
@@ -247,11 +250,21 @@
 - hunt_danger
 - holder
 - building
-- duchy_building
-- special_building
-- great_building
-- ruined_building
-- rebuilt_building
+- district
+- standard_district
+- duchy_district
+- special_district
+- great_district
+- holding_district
+- resource_district
+- district_tier
+- urban_districts
+- rural_districts
+- trade_post_district
+- trade_post_limit
+- entrepot_district
+- ruined_district
+- rebuilt_district
 - economic_building
 - military_building
 - fortification_building
@@ -288,6 +301,8 @@
 - war_target
 - war_leaders
 - men_at_arms
+- reduced_maintenance
+- full_maintenance
 - skirmishers
 - archers
 - light_cavalry
@@ -389,14 +404,17 @@
 - strong_hook
 - favor
 - blackmail
-- manipulation
 - pressed_claim
 - unpressed_claim
 - implicit_claim
-- county_development
-- county_development_growth
-- existing_development
+- county_prosperity
+- settlement_size
+- settlement_size_baseline
+- county_prosperity_growth
+- settlement_size_growth
+- existing_prosperity
 - county_control
+- control_baseline
 - absolute_control
 - county_corruption
 - county_modifier
@@ -439,6 +457,16 @@
 - domain_income
 - vassal_taxes
 - liege_taxes
+- agricultural_taxes
+- mining_taxes
+- religious_taxes
+- urban_taxes
+- artisan_taxes
+- maritime_taxes
+- tribal_taxes
+- civic_taxes
+- woodland_taxes
+- commerce_taxes
 - gender_law
 - depose
 - virtue
@@ -449,7 +477,6 @@
 - excommunicated_recovery
 - excommunicated_ruler
 - holy_site
-- legalism
 - dynasty_prestige_level_0
 - dynasty_prestige_level_1
 - dynasty_prestige_level_2
@@ -527,11 +554,14 @@
 - ward
 - mentor
 - student
+- creditor
+- debtor
 - bully
 - victim
 - crush
 - blood_brother
 - modifier
+- stacking_modifier
 - character_modifier
 - ducal_conquest_casus_belli
 - vassalize_casus_belli
@@ -557,6 +587,7 @@
 - offensive_war_opinion
 - at_peace_opinion
 - character
+- unimportant_characters
 - detail_zoom
 - paper_zoom
 - political_zoom
@@ -565,7 +596,6 @@
 - tutorial_education_trait
 - organized
 - flowery_war
-- partition_share
 - banish_reason
 - imprisonment_reason
 - revoke_title_reason
@@ -608,14 +638,14 @@
 - winter_severity_normal
 - winter_severity_harsh
 - deceitful_progress_hostile_schemes_decision
-- diligent_development_focus_decision
+- diligent_prosperity_focus_decision
 - impatient_rushing_all_schemes_decision
 - dismiss_strong_hook_interaction
 - abandon_hook_interaction
 - force_duel_criminals_interaction
 - force_duel_anyone_interaction
 - artifact_rarity
-- promote_other_culture_development_decision
+- promote_other_culture_prosperity_decision
 - repair_artifact
 - reformation
 - court_position
@@ -748,9 +778,8 @@
 - golden_age_jewish_science_in_iberia_decision
 - build_holy_pilgrim_roads_decision
 
-### 03_fp3_game_concepts.txt（28 条目）
+### 03_fp3_game_concepts.txt（27 条目）
 
-- kindle_royal_fire_decision
 - research_project
 - house_unity
 - house_unity_level
@@ -779,7 +808,7 @@
 - fp3_embellish_capital_decision
 - master_assassin
 
-### 04_ep2_game_concepts.txt（66 条目）
+### 04_ep2_game_concepts.txt（61 条目）
 
 - grand_activity
 - contest
@@ -805,7 +834,6 @@
 - regent_succession_score
 - entrenched_regency
 - diarch_power
-- trilateral_interaction
 - scales_of_power
 - swing_scales_of_power
 - mandate
@@ -832,9 +860,6 @@
 - contestant
 - contest_aptitude
 - spectator
-- wedding_ceremony
-- wedding_banquet
-- wedding_night
 - grand_wedding_promise
 - accolade
 - acclaimed_knight
@@ -843,7 +868,6 @@
 - accolade_rank
 - accolade_type
 - accolade_squires
-- special_guest
 - honorary_guest
 - retinue_maa
 - knight_army_modifier
@@ -880,7 +904,7 @@
 - plague_intensity
 - funeral
 
-### 07_ep3_game_concepts.txt（65 条目）
+### 07_ep3_game_concepts.txt（60 条目）
 
 - administrative
 - imperial_bureaucracy
@@ -911,10 +935,6 @@
 - powerful_family_rating
 - investment_cap
 - admin_confirmation
-- ep3_become_landless_adventurer_decision
-- ep3_purchase_land_interaction
-- ep3_negotiate_settlement_interaction
-- ep3_laamp_adventurer_invasion_war
 - contractor
 - contract_scheme
 - contact_list
@@ -930,7 +950,6 @@
 - justicar_task_contract
 - hireling_task_contract
 - diplomacy_task_contract
-- hunting_task_contract
 - stewardship_task_contract
 - learning_task_contract
 - intrigue_task_contract
@@ -962,13 +981,126 @@
 - coronation_anointment
 - anointment_request
 
-### mpo_game_concepts.txt（47 条目）
+### gdp_game_concepts.txt（109 条目）
+
+- trade
+- trade_good
+- basic_trade_good
+- trade_category
+- trade_expertise
+- trade_expertise_progress
+- trade_expertise_level
+- trade_market
+- market_toll
+- market_prosperity
+- market_capital
+- market_owner
+- market_priority
+- market_share
+- trade_route
+- distribution_route
+- profit_route
+- trade_route_modifier
+- commission_route
+- trade_route_length
+- max_trade_goods
+- max_trade_markets
+- trade_route_capacity
+- primary_good
+- road
+- road_tier
+- building_need
+- market_balance
+- trade_surplus
+- trade_deficit
+- production
+- potential_production
+- sell_price
+- buy_price
+- trade_monopoly
+- complete_monopoly
+- exploitative_monopoly
+- trade_competitiveness
+- competitive_pressure
+- put_on_notice
+- ruthless_oversight
+- trader
+- merchant
+- usury
+- loan
+- merchant_patron
+- client_merchant
+- merchant_family
+- associate
+- deputy
+- company
+- company_building
+- trade_contract
+- trade_contract_tier
+- luxury_contract
+- trade_opportunity
+- trade_opportunity_tier
+- trade_opportunity_scheme
+- patron_contract
+- patron_contract_scheme
+- unity_contract
+- seize_realm_cb
+- company_purpose
+- trade_acumen
+- company_size
+- domicile_artifact
+- creature
+- curio
+- guelph_ghibelline_situation
+- guelph_ghibelline_precursor_situation
+- guelph
+- gg_involvement
+- ghibelline
+- lombard_league
+- confederation_cohesion
+- trade_league
+- league_cohesion
+- trade_league_leader
+- trade_league_member
+- league_focus
+- patrician
+- patrician_family
+- patrician_rating
+- consortery
+- assembly
+- voting_session
+- republic_decree
+- house_ambition
+- republic_administration
+- republic_senator
+- mercenary_limit
+- merchant_charter
+- request_merchant_charter
+- monopolize_trade
+- make_a_request
+- request_contract_change
+- leading_title
+- client_contract
+- member_title
+- company_sentiment
+- company_sentiment_level
+- company_sentiment_divided
+- company_sentiment_fractious
+- company_sentiment_independent
+- company_sentiment_cooperative
+- company_sentiment_concerted
+- company_sentiment_positive_actions
+- company_sentiment_negative_actions
+- republican_army
+
+### mpo_game_concepts.txt（49 条目）
 
 - nomadic
 - confederation
+- nomadic_confederation
 - confederate
 - county_fertility
-- fertility_equilibrium
+- fertility_baseline
 - domain_fertility
 - kurultai
 - herd
@@ -994,6 +1126,7 @@
 - subject
 - situation
 - situation_sub_region
+- sub_region
 - situation_phase
 - situation_participant_group
 - situation_catalyst
@@ -1012,7 +1145,7 @@
 - expand_dominance
 - paiza
 
-### pam_game_concepts.txt（80 条目）
+### pam_game_concepts.txt（79 条目）
 
 - puppet
 - puppet_type
@@ -1089,13 +1222,12 @@
 - petition_antipope_gold_interaction
 - request_ecclesiastical_title_expansion_interaction
 - ecclesiastic_incite_holy_war_interaction
-- ecclesiastic_incite_claim_war_interaction
 - spiritual_counsel_interaction
 - request_clerical_chastity_interaction
 - military_holy_order
 - military_holy_order_patron
 
-### tgp_game_concepts.txt（127 条目）
+### tgp_game_concepts.txt（126 条目）
 
 - governor_salary
 - government_bureaucratic_type
@@ -1140,7 +1272,7 @@
 - civilian_governor
 - military_governor
 - treasury
-- treasury_vassal_development
+- treasury_vassal_prosperity
 - treasury_ministry_budget
 - treasury_salary_budget
 - treasury_military_budget
@@ -1179,7 +1311,6 @@
 - kampaku
 - shogun
 - cloistered_emperor
-- restored_emperor
 - japanese_emperor
 - japanese_manor
 - japanese_manor_building

@@ -1,9 +1,9 @@
 # Data Types: script（script_docs 权威清单）
 
-- 来源：`game logs/data_types/data_types_script.txt`（CK3 1.20.1 `script_docs` 控制台导出）
-- 源文件时间：2026-10-22T19:56:41+08:00（文件 mtime，视为 dump 生成时间）
-- 源文件大小：98395 字节
-- 条目数：670
+- 来源：`game logs/data_types/data_types_script.txt`（CK3 1.21.0 `script_docs` 控制台导出）
+- 源文件时间：2026-11-18T19:02:24+08:00（文件 mtime，视为 dump 生成时间）
+- 源文件大小：109089 字节
+- 条目数：748
 - 正文逐字来自 dump，仅重排为每条目一节；与 wiki 层冲突时以本层为准。
 
 ### DATE
@@ -107,11 +107,11 @@ Description: Get the BookmarkPortrait object with the provided key in their data
 Definition type: Global promote
 Return type: BookmarkPortrait
 
-### GetBuilding( Arg0 )
+### GetBuildingType( Arg0 )
 
-Description: Get the Building object with the provided key in their database
+Description: Get the BuildingType object with the provided key in their database
 Definition type: Global promote
-Return type: Building
+Return type: BuildingType
 
 ### GetCasusBelliType( Arg0 )
 
@@ -148,6 +148,12 @@ Return type: CharacterInteractionCategory
 Description: Get the CharacterMemoryType object with the provided key in their database
 Definition type: Global promote
 Return type: CharacterMemoryType
+
+### GetConfederationAspiration( Arg0 )
+
+Description: Get the ConfederationAspiration object with the provided key in their database
+Definition type: Global promote
+Return type: ConfederationAspiration
 
 ### GetConfederationType( Arg0 )
 
@@ -238,6 +244,12 @@ Return type: Decision
 Description: Get the DecisionGroupType object with the provided key in their database
 Definition type: Global promote
 Return type: DecisionGroupType
+
+### GetDistrictType( Arg0 )
+
+Description: Get the DistrictType object with the provided key in their database
+Definition type: Global promote
+Return type: DistrictType
 
 ### GetDlc( Arg0 )
 
@@ -381,6 +393,12 @@ Return type: HouseRelationType
 Description: Get the HouseUnityStage object with the provided key in their database
 Definition type: Global promote
 Return type: HouseUnityStage
+
+### GetHouseUnityType( Arg0 )
+
+Description: Get the HouseUnityType object with the provided key in their database
+Definition type: Global promote
+Return type: HouseUnityType
 
 ### GetIllustration( Arg0 )
 
@@ -526,6 +544,12 @@ Description: Get the RiteType object with the provided key in their database
 Definition type: Global promote
 Return type: RiteType
 
+### GetRoadType( Arg0 )
+
+Description: Get the RoadType object with the provided key in their database
+Definition type: Global promote
+Return type: RoadType
+
 ### GetSchemeCountermeasureType( Arg0 )
 
 Description: Get the SchemeCountermeasureType object with the provided key in their database
@@ -646,6 +670,36 @@ Description: Get the Terrain object with the provided key in their database
 Definition type: Global promote
 Return type: Terrain
 
+### GetTitleType( Arg0 )
+
+Description: Get the TitleType object with the provided key in their database
+Definition type: Global promote
+Return type: TitleType
+
+### GetTollLevel( Arg0 )
+
+Description: Get the TollLevel object with the provided key in their database
+Definition type: Global promote
+Return type: TollLevel
+
+### GetTradeGoodCategory( Arg0 )
+
+Description: Get the TradeGoodCategory object with the provided key in their database
+Definition type: Global promote
+Return type: TradeGoodCategory
+
+### GetTradeGoodType( Arg0 )
+
+Description: Get the TradeGoodType object with the provided key in their database
+Definition type: Global promote
+Return type: TradeGoodType
+
+### GetTradeTaskType( Arg0 )
+
+Description: Get the TradeTaskType object with the provided key in their database
+Definition type: Global promote
+Return type: TradeTaskType
+
 ### GetTrait( Arg0 )
 
 Description: Get the Trait object with the provided key in their database
@@ -669,6 +723,11 @@ Return type: TravelPointOfInterestType
 Description: Get the TriggeredLegendSeed object with the provided key in their database
 Definition type: Global promote
 Return type: TriggeredLegendSeed
+
+### GetVariableFromGlobalVariableMap( Arg0, Arg1 )
+
+Definition type: Global promote
+Return type: Scope
 
 ### GetVassalStance( Arg0 )
 
@@ -826,9 +885,9 @@ Description: Get all Bookmark objects in their database
 Definition type: Global function
 Return type: [unregistered]
 
-### GetAllBuildings
+### GetAllBuildingTypes
 
-Description: Get all Building objects in their database
+Description: Get all BuildingType objects in their database
 Definition type: Global function
 Return type: [unregistered]
 
@@ -865,6 +924,12 @@ Return type: [unregistered]
 ### GetAllCharacterMemoryTypes
 
 Description: Get all CharacterMemoryType objects in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetAllConfederationAspirations
+
+Description: Get all ConfederationAspiration objects in their database
 Definition type: Global function
 Return type: [unregistered]
 
@@ -955,6 +1020,12 @@ Return type: [unregistered]
 ### GetAllDecisions
 
 Description: Get all Decision objects in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetAllDistrictTypes
+
+Description: Get all DistrictType objects in their database
 Definition type: Global function
 Return type: [unregistered]
 
@@ -1093,6 +1164,12 @@ Return type: [unregistered]
 ### GetAllHouseUnityStages
 
 Description: Get all HouseUnityStage objects in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetAllHouseUnityTypes
+
+Description: Get all HouseUnityType objects in their database
 Definition type: Global function
 Return type: [unregistered]
 
@@ -1240,6 +1317,12 @@ Description: Get all RiteType objects in their database
 Definition type: Global function
 Return type: [unregistered]
 
+### GetAllRoadTypes
+
+Description: Get all RoadType objects in their database
+Definition type: Global function
+Return type: [unregistered]
+
 ### GetAllSchemeCountermeasureTypes
 
 Description: Get all SchemeCountermeasureType objects in their database
@@ -1360,6 +1443,36 @@ Description: Get all Terrain objects in their database
 Definition type: Global function
 Return type: [unregistered]
 
+### GetAllTitleTypes
+
+Description: Get all TitleType objects in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetAllTollLevels
+
+Description: Get all TollLevel objects in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetAllTradeGoodCategorys
+
+Description: Get all TradeGoodCategory objects in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetAllTradeGoodTypes
+
+Description: Get all TradeGoodType objects in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetAllTradeTaskTypes
+
+Description: Get all TradeTaskType objects in their database
+Definition type: Global function
+Return type: [unregistered]
+
 ### GetAllTraits
 
 Description: Get all Trait objects in their database
@@ -1420,9 +1533,9 @@ Description: Get the BookmarkPortrait object with the provided key in their data
 Definition type: Global function
 Return type: [unregistered]
 
-### GetBuilding( Arg0 )
+### GetBuildingType( Arg0 )
 
-Description: Get the Building object with the provided key in their database
+Description: Get the BuildingType object with the provided key in their database
 Definition type: Global function
 Return type: [unregistered]
 
@@ -1461,6 +1574,12 @@ Return type: [unregistered]
 Description: Get the CharacterMemoryType object with the provided key in their database
 Definition type: Global function
 Return type: _null_type_
+
+### GetConfederationAspiration( Arg0 )
+
+Description: Get the ConfederationAspiration object with the provided key in their database
+Definition type: Global function
+Return type: [unregistered]
 
 ### GetConfederationType( Arg0 )
 
@@ -1549,6 +1668,12 @@ Return type: [unregistered]
 ### GetDecisionGroupType( Arg0 )
 
 Description: Get the DecisionGroupType object with the provided key in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetDistrictType( Arg0 )
+
+Description: Get the DistrictType object with the provided key in their database
 Definition type: Global function
 Return type: [unregistered]
 
@@ -1700,6 +1825,12 @@ Description: Get the HouseUnityStage object with the provided key in their datab
 Definition type: Global function
 Return type: [unregistered]
 
+### GetHouseUnityType( Arg0 )
+
+Description: Get the HouseUnityType object with the provided key in their database
+Definition type: Global function
+Return type: [unregistered]
+
 ### GetIllustration( Arg0 )
 
 Description: Get the Illustration object with the provided key in their database
@@ -1844,6 +1975,12 @@ Description: Get the RiteType object with the provided key in their database
 Definition type: Global function
 Return type: [unregistered]
 
+### GetRoadType( Arg0 )
+
+Description: Get the RoadType object with the provided key in their database
+Definition type: Global function
+Return type: _null_type_
+
 ### GetSchemeCountermeasureType( Arg0 )
 
 Description: Get the SchemeCountermeasureType object with the provided key in their database
@@ -1964,6 +2101,36 @@ Description: Get the Terrain object with the provided key in their database
 Definition type: Global function
 Return type: [unregistered]
 
+### GetTitleType( Arg0 )
+
+Description: Get the TitleType object with the provided key in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetTollLevel( Arg0 )
+
+Description: Get the TollLevel object with the provided key in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetTradeGoodCategory( Arg0 )
+
+Description: Get the TradeGoodCategory object with the provided key in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetTradeGoodType( Arg0 )
+
+Description: Get the TradeGoodType object with the provided key in their database
+Definition type: Global function
+Return type: [unregistered]
+
+### GetTradeTaskType( Arg0 )
+
+Description: Get the TradeTaskType object with the provided key in their database
+Definition type: Global function
+Return type: _null_type_
+
 ### GetTrait( Arg0 )
 
 Description: Get the Trait object with the provided key in their database
@@ -1992,6 +2159,11 @@ Return type: _null_type_
 
 Definition type: Global function
 Return type: int32
+
+### GetVariableFromGlobalVariableMap( Arg0, Arg1 )
+
+Definition type: Global function
+Return type: [unregistered]
 
 ### GetVassalStance( Arg0 )
 
@@ -2069,6 +2241,26 @@ Return type: Scope
 Definition type: Type
 
 ### Artifact.MakeScope
+
+Description: Jomini Script System
+Definition type: Function
+Return type: Scope
+
+### Building
+
+Definition type: Type
+
+### Building.MakeScope
+
+Description: Jomini Script System
+Definition type: Function
+Return type: Scope
+
+### BuildingType
+
+Definition type: Type
+
+### BuildingType.MakeScope
 
 Description: Jomini Script System
 Definition type: Function
@@ -2203,6 +2395,16 @@ Return type: Scope
 Definition type: Type
 
 ### Decision.MakeScope
+
+Description: Jomini Script System
+Definition type: Function
+Return type: Scope
+
+### District
+
+Definition type: Type
+
+### District.MakeScope
 
 Description: Jomini Script System
 Definition type: Function
@@ -2388,6 +2590,16 @@ Description: Jomini Script System
 Definition type: Function
 Return type: Scope
 
+### Law
+
+Definition type: Type
+
+### Law.MakeScope
+
+Description: Jomini Script System
+Definition type: Function
+Return type: Scope
+
 ### Legend
 
 Definition type: Type
@@ -2478,6 +2690,16 @@ Description: Jomini Script System
 Definition type: Function
 Return type: Scope
 
+### Road
+
+Definition type: Type
+
+### Road.MakeScope
+
+Description: Jomini Script System
+Definition type: Function
+Return type: Scope
+
 ### Scheme
 
 Definition type: Type
@@ -2521,6 +2743,18 @@ Return type: Army
 Description: Jomini Script System
 Definition type: Promote
 Return type: Artifact
+
+### Scope.Building
+
+Description: Jomini Script System
+Definition type: Promote
+Return type: Building
+
+### Scope.BuildingType
+
+Description: Jomini Script System
+Definition type: Promote
+Return type: BuildingType
 
 ### Scope.CasusBelli
 
@@ -2612,6 +2846,12 @@ Description: Jomini Script System
 Definition type: Promote
 Return type: Decision
 
+### Scope.District
+
+Description: Jomini Script System
+Definition type: Promote
+Return type: District
+
 ### Scope.DoctrineType
 
 Description: Jomini Script System
@@ -2689,6 +2929,11 @@ Return type: Scheme
 Definition type: Promote
 Return type: Scope
 
+### Scope.GetVariableFromVariableMap( Arg0, Arg1 )
+
+Definition type: Promote
+Return type: Scope
+
 ### Scope.GovernmentType
 
 Description: Jomini Script System
@@ -2749,6 +2994,12 @@ Description: Jomini Script System
 Definition type: Promote
 Return type: Inspiration
 
+### Scope.Law
+
+Description: Jomini Script System
+Definition type: Promote
+Return type: Law
+
 ### Scope.Legend
 
 Description: Jomini Script System
@@ -2802,6 +3053,12 @@ Return type: Rite
 Description: Jomini Script System
 Definition type: Promote
 Return type: RiteType
+
+### Scope.Road
+
+Description: Jomini Script System
+Definition type: Promote
+Return type: Road
 
 ### Scope.Scheme
 
@@ -2875,6 +3132,42 @@ Description: Jomini Script System
 Definition type: Promote
 Return type: Title
 
+### Scope.TitleType
+
+Description: Jomini Script System
+Definition type: Promote
+Return type: TitleType
+
+### Scope.TradeGoodCategoryType
+
+Description: Jomini Script System
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### Scope.TradeGoodType
+
+Description: Jomini Script System
+Definition type: Promote
+Return type: TradeGoodType
+
+### Scope.TradeMarket
+
+Description: Jomini Script System
+Definition type: Promote
+Return type: TradeMarket
+
+### Scope.TradeMonopoly
+
+Description: Jomini Script System
+Definition type: Promote
+Return type: TradeMonopoly
+
+### Scope.TradeRoute
+
+Description: Jomini Script System
+Definition type: Promote
+Return type: TradeRoute
+
 ### Scope.Trait
 
 Description: Jomini Script System
@@ -2928,6 +3221,18 @@ Definition type: Function
 Return type: [unregistered]
 
 ### Scope.Artifact
+
+Description: Jomini Script System
+Definition type: Function
+Return type: [unregistered]
+
+### Scope.Building
+
+Description: Jomini Script System
+Definition type: Function
+Return type: [unregistered]
+
+### Scope.BuildingType
 
 Description: Jomini Script System
 Definition type: Function
@@ -3023,6 +3328,12 @@ Description: Jomini Script System
 Definition type: Function
 Return type: [unregistered]
 
+### Scope.District
+
+Description: Jomini Script System
+Definition type: Function
+Return type: [unregistered]
+
 ### Scope.DoctrineType
 
 Description: Jomini Script System
@@ -3094,6 +3405,11 @@ Definition type: Function
 Return type: [unregistered]
 
 ### Scope.GetList( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### Scope.GetMapKeys( Arg0 )
 
 Definition type: Function
 Return type: [unregistered]
@@ -3195,6 +3511,12 @@ Return type: [unregistered]
 Definition type: Function
 Return type: bool
 
+### Scope.Law
+
+Description: Jomini Script System
+Definition type: Function
+Return type: [unregistered]
+
 ### Scope.Legend
 
 Description: Jomini Script System
@@ -3244,6 +3566,12 @@ Definition type: Function
 Return type: [unregistered]
 
 ### Scope.RiteType
+
+Description: Jomini Script System
+Definition type: Function
+Return type: [unregistered]
+
+### Scope.Road
 
 Description: Jomini Script System
 Definition type: Function
@@ -3331,6 +3659,42 @@ Description: Jomini Script System
 Definition type: Function
 Return type: [unregistered]
 
+### Scope.TitleType
+
+Description: Jomini Script System
+Definition type: Function
+Return type: [unregistered]
+
+### Scope.TradeGoodCategoryType
+
+Description: Jomini Script System
+Definition type: Function
+Return type: [unregistered]
+
+### Scope.TradeGoodType
+
+Description: Jomini Script System
+Definition type: Function
+Return type: [unregistered]
+
+### Scope.TradeMarket
+
+Description: Jomini Script System
+Definition type: Function
+Return type: [unregistered]
+
+### Scope.TradeMonopoly
+
+Description: Jomini Script System
+Definition type: Function
+Return type: [unregistered]
+
+### Scope.TradeRoute
+
+Description: Jomini Script System
+Definition type: Function
+Return type: [unregistered]
+
 ### Scope.Trait
 
 Description: Jomini Script System
@@ -3347,6 +3711,21 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: int32
+
+### Scope.VariableMapContainsKey( Arg0, Arg1 )
+
+Definition type: Function
+Return type: bool
+
+### Scope.VariableMapContainsValue( Arg0, Arg1 )
+
+Definition type: Function
+Return type: bool
+
+### Scope.VariableMapExists( Arg0 )
+
+Definition type: Function
+Return type: bool
 
 ### Scope.War
 
@@ -3508,6 +3887,16 @@ Return type: Scope
 Definition type: Type
 
 ### Title.MakeScope
+
+Description: Jomini Script System
+Definition type: Function
+Return type: Scope
+
+### TitleType
+
+Definition type: Type
+
+### TitleType.MakeScope
 
 Description: Jomini Script System
 Definition type: Function
@@ -3781,6 +4170,56 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: [unregistered]
+
+### TradeGoodCategory
+
+Definition type: Type
+
+### TradeGoodCategory.MakeScope
+
+Description: Jomini Script System
+Definition type: Function
+Return type: Scope
+
+### TradeGoodType
+
+Definition type: Type
+
+### TradeGoodType.MakeScope
+
+Description: Jomini Script System
+Definition type: Function
+Return type: Scope
+
+### TradeMarket
+
+Definition type: Type
+
+### TradeMarket.MakeScope
+
+Description: Jomini Script System
+Definition type: Function
+Return type: Scope
+
+### TradeMonopoly
+
+Definition type: Type
+
+### TradeMonopoly.MakeScope
+
+Description: Jomini Script System
+Definition type: Function
+Return type: Scope
+
+### TradeRoute
+
+Definition type: Type
+
+### TradeRoute.MakeScope
+
+Description: Jomini Script System
+Definition type: Function
+Return type: Scope
 
 ### Trait
 

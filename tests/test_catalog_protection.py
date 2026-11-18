@@ -108,7 +108,11 @@ def main() -> int:
         # 变化（2026-10-23 补抓后即变）——必须动态提取，不能硬编码日期
         snap_line = re.search(r"^> 快照：抓取 .*$", text, re.MULTILINE).group(0)
         tampered = text.replace("oldid 20200，抓取 2026-10-22", "oldid 99999，抓取 2000-01-01", 1)
-        tampered = tampered.replace("2128 条", "0 条", 1)              # 游戏层条目数
+        # 游戏层条目数随游戏版本刷新而变（1.20.1 时为 2128、1.21.0 为 2399）
+        # ——与快照日期同理，从 manifest 动态提取，不硬编码
+        n_effects = manifest.read_manifest()["game_docs"]["script_docs"]["effects.md"]["entry_count"]
+        count_str = f"{n_effects} 条"
+        tampered = tampered.replace(count_str, "0 条", 1)              # 游戏层条目数
         tampered = tampered.replace(snap_line, "> 快照：抓取 1999-99-99", 1)
         # 同条目人工字段注入标记物：重跑后必须原样保留
         keep_block = entry_block(tampered, "Effects")
@@ -123,7 +127,8 @@ def main() -> int:
         check("机械字段刷新：篡改的 oldid/抓取日期恢复为 manifest 值",
               "oldid 20200，抓取 2026-10-22" in text3
               and "99999" not in entry_block(text3, "Effects"))
-        check("机械字段刷新：游戏层条目数恢复（2128 条）", "2128 条" in entry_block(text3, "game:effects.md"))
+        check(f"机械字段刷新：游戏层条目数恢复（{count_str}）",
+              count_str in entry_block(text3, "game:effects.md"))
         check("机械字段刷新：快照日期恢复（且整块与 manifest 派生一致）",
               catalog.SNAP_BEGIN in text3
               and "1999-99-99" not in text3

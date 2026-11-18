@@ -1,21 +1,22 @@
 # common/dynasty_legacies 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：11（其中 Jomini 解析 10 个）
-- 顶层块条目总数：22，跨文件唯一条目 22
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：12（其中 Jomini 解析 11 个）
+- 顶层块条目总数：24，跨文件唯一条目 24
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
+| `81_gdp_legacies.txt` | 751 | 2 | 0 | jomini |
 | `81_pam_legacies.txt` | 393 | 1 | 0 | jomini |
 | `82_tgp_legacies.txt` | 1302 | 3 | 0 | jomini |
 | `83_ep3_legacies.txt` | 383 | 1 | 0 | jomini |
 | `92_mpo_legacies.txt` | 373 | 1 | 0 | jomini |
 | `94_ce1_legacies.txt` | 162 | 2 | 0 | jomini |
 | `95_fp3_legacies.txt` | 579 | 1 | 0 | jomini |
-| `96_fp2_legacies.txt` | 1526 | 2 | 0 | jomini |
+| `96_fp2_legacies.txt` | 1622 | 2 | 0 | jomini |
 | `97_ep1_legacies.txt` | 94 | 0 | 0 | jomini |
 | `98_fp1_legacies.txt` | 1026 | 2 | 0 | jomini |
 | `99_legacies.txt` | 375 | 9 | 0 | jomini |
@@ -24,6 +25,11 @@
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
+
+### 81_gdp_legacies.txt（2 条目）
+
+- gdp_republic_legacy_track
+- gdp_merchant_legacy_track
 
 ### 81_pam_legacies.txt（1 条目）
 

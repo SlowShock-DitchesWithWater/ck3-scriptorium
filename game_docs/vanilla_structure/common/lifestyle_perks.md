@@ -1,6 +1,6 @@
 # common/lifestyle_perks 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：19（其中 Jomini 解析 18 个）
 - 顶层块条目总数：162，跨文件唯一条目 162
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
@@ -9,25 +9,25 @@
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_diplomacy_1_foreign_affairs_tree_perks.txt` | 8267 | 9 | 0 | jomini |
-| `00_diplomacy_2_majesty_tree_perks.txt` | 8935 | 9 | 0 | jomini |
-| `00_diplomacy_3_family_tree_perks.txt` | 7125 | 9 | 0 | jomini |
-| `00_intrigue_1_skulduggery_tree_perks.txt` | 5131 | 9 | 0 | jomini |
+| `00_diplomacy_1_foreign_affairs_tree_perks.txt` | 12578 | 9 | 0 | jomini |
+| `00_diplomacy_2_majesty_tree_perks.txt` | 11871 | 9 | 0 | jomini |
+| `00_diplomacy_3_family_tree_perks.txt` | 7530 | 9 | 0 | jomini |
+| `00_intrigue_1_skulduggery_tree_perks.txt` | 6117 | 9 | 0 | jomini |
 | `00_intrigue_2_temptation_tree_perks.txt` | 4027 | 9 | 0 | jomini |
-| `00_intrigue_3_intimidation_tree_perks.txt` | 5495 | 9 | 0 | jomini |
-| `00_learning_1_medicine_tree_perks.txt` | 3597 | 9 | 0 | jomini |
-| `00_learning_2_scholarship_tree_perks.txt` | 8711 | 9 | 0 | jomini |
-| `00_learning_3_theology_tree_perks.txt` | 9460 | 9 | 0 | jomini |
-| `00_martial_1_strategy_tree_perks.txt` | 4028 | 9 | 0 | jomini |
-| `00_martial_2_authority_tree_perks.txt` | 6882 | 9 | 0 | jomini |
-| `00_martial_3_chivalry_tree_perks.txt` | 5667 | 9 | 0 | jomini |
-| `00_stewardship_1_wealth_tree_perks.txt` | 7322 | 9 | 0 | jomini |
-| `00_stewardship_2_domain_tree_perks.txt` | 8980 | 9 | 0 | jomini |
-| `00_stewardship_3_duty_tree_perks.txt` | 8638 | 9 | 0 | jomini |
-| `00_wanderer_1_surveyor_tree_perks.txt` | 8979 | 9 | 0 | jomini |
-| `00_wanderer_2_wayfarer_tree_perks.txt` | 3576 | 9 | 0 | jomini |
-| `00_wanderer_3_voyager_tree_perks.txt` | 5229 | 9 | 0 | jomini |
-| `_lifestyle_perks.info` | 2023 | - | - | 纯文档（非 Jomini） |
+| `00_intrigue_3_intimidation_tree_perks.txt` | 6961 | 9 | 0 | jomini |
+| `00_learning_1_medicine_tree_perks.txt` | 3604 | 9 | 0 | jomini |
+| `00_learning_2_scholarship_tree_perks.txt` | 10939 | 9 | 0 | jomini |
+| `00_learning_3_theology_tree_perks.txt` | 12311 | 9 | 0 | jomini |
+| `00_martial_1_strategy_tree_perks.txt` | 5978 | 9 | 0 | jomini |
+| `00_martial_2_authority_tree_perks.txt` | 11093 | 9 | 0 | jomini |
+| `00_martial_3_chivalry_tree_perks.txt` | 6041 | 9 | 0 | jomini |
+| `00_stewardship_1_wealth_tree_perks.txt` | 10490 | 9 | 0 | jomini |
+| `00_stewardship_2_domain_tree_perks.txt` | 13703 | 9 | 0 | jomini |
+| `00_stewardship_3_duty_tree_perks.txt` | 13569 | 9 | 0 | jomini |
+| `00_wanderer_1_surveyor_tree_perks.txt` | 11890 | 9 | 0 | jomini |
+| `00_wanderer_2_wayfarer_tree_perks.txt` | 4062 | 9 | 0 | jomini |
+| `00_wanderer_3_voyager_tree_perks.txt` | 6749 | 9 | 0 | jomini |
+| `_lifestyle_perks.info` | 2050 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
 
@@ -122,11 +122,11 @@
 - pedagogy_perk
 - open_minded_perk
 - apostate_perk
-- scientific_perk
 - planned_cultivation_perk
+- scientific_perk
 - scholarly_circles_perk
-- learn_on_the_job_perk
 - sanctioned_loopholes_perk
+- learn_on_the_job_perk
 - erudite_perk
 
 ### 00_learning_3_theology_tree_perks.txt（9 条目）
@@ -191,9 +191,9 @@
 
 ### 00_stewardship_2_domain_tree_perks.txt（9 条目）
 
+- organized_muster_rolls_perk
 - tax_man_perk
 - defensive_measures_perk
-- organized_muster_rolls_perk
 - cutting_corners_perk
 - professional_workforce_perk
 - centralization_perk

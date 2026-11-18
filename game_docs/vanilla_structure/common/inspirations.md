@@ -1,6 +1,6 @@
 # common/inspirations 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：2（其中 Jomini 解析 1 个）
 - 顶层块条目总数：12，跨文件唯一条目 12
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
@@ -9,7 +9,7 @@
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_inspirations.txt` | 54161 | 12 | 0 | jomini |
+| `00_inspirations.txt` | 55101 | 12 | 0 | jomini |
 | `_inspirations.info` | 1202 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件

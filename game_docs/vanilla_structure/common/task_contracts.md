@@ -1,26 +1,31 @@
 # common/task_contracts 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：12（其中 Jomini 解析 11 个）
-- 顶层块条目总数：159，跨文件唯一条目 159
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：17（其中 Jomini 解析 16 个）
+- 顶层块条目总数：179，跨文件唯一条目 179
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `_task_contracts.info` | 3045 | - | - | 纯文档（非 Jomini） |
-| `admin_contracts.txt` | 83096 | 17 | 0 | jomini |
-| `laamp_base_contracts.txt` | 265171 | 36 | 0 | jomini |
-| `laamp_extra_contracts.txt` | 158702 | 18 | 0 | jomini |
+| `_task_contracts.info` | 3367 | - | - | 纯文档（非 Jomini） |
+| `admin_contracts.txt` | 83867 | 17 | 0 | jomini |
+| `gdp_merchant_luxury_contract.txt` | 5893 | 2 | 0 | jomini |
+| `gdp_merchant_patron_contract.txt` | 5469 | 1 | 0 | jomini |
+| `gdp_merchant_silk_road_contract.txt` | 10164 | 2 | 0 | jomini |
+| `gdp_merchant_trade_opportunity.txt` | 79749 | 14 | 0 | jomini |
+| `gdp_merchant_unity_contract.txt` | 10762 | 1 | 0 | jomini |
+| `laamp_base_contracts.txt` | 265172 | 36 | 0 | jomini |
+| `laamp_extra_contracts.txt` | 158752 | 18 | 0 | jomini |
 | `laamp_nm_contracts.txt` | 25565 | 5 | 0 | jomini |
-| `laamp_transport_contracts.txt` | 57034 | 6 | 0 | jomini |
+| `laamp_transport_contracts.txt` | 57201 | 6 | 0 | jomini |
 | `nomads_migration_contracts.txt` | 12622 | 10 | 0 | jomini |
-| `tgp_admin_contracts.txt` | 102590 | 17 | 0 | jomini |
-| `tgp_admin_contracts_tova.txt` | 17633 | 4 | 0 | jomini |
-| `tgp_admin_military_contracts.txt` | 5193 | 1 | 0 | jomini |
+| `tgp_admin_contracts.txt` | 102732 | 17 | 0 | jomini |
+| `tgp_admin_contracts_tova.txt` | 17723 | 4 | 0 | jomini |
+| `tgp_admin_military_contracts.txt` | 5213 | 1 | 0 | jomini |
 | `tgp_mandala_contracts.txt` | 97291 | 41 | 0 | jomini |
-| `tgp_natural_disaster_contracts.txt` | 20150 | 4 | 0 | jomini |
+| `tgp_natural_disaster_contracts.txt` | 20379 | 4 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -45,6 +50,41 @@
 - titles_sale
 - hungry_times
 - wartime_measures
+
+### gdp_merchant_luxury_contract.txt（2 条目）
+
+- menagerie_acquisition
+- find_curio
+
+### gdp_merchant_patron_contract.txt（1 条目）
+
+- patron_hobnob
+
+### gdp_merchant_silk_road_contract.txt（2 条目）
+
+- silk_road_network
+- silk_road_caravan
+
+### gdp_merchant_trade_opportunity.txt（14 条目）
+
+- challenge_competitor
+- promote_goods
+- market_investment
+- exploit_upheaval
+- alleviate_upheaval
+- support_guilds
+- seek_debtors
+- sabotage_competition
+- build_category_connections
+- disrupt_charter
+- entrepot_buy
+- entrepot_sell
+- negotiate_tolls
+- smuggle_goods
+
+### gdp_merchant_unity_contract.txt（1 条目）
+
+- unity_irregularities
 
 ### laamp_base_contracts.txt（36 条目）
 

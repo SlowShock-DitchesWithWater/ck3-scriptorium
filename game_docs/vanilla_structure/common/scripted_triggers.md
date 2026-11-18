@@ -1,76 +1,77 @@
 # common/scripted_triggers 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：148（其中 Jomini 解析 148 个）
-- 顶层块条目总数：3878，跨文件唯一条目 3878
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：157（其中 Jomini 解析 157 个）
+- 顶层块条目总数：4459，跨文件唯一条目 4459
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_activity_triggers.txt` | 17903 | 43 | 0 | jomini |
+| `00_activity_triggers.txt` | 17819 | 44 | 0 | jomini |
 | `00_adultery_triggers.txt` | 3049 | 4 | 0 | jomini |
 | `00_ai_acceptance_triggers.txt` | 425 | 1 | 0 | jomini |
-| `00_ai_value_triggers.txt` | 9914 | 14 | 0 | jomini |
+| `00_ai_value_triggers.txt` | 10270 | 14 | 0 | jomini |
 | `00_artifact_badge_triggers.txt` | 165 | 1 | 0 | jomini |
-| `00_artifact_triggers.txt` | 63329 | 225 | 0 | jomini |
+| `00_artifact_triggers.txt` | 69184 | 235 | 0 | jomini |
 | `00_auto_character_triggers.txt` | 602 | 3 | 0 | jomini |
-| `00_available_for_events_triggers.txt` | 27494 | 53 | 0 | jomini |
+| `00_available_for_events_triggers.txt` | 28366 | 57 | 0 | jomini |
 | `00_bastard_triggers.txt` | 5911 | 7 | 0 | jomini |
 | `00_birth_triggers.txt` | 2291 | 5 | 0 | jomini |
 | `00_board_game_scripted_triggers.txt` | 2466 | 9 | 0 | jomini |
-| `00_building_requirement_triggers.txt` | 27603 | 69 | 0 | jomini |
+| `00_building_requirement_triggers.txt` | 22766 | 84 | 0 | jomini |
 | `00_childhood_triggers.txt` | 8635 | 24 | 3 | jomini |
 | `00_clan_triggers.txt` | 410 | 2 | 0 | jomini |
-| `00_clothing_triggers.txt` | 91491 | 234 | 0 | jomini |
-| `00_coa_triggers.txt` | 14617 | 35 | 0 | jomini |
+| `00_clothing_triggers.txt` | 97032 | 248 | 0 | jomini |
+| `00_coa_triggers.txt` | 14838 | 36 | 0 | jomini |
 | `00_commander_triggers.txt` | 716 | 1 | 0 | jomini |
 | `00_compliment_triggers.txt` | 916 | 1 | 0 | jomini |
-| `00_councillor_triggers.txt` | 39233 | 74 | 0 | jomini |
-| `00_county_corruption_triggers.txt` | 2129 | 3 | 0 | jomini |
-| `00_court_position_triggers.txt` | 69510 | 112 | 0 | jomini |
+| `00_councillor_triggers.txt` | 40240 | 77 | 0 | jomini |
+| `00_county_corruption_triggers.txt` | 11923 | 22 | 0 | jomini |
+| `00_court_position_triggers.txt` | 72860 | 119 | 0 | jomini |
 | `00_court_role_triggers.txt` | 1890 | 9 | 0 | jomini |
 | `00_court_scheme_triggers.txt` | 298 | 1 | 0 | jomini |
-| `00_courtier_guest_management_triggers.txt` | 21947 | 26 | 0 | jomini |
-| `00_crime_triggers.txt` | 3171 | 10 | 0 | jomini |
+| `00_courtier_guest_management_triggers.txt` | 22245 | 26 | 0 | jomini |
+| `00_crime_triggers.txt` | 3338 | 11 | 0 | jomini |
 | `00_crypto_religionist_triggers.txt` | 447 | 2 | 0 | jomini |
 | `00_cultural_heritage_triggers.txt` | 6814 | 23 | 0 | jomini |
-| `00_cultural_triggers.txt` | 19324 | 36 | 0 | jomini |
+| `00_cultural_triggers.txt` | 19169 | 36 | 0 | jomini |
 | `00_death_management_triggers.txt` | 3322 | 3 | 0 | jomini |
-| `00_diarchy_scripted_triggers.txt` | 26006 | 55 | 0 | jomini |
+| `00_diarchy_scripted_triggers.txt` | 26325 | 56 | 0 | jomini |
 | `00_distance_triggers.txt` | 1157 | 2 | 0 | jomini |
-| `00_dynasty_triggers.txt` | 4804 | 8 | 0 | jomini |
-| `00_economic_triggers.txt` | 3774 | 4 | 0 | jomini |
+| `00_dynasty_triggers.txt` | 5130 | 8 | 0 | jomini |
+| `00_economic_triggers.txt` | 3772 | 4 | 0 | jomini |
 | `00_education_triggers.txt` | 8271 | 31 | 0 | jomini |
-| `00_elective_triggers.txt` | 8974 | 11 | 0 | jomini |
+| `00_elective_triggers.txt` | 9108 | 11 | 0 | jomini |
 | `00_empire_faith_gate_triggers.txt` | 9070 | 17 | 0 | jomini |
-| `00_faction_triggers.txt` | 9633 | 15 | 0 | jomini |
+| `00_faction_triggers.txt` | 9740 | 15 | 0 | jomini |
 | `00_family_triggers.txt` | 7231 | 25 | 0 | jomini |
 | `00_feast_activity_triggers.txt` | 1565 | 7 | 0 | jomini |
 | `00_food_scripted_triggers.txt` | 2527 | 11 | 0 | jomini |
 | `00_funeral_and_body_disposal_triggers.txt` | 1487 | 2 | 0 | jomini |
 | `00_game_rule_triggers.txt` | 8694 | 10 | 0 | jomini |
-| `00_general_trait_triggers.txt` | 28152 | 23 | 0 | jomini |
+| `00_gdp_guelph_ghibelline_triggers.txt` | 13852 | 49 | 0 | jomini |
+| `00_general_trait_triggers.txt` | 28402 | 24 | 0 | jomini |
 | `00_generic_event_sensibility_triggers.txt` | 8252 | 3 | 0 | jomini |
 | `00_generic_struggle_scripted_triggers.txt` | 14389 | 40 | 0 | jomini |
-| `00_government_triggers.txt` | 2157 | 5 | 0 | jomini |
-| `00_great_holy_war_triggers.txt` | 4073 | 10 | 0 | jomini |
-| `00_has_dlc_scripted_triggers.txt` | 2631 | 28 | 0 | jomini |
-| `00_hunt_triggers.txt` | 23263 | 76 | 0 | jomini |
+| `00_government_triggers.txt` | 2156 | 5 | 0 | jomini |
+| `00_great_holy_war_triggers.txt` | 4153 | 10 | 0 | jomini |
+| `00_has_dlc_scripted_triggers.txt` | 2702 | 29 | 0 | jomini |
+| `00_hunt_triggers.txt` | 23714 | 77 | 0 | jomini |
 | `00_illustration_triggers.txt` | 21196 | 51 | 0 | jomini |
 | `00_important_actions_triggers.txt` | 1064 | 2 | 0 | jomini |
-| `00_interaction_triggers.txt` | 10011 | 24 | 0 | jomini |
+| `00_interaction_triggers.txt` | 10157 | 24 | 0 | jomini |
 | `00_journey_triggers.txt` | 4395 | 7 | 0 | jomini |
-| `00_laamp_triggers.txt` | 26937 | 54 | 0 | jomini |
-| `00_law_triggers.txt` | 19245 | 61 | 0 | jomini |
-| `00_legal_triggers.txt` | 4057 | 8 | 0 | jomini |
-| `00_lifestyle_perk_triggers.txt` | 2251 | 7 | 0 | jomini |
-| `00_lifestyle_triggers.txt` | 9571 | 12 | 0 | jomini |
+| `00_laamp_triggers.txt` | 26936 | 54 | 0 | jomini |
+| `00_law_triggers.txt` | 19861 | 65 | 0 | jomini |
+| `00_legal_triggers.txt` | 3696 | 8 | 0 | jomini |
+| `00_lifestyle_perk_triggers.txt` | 2556 | 8 | 0 | jomini |
+| `00_lifestyle_triggers.txt` | 9812 | 12 | 0 | jomini |
 | `00_major_decision_triggers.txt` | 7134 | 25 | 0 | jomini |
 | `00_marriage_triggers.txt` | 16965 | 30 | 0 | jomini |
-| `00_military_triggers.txt` | 746 | 3 | 0 | jomini |
-| `00_opinion_scripted_triggers.txt` | 8013 | 12 | 0 | jomini |
+| `00_military_triggers.txt` | 1054 | 3 | 0 | jomini |
+| `00_opinion_scripted_triggers.txt` | 8518 | 12 | 0 | jomini |
 | `00_personality_trait_triggers.txt` | 4969 | 2 | 0 | jomini |
 | `00_personality_triggers.txt` | 5035 | 24 | 0 | jomini |
 | `00_pet_triggers.txt` | 2553 | 15 | 0 | jomini |
@@ -78,39 +79,39 @@
 | `00_pilgrimage_triggers.txt` | 2851 | 12 | 0 | jomini |
 | `00_playdate_activity_triggers.txt` | 340 | 2 | 0 | jomini |
 | `00_province_triggers.txt` | 56 | 1 | 0 | jomini |
-| `00_relation_triggers.txt` | 28552 | 73 | 0 | jomini |
+| `00_relation_triggers.txt` | 29190 | 75 | 0 | jomini |
 | `00_religion_faith_rite_triggers.txt` | 11334 | 14 | 0 | jomini |
-| `00_religious_triggers.txt` | 89330 | 165 | 0 | jomini |
+| `00_religious_triggers.txt` | 89485 | 165 | 0 | jomini |
 | `00_rich_presence_triggers.txt` | 237 | 1 | 0 | jomini |
-| `00_roaming_activity_triggers.txt` | 2126 | 11 | 0 | jomini |
+| `00_roaming_activity_triggers.txt` | 2085 | 11 | 0 | jomini |
 | `00_romance_and_seduction_triggers.txt` | 21664 | 28 | 0 | jomini |
 | `00_scheme_befriend_triggers.txt` | 1292 | 3 | 0 | jomini |
-| `00_scheme_triggers.txt` | 30356 | 105 | 0 | jomini |
+| `00_scheme_triggers.txt` | 31497 | 107 | 0 | jomini |
 | `00_scripted_rule_triggers.txt` | 5127 | 9 | 0 | jomini |
-| `00_scripted_triggers.txt` | 15071 | 43 | 0 | jomini |
-| `00_secret_triggers.txt` | 14411 | 15 | 0 | jomini |
-| `00_secret_type_triggers.txt` | 12114 | 45 | 0 | jomini |
+| `00_scripted_triggers.txt` | 15733 | 44 | 0 | jomini |
+| `00_secret_triggers.txt` | 14517 | 15 | 0 | jomini |
+| `00_secret_type_triggers.txt` | 13626 | 54 | 0 | jomini |
 | `00_sibling_triggers.txt` | 265 | 1 | 0 | jomini |
 | `00_single_combat_scripted_triggers.txt` | 2191 | 5 | 0 | jomini |
 | `00_statecraft_lifestyle_triggers.txt` | 171 | 1 | 0 | jomini |
-| `00_stress_triggers.txt` | 9519 | 24 | 0 | jomini |
-| `00_succession_triggers.txt` | 2617 | 8 | 0 | jomini |
+| `00_stress_triggers.txt` | 9527 | 24 | 0 | jomini |
+| `00_succession_triggers.txt` | 3546 | 10 | 0 | jomini |
 | `00_task_contract_triggers.txt` | 7452 | 14 | 0 | jomini |
 | `00_terrain_triggers.txt` | 1324 | 10 | 0 | jomini |
 | `00_title_triggers.txt` | 4130 | 6 | 0 | jomini |
-| `00_travel_triggers.txt` | 6800 | 10 | 0 | jomini |
+| `00_trade_good_triggers.txt` | 2990 | 2 | 0 | jomini |
+| `00_travel_triggers.txt` | 6853 | 10 | 0 | jomini |
 | `00_tutorial_triggers.txt` | 325 | 2 | 0 | jomini |
 | `00_vassal_stance_triggers.txt` | 2661 | 4 | 0 | jomini |
-| `00_war_and_peace_triggers.txt` | 31077 | 40 | 0 | jomini |
-| `00_weather_triggers.txt` | 11643 | 27 | 0 | jomini |
+| `00_war_and_peace_triggers.txt` | 40630 | 54 | 0 | jomini |
+| `00_weather_triggers.txt` | 12029 | 28 | 0 | jomini |
 | `00_witch_triggers.txt` | 795 | 3 | 0 | jomini |
 | `01_bp1_filippa_scripted_triggers.txt` | 847 | 1 | 0 | jomini |
-| `01_building_upgrade_triggers.txt` | 709 | 1 | 0 | jomini |
 | `01_fp1_scripted_triggers.txt` | 11091 | 31 | 0 | jomini |
-| `02_ep1_scripted_triggers.txt` | 11893 | 29 | 0 | jomini |
-| `03_bp1_scripted_triggers.txt` | 8097 | 12 | 0 | jomini |
-| `03_bp2_scripted_triggers.txt` | 1874 | 7 | 0 | jomini |
-| `03_fp2_scripted_triggers.txt` | 22133 | 56 | 0 | jomini |
+| `02_ep1_scripted_triggers.txt` | 11901 | 29 | 0 | jomini |
+| `03_bp1_scripted_triggers.txt` | 8837 | 12 | 0 | jomini |
+| `03_bp2_scripted_triggers.txt` | 1811 | 7 | 0 | jomini |
+| `03_fp2_scripted_triggers.txt` | 22735 | 57 | 0 | jomini |
 | `04_ep2_accolade_triggers.txt` | 36064 | 70 | 0 | jomini |
 | `04_ep2_tour_triggers.txt` | 1834 | 5 | 0 | jomini |
 | `04_ep2_tournament_triggers.txt` | 13542 | 37 | 0 | jomini |
@@ -118,51 +119,59 @@
 | `05_bp2_hostage_triggers.txt` | 9063 | 14 | 0 | jomini |
 | `05_bp2_scripted_triggers.txt` | 1254 | 2 | 0 | jomini |
 | `05_bp2_triggers.txt` | 918 | 3 | 0 | jomini |
-| `06_bp3_triggers.txt` | 6302 | 10 | 0 | jomini |
+| `06_bp3_triggers.txt` | 4577 | 13 | 0 | jomini |
 | `06_ce1_epidemic_triggers.txt` | 869 | 4 | 0 | jomini |
-| `06_ce1_legend_triggers.txt` | 3884 | 9 | 0 | jomini |
+| `06_ce1_legend_triggers.txt` | 4008 | 9 | 0 | jomini |
 | `06_ce1_legitimacy_triggers.txt` | 935 | 4 | 0 | jomini |
 | `06_fp3_scripted_triggers.txt` | 12853 | 32 | 0 | jomini |
 | `07_ep3_petition_triggers.txt` | 3890 | 16 | 0 | jomini |
-| `07_ep3_triggers.txt` | 53087 | 118 | 0 | jomini |
-| `07_frankokratia_triggers.txt` | 17361 | 16 | 0 | jomini |
+| `07_ep3_triggers.txt` | 53672 | 119 | 0 | jomini |
+| `07_frankokratia_triggers.txt` | 18060 | 17 | 0 | jomini |
 | `08_bp3_triggers.txt` | 100 | 1 | 0 | jomini |
-| `09_mpo_greatest_of_khans_triggers.txt` | 10008 | 17 | 0 | jomini |
+| `09_mpo_greatest_of_khans_triggers.txt` | 10020 | 17 | 0 | jomini |
 | `09_mpo_settlement_issue_triggers.txt` | 1469 | 4 | 0 | jomini |
-| `10_ach_scripted_triggers.txt` | 10938 | 22 | 0 | jomini |
-| `10_tgp_dynastic_cycle_triggers.txt` | 11035 | 32 | 0 | jomini |
+| `10_ach_scripted_triggers.txt` | 11319 | 23 | 0 | jomini |
+| `10_tgp_dynastic_cycle_triggers.txt` | 11056 | 32 | 0 | jomini |
 | `10_tgp_house_bloc_triggers.txt` | 1021 | 3 | 0 | jomini |
-| `10_tgp_house_relation_triggers.txt` | 5962 | 3 | 0 | jomini |
-| `10_tgp_japan_triggers.txt` | 22800 | 56 | 0 | jomini |
+| `10_tgp_house_relation_triggers.txt` | 8574 | 5 | 0 | jomini |
+| `10_tgp_japan_triggers.txt` | 22639 | 56 | 0 | jomini |
 | `10_tgp_korea_triggers.txt` | 154 | 1 | 0 | jomini |
-| `10_tgp_natural_disaster_triggers.txt` | 3436 | 10 | 0 | jomini |
-| `10_tgp_triggers.txt` | 29024 | 74 | 0 | jomini |
+| `10_tgp_natural_disaster_triggers.txt` | 3518 | 10 | 0 | jomini |
+| `10_tgp_triggers.txt` | 28519 | 75 | 0 | jomini |
+| `11_gdp_triggers.txt` | 12248 | 26 | 0 | jomini |
 | `11_petition_head_of_faith_triggers.txt` | 11796 | 30 | 0 | jomini |
 | `20_health_balancing_triggers.txt` | 1330 | 5 | 0 | jomini |
-| `20_health_triggers.txt` | 23193 | 49 | 0 | jomini |
+| `20_health_triggers.txt` | 23130 | 49 | 0 | jomini |
 | `clerical_chastity_triggers.txt` | 1303 | 4 | 0 | jomini |
+| `district_triggers.txt` | 7602 | 26 | 0 | jomini |
+| `gdp_achievement_triggers.txt` | 996 | 3 | 0 | jomini |
+| `gdp_burgher_scripted_triggers.txt` | 8004 | 35 | 0 | jomini |
+| `gdp_merchant_triggers.txt` | 88133 | 201 | 0 | jomini |
+| `gdp_republic_triggers.txt` | 31791 | 80 | 0 | jomini |
+| `gdp_trade_scheme_triggers.txt` | 1401 | 5 | 0 | jomini |
+| `gdp_visit_holding_triggers.txt` | 4295 | 10 | 0 | jomini |
 | `great_project_triggers.txt` | 570 | 2 | 0 | jomini |
-| `mpo_scripted_triggers.txt` | 50647 | 60 | 0 | jomini |
-| `music_triggers.txt` | 7419 | 14 | 0 | jomini |
+| `mpo_scripted_triggers.txt` | 50592 | 60 | 0 | jomini |
+| `music_triggers.txt` | 8962 | 16 | 0 | jomini |
 | `pam_antipope_triggers.txt` | 7948 | 15 | 0 | jomini |
-| `pam_heresy_triggers.txt` | 12376 | 47 | 0 | jomini |
+| `pam_heresy_triggers.txt` | 12418 | 47 | 0 | jomini |
 | `pam_saint_triggers.txt` | 9832 | 17 | 0 | jomini |
-| `pam_scripted_triggers.txt` | 194153 | 370 | 0 | jomini |
-| `pam_secular_faith_triggers.txt` | 1635 | 7 | 0 | jomini |
+| `pam_scripted_triggers.txt` | 203959 | 387 | 0 | jomini |
+| `pam_secular_faith_triggers.txt` | 1987 | 8 | 0 | jomini |
 | `pam_spread_tenet_triggers.txt` | 1867 | 3 | 0 | jomini |
-| `passive_rite_learning_triggers.txt` | 12365 | 10 | 0 | jomini |
+| `passive_rite_learning_triggers.txt` | 12746 | 10 | 0 | jomini |
 | `sanctify_artifact_triggers.txt` | 6803 | 1 | 0 | jomini |
 | `tgp_imperial_examination_triggers.txt` | 4714 | 18 | 0 | jomini |
 | `tgp_mandala_task_contract_triggers.txt` | 5551 | 5 | 0 | jomini |
-| `tgp_mandala_triggers.txt` | 34235 | 59 | 0 | jomini |
-| `tgp_silk_road_triggers.txt` | 1370 | 3 | 0 | jomini |
+| `tgp_mandala_triggers.txt` | 34232 | 59 | 0 | jomini |
+| `tgp_silk_road_triggers.txt` | 1759 | 3 | 0 | jomini |
 | `tgp_tribute_mission_triggers.txt` | 5978 | 16 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_activity_triggers.txt（43 条目）
+### 00_activity_triggers.txt（44 条目）
 
 - is_available_for_activity_trigger
 - is_available_for_child_activity_trigger
@@ -179,7 +188,7 @@
 - petition_liege_vassal_war_trigger
 - petition_liege_county_control_trigger
 - petition_liege_county_convert_trigger
-- petition_liege_county_opinion_trigger
+- petition_liege_popular_opinion_trigger
 - petition_liege_fortify_border_trigger
 - petition_liege_title_liege_trigger
 - petition_liege_title_vassal_trigger
@@ -207,6 +216,7 @@
 - ai_activity_war_check
 - has_attending_activity_guests
 - any_journey_point_of_interest_trigger
+- can_host_feasts_trigger
 
 ### 00_adultery_triggers.txt（4 条目）
 
@@ -240,13 +250,14 @@
 
 - barony_title_is_unique_badge_christian_holy_site_trigger
 
-### 00_artifact_triggers.txt（225 条目）
+### 00_artifact_triggers.txt（235 条目）
 
 - artifact_value_trigger
 - christian_artifact_access_trigger
 - islamic_artifact_access_trigger
 - jewish_artifact_access_trigger
 - artifact_is_worthy_to_improve_trigger
+- artifact_can_be_accepted_as_gift_trigger
 - artifact_can_be_gift_base_trigger
 - artifact_can_be_gift_advance_trigger
 - artifact_can_be_gift_to_trigger
@@ -467,6 +478,15 @@
 - artifact_war_claimable_artifact_trigger
 - sword_could_be_longsword_trigger
 - any_recent_previous_owner
+- artifact_not_luxury_contract_trigger
+- landed_ruler_artifact_modifier_trigger
+- vassal_artifact_modifier_trigger
+- short_reign_artifact_modifier_trigger
+- powerful_vassal_artifact_modifier_trigger
+- merchant_artifact_modifier_trigger
+- has_free_domicile_curio_slot_trigger
+- has_free_domicile_creature_slot_trigger
+- no_or_worse_equipped_artifact_type_trigger
 
 ### 00_auto_character_triggers.txt（3 条目）
 
@@ -474,7 +494,7 @@
 - is_valid_auto_title_holder_clergy
 - is_valid_auto_title_holder_non_clergy
 
-### 00_available_for_events_triggers.txt（53 条目）
+### 00_available_for_events_triggers.txt（57 条目）
 
 - has_contagious_deadly_disease_trigger
 - is_healthy
@@ -517,11 +537,15 @@
 - is_nomad
 - is_landed_nomad
 - is_landless_nomad
+- is_herder
 - is_landless_adventurer
-- is_governor
+- is_landless_merchant
+- is_landless_republican
 - is_governor_or_admin_count
 - is_governor_or_landless_admin
 - is_landless_administrative
+- is_landless_republic
+- is_republic_ruler_or_landless_republic
 - is_landless_soryo
 - is_landed_or_landless_administrative
 - is_landed_or_landless_administrative_or_theocratic
@@ -560,10 +584,11 @@
 - bg_game_type_region_fidchell_trigger
 - bg_stake_land_valid_neighbouring_county_to_trade_trigger
 
-### 00_building_requirement_triggers.txt（69 条目）
+### 00_building_requirement_triggers.txt（84 条目）
 
 - building_requirement_tribal
 - building_requirement_wanua
+- building_requirement_non_tribal
 - building_requirement_tribal_holding_in_county
 - building_requirement_nomad
 - building_requirement_nomad_holding_in_county
@@ -576,61 +601,75 @@
 - holding_is_city
 - holding_is_feudalized
 - building_requirement_castle_city_church
-- building_requirement_castle_city_church_temple_citadel_tribe
 - building_hall_of_heroes_requirement
 - building_university_requirement
-- building_common_tradeport_requirement_terrain
-- building_pastures_requirement_terrain
-- building_hunting_grounds_requirement_terrain
-- building_orchards_requirement_terrain
-- building_farm_estates_requirement_terrain
-- building_military_camps_requirement_terrain
-- building_regimental_grounds_requirement_terrain
-- building_ramparts_requirement_terrain
-- building_curtain_walls_requirement_terrain
-- building_watchtowers_requirement_terrain
-- building_paddy_fields_requirement_terrain
 - building_cereal_fields_requirement_terrain
-- building_outposts_requirement_terrain
-- building_barracks_requirement_terrain
-- building_camel_farms_requirement_terrain
-- building_stables_requirement_terrain
-- building_smiths_requirement_terrain
-- building_workshops_requirement_terrain
-- building_logging_camps_requirement_terrain
-- building_peat_quarries_requirement_terrain
-- building_hill_farms_requirement_terrain
-- building_elephant_pens_requirement_terrain
-- building_horse_pastures_requirement_terrain
-- building_plantations_requirement_terrain
-- building_quarries_requirement_terrain
-- building_warrior_lodges_requirement_terrain
-- building_hillside_grazing_requirement_terrain
-- building_wind_furnace_requirement_terrain
-- building_hill_forts_requirement_terrain
-- building_windmills_requirement_terrain
-- building_watermills_requirement_terrain
-- building_caravanserai_requirement_terrain
-- building_qanats_requirement_terrain
-- building_hospices_requirement_terrain
 - has_any_special_mine_trigger
+- pearl_fishing_banks_county_trigger
+- walrus_ivory_county_trigger
+- naphta_county_trigger
 - barony_cannot_construct_holding
 - has_any_building_of_level_trigger
 - has_lesser_building_trigger
-- add_random_building_trigger
-- generic_economic_building_innovation_trigger
-- generic_fortification_building_innovations_trigger
-- generic_recruitment_building_innovations_trigger
+- mint_building_unlock_early_medieval_trigger
 - islamic_special_building_trigger
 - christian_special_building_trigger
 - eastern_special_building_trigger
 - religious_special_building_exclusion_trigger
-- building_monastic_schools_holding_level_requirement_trigger
-- building_murex_farm_requirement_terrain
-- building_waterworks_requirement_terrain
-- building_spice_plantation_requirement_terrain
-- building_examination_hall_requirement_terrain
-- building_breweries_requirement
+- building_murex_fisheries_requirement_trigger
+- building_examination_hall_requirement
+- building_manor_tower_requirement
+- building_requirement_no_great_barracks_project
+- building_gunpowder_trigger
+- can_have_duchy_capital_building_trigger
+- building_requirement_meat_allowed
+- building_requirement_winter_region
+- building_requirement_pasta_region
+- building_farmed_tribal_trigger
+- building_farmed_early_medieval_trigger
+- building_farmed_high_medieval_trigger
+- building_farmed_late_medieval_trigger
+- building_artisanal_early_medieval_trigger
+- building_artisanal_high_medieval_trigger
+- building_artisanal_late_medieval_trigger
+- building_forest_early_medieval_trigger
+- building_forest_high_medieval_trigger
+- building_forest_late_medieval_trigger
+- building_mineral_early_medieval_trigger
+- building_mineral_high_medieval_trigger
+- building_mineral_late_medieval_trigger
+- building_maritime_early_medieval_trigger
+- building_maritime_high_medieval_trigger
+- building_maritime_late_medieval_trigger
+- building_rural_early_medieval_trigger
+- building_rural_high_medieval_trigger
+- building_rural_late_medieval_trigger
+- building_communal_early_medieval_trigger
+- building_urban_high_medieval_trigger
+- building_masonry_late_medieval_trigger
+- building_commerce_early_medieval_trigger
+- building_commerce_high_medieval_trigger
+- building_commerce_late_medieval_trigger
+- building_administrative_early_medieval_trigger
+- building_administrative_high_medieval_trigger
+- building_administrative_late_medieval_trigger
+- building_religious_early_medieval_trigger
+- building_stonework_high_medieval_trigger
+- building_fortification_tribal_trigger
+- building_fortification_early_medieval_trigger
+- building_fortification_high_medieval_trigger
+- building_fortification_late_medieval_trigger
+- building_recruitment_tribal_trigger
+- building_recruitment_early_medieval_trigger
+- building_recruitment_late_medieval_trigger
+- building_courtly_tribal_trigger
+- building_courtly_early_medieval_trigger
+- building_courtly_late_medieval_trigger
+- building_settlement_tribal_trigger
+- building_holding_early_medieval_trigger
+- building_holding_high_medieval_trigger
+- building_holding_late_medieval_trigger
+- building_monument_tribal_trigger
 
 ### 00_childhood_triggers.txt（24 条目）
 
@@ -664,7 +703,7 @@
 - is_in_clan_trigger
 - is_in_same_clan_as_trigger
 
-### 00_clothing_triggers.txt（234 条目）
+### 00_clothing_triggers.txt（248 条目）
 
 - should_be_naked_trigger
 - natural_primitivism_supports_naturism_trigger
@@ -687,6 +726,8 @@
 - should_use_fat_pregnant_animation
 - should_use_fat_dwarf_pregnant_animation
 - asian_variants
+- portrait_east_asian_hair_fallback_trigger
+- portrait_dresses_like_domicile_locals_trigger
 - portrait_shared_clothing_contents_trigger
 - portrait_ccp4_sami_travel_coat_trigger
 - portrait_byzantine_clothing_trigger
@@ -785,6 +826,10 @@
 - portrait_tangut_clothing_spouse_trigger
 - portrait_jurchen_clothing_trigger
 - portrait_jurchen_clothing_spouse_trigger
+- portrait_sogdian_clothing_trigger
+- portrait_sogdian_clothing_spouse_trigger
+- portrait_italian_clothing_trigger
+- portrait_italian_clothing_spouse_trigger
 - portrait_era1_trigger
 - portrait_era2_trigger
 - portrait_era3_trigger
@@ -838,6 +883,12 @@
 - portrait_stealth_trigger
 - portrait_mayor_trigger
 - portrait_mayor_headgear_trigger
+- portrait_gdp_county_republican_trigger
+- portrait_gdp_barony_republican_trigger
+- portrait_doge_trigger
+- portrait_gdp_wealthy_merchant_trigger
+- portrait_gdp_merchant_trigger
+- portrait_merchant_or_merchant_courtier_trigger
 - portrait_jester_trigger
 - portrait_religious_devoted_trigger
 - portrait_pam_black_habit_order_title_trigger
@@ -889,6 +940,8 @@
 - portrait_ep2_disguised_woman_trigger
 - portrait_ep2_western_travel_cloak_trigger
 - portrait_ep2_mena_travel_cloak_trigger
+- portrait_travelling_not_at_activity_trigger
+- portrait_hunting_or_travelling_trigger
 - portrait_ep2_hajj_clothes_trigger
 - portrait_ep2_ihram_clothes_trigger
 - portrait_ep2_western_cloak_duel_trigger
@@ -901,7 +954,7 @@
 - korea_mid_rank_trigger
 - korea_low_rank_trigger
 
-### 00_coa_triggers.txt（35 条目）
+### 00_coa_triggers.txt（36 条目）
 
 - coa_african_trigger
 - coa_african_culture_trigger
@@ -916,6 +969,7 @@
 - coa_switch_to_norman_trigger
 - coa_switch_to_norse_trigger
 - coa_feudal_trigger
+- coa_merchant_trigger
 - coa_french_trigger
 - coa_irish_trigger
 - coa_indian_culture_trigger
@@ -947,7 +1001,7 @@
 
 - can_receieve_good_available_compliment_trigger
 
-### 00_councillor_triggers.txt（74 条目）
+### 00_councillor_triggers.txt（77 条目）
 
 - can_be_councillor_basics_trigger
 - can_be_councillor_gender_trigger
@@ -1010,10 +1064,13 @@
 - marshal_task_1102_county_trigger
 - marshal_task_1003_county_trigger
 - steward_task_county_corruption_county_trigger
+- council_task_not_started_in_county_trigger
 - task_conversion_valid_county_trigger
 - councillor_spouse_learning_2603_valid_councillor_trigger
 - councillor_liege_has_erudition_legacy_5_perk
 - councillor_liege_has_customs_legacy_perk
+- councillor_liege_duchy_capital_has_building_trigger
+- councillor_liege_has_reckoning_school
 - councillor_liege_has_family_business_bonus
 - councillor_liege_has_consulted_house_bonus
 - councillor_is_unskilled_trigger
@@ -1024,13 +1081,32 @@
 - can_be_trained_as_knight_now_light_trigger
 - teacher_has_trait_that_student_does_not_trigger
 
-### 00_county_corruption_triggers.txt（3 条目）
+### 00_county_corruption_triggers.txt（22 条目）
 
 - has_county_corruption_trigger
 - immune_to_county_corruption_trigger
+- can_worsen_county_corruption_trigger
+- is_susceptible_to_county_corruption_trigger
 - is_valid_for_county_corruption_trigger
+- has_escalatable_county_corruption_trigger
+- has_county_corruption_inefficient_tax_collection_modifier_trigger
+- has_county_corruption_deserting_levies_modifier_trigger
+- has_county_corruption_smuggling_ring_modifier_trigger
+- has_county_corruption_bandits_rampant_modifier_trigger
+- has_county_corruption_inefficient_census_modifier_trigger
+- has_county_corruption_lack_of_sheriffs_modifier_trigger
+- has_county_corruption_lack_of_courts_modifier_trigger
+- has_county_corruption_thieves_guild_modifier_trigger
+- has_county_corruption_unsafe_highways_modifier_trigger
+- has_county_corruption_uncooperative_guilds_modifier_trigger
+- has_county_corruption_lackluster_administration_modifier_trigger
+- has_county_corruption_roaming_bandits_modifier_trigger
+- has_county_corruption_wild_beast_attacks_modifier_trigger
+- has_county_corruption_upset_shepherds_modifier_trigger
+- has_county_corruption_rogue_warriors_modifier_trigger
+- has_county_corruption_unruly_nomads_modifier_trigger
 
-### 00_court_position_triggers.txt（112 条目）
+### 00_court_position_triggers.txt（119 条目）
 
 - any_court_position_available_trigger
 - has_any_court_position_flag_trigger
@@ -1049,6 +1125,7 @@
 - base_court_position_validity_trigger
 - royal_architect_validity_trigger
 - seneschal_validity_trigger
+- partner_validity_trigger
 - khlon_glan_validity_trigger
 - court_tutor_validity_trigger
 - high_almoner_validity_trigger
@@ -1060,6 +1137,10 @@
 - champion_validity_trigger
 - master_of_hunt_validity_trigger
 - court_poet_validity_trigger
+- fixer_validity_trigger
+- translator_validity_trigger
+- market_agent_validity_trigger
+- bailiff_validity_trigger
 - house_poet_validity_trigger
 - court_musician_validity_trigger
 - court_jester_validity_trigger
@@ -1144,6 +1225,8 @@
 - wet_nurse_instill_virtue_trigger
 - court_position_employee_shown_trigger
 - can_employ_court_eunuchs_trigger
+- court_position_liege_has_consulted_house_bonus
+- roman_censor_validity_trigger
 
 ### 00_court_role_triggers.txt（9 条目）
 
@@ -1190,7 +1273,7 @@
 - is_courtier_or_knight_of_root
 - guest_herder_candidate_trigger
 
-### 00_crime_triggers.txt（10 条目）
+### 00_crime_triggers.txt（11 条目）
 
 - is_witch_trigger
 - is_witch_known_by_trigger
@@ -1202,6 +1285,7 @@
 - is_adulterer_or_fornicator_trigger
 - sexual_activity_with_partner_is_criminal_in_rite_trigger
 - murdering_character_is_crime_in_rite_trigger
+- character_is_prisoner_of_war
 
 ### 00_crypto_religionist_triggers.txt（2 条目）
 
@@ -1279,7 +1363,7 @@
 - had_gruesome_death_trigger
 - death_killer_always_public_trigger
 
-### 00_diarchy_scripted_triggers.txt（55 条目）
+### 00_diarchy_scripted_triggers.txt（56 条目）
 
 - character_hates_scope_due_to_strife_guts_trigger
 - is_diarch_valid_trigger
@@ -1289,6 +1373,7 @@
 - diarch_callable_in_internal_war_trigger
 - diarch_matches_liege_faith_gender_preference_trigger
 - basic_eligible_for_diarchy_trigger
+- entrenched_regency_for_personal_reasons_trigger
 - regency_for_personal_reasons_trigger
 - imprisonment_would_cause_regency_trigger
 - travel_would_cause_regency_trigger
@@ -1516,8 +1601,61 @@
 - game_rule_can_create_hybird_culture_trigger
 - game_rule_unrestricted_dynasty_legacies_trigger
 
-### 00_general_trait_triggers.txt（23 条目）
+### 00_gdp_guelph_ghibelline_triggers.txt（49 条目）
 
+- is_suitable_gg_leader_trigger
+- is_ghibelline_with_advantage_trigger
+- is_ghibelline_leader_with_advantage_trigger
+- is_guelph_with_advantage_trigger
+- is_guelph_leader_with_advantage_trigger
+- is_guelph_leader_trigger
+- is_guelph_trigger
+- is_ghibelline_leader_trigger
+- is_ghibelline_trigger
+- is_ghibelline_or_close_family_of_ghibelline_leader_trigger
+- is_family_of_ghibelline_leader_trigger
+- is_guelph_or_ghibelline_trigger
+- is_gg_undecided_trigger
+- gg_first_and_second_are_opposite_sides_trigger
+- gg_target_house_head_is_opposite_side_trigger
+- gg_first_and_second_are_same_side_trigger
+- gg_phase_is_pre_gg_trigger
+- gg_phase_has_catalysts_trigger
+- gg_phase_is_in_dictatus_papae_trigger
+- gg_excommunicated_ghibelline_leader_in_dictatus_papae_trigger
+- gg_phase_has_cheaper_opposite_party_wars_trigger
+- gg_phase_gives_involvement_trigger
+- gg_phase_gives_half_involvement_trigger
+- gg_phase_gives_double_involvement_trigger
+- should_get_involvement_trigger
+- gg_hre_causes_additional_tyranny_trigger
+- gg_can_create_northern_italian_titles_trigger
+- 1178_house_or_dynasty_should_be_ghibelline_trigger
+- 1178_titles_should_be_ghibelline_trigger
+- 1178_house_or_dynasty_should_be_guelph_trigger
+- 1178_titles_should_be_guelph_trigger
+- 1178_variable_allegiance_titles_trigger
+- 1178_house_or_dynasty_variable_allegiance_trigger
+- 1066_house_or_dynasty_should_be_ghibelline_trigger
+- 1066_house_or_dynasty_should_be_guelph_trigger
+- 1066_titles_should_be_ghibelline_trigger
+- 1066_titles_should_be_guelph_trigger
+- 1066_variable_allegiance_titles_trigger
+- title_province_is_part_of_gg_in_northern_italy_trigger
+- is_either_hre_vassal_or_independent_duke_or_less_trigger
+- is_either_hre_vassal_or_independent_king_trigger
+- is_hre_vassal_or_independent_trigger
+- title_is_able_to_join_lombard_league_via_decision_trigger
+- holder_would_join_lombard_league_via_decision_trigger
+- has_lombard_league_title_trigger
+- gg_available_displaced_guelph_rulers_exist
+- gg_available_displaced_ghibelline_rulers_exist
+- gg_has_minor_involvement_trigger
+- gg_has_medium_involvement_trigger
+
+### 00_general_trait_triggers.txt（24 条目）
+
+- trait_can_be_edited_by_yourself_trigger
 - has_same_education_as_compare_character_trigger
 - has_same_education_as_root_trigger
 - has_same_lifestyle_as_compare_character_trigger
@@ -1593,7 +1731,7 @@
 
 ### 00_government_triggers.txt（5 条目）
 
-- should_apply_tribal_development_penalty_trigger
+- should_apply_tribal_prosperity_penalty_trigger
 - faith_qualifies_for_west_african_pagan_feudalisation_trigger
 - should_use_temple_character_background_trigger
 - has_mandala_culture_trigger
@@ -1612,7 +1750,7 @@
 - ghw_pope_annoyed_at_lack_of_participation_trigger
 - ghw_pope_annoyed_at_lack_of_participation_tier_trigger
 
-### 00_has_dlc_scripted_triggers.txt（28 条目）
+### 00_has_dlc_scripted_triggers.txt（29 条目）
 
 - has_sp4_dlc_trigger
 - has_sp5_dlc_triggers
@@ -1640,10 +1778,11 @@
 - has_ep2_dlc_trigger
 - has_ep3_dlc_trigger
 - has_tgp_dlc_trigger
+- has_gdp_dlc_trigger
 - has_playable_adventurer_dlc_trigger
 - has_mp1_dlc_trigger
 
-### 00_hunt_triggers.txt（76 条目）
+### 00_hunt_triggers.txt（77 条目）
 
 - can_hunt_trigger
 - hunt_animal_deer_antelope_trigger
@@ -1721,6 +1860,7 @@
 - hunt_ongoing_sighting_trigger
 - hunt_is_nerge_type
 - activity_is_nerge_type
+- hunt_option_costs_gold_trigger
 
 ### 00_illustration_triggers.txt（51 条目）
 
@@ -1875,7 +2015,7 @@
 - butcher_animals_decision_available_elephants_trigger
 - laamp_youth_cultural_tradition_trigger
 
-### 00_law_triggers.txt（61 条目）
+### 00_law_triggers.txt（65 条目）
 
 - character_gender_can_rule_title_trigger
 - character_gender_can_inherit_from_trigger
@@ -1899,7 +2039,11 @@
 - realm_law_is_mandala
 - realm_law_use_meritocratic_bureaucracy
 - realm_uses_treasury_laws_trigger
+- realm_uses_salary_treasury_laws_trigger
+- realm_uses_military_treasury_laws_trigger
 - realm_law_use_japanese_bureaucracy
+- realm_law_use_company_purpose
+- use_governor_appointment_law_trigger
 - can_have_confederate_partition_succession_law_trigger
 - can_keep_partition_succession_law_trigger
 - can_have_partition_succession_law_trigger
@@ -1941,7 +2085,7 @@
 
 ### 00_legal_triggers.txt（8 条目）
 
-- opposes_succession_law_change_trigger
+- opposes_law_change_trigger
 - can_change_succession_laws_realm_flag_trigger
 - can_change_succession_law_trigger
 - can_change_single_heir_dynasty_house_succession_law_trigger
@@ -1950,13 +2094,14 @@
 - can_designate_heir_trigger
 - can_change_title_law_trigger
 
-### 00_lifestyle_perk_triggers.txt（7 条目）
+### 00_lifestyle_perk_triggers.txt（8 条目）
 
 - extortion_powerful_vassal_trigger
 - extortion_county_trigger
 - extortion_theocratic_vassal_trigger
 - extortion_vassal_at_large_trigger
 - extortion_courtier_representative_trigger
+- contract_warfare_can_challenge_to_single_combat_trigger
 - can_challenge_rival_to_single_combat_trigger
 - rival_single_combat_shown_and_not_invalid_trigger
 
@@ -2137,7 +2282,7 @@
 
 - has_province_owner
 
-### 00_relation_triggers.txt（73 条目）
+### 00_relation_triggers.txt（75 条目）
 
 - can_set_relation_potential_friend_trigger
 - can_set_relation_friend_trigger
@@ -2212,6 +2357,8 @@
 - get_characters_of_interest_trigger
 - get_potential_enemies_effect
 - has_RelationToMe_relation
+- has_minor_positive_or_above_house_relations_with_target_trigger
+- has_minor_negative_or_below_house_relations_with_target_trigger
 
 ### 00_religion_faith_rite_triggers.txt（14 条目）
 
@@ -2453,7 +2600,7 @@
 - befriend_owner_is_close_to_target_trigger
 - befriend_scope_is_close_to_target_trigger
 
-### 00_scheme_triggers.txt（105 条目）
+### 00_scheme_triggers.txt（107 条目）
 
 - diplomacy_scheme_trigger
 - intrigue_scheme_trigger
@@ -2465,7 +2612,8 @@
 - agent_valid_to_be_discovered_by_spymaster
 - personal_scheme_should_not_evaluate_tier_differences_trigger
 - personal_scheme_success_compare_target_liege_tier_trigger
-- is_good_familial_murder_target_trigger
+- is_good_succession_murder_target_trigger
+- add_succession_murder_targets_from_title_trigger
 - build_murder_targets_trigger
 - scheme_is_still_valid_trigger
 - can_use_befriend_scheme_trigger
@@ -2560,6 +2708,7 @@
 - abduct_family_rivalling_trigger
 - abduct_rivalling_relative_trigger
 - has_access_to_claim_throne_scheme_trigger
+- merchant_patron_hobnob_owner_courtier_skips_agent_suite_trigger
 
 ### 00_scripted_rule_triggers.txt（9 条目）
 
@@ -2573,7 +2722,7 @@
 - can_raid_trait_flag_standard_requirements_trigger
 - can_raid_across_water_trigger
 
-### 00_scripted_triggers.txt（43 条目）
+### 00_scripted_triggers.txt（44 条目）
 
 - minor_gold_value_trigger
 - medium_gold_value_trigger
@@ -2618,6 +2767,7 @@
 - has_purchased_truce_with_char
 - has_different_clothing_gfx
 - current_date_is_start_date_trigger
+- county_has_fewer_than_x_potential_trade_goods_trigger
 
 ### 00_secret_triggers.txt（15 条目）
 
@@ -2637,7 +2787,7 @@
 - random_blackmailable_secret_can_be_added_simple_trigger
 - spymaster_task_courtier_valid_for_hook_fabrication_trigger
 
-### 00_secret_type_triggers.txt（45 条目）
+### 00_secret_type_triggers.txt（54 条目）
 
 - secret_deviant_is_valid_trigger
 - secret_deviant_is_shunned_trigger
@@ -2684,6 +2834,15 @@
 - secret_exam_cheater_is_criminal_trigger
 - secret_forbidden_personal_tenet_is_shunned_trigger
 - secret_forbidden_personal_tenet_is_criminal_trigger
+- secret_dealbreaker_is_valid_trigger
+- secret_dealbreaker_is_shunned_trigger
+- secret_dealbreaker_is_criminal_trigger
+- secret_spy_is_valid_trigger
+- secret_spy_is_shunned_trigger
+- secret_spy_is_criminal_trigger
+- secret_disguised_usury_is_valid_trigger
+- secret_disguised_usury_is_shunned_trigger
+- secret_disguised_usury_is_criminal_trigger
 
 ### 00_sibling_triggers.txt（1 条目）
 
@@ -2728,7 +2887,7 @@
 - can_be_burdened
 - stress_rite_conversion_trigger
 
-### 00_succession_triggers.txt（8 条目）
+### 00_succession_triggers.txt（10 条目）
 
 - special_succession_witengamot_trigger
 - special_succession_thing_trigger
@@ -2738,6 +2897,8 @@
 - historical_succession_access_single_heir_succession_law_youngest_trigger
 - historical_succession_access_single_heir_dynasty_house_trigger
 - can_have_meritocratic_regency_succession_law_trigger
+- successor_is_a_landless_patrician_trigger
+- successor_is_not_a_traditional_feudal_esque_ruler_trigger
 
 ### 00_task_contract_triggers.txt（14 条目）
 
@@ -2778,6 +2939,11 @@
 - character_title_allows_off_screen_wandering_trigger
 - county_held_or_vassal_to_target_trigger
 
+### 00_trade_good_triggers.txt（2 条目）
+
+- is_burnable_trade_good_trigger
+- is_breakable_trade_good_trigger
+
 ### 00_travel_triggers.txt（10 条目）
 
 - is_location_valid_for_travel_event_on_land
@@ -2803,7 +2969,7 @@
 - vassal_follows_directive_valid_trigger
 - vassal_follows_directive_trigger
 
-### 00_war_and_peace_triggers.txt（40 条目）
+### 00_war_and_peace_triggers.txt（54 条目）
 
 - at_war_with_any_coreligionist_trigger
 - at_war_with_any_non_coreligionist_trigger
@@ -2828,6 +2994,7 @@
 - using_hierarchical_cb_trigger
 - using_civil_war_cb_trigger
 - special_invasion_cb_seize_land_in_region_trigger
+- special_invasion_cb_seize_land_trigger
 - can_join_war_liege_vassal_check_trigger
 - pressing_claim_of_character_trigger
 - is_religious_war
@@ -2843,10 +3010,23 @@
 - prisoners_of_war_trigger
 - character_is_potential_valuable_prisoner
 - religious_war_vassals_constraints
+- religious_war_faith_hostility_trigger
+- religious_war_struggle_check_trigger
 - herders_and_tributary_constraints
 - feudal_clan_tribal_conquest_constraints
+- war_should_invalidate_defender_lost_target_titles_trigger
+- war_should_invalidate_defender_lost_target_lands_trigger
+- religious_war_should_invalidate_faith_change_trigger
+- ai_aggressive_cb_constraints
+- ai_naval_expansion_cb_constraints
+- ai_land_expansion_cb_constraints
+- civil_war_is_local_player_in_faction_trigger
+- has_required_prestige_level_to_declare_war
+- has_required_piety_level_to_declare_war
+- has_mandala_invasion_cb_trigger
+- depose_war_victory_trigger
 
-### 00_weather_triggers.txt（27 条目）
+### 00_weather_triggers.txt（28 条目）
 
 - county_has_winter_trigger
 - character_capital_has_winter_trigger
@@ -2861,6 +3041,7 @@
 - temperate_seasons_trigger
 - tropical_seasons_trigger
 - tropical_seasons_region_trigger
+- arid_region_trigger
 - is_nice_season_to_be_outside_trigger
 - is_nice_season_to_be_inside_trigger
 - current_season_trigger
@@ -2885,10 +3066,6 @@
 ### 01_bp1_filippa_scripted_triggers.txt（1 条目）
 
 - has_weak_hook_on_trigger
-
-### 01_building_upgrade_triggers.txt（1 条目）
-
-- has_existing_farming_building_trigger
 
 ### 01_fp1_scripted_triggers.txt（31 条目）
 
@@ -2981,13 +3158,14 @@
 - style_changing_reformer_trigger
 - hostage_oath_of_friendship_trigger
 
-### 03_fp2_scripted_triggers.txt（56 条目）
+### 03_fp2_scripted_triggers.txt（57 条目）
 
 - fp2_should_use_iberian_graphics_trigger
 - fp2_character_any_involvement_iberian_struggle_trigger
 - fp2_character_involved_in_struggle_trigger
 - fp2_character_interloper_in_struggle_trigger
 - fp2_character_uninvolved_in_struggle_trigger
+- eligible_for_fp2_urbanism_legacy_trigger
 - eligible_for_fp2_dynasty_legacies_trigger
 - is_toledo_ownership_valid_trigger
 - culture_valid_for_ritualised_best_friends_trigger
@@ -3200,12 +3378,15 @@
 - is_religious_studies_location
 - is_available_adult_education_teacher
 
-### 06_bp3_triggers.txt（10 条目）
+### 06_bp3_triggers.txt（13 条目）
 
 - wayfarer_the_real_threat_trigger
 - later_historical_gold_mine_trigger
 - later_historical_silver_mine_trigger
 - later_historical_copper_mine_trigger
+- survey_copper_mine_possible_trigger
+- survey_silver_mine_possible_trigger
+- survey_gold_mine_possible_trigger
 - reminiscing_event_trigger
 - local_guild_trigger
 - local_guild_compare_trigger
@@ -3293,7 +3474,7 @@
 - petition_liege_vows_trigger
 - petition_liege_knight_trigger
 
-### 07_ep3_triggers.txt（118 条目）
+### 07_ep3_triggers.txt（119 条目）
 
 - eligible_for_ep3_administrative_legacy_trigger
 - ep3_should_use_byzantine_graphics_trigger
@@ -3351,6 +3532,7 @@
 - cid_story_cycle_start_trigger
 - ep3_can_have_legitimists_camp_purpose_trigger
 - has_any_gallowsbait_xp_trigger
+- notorious_gallowsbait_xp_trigger
 - ep3_restored_rome_hard_mode_trigger
 - rite_is_interesting_heresy_to_state_rite_trigger
 - ep3_boundary_dispute_county_trigger
@@ -3414,7 +3596,7 @@
 - laamp_as_mercenary_payout_trigger
 - laamp_as_mercenary_payout_last_war_trigger
 
-### 07_frankokratia_triggers.txt（16 条目）
+### 07_frankokratia_triggers.txt（17 条目）
 
 - ep3_frankokratia_ghw_trigger
 - ep3_frankokratia_transiting_relative_trigger
@@ -3432,6 +3614,7 @@
 - ep3_frankokratia_beneficiary_gender_soft_trigger
 - ep3_frankokratia_notification_recipient_trigger
 - ep3_orthodox_faith_trigger
+- ep3_frankokratia_byz_vassal_joins_new_kingdom_trigger
 
 ### 08_bp3_triggers.txt（1 条目）
 
@@ -3464,7 +3647,7 @@
 - settlement_issue_valid_to_create_default_trigger
 - mpo_settlement_issue_trigger
 
-### 10_ach_scripted_triggers.txt（22 条目）
+### 10_ach_scripted_triggers.txt（23 条目）
 
 - coronation_trigger
 - coronation_living_officiator_trigger
@@ -3475,6 +3658,7 @@
 - coronation_hostile_to_host_trigger
 - coronation_anointment_save_authority_trigger
 - coronation_anointment_authority_available_trigger
+- coronation_anointment_approved_trigger
 - coronation_anointment_no_holy_site_available_trigger
 - coronation_anointment_authority_is_trigger
 - is_important_hof_trigger
@@ -3530,8 +3714,10 @@
 - tgp_is_valid_member_character_shared_trigger
 - tgp_is_valid_member_house_shared_trigger
 
-### 10_tgp_house_relation_triggers.txt（3 条目）
+### 10_tgp_house_relation_triggers.txt（5 条目）
 
+- house_relation_merchants_share_market_trigger
+- house_relation_heads_in_range_trigger
 - house_relation_is_valid_to_start_trigger
 - house_relation_is_valid_to_keep_trigger
 - has_better_house_relation_with_target_house_than_other_trigger
@@ -3612,7 +3798,7 @@
 - tgp_natural_disaster_character_is_affected_by_any_imminent_disaster_trigger
 - tgp_natural_disaster_character_is_valid_vassal_participant
 
-### 10_tgp_triggers.txt（74 条目）
+### 10_tgp_triggers.txt（75 条目）
 
 - eligible_for_tgp_china_legacy_trigger
 - eligible_for_tgp_japan_legacy_trigger
@@ -3621,6 +3807,7 @@
 - tgp_dynastic_realm_name_trigger
 - administrative_tier_allows_independence
 - administrative_counts_can_be_independent
+- tgp_retires_to_eastern_estate_trigger
 - tgp_examination_should_spend_treasury_trigger
 - tgp_has_access_to_ministry_trigger
 - tgp_is_any_minister
@@ -3634,6 +3821,7 @@
 - tgp_is_above_retirement_age_trigger
 - is_civilian_candidate_trigger
 - is_military_candidate_trigger
+- can_gain_military_career_merit_trigger
 - tgp_celestial_military_governor_can_join_war_trigger
 - should_be_mandala_tributary_trigger
 - should_be_wanua_tributary_trigger
@@ -3685,9 +3873,37 @@
 - tgp_has_cultural_naming_in_chinese
 - tgp_has_unique_chinese_naming
 - tgp_chinese_naming_tier_trigger
-- farm_estates_3_4_trigger
 - culture_uses_eastern_siege_weapons_trigger
 - tgp_cranial_trophies_collection_trigger
+
+### 11_gdp_triggers.txt（26 条目）
+
+- house_unity_is_positive_trigger
+- house_unity_is_negative_trigger
+- valid_merchant_contract_basic_trigger
+- valid_to_accept_trade_opportunity_trigger
+- can_accept_trade_opportunity_while_traveling_trigger
+- gdp_merchant_task_contract_group_trigger
+- gdp_landless_adventurer_task_contract_group_trigger
+- merchant_trade_opportunity_invalidated_message_trigger
+- valid_trade_opportunity_to_continue_trigger
+- gdp_merchant_ai_logic_valid_trigger
+- gdp_is_trade_opportunity_scheme_trigger
+- luxury_contract_creature_elephant_trigger
+- luxury_contract_creature_peacock_trigger
+- luxury_contract_creature_parrot_trigger
+- luxury_contract_creature_cockatoo_trigger
+- luxury_contract_creature_crane_trigger
+- luxury_contract_creature_monkey_trigger
+- luxury_contract_dangerous_creature_location_trigger
+- luxury_contract_harmless_creature_location_trigger
+- is_title_purchasable_shared_trigger
+- is_title_purchase_valid_shared_trigger
+- character_merchant_law_allows_inspiration_sponsorship_trigger
+- shared_hostile_takeover_participant_valid_trigger
+- republic_can_grant_county_to_landed_trigger
+- republic_can_grant_duchy_or_higher_to_landed_trigger
+- republic_can_grant_duchy_or_higher_to_landless_trigger
 
 ### 11_petition_head_of_faith_triggers.txt（30 条目）
 
@@ -3789,6 +4005,387 @@
 - clerical_chastity_recipient_valid_for_actor_scope_trigger
 - recipient_in_actor_clerical_region_trigger
 
+### district_triggers.txt（26 条目）
+
+- bureaucratic_district_trigger
+- household_government_trigger
+- household_district_trigger
+- metropolitan_type_district_trigger
+- port_district_trigger
+- has_rice_fields_district
+- has_port_district
+- has_hunting_district_or_building
+- has_farming_district_or_building
+- has_smithing_district_or_building
+- holding_district_level_2_trigger
+- holding_district_level_3_trigger
+- holding_district_level_4_trigger
+- ai_established_city_trigger
+- ai_other_city_in_county_trigger
+- ai_urban_identity_trigger
+- ai_de_jure_kingdom_capital_trigger
+- ai_de_jure_duchy_capital_trigger
+- ai_kingdom_or_above_capital_trigger
+- ai_de_jure_duchy_capital_push_trigger
+- ai_urban_push_trigger
+- ai_trade_post_in_builder_holding_trigger
+- ai_military_capital_duchy_trigger
+- ai_military_capital_county_trigger
+- ai_military_economy_secured_trigger
+- ai_military_regiments_covered_trigger
+
+### gdp_achievement_triggers.txt（3 条目）
+
+- ep5_achievement_is_burgher_king_trigger
+- ep5_achievement_monopoly_owned_by_trigger
+- ep5_achievement_owns_monopoly_in_duchy_market_trigger
+
+### gdp_burgher_scripted_triggers.txt（35 条目）
+
+- burgher_liege_valid_trigger
+- burgher_liege_can_be_crowned_trigger
+- burgher_county_is_urban_trigger
+- burgher_county_can_join_trigger
+- burgher_county_founder_faith_compatible_trigger
+- burgher_county_faction_on_cooldown_trigger
+- burgher_county_has_own_faction_option_trigger
+- burgher_can_head_commune_trigger
+- burgher_merchant_petitioner_trigger
+- burgher_privilege_tier_2_trigger
+- burgher_privilege_tier_3_trigger
+- burgher_county_holds_privilege_trigger
+- burgher_lacks_privilege_tier_trigger
+- burgher_county_has_privileges_trigger
+- burgher_can_demand_market_rights_trigger
+- burgher_can_demand_guild_rights_trigger
+- burgher_can_demand_tax_exemption_trigger
+- burgher_can_demand_militia_charter_trigger
+- burgher_lesser_demands_exhausted_trigger
+- burgher_can_receive_privilege_trigger
+- burgher_has_no_demand_left_trigger
+- burgher_county_can_receive_lesser_privilege_trigger
+- burgher_county_can_demand_self_rule_trigger
+- burgher_agitator_can_take_seat_trigger
+- burgher_agitator_can_join_commune_trigger
+- burgher_commune_liege_outranks_agitator_trigger
+- gdp_can_agitate_civic_unrest_trigger
+- gdp_can_agitate_county_trigger
+- gdp_county_can_be_agitated_trigger
+- burgher_county_has_league_charter_trigger
+- burgher_county_in_autonomy_faction_trigger
+- burgher_heritage_germanic_trigger
+- burgher_heritage_latin_trigger
+- is_hanseatic_league_member_trigger
+- burgher_league_route_peer_market_trigger
+
+### gdp_merchant_triggers.txt（201 条目）
+
+- gdp_can_be_trader_trigger
+- gdp_is_valid_for_merchant_trigger
+- gdp_find_curio_poi_province_trigger
+- gdp_find_curio_poi_religious_province_trigger
+- gdp_find_curio_poi_scholarly_province_trigger
+- is_trading_good_trigger
+- is_interesting_entrepot_good_trigger
+- is_rumourable_entrepot_market_trigger
+- has_merchant_competitive_pressure_trigger
+- has_less_than_max_merchant_competitive_pressure_trigger
+- has_active_trade_opportunity_scheme_trigger
+- gdp_trade_opportunity_market_on_route_destination_available_trigger
+- gdp_trade_opportunity_location_available_trigger
+- merchant_organizable_contract_scheme_trigger
+- merchant_trade_opportunity_valid_to_accept_contract_limit_trigger
+- merchant_trade_opportunity_partner_send_blocked_trigger
+- merchant_trade_opportunity_partner_available_trigger
+- merchant_trade_opportunity_partner_in_entourage_trigger
+- merchant_trade_opportunity_partner_candidate_available_trigger
+- gdp_profit_potential_rival_trigger
+- gdp_put_on_notice_potential_rival_trigger
+- market_potential_rival_trigger
+- gdp_market_competitiveness_contested_trigger
+- put_on_notice_challenge_competitor_target_trigger
+- put_on_notice_sabotage_competition_target_trigger
+- put_on_notice_disrupt_charter_target_trigger
+- company_domicile_western_asset_trigger
+- company_domicile_asian_asset_trigger
+- valid_charter_abuse_market_trigger
+- valid_charter_intervention_market_trigger
+- merchant_has_any_charter_trigger
+- merchant_has_usable_charter_trigger
+- merchant_has_patron_or_below_trigger
+- patron_is_duke_or_above_trigger
+- merchant_has_charter_from_trigger
+- merchant_has_charter_from_patron_trigger
+- merchant_has_abused_charter_from_patron_trigger
+- merchant_company_external_unlocked_by_main_building_trigger
+- merchant_company_external_unlocked_by_main_tier_04_trigger
+- merchant_company_external_unlocked_by_main_tier_05_trigger
+- merchant_company_external_unlocked_by_main_tier_06_trigger
+- gdp_merchant_diplo_range_trigger
+- gdp_renown_building_expertise_trigger
+- merchant_company_ai_trades_category_trigger
+- merchant_company_ai_trades_any_category_trigger
+- merchant_company_ai_trades_good_trigger
+- gdp_merchant_market_overlap_trigger
+- unity_irregularities_valid_to_keep_trigger
+- unity_irregularities_valid_to_continue_trigger
+- char_uses_camel_trigger
+- culture_uses_camel_trigger
+- gdp_menagerie_artifact_has_active_story_trigger
+- domicile_creature_animal_type_trigger
+- commission_route_still_under_contract_trigger
+- commission_trade_route_commissioner_trigger
+- commission_trade_route_merchant_trigger
+- commission_trade_route_good_trigger
+- gdp_merchant_may_wage_independence_war_trigger
+- gdp_merchant_cb_group_constraints_trigger
+- gdp_merchant_seize_realm_allowed_for_character_trigger
+- gdp_merchant_seize_realm_allowed_for_character_display_regardless_trigger
+- gdp_merchant_allowed_against_character_trigger
+- gdp_merchant_seize_realm_invasion_cb_trigger
+- gdp_merchant_seize_realm_attacker_trigger
+- gdp_merchant_seize_realm_usable_strong_indebted_hook_on_trigger
+- gdp_merchant_seize_realm_debtor_valid_recipient_trigger
+- gdp_merchant_seize_realm_potential_debtor_ally_trigger
+- gdp_merchant_should_invalidate_trigger
+- gdp_actor_house_has_in_wed_from_recipient_house_trigger
+- gdp_merchant_company_title_trigger
+- gdp_merchant_can_reclaim_house_company_title_trigger
+- gdp_merchant_needs_cadet_for_new_company_trigger
+- gdp_merchant_trade_route_grants_caravaneer_xp_trigger
+- any_trade_route_with_goods_category_trigger
+- any_trade_route_and_market_with_goods_category_produced_trigger
+- has_bigger_company_than_trigger
+- has_smaller_company_than_trigger
+- is_heirless_and_close_to_trigger
+- has_fitting_rank_for_company_size
+- gdp_is_market_capital_province_trigger
+- merchant_move_company_size_trigger
+- gdp_trader_can_start_scheme_trigger
+- gdp_trader_needs_competitiveness_trigger
+- gdp_trade_envoys_are_out_trigger
+- gdp_trader_route_owner_trades_category_trigger
+- gdp_trader_learning_from_locals_allowed_trigger
+- gdp_trader_is_valid_for_scheme_trigger
+- gdp_trader_is_activity_scheme_trigger
+- gdp_trader_should_use_market_background_trigger
+- gdp_hostile_takeover_scheme_owner_valid_trigger
+- gdp_hostile_takeover_scheme_target_valid_trigger
+- is_known_dealbreaker_trigger
+- is_purchasable_title_trigger
+- gdp_has_trade_expertise_access_trigger
+- gdp_tgf_eligible_trigger
+- gdp_tgf_renowned_in_category_trigger
+- gdp_tgf_root_renowned_in_event_category_trigger
+- gdp_tgf_fledgling_in_category_trigger
+- gdp_tgf_route_buys_here_trigger
+- gdp_tgf_route_sells_here_trigger
+- gdp_tgf_stranger_holder_market_trigger
+- gdp_tgf_report_route_trigger
+- gdp_tgf_valid_rival_trigger
+- gdp_tgf_fledgling_buy_market_trigger
+- gdp_tgf_category_buy_route_trigger
+- gdp_tgf_category_buy_market_trigger
+- gdp_tgf_category_sell_route_trigger
+- gdp_tgf_category_sell_market_trigger
+- gdp_tgf_category_sell_holder_market_trigger
+- gdp_tgf_good_route_trigger
+- gdp_tgf_good_sell_route_trigger
+- gdp_tgf_good_sell_market_trigger
+- gdp_tgf_good_sell_holder_route_trigger
+- gdp_tgf_good_sell_holder_market_trigger
+- gdp_tgf_good_buy_pool_route_trigger
+- gdp_tgf_good_buy_pool_market_trigger
+- gdp_tgf_good_buy_market_trigger
+- gdp_tgf_good_sell_pool_route_trigger
+- gdp_tgf_good_sell_pool_market_trigger
+- gdp_tgf_not_livestock_good_trigger
+- gdp_tgf_broker_market_trigger
+- gdp_tgf_auction_rival_trigger
+- gdp_tgf_market_day_route_trigger
+- gdp_tgf_market_day_market_trigger
+- gdp_tgf_flush_with_money_trigger
+- gdp_company_category_expertise_higher_than_trigger
+- gdp_company_has_higher_category_expertise_than_trigger
+- shared_steal_market_insights_participant_valid_trigger
+- gdp_steal_market_insights_scheme_owner_valid_trigger
+- gdp_steal_market_insights_scheme_target_valid_trigger
+- merchant_capstone_trade_expertise_trigger
+- disrupt_charter_trade_opportunity_target_trigger
+- disrupt_charter_trade_opportunity_target_valid_trigger
+- gdp_should_spawn_new_merchant_company_trigger
+- gdp_merchant_companies_counted_trigger
+- gdp_merchant_companies_below_cap_trigger
+- gdp_merchant_companies_over_cap_trigger
+- gdp_merchant_companies_below_republic_headroom_trigger
+- gdp_merchant_company_cullable_trigger
+- gdp_merchant_is_player_relevant_trigger
+- gdp_merchant_company_keep_trigger
+- gdp_minority_merchant_candidate_trigger
+- gdp_minority_merchant_host_trigger
+- gdp_pool_character_valid_for_merchant_company_trigger
+- gdp_sponsor_merchant_company_candidate_trigger
+- gdp_merchant_family_has_no_ruler_trigger
+- gdp_usury_condemns_loan_trigger
+- gdp_usury_forbids_loan_trigger
+- gdp_usury_borrower_condemns_loan_trigger
+- gdp_usury_either_party_condemns_loan_trigger
+- gdp_usury_untroubled_by_sin_trigger
+- gdp_usury_shameless_reputation_trigger
+- gdp_usury_has_public_lending_trigger
+- gdp_usury_loan_is_void_trigger
+- gdp_usury_rite_voids_debts_trigger
+- gdp_usury_cleric_can_void_loan_trigger
+- gdp_usury_has_approving_cleric_trigger
+- gdp_usury_chaplain_endorses_trigger
+- gdp_merchant_would_lend_to_borrower_trigger
+- upheaval_market_modifier_trigger
+- exploit_upheaval_market_modifier_trigger
+- has_existing_loan_from_trigger
+- has_existing_loan_from_with_instrument_trigger
+- patron_request_competitiveness_available_trigger
+- patron_request_marriage_candidate_has_match_trigger
+- patron_request_marriage_available_trigger
+- patron_request_hunt_available_trigger
+- merchant_is_silk_road_participant_trigger
+- trade_market_has_entrepot_district_trigger
+- gdp_entrepot_trade_opportunity_location_available_trigger
+- gdp_entrepot_trade_opportunity_market_available_trigger
+- patron_request_any_option_available_trigger
+- trade_good_category_has_expertise_track_and_is_traded_on_route
+- trade_good_bought_by_route_in_market_trigger
+- trade_good_sold_by_route_in_market_trigger
+- trade_route_buying_any_good_in_market_trigger
+- trade_route_selling_any_good_in_market_trigger
+- character_has_creature_type_trigger
+- merchant_house_head_drive_decision_not_promoting_diligence
+- merchant_house_head_drive_decision_not_promoting_excess
+- trade_market_character_liable_for_tolls_trigger
+- company_size_large_or_huge_trigger
+- market_has_food_need_trigger
+- market_has_any_need_trigger
+- toll_level_is_cheaper_than_paid_trigger
+- pays_any_tolls_in_market_trigger
+- gdp_merchant_company_in_debt_trigger
+- pays_any_tolls_in_market_without_exception_trigger
+- has_stock_registers_perk_trigger
+- gdp_tgf_county_held_by_root_or_ai_trigger
+- gdp_ai_can_monopolize_market_trigger
+- gdp_ai_monopoly_route_trigger
+- gdp_ai_monopoly_high_value_category_trigger
+- gdp_ai_monopoly_purpose_category_trigger
+- gdp_ai_monopoly_trade_specialization_category_trigger
+- gdp_ai_monopoly_trade_pricing_category_trigger
+- gdp_can_be_ransomed_by_merchant
+- suzerain_tier_to_company_size_shared_valid_trigger
+- exceptional_diplo_range_trigger
+- merchant_trade_hook_from_ransom_trigger
+- merchant_trade_hook_from_sponsor_trigger
+
+### gdp_republic_triggers.txt（80 条目）
+
+- gdp_requires_assembly_approval_trigger
+- gdp_can_pass_republic_law_trigger
+- gdp_can_propose_law_changes_trigger
+- gdp_assembly_approval_for_decrees_trigger
+- gdp_assembly_can_pass_decrees_trigger
+- gdp_republic_banishment_allowed_trigger
+- gdp_republic_proscription_allowed_trigger
+- gdp_has_any_punitive_approval_for_trigger
+- gdp_republic_execution_allowed_trigger
+- gdp_has_valid_indicted_character_trigger
+- gdp_has_proscription_grounds_trigger
+- gdp_has_valid_indicted_family_trigger
+- landed_republican_trigger
+- gdp_is_assembly_head_trigger
+- gdp_is_popular_republic_head_trigger
+- gdp_is_republican_house_head_trigger
+- gdp_has_patrician_rating_trigger
+- gdp_republic_senate_has_enough_senators_trigger
+- gdp_republic_senate_has_empty_seats_trigger
+- gdp_can_become_senator_trigger
+- gdp_can_pledge_assembly_vote_trigger
+- gdp_republic_task_assembly_member_trigger
+- gdp_shares_house_ambition_trigger
+- gdp_eligible_for_republic_legacy_trigger
+- gdp_can_upgrade_republican_house_ambition_trigger
+- gdp_can_have_free_cities_trigger
+- gdp_protects_chartered_cities_trigger
+- gdp_city_rights_bind_war_declarer_trigger
+- gdp_is_protected_city_war_target_trigger
+- prefers_high_salary_budget_trigger
+- prefers_medium_salary_budget_trigger
+- prefers_low_salary_budget_trigger
+- gdp_is_patrician_trigger
+- gdp_is_merchant_or_unlanded_patrician_trigger
+- gdp_is_unlanded_patrician_trigger
+- gdp_use_patrician_council_trigger
+- gdp_is_in_same_republic_as_trigger
+- gdp_can_get_patrician_house_support_trigger
+- gdp_steal_trade_post_scheme_owner_valid_trigger
+- gdp_steal_trade_post_local_ruler_favors_trigger
+- is_in_same_trade_league_as_trigger
+- gdp_is_league_member_trigger
+- gdp_is_planning_great_plaza_project_trigger
+- gdp_can_plan_great_plaza_project_trigger
+- gdp_is_trade_league_head_trigger
+- gdp_is_trade_league_member_trigger
+- gdp_callable_only_through_trade_league_trigger
+- gdp_is_trade_league_war_trigger
+- gdp_league_can_enforce_monopolies_trigger
+- gdp_league_can_proclaim_communes_trigger
+- gdp_league_can_wage_trade_wars_trigger
+- gdp_league_can_build_arsenals_trigger
+- gdp_league_can_fortify_arsenals_trigger
+- gdp_league_can_build_great_arsenals_trigger
+- gdp_league_can_set_focused_category_trigger
+- gdp_league_commune_target_valid_trigger
+- gdp_league_member_trading_in_market_trigger
+- gdp_league_monopoly_cb_target_valid_trigger
+- gdp_league_affiliated_trigger
+- gdp_league_contested_market_trigger
+- gdp_league_holds_contested_trade_assets_trigger
+- gdp_league_trade_war_target_valid_trigger
+- gdp_league_can_demand_expulsions_trigger
+- gdp_league_rival_affiliated_trigger
+- gdp_league_foreign_competitor_trigger
+- gdp_monopoly_held_for_rival_league_trigger
+- gdp_league_rival_trade_post_in_market_trigger
+- gdp_league_rival_monopoly_in_market_trigger
+- gdp_league_expulsion_target_valid_trigger
+- gdp_league_expulsion_county_valid_trigger
+- gdp_holds_republic_title_trigger
+- gdp_is_republican_despot_or_supporter_trigger
+- gdp_republic_has_democratic_laws_trigger
+- gdp_character_in_democratic_republic_trigger
+- gdp_is_criminal_for_republic_punishment_laws_trigger
+- gdp_is_republic_title_trigger
+- gdp_republic_has_improved_levy_army_law_trigger
+- gdp_is_historical_maritime_republic
+- gdp_basic_can_adopt_republic_government_trigger
+- gdp_can_leverage_trade_posts_in_market_trigger
+
+### gdp_trade_scheme_triggers.txt（5 条目）
+
+- gdp_is_trade_ruler_trigger
+- gdp_improve_trade_scheme_valid_trigger
+- gdp_trade_route_shares_market_with_trigger
+- gdp_disrupt_trade_routes_scheme_owner_valid_trigger
+- gdp_disrupt_trade_routes_scheme_target_valid_trigger
+
+### gdp_visit_holding_triggers.txt（10 条目）
+
+- visit_holding_guilds_blocked_trigger
+- visit_holding_market_dock_blocked_trigger
+- visit_holding_patron_blocked_trigger
+- visit_holding_worship_blocked_trigger
+- visit_holding_decision_show_available_areas_tooltip_trigger
+- visit_holding_decision_all_options_exhausted_trigger
+- visit_holding_decision_show_exhausted_areas_tooltip_trigger
+- visit_holding_merchant_position_candidate_trigger
+- visit_holding_rare_spawn_already_seen_trigger
+- visit_holding_stewardship_education_min_2_trigger
+
 ### great_project_triggers.txt（2 条目）
 
 - is_owner_only_contribution_trigger
@@ -3857,11 +4454,13 @@
 - mpo_nomad_invasion_war_ai_trigger
 - mpo_nomad_duchy_invasion_war_ai_trigger
 
-### music_triggers.txt（14 条目）
+### music_triggers.txt（16 条目）
 
 - should_not_use_bespoke_music_trigger
 - should_not_be_valid_if_asian_music_is_valid_trigger
 - should_use_asian_music_trigger
+- merchant_has_trade_route_in_region_trigger
+- should_use_asian_merchant_music_trigger
 - should_use_chinese_music_trigger
 - should_use_byzantine_music_trigger
 - should_use_nomadic_music_trigger
@@ -3962,7 +4561,7 @@
 - pam_saint_relic_drawable_trigger
 - pam_venerated_the_saints_personally_trigger
 
-### pam_scripted_triggers.txt（370 条目）
+### pam_scripted_triggers.txt（387 条目）
 
 - pam_consolamentum_grief_immunity_trigger
 - pam_adorcism_curse_target_is_living_adult_trigger
@@ -4049,6 +4648,7 @@
 - pam_the_christian_church_antipope_coronations_trigger
 - pam_the_christian_church_no_anointment_trigger
 - pam_non_christian_kingdom_holder_in_europe_trigger
+- pam_is_non_christian_kingdom_holder_in_europe_trigger
 - can_have_puppets_trigger
 - can_have_external_ruler_puppet_trigger
 - can_have_theological_agent_puppet_trigger
@@ -4079,6 +4679,7 @@
 - pam_grant_ecclesiastical_title_appointee_changes_rite_trigger
 - pam_is_clergy_ruler_trigger
 - pam_grants_own_divorce_trigger
+- has_clergy_to_petition_for_divorce_trigger
 - pam_clergy_continence_expected_trigger
 - pam_court_scene_resident_subordinate_trigger
 - pam_clergy_interactions_faith_trigger
@@ -4143,15 +4744,24 @@
 - pam_tenet_is_christological_heresy_trigger
 - pam_tenet_is_christian_abomination_trigger
 - pam_tenet_is_christian_dogma_trigger
+- tenet_is_anathema_to_faith_trigger
+- tenet_is_intrinsic_to_faith_trigger
 - pam_tenet_ai_may_permit_trigger
 - pam_tenet_ai_may_prohibit_trigger
 - pam_tenet_ai_should_purge_trigger
+- pam_tenet_ai_should_prohibit_anathema_trigger
+- pam_tenet_ai_should_permit_intrinsic_trigger
+- pam_tenet_ai_may_prohibit_rite_tenet_trigger
 - pam_tenet_can_be_persecuted_trigger
 - pam_tenet_can_be_persecuted_no_actor_trigger
 - pam_tenet_is_incompatible_with_armed_pilgrimages_trigger
 - pam_tenet_can_be_replaced_for_armed_pilgrimages_trigger
 - pam_faith_tenet_is_core_trigger
 - pam_faith_is_at_core_tenet_cap_trigger
+- pam_tenet_is_christian_exclusive_ascetic_tenet_trigger
+- pam_tenet_is_exclusive_ascetic_tenet_trigger
+- pam_rite_can_swap_exclusive_ascetic_tenet_trigger
+- pam_rite_is_at_core_tenet_cap_trigger
 - pam_tenet_is_overwhelmingly_popular_trigger
 - pam_tenet_is_at_least_popular_trigger
 - pam_tenet_is_at_least_very_popular_trigger
@@ -4168,11 +4778,17 @@
 - pam_ai_pentarchy_christian_actor_trigger
 - pam_ai_southeast_asian_actor_trigger
 - pam_ai_mountain_capital_actor_trigger
+- is_proto_hof_trigger
 - pam_catholic_hof_weak_papal_state_control_trigger
 - pam_byzantine_emperor_non_christian_trigger
 - pam_demand_child_recipient_cares_trigger
+- pam_demand_child_is_recipient_heir_trigger
 - pam_has_forbidden_personal_tenet_trigger
 - pam_ai_can_consider_forbidden_personal_tenet_trigger
+- pam_ai_can_take_personal_tenet_trigger
+- pam_ai_personal_tenet_fallback_trigger
+- pam_ai_personal_tenet_candidate_trigger
+- pam_personal_tenet_gives_no_fulfillment_trigger
 - pam_is_christian_clergy_trigger
 - pam_is_eastern_christian_trigger
 - pam_is_western_christian_trigger
@@ -4335,12 +4951,13 @@
 - pam_study_rite_tenet_bonus_trigger
 - can_send_make_external_ruler_puppet_trigger
 
-### pam_secular_faith_triggers.txt（7 条目）
+### pam_secular_faith_triggers.txt（8 条目）
 
 - pam_secular_faith_base_trigger
 - pam_secular_faith_landed_actor_trigger
 - pam_secular_faith_clergy_ok_actor_trigger
 - pam_secular_faith_christian_actor_trigger
+- pam_sf_monastic_brewery_province_trigger
 - pam_can_adopt_forbidden_personal_tenet_trigger
 - pam_sf_carnal_art_indian_setting_trigger
 - pam_poverty_tenets_trigger

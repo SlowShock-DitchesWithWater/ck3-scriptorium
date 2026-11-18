@@ -1,8 +1,8 @@
 # common/trigger_localization 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：54（其中 Jomini 解析 53 个）
-- 顶层块条目总数：1706，跨文件唯一条目 1706
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：56（其中 Jomini 解析 55 个）
+- 顶层块条目总数：1780，跨文件唯一条目 1780
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -13,16 +13,16 @@
 | `00_adultery_triggers.txt` | 404 | 3 | 0 | jomini |
 | `00_artifact_triggers.txt` | 1688 | 5 | 0 | jomini |
 | `00_building_requirement_triggers.txt` | 1789 | 15 | 0 | jomini |
-| `00_building_triggers.txt` | 1307 | 12 | 0 | jomini |
-| `00_character_relation_triggers.txt` | 4934 | 43 | 0 | jomini |
-| `00_character_script_list_triggers.txt` | 1424 | 14 | 0 | jomini |
-| `00_character_triggers.txt` | 57742 | 311 | 0 | jomini |
-| `00_culture_triggers.txt` | 7037 | 62 | 0 | jomini |
+| `00_building_triggers.txt` | 2042 | 16 | 0 | jomini |
+| `00_character_relation_triggers.txt` | 5170 | 45 | 0 | jomini |
+| `00_character_script_list_triggers.txt` | 1500 | 14 | 0 | jomini |
+| `00_character_triggers.txt` | 59204 | 317 | 0 | jomini |
+| `00_culture_triggers.txt` | 7359 | 66 | 0 | jomini |
 | `00_custom_triggers.txt` | 4707 | 29 | 0 | jomini |
 | `00_debug_triggers.txt` | 5728 | 83 | 0 | jomini |
 | `00_dlc_triggers.txt` | 457 | 2 | 0 | jomini |
-| `00_doctrine_triggers.txt` | 9399 | 51 | 0 | jomini |
-| `00_dynasty_triggers.txt` | 1489 | 14 | 0 | jomini |
+| `00_doctrine_triggers.txt` | 9733 | 53 | 0 | jomini |
+| `00_dynasty_triggers.txt` | 2002 | 14 | 0 | jomini |
 | `00_faction_triggers.txt` | 1946 | 16 | 0 | jomini |
 | `00_ghw_triggers.txt` | 967 | 12 | 0 | jomini |
 | `00_government_triggers.txt` | 1863 | 10 | 0 | jomini |
@@ -33,18 +33,18 @@
 | `00_lifestyle_triggers.txt` | 958 | 10 | 0 | jomini |
 | `00_logic_triggers.txt` | 864 | 5 | 0 | jomini |
 | `00_province_script_list_triggers.txt` | 733 | 6 | 0 | jomini |
-| `00_province_triggers.txt` | 1821 | 24 | 0 | jomini |
-| `00_religion_triggers.txt` | 5508 | 34 | 0 | jomini |
+| `00_province_triggers.txt` | 2865 | 30 | 0 | jomini |
+| `00_religion_triggers.txt` | 5671 | 35 | 0 | jomini |
 | `00_scheme_script_list_triggers.txt` | 1830 | 23 | 0 | jomini |
 | `00_scope_comparison_triggers.txt` | 6611 | 45 | 0 | jomini |
 | `00_script_list_triggers.txt` | 2383 | 22 | 0 | jomini |
 | `00_secret_script_list_triggers.txt` | 502 | 4 | 0 | jomini |
-| `00_secret_triggers.txt` | 564 | 7 | 0 | jomini |
+| `00_secret_triggers.txt` | 602 | 7 | 0 | jomini |
 | `00_travel_triggers.txt` | 451 | 6 | 0 | jomini |
 | `00_tutorial_triggers.txt` | 3567 | 39 | 0 | jomini |
 | `00_unity_triggers.txt` | 342 | 1 | 0 | jomini |
 | `00_war_triggers.txt` | 3454 | 33 | 0 | jomini |
-| `01_character_interaction_triggers.txt` | 36200 | 326 | 0 | jomini |
+| `01_character_interaction_triggers.txt` | 37044 | 335 | 0 | jomini |
 | `01_decision_triggers.txt` | 7631 | 70 | 0 | jomini |
 | `01_fp1_achievement_triggers.txt` | 1062 | 10 | 0 | jomini |
 | `02_ep1_achievement_triggers.txt` | 2015 | 20 | 0 | jomini |
@@ -56,13 +56,15 @@
 | `06_bp2_hostage_triggers.txt` | 1524 | 10 | 0 | jomini |
 | `07_ce1_achievement_triggers.txt` | 1165 | 11 | 0 | jomini |
 | `08_ep3_admin_triggers.txt` | 435 | 3 | 0 | jomini |
-| `08_ep3_laamp_triggers.txt` | 4423 | 32 | 0 | jomini |
+| `08_ep3_laamp_triggers.txt` | 5340 | 37 | 0 | jomini |
 | `09_mpo_achievement_triggers.txt` | 1119 | 10 | 0 | jomini |
 | `09_mpo_triggers.txt` | 274 | 3 | 0 | jomini |
 | `10_ce3_achievement_triggers.txt` | 1231 | 10 | 0 | jomini |
+| `11_ep5_achievement_triggers.txt` | 2464 | 20 | 0 | jomini |
 | `_trigger_localization.info` | 5558 | - | - | 纯文档（非 Jomini） |
 | `ce1_legend_triggers.txt` | 440 | 2 | 0 | jomini |
-| `tgp_triggers.txt` | 2043 | 12 | 0 | jomini |
+| `gdp_triggers.txt` | 4087 | 15 | 0 | jomini |
+| `tgp_triggers.txt` | 2042 | 12 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -180,22 +182,26 @@
 - holy_site_shinto_or_holy_site_trigger
 - vastly_over_domain_limit_trigger
 
-### 00_building_triggers.txt（12 条目）
+### 00_building_triggers.txt（16 条目）
 
 - has_building
 - has_building_or_higher
-- has_ongoing_construction
+- has_ongoing_holding_construction
+- has_ongoing_trade_post_construction
 - has_free_building_slot
 - has_holding_type
 - building_slots
 - free_building_slots
 - num_buildings
-- has_special_building_slot
-- has_special_building
+- has_special_district_slot
+- has_special_district
 - no_special_building_slot
 - has_holding
+- province_has_district
+- county_has_district
+- has_free_district_slot
 
-### 00_character_relation_triggers.txt（43 条目）
+### 00_character_relation_triggers.txt（45 条目）
 
 - sex_opposite_of
 - is_at_war_with
@@ -236,6 +242,8 @@
 - has_relation_mentor
 - has_relation_elder
 - has_relation_disciple
+- has_relation_creditor
+- has_relation_debtor
 - has_any_scripted_relation
 - has_mother
 - has_father
@@ -258,7 +266,7 @@
 - any_relation_all
 - any_situation_sub_region_all
 
-### 00_character_triggers.txt（311 条目）
+### 00_character_triggers.txt（317 条目）
 
 - has_character_flag
 - is_married
@@ -272,6 +280,7 @@
 - is_landless_administrative
 - is_landed_or_landless_administrative
 - is_landed_or_landless_administrative_or_theocratic
+- is_merchant
 - is_lowborn
 - is_ruler
 - is_theocratic_lessee
@@ -315,6 +324,7 @@
 - has_trait_xp_single_less_than
 - is_imprisoned
 - is_independent_ruler
+- is_ceremonial_liege
 - is_head_of_faith
 - is_imprisoned_by
 - imprisoner
@@ -355,6 +365,8 @@
 - herd_less_than
 - treasury_greater_or_equal
 - treasury_or_gold_greater_or_equal
+- treasury_less_or_equal
+- treasury_less_than
 - barter_goods
 - is_councillor
 - is_normal_councillor
@@ -571,8 +583,10 @@
 - is_in_guest_subset
 - realm_law_group_at_minimum_level
 - realm_law_group_at_maximum_level
+- needs_inspiration_to_sponsor_tt
+- has_queued_construction
 
-### 00_culture_triggers.txt（62 条目）
+### 00_culture_triggers.txt（66 条目）
 
 - has_innovation
 - innovation_unlocked_by_decision_trigger
@@ -594,6 +608,10 @@
 - culture_in_mountains_desc
 - culture_in_dryland_desc
 - culture_in_desert_desc
+- culture_in_oasis_desc
+- culture_in_silk_road_region_desc
+- culture_on_monsoon_coast_desc
+- culture_has_university_desc
 - culture_in_hills_desc
 - culture_in_jungle_desc
 - culture_in_steppe_desc
@@ -760,7 +778,7 @@
 - has_dlc
 - has_dlc_feature
 
-### 00_doctrine_triggers.txt（51 条目）
+### 00_doctrine_triggers.txt（53 条目）
 
 - incompatible_tenet_armed_pilgrimages_trigger
 - incompatible_tenet_anachoresis_trigger
@@ -779,6 +797,8 @@
 - incompatible_tenet_pentarchy_trigger
 - incompatible_tenet_sacrificial_ceremonies_trigger
 - incompatible_tenet_consolamentum_trigger
+- incompatible_tenet_sacred_destruction_trigger
+- incompatible_tenet_preservation_trigger
 - incompatible_tenet_shared_hof_pacifists_vs_warmongers
 - incompatible_tenet_shared_hof_criminal_witches_vs_adorcists
 - incompatible_tenet_shared_hof_hedonists_vs_ascetics
@@ -973,17 +993,20 @@
 - any_directly_owned_province_count
 - any_realm_province_all
 
-### 00_province_triggers.txt（24 条目）
+### 00_province_triggers.txt（30 条目）
 
-- development_level
-- development_rate
+- prosperity_level
+- prosperity_rate
+- province_size_level
 - is_county_capital
 - potential_county_control_task_trigger
-- county_opinion
+- popular_opinion
 - monthly_county_control_change
 - num_county_followers
 - is_coastal
-- is_lakeside
+- is_riverside_province
+- is_riverside_county
+- is_lakeside_province
 - is_lakeside_county
 - has_stationed_regiment
 - has_stationed_regiment_of_base_type
@@ -999,8 +1022,11 @@
 - is_leased_out
 - is_holy_site_of
 - any_county_province
+- county_control
+- county_control_greater_than
+- county_control_greater_or_equal
 
-### 00_religion_triggers.txt（34 条目）
+### 00_religion_triggers.txt（35 条目）
 
 - religion_tag
 - rite_religion_tag
@@ -1012,6 +1038,7 @@
 - num_sinful_traits_less_than
 - has_same_religion_as
 - has_dominant_ruling_gender
+- rite_has_dominant_ruling_gender
 - religion
 - is_in_family
 - holy_sites_controlled_greater_or_equal
@@ -1244,7 +1271,7 @@
 - is_occupied
 - army_supply
 
-### 01_character_interaction_triggers.txt（326 条目）
+### 01_character_interaction_triggers.txt（335 条目）
 
 - character_interactions_imprison_ally_without_reason
 - character_interactions_imprison_recently_ransomed
@@ -1374,6 +1401,7 @@
 - host_honored_guest_is_my_courtier
 - is_already_war_enemy_of_primary_enemy
 - is_married_matrilineally_and_spouse_is_dominant_partner
+- can_recruit_character_to_court_employed_by_host
 - is_married_matrilineally
 - is_married_patrilineally_and_spouse_is_dominant_partner
 - is_married_patrilineally
@@ -1431,6 +1459,7 @@
 - character_interactions_not_rel_head_title
 - character_interactions_not_clerical_region_title
 - character_interactions_not_clerical_elector_title
+- character_interactions_not_republic_title
 - character_interactions_not_antipope_office_title
 - character_is_real_head
 - character_is_not_real_head
@@ -1466,6 +1495,8 @@
 - has_crown_authority_cooldown
 - has_tribal_authority_cooldown
 - has_nomadic_authority_cooldown
+- has_company_size_cooldown
+- has_company_purpose_cooldown
 - has_church_authority_cooldown
 - nomadic_authority_2_level_requirement
 - nomadic_authority_3_level_requirement
@@ -1483,6 +1514,7 @@
 - buy_claim_no_emperor_empire
 - buy_claim_no_religious_titles
 - buy_claim_no_landless_adventurer_title
+- buy_claim_no_merchant_title
 - buy_claim_no_noble_family_titles
 - kick_from_court_interaction_travelling_family_invalid
 - demand_payment_too_little_gold
@@ -1567,7 +1599,11 @@
 - influence_child_commander_interaction_all_same_traits
 - hof_ask_for_claim_on_admin_titles
 - steal_herd_blocked_target_none_tt
+- company_purpose_profiteering_law_cb_tt
 - liege_demands_vow_taking
+- must_have_ongoing_session
+- target_already_forced
+- target_not_law_proposer
 - grant_government_too_many_theocratic_vassals_tt
 - grant_government_cooldown_tt
 - grant_government_kingdom_blocked_tt
@@ -1846,13 +1882,17 @@
 - cabinet_of_curiosities_upgrade_trigger_3
 - admin_cannot_grant_vassal_noble_family
 
-### 08_ep3_laamp_triggers.txt（32 条目）
+### 08_ep3_laamp_triggers.txt（37 条目）
 
 - purchase_land_barony_tt
+- purchase_land_must_be_county_tt
 - purchase_land_kingdom_tt
 - purchase_land_religious_tt
+- purchase_land_republic_king_vassal_tt
+- purchase_land_republic_holding_tt
 - purchase_land_noble_family_tt
 - purchase_land_landless_adventurer_tt
+- purchase_land_merchant_tt
 - purchase_land_minimum_county_tt
 - purchase_land_complete_control_tt
 - negotiate_settlement_barony_tt
@@ -1860,6 +1900,7 @@
 - negotiate_settlement_religious_tt
 - negotiate_settlement_noble_family_tt
 - negotiate_settlement_landless_adventurer_tt
+- negotiate_settlement_merchant_tt
 - negotiate_settlement_minimum_county_tt
 - any_character_task_contract
 - has_task_contract_type
@@ -1913,10 +1954,51 @@
 - ce3_06_fathers_best_side_achievement_trigger
 - ce3_16_holier_than_thou_achievement_trigger
 
+### 11_ep5_achievement_triggers.txt（20 条目）
+
+- ep5_01_by_gold_alone_achievement_trigger
+- ep5_02_multi_track_merchanting_achievement_trigger
+- ep5_03_venetian_league_achievement_trigger
+- ep5_04_there_can_be_only_one_achievement_trigger
+- ep5_05_city_of_marbles_achievement_trigger
+- ep5_06_senatus_populusque_romanus_achievement_trigger
+- ep5_07_i_love_democracy_achievement_trigger
+- ep5_08_medieval_skylines_achievement_trigger
+- ep5_09_wearer_of_many_hats_achievement_trigger
+- ep5_10_the_spice_must_flow_achievement_trigger
+- ep5_11_burgher_king_achievement_trigger
+- ep5_12_would_you_like_fries_with_that_achievement_trigger
+- ep5_13_bazaar_adventure_achievement_trigger
+- ep5_14_league_of_ledgers_achievement_trigger
+- ep5_15_in_sweden_we_have_a_system_achievement_trigger
+- ep5_16_bridge_of_sighs_achievement_trigger
+- ep5_17_cheesing_the_competition_achievement_trigger
+- ep5_18_loan_shark_achievement_trigger
+- ep5_19_family_business_achievement_trigger
+- ep5_20_silk_and_silver_achievement_trigger
+
 ### ce1_legend_triggers.txt（2 条目）
 
 - has_personal_legend_seed
 - has_triggered_legend_seed
+
+### gdp_triggers.txt（15 条目）
+
+- is_part_of_gg_situation_desc
+- num_trade_routes_greater_or_equal
+- num_trade_routes_less_than
+- decision_already_visiting_holding
+- visit_holding_decision_all_options_exhausted
+- gdp_merchant_diplo_range_trigger_tt
+- gdp_merchant_market_overlap_trigger_tt
+- acumen_greater_or_equal
+- acumen_greater_than
+- acumen_equal
+- acumen_less_than
+- acumen_less_or_equal
+- trade_post_count
+- trade_post_count_greater_or_equal
+- trade_post_count_greater_than
 
 ### tgp_triggers.txt（12 条目）
 

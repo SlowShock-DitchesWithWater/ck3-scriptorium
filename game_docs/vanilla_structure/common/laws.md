@@ -1,27 +1,29 @@
 # common/laws 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：7（其中 Jomini 解析 6 个）
-- 顶层块条目总数：201，跨文件唯一条目 201
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：9（其中 Jomini 解析 8 个）
+- 顶层块条目总数：283，跨文件唯一条目 283
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_realm_laws.txt` | 78650 | 46 | 16 | jomini |
-| `00_succession_laws.txt` | 56128 | 43 | 0 | jomini |
-| `01_title_succession_laws.txt` | 9179 | 12 | 0 | jomini |
-| `02_admininistrative_laws.txt` | 59600 | 91 | 1 | jomini |
-| `03_imperial_policies.txt` | 7478 | 6 | 2 | jomini |
+| `00_realm_laws.txt` | 93582 | 51 | 26 | jomini |
+| `00_succession_laws.txt` | 69683 | 47 | 0 | jomini |
+| `01_title_succession_laws.txt` | 9394 | 12 | 0 | jomini |
+| `02_admininistrative_laws.txt` | 58988 | 91 | 1 | jomini |
+| `03_imperial_policies.txt` | 7505 | 6 | 2 | jomini |
 | `04_pam_ecclesiastical_laws.txt` | 746 | 3 | 0 | jomini |
-| `_laws.info` | 13567 | - | - | 纯文档（非 Jomini） |
+| `04_republic_laws.txt` | 122720 | 70 | 6 | jomini |
+| `99_coronation_laws.txt` | 2418 | 3 | 0 | jomini |
+| `_laws.info` | 15070 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_realm_laws.txt（46 条目）
+### 00_realm_laws.txt（51 条目）
 
 - crown_authority_0
 - crown_authority_1
@@ -66,11 +68,16 @@
 - japanese_bureaucracy_1
 - japanese_bureaucracy_2
 - japanese_bureaucracy_3
-- uncrowned
-- crowned_king
-- crowned_emperor
+- company_size_small
+- company_size_medium
+- company_size_large
+- company_size_huge
+- company_purpose_family
+- company_purpose_artisan
+- company_purpose_creditor
+- company_purpose_caravaneer
 
-### 00_succession_laws.txt（43 条目）
+### 00_succession_laws.txt（47 条目）
 
 - confederate_partition_succession_law
 - partition_succession_law
@@ -92,6 +99,7 @@
 - male_monastic_holy_order_succession_law
 - mercenary_company_succession_law
 - city_succession_law
+- republican_despot_succession_law
 - clan_antagonistic_partition_succession_law
 - clan_competitive_partition_succession_law
 - clan_impassive_partition_succession_law
@@ -107,6 +115,9 @@
 - meritocratic_appointment_succession_law
 - meritocratic_military_appointment_succession_law
 - meritocratic_regency_succession_law
+- merchant_succession_law
+- republican_elective_succession_law
+- republican_appointment_succession_law
 - male_only_law
 - male_preference_law
 - equal_law
@@ -239,6 +250,85 @@
 - budget_allocation_cardinal_50
 - no_benefices
 - cardinal_standard_benefices
+
+### 04_republic_laws.txt（70 条目）
+
+- republic_type_communal
+- republic_type_civic
+- republic_type_popular
+- republic_type_maritime
+- republic_type_noble
+- republic_type_roman
+- republic_tier_county
+- republic_tier_duchy
+- republic_tier_kingdom
+- republic_tier_empire
+- republic_assembly_composition_patrician
+- republic_assembly_composition_council
+- republic_assembly_composition_general
+- republic_assembly_composition_parliament
+- republic_assembly_composition_communal
+- republic_assembly_composition_roman_senate
+- republic_assembly_authority_constitutional
+- republic_assembly_authority_legislative
+- republic_assembly_authority_ceremonial
+- republic_assembly_voting_thresholds_simple_majority
+- republic_assembly_voting_thresholds_large_majority
+- republic_assembly_voting_thresholds_unanimous
+- republic_assembly_term_length_1
+- republic_assembly_term_length_2
+- republic_assembly_term_length_3
+- republic_assembly_term_length_4
+- republic_assembly_term_length_5
+- republic_assembly_term_length_indefinite
+- republic_senate_size_1
+- republic_senate_size_2
+- republic_senate_size_3
+- republic_war_declaration_1_limited
+- republic_war_declaration_2_unlimited
+- republic_army_organization_1_levy
+- republic_army_organization_2_improved_levy
+- republic_army_organization_3_maa
+- republic_army_organization_4_merc
+- republic_banishment_1_prohibited
+- republic_banishment_2_permitted_by_decree
+- republic_banishment_3_unrestricted
+- republic_execution_1_prohibited
+- republic_execution_2_permitted_by_decree
+- republic_execution_3_unrestricted
+- republic_title_revocation_1_disallowed
+- republic_title_revocation_2_allowed
+- republic_retract_vassal_1_disallowed
+- republic_retract_vassal_2_allowed
+- republic_vassal_refusal_1_allowed
+- republic_vassal_refusal_2_treason
+- republic_trade_specialization_none
+- republic_trade_specialization_base_needs
+- republic_trade_specialization_construction
+- republic_trade_specialization_metals
+- republic_trade_specialization_luxury
+- republic_trade_specialization_luxury_food
+- republic_trade_specialization_minerals
+- republic_trade_specialization_textiles
+- republic_trade_specialization_unique
+- republic_trade_pricing_none
+- republic_trade_pricing_arsenal
+- republic_trade_pricing_granary
+- republic_trade_pricing_victualling
+- republic_trade_pricing_caravan
+- republic_trade_pricing_mint
+- republic_trade_pricing_dyeworks
+- republic_trade_pricing_drapery
+- republic_trade_pricing_apothecary
+- republic_end_term_law_1
+- republic_end_term_law_2
+- republic_end_term_law_3
+
+### 99_coronation_laws.txt（3 条目）
+
+- uncrowned
+- crowned_king
+- crowned_emperor
 
 ### 未解析文件
 

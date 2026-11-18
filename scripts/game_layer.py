@@ -46,9 +46,10 @@ REPO_ROOT = config.REPO_ROOT
 DEFAULT_SOURCE_DIR = REPO_ROOT / "game logs"
 DEFAULT_OUT_DIR = REPO_ROOT / "game_docs" / "script_docs"
 
-# 游戏版本基准事实（docs/spec.md 环境事实附录：本机 CK3 = 1.20.0）。
-# code_revisions.log 若非空则尝试从其中提取版本号覆盖该默认值。
-DEFAULT_GAME_VERSION = "1.20.0"
+# 游戏版本基准事实（docs/spec.md 环境事实附录：本机 CK3 = 1.21.0）。
+# extract_game_version 会依次尝试 code_revisions.log 与 debug.log 提取真实
+# 版本号覆盖该默认值（两者都仅作元数据读取，不转产物、不在白名单）。
+DEFAULT_GAME_VERSION = "1.21.0"
 
 # 白名单：仅这些文件会被读取。任何不在其中的 game logs 文件（运行时会话
 # 日志：debug/error/game/setup/system/memory/... 与空占位 log）一律不碰。
@@ -307,9 +308,13 @@ def render_product(spec: dict, parsed: ParsedDump, game_version: str,
 # ---- 游戏版本提取 ----------------------------------------------------------
 
 def extract_game_version(source_dir: Path) -> tuple[str, str]:
-    """尝试从 code_revisions.log 提取版本；失败则用基准事实 1.20.0。
+    """从 dump 目录提取游戏版本；失败则用基准事实默认值。
 
-    返回 (版本串, 来源说明)。code_revisions.log 仅作元数据来源，不转产物。
+    返回 (版本串, 来源说明)。两个来源文件都仅作元数据读取，不转产物、
+    不在白名单：
+    1. code_revisions.log——非空时取首个 x.y[.z] 版本串；
+    2. debug.log——jomini 启动行 "Feeding game version into checksum: x.y.z.b"
+       （实测 1.20.1 dump 会话；b 为内部构建号，不进标注）。
     """
     cr = source_dir / "code_revisions.log"
     if cr.is_file() and cr.stat().st_size > 0:
@@ -317,9 +322,18 @@ def extract_game_version(source_dir: Path) -> tuple[str, str]:
         m = re.search(r"(?m)\b(\d+\.\d+(?:\.\d+)*)\b", text)
         if m:
             return m.group(1), f"code_revisions.log 提取（文件 {cr}）"
+    dbg = source_dir / "debug.log"
+    if dbg.is_file() and dbg.stat().st_size > 0:
+        # 版本行（jomini 启动段）实测位于文件中段，只能整读匹配；
+        # debug.log 为数 MB 级，一次性读取开销可忽略
+        text = decode_dump_text(dbg.read_bytes())
+        m = re.search(r"Feeding game version into checksum:\s*"
+                      r"(\d+\.\d+\.\d+)(?:\.\d+)?", text)
+        if m:
+            return m.group(1), f"debug.log 提取（jomini 启动行；文件 {dbg}）"
     return DEFAULT_GAME_VERSION, (
         f"基准事实默认值 {DEFAULT_GAME_VERSION}（docs/spec.md 环境事实附录；"
-        f"code_revisions.log 为空/无版本信息，未能提取）")
+        f"code_revisions.log 与 debug.log 均无版本信息，未能提取）")
 
 
 # ---- 产物落盘（幂等）-------------------------------------------------------
@@ -496,7 +510,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--out", default=str(DEFAULT_OUT_DIR),
                     help="产物目录（默认 game_docs/script_docs）")
     ap.add_argument("--game-version", default=None,
-                    help="覆盖游戏版本标注（默认自动提取/基准事实 1.20.0）")
+                    help="覆盖游戏版本标注（默认自动提取：code_revisions.log"
+                         "→debug.log；均无版本信息时用基准事实 1.21.0）")
     ap.add_argument("--no-manifest", action="store_true",
                     help="不写 manifest（测试用）")
     ap.add_argument("--check", action="store_true",

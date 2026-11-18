@@ -1,9 +1,9 @@
 # Data Types: internalclausewitzgui（script_docs 权威清单）
 
-- 来源：`game logs/data_types/data_types_internalclausewitzgui.txt`（CK3 1.20.1 `script_docs` 控制台导出）
-- 源文件时间：2026-10-22T19:56:41+08:00（文件 mtime，视为 dump 生成时间）
-- 源文件大小：264115 字节
-- 条目数：2479
+- 来源：`game logs/data_types/data_types_internalclausewitzgui.txt`（CK3 1.21.0 `script_docs` 控制台导出）
+- 源文件时间：2026-11-18T19:02:24+08:00（文件 mtime，视为 dump 生成时间）
+- 源文件大小：266983 字节
+- 条目数：2506
 - 正文逐字来自 dump，仅重排为每条目一节；与 wiki 层冲突时以本层为准。
 
 ### AccessLogViewer
@@ -6689,6 +6689,16 @@ Return type: [unregistered]
 Description: Object Explorer - Browser
 Definition type: Type
 
+### ObjectBrowser.AccessProviderSearchList
+
+Definition type: Promote
+Return type: ToolPropertySearchList
+
+### ObjectBrowser.AccessViewSearchList
+
+Definition type: Promote
+Return type: ToolPropertySearchList
+
 ### ObjectBrowser.AccessSelf
 
 Definition type: Function
@@ -6755,6 +6765,11 @@ Definition type: Function
 Return type: [unregistered]
 
 ### ObjectBrowser.HasConfig
+
+Definition type: Function
+Return type: bool
+
+### ObjectBrowser.HasRunProvider
 
 Definition type: Function
 Return type: bool
@@ -11922,6 +11937,35 @@ Return type: void
 Definition type: Function
 Return type: [unregistered]
 
+### VariableInspectorGroup
+
+Definition type: Type
+
+### VariableInspectorGroup.AccessMembers
+
+Definition type: Function
+Return type: [unregistered]
+
+### VariableInspectorGroup.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### VariableInspectorGroup.GetName
+
+Definition type: Function
+Return type: CString
+
+### VariableInspectorGroup.GetSize
+
+Definition type: Function
+Return type: int32
+
+### VariableInspectorGroup.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### VariableInspectorPlugin
 
 Definition type: Type
@@ -11931,12 +11975,17 @@ Definition type: Type
 Definition type: Promote
 Return type: VariableInspectorVariable
 
-### VariableInspectorPlugin.AccessSelf
+### VariableInspectorPlugin.AccessGroups
 
 Definition type: Function
 Return type: [unregistered]
 
-### VariableInspectorPlugin.AccessVariables
+### VariableInspectorPlugin.AccessLooseVariables
+
+Definition type: Function
+Return type: [unregistered]
+
+### VariableInspectorPlugin.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
@@ -11946,15 +11995,40 @@ Return type: [unregistered]
 Definition type: Function
 Return type: void
 
+### VariableInspectorPlugin.ClearFilter
+
+Definition type: Function
+Return type: void
+
+### VariableInspectorPlugin.GetFilter
+
+Definition type: Function
+Return type: CString
+
+### VariableInspectorPlugin.GetNumMatching
+
+Definition type: Function
+Return type: int32
+
 ### VariableInspectorPlugin.GetNumVariables
 
 Definition type: Function
 Return type: int32
 
+### VariableInspectorPlugin.IsFiltered
+
+Definition type: Function
+Return type: bool
+
 ### VariableInspectorPlugin.Self
 
 Definition type: Function
 Return type: [unregistered]
+
+### VariableInspectorPlugin.SetFilter
+
+Definition type: Function
+Return type: void
 
 ### VariableInspectorVariable
 
@@ -12004,30 +12078,60 @@ Definition type: Type
 Definition type: Function
 Return type: [unregistered]
 
+### VariableList.AccessFilteredEntries
+
+Definition type: Function
+Return type: [unregistered]
+
 ### VariableList.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
+
+### VariableList.ClearEntryFilter
+
+Definition type: Function
+Return type: void
 
 ### VariableList.Delete
 
 Definition type: Function
 Return type: void
 
+### VariableList.GetEntryFilter
+
+Definition type: Function
+Return type: CString
+
 ### VariableList.GetName
 
 Definition type: Function
 Return type: CString
+
+### VariableList.GetNumMatchingEntries
+
+Definition type: Function
+Return type: int32
 
 ### VariableList.GetSize
 
 Definition type: Function
 Return type: int32
 
+### VariableList.IsFiltered
+
+Definition type: Function
+Return type: bool
+
 ### VariableList.Self
 
 Definition type: Function
 Return type: [unregistered]
+
+### VariableList.SetEntryFilter
+
+Definition type: Function
+Return type: void
 
 ### VariableListEntry
 
@@ -12091,6 +12195,11 @@ Definition type: Type
 Definition type: Promote
 Return type: ScopeObjectEditor
 
+### VariableListStore.AccessFilteredLists
+
+Definition type: Function
+Return type: [unregistered]
+
 ### VariableListStore.AccessSelf
 
 Definition type: Function
@@ -12106,10 +12215,25 @@ Return type: [unregistered]
 Definition type: Function
 Return type: void
 
+### VariableListStore.ClearListFilter
+
+Definition type: Function
+Return type: void
+
+### VariableListStore.GetListFilter
+
+Definition type: Function
+Return type: CString
+
 ### VariableListStore.GetNewVariableListName
 
 Definition type: Function
 Return type: CString
+
+### VariableListStore.GetNumMatchingLists
+
+Definition type: Function
+Return type: int32
 
 ### VariableListStore.GetNumVariableLists
 
@@ -12121,10 +12245,20 @@ Return type: int32
 Definition type: Function
 Return type: int32
 
+### VariableListStore.IsFiltered
+
+Definition type: Function
+Return type: bool
+
 ### VariableListStore.Self
 
 Definition type: Function
 Return type: [unregistered]
+
+### VariableListStore.SetListFilter
+
+Definition type: Function
+Return type: void
 
 ### VariableListStore.SetNewVariableListName
 

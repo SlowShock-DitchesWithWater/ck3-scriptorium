@@ -1,8 +1,8 @@
 # common/effect_localization 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：37（其中 Jomini 解析 36 个）
-- 顶层块条目总数：1017，跨文件唯一条目 1017
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：38（其中 Jomini 解析 37 个）
+- 顶层块条目总数：1121，跨文件唯一条目 1121
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -12,38 +12,39 @@
 | `00_activity_effects.txt` | 2034 | 8 | 0 | jomini |
 | `00_additional_effects.txt` | 7070 | 53 | 0 | jomini |
 | `00_ce1_effects.txt` | 763 | 4 | 0 | jomini |
-| `00_character_effects.txt` | 64782 | 266 | 0 | jomini |
+| `00_character_effects.txt` | 66004 | 271 | 0 | jomini |
 | `00_council_effects.txt` | 1300 | 12 | 0 | jomini |
 | `00_county_effects.txt` | 653 | 4 | 0 | jomini |
 | `00_culture_effect.txt` | 3220 | 16 | 0 | jomini |
 | `00_custom_effects.txt` | 3395 | 29 | 0 | jomini |
-| `00_dynasty_effects.txt` | 1232 | 5 | 0 | jomini |
-| `00_faction_effects.txt` | 2201 | 12 | 0 | jomini |
+| `00_dynasty_effects.txt` | 1284 | 5 | 0 | jomini |
+| `00_faction_effects.txt` | 2322 | 12 | 0 | jomini |
 | `00_fp3_effects.txt` | 2404 | 12 | 0 | jomini |
 | `00_landed_title_effects.txt` | 1201 | 6 | 0 | jomini |
 | `00_legend_effects.txt` | 2900 | 12 | 0 | jomini |
-| `00_maa_effects.txt` | 780 | 2 | 0 | jomini |
-| `00_perk_effects.txt` | 33577 | 193 | 0 | jomini |
-| `00_province_effects.txt` | 1815 | 9 | 0 | jomini |
-| `00_religion_effects.txt` | 8339 | 42 | 0 | jomini |
-| `00_scheme_effects.txt` | 4989 | 28 | 0 | jomini |
+| `00_maa_effects.txt` | 913 | 2 | 0 | jomini |
+| `00_perk_effects.txt` | 46805 | 257 | 0 | jomini |
+| `00_province_effects.txt` | 2631 | 9 | 0 | jomini |
+| `00_religion_effects.txt` | 8246 | 41 | 0 | jomini |
+| `00_scheme_effects.txt` | 5403 | 28 | 0 | jomini |
 | `00_secret_effects.txt` | 1279 | 8 | 0 | jomini |
-| `00_title_effects.txt` | 6495 | 22 | 0 | jomini |
-| `00_travel_effects.txt` | 3324 | 16 | 0 | jomini |
+| `00_title_effects.txt` | 7116 | 23 | 0 | jomini |
+| `00_travel_effects.txt` | 3410 | 16 | 0 | jomini |
 | `00_vassal_effects.txt` | 1742 | 4 | 0 | jomini |
 | `00_war_effects.txt` | 7093 | 32 | 0 | jomini |
 | `01_ep1_effects.txt` | 6704 | 30 | 0 | jomini |
 | `01_fp1_effects.txt` | 2012 | 10 | 0 | jomini |
 | `02_ep1_effects.txt` | 1244 | 5 | 0 | jomini |
-| `03_fp2_effects.txt` | 3271 | 21 | 0 | jomini |
+| `03_fp2_effects.txt` | 3268 | 21 | 0 | jomini |
 | `04_ep2_diarchy_effects.txt` | 2610 | 10 | 0 | jomini |
 | `04_ep2_effects.txt` | 5628 | 17 | 0 | jomini |
 | `05_bp2_hostage_effects.txt` | 3257 | 16 | 0 | jomini |
-| `07_ep3_effects.txt` | 7528 | 31 | 0 | jomini |
+| `07_ep3_effects.txt` | 7640 | 31 | 0 | jomini |
 | `08_tgp_effects.txt` | 4122 | 17 | 0 | jomini |
 | `09_situation_effects.txt` | 1450 | 5 | 0 | jomini |
 | `10_ach_effects.txt` | 271 | 2 | 0 | jomini |
-| `10_tgp_effects.txt` | 7802 | 48 | 0 | jomini |
+| `10_tgp_effects.txt` | 9417 | 52 | 0 | jomini |
+| `11_gdp_effects.txt` | 6592 | 31 | 0 | jomini |
 | `_effect_localization.info` | 1221 | - | - | 纯文档（非 Jomini） |
 | `pam_effects.txt` | 2027 | 10 | 0 | jomini |
 
@@ -125,7 +126,7 @@
 - ce1_legitimacy_legacy_4_effect
 - ce1_legitimacy_legacy_5_effect
 
-### 00_character_effects.txt（266 条目）
+### 00_character_effects.txt（271 条目）
 
 - add_gold
 - remove_gold
@@ -204,6 +205,10 @@
 - set_relation_student
 - remove_relation_mentor
 - remove_relation_student
+- set_relation_creditor
+- set_relation_debtor
+- remove_relation_creditor
+- remove_relation_debtor
 - set_relation_intrigue_mentor
 - set_relation_intrigue_student
 - remove_relation_intrigue_mentor
@@ -393,6 +398,7 @@
 - change_realm_law_level
 - change_title_law_level
 - enact_treasury_budgets
+- force_assembly_vote
 
 ### 00_council_effects.txt（12 条目）
 
@@ -534,7 +540,7 @@
 - create_maa_regiment
 - change_maa_regiment_size
 
-### 00_perk_effects.txt（193 条目）
+### 00_perk_effects.txt（257 条目）
 
 - unshackled_lust_perk_effect
 - subtle_desire_perk_effect
@@ -546,6 +552,7 @@
 - truth_is_relative_perk_effect
 - truth_is_relative_scheme_effect
 - digging_for_dirt_perk_effect
+- digging_for_dirt_perk_merchant_effect
 - kidnapper_perk_effect
 - kidnapper_perk_nomadic_effect
 - court_of_shadows_perk_effect
@@ -556,8 +563,19 @@
 - prepared_for_anything_perk_bonus_effect
 - dark_insights_perk_effect
 - divine_retribution_perk_effect
+- malice_implicit_perk_merchant_effect
+- fear_tax_perk_merchant_effect
 - prison_feudal_complex_perk_effect
+- prison_feudal_complex_perk_merchant_effect
+- serve_the_crown_perk_merchant_effect
+- a_mans_home_perk_merchant_effect
+- enduring_hardships_perk_merchant_effect
+- prepared_conscription_perk_merchant_effect
 - strict_organization_perk_effect
+- strict_organization_perk_merchant_effect
+- merchant_hard_rule_perk_effect
+- soldiers_of_lesser_fortune_perk_merchant_effect
+- absolute_control_perk_merchant_effect
 - courtship_perk_effect
 - promising_prospects_perk_effect
 - peacemaker_perk_effect
@@ -565,13 +583,20 @@
 - thoughtful_perk_nomadic_effect
 - ducal_conquest_perk_effect
 - forced_vassalage_perk_effect
+- forced_vassalage_perk_merchant_effect
 - bloc_join_perk_effect
 - adaptive_traditions_perk_effect
 - bellum_justum_effect
 - flexible_truces_perk_effect
 - defensive_negotiations_perk_effect
 - embassies_perk_effect
+- embassies_perk_merchant_effect
+- merchant_benevolent_intent_perk_effect
+- merchant_inspiring_rule_perk_effect
+- merchant_firm_hand_perk_effect
 - accomplished_forger_perk_effect
+- accomplished_forger_perk_merchant_effect
+- true_ruler_perk_merchant_effect
 - red_wedding_perk_effect
 - befriend_perk_effect
 - unlocks_board_games_interaction_effect
@@ -579,6 +604,7 @@
 - groomed_to_rule_perk_effect
 - groomed_to_rule_perk_2_effect
 - thicker_than_water_perk_effect
+- thicker_than_water_perk_merchant_effect
 - kin_legacy_2_legacy_effect
 - kin_legacy_3_legacy_effect
 - kin_legacy_4_legacy_effect
@@ -596,37 +622,67 @@
 - chivalric_dominance_perk_incite_war_effect
 - it_is_my_domain_perk_effect
 - at_any_cost_perk_effect
+- at_any_cost_perk_merchant_effect
 - tax_man_perk_effect
+- organized_muster_rolls_perk_merchant_effect
+- cutting_corners_perk_merchant_effect
+- centralization_perk_merchant_effect
+- popular_figurehead_perk_merchant_effect
+- divided_attention_perk_merchant_effect
 - pedagogy_perk_effect
 - open_minded_perk_effect
+- scientific_perk_merchant_effect
+- planned_cultivation_perk_merchant_effect
 - anatomical_studies_perk_effect
 - mental_resilience_perk_effect
 - restraint_perk_effect
 - carefree_perk_effect
 - know_thyself_perk_effect
 - religious_icon_perk_effect
+- religious_icon_perk_merchant_effect
 - religious_icon_nomadic_perk_effect
+- prophet_perk_merchant_effect
 - religious_icon_perk_canonization_effect
 - prophet_perk_living_word_effect
 - wash_your_hands_perk_effect
 - praetorian_guard_perk_effect
+- merchant_praetorian_guard_perk_effect
 - praetorian_guard_nomadic_perk_effect
 - writing_history_perk_effect
 - golden_obligations_perk_effect
+- golden_obligations_perk_merchant_effect
 - meritocracy_perk_effect
+- meritocracy_perk_aptitude_effect
+- meritocracy_perk_merchant_effect
+- chains_of_loyalty_perk_merchant_effect
+- positions_of_power_perk_merchant_effect
+- positions_of_power_perk_salary_effect
+- large_levies_perk_merchant_effect
+- soon_forgiven_perk_merchant_effect
 - loyalty_and_respect_perk_obedience_effect
 - chains_of_loyalty_perk_effect
+- chains_of_loyalty_seneschal_effect
 - toe_the_line_perk_effect
+- toe_the_line_perk_merchant_effect
+- honored_to_serve_perk_merchant_effect
 - clerical_justifications_perk_effect
+- clerical_justifications_perk_merchant_effect
 - clerical_justifications_perk_passive_learning_effect
+- defender_of_the_faith_perk_merchant_effect
 - hard_rule_perk_effect
 - learn_on_the_job_perk_effect
+- learn_on_the_job_perk_merchant_effect
 - zealous_proselytizer_perk_effect
+- zealous_proselytizer_perk_merchant_effect
 - nomadic_zealous_proselytizer_inspire_conversion_effect
 - nomadic_zealous_proselytizer_stargazer_effect
 - zealous_proselytizer_perk_effect_spread_tenet
 - sanctioned_loopholes_perk_effect
 - sanctioned_loopholes_perk_effect_beseech_claim
+- company_law_family_purpose
+- company_law_artisan_purpose
+- company_law_creditor_purpose
+- company_law_caravaneer_purpose
 - sanctioned_loopholes_perk_effect_sell_claim
 - planned_cultivation_perk_effect
 - enduring_hardships_perk_effect
@@ -679,10 +735,12 @@
 - of_the_people_perk_effect
 - of_the_people_perk_nomadic_effect
 - of_the_people_perk_2_effect
+- of_the_people_perk_merchant_effect
 - travel_companion_perk_effect
 - the_home_away_from_home_perk_effect
 - local_arbitration_perk_effect
 - local_arbitration_perk_2_effect
+- local_arbitration_perk_merchant_effect
 - local_arbitration_wanderers_purpose
 - local_arbitration_mercenaries_purpose
 - local_arbitration_scholar_purpose
@@ -690,40 +748,52 @@
 - local_arbitration_brigands_purpose
 - local_arbitration_legitimists_purpose
 - power_at_home_perk_effect
+- power_at_home_perk_merchant_effect
 - journey_planner_perk_effect
 - finally_there_perk_effect
 - finally_there_perk_2_effect
 - mercenary_contacts_perk_effect
 - been_there_done_that_perk_effect
 - souvenirs_aplenty_perk_effect
+- souvenirs_aplenty_perk_merchant_effect
 - souvenirs_aplenty_nomadic_perk_effect
 - souvenirs_aplenty_perk_2_effect
 - souvenirs_aplenty_perk_3_effect
 - gracious_host_impeccable_guest_perk_effect
+- gracious_host_impeccable_guest_perk_merchant_effect
 - gracious_host_impeccable_guest_perk_2_effect
 - gracious_host_impeccable_guest_perk_3_effect
 - gracious_host_impeccable_guest_perk_4_effect
 - journey_perk_effect
 - journey_perk_2_effect
 - local_inspection_perk_effect
+- local_inspection_perk_settled_effect
+- local_inspection_perk_option_cost_effect
+- local_inspection_perk_cooldown_effect
 - local_inspection_perk_2_effect
 - local_inspection_perk_3_effect
 - local_hero_perk_effect
 - travel_logs_perk_effect
 - travel_logs_perk_2_effect
+- travel_logs_perk_merchant_effect
 - know_your_land_know_your_people_perk_effect
 - know_your_land_know_your_people_perk_2_effect
+- know_your_land_know_your_people_perk_merchant_effect
 - know_your_land_know_your_people_perk_3_effect
 - mustering_the_troops_perk_effect
 - mustering_the_troops_perk_2_effect
+- mustering_the_troops_perk_merchant_effect
 - surveyor_no_stone_unturned_perk_effect
 - surveyor_no_stone_unturned_nomadic_perk_effect
 - no_stone_unturned_perk_2_effect
+- local_inspection_perk_merchant_effect
+- no_stone_unturned_perk_merchant_effect
 - no_stone_unturned_perk_cooldown_message
 - personal_touch_effect
 - personal_touch_2_effect
 - personal_touch_3_effect
 - personal_touch_4_effect
+- personal_touch_perk_merchant_effect
 - local_adjudicate_location_tt
 - realm_charts_perk_effect
 - realm_charts_perk_2_effect
@@ -738,11 +808,11 @@
 - add_building
 - remove_building
 - set_holding_type
-- add_special_building_slot
-- add_special_building
+- change_province_size
+- change_province_size_progress
 - begin_create_holding
 
-### 00_religion_effects.txt（42 条目）
+### 00_religion_effects.txt（41 条目）
 
 - change_fervor
 - warchest_divide_gold
@@ -761,7 +831,6 @@
 - change_war_chest_gold
 - change_war_chest_piety
 - change_war_chest_prestige
-- do_ghw_title_handout
 - set_designated_winner
 - add_doctrine
 - remove_doctrine
@@ -829,17 +898,18 @@
 - spend_by
 - disable_exposure_by
 
-### 00_title_effects.txt（22 条目）
+### 00_title_effects.txt（23 条目）
 
 - change_title_holder
 - change_title_holder_include_vassals
 - get_title
 - destroy_title
 - set_add_claim_on_loss
-- change_development_level
-- change_development_progress
-- change_development_progress_with_overflow
+- change_prosperity_level
+- change_prosperity_progress
+- change_prosperity_progress_with_overflow
 - change_county_control
+- add_popular_opinion
 - add_pressed_claim
 - add_unpressed_claim
 - remove_claim
@@ -1112,10 +1182,15 @@
 - if_host_calms_crowd_desc
 - if_crush_happens_desc
 
-### 10_tgp_effects.txt（48 条目）
+### 10_tgp_effects.txt（52 条目）
 
 - set_house_relation
 - change_house_relation_level
+- change_house_relation_fraction
+- change_house_relation
+- impact_house_relation_to_be_established
+- impact_house_relation_to_change_level
+- impact_house_relation_to_progress_towards_level
 - clear_house_relation
 - house_relation_improved_minor_desc
 - house_relation_improved_medium_desc
@@ -1134,7 +1209,6 @@
 - tgp_dynasty_legacy_movement_power_bonus
 - tgp_dynasty_legacy_extra_disciple_limit
 - tgp_dynasty_legacy_invite_to_movement
-- tgp_dynasty_legacy_governor_efficiency_bonus
 - tgp_dynasty_legacy_unlock_east_asian_estate_archive
 - tgp_dynasty_legacy_unlock_east_asian_estate_gate
 - tgp_dynasty_legacy_pick_career
@@ -1162,6 +1236,40 @@
 - tgp_sea_legacy_pass_one_succession_challenge
 - tgp_sea_legacy_heir_succession_modifier
 - tgp_sea_legacy_easier_to_become_mandala
+
+### 11_gdp_effects.txt（31 条目）
+
+- task_contract_success_pseudo
+- assign_trader
+- government_overthrow_law_changes
+- add_road_modifier
+- remove_road_modifier
+- merge_company_larger_company_tt
+- merchant_creditor_capstone_prestige_effect
+- merchant_spending_spree_decision_associates_tt
+- merge_company_subsumed_trade_market_tt
+- merge_company_subsumed_trade_monopolies_tt
+- gdp_merchant_1200_a_tt_artifact
+- gdp_merchant_1200_a_tt_activity
+- gdp_merchant_1200_a_tt_luxury_contract
+- gdp_increase_expertise_lower_than_target_effect_tt
+- ho_loan_inherited_debtor_tt
+- ho_loan_inherited_lender_tt
+- ho_loan_wiped_loaner_tt
+- ho_debt_inherited_debtor_tt
+- ho_debt_inherited_lender_tt
+- ho_debt_wiped_debtor_tt
+- ho_debt_forgiven_debtor_tt
+- ho_loan_forgiven_lender_tt
+- forgive_loan_tt
+- add_toll_exception
+- remove_toll_exception
+- gdp_loan_owed_disguised_interest_tt
+- gdp_loan_owed_interest_free_tt
+- gdp_loan_owed_open_interest_tt
+- gdp_loan_gold_tt
+- gdp_usury_penance_forgive_interest_tt
+- gdp_usury_debtor_discover_interest_tt
 
 ### pam_effects.txt（10 条目）
 

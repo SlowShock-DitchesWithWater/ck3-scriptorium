@@ -1,8 +1,8 @@
 # common/achievements 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：13（其中 Jomini 解析 11 个）
-- 顶层块条目总数：198，跨文件唯一条目 198
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：14（其中 Jomini 解析 12 个）
+- 顶层块条目总数：218，跨文件唯一条目 218
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -11,16 +11,17 @@
 |---|---|---|---|---|
 | `_achievements.info` | 3498 | - | - | 纯文档（非 Jomini） |
 | `ce1_achievements.txt` | 2834 | 11 | 0 | jomini |
-| `ce3_achievements.txt` | 3536 | 10 | 0 | jomini |
-| `ep1_achievements.txt` | 7683 | 20 | 0 | jomini |
-| `ep2_achievements.txt` | 8562 | 20 | 0 | jomini |
-| `ep3_achievements.txt` | 6936 | 20 | 0 | jomini |
+| `ce3_achievements.txt` | 3666 | 10 | 0 | jomini |
+| `ep1_achievements.txt` | 7684 | 20 | 0 | jomini |
+| `ep2_achievements.txt` | 8572 | 20 | 0 | jomini |
+| `ep3_achievements.txt` | 7016 | 20 | 0 | jomini |
 | `ep4_achievements.txt` | 6490 | 20 | 0 | jomini |
+| `ep5_achievements.txt` | 10864 | 20 | 0 | jomini |
 | `fp1_achievements.txt` | 4155 | 10 | 0 | jomini |
 | `fp2_achievements.txt` | 3285 | 11 | 0 | jomini |
 | `fp3_achievements.txt` | 3616 | 10 | 0 | jomini |
 | `mpo_achievements.txt` | 2722 | 10 | 0 | jomini |
-| `msgrdk_achievements.json` | 20390 | - | - | JSON 元数据 |
+| `msgrdk_achievements.json` | 22734 | - | - | JSON 元数据 |
 | `standard_achievements.txt` | 21208 | 56 | 0 | jomini |
 
 ## 条目名 → 定义文件
@@ -145,6 +146,29 @@
 - ep4_18_yes_i_need_my_samurai_achievement
 - ep4_19_stamp_of_approval_achievement
 - ep4_20_promised_land_achievement
+
+### ep5_achievements.txt（20 条目）
+
+- ep5_01_by_gold_alone_achievement
+- ep5_02_multi_track_merchanting_achievement
+- ep5_03_venetian_league_achievement
+- ep5_04_there_can_be_only_one_achievement
+- ep5_05_city_of_marbles_achievement
+- ep5_06_senatus_populusque_romanus_achievement
+- ep5_07_i_love_democracy_achievement
+- ep5_08_medieval_skylines_achievement
+- ep5_09_wearer_of_many_hats_achievement
+- ep5_10_the_spice_must_flow_achievement
+- ep5_11_burgher_king_achievement
+- ep5_12_would_you_like_fries_with_that_achievement
+- ep5_13_bazaar_adventure_achievement
+- ep5_14_league_of_ledgers_achievement
+- ep5_15_in_sweden_we_have_a_system_achievement
+- ep5_16_bridge_of_sighs_achievement
+- ep5_17_cheesing_the_competition_achievement
+- ep5_18_loan_shark_achievement
+- ep5_19_family_business_achievement
+- ep5_20_silk_and_silver_achievement
 
 ### fp1_achievements.txt（10 条目）
 

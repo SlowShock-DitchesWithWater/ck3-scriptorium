@@ -1,6 +1,6 @@
 # common/legends 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：6（其中 Jomini 解析 3 个）
 - 顶层块条目总数：74，跨文件唯一条目 73
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
@@ -13,7 +13,7 @@
 | `chronicles/_chronicles.info` | 1951 | - | - | 纯文档（非 Jomini） |
 | `legend_seeds/00_legend_seeds.txt` | 22980 | 38 | 0 | jomini |
 | `legend_seeds/_legend_seeds.info` | 1453 | - | - | 纯文档（非 Jomini） |
-| `legend_types/00_legends.txt` | 35668 | 3 | 0 | jomini |
+| `legend_types/00_legends.txt` | 35998 | 3 | 0 | jomini |
 | `legend_types/_legends.info` | 4572 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件

@@ -1,155 +1,167 @@
 # common/modifiers 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：141（其中 Jomini 解析 140 个）
-- 顶层块条目总数：6351，跨文件唯一条目 6351
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：153（其中 Jomini 解析 152 个）
+- 顶层块条目总数：7539，跨文件唯一条目 7539
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_activity_feast_modifiers.txt` | 6242 | 54 | 0 | jomini |
-| `00_activity_hold_court_modifiers.txt` | 2346 | 15 | 0 | jomini |
-| `00_activity_hunt_modifiers.txt` | 6052 | 57 | 0 | jomini |
-| `00_activity_petition_modifiers.txt` | 740 | 5 | 0 | jomini |
-| `00_activity_pilgrimage_modifiers.txt` | 8263 | 69 | 0 | jomini |
+| `00_activity_feast_modifiers.txt` | 6240 | 54 | 0 | jomini |
+| `00_activity_hold_court_modifiers.txt` | 2356 | 15 | 0 | jomini |
+| `00_activity_hunt_modifiers.txt` | 6230 | 57 | 0 | jomini |
+| `00_activity_petition_modifiers.txt` | 860 | 5 | 0 | jomini |
+| `00_activity_pilgrimage_modifiers.txt` | 8250 | 69 | 0 | jomini |
 | `00_activity_playdate_modifiers.txt` | 614 | 6 | 0 | jomini |
-| `00_activity_roaming_modifiers.txt` | 905 | 8 | 0 | jomini |
-| `00_activity_tour_modifiers.txt` | 3179 | 25 | 0 | jomini |
-| `00_activity_tournament_modifiers.txt` | 13068 | 101 | 0 | jomini |
-| `00_activity_tours_modifiers.txt` | 6852 | 64 | 0 | jomini |
-| `00_activity_wedding_modifiers.txt` | 5814 | 46 | 0 | jomini |
-| `00_artifact_modifiers.txt` | 79092 | 850 | 0 | jomini |
-| `00_basic_modifiers.txt` | 19345 | 114 | 0 | jomini |
-| `00_befriend_scheme_modifiers.txt` | 4848 | 41 | 0 | jomini |
-| `00_bookmark_modifiers.txt` | 693 | 4 | 0 | jomini |
+| `00_activity_roaming_modifiers.txt` | 906 | 8 | 0 | jomini |
+| `00_activity_tour_modifiers.txt` | 3350 | 25 | 0 | jomini |
+| `00_activity_tournament_modifiers.txt` | 13148 | 101 | 0 | jomini |
+| `00_activity_tours_modifiers.txt` | 7301 | 64 | 0 | jomini |
+| `00_activity_wedding_modifiers.txt` | 6096 | 46 | 0 | jomini |
+| `00_artifact_modifiers.txt` | 76716 | 806 | 0 | jomini |
+| `00_basic_modifiers.txt` | 29615 | 159 | 0 | jomini |
+| `00_befriend_scheme_modifiers.txt` | 4845 | 41 | 0 | jomini |
+| `00_bookmark_modifiers.txt` | 840 | 5 | 0 | jomini |
 | `00_bp1_modifiers_dan.txt` | 400 | 5 | 0 | jomini |
 | `00_bp2_yearly_4_modifiers.txt` | 2431 | 23 | 0 | jomini |
-| `00_chancellor_task_modifiers.txt` | 503 | 4 | 0 | jomini |
+| `00_chancellor_task_modifiers.txt` | 643 | 4 | 0 | jomini |
 | `00_claim_throne_modifiers.txt` | 1181 | 11 | 0 | jomini |
-| `00_councillor_spouse_modifiers.txt` | 4453 | 43 | 0 | jomini |
+| `00_councillor_spouse_modifiers.txt` | 4517 | 43 | 0 | jomini |
 | `00_counsel_modifiers.txt` | 255 | 3 | 0 | jomini |
-| `00_county_corruption_modifiers.txt` | 2569 | 16 | 0 | jomini |
-| `00_county_festival_modifiers.txt` | 313 | 3 | 0 | jomini |
-| `00_county_modifiers.txt` | 7407 | 47 | 0 | jomini |
-| `00_court_chaplain_task_modifiers.txt` | 1023 | 6 | 0 | jomini |
-| `00_court_event_modifiers_claudia.txt` | 3153 | 26 | 0 | jomini |
+| `00_county_corruption_modifiers.txt` | 9621 | 48 | 0 | jomini |
+| `00_county_festival_modifiers.txt` | 370 | 3 | 0 | jomini |
+| `00_county_modifiers.txt` | 9961 | 57 | 0 | jomini |
+| `00_court_chaplain_task_modifiers.txt` | 1247 | 6 | 0 | jomini |
+| `00_court_event_modifiers_claudia.txt` | 3365 | 26 | 0 | jomini |
 | `00_court_modifiers_james.txt` | 161 | 2 | 0 | jomini |
 | `00_court_position_modifiers.txt` | 5745 | 44 | 0 | jomini |
 | `00_court_scheme_modifiers.txt` | 1041 | 12 | 0 | jomini |
 | `00_debug_modifiers.txt` | 383 | 3 | 0 | jomini |
-| `00_diarchy_modifiers.txt` | 5312 | 42 | 0 | jomini |
-| `00_diplomacy_lifestyle_modifiers.txt` | 1349 | 11 | 0 | jomini |
-| `00_empire_faith_gate_modifiers.txt` | 746 | 6 | 0 | jomini |
+| `00_diarchy_modifiers.txt` | 5364 | 42 | 0 | jomini |
+| `00_diplomacy_lifestyle_modifiers.txt` | 1360 | 11 | 0 | jomini |
+| `00_empire_faith_gate_modifiers.txt` | 745 | 6 | 0 | jomini |
 | `00_ep2_travel_modifiers.txt` | 3548 | 35 | 0 | jomini |
-| `00_event_modifiers.txt` | 19681 | 165 | 0 | jomini |
+| `00_event_modifiers.txt` | 21078 | 165 | 0 | jomini |
 | `00_fabricate_hook_modifiers.txt` | 1017 | 9 | 0 | jomini |
+| `00_gdp_guelph_ghibelline_modifiers.txt` | 5178 | 32 | 0 | jomini |
 | `00_generic_scheme_modifiers.txt` | 843 | 5 | 0 | jomini |
-| `00_governance_lifestyle_modifiers.txt` | 14627 | 102 | 0 | jomini |
+| `00_governance_lifestyle_modifiers.txt` | 15033 | 102 | 0 | jomini |
 | `00_health_modifiers.txt` | 2763 | 29 | 0 | jomini |
-| `00_historical_artifact_modifiers.txt` | 20190 | 128 | 0 | jomini |
-| `00_holy_order_modifiers.txt` | 576 | 4 | 0 | jomini |
-| `00_intrigue_lifestyle_modifiers.txt` | 3935 | 29 | 0 | jomini |
-| `00_intrigue_lifestyle_modifiers_2.txt` | 5019 | 43 | 0 | jomini |
+| `00_historical_artifact_modifiers.txt` | 19124 | 128 | 0 | jomini |
+| `00_holy_order_modifiers.txt` | 574 | 4 | 0 | jomini |
+| `00_intrigue_lifestyle_modifiers.txt` | 3937 | 29 | 0 | jomini |
+| `00_intrigue_lifestyle_modifiers_2.txt` | 5102 | 43 | 0 | jomini |
 | `00_intrigue_scheme_modifiers.txt` | 2073 | 15 | 0 | jomini |
-| `00_laamp_modifiers.txt` | 11717 | 75 | 0 | jomini |
-| `00_learning_lifestyle_modifiers.txt` | 2692 | 23 | 0 | jomini |
-| `00_learning_lifestyle_modifiers_2.txt` | 656 | 7 | 0 | jomini |
-| `00_marshal_task_modifiers.txt` | 954 | 7 | 0 | jomini |
-| `00_martial_lifestyle_modifiers.txt` | 7823 | 68 | 0 | jomini |
-| `00_martial_lifestyle_modifiers_2.txt` | 1185 | 11 | 0 | jomini |
+| `00_laamp_modifiers.txt` | 11942 | 75 | 0 | jomini |
+| `00_learning_lifestyle_modifiers.txt` | 2706 | 23 | 0 | jomini |
+| `00_learning_lifestyle_modifiers_2.txt` | 704 | 7 | 0 | jomini |
+| `00_marshal_task_modifiers.txt` | 1098 | 7 | 0 | jomini |
+| `00_martial_lifestyle_modifiers.txt` | 7835 | 68 | 0 | jomini |
+| `00_martial_lifestyle_modifiers_2.txt` | 1200 | 11 | 0 | jomini |
 | `00_murder_scheme_modifiers.txt` | 3329 | 22 | 0 | jomini |
 | `00_nickname_modifiers.txt` | 112 | 1 | 0 | jomini |
-| `00_parent_modifiers.txt` | 973 | 9 | 0 | jomini |
+| `00_parent_modifiers.txt` | 970 | 9 | 0 | jomini |
 | `00_party_baron_modifiers.txt` | 2113 | 15 | 0 | jomini |
-| `00_perk_modifiers.txt` | 4025 | 28 | 0 | jomini |
-| `00_personal_scheme_modifiers.txt` | 338 | 2 | 0 | jomini |
+| `00_perk_modifiers.txt` | 6166 | 45 | 0 | jomini |
+| `00_personal_scheme_modifiers.txt` | 469 | 3 | 0 | jomini |
 | `00_prison_modifiers.txt` | 887 | 9 | 0 | jomini |
-| `00_province_modifiers.txt` | 5128 | 37 | 0 | jomini |
+| `00_province_modifiers.txt` | 8616 | 54 | 0 | jomini |
 | `00_relationship_modifiers.txt` | 1014 | 7 | 0 | jomini |
-| `00_religion_modifiers.txt` | 8469 | 58 | 0 | jomini |
+| `00_religion_modifiers.txt` | 8475 | 58 | 0 | jomini |
 | `00_romance_character_modifiers.txt` | 418 | 4 | 0 | jomini |
-| `00_scheme_modifiers.txt` | 52454 | 370 | 0 | jomini |
+| `00_scheme_modifiers.txt` | 52619 | 371 | 0 | jomini |
 | `00_seduce_character_modifiers.txt` | 1973 | 20 | 0 | jomini |
 | `00_seduce_scheme_modifiers.txt` | 1157 | 12 | 0 | jomini |
-| `00_sibling_modifiers.txt` | 594 | 7 | 0 | jomini |
+| `00_sibling_modifiers.txt` | 595 | 7 | 0 | jomini |
 | `00_single_combat_modifiers.txt` | 5502 | 66 | 0 | jomini |
 | `00_spymaster_task_modifiers.txt` | 218 | 1 | 0 | jomini |
-| `00_steward_task_modifiers.txt` | 2211 | 16 | 0 | jomini |
+| `00_steward_task_modifiers.txt` | 2670 | 16 | 0 | jomini |
 | `00_story_cycle_murders_at_court_modifiers.txt` | 238 | 2 | 0 | jomini |
 | `00_story_cycle_mystical_animal_modifiers.txt` | 231 | 1 | 0 | jomini |
-| `00_story_cycle_pet_animal_modifiers.txt` | 3855 | 30 | 0 | jomini |
-| `00_stress_effect_modifiers.txt` | 7822 | 57 | 0 | jomini |
+| `00_story_cycle_pet_animal_modifiers.txt` | 3866 | 30 | 0 | jomini |
+| `00_stress_effect_modifiers.txt` | 7881 | 57 | 0 | jomini |
 | `00_sway_scheme_modifiers.txt` | 589 | 2 | 0 | jomini |
-| `00_trait_modifiers.txt` | 262 | 2 | 0 | jomini |
-| `00_travel_modifiers.txt` | 8782 | 74 | 0 | jomini |
-| `00_travel_modifiers_oltner.txt` | 2657 | 24 | 0 | jomini |
-| `00_tutorial_modifiers.txt` | 163 | 1 | 0 | jomini |
-| `00_unity_modifiers.txt` | 2594 | 9 | 0 | jomini |
-| `00_wanderer_lifestyle_modifiers.txt` | 15647 | 102 | 0 | jomini |
-| `00_war_and_combat_modifiers.txt` | 1642 | 16 | 0 | jomini |
-| `00_yearly_event_modifiers.txt` | 6401 | 45 | 0 | jomini |
-| `01_court_grandeur_modifiers.txt` | 4205 | 31 | 0 | jomini |
-| `01_dlc_bp1_filippa_modifiers.txt` | 934 | 8 | 0 | jomini |
-| `01_dlc_bp1_modifiers.txt` | 6861 | 50 | 0 | jomini |
+| `00_trait_modifiers.txt` | 260 | 2 | 0 | jomini |
+| `00_travel_modifiers.txt` | 9303 | 74 | 0 | jomini |
+| `00_travel_modifiers_oltner.txt` | 2687 | 24 | 0 | jomini |
+| `00_tutorial_modifiers.txt` | 161 | 1 | 0 | jomini |
+| `00_unity_modifiers.txt` | 4470 | 16 | 0 | jomini |
+| `00_wanderer_lifestyle_modifiers.txt` | 15178 | 97 | 0 | jomini |
+| `00_war_and_combat_modifiers.txt` | 1640 | 16 | 0 | jomini |
+| `00_yearly_event_modifiers.txt` | 6745 | 45 | 0 | jomini |
+| `01_court_grandeur_modifiers.txt` | 4206 | 31 | 0 | jomini |
+| `01_dlc_bp1_filippa_modifiers.txt` | 931 | 8 | 0 | jomini |
+| `01_dlc_bp1_modifiers.txt` | 7240 | 50 | 0 | jomini |
 | `01_dlc_bp1_modifiers_chad.txt` | 435 | 3 | 0 | jomini |
 | `01_dlc_bp1_modifiers_claudia.txt` | 556 | 5 | 0 | jomini |
-| `01_dlc_bp2_yearly_1_modifiers.txt` | 1913 | 12 | 0 | jomini |
-| `01_dlc_ep1_modifiers.txt` | 13453 | 95 | 0 | jomini |
-| `01_dlc_fp1_modifiers.txt` | 10465 | 90 | 0 | jomini |
-| `01_dlc_fp3_modifiers.txt` | 20463 | 154 | 0 | jomini |
+| `01_dlc_bp2_yearly_1_modifiers.txt` | 2022 | 12 | 0 | jomini |
+| `01_dlc_ep1_modifiers.txt` | 14113 | 95 | 0 | jomini |
+| `01_dlc_fp1_modifiers.txt` | 10653 | 90 | 0 | jomini |
+| `01_dlc_fp3_modifiers.txt` | 21802 | 154 | 0 | jomini |
 | `01_dlc_roco_modifiers_bianca.txt` | 219 | 1 | 0 | jomini |
 | `01_dlc_roco_modifiers_george.txt` | 517 | 3 | 0 | jomini |
-| `01_dlc_roco_modifiers_joe.txt` | 10263 | 78 | 0 | jomini |
-| `01_dlc_xp1_county_modifiers.txt` | 713 | 6 | 0 | jomini |
+| `01_dlc_roco_modifiers_joe.txt` | 10252 | 78 | 0 | jomini |
+| `01_dlc_xp1_county_modifiers.txt` | 962 | 6 | 0 | jomini |
 | `01_inventory_modifiers.txt` | 206 | 2 | 0 | jomini |
-| `03_dlc_fp2_modifiers.txt` | 25108 | 167 | 0 | jomini |
-| `04_bp2_modifiers_3.txt` | 1045 | 8 | 0 | jomini |
-| `04_ep2_modifiers.txt` | 7458 | 66 | 0 | jomini |
-| `04_ep2_modifiers_james.txt` | 3450 | 28 | 0 | jomini |
+| `03_dlc_fp2_modifiers.txt` | 25376 | 167 | 0 | jomini |
+| `04_bp2_modifiers_3.txt` | 1096 | 8 | 0 | jomini |
+| `04_ep2_modifiers.txt` | 7534 | 66 | 0 | jomini |
+| `04_ep2_modifiers_james.txt` | 3500 | 28 | 0 | jomini |
 | `04_ep2_modifiers_jason.txt` | 1800 | 11 | 0 | jomini |
 | `05_bp2_modfiers.txt` | 611 | 5 | 0 | jomini |
-| `05_bp2_modifiers.txt` | 18184 | 140 | 0 | jomini |
-| `06_ce1_modifiers.txt` | 24136 | 220 | 0 | jomini |
-| `07_ep3_laamp_flavor_modifiers.txt` | 12197 | 95 | 0 | jomini |
-| `07_ep3_modifiers.txt` | 64603 | 410 | 0 | jomini |
-| `07_ep3_modifiers_admin.txt` | 2997 | 33 | 0 | jomini |
+| `05_bp2_modifiers.txt` | 18490 | 140 | 0 | jomini |
+| `06_ce1_modifiers.txt` | 25694 | 220 | 0 | jomini |
+| `07_ep3_laamp_flavor_modifiers.txt` | 12329 | 95 | 0 | jomini |
+| `07_ep3_modifiers.txt` | 71332 | 424 | 0 | jomini |
+| `07_ep3_modifiers_admin.txt` | 2994 | 33 | 0 | jomini |
 | `08_beth_nahrian_decision_modifiers.txt` | 297 | 2 | 0 | jomini |
-| `08_bp3_modifiers.txt` | 23380 | 60 | 12 | jomini |
-| `09_ce2_modifiers.txt` | 472 | 4 | 0 | jomini |
-| `09_mpo_kurultai_modifiers.txt` | 551 | 4 | 0 | jomini |
-| `09_mpo_modifiers.txt` | 18713 | 138 | 0 | jomini |
+| `08_bp3_modifiers.txt` | 23937 | 59 | 12 | jomini |
+| `09_ce2_modifiers.txt` | 493 | 4 | 0 | jomini |
+| `09_mpo_kurultai_modifiers.txt` | 554 | 4 | 0 | jomini |
+| `09_mpo_modifiers.txt` | 18772 | 138 | 0 | jomini |
 | `09_mpo_modifiers_2.txt` | 896 | 8 | 0 | jomini |
 | `09_mpo_modifiers_anna.txt` | 1131 | 9 | 0 | jomini |
 | `09_mpo_modifiers_nerge.txt` | 401 | 4 | 0 | jomini |
-| `09_mpo_modifiers_settlement_issues.txt` | 1001 | 9 | 0 | jomini |
-| `09_mpo_modifiers_veronica.txt` | 2649 | 19 | 0 | jomini |
-| `10_ach_az_modifiers.txt` | 1825 | 12 | 0 | jomini |
+| `09_mpo_modifiers_settlement_issues.txt` | 1011 | 9 | 0 | jomini |
+| `09_mpo_modifiers_veronica.txt` | 2661 | 19 | 0 | jomini |
+| `10_ach_az_modifiers.txt` | 1838 | 12 | 0 | jomini |
 | `10_ach_coronation_modifiers.txt` | 167 | 2 | 0 | jomini |
 | `10_ach_klank_modifiers.txt` | 759 | 6 | 0 | jomini |
-| `10_ach_modifiers.txt` | 16029 | 108 | 0 | jomini |
-| `10_ach_oath_modifiers.txt` | 3159 | 25 | 0 | jomini |
-| `10_tgp_az_modifiers.txt` | 1457 | 13 | 0 | jomini |
-| `10_tgp_japan_modifiers.txt` | 4787 | 36 | 0 | jomini |
-| `10_tgp_modifiers.txt` | 25862 | 189 | 0 | jomini |
-| `10_tgp_natural_disasters_modifiers.txt` | 9409 | 59 | 0 | jomini |
-| `10_tgp_tai_migration_modifiers.txt` | 721 | 4 | 0 | jomini |
+| `10_ach_modifiers.txt` | 16858 | 108 | 0 | jomini |
+| `10_ach_oath_modifiers.txt` | 3376 | 25 | 0 | jomini |
+| `10_tgp_az_modifiers.txt` | 1533 | 13 | 0 | jomini |
+| `10_tgp_japan_modifiers.txt` | 5061 | 36 | 0 | jomini |
+| `10_tgp_modifiers.txt` | 27716 | 189 | 0 | jomini |
+| `10_tgp_natural_disasters_modifiers.txt` | 10425 | 59 | 0 | jomini |
+| `10_tgp_tai_migration_modifiers.txt` | 758 | 4 | 0 | jomini |
 | `11_bfj_festival_modifiers.txt` | 230 | 3 | 0 | jomini |
+| `11_gdp_merchant_modifiers.txt` | 2566 | 22 | 0 | jomini |
 | `11_pam_study_faith_modifiers.txt` | 1322 | 9 | 0 | jomini |
-| `11_pam_study_scripture_modifiers.txt` | 2632 | 20 | 0 | jomini |
-| `11_tgp_mandala_scheme_modifiers.txt` | 717 | 7 | 0 | jomini |
+| `11_pam_study_scripture_modifiers.txt` | 2631 | 20 | 0 | jomini |
+| `11_tgp_mandala_scheme_modifiers.txt` | 719 | 7 | 0 | jomini |
 | `12_debug_story_cycle_modifiers.txt` | 225 | 2 | 0 | jomini |
-| `12_pam_modifiers.txt` | 32124 | 182 | 0 | jomini |
-| `_modifiers.info` | 1845 | - | - | 纯文档（非 Jomini） |
+| `12_pam_modifiers.txt` | 32248 | 183 | 0 | jomini |
+| `_modifiers.info` | 2131 | - | - | 纯文档（非 Jomini） |
 | `clerical_chastity_modifiers.txt` | 212 | 2 | 0 | jomini |
-| `decision_modifiers.txt` | 351 | 2 | 0 | jomini |
-| `pam_county_modifiers.txt` | 300 | 2 | 0 | jomini |
-| `pam_secular_faith_modifiers.txt` | 13172 | 71 | 0 | jomini |
+| `decision_modifiers.txt` | 473 | 3 | 0 | jomini |
+| `gdp_activity_carnival_modifiers.txt` | 1727 | 14 | 0 | jomini |
+| `gdp_burgher_modifiers.txt` | 4357 | 22 | 0 | jomini |
+| `gdp_merchant_modifiers.txt` | 61715 | 525 | 0 | jomini |
+| `gdp_merchant_trade_opportunity_modifiers.txt` | 7329 | 53 | 0 | jomini |
+| `gdp_modifiers.txt` | 5365 | 20 | 0 | jomini |
+| `gdp_republic_modifiers.txt` | 30871 | 194 | 0 | jomini |
+| `gdp_trade_league_modifiers.txt` | 7070 | 20 | 0 | jomini |
+| `gdp_trade_scheme_modifiers.txt` | 1099 | 5 | 0 | jomini |
+| `gdp_trader_scheme_modifiers.txt` | 1684 | 8 | 0 | jomini |
+| `pam_county_modifiers.txt` | 307 | 2 | 0 | jomini |
+| `pam_secular_faith_modifiers.txt` | 13142 | 71 | 0 | jomini |
 | `sanctify_artifact_modifiers.txt` | 102 | 1 | 0 | jomini |
-| `tgp_mandala_modifiers.txt` | 6605 | 43 | 0 | jomini |
-| `tgp_tribute_mission_modifiers.txt` | 509 | 2 | 0 | jomini |
-| `titus_natural_primitivism_modifiers.txt` | 463 | 3 | 0 | jomini |
+| `tgp_mandala_modifiers.txt` | 6688 | 43 | 0 | jomini |
+| `tgp_tribute_mission_modifiers.txt` | 516 | 2 | 0 | jomini |
+| `titus_natural_primitivism_modifiers.txt` | 464 | 3 | 0 | jomini |
+| `trade_good_price_modifiers.txt` | 32508 | 176 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -294,9 +306,9 @@
 
 - petition_liege_county_control_modifier
 - petition_liege_county_convert_modifier
-- petition_liege_county_opinion_modifier
+- petition_liege_popular_opinion_modifier
 - petition_liege_fortify_border_modifier
-- petition_liege_development_modifier
+- petition_liege_prosperity_modifier
 
 ### 00_activity_pilgrimage_modifiers.txt（69 条目）
 
@@ -638,7 +650,7 @@
 - wedding_severe_host_modifier
 - wedding_social_drinker_modifier
 
-### 00_artifact_modifiers.txt（850 条目）
+### 00_artifact_modifiers.txt（806 条目）
 
 - artifact_prowess_1_modifier
 - artifact_prowess_2_modifier
@@ -1006,10 +1018,6 @@
 - artifact_men_at_arms_maintenance_6_modifier
 - artifact_men_at_arms_maintenance_7_modifier
 - artifact_men_at_arms_maintenance_8_modifier
-- artifact_domain_tax_mult_1_modifier
-- artifact_domain_tax_mult_2_modifier
-- artifact_domain_tax_mult_3_modifier
-- artifact_domain_tax_mult_4_modifier
 - artifact_build_gold_cost_1_modifier
 - artifact_build_gold_cost_2_modifier
 - artifact_build_gold_cost_3_modifier
@@ -1053,10 +1061,6 @@
 - artifact_monthly_piety_gain_per_knight_add_1_modifier
 - artifact_monthly_piety_gain_per_knight_add_2_modifier
 - artifact_monthly_piety_gain_per_knight_add_3_modifier
-- artifact_domain_tax_same_faith_mult_1_modifier
-- artifact_domain_tax_same_faith_mult_2_modifier
-- artifact_domain_tax_same_faith_mult_3_modifier
-- artifact_domain_tax_same_faith_mult_4_modifier
 - artifact_monthly_piety_gain_mult_1_modifier
 - artifact_monthly_piety_gain_mult_2_modifier
 - artifact_monthly_piety_gain_mult_3_modifier
@@ -1224,9 +1228,12 @@
 - artifact_monthly_lifestyle_xp_0_5_modifier
 - artifact_monthly_lifestyle_xp_minor_modifier
 - artifact_monthly_lifestyle_xp_1_modifier
+- artifact_monthly_lifestyle_xp_1_5_modifier
 - artifact_monthly_lifestyle_xp_2_modifier
-- artifact_monthly_lifestyle_xp_3_modifier
-- artifact_monthly_lifestyle_xp_4_modifier
+- artifact_marco_polo_travel_common_modifier
+- artifact_marco_polo_travel_masterwork_modifier
+- artifact_marco_polo_travel_famed_modifier
+- artifact_marco_polo_travel_illustrious_modifier
 - artifact_monthly_diplomacy_lifestyle_xp_1_modifier
 - artifact_monthly_diplomacy_lifestyle_xp_2_modifier
 - artifact_monthly_diplomacy_lifestyle_xp_3_modifier
@@ -1281,18 +1288,6 @@
 - artifact_negate_health_penalty_add_2_modifier
 - artifact_negate_health_penalty_add_3_modifier
 - artifact_negate_health_penalty_add_4_modifier
-- artifact_development_growth_1_modifier
-- artifact_development_growth_2_modifier
-- artifact_development_growth_3_modifier
-- artifact_development_growth_4_modifier
-- artifact_development_growth_5_modifier
-- artifact_development_growth_6_modifier
-- artifact_development_growth_7_modifier
-- artifact_development_growth_8_modifier
-- artifact_development_growth_9_modifier
-- artifact_development_growth_10_modifier
-- artifact_development_growth_11_modifier
-- artifact_development_growth_12_modifier
 - artifact_stewardship_mult_1_modifier
 - artifact_prowess_mult_1_modifier
 - artifact_prowess_mult_2_modifier
@@ -1368,7 +1363,6 @@
 - artifact_castle_holding_build_speed_add_2_modifier
 - artifact_tribal_holding_build_speed_add_2_modifier
 - artifact_fake_papal_tiara_modifier
-- artifact_hunt_lifestyle_xp_gain_mult_modifier
 - artifact_stewardship_lifestyle_xp_1_modifier
 - artifact_stewardship_lifestyle_xp_2_modifier
 - artifact_martial_lifestyle_xp_2_modifier
@@ -1414,42 +1408,6 @@
 - artifact_mountains_danger_travel_modifier
 - artifact_forest_danger_travel_modifier
 - artifact_taiga_danger_travel_modifier
-- artifact_desert_development_growth_1
-- artifact_desert_mountains_development_growth_1
-- artifact_drylands_development_growth_1
-- artifact_mountains_development_growth_1
-- artifact_hills_development_growth_1
-- artifact_plains_development_growth_1
-- artifact_farmlands_development_growth_1
-- artifact_floodplains_development_growth_1
-- artifact_forest_development_growth_1
-- artifact_taiga_development_growth_1
-- artifact_oasis_development_growth_1
-- artifact_wetlands_development_growth_1
-- artifact_desert_development_growth_2
-- artifact_desert_mountains_development_growth_2
-- artifact_drylands_development_growth_2
-- artifact_mountains_development_growth_2
-- artifact_hills_development_growth_2
-- artifact_plains_development_growth_2
-- artifact_farmlands_development_growth_2
-- artifact_floodplains_development_growth_2
-- artifact_forest_development_growth_2
-- artifact_taiga_development_growth_2
-- artifact_oasis_development_growth_2
-- artifact_wetlands_development_growth_2
-- artifact_desert_development_growth_3
-- artifact_desert_mountains_development_growth_3
-- artifact_drylands_development_growth_3
-- artifact_mountains_development_growth_3
-- artifact_hills_development_growth_3
-- artifact_plains_development_growth_3
-- artifact_farmlands_development_growth_3
-- artifact_floodplains_development_growth_3
-- artifact_forest_development_growth_3
-- artifact_taiga_development_growth_3
-- artifact_oasis_development_growth_3
-- artifact_wetlands_development_growth_3
 - artifact_fertility_growth_1_modifier
 - artifact_fertility_growth_2_modifier
 - artifact_fertility_growth_3_modifier
@@ -1490,13 +1448,25 @@
 - artifact_kris_2_modifier
 - artifact_kris_3_modifier
 - artifact_kris_4_modifier
+- artifact_trade_competitiveness_add_1_modifier
+- artifact_trade_category_all_xp_gain_mult_1_modifier
+- artifact_trait_track_travel_xp_gain_mult_1_modifier
+- artifact_trait_track_travel_xp_gain_mult_2_modifier
+- artifact_trait_track_caravaneer_xp_gain_mult_1_modifier
+- artifact_trait_track_caravaneer_xp_gain_mult_2_modifier
+- artifact_domicile_build_gold_cost_1_modifier
+- artifact_domicile_build_gold_cost_2_modifier
+- artifact_domicile_build_gold_cost_3_modifier
+- artifact_domicile_build_gold_cost_4_modifier
 
-### 00_basic_modifiers.txt（114 条目）
+### 00_basic_modifiers.txt（159 条目）
 
 - base_modifier
+- dread_modifier
 - diplomacy_modifier
 - diplomacy_modifier_with_offset
 - intrigue_modifier
+- intrigue_modifier_with_offset
 - stewardship_modifier
 - stewardship_modifier_with_offset
 - martial_modifier
@@ -1589,6 +1559,8 @@
 - ai_weak_conqueror_modifier
 - ai_extreme_conqueror_modifier
 - above_herd_limit_modifier
+- below_food_requirement_modifier
+- above_trade_post_limit_modifier
 - upset_peasants_modifier
 - dai_viet_empire_house_modifier
 - majapahit_empire_founding_modifier
@@ -1607,6 +1579,47 @@
 - brunei_empire_low_sadaqah_modifier
 - studying_confucian_education_modifier
 - studying_at_university_modifier
+- province_size_level_0
+- province_size_level_1
+- province_size_level_2
+- province_size_level_3
+- province_size_level_4
+- province_size_level_5
+- province_size_level_6
+- province_size_level_7
+- province_size_level_8
+- province_size_level_9
+- province_size_level_10
+- popular_opinion_level_0
+- popular_opinion_level_1
+- popular_opinion_level_2
+- popular_opinion_level_3
+- popular_opinion_level_4
+- popular_opinion_level_5
+- popular_opinion_level_6
+- popular_opinion_level_7
+- popular_opinion_level_8
+- county_control_level_0
+- county_control_level_1
+- county_control_level_2
+- county_control_level_3
+- county_control_level_4
+- county_control_level_5
+- county_control_level_6
+- county_control_level_7
+- county_control_level_8
+- county_control_level_9
+- county_control_level_10
+- county_control_level_11
+- county_control_level_12
+- county_control_level_13
+- county_control_level_14
+- county_control_level_15
+- county_control_level_16
+- county_control_level_17
+- county_control_level_18
+- county_control_level_19
+- county_control_level_20
 
 ### 00_befriend_scheme_modifiers.txt（41 条目）
 
@@ -1652,12 +1665,13 @@
 - admiring_deeds_modifier
 - tutorial_extra_success_chance_modifier
 
-### 00_bookmark_modifiers.txt（4 条目）
+### 00_bookmark_modifiers.txt（5 条目）
 
 - matilda_of_canossa_modifier
 - police_chief_of_baghdad_modifier
 - abandoned_marriage_modifier
 - guiscard_modifier
+- wuhsha_al_dallala_modifier
 
 ### 00_bp1_modifiers_dan.txt（5 条目）
 
@@ -1766,7 +1780,7 @@
 - modifier_great_fertility_counsel
 - modifier_bad_fertility_counsel
 
-### 00_county_corruption_modifiers.txt（16 条目）
+### 00_county_corruption_modifiers.txt（48 条目）
 
 - county_corruption_inefficient_tax_collection_modifier
 - county_corruption_deserting_levies_modifier
@@ -1784,6 +1798,38 @@
 - county_corruption_upset_shepherds_modifier
 - county_corruption_rogue_warriors_modifier
 - county_corruption_unruly_nomads_modifier
+- county_corruption_inefficient_tax_collection_modifier_2
+- county_corruption_deserting_levies_modifier_2
+- county_corruption_smuggling_ring_modifier_2
+- county_corruption_bandits_rampant_modifier_2
+- county_corruption_inefficient_census_modifier_2
+- county_corruption_lack_of_sheriffs_modifier_2
+- county_corruption_lack_of_courts_modifier_2
+- county_corruption_thieves_guild_modifier_2
+- county_corruption_unsafe_highways_modifier_2
+- county_corruption_uncooperative_guilds_modifier_2
+- county_corruption_lackluster_administration_modifier_2
+- county_corruption_roaming_bandits_modifier_2
+- county_corruption_wild_beast_attacks_modifier_2
+- county_corruption_upset_shepherds_modifier_2
+- county_corruption_rogue_warriors_modifier_2
+- county_corruption_unruly_nomads_modifier_2
+- county_corruption_inefficient_tax_collection_modifier_3
+- county_corruption_deserting_levies_modifier_3
+- county_corruption_smuggling_ring_modifier_3
+- county_corruption_bandits_rampant_modifier_3
+- county_corruption_inefficient_census_modifier_3
+- county_corruption_lack_of_sheriffs_modifier_3
+- county_corruption_lack_of_courts_modifier_3
+- county_corruption_thieves_guild_modifier_3
+- county_corruption_unsafe_highways_modifier_3
+- county_corruption_uncooperative_guilds_modifier_3
+- county_corruption_lackluster_administration_modifier_3
+- county_corruption_roaming_bandits_modifier_3
+- county_corruption_wild_beast_attacks_modifier_3
+- county_corruption_upset_shepherds_modifier_3
+- county_corruption_rogue_warriors_modifier_3
+- county_corruption_unruly_nomads_modifier_3
 
 ### 00_county_festival_modifiers.txt（3 条目）
 
@@ -1791,7 +1837,7 @@
 - prosperity_festival_find_love_modifier
 - prosperity_festival_health_modifier
 
-### 00_county_modifiers.txt（47 条目）
+### 00_county_modifiers.txt（57 条目）
 
 - county_base_modifier
 - siege_modifier
@@ -1840,6 +1886,16 @@
 - mpo_siberian_permafrost_modifier
 - mpo_siberian_permafrost_modifier_bad
 - restore_carantania_modifier
+- debase_coinage_county_modifier
+- bounty_of_the_nile_modifier
+- fertile_desert_mountains_modifier
+- granary_of_the_mediterranean_modifier
+- granary_of_hindustan_modifier
+- granary_of_the_south_modifier
+- cedars_of_lebanon_modifier
+- pearl_fishing_banks_modifier
+- walrus_ivory_modifier
+- naphta_modifier
 
 ### 00_court_chaplain_task_modifiers.txt（6 条目）
 
@@ -2238,6 +2294,41 @@
 - fabricate_hook_studied_personality_modifier
 - fabricate_hook_suspicious_target_modifier
 
+### 00_gdp_guelph_ghibelline_modifiers.txt（32 条目）
+
+- left_ghibellines_modifier
+- left_guelphs_modifier
+- guelph_victor_modifier
+- favored_by_pope_modifier
+- guelph_loser_modifier
+- ghibelline_victor_modifier
+- scorned_pope_modifier
+- ghibelline_loser_modifier
+- ghibelline_victory_dynasty_modifier
+- ghibelline_defeat_dynasty_modifier
+- compromising_leader_modifier
+- ghibelline_compromise_county_modifier
+- instated_peace_privilege_modifier
+- lombard_founder_modifier
+- vilified_ruler_modifier
+- gg_involvement_modifier
+- guelph_efforts_recognized_modifier
+- ghibelline_efforts_recognized_modifier
+- scheme_clever_coaxing_modifier
+- scheme_innocent_knickknack_modifier
+- scheme_resplendent_letter_modifier
+- scheme_convincing_letter_modifier
+- scheme_intercepted_letter_modifier
+- scheme_leverage_involvement_rr_modifier
+- scheme_leverage_involvement_modifier
+- scheme_shady_characters_modifier
+- scheme_behind_the_scenes_rr_modifier
+- scheme_behind_the_scenes_modifier
+- scheme_revered_reputation_modifier
+- scheme_dazzling_devoutness_modifier
+- scheme_undermined_ruler_modifier
+- scheme_rumor_mill_modifier
+
 ### 00_generic_scheme_modifiers.txt（5 条目）
 
 - watchful_modifier
@@ -2332,7 +2423,7 @@
 - stewardship_duty_value_of_service_exchange_modifier
 - stewardship_duty_defensive_understanding_modifier
 - stewardship_duty_improved_paths_modifier
-- stewardship_duty_development_plans_modifier
+- stewardship_duty_prosperity_plans_modifier
 - stewardship_duty_affirmed_rule_modifier
 - stewardship_domain_county_worked_to_death_modifier
 - stewardship_domain_personal_ownership_modifier
@@ -2885,9 +2976,26 @@
 - party_baron_reflection_modifier
 - party_baron_endorsed_successor_modifier
 
-### 00_perk_modifiers.txt（28 条目）
+### 00_perk_modifiers.txt（45 条目）
 
 - embassies_perk_modifier
+- merchant_embassies_perk_modifier
+- public_credit_perk_modifier
+- company_ledger_perk_modifier
+- merchant_missionary_network_modifier
+- merchant_scholastic_exceptions_modifier
+- merchant_defender_of_the_faith_competitiveness_modifier
+- merchant_known_along_the_route_modifier
+- merchant_learn_on_the_job_diplomacy_modifier
+- merchant_learn_on_the_job_martial_modifier
+- merchant_learn_on_the_job_stewardship_modifier
+- merchant_learn_on_the_job_intrigue_modifier
+- merchant_learn_on_the_job_learning_modifier
+- merchant_learn_on_the_job_prowess_modifier
+- merchant_company_law_family_modifier
+- merchant_company_law_artisan_modifier
+- merchant_company_law_creditor_modifier
+- merchant_company_law_caravaneer_modifier
 - confidants_perk_modifier
 - sound_foundations_martial_gain
 - sound_foundations_diplomacy_gain
@@ -2916,10 +3024,11 @@
 - domain_tutoring_stewardship
 - domain_tutoring_learning
 
-### 00_personal_scheme_modifiers.txt（2 条目）
+### 00_personal_scheme_modifiers.txt（3 条目）
 
 - 6540_exotic_wares_gift_modifier
 - 6540_exotic_wares_gift_super_modifier
+- difficult_language_modifier
 
 ### 00_prison_modifiers.txt（9 条目）
 
@@ -2933,10 +3042,12 @@
 - stress_starvation_minor
 - failing_health
 
-### 00_province_modifiers.txt（37 条目）
+### 00_province_modifiers.txt（54 条目）
 
 - coastal_land_province_modifier
 - coastal_land_county_capital_province_modifier
+- riverside_land_province_modifier
+- lakeside_land_province_modifier
 - independent_realm_capital_province_modifier
 - high_tier_vassal_capital_province_modifier
 - capital_province_modifier
@@ -2944,8 +3055,17 @@
 - capital_duchy_province_modifier
 - county_capital_province_modifier
 - temporary_fort_province_modifier
+- province_size_level_1_stabilization_modifier
+- province_size_level_2_stabilization_modifier
+- province_size_level_3_stabilization_modifier
+- province_size_level_4_stabilization_modifier
+- province_size_level_5_stabilization_modifier
+- province_size_level_6_stabilization_modifier
+- province_size_level_7_stabilization_modifier
+- province_size_level_8_stabilization_modifier
+- province_size_level_9_stabilization_modifier
+- province_size_level_10_stabilization_modifier
 - disabled_fort_province_modifier
-- fertile_desert_mountains_modifier
 - parliamentary_bureaucracy_modifier
 - flourishing_culture_modifier
 - hungarian_resettlement_modifier
@@ -2972,6 +3092,12 @@
 - innkeeper_average_result
 - innkeeper_good_result
 - plague_preparations_modifier
+- carrara_marble_modifier
+- mastic_of_chios_modifier
+- kashi_lustreware_modifier
+- venetian_glass_modifier
+- toledo_bladesmiths_modifier
+- samarkandi_paper_modifier
 
 ### 00_relationship_modifiers.txt（7 条目）
 
@@ -3051,7 +3177,7 @@
 - romance_less_talented_troubadour_modifier
 - hopeless_romantic_modifier
 
-### 00_scheme_modifiers.txt（370 条目）
+### 00_scheme_modifiers.txt（371 条目）
 
 - outside_help_modifier
 - extra_careful_modifier
@@ -3423,6 +3549,7 @@
 - scheme_end_buff_t2_modifier
 - scheme_end_buff_t3_modifier
 - scheme_end_buff_t4_modifier
+- gdp_merchant_translator_buff_modifier
 
 ### 00_seduce_character_modifiers.txt（20 条目）
 
@@ -3558,11 +3685,11 @@
 - steward_administration_embraced_modifier
 - steward_de_jure_denied_modifier
 - steward_redoubled_taxation_modifier
-- steward_redoubled_development_modifier
+- steward_redoubled_prosperity_modifier
 - steward_accept_culture_reduced_taxes_modifier
-- steward_accept_culture_reduced_development_spread_modifier
+- steward_accept_culture_reduced_prosperity_spread_modifier
 - steward_accept_culture_increased_opinion_modifier
-- steward_accept_culture_increased_development_spread_modifier
+- steward_accept_culture_increased_prosperity_spread_modifier
 
 ### 00_story_cycle_murders_at_court_modifiers.txt（2 条目）
 
@@ -3673,7 +3800,7 @@
 
 ### 00_trait_modifiers.txt（2 条目）
 
-- diligent_development_focus
+- diligent_prosperity_focus
 - deceitful_progress_hostile_schemes_modifier
 
 ### 00_travel_modifiers.txt（74 条目）
@@ -3784,19 +3911,26 @@
 
 - ruler_objective_region_conquered_modifier
 
-### 00_unity_modifiers.txt（9 条目）
+### 00_unity_modifiers.txt（16 条目）
 
 - unity_antagonistic_maa_modifier
 - unity_competitive_spies_modifier
+- unity_competitive_spies_landless_merchant_modifier
 - unity_impassive_tax_modifier
 - unity_friendly_bailiff_modifier
 - unity_harmonious_placation_modifier
 - unity_house_organized_for_war_modifier
 - unity_house_focused_on_economy_modifier
-- fp3_unity_promoted_development_modifier
+- fp3_unity_promoted_prosperity_modifier
 - fp3_unity_improved_logistics_modifier
+- unity_regional_networks_landless_merchant_modifier
+- unity_family_business_landless_merchant_modifier
+- unity_merchant_prosperity_modifier
+- unity_merchant_bailiffs_modifier
+- unity_promoting_diligence_modifier
+- unity_promoting_excess_modifier
 
-### 00_wanderer_lifestyle_modifiers.txt（102 条目）
+### 00_wanderer_lifestyle_modifiers.txt（97 条目）
 
 - the_home_away_from_home_modifier
 - local_arbitration_modifier_1
@@ -3826,12 +3960,13 @@
 - mustered_archer_cavalry
 - no_stone_unturned_perk_modifier
 - no_stone_unturned_boosted_perk_modifier
+- local_inspection_perk_modifier
 - destination_inspired_by_language
 - wanderer_restlessness_modifier
 - inspection_mid_activity_tax_average_modifier
 - inspection_mid_activity_tax_great_modifier
-- inspection_mid_activity_development_average_modifier
-- inspection_mid_activity_development_great_modifier
+- inspection_mid_activity_prosperity_average_modifier
+- inspection_mid_activity_prosperity_great_modifier
 - inspection_mid_activity_control_average_modifier
 - inspection_mid_activity_control_great_modifier
 - inspection_mid_activity_levy_average_modifier
@@ -3840,12 +3975,9 @@
 - inspection_mid_activity_opinion_great_modifier
 - inspection_reward_average_tax_modifier
 - inspection_reward_focused_tax_modifier
-- inspection_reward_focused_development_modifier
 - inspection_reward_focused_control_modifier
 - inspection_reward_average_levy_modifier
 - inspection_reward_focused_levy_modifier
-- inspection_reward_average_popular_opinion_modifier
-- inspection_reward_focused_popular_opinion_modifier
 - inspection_reward_focused_opinion_modifier
 - inspection_reward_focused_popular_opinion_character_modifier
 - inspection_reward_focused_vassal_acceptance
@@ -3861,8 +3993,6 @@
 - inspection_old_roads_of_x_domain_modifier
 - inspection_old_roads_of_x_populace_modifier
 - inspection_old_roads_negative_modifier
-- inspection_fighting_guilds_innkeepers_guild_modifier
-- inspection_fighting_guilds_artists_guild_modifier
 - inspection_fire_spreading_modifier
 - inspection_selfless_ruler_modifier
 - inspection_expanding_walls_new_modifier
@@ -3879,7 +4009,6 @@
 - inspection_hidden_hinterlands_hunters_modifier
 - inspection_learning_intent_building_modifier
 - inspection_learning_intent_flourishing_metal_trade_modifier
-- inspection_learning_intent_local_guilds_modifier
 - inspection_survey_new_goods_modifier
 - inspection_second_try_modifier
 - inspection_third_try_modifier
@@ -4007,8 +4136,8 @@
 - bp1_yearly_2023_honorable_modifier
 - bp1_yearly_2023_dishonorable_modifier
 - bp1_yearly_2030_failed_student_modifier
-- bp1_yearly_2050_compromise_development_modifier
-- bp1_yearly_2050_development_modifier
+- bp1_yearly_2050_compromise_prosperity_modifier
+- bp1_yearly_2050_prosperity_modifier
 - bp1_yearly_2070_accepting_modifier
 - bp1_yearly_2070_zealous_modifier
 - bp1_yearly_2070_cynicism_modifier
@@ -4437,7 +4566,7 @@
 - fp3_treatise_on_cavalry_modifier
 - fp3_treatise_on_siege_modifier
 - fp3_treatise_on_strategy_modifier
-- fp3_treatise_on_development_modifier
+- fp3_treatise_on_prosperity_modifier
 - fp3_treatise_on_building_modifier
 - fp3_treatise_on_control_modifier
 - fp3_treatise_on_mathematics_modifier
@@ -5315,16 +5444,17 @@
 - fleeting_learning_knowledge_modifier
 - fleeting_prowess_knowledge_modifier
 
-### 07_ep3_modifiers.txt（410 条目）
+### 07_ep3_modifiers.txt（424 条目）
 
 - ep3_estate_hired_agents_modifier
 - ep3_estate_bolster_security_modifier
 - ep3_estate_governor_patrols_modifier
 - ep3_estate_granary_modifier
-- ep3_eparch_county_opinion_modifier
+- ep3_estate_household_clerks_house_modifier
+- ep3_eparch_popular_opinion_modifier
 - ep3_eparch_troops_modifier
 - ep3_eparch_control_modifier
-- ep3_eparch_development_modifier
+- ep3_eparch_prosperity_modifier
 - ep3_eparch_fortified_capital_modifier
 - ep3_eparch_somewhat_fortified_capital_modifier
 - ep3_eparch_plague_protection_modifier
@@ -5431,8 +5561,9 @@
 - ep3_governor_yearly_8050_imperial_recruiter_modifier
 - ep3_governor_yearly_8050_imperial_fortification_modifier
 - ep3_governor_yearly_8050_imperial_resources_modifier
-- ep3_governor_yearly_8040_province_development_modifier
-- ep3_governor_yearly_8040_domicile_development_modifier
+- ep3_governor_yearly_8060_efficiency_drop_modifier
+- ep3_governor_yearly_8040_province_prosperity_modifier
+- ep3_governor_yearly_8040_domicile_prosperity_modifier
 - ep3_governor_yearly_8040_across_things_modifier
 - ep3_governor_yearly_8040_overwhelmed_modifier
 - ep3_governor_yearly_8040_shirker_modifier
@@ -5451,8 +5582,8 @@
 - taxed_and_pressganged_tenants_modifier
 - ep3_century_celebration_county_modifier
 - ep3_foundation_celebration_county_modifier
-- ep3_development_sacrifice_modifier
-- ep3_development_waning_modifier
+- ep3_prosperity_sacrifice_modifier
+- ep3_prosperity_waning_modifier
 - ep3_school_building_county_modifier
 - ep3_grammar_school_county_modifier
 - ep3_leviathan_loose_county_modifier
@@ -5465,6 +5596,12 @@
 - ep3_settling_nomads_county_modifier
 - ep3_tunnels_encouraged_county_modifier
 - ep3_population_control_county_modifier
+- ep3_emperor_yearly_2150_found_truth_modifier
+- ep3_emperor_yearly_2160_frontier_success_modifier
+- ep3_emperor_yearly_2160_frontier_failure_modifier
+- ep3_emperor_yearly_2170_tunnels_closed_modifier
+- ep3_emperor_yearly_2190_honest_modifier
+- ep3_emperor_yearly_2200_embezzling_modifier
 - ep3_open_granary_county_modifier
 - ep3_roaming_shepherds_county_modifier
 - ep3_monastic_quiet_county_modifier
@@ -5584,9 +5721,9 @@
 - ep3_peaceful_administrator_modifier
 - independent_administrator_modifier
 - ep3_neglecting_house_head_duties_modifier
-- restore_rome_devastated_county_opinion_modifier
-- restore_rome_lowered_county_opinion_modifier
-- restore_rome_recuperated_county_opinion_modifier
+- restore_rome_devastated_popular_opinion_modifier
+- restore_rome_lowered_popular_opinion_modifier
+- restore_rome_recuperated_popular_opinion_modifier
 - ep3_foraged_plants
 - ep3_tuition_paid
 - ep3_from_far_and_wide
@@ -5607,6 +5744,7 @@
 - ep3_renounced_governorship_merit
 - renounced_governorship_japan
 - ep3_renounced_estate
+- tgp_western_renounced_estate
 - ep3_good_estate_modifier
 - ep3_extra_security_modifier
 - ep3_no_secrets_modifier
@@ -5628,6 +5766,11 @@
 - ep3_invested_in_power_center_modifier
 - ep3_cosmopolitan_domicile_modifier
 - ep3_ignoring_realm_decline_modifier
+- ep3_governor_yearly_3002_landlord_fight_modifier
+- ep3_governor_yearly_3002_landlord_wins_modifier
+- ep3_governor_yearly_3002_landlord_dominates_modifier
+- ep3_governor_yearly_3050_neglect_duties_modifier
+- ep3_governor_yearly_3080_ignored_isolation_modifier
 - ep3_supply_issues_modifier
 - ep3_priest_friend_same_modifier
 - ep3_priest_friend_different_modifier
@@ -5769,7 +5912,7 @@
 - learning_beth_nahrain_house_modifier
 - martial_beth_nahrain_house_modifier
 
-### 08_bp3_modifiers.txt（60 条目）
+### 08_bp3_modifiers.txt（59 条目）
 
 - holy_pilgrims_travel_modifier
 - holy_knights_travel_modifier
@@ -5778,7 +5921,6 @@
 - kind_ruler_modifier
 - travel_extra_building_resources_modifier
 - travel_extra_building_resources_character_modifier
-- popular_beer_character_modifier
 - church_investment_modifier
 - church_investment_cost_modifier
 - charlatan_inspiration
@@ -5841,8 +5983,8 @@
 
 ### 09_mpo_kurultai_modifiers.txt（4 条目）
 
-- kurultai_task_increase_county_opinion_modifier
-- kurultai_task_decrease_county_opinion_modifier
+- kurultai_task_increase_popular_opinion_modifier
+- kurultai_task_decrease_popular_opinion_modifier
 - kurultai_task_increase_culture_opinion_modifier
 - kurultai_task_decrease_culture_opinion_modifier
 
@@ -6120,7 +6262,7 @@
 - bp4_lazy_realm_focus_modifier
 - confederation_warrior_modifier
 - ach_enlightened_centrist
-- coronation_advocate_domain_county_opinion_modifier
+- coronation_advocate_domain_popular_opinion_modifier
 - ach_social_distancing_modifier
 - ach_drunk_province_1_modifier
 - ach_drunk_province_2_modifier
@@ -6161,9 +6303,9 @@
 - coronation_loyal_to_the_crown_modifier
 - coronation_still_loyal_modifier
 - ach_intent_defense_boost_modifier
-- ach_intent_development_boost_modifier
+- ach_intent_prosperity_boost_modifier
 - ach_intent_vassal_defensive_boost_modifier
-- ach_intent_vassal_development_boost_modifier
+- ach_intent_vassal_prosperity_boost_modifier
 - ach_intent_better_councillors_modifier
 - ach_intent_imprisonment_modifier
 - ach_intent_faction_joining_prevention_modifier
@@ -6302,7 +6444,7 @@
 - tgp_strengthen_capital_architects_modifier
 - tgp_strengthen_capital_engineers_modifier
 - tgp_strengthen_capital_sculptors_modifier
-- tgp_minister_project_development_modifier
+- tgp_minister_project_prosperity_modifier
 - tgp_grand_canal_modifier
 - tgp_minister_project_establish_control_modifier
 - tgp_minister_project_train_troops_modifier
@@ -6507,7 +6649,7 @@
 - tgp_natural_disaster_keeper_of_order
 - tgp_natural_disaster_cleanup_material_recovery
 - tgp_natural_disaster_reconstruction_economic_activity
-- tgp_natural_disaster_reconstruction_development_growth
+- tgp_natural_disaster_reconstruction_prosperity_growth
 - tgp_natural_disaster_resettlement_domain_burden
 - tgp_natural_disaster_resettlement_taxation_loss
 - tgp_natural_disaster_resettlement_levy_growth
@@ -6531,7 +6673,7 @@
 ### 10_tgp_tai_migration_modifiers.txt（4 条目）
 
 - tgp_tai_migration_migration_happened_county_modifier
-- tgp_tai_migration_skilled_development_county_modifier
+- tgp_tai_migration_skilled_prosperity_county_modifier
 - tgp_tai_migration_migration_happened_character_modifier
 - tgp_tai_migration_migration_rejected_character_modifier
 
@@ -6540,6 +6682,31 @@
 - good_health_modifier
 - strong_family_modifier
 - festival_spirit_modifier
+
+### 11_gdp_merchant_modifiers.txt（22 条目）
+
+- merchant_patron_fund_mercenaries_modifier
+- gdp_ennobled_merchant_modifier_1
+- gdp_ennobled_merchant_modifier_2
+- gdp_ennobled_merchant_modifier_3
+- merchant_fund_mercenaries_modifier
+- associate_taking_assistance_modifier
+- associate_following_example_modifier
+- associate_setting_example_modifier
+- ruler_stifles_company_modifier
+- focused_trade_modifier
+- sidelined_trade_modifier
+- diverted_trade_modifier
+- merchant_prosperity_advice_modifier
+- trade_cooperation_modifier
+- investor_scammer_modifier
+- friendly_tip_exploit_modifier
+- friendly_tip_betrayed_modifier
+- gdp_usury_discouraged_modifier
+- gdp_usury_outsider_lending_modifier
+- gdp_usury_condemned_modifier
+- gdp_usury_penance_seized_goods_modifier
+- gdp_usury_penance_same_faith_scandal_modifier
 
 ### 11_pam_study_faith_modifiers.txt（9 条目）
 
@@ -6591,7 +6758,7 @@
 - debug_test_story_prayer_modifier
 - debug_test_story_weak_stomach_modifier
 
-### 12_pam_modifiers.txt（182 条目）
+### 12_pam_modifiers.txt（183 条目）
 
 - tenet_be_fruitful_and_multiply_child_modifier
 - tenet_be_fruitful_and_multiply_parent_modifier
@@ -6626,6 +6793,7 @@
 - pam_military_order_improvement_modifier
 - pam_tithes_or_mercy_harsh_tithes_modifier
 - pam_tithes_or_mercy_show_mercy_modifier
+- pam_bishop_or_merchant_modifier
 - pam_blissful_harmony_gospel_modifier
 - pam_blissful_harmony_restless_ambition_modifier
 - pam_stone_for_god_estate_build_discount_modifier
@@ -6668,7 +6836,7 @@
 - pam_cathedral_treadwheel_crane_modifier
 - pam_cathedral_cantoria_scam_modifier
 - pam_cathedral_famed_choir_boy_modifier
-- pam_cardinal_order_improve_development_modifier
+- pam_cardinal_order_improve_prosperity_modifier
 - pam_cardinal_order_convert_faith_modifier
 - pam_cardinal_order_increase_control_modifier
 - pam_cardinal_order_accelerate_cultural_fascination_modifier
@@ -6781,10 +6949,899 @@
 - clerical_chastity_vow_modifier
 - clerical_chastity_renounced_vow_clergy_disapproval_modifier
 
-### decision_modifiers.txt（2 条目）
+### decision_modifiers.txt（3 条目）
 
 - form_cumbria_decision_house_modifier
 - restore_carthage_house_modifier
+- debase_coinage_ruler_modifier
+
+### gdp_activity_carnival_modifiers.txt（14 条目）
+
+- gdp_carnival_prosperity_modifier
+- gdp_civic_commitment_modifier
+- gdp_down_to_earth_ruler_modifier
+- gdp_self_aggrandizing_decorations_modifier
+- gdp_masked_face_modifier
+- gdp_masked_vigile_modifier
+- gdp_order_and_business_modifier
+- gdp_echos_of_carnival_modifier
+- gdp_carnival_basic_celebration_modifier
+- gdp_carnival_extensive_celebration_modifier
+- gdp_carnival_extravagant_celebration_modifier
+- gdp_masked_paranoia_modifier
+- gdp_terrifying_procession_modifier
+- gdp_pious_procession_modifier
+
+### gdp_burgher_modifiers.txt（22 条目）
+
+- hanseatic_league_member_modifier
+- hanseatic_league_county_modifier
+- gdp_caught_agitating_modifier
+- merchant_civic_advantage_modifier
+- civic_privileges_county_modifier
+- civic_privilege_market_rights_1_county_modifier
+- civic_privilege_market_rights_2_county_modifier
+- civic_privilege_market_rights_3_county_modifier
+- civic_privilege_guild_rights_1_county_modifier
+- civic_privilege_guild_rights_2_county_modifier
+- civic_privilege_guild_rights_3_county_modifier
+- civic_privilege_tax_exemption_1_county_modifier
+- civic_privilege_tax_exemption_2_county_modifier
+- civic_privilege_tax_exemption_3_county_modifier
+- civic_privilege_militia_charter_1_county_modifier
+- civic_privilege_militia_charter_2_county_modifier
+- civic_privilege_militia_charter_3_county_modifier
+- burgher_grievance_county_modifier
+- burgher_broken_charter_county_modifier
+- gdp_civic_agitation_county_modifier
+- gdp_civic_agitation_popular_republic_modifier
+- hanseatic_staple_right_county_modifier
+
+### gdp_merchant_modifiers.txt（525 条目）
+
+- gdp_merchant_starting_capacity_modifier
+- gdp_tgf_heavier_loads_modifier
+- gdp_tgf_seven_storehouses_modifier
+- gdp_tgf_sweet_reputation_modifier
+- gdp_tgf_beekeeper_modifier
+- gdp_tgf_alcohol_opportunist_modifier
+- gdp_tgf_two_grades_modifier
+- gdp_tgf_road_millet_modifier
+- gdp_tgf_cheap_rice_modifier
+- gdp_tgf_keeps_the_fast_modifier
+- gdp_tgf_parchment_supplier_modifier
+- gdp_tgf_curing_room_modifier
+- gdp_tgf_temple_supplier_modifier
+- gdp_tgf_chancery_stationer_modifier
+- gdp_tgf_tall_mast_modifier
+- gdp_tgf_our_timber_modifier
+- gdp_tgf_our_timber_renowned_modifier
+- gdp_tgf_builders_rate_castle_full_modifier
+- gdp_tgf_builders_rate_castle_small_modifier
+- gdp_tgf_builders_rate_church_full_modifier
+- gdp_tgf_builders_rate_church_small_modifier
+- gdp_tgf_builders_rate_city_full_modifier
+- gdp_tgf_builders_rate_city_small_modifier
+- gdp_tgf_builders_rate_generic_full_modifier
+- gdp_tgf_builders_rate_generic_small_modifier
+- gdp_tgf_keep_the_best_modifier
+- gdp_tgf_plentiful_stalls_modifier
+- gdp_tgf_well_supplied_host_modifier
+- gdp_tgf_bee_stung_modifier
+- gdp_tgf_awake_and_alert_modifier
+- gdp_tgf_tea_drinker_modifier
+- gdp_tgf_well_grazed_meadows_modifier
+- gdp_tgf_lacquer_rash_modifier
+- gdp_tgf_theriac_supply_modifier
+- gdp_tgf_theriac_dose_modifier
+- gdp_tgf_theriac_peddlers_modifier
+- gdp_tgf_known_mark_modifier
+- gdp_tgf_kept_edge_modifier
+- gdp_tgf_price_war_modifier
+- gdp_tgf_vein_share_modifier
+- gdp_tgf_ballast_trick_modifier
+- gdp_tgf_hop_trader_modifier
+- gdp_tgf_packed_tight_modifier
+- gdp_tgf_packed_well_modifier
+- gdp_tgf_sealed_stock_wait_modifier
+- gdp_tgf_quick_seal_modifier
+- gdp_tgf_broker_reach_modifier
+- gdp_tgf_trained_hand_modifier
+- gdp_tgf_extra_hands_modifier
+- gdp_tgf_outbid_modifier
+- gdp_tgf_watched_bidding_modifier
+- gdp_tgf_bled_by_the_handful_modifier
+- gdp_tgf_market_day_crowds_modifier
+- gdp_tgf_further_roads_modifier
+- gdp_tgf_ear_alcohol_modifier
+- gdp_tgf_ear_comforts_modifier
+- gdp_tgf_ear_cereals_modifier
+- gdp_tgf_ear_meat_modifier
+- gdp_tgf_ear_beasts_of_burden_modifier
+- gdp_tgf_ear_salt_modifier
+- gdp_tgf_ear_clothes_modifier
+- gdp_tgf_ear_fabrics_modifier
+- gdp_tgf_ear_dyes_modifier
+- gdp_tgf_ear_alum_modifier
+- gdp_tgf_ear_stone_modifier
+- gdp_tgf_ear_carpentry_supplies_modifier
+- gdp_tgf_ear_base_metals_modifier
+- gdp_tgf_ear_luxury_items_modifier
+- gdp_tgf_ear_jewelry_materials_modifier
+- gdp_tgf_ear_precious_metals_modifier
+- gdp_tgf_ear_medicaments_modifier
+- gdp_tgf_ear_incense_modifier
+- gdp_tgf_ear_luxury_consumption_modifier
+- gdp_tgf_ear_books_modifier
+- gdp_tgf_careful_handling_alcohol_modifier
+- gdp_tgf_careful_handling_comforts_modifier
+- gdp_tgf_careful_handling_cereals_modifier
+- gdp_tgf_careful_handling_meat_modifier
+- gdp_tgf_careful_handling_beasts_of_burden_modifier
+- gdp_tgf_careful_handling_salt_modifier
+- gdp_tgf_careful_handling_clothes_modifier
+- gdp_tgf_careful_handling_fabrics_modifier
+- gdp_tgf_careful_handling_dyes_modifier
+- gdp_tgf_careful_handling_alum_modifier
+- gdp_tgf_careful_handling_stone_modifier
+- gdp_tgf_careful_handling_carpentry_supplies_modifier
+- gdp_tgf_careful_handling_base_metals_modifier
+- gdp_tgf_careful_handling_luxury_items_modifier
+- gdp_tgf_careful_handling_jewelry_materials_modifier
+- gdp_tgf_careful_handling_precious_metals_modifier
+- gdp_tgf_careful_handling_medicaments_modifier
+- gdp_tgf_careful_handling_incense_modifier
+- gdp_tgf_careful_handling_luxury_consumption_modifier
+- gdp_tgf_careful_handling_books_modifier
+- gdp_tgf_renowned_dealer_modifier
+- gdp_tgf_bejeweled_modifier
+- gdp_tgf_silk_clad_modifier
+- gdp_tgf_outside_partners_alcohol_modifier
+- gdp_tgf_outside_partners_comforts_modifier
+- gdp_tgf_outside_partners_cereals_modifier
+- gdp_tgf_outside_partners_meat_modifier
+- gdp_tgf_outside_partners_beasts_of_burden_modifier
+- gdp_tgf_outside_partners_salt_modifier
+- gdp_tgf_outside_partners_clothes_modifier
+- gdp_tgf_outside_partners_fabrics_modifier
+- gdp_tgf_outside_partners_dyes_modifier
+- gdp_tgf_outside_partners_alum_modifier
+- gdp_tgf_outside_partners_stone_modifier
+- gdp_tgf_outside_partners_carpentry_supplies_modifier
+- gdp_tgf_outside_partners_base_metals_modifier
+- gdp_tgf_outside_partners_luxury_items_modifier
+- gdp_tgf_outside_partners_jewelry_materials_modifier
+- gdp_tgf_outside_partners_precious_metals_modifier
+- gdp_tgf_outside_partners_medicaments_modifier
+- gdp_tgf_outside_partners_incense_modifier
+- gdp_tgf_outside_partners_luxury_consumption_modifier
+- gdp_tgf_outside_partners_books_modifier
+- gdp_tgf_kept_in_family_alcohol_modifier
+- gdp_tgf_kept_in_family_comforts_modifier
+- gdp_tgf_kept_in_family_cereals_modifier
+- gdp_tgf_kept_in_family_meat_modifier
+- gdp_tgf_kept_in_family_beasts_of_burden_modifier
+- gdp_tgf_kept_in_family_salt_modifier
+- gdp_tgf_kept_in_family_clothes_modifier
+- gdp_tgf_kept_in_family_fabrics_modifier
+- gdp_tgf_kept_in_family_dyes_modifier
+- gdp_tgf_kept_in_family_alum_modifier
+- gdp_tgf_kept_in_family_stone_modifier
+- gdp_tgf_kept_in_family_carpentry_supplies_modifier
+- gdp_tgf_kept_in_family_base_metals_modifier
+- gdp_tgf_kept_in_family_luxury_items_modifier
+- gdp_tgf_kept_in_family_jewelry_materials_modifier
+- gdp_tgf_kept_in_family_precious_metals_modifier
+- gdp_tgf_kept_in_family_medicaments_modifier
+- gdp_tgf_kept_in_family_incense_modifier
+- gdp_tgf_kept_in_family_luxury_consumption_modifier
+- gdp_tgf_kept_in_family_books_modifier
+- gdp_tgf_outside_capital_modifier
+- gdp_tgf_outside_capital_renowned_modifier
+- gdp_tgf_old_habits_alcohol_modifier
+- gdp_tgf_old_habits_comforts_modifier
+- gdp_tgf_old_habits_cereals_modifier
+- gdp_tgf_old_habits_meat_modifier
+- gdp_tgf_old_habits_beasts_of_burden_modifier
+- gdp_tgf_old_habits_salt_modifier
+- gdp_tgf_old_habits_clothes_modifier
+- gdp_tgf_old_habits_fabrics_modifier
+- gdp_tgf_old_habits_dyes_modifier
+- gdp_tgf_old_habits_alum_modifier
+- gdp_tgf_old_habits_stone_modifier
+- gdp_tgf_old_habits_carpentry_supplies_modifier
+- gdp_tgf_old_habits_base_metals_modifier
+- gdp_tgf_old_habits_luxury_items_modifier
+- gdp_tgf_old_habits_jewelry_materials_modifier
+- gdp_tgf_old_habits_precious_metals_modifier
+- gdp_tgf_old_habits_medicaments_modifier
+- gdp_tgf_old_habits_incense_modifier
+- gdp_tgf_old_habits_luxury_consumption_modifier
+- gdp_tgf_old_habits_books_modifier
+- gdp_tgf_itinerary_artifact_modifier
+- gdp_tgf_kitchen_demand_modifier
+- gdp_tgf_eye_for_fruit_modifier
+- gdp_tgf_bruised_modifier
+- gdp_tgf_stiff_neck_modifier
+- gdp_tgf_fair_wages_modifier
+- gdp_tgf_underpaid_gatherers_modifier
+- gdp_tgf_packed_tight_renowned_modifier
+- gdp_tgf_quick_seal_renowned_modifier
+- gdp_tgf_broker_reach_renowned_modifier
+- gdp_tgf_trained_hand_renowned_modifier
+- gdp_tgf_extra_hands_renowned_modifier
+- gdp_tgf_outbid_renowned_modifier
+- gdp_tgf_watched_bidding_renowned_modifier
+- gdp_tgf_further_roads_renowned_modifier
+- gdp_tgf_kitchen_demand_renowned_modifier
+- gdp_tgf_fair_wages_renowned_modifier
+- gdp_tgf_known_mark_renowned_modifier
+- gdp_tgf_kept_edge_renowned_modifier
+- gdp_tgf_price_war_renowned_modifier
+- gdp_tgf_vein_share_renowned_modifier
+- gdp_tgf_ballast_trick_renowned_modifier
+- gdp_tgf_hop_trader_renowned_modifier
+- gdp_tgf_heavier_loads_renowned_modifier
+- gdp_tgf_keep_the_best_renowned_modifier
+- gdp_tgf_plentiful_stalls_renowned_modifier
+- gdp_tgf_well_supplied_host_renowned_modifier
+- gdp_tgf_well_grazed_meadows_renowned_modifier
+- gdp_tgf_theriac_peddlers_renowned_modifier
+- gdp_tgf_theriac_supply_renowned_modifier
+- gdp_tgf_builders_rate_castle_full_renowned_modifier
+- gdp_tgf_builders_rate_castle_small_renowned_modifier
+- gdp_tgf_builders_rate_church_full_renowned_modifier
+- gdp_tgf_builders_rate_church_small_renowned_modifier
+- gdp_tgf_builders_rate_city_full_renowned_modifier
+- gdp_tgf_builders_rate_city_small_renowned_modifier
+- gdp_tgf_builders_rate_generic_full_renowned_modifier
+- gdp_tgf_builders_rate_generic_small_renowned_modifier
+- gdp_voluntary_merchant_modifier
+- gdp_patron_competitiveness_modifier
+- gdp_nepotism_modifier
+- gdp_merit_modifier
+- gdp_full_attention_modifier
+- gdp_responsible_modifier
+- gdp_cooperation_modifier
+- gdp_guild_master_inpiration_diplomacy_modifier
+- gdp_guild_master_inpiration_learning_modifier
+- gdp_guild_master_inpiration_stewardship_modifier
+- gdp_boasted_market_competence_modifier
+- gdp_driven_by_motivation_modifier
+- gdp_charter_abused_market_modifier
+- gdp_charter_abused_market_county_modifier
+- gdp_charter_charitable_market_county_modifier
+- gdp_charter_leveraged_market_modifier
+- gdp_promoted_diligence_modifier
+- gdp_promoted_excess_modifier
+- gdp_enticed_merchant_market_modifier
+- gdp_oasis_of_hope_modifier
+- gdp_low_morale_entourage_modifier
+- merchant_undercut_the_competition_modifier
+- merchant_cornering_the_market_modifier
+- gdp_merge_company_competitiveness_modifier
+- merchant_public_benefactor_modifier
+- merchant_private_profit_focus_modifier
+- merchant_sponsored_public_works_county_modifier
+- gdp_commission_merchant_route_modifier
+- gdp_trade_route_maturity_modifier
+- gdp_merchant_schmooze_modifier
+- feast_used_trade_market_alcohol_modifier
+- activity_used_trade_market_luxury_items_modifier
+- activity_used_trade_market_comforts_modifier
+- gdp_merchant_full_larder_modifier
+- gdp_merchant_staying_vigilant
+- gdp_merchant_master_craft_tutelage_modifier
+- gdp_thirsty_traveler_modifier
+- gdp_pure_waters_modifier
+- gdp_rationing_water_modifier
+- gdp_workout_modifier
+- gdp_fishing_modifier
+- gdp_catch_rats_modifier
+- gdp_cat_rats_modifier
+- dedicated_trade_studies
+- gdp_local_business_modifier
+- gdp_silk_road_market_foothold_modifier
+- tgp_silk_road_interesting_innovations_modifier
+- gdp_silk_road_bargain_modifier
+- gdp_silk_road_market_investment_modifier
+- gdp_merchant_legacy_3_ennobled_modifier
+- gdp_merchant_legacy_3_rapacious_modifier
+- merchant_childhood_suzerain_modifier
+- gdp_tgf_artifact_expertise_1_modifier
+- gdp_tgf_artifact_expertise_2_modifier
+- gdp_tgf_artifact_expertise_3_modifier
+- gdp_tgf_artifact_expertise_4_modifier
+- gdp_tgf_artifact_competitiveness_1_modifier
+- gdp_tgf_artifact_competitiveness_2_modifier
+- gdp_tgf_artifact_competitiveness_3_modifier
+- gdp_tgf_artifact_competitiveness_4_modifier
+- gdp_tgf_artifact_capacity_1_modifier
+- gdp_tgf_artifact_capacity_2_modifier
+- gdp_tgf_artifact_capacity_3_modifier
+- gdp_tgf_artifact_capacity_4_modifier
+- gdp_tgf_artifact_trade_income_1_modifier
+- gdp_tgf_artifact_trade_income_2_modifier
+- gdp_tgf_artifact_trade_income_3_modifier
+- gdp_tgf_artifact_trade_income_4_modifier
+- gdp_tgf_artifact_route_length_1_modifier
+- gdp_tgf_artifact_route_length_2_modifier
+- gdp_tgf_artifact_route_length_3_modifier
+- gdp_tgf_artifact_route_length_4_modifier
+- gdp_domicile_artifact_competitiveness_1_modifier
+- gdp_domicile_artifact_competitiveness_2_modifier
+- gdp_domicile_artifact_competitiveness_3_modifier
+- gdp_domicile_artifact_competitiveness_4_modifier
+- gdp_domicile_artifact_all_expertise_1_modifier
+- gdp_domicile_artifact_all_expertise_2_modifier
+- gdp_domicile_artifact_all_expertise_3_modifier
+- gdp_domicile_artifact_all_expertise_4_modifier
+- gdp_domicile_artifact_all_sell_price_1_modifier
+- gdp_domicile_artifact_all_sell_price_2_modifier
+- gdp_domicile_artifact_all_sell_price_3_modifier
+- gdp_domicile_artifact_all_sell_price_4_modifier
+- gdp_domicile_artifact_all_buy_price_1_modifier
+- gdp_domicile_artifact_all_buy_price_2_modifier
+- gdp_domicile_artifact_all_buy_price_3_modifier
+- gdp_domicile_artifact_all_buy_price_4_modifier
+- gdp_domicile_artifact_alcohol_expertise_1_modifier
+- gdp_domicile_artifact_alcohol_expertise_2_modifier
+- gdp_domicile_artifact_alcohol_expertise_3_modifier
+- gdp_domicile_artifact_alcohol_expertise_4_modifier
+- gdp_domicile_artifact_alcohol_sell_price_1_modifier
+- gdp_domicile_artifact_alcohol_sell_price_2_modifier
+- gdp_domicile_artifact_alcohol_sell_price_3_modifier
+- gdp_domicile_artifact_alcohol_sell_price_4_modifier
+- gdp_domicile_artifact_alcohol_buy_price_1_modifier
+- gdp_domicile_artifact_alcohol_buy_price_2_modifier
+- gdp_domicile_artifact_alcohol_buy_price_3_modifier
+- gdp_domicile_artifact_alcohol_buy_price_4_modifier
+- gdp_domicile_artifact_comforts_expertise_1_modifier
+- gdp_domicile_artifact_comforts_expertise_2_modifier
+- gdp_domicile_artifact_comforts_expertise_3_modifier
+- gdp_domicile_artifact_comforts_expertise_4_modifier
+- gdp_domicile_artifact_comforts_sell_price_1_modifier
+- gdp_domicile_artifact_comforts_sell_price_2_modifier
+- gdp_domicile_artifact_comforts_sell_price_3_modifier
+- gdp_domicile_artifact_comforts_sell_price_4_modifier
+- gdp_domicile_artifact_comforts_buy_price_1_modifier
+- gdp_domicile_artifact_comforts_buy_price_2_modifier
+- gdp_domicile_artifact_comforts_buy_price_3_modifier
+- gdp_domicile_artifact_comforts_buy_price_4_modifier
+- gdp_domicile_artifact_cereals_expertise_1_modifier
+- gdp_domicile_artifact_cereals_expertise_2_modifier
+- gdp_domicile_artifact_cereals_expertise_3_modifier
+- gdp_domicile_artifact_cereals_expertise_4_modifier
+- gdp_domicile_artifact_cereals_sell_price_1_modifier
+- gdp_domicile_artifact_cereals_sell_price_2_modifier
+- gdp_domicile_artifact_cereals_sell_price_3_modifier
+- gdp_domicile_artifact_cereals_sell_price_4_modifier
+- gdp_domicile_artifact_cereals_buy_price_1_modifier
+- gdp_domicile_artifact_cereals_buy_price_2_modifier
+- gdp_domicile_artifact_cereals_buy_price_3_modifier
+- gdp_domicile_artifact_cereals_buy_price_4_modifier
+- gdp_domicile_artifact_meat_expertise_1_modifier
+- gdp_domicile_artifact_meat_expertise_2_modifier
+- gdp_domicile_artifact_meat_expertise_3_modifier
+- gdp_domicile_artifact_meat_expertise_4_modifier
+- gdp_domicile_artifact_meat_sell_price_1_modifier
+- gdp_domicile_artifact_meat_sell_price_2_modifier
+- gdp_domicile_artifact_meat_sell_price_3_modifier
+- gdp_domicile_artifact_meat_sell_price_4_modifier
+- gdp_domicile_artifact_meat_buy_price_1_modifier
+- gdp_domicile_artifact_meat_buy_price_2_modifier
+- gdp_domicile_artifact_meat_buy_price_3_modifier
+- gdp_domicile_artifact_meat_buy_price_4_modifier
+- gdp_domicile_artifact_beasts_of_burden_expertise_1_modifier
+- gdp_domicile_artifact_beasts_of_burden_expertise_2_modifier
+- gdp_domicile_artifact_beasts_of_burden_expertise_3_modifier
+- gdp_domicile_artifact_beasts_of_burden_expertise_4_modifier
+- gdp_domicile_artifact_beasts_of_burden_sell_price_1_modifier
+- gdp_domicile_artifact_beasts_of_burden_sell_price_2_modifier
+- gdp_domicile_artifact_beasts_of_burden_sell_price_3_modifier
+- gdp_domicile_artifact_beasts_of_burden_sell_price_4_modifier
+- gdp_domicile_artifact_beasts_of_burden_buy_price_1_modifier
+- gdp_domicile_artifact_beasts_of_burden_buy_price_2_modifier
+- gdp_domicile_artifact_beasts_of_burden_buy_price_3_modifier
+- gdp_domicile_artifact_beasts_of_burden_buy_price_4_modifier
+- gdp_domicile_artifact_salt_expertise_1_modifier
+- gdp_domicile_artifact_salt_expertise_2_modifier
+- gdp_domicile_artifact_salt_expertise_3_modifier
+- gdp_domicile_artifact_salt_expertise_4_modifier
+- gdp_domicile_artifact_salt_sell_price_1_modifier
+- gdp_domicile_artifact_salt_sell_price_2_modifier
+- gdp_domicile_artifact_salt_sell_price_3_modifier
+- gdp_domicile_artifact_salt_sell_price_4_modifier
+- gdp_domicile_artifact_salt_buy_price_1_modifier
+- gdp_domicile_artifact_salt_buy_price_2_modifier
+- gdp_domicile_artifact_salt_buy_price_3_modifier
+- gdp_domicile_artifact_salt_buy_price_4_modifier
+- gdp_domicile_artifact_clothes_expertise_1_modifier
+- gdp_domicile_artifact_clothes_expertise_2_modifier
+- gdp_domicile_artifact_clothes_expertise_3_modifier
+- gdp_domicile_artifact_clothes_expertise_4_modifier
+- gdp_domicile_artifact_clothes_sell_price_1_modifier
+- gdp_domicile_artifact_clothes_sell_price_2_modifier
+- gdp_domicile_artifact_clothes_sell_price_3_modifier
+- gdp_domicile_artifact_clothes_sell_price_4_modifier
+- gdp_domicile_artifact_clothes_buy_price_1_modifier
+- gdp_domicile_artifact_clothes_buy_price_2_modifier
+- gdp_domicile_artifact_clothes_buy_price_3_modifier
+- gdp_domicile_artifact_clothes_buy_price_4_modifier
+- gdp_domicile_artifact_fabrics_expertise_1_modifier
+- gdp_domicile_artifact_fabrics_expertise_2_modifier
+- gdp_domicile_artifact_fabrics_expertise_3_modifier
+- gdp_domicile_artifact_fabrics_expertise_4_modifier
+- gdp_domicile_artifact_fabrics_sell_price_1_modifier
+- gdp_domicile_artifact_fabrics_sell_price_2_modifier
+- gdp_domicile_artifact_fabrics_sell_price_3_modifier
+- gdp_domicile_artifact_fabrics_sell_price_4_modifier
+- gdp_domicile_artifact_fabrics_buy_price_1_modifier
+- gdp_domicile_artifact_fabrics_buy_price_2_modifier
+- gdp_domicile_artifact_fabrics_buy_price_3_modifier
+- gdp_domicile_artifact_fabrics_buy_price_4_modifier
+- gdp_domicile_artifact_dyes_expertise_1_modifier
+- gdp_domicile_artifact_dyes_expertise_2_modifier
+- gdp_domicile_artifact_dyes_expertise_3_modifier
+- gdp_domicile_artifact_dyes_expertise_4_modifier
+- gdp_domicile_artifact_dyes_sell_price_1_modifier
+- gdp_domicile_artifact_dyes_sell_price_2_modifier
+- gdp_domicile_artifact_dyes_sell_price_3_modifier
+- gdp_domicile_artifact_dyes_sell_price_4_modifier
+- gdp_domicile_artifact_dyes_buy_price_1_modifier
+- gdp_domicile_artifact_dyes_buy_price_2_modifier
+- gdp_domicile_artifact_dyes_buy_price_3_modifier
+- gdp_domicile_artifact_dyes_buy_price_4_modifier
+- gdp_domicile_artifact_alum_expertise_1_modifier
+- gdp_domicile_artifact_alum_expertise_2_modifier
+- gdp_domicile_artifact_alum_expertise_3_modifier
+- gdp_domicile_artifact_alum_expertise_4_modifier
+- gdp_domicile_artifact_alum_sell_price_1_modifier
+- gdp_domicile_artifact_alum_sell_price_2_modifier
+- gdp_domicile_artifact_alum_sell_price_3_modifier
+- gdp_domicile_artifact_alum_sell_price_4_modifier
+- gdp_domicile_artifact_alum_buy_price_1_modifier
+- gdp_domicile_artifact_alum_buy_price_2_modifier
+- gdp_domicile_artifact_alum_buy_price_3_modifier
+- gdp_domicile_artifact_alum_buy_price_4_modifier
+- gdp_domicile_artifact_stone_expertise_1_modifier
+- gdp_domicile_artifact_stone_expertise_2_modifier
+- gdp_domicile_artifact_stone_expertise_3_modifier
+- gdp_domicile_artifact_stone_expertise_4_modifier
+- gdp_domicile_artifact_stone_sell_price_1_modifier
+- gdp_domicile_artifact_stone_sell_price_2_modifier
+- gdp_domicile_artifact_stone_sell_price_3_modifier
+- gdp_domicile_artifact_stone_sell_price_4_modifier
+- gdp_domicile_artifact_stone_buy_price_1_modifier
+- gdp_domicile_artifact_stone_buy_price_2_modifier
+- gdp_domicile_artifact_stone_buy_price_3_modifier
+- gdp_domicile_artifact_stone_buy_price_4_modifier
+- gdp_domicile_artifact_carpentry_supplies_expertise_1_modifier
+- gdp_domicile_artifact_carpentry_supplies_expertise_2_modifier
+- gdp_domicile_artifact_carpentry_supplies_expertise_3_modifier
+- gdp_domicile_artifact_carpentry_supplies_expertise_4_modifier
+- gdp_domicile_artifact_carpentry_supplies_sell_price_1_modifier
+- gdp_domicile_artifact_carpentry_supplies_sell_price_2_modifier
+- gdp_domicile_artifact_carpentry_supplies_sell_price_3_modifier
+- gdp_domicile_artifact_carpentry_supplies_sell_price_4_modifier
+- gdp_domicile_artifact_carpentry_supplies_buy_price_1_modifier
+- gdp_domicile_artifact_carpentry_supplies_buy_price_2_modifier
+- gdp_domicile_artifact_carpentry_supplies_buy_price_3_modifier
+- gdp_domicile_artifact_carpentry_supplies_buy_price_4_modifier
+- gdp_domicile_artifact_base_metals_expertise_1_modifier
+- gdp_domicile_artifact_base_metals_expertise_2_modifier
+- gdp_domicile_artifact_base_metals_expertise_3_modifier
+- gdp_domicile_artifact_base_metals_expertise_4_modifier
+- gdp_domicile_artifact_base_metals_sell_price_1_modifier
+- gdp_domicile_artifact_base_metals_sell_price_2_modifier
+- gdp_domicile_artifact_base_metals_sell_price_3_modifier
+- gdp_domicile_artifact_base_metals_sell_price_4_modifier
+- gdp_domicile_artifact_base_metals_buy_price_1_modifier
+- gdp_domicile_artifact_base_metals_buy_price_2_modifier
+- gdp_domicile_artifact_base_metals_buy_price_3_modifier
+- gdp_domicile_artifact_base_metals_buy_price_4_modifier
+- gdp_domicile_artifact_luxury_items_expertise_1_modifier
+- gdp_domicile_artifact_luxury_items_expertise_2_modifier
+- gdp_domicile_artifact_luxury_items_expertise_3_modifier
+- gdp_domicile_artifact_luxury_items_expertise_4_modifier
+- gdp_domicile_artifact_luxury_items_sell_price_1_modifier
+- gdp_domicile_artifact_luxury_items_sell_price_2_modifier
+- gdp_domicile_artifact_luxury_items_sell_price_3_modifier
+- gdp_domicile_artifact_luxury_items_sell_price_4_modifier
+- gdp_domicile_artifact_luxury_items_buy_price_1_modifier
+- gdp_domicile_artifact_luxury_items_buy_price_2_modifier
+- gdp_domicile_artifact_luxury_items_buy_price_3_modifier
+- gdp_domicile_artifact_luxury_items_buy_price_4_modifier
+- gdp_domicile_artifact_jewelry_materials_expertise_1_modifier
+- gdp_domicile_artifact_jewelry_materials_expertise_2_modifier
+- gdp_domicile_artifact_jewelry_materials_expertise_3_modifier
+- gdp_domicile_artifact_jewelry_materials_expertise_4_modifier
+- gdp_domicile_artifact_jewelry_materials_sell_price_1_modifier
+- gdp_domicile_artifact_jewelry_materials_sell_price_2_modifier
+- gdp_domicile_artifact_jewelry_materials_sell_price_3_modifier
+- gdp_domicile_artifact_jewelry_materials_sell_price_4_modifier
+- gdp_domicile_artifact_jewelry_materials_buy_price_1_modifier
+- gdp_domicile_artifact_jewelry_materials_buy_price_2_modifier
+- gdp_domicile_artifact_jewelry_materials_buy_price_3_modifier
+- gdp_domicile_artifact_jewelry_materials_buy_price_4_modifier
+- gdp_domicile_artifact_precious_metals_expertise_1_modifier
+- gdp_domicile_artifact_precious_metals_expertise_2_modifier
+- gdp_domicile_artifact_precious_metals_expertise_3_modifier
+- gdp_domicile_artifact_precious_metals_expertise_4_modifier
+- gdp_domicile_artifact_precious_metals_sell_price_1_modifier
+- gdp_domicile_artifact_precious_metals_sell_price_2_modifier
+- gdp_domicile_artifact_precious_metals_sell_price_3_modifier
+- gdp_domicile_artifact_precious_metals_sell_price_4_modifier
+- gdp_domicile_artifact_precious_metals_buy_price_1_modifier
+- gdp_domicile_artifact_precious_metals_buy_price_2_modifier
+- gdp_domicile_artifact_precious_metals_buy_price_3_modifier
+- gdp_domicile_artifact_precious_metals_buy_price_4_modifier
+- gdp_domicile_artifact_medicaments_expertise_1_modifier
+- gdp_domicile_artifact_medicaments_expertise_2_modifier
+- gdp_domicile_artifact_medicaments_expertise_3_modifier
+- gdp_domicile_artifact_medicaments_expertise_4_modifier
+- gdp_domicile_artifact_medicaments_sell_price_1_modifier
+- gdp_domicile_artifact_medicaments_sell_price_2_modifier
+- gdp_domicile_artifact_medicaments_sell_price_3_modifier
+- gdp_domicile_artifact_medicaments_sell_price_4_modifier
+- gdp_domicile_artifact_medicaments_buy_price_1_modifier
+- gdp_domicile_artifact_medicaments_buy_price_2_modifier
+- gdp_domicile_artifact_medicaments_buy_price_3_modifier
+- gdp_domicile_artifact_medicaments_buy_price_4_modifier
+- gdp_domicile_artifact_incense_expertise_1_modifier
+- gdp_domicile_artifact_incense_expertise_2_modifier
+- gdp_domicile_artifact_incense_expertise_3_modifier
+- gdp_domicile_artifact_incense_expertise_4_modifier
+- gdp_domicile_artifact_incense_sell_price_1_modifier
+- gdp_domicile_artifact_incense_sell_price_2_modifier
+- gdp_domicile_artifact_incense_sell_price_3_modifier
+- gdp_domicile_artifact_incense_sell_price_4_modifier
+- gdp_domicile_artifact_incense_buy_price_1_modifier
+- gdp_domicile_artifact_incense_buy_price_2_modifier
+- gdp_domicile_artifact_incense_buy_price_3_modifier
+- gdp_domicile_artifact_incense_buy_price_4_modifier
+- gdp_domicile_artifact_luxury_consumption_expertise_1_modifier
+- gdp_domicile_artifact_luxury_consumption_expertise_2_modifier
+- gdp_domicile_artifact_luxury_consumption_expertise_3_modifier
+- gdp_domicile_artifact_luxury_consumption_expertise_4_modifier
+- gdp_domicile_artifact_luxury_consumption_sell_price_1_modifier
+- gdp_domicile_artifact_luxury_consumption_sell_price_2_modifier
+- gdp_domicile_artifact_luxury_consumption_sell_price_3_modifier
+- gdp_domicile_artifact_luxury_consumption_sell_price_4_modifier
+- gdp_domicile_artifact_luxury_consumption_buy_price_1_modifier
+- gdp_domicile_artifact_luxury_consumption_buy_price_2_modifier
+- gdp_domicile_artifact_luxury_consumption_buy_price_3_modifier
+- gdp_domicile_artifact_luxury_consumption_buy_price_4_modifier
+- gdp_domicile_artifact_books_expertise_1_modifier
+- gdp_domicile_artifact_books_expertise_2_modifier
+- gdp_domicile_artifact_books_expertise_3_modifier
+- gdp_domicile_artifact_books_expertise_4_modifier
+- gdp_domicile_artifact_books_sell_price_1_modifier
+- gdp_domicile_artifact_books_sell_price_2_modifier
+- gdp_domicile_artifact_books_sell_price_3_modifier
+- gdp_domicile_artifact_books_sell_price_4_modifier
+- gdp_domicile_artifact_books_buy_price_1_modifier
+- gdp_domicile_artifact_books_buy_price_2_modifier
+- gdp_domicile_artifact_books_buy_price_3_modifier
+- gdp_domicile_artifact_books_buy_price_4_modifier
+
+### gdp_merchant_trade_opportunity_modifiers.txt（53 条目）
+
+- gdp_challenge_competitor_trade_opportunity_success_modifier
+- gdp_challenge_competitor_trade_opportunity_success_critical_modifier
+- gdp_challenge_competitor_trade_opportunity_failure_modifier
+- merchant_competitive_pressure_route_modifier
+- pious_patronage_market_modifier
+- merchant_market_familiarity_modifier
+- merchant_inspector_specialized_market_tier_1_modifier
+- merchant_inspector_specialized_market_tier_2_modifier
+- merchant_inspector_specialized_market_tier_3_modifier
+- merchant_inspector_specialized_market_master_modifier
+- organize_the_venture_scheme_modifier
+- gdp_market_investment_trade_opportunity_success_modifier
+- gdp_market_investment_trade_opportunity_critical_success_modifier
+- gdp_market_investment_trade_opportunity_capacity_modifier
+- gdp_support_guilds_trade_opportunity_success_modifier
+- gdp_sabotage_competition_trade_opportunity_failure_modifier
+- gdp_sabotage_competition_trade_opportunity_critical_failure_modifier
+- gdp_disrupt_charter_trade_opportunity_success_modifier
+- gdp_disrupt_charter_trade_opportunity_critical_success_modifier
+- gdp_trade_privileges_modifier
+- gdp_trade_privileges_hook_modifier
+- gdp_trade_privileges_hook_double_modifier
+- gdp_share_trade_competitiveness_modifier
+- gdp_impressed_patron_modifier
+- gdp_impressed_patron_critical_modifier
+- gdp_dismissive_patron_modifier
+- gdp_unity_irregularities_reimburse_modifier
+- gdp_unity_irregularities_critical_success_modifier
+- gdp_unity_irregularities_qualified_success_modifier
+- gdp_unity_irregularities_failure_modifier
+- gdp_unity_irregularities_failure_denial_modifier
+- gdp_merchant_scheme_advantage_success_chance_potential_modifier
+- gdp_merchant_scheme_advantage_success_chance_growth_modifier
+- gdp_merchant_scheme_advantage_success_chance_length_modifier
+- gdp_merchant_scheme_advantage_market_competitiveness_modifier
+- gdp_silk_road_caravan_trade_opportunity_success_modifier
+- gdp_silk_road_caravan_trade_opportunity_success_critical_modifier
+- gdp_silk_road_caravan_trade_opportunity_failure_modifier
+- gdp_silk_road_network_trade_opportunity_success_modifier
+- gdp_silk_road_network_trade_opportunity_success_critical_modifier
+- gdp_silk_road_network_trade_opportunity_failure_modifier
+- gdp_entrepot_buy_trade_opportunity_success_modifier
+- gdp_entrepot_buy_trade_opportunity_success_critical_modifier
+- gdp_entrepot_buy_trade_opportunity_failure_modifier
+- gdp_entrepot_sell_trade_opportunity_success_modifier
+- gdp_entrepot_sell_trade_opportunity_success_critical_modifier
+- gdp_entrepot_sell_trade_opportunity_failure_modifier
+- gdp_merchant_contract_failure_reputation_low_modifier
+- gdp_merchant_contract_failure_reputation_medium_modifier
+- gdp_merchant_contract_failure_reputation_high_modifier
+- gdp_merchant_contract_failure_expertise_low_modifier
+- gdp_merchant_contract_failure_expertise_medium_modifier
+- gdp_merchant_contract_failure_expertise_high_modifier
+
+### gdp_modifiers.txt（20 条目）
+
+- gdp_market_recently_sieged_capacity_modifier
+- gdp_market_recently_raided_capacity_modifier
+- gdp_market_army_movement_capacity_modifier
+- gdp_market_smuggling_trade_modifier
+- gdp_market_banditry_trade_modifier
+- gdp_market_bartering_trade_modifier
+- gdp_natural_disaster_1_trade_modifier
+- gdp_natural_disaster_2_trade_modifier
+- gdp_natural_disaster_3_trade_modifier
+- gdp_epidemic_1_trade_modifier
+- gdp_epidemic_2_trade_modifier
+- gdp_epidemic_3_trade_modifier
+- gdp_visit_holding_healer_health_modifier
+- gdp_visit_holding_healer_health_partner_modifier
+- writing_travelogue
+- binding_oaths_broke_word_modifier
+- merchant_steady_hand_low_unity_modifier
+- merchant_house_of_knives_fractious_modifier
+- merchant_house_of_knives_divided_modifier
+- merchant_family_mobilization_promote_diligence_modifier
+
+### gdp_republic_modifiers.txt（194 条目）
+
+- gdp_founded_republic_modifier
+- gdp_fund_alms_decree_modifier
+- gdp_taxed_county_modifier
+- gdp_tax_holiday_decree_modifier
+- gdp_trade_support_modifier
+- gdp_trentina_quarantine_county_modifier
+- gdp_trentina_quarantine_character_modifier
+- gdp_curfew_character_modifier
+- gdp_state_protection_modifier
+- republic_reliable_caravans_modifier
+- republic_premium_contracts_modifier
+- republic_inspector_bribery_modifier
+- republic_procedural_advantage_modifier
+- gdp_glorification_modifier
+- gdp_civic_labor_modifier
+- gdp_popular_mandate_modifier
+- gdp_patrician_promoted_voter_modifier
+- gdp_pledged_assembly_vote_modifier
+- gdp_bawdy_song_modifier
+- gdp_patriotic_song_modifier
+- gdp_spiritual_song_modifier
+- gdp_rejected_dancefloor_modifier
+- gdp_accepted_dancefloor_modifier
+- gdp_exquisite_mask_modifier
+- gdp_terrifying_mask_modifier
+- gdp_slanderous_grafitti_modifier
+- gdp_domestic_chaos_modifier
+- gdp_fragrant_egg_modifier
+- gdp_sympathetic_ear_scheme_modifier
+- gdp_insane_arguments_modifier
+- gdp_fatalistic_arguments_modifier
+- gdp_beautiful_arguments_modifier
+- gdp_ugly_arguments_modifier
+- gdp_intellectual_debate_modifier
+- gdp_advise_of_a_fool_modifier
+- gdp_a_way_with_words_modifier
+- gdp_business_sabotage_modifier
+- gdp_arson_modifier
+- gdp_hardened_position_modifier
+- gdp_intimidated_modifier
+- gdp_opportunity_scheme_modifier
+- gdp_republic_grieving_parent_modifier
+- gdp_exposed_spy_modifier
+- gdp_dodging_council_modifier
+- gdp_exemption_from_council_modifier
+- gdp_wedded_to_the_sea_modifier
+- gdp_learning_from_the_masses
+- gdp_secured_republic_monopoly_modifier
+- gdp_head_held_high_modifier
+- gdp_training_for_the_worst_modifier
+- gdp_fear_of_the_mob_modifier
+- gdp_champion_of_the_people_modifier
+- gdp_champion_of_the_state_modifier
+- gdp_guild_sponsored_feast_modifier
+- gdp_broken_trust_modifier
+- gdp_toast_to_adventure_modifier
+- gdp_toast_to_romance_modifier
+- gdp_toast_to_glory_modifier
+- gdp_toast_to_relations_modifier
+- gdp_republic_renounced_election_personal
+- gdp_armchair_patrician_modifier
+- gdp_city_stroll_modifier
+- gdp_city_stroll_alms_modifier
+- gdp_patrician_city_investments_modifier
+- gdp_bulk_fish_modifier
+- gdp_publicly_shamed_modifier
+- gdp_noble_magistrate_modifier
+- gdp_shamed_nudity_modifier
+- gdp_out_and_about_modifier
+- gdp_republic_disgraced_patrician_house_modifier
+- gdp_patrician_slandered_house_modifier
+- gdp_patrician_promoted_house_modifier
+- gdp_secret_information_house_modifier
+- gdp_ambitions_aligned_house_modifier
+- gdp_cooperation_correspondenti_house_modifier
+- gdp_cooperation_compagnia_house_modifier
+- gdp_republic_renounced_election_house
+- gdp_guild_sponsor_house_modifier
+- gdp_ancient_craft_carpentry_supplies_house_modifier
+- gdp_ancient_craft_books_house_modifier
+- gdp_ancient_craft_incense_house_modifier
+- gdp_ancient_craft_base_metals_house_modifier
+- gdp_ancient_craft_alcohol_house_modifier
+- gdp_ancient_craft_comforts_house_modifier
+- gdp_ancient_craft_meat_house_modifier
+- gdp_ancient_craft_cereals_house_modifier
+- gdp_ancient_craft_luxury_consumption_house_modifier
+- gdp_ancient_craft_jewelry_materials_house_modifier
+- gdp_ancient_craft_luxury_items_house_modifier
+- gdp_republic_unrest_guild_district_shutdown
+- gdp_republic_unrest_market_district_shutdown
+- gdp_republic_unrest_port_district_shutdown
+- gdp_republic_unrest_bureaucratic_district_shutdown
+- gdp_republic_unrest_temple_district_shutdown
+- gdp_republic_unrest_entertainment_district_shutdown
+- gdp_republic_unrest_urban_housing_district_shutdown
+- gdp_republic_riot_aftermath
+- gdp_republic_uprising_aftermath
+- gdp_city_investments_province_modifier
+- gdp_sponsored_guild_modifier
+- gdp_popular_opinion_mild_neg_prosperity
+- gdp_popular_opinion_mild_neg_taxes
+- gdp_popular_opinion_mild_neg_construction
+- gdp_popular_opinion_mild_neg_defense
+- gdp_popular_opinion_severe_neg_prosperity
+- gdp_popular_opinion_severe_neg_taxes
+- gdp_popular_opinion_severe_neg_construction
+- gdp_popular_opinion_severe_neg_defense
+- gdp_popular_opinion_mild_pos_prosperity
+- gdp_popular_opinion_mild_pos_taxes
+- gdp_popular_opinion_mild_pos_construction
+- gdp_popular_opinion_strong_pos_prosperity
+- gdp_popular_opinion_strong_pos_taxes
+- gdp_popular_opinion_strong_pos_construction
+- gdp_popular_opinion_mild_neg_sell_price
+- gdp_popular_opinion_mild_neg_capacity
+- gdp_popular_opinion_severe_neg_sell_price
+- gdp_popular_opinion_severe_neg_capacity
+- gdp_popular_opinion_mild_pos_sell_price
+- gdp_popular_opinion_mild_pos_capacity
+- gdp_popular_opinion_strong_pos_sell_price
+- gdp_popular_opinion_strong_pos_capacity
+- gdp_incite_unrest_county_modifier
+- gdp_caught_inciting_unrest_modifier
+- gdp_republic_bureaucrat_modifier
+- gdp_republic_law_maker_modifier
+- gdp_republic_plaza_prestige_modifier
+- gdp_republic_trader_competitiveness_modifier
+- gdp_republic_plaza_chancery_modifier
+- gdp_republic_plaza_scriptorium_modifier
+- gdp_republic_plaza_magistracy_modifier
+- gdp_republic_plaza_popular_favor_modifier
+- gdp_republic_plaza_trade_capacity_modifier
+- gdp_republic_plaza_expertise_modifier
+- gdp_republic_plaza_estate_income_modifier
+- gdp_republic_plaza_physician_modifier
+- gdp_republic_plaza_hired_swords_modifier
+- gdp_republic_plaza_organized_worker_modifier
+- gdp_republic_civic_works_labor_modifier
+- gdp_republic_civic_works_materials_modifier
+- gdp_republic_civic_works_amenities_modifier
+- gdp_republic_civic_works_market_modifier
+- gdp_republic_civic_works_guilds_modifier
+- gdp_republic_civic_works_labor_character_modifier
+- gdp_republic_civic_works_materials_character_modifier
+- gdp_republic_civic_works_amenities_character_modifier
+- gdp_republic_civic_works_market_character_modifier
+- gdp_republic_civic_works_guilds_character_modifier
+- gdp_republic_civic_works_settlement_modifier
+- gdp_republic_civic_works_settlement_character_modifier
+- gdp_republic_civic_works_order_modifier
+- gdp_republic_civic_works_order_character_modifier
+- gdp_republic_civic_works_school_modifier
+- gdp_republic_civic_works_school_character_modifier
+- gdp_trade_good_grain_deficiency_modifier
+- gdp_trade_good_millet_deficiency_modifier
+- gdp_trade_good_rice_deficiency_modifier
+- gdp_trade_good_meat_deficiency_modifier
+- gdp_trade_good_fish_deficiency_modifier
+- gdp_trade_good_cheese_deficiency_modifier
+- gdp_trade_good_fruit_deficiency_modifier
+- gdp_trade_good_oil_deficiency_modifier
+- gdp_trade_good_honey_deficiency_modifier
+- gdp_trade_good_tea_deficiency_modifier
+- gdp_trade_good_beer_deficiency_modifier
+- gdp_trade_good_wine_deficiency_modifier
+- gdp_trade_good_wood_deficiency_modifier
+- gdp_trade_good_hemp_deficiency_modifier
+- gdp_trade_good_wool_deficiency_modifier
+- gdp_trade_good_cotton_deficiency_modifier
+- gdp_trade_good_flax_deficiency_modifier
+- gdp_trade_good_textiles_deficiency_modifier
+- gdp_trade_good_furs_deficiency_modifier
+- gdp_trade_good_leather_deficiency_modifier
+- gdp_trade_good_sugar_deficiency_modifier
+- gdp_trade_good_spices_deficiency_modifier
+- gdp_trade_good_ceramics_deficiency_modifier
+- gdp_trade_good_glass_deficiency_modifier
+- gdp_trade_good_lacquerware_deficiency_modifier
+- gdp_trade_good_silk_deficiency_modifier
+- gdp_trade_good_incense_deficiency_modifier
+- gdp_trade_good_medicaments_deficiency_modifier
+- gdp_trade_good_salt_deficiency_modifier
+- gdp_trade_good_alum_deficiency_modifier
+- gdp_trade_good_dyes_deficiency_modifier
+- gdp_trade_good_books_paper_deficiency_modifier
+- gdp_dominate_market_trade_post_modifier
+- gdp_trade_post_charity_modifier
+- gdp_gather_popular_support_modifier
+- gdp_gather_popular_support_house_t1_modifier
+- gdp_gather_popular_support_house_t2_modifier
+- gdp_gather_popular_support_house_t3_modifier
+- gdp_signorial_execute_and_banish_modifier
+- gdp_ambition_promote_scheme_bonus_modifier
+
+### gdp_trade_league_modifiers.txt（20 条目）
+
+- league_focused_category_alcohol_modifier
+- league_focused_category_comforts_modifier
+- league_focused_category_cereals_modifier
+- league_focused_category_meat_modifier
+- league_focused_category_beasts_of_burden_modifier
+- league_focused_category_salt_modifier
+- league_focused_category_clothes_modifier
+- league_focused_category_fabrics_modifier
+- league_focused_category_dyes_modifier
+- league_focused_category_alum_modifier
+- league_focused_category_stone_modifier
+- league_focused_category_carpentry_supplies_modifier
+- league_focused_category_base_metals_modifier
+- league_focused_category_luxury_items_modifier
+- league_focused_category_jewelry_materials_modifier
+- league_focused_category_precious_metals_modifier
+- league_focused_category_medicaments_modifier
+- league_focused_category_incense_modifier
+- league_focused_category_luxury_consumption_modifier
+- league_focused_category_books_modifier
+
+### gdp_trade_scheme_modifiers.txt（5 条目）
+
+- gdp_improve_trade_routes_capacity_modifier
+- gdp_improve_trade_routes_competitiveness_modifier
+- gdp_improve_trade_routes_expertise_modifier
+- gdp_disrupt_trade_routes_capacity_modifier
+- gdp_disrupt_trade_routes_competitiveness_modifier
+
+### gdp_trader_scheme_modifiers.txt（8 条目）
+
+- gdp_trader_negotiate_deals_modifier
+- gdp_trader_capacity_boost_modifier
+- gdp_trader_lobby_advantages_modifier
+- gdp_trader_undermine_competitor_modifier
+- gdp_trader_safe_passage_modifier
+- gdp_trader_exploring_new_markets_modifier
+- gdp_trader_studying_local_crafts_modifier
+- gdp_trader_undivided_focus_modifier
 
 ### pam_county_modifiers.txt（2 条目）
 
@@ -6925,6 +7982,185 @@
 - natural_primitivism_court_naturism_modifier
 - natural_primitivism_court_naturism_self_conscious_modifier
 - natural_primitivism_unbound_court_county_modifier
+
+### trade_good_price_modifiers.txt（176 条目）
+
+- trade_good_wood_buy_price_add_modifier
+- trade_good_wood_buy_price_mult_modifier
+- trade_good_wood_sell_price_add_modifier
+- trade_good_wood_sell_price_mult_modifier
+- trade_good_stone_buy_price_add_modifier
+- trade_good_stone_buy_price_mult_modifier
+- trade_good_stone_sell_price_add_modifier
+- trade_good_stone_sell_price_mult_modifier
+- trade_good_hemp_buy_price_add_modifier
+- trade_good_hemp_buy_price_mult_modifier
+- trade_good_hemp_sell_price_add_modifier
+- trade_good_hemp_sell_price_mult_modifier
+- trade_good_flax_buy_price_add_modifier
+- trade_good_flax_buy_price_mult_modifier
+- trade_good_flax_sell_price_add_modifier
+- trade_good_flax_sell_price_mult_modifier
+- trade_good_wool_buy_price_add_modifier
+- trade_good_wool_buy_price_mult_modifier
+- trade_good_wool_sell_price_add_modifier
+- trade_good_wool_sell_price_mult_modifier
+- trade_good_cotton_buy_price_add_modifier
+- trade_good_cotton_buy_price_mult_modifier
+- trade_good_cotton_sell_price_add_modifier
+- trade_good_cotton_sell_price_mult_modifier
+- trade_good_silk_buy_price_add_modifier
+- trade_good_silk_buy_price_mult_modifier
+- trade_good_silk_sell_price_add_modifier
+- trade_good_silk_sell_price_mult_modifier
+- trade_good_dyes_buy_price_add_modifier
+- trade_good_dyes_buy_price_mult_modifier
+- trade_good_dyes_sell_price_add_modifier
+- trade_good_dyes_sell_price_mult_modifier
+- trade_good_cattle_buy_price_add_modifier
+- trade_good_cattle_buy_price_mult_modifier
+- trade_good_cattle_sell_price_add_modifier
+- trade_good_cattle_sell_price_mult_modifier
+- trade_good_horses_buy_price_add_modifier
+- trade_good_horses_buy_price_mult_modifier
+- trade_good_horses_sell_price_add_modifier
+- trade_good_horses_sell_price_mult_modifier
+- trade_good_leather_buy_price_add_modifier
+- trade_good_leather_buy_price_mult_modifier
+- trade_good_leather_sell_price_add_modifier
+- trade_good_leather_sell_price_mult_modifier
+- trade_good_grain_buy_price_add_modifier
+- trade_good_grain_buy_price_mult_modifier
+- trade_good_grain_sell_price_add_modifier
+- trade_good_grain_sell_price_mult_modifier
+- trade_good_millet_buy_price_add_modifier
+- trade_good_millet_buy_price_mult_modifier
+- trade_good_millet_sell_price_add_modifier
+- trade_good_millet_sell_price_mult_modifier
+- trade_good_rice_buy_price_add_modifier
+- trade_good_rice_buy_price_mult_modifier
+- trade_good_rice_sell_price_add_modifier
+- trade_good_rice_sell_price_mult_modifier
+- trade_good_meat_buy_price_add_modifier
+- trade_good_meat_buy_price_mult_modifier
+- trade_good_meat_sell_price_add_modifier
+- trade_good_meat_sell_price_mult_modifier
+- trade_good_cheese_buy_price_add_modifier
+- trade_good_cheese_buy_price_mult_modifier
+- trade_good_cheese_sell_price_add_modifier
+- trade_good_cheese_sell_price_mult_modifier
+- trade_good_salt_buy_price_add_modifier
+- trade_good_salt_buy_price_mult_modifier
+- trade_good_salt_sell_price_add_modifier
+- trade_good_salt_sell_price_mult_modifier
+- trade_good_fruit_buy_price_add_modifier
+- trade_good_fruit_buy_price_mult_modifier
+- trade_good_fruit_sell_price_add_modifier
+- trade_good_fruit_sell_price_mult_modifier
+- trade_good_fish_buy_price_add_modifier
+- trade_good_fish_buy_price_mult_modifier
+- trade_good_fish_sell_price_add_modifier
+- trade_good_fish_sell_price_mult_modifier
+- trade_good_beer_buy_price_add_modifier
+- trade_good_beer_buy_price_mult_modifier
+- trade_good_beer_sell_price_add_modifier
+- trade_good_beer_sell_price_mult_modifier
+- trade_good_wine_buy_price_add_modifier
+- trade_good_wine_buy_price_mult_modifier
+- trade_good_wine_sell_price_add_modifier
+- trade_good_wine_sell_price_mult_modifier
+- trade_good_oil_buy_price_add_modifier
+- trade_good_oil_buy_price_mult_modifier
+- trade_good_oil_sell_price_add_modifier
+- trade_good_oil_sell_price_mult_modifier
+- trade_good_honey_buy_price_add_modifier
+- trade_good_honey_buy_price_mult_modifier
+- trade_good_honey_sell_price_add_modifier
+- trade_good_honey_sell_price_mult_modifier
+- trade_good_alum_buy_price_add_modifier
+- trade_good_alum_buy_price_mult_modifier
+- trade_good_alum_sell_price_add_modifier
+- trade_good_alum_sell_price_mult_modifier
+- trade_good_iron_buy_price_add_modifier
+- trade_good_iron_buy_price_mult_modifier
+- trade_good_iron_sell_price_add_modifier
+- trade_good_iron_sell_price_mult_modifier
+- trade_good_jade_buy_price_add_modifier
+- trade_good_jade_buy_price_mult_modifier
+- trade_good_jade_sell_price_add_modifier
+- trade_good_jade_sell_price_mult_modifier
+- trade_good_gold_buy_price_add_modifier
+- trade_good_gold_buy_price_mult_modifier
+- trade_good_gold_sell_price_add_modifier
+- trade_good_gold_sell_price_mult_modifier
+- trade_good_silver_buy_price_add_modifier
+- trade_good_silver_buy_price_mult_modifier
+- trade_good_silver_sell_price_add_modifier
+- trade_good_silver_sell_price_mult_modifier
+- trade_good_amber_buy_price_add_modifier
+- trade_good_amber_buy_price_mult_modifier
+- trade_good_amber_sell_price_add_modifier
+- trade_good_amber_sell_price_mult_modifier
+- trade_good_copper_buy_price_add_modifier
+- trade_good_copper_buy_price_mult_modifier
+- trade_good_copper_sell_price_add_modifier
+- trade_good_copper_sell_price_mult_modifier
+- trade_good_gems_buy_price_add_modifier
+- trade_good_gems_buy_price_mult_modifier
+- trade_good_gems_sell_price_add_modifier
+- trade_good_gems_sell_price_mult_modifier
+- trade_good_textiles_buy_price_add_modifier
+- trade_good_textiles_buy_price_mult_modifier
+- trade_good_textiles_sell_price_add_modifier
+- trade_good_textiles_sell_price_mult_modifier
+- trade_good_furs_buy_price_add_modifier
+- trade_good_furs_buy_price_mult_modifier
+- trade_good_furs_sell_price_add_modifier
+- trade_good_furs_sell_price_mult_modifier
+- trade_good_books_paper_buy_price_add_modifier
+- trade_good_books_paper_buy_price_mult_modifier
+- trade_good_books_paper_sell_price_add_modifier
+- trade_good_books_paper_sell_price_mult_modifier
+- trade_good_spices_buy_price_add_modifier
+- trade_good_spices_buy_price_mult_modifier
+- trade_good_spices_sell_price_add_modifier
+- trade_good_spices_sell_price_mult_modifier
+- trade_good_jewelry_buy_price_add_modifier
+- trade_good_jewelry_buy_price_mult_modifier
+- trade_good_jewelry_sell_price_add_modifier
+- trade_good_jewelry_sell_price_mult_modifier
+- trade_good_ivory_buy_price_add_modifier
+- trade_good_ivory_buy_price_mult_modifier
+- trade_good_ivory_sell_price_add_modifier
+- trade_good_ivory_sell_price_mult_modifier
+- trade_good_glass_buy_price_add_modifier
+- trade_good_glass_buy_price_mult_modifier
+- trade_good_glass_sell_price_add_modifier
+- trade_good_glass_sell_price_mult_modifier
+- trade_good_sugar_buy_price_add_modifier
+- trade_good_sugar_buy_price_mult_modifier
+- trade_good_sugar_sell_price_add_modifier
+- trade_good_sugar_sell_price_mult_modifier
+- trade_good_incense_buy_price_add_modifier
+- trade_good_incense_buy_price_mult_modifier
+- trade_good_incense_sell_price_add_modifier
+- trade_good_incense_sell_price_mult_modifier
+- trade_good_ceramics_buy_price_add_modifier
+- trade_good_ceramics_buy_price_mult_modifier
+- trade_good_ceramics_sell_price_add_modifier
+- trade_good_ceramics_sell_price_mult_modifier
+- trade_good_lacquerware_buy_price_add_modifier
+- trade_good_lacquerware_buy_price_mult_modifier
+- trade_good_lacquerware_sell_price_add_modifier
+- trade_good_lacquerware_sell_price_mult_modifier
+- trade_good_medicaments_buy_price_add_modifier
+- trade_good_medicaments_buy_price_mult_modifier
+- trade_good_medicaments_sell_price_add_modifier
+- trade_good_medicaments_sell_price_mult_modifier
+- trade_good_tea_buy_price_add_modifier
+- trade_good_tea_buy_price_mult_modifier
+- trade_good_tea_sell_price_add_modifier
+- trade_good_tea_sell_price_mult_modifier
 
 ### 未解析文件
 

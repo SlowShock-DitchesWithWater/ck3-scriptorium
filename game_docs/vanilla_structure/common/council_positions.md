@@ -1,6 +1,6 @@
 # common/council_positions 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：3（其中 Jomini 解析 2 个）
 - 顶层块条目总数：15，跨文件唯一条目 15
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
@@ -9,7 +9,7 @@
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_council_positions.txt` | 88776 | 11 | 0 | jomini |
+| `00_council_positions.txt` | 93691 | 11 | 0 | jomini |
 | `01_ministry_positions.txt` | 6106 | 4 | 0 | jomini |
 | `_council_positions.info` | 5499 | - | - | 纯文档（非 Jomini） |
 

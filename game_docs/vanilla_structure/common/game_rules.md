@@ -1,6 +1,6 @@
 # common/game_rules 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：3（其中 Jomini 解析 2 个）
 - 顶层块条目总数：86，跨文件唯一条目 86
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
@@ -9,7 +9,7 @@
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_game_rules.txt` | 26474 | 85 | 0 | jomini |
+| `00_game_rules.txt` | 26481 | 85 | 0 | jomini |
 | `01_empire_faith_gate_rules.txt` | 200 | 1 | 0 | jomini |
 | `_game_rules.info` | 1545 | - | - | 纯文档（非 Jomini） |
 

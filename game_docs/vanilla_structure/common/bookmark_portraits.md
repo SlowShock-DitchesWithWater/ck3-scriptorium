@@ -1,8 +1,8 @@
 # common/bookmark_portraits 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：342（其中 Jomini 解析 341 个）
-- 顶层块条目总数：341，跨文件唯一条目 341
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：360（其中 Jomini 解析 359 个）
+- 顶层块条目总数：359，跨文件唯一条目 359
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -10,314 +10,332 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `_bookmark_portraits.info` | 2527 | - | - | 纯文档（非 Jomini） |
-| `bookmark_adalwin_salzburg.txt` | 9527 | 1 | 0 | jomini |
-| `bookmark_adventurers_almos_arpad.txt` | 9218 | 1 | 0 | jomini |
-| `bookmark_adventurers_almos_arpad_alt_linutika.txt` | 9095 | 1 | 0 | jomini |
-| `bookmark_adventurers_almos_arpad_alt_son_arpad.txt` | 9193 | 1 | 0 | jomini |
-| `bookmark_adventurers_count_eudes.txt` | 9049 | 1 | 0 | jomini |
-| `bookmark_adventurers_count_eudes_alt_robert.txt` | 8870 | 1 | 0 | jomini |
-| `bookmark_adventurers_count_eudes_alt_uncle_eudes.txt` | 9082 | 1 | 0 | jomini |
-| `bookmark_adventurers_daurama_daura.txt` | 8949 | 1 | 0 | jomini |
-| `bookmark_adventurers_daurama_daura_alt_bawo.txt` | 8836 | 1 | 0 | jomini |
-| `bookmark_adventurers_jarl_haesteinn.txt` | 9269 | 1 | 0 | jomini |
-| `bookmark_adventurers_jarl_haesteinn_alt_ragnarr.txt` | 9068 | 1 | 0 | jomini |
-| `bookmark_adventurers_rurik_rurikid.txt` | 9233 | 1 | 0 | jomini |
-| `bookmark_adventurers_rurik_rurikid_alt_helgi.txt` | 9230 | 1 | 0 | jomini |
-| `bookmark_animation_test_dwarf_female.txt` | 9084 | 1 | 0 | jomini |
-| `bookmark_animation_test_dwarf_male.txt` | 9147 | 1 | 0 | jomini |
-| `bookmark_animation_test_fat_dwarf_female.txt` | 9093 | 1 | 0 | jomini |
-| `bookmark_animation_test_fat_dwarf_male.txt` | 9155 | 1 | 0 | jomini |
+| `bookmark_adalwin_salzburg.txt` | 9604 | 1 | 0 | jomini |
+| `bookmark_adventurers_almos_arpad.txt` | 9456 | 1 | 0 | jomini |
+| `bookmark_adventurers_almos_arpad_alt_linutika.txt` | 9351 | 1 | 0 | jomini |
+| `bookmark_adventurers_almos_arpad_alt_son_arpad.txt` | 9395 | 1 | 0 | jomini |
+| `bookmark_adventurers_count_eudes.txt` | 9417 | 1 | 0 | jomini |
+| `bookmark_adventurers_count_eudes_alt_robert.txt` | 9154 | 1 | 0 | jomini |
+| `bookmark_adventurers_count_eudes_alt_uncle_eudes.txt` | 9318 | 1 | 0 | jomini |
+| `bookmark_adventurers_daurama_daura.txt` | 9171 | 1 | 0 | jomini |
+| `bookmark_adventurers_daurama_daura_alt_bawo.txt` | 9113 | 1 | 0 | jomini |
+| `bookmark_adventurers_jarl_haesteinn.txt` | 9537 | 1 | 0 | jomini |
+| `bookmark_adventurers_jarl_haesteinn_alt_ragnarr.txt` | 9371 | 1 | 0 | jomini |
+| `bookmark_adventurers_rurik_rurikid.txt` | 9538 | 1 | 0 | jomini |
+| `bookmark_adventurers_rurik_rurikid_alt_helgi.txt` | 9431 | 1 | 0 | jomini |
+| `bookmark_animation_test_dwarf_female.txt` | 9303 | 1 | 0 | jomini |
+| `bookmark_animation_test_dwarf_male.txt` | 9409 | 1 | 0 | jomini |
+| `bookmark_animation_test_fat_dwarf_female.txt` | 9455 | 1 | 0 | jomini |
+| `bookmark_animation_test_fat_dwarf_male.txt` | 9476 | 1 | 0 | jomini |
 | `bookmark_animation_test_fat_female.txt` | 8377 | 1 | 0 | jomini |
 | `bookmark_animation_test_fat_male.txt` | 8371 | 1 | 0 | jomini |
-| `bookmark_animation_test_female.txt` | 9079 | 1 | 0 | jomini |
-| `bookmark_animation_test_female_child.txt` | 9010 | 1 | 0 | jomini |
-| `bookmark_animation_test_female_pregnant.txt` | 9071 | 1 | 0 | jomini |
-| `bookmark_animation_test_hunchbacked_female.txt` | 9022 | 1 | 0 | jomini |
-| `bookmark_animation_test_hunchbacked_male.txt` | 9108 | 1 | 0 | jomini |
-| `bookmark_animation_test_male.txt` | 9095 | 1 | 0 | jomini |
-| `bookmark_animation_test_male_child.txt` | 9107 | 1 | 0 | jomini |
-| `bookmark_animation_test_muscular_female.txt` | 9097 | 1 | 0 | jomini |
-| `bookmark_animation_test_muscular_male.txt` | 9164 | 1 | 0 | jomini |
-| `bookmark_bulgaria_boris.txt` | 9423 | 1 | 0 | jomini |
-| `bookmark_bulgaria_boris_alt_son.txt` | 9407 | 1 | 0 | jomini |
-| `bookmark_bulgaria_boris_alt_wife.txt` | 9482 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_angelos.txt` | 9181 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_angelos_alexios.txt` | 9243 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_angelos_ioannes.txt` | 9258 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_ioannes_kantakouzenos.txt` | 9261 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_ioannes_kantakouzenos_michael.txt` | 9220 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_kilij_arslan.txt` | 9257 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_kilij_arslan_kaykhusraw.txt` | 9170 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_kilij_arslan_suleyman.txt` | 9265 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_palaiologos.txt` | 9220 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_palaiologos_eirene.txt` | 9225 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_tamar.txt` | 9206 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_tamar_giorgi.txt` | 9209 | 1 | 0 | jomini |
-| `bookmark_call_of_the_empire_tamar_rusudan.txt` | 9161 | 1 | 0 | jomini |
-| `bookmark_carolingians_charles_the_bald.txt` | 9222 | 1 | 0 | jomini |
-| `bookmark_carolingians_charles_the_bald_alt_judith.txt` | 9173 | 1 | 0 | jomini |
-| `bookmark_carolingians_charles_the_bald_alt_louis.txt` | 9300 | 1 | 0 | jomini |
-| `bookmark_carolingians_king_karlmann.txt` | 9219 | 1 | 0 | jomini |
-| `bookmark_carolingians_king_karlmann_alt_arnulf.txt` | 9242 | 1 | 0 | jomini |
-| `bookmark_carolingians_king_karlmann_alt_hemma.txt` | 9284 | 1 | 0 | jomini |
-| `bookmark_carolingians_king_lothaire.txt` | 9296 | 1 | 0 | jomini |
-| `bookmark_carolingians_king_lothaire_alt_teutberga.txt` | 9079 | 1 | 0 | jomini |
-| `bookmark_carolingians_king_lothaire_alt_waldrada.txt` | 8982 | 1 | 0 | jomini |
-| `bookmark_carolingians_king_louis.txt` | 9294 | 1 | 0 | jomini |
-| `bookmark_carolingians_king_louis_alt_engelberga.txt` | 9173 | 1 | 0 | jomini |
-| `bookmark_carolingians_king_louis_alt_ermengarde.txt` | 9100 | 1 | 0 | jomini |
-| `bookmark_carolingians_ludwig_the_german.txt` | 9314 | 1 | 0 | jomini |
-| `bookmark_carolingians_ludwig_the_german_alt_karl.txt` | 9286 | 1 | 0 | jomini |
-| `bookmark_carolingians_ludwig_the_german_alt_youngerludwig.txt` | 9250 | 1 | 0 | jomini |
-| `bookmark_china_1066_duan_silian.txt` | 9234 | 1 | 0 | jomini |
-| `bookmark_china_1066_empress_liang.txt` | 9113 | 1 | 0 | jomini |
-| `bookmark_china_1066_ly_thanh_tong.txt` | 9254 | 1 | 0 | jomini |
-| `bookmark_china_1066_qin_guan.txt` | 9050 | 1 | 0 | jomini |
-| `bookmark_china_1066_su_shi.txt` | 9178 | 1 | 0 | jomini |
+| `bookmark_animation_test_female.txt` | 9311 | 1 | 0 | jomini |
+| `bookmark_animation_test_female_child.txt` | 9458 | 1 | 0 | jomini |
+| `bookmark_animation_test_female_pregnant.txt` | 9375 | 1 | 0 | jomini |
+| `bookmark_animation_test_hunchbacked_female.txt` | 9299 | 1 | 0 | jomini |
+| `bookmark_animation_test_hunchbacked_male.txt` | 9454 | 1 | 0 | jomini |
+| `bookmark_animation_test_male.txt` | 9459 | 1 | 0 | jomini |
+| `bookmark_animation_test_male_child.txt` | 9365 | 1 | 0 | jomini |
+| `bookmark_animation_test_muscular_female.txt` | 9316 | 1 | 0 | jomini |
+| `bookmark_animation_test_muscular_male.txt` | 9469 | 1 | 0 | jomini |
+| `bookmark_bulgaria_boris.txt` | 9448 | 1 | 0 | jomini |
+| `bookmark_bulgaria_boris_alt_son.txt` | 9439 | 1 | 0 | jomini |
+| `bookmark_bulgaria_boris_alt_wife.txt` | 9475 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_angelos.txt` | 9383 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_angelos_alexios.txt` | 9446 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_angelos_ioannes.txt` | 9489 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_ioannes_kantakouzenos.txt` | 9505 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_ioannes_kantakouzenos_michael.txt` | 9419 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_kilij_arslan.txt` | 9520 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_kilij_arslan_kaykhusraw.txt` | 9411 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_kilij_arslan_suleyman.txt` | 9586 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_palaiologos.txt` | 9421 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_palaiologos_eirene.txt` | 9424 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_tamar.txt` | 9400 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_tamar_giorgi.txt` | 9444 | 1 | 0 | jomini |
+| `bookmark_call_of_the_empire_tamar_rusudan.txt` | 9361 | 1 | 0 | jomini |
+| `bookmark_carolingians_charles_the_bald.txt` | 9444 | 1 | 0 | jomini |
+| `bookmark_carolingians_charles_the_bald_alt_judith.txt` | 9453 | 1 | 0 | jomini |
+| `bookmark_carolingians_charles_the_bald_alt_louis.txt` | 9563 | 1 | 0 | jomini |
+| `bookmark_carolingians_king_karlmann.txt` | 9440 | 1 | 0 | jomini |
+| `bookmark_carolingians_king_karlmann_alt_arnulf.txt` | 9507 | 1 | 0 | jomini |
+| `bookmark_carolingians_king_karlmann_alt_hemma.txt` | 9505 | 1 | 0 | jomini |
+| `bookmark_carolingians_king_lothaire.txt` | 9522 | 1 | 0 | jomini |
+| `bookmark_carolingians_king_lothaire_alt_teutberga.txt` | 9370 | 1 | 0 | jomini |
+| `bookmark_carolingians_king_lothaire_alt_waldrada.txt` | 9201 | 1 | 0 | jomini |
+| `bookmark_carolingians_king_louis.txt` | 9560 | 1 | 0 | jomini |
+| `bookmark_carolingians_king_louis_alt_engelberga.txt` | 9462 | 1 | 0 | jomini |
+| `bookmark_carolingians_king_louis_alt_ermengarde.txt` | 9440 | 1 | 0 | jomini |
+| `bookmark_carolingians_ludwig_the_german.txt` | 9576 | 1 | 0 | jomini |
+| `bookmark_carolingians_ludwig_the_german_alt_karl.txt` | 9505 | 1 | 0 | jomini |
+| `bookmark_carolingians_ludwig_the_german_alt_youngerludwig.txt` | 9472 | 1 | 0 | jomini |
+| `bookmark_china_1066_duan_silian.txt` | 9474 | 1 | 0 | jomini |
+| `bookmark_china_1066_empress_liang.txt` | 9355 | 1 | 0 | jomini |
+| `bookmark_china_1066_ly_thanh_tong.txt` | 9461 | 1 | 0 | jomini |
+| `bookmark_china_1066_qin_guan.txt` | 9411 | 1 | 0 | jomini |
+| `bookmark_china_1066_su_shi.txt` | 9365 | 1 | 0 | jomini |
 | `bookmark_china_1066_wang_anshi.txt` | 9039 | 1 | 0 | jomini |
 | `bookmark_china_1066_wang_shao.txt` | 9274 | 1 | 0 | jomini |
-| `bookmark_china_1178_li_renxiao.txt` | 9180 | 1 | 0 | jomini |
-| `bookmark_china_1178_tudan_xixian.txt` | 9259 | 1 | 0 | jomini |
-| `bookmark_china_1178_xin_qiji.txt` | 9243 | 1 | 0 | jomini |
-| `bookmark_china_1178_zhang_shi.txt` | 9192 | 1 | 0 | jomini |
-| `bookmark_china_1178_zhu_xi.txt` | 9175 | 1 | 0 | jomini |
-| `bookmark_china_867_gao_pian.txt` | 9188 | 1 | 0 | jomini |
-| `bookmark_china_867_he_quanhao.txt` | 9299 | 1 | 0 | jomini |
-| `bookmark_china_867_huang_chao.txt` | 9231 | 1 | 0 | jomini |
-| `bookmark_china_867_zhang_huaishen.txt` | 9300 | 1 | 0 | jomini |
-| `bookmark_china_867_zhuye_chixin.txt` | 9255 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_adanis_ibn_awsaga.txt` | 9287 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_bernat_of_gothia.txt` | 9235 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_ibn_awsaga_alt_masud.txt` | 8895 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_ibn_awsaga_alt_yahya.txt` | 8859 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_ibn_marwan.txt` | 9202 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_ibn_marwan_alt_rahman.txt` | 8960 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_ibn_marwan_alt_surunbaqi.txt` | 9257 | 1 | 0 | jomini |
+| `bookmark_china_1178_li_renxiao.txt` | 9469 | 1 | 0 | jomini |
+| `bookmark_china_1178_tudan_xixian.txt` | 9637 | 1 | 0 | jomini |
+| `bookmark_china_1178_xin_qiji.txt` | 9399 | 1 | 0 | jomini |
+| `bookmark_china_1178_zhang_shi.txt` | 9537 | 1 | 0 | jomini |
+| `bookmark_china_1178_zhu_xi.txt` | 9320 | 1 | 0 | jomini |
+| `bookmark_china_867_gao_pian.txt` | 9599 | 1 | 0 | jomini |
+| `bookmark_china_867_he_quanhao.txt` | 9542 | 1 | 0 | jomini |
+| `bookmark_china_867_huang_chao.txt` | 9477 | 1 | 0 | jomini |
+| `bookmark_china_867_zhang_huaishen.txt` | 9467 | 1 | 0 | jomini |
+| `bookmark_china_867_zhuye_chixin.txt` | 9546 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_adanis_ibn_awsaga.txt` | 9492 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_bernat_of_gothia.txt` | 9497 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_ibn_awsaga_alt_masud.txt` | 9190 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_ibn_awsaga_alt_yahya.txt` | 9129 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_ibn_marwan.txt` | 9369 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_ibn_marwan_alt_rahman.txt` | 9264 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_ibn_marwan_alt_surunbaqi.txt` | 9536 | 1 | 0 | jomini |
 | `bookmark_fp2_iberia_ibn_marwan_alt_zaid.txt` | 8431 | 1 | 0 | jomini |
 | `bookmark_fp2_iberia_ibn_mendo_guterres_alt_ermesinda.txt` | 8582 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_lubb_ibn_musa_alt_mohamed.txt` | 9046 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_lubb_ibn_musa_alt_oria.txt` | 8989 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_lupp_ibn_musa.txt` | 9211 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_mendo_guterres.txt` | 9213 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_mendo_guterres_alt_arias.txt` | 8876 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_mendo_guterres_alt_ermesinda.txt` | 9002 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_sunyer.txt` | 9162 | 1 | 0 | jomini |
-| `bookmark_fp2_iberia_wilfred_the_hairy.txt` | 9305 | 1 | 0 | jomini |
-| `bookmark_genpei_hidehira.txt` | 9278 | 1 | 0 | jomini |
-| `bookmark_genpei_hidehira_hidehisa.txt` | 9292 | 1 | 0 | jomini |
-| `bookmark_genpei_hidehira_yasuhira.txt` | 9334 | 1 | 0 | jomini |
-| `bookmark_genpei_kiyomori.txt` | 9281 | 1 | 0 | jomini |
-| `bookmark_genpei_kiyomori_shigemori.txt` | 9302 | 1 | 0 | jomini |
-| `bookmark_genpei_kiyomori_tsunemori.txt` | 9330 | 1 | 0 | jomini |
-| `bookmark_genpei_motofusa.txt` | 9340 | 1 | 0 | jomini |
-| `bookmark_genpei_motofusa_kanezane.txt` | 9317 | 1 | 0 | jomini |
-| `bookmark_genpei_motofusa_takatada.txt` | 9322 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_lubb_ibn_musa_alt_mohamed.txt` | 9427 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_lubb_ibn_musa_alt_oria.txt` | 9183 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_lupp_ibn_musa.txt` | 9446 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_mendo_guterres.txt` | 9445 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_mendo_guterres_alt_arias.txt` | 9283 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_mendo_guterres_alt_ermesinda.txt` | 9221 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_sunyer.txt` | 9494 | 1 | 0 | jomini |
+| `bookmark_fp2_iberia_wilfred_the_hairy.txt` | 9551 | 1 | 0 | jomini |
+| `bookmark_genpei_hidehira.txt` | 9479 | 1 | 0 | jomini |
+| `bookmark_genpei_hidehira_hidehisa.txt` | 9809 | 1 | 0 | jomini |
+| `bookmark_genpei_hidehira_yasuhira.txt` | 9488 | 1 | 0 | jomini |
+| `bookmark_genpei_kiyomori.txt` | 9509 | 1 | 0 | jomini |
+| `bookmark_genpei_kiyomori_shigemori.txt` | 9504 | 1 | 0 | jomini |
+| `bookmark_genpei_kiyomori_tsunemori.txt` | 9552 | 1 | 0 | jomini |
+| `bookmark_genpei_motofusa.txt` | 9487 | 1 | 0 | jomini |
+| `bookmark_genpei_motofusa_kanezane.txt` | 9516 | 1 | 0 | jomini |
+| `bookmark_genpei_motofusa_takatada.txt` | 9507 | 1 | 0 | jomini |
 | `bookmark_genpei_takakura.txt` | 9203 | 1 | 0 | jomini |
 | `bookmark_genpei_takakura_noriko.txt` | 9055 | 1 | 0 | jomini |
 | `bookmark_genpei_takakura_shirakawa.txt` | 9206 | 1 | 0 | jomini |
-| `bookmark_genpei_yoritomo.txt` | 9358 | 1 | 0 | jomini |
-| `bookmark_genpei_yoritomo_noriyori.txt` | 9355 | 1 | 0 | jomini |
-| `bookmark_genpei_yoritomo_yoshitsune.txt` | 9474 | 1 | 0 | jomini |
-| `bookmark_genpei_yoshinaka.txt` | 9380 | 1 | 0 | jomini |
-| `bookmark_genpei_yoshinaka_tomoe.txt` | 9089 | 1 | 0 | jomini |
-| `bookmark_genpei_yoshinaka_yoshitaka.txt` | 9203 | 1 | 0 | jomini |
-| `bookmark_hamburg_rimbert.txt` | 9586 | 1 | 0 | jomini |
-| `bookmark_hastings_denmark.txt` | 9202 | 1 | 0 | jomini |
-| `bookmark_hastings_denmark_alt_harald.txt` | 9202 | 1 | 0 | jomini |
-| `bookmark_hastings_denmark_alt_knud.txt` | 9101 | 1 | 0 | jomini |
-| `bookmark_hastings_england.txt` | 9255 | 1 | 0 | jomini |
-| `bookmark_hastings_england_alt_eadgifu.txt` | 8956 | 1 | 0 | jomini |
-| `bookmark_hastings_england_alt_tostig.txt` | 9261 | 1 | 0 | jomini |
-| `bookmark_hastings_normandy.txt` | 9161 | 1 | 0 | jomini |
-| `bookmark_hastings_normandy_alt_robert.txt` | 9040 | 1 | 0 | jomini |
-| `bookmark_hastings_normandy_alt_william.txt` | 9018 | 1 | 0 | jomini |
-| `bookmark_hastings_norway.txt` | 9181 | 1 | 0 | jomini |
-| `bookmark_hastings_norway_alt_ingegerd.txt` | 9058 | 1 | 0 | jomini |
-| `bookmark_hastings_norway_alt_olaf.txt` | 9167 | 1 | 0 | jomini |
-| `bookmark_hastings_scotland.txt` | 9250 | 1 | 0 | jomini |
-| `bookmark_hastings_scotland_alt_donald.txt` | 9228 | 1 | 0 | jomini |
-| `bookmark_hastings_scotland_alt_duncan.txt` | 9109 | 1 | 0 | jomini |
-| `bookmark_iberia_infanta_urraca.txt` | 9147 | 1 | 0 | jomini |
-| `bookmark_iberia_infanta_urraca_alt_elvira.txt` | 9159 | 1 | 0 | jomini |
-| `bookmark_iberia_king_alfonso.txt` | 9228 | 1 | 0 | jomini |
-| `bookmark_iberia_king_alfonso_alt_nuno.txt` | 9336 | 1 | 0 | jomini |
-| `bookmark_iberia_king_alfonso_alt_sancha.txt` | 9040 | 1 | 0 | jomini |
-| `bookmark_iberia_king_antso.txt` | 9187 | 1 | 0 | jomini |
-| `bookmark_iberia_king_antso_alt_ramiro.txt` | 9282 | 1 | 0 | jomini |
-| `bookmark_iberia_king_antso_alt_sancho.txt` | 9185 | 1 | 0 | jomini |
-| `bookmark_iberia_king_garcia.txt` | 9248 | 1 | 0 | jomini |
-| `bookmark_iberia_king_sancho.txt` | 9251 | 1 | 0 | jomini |
-| `bookmark_iberia_king_sancho_alt_rodrigo.txt` | 9502 | 1 | 0 | jomini |
-| `bookmark_japan_go_reizei.txt` | 9162 | 1 | 0 | jomini |
-| `bookmark_japan_go_reizei_go_sanjo.txt` | 9289 | 1 | 0 | jomini |
-| `bookmark_japan_go_reizei_tameyuki.txt` | 9193 | 1 | 0 | jomini |
-| `bookmark_japan_morofusa.txt` | 9294 | 1 | 0 | jomini |
-| `bookmark_japan_morofusa_akifusa.txt` | 9362 | 1 | 0 | jomini |
-| `bookmark_japan_morofusa_toshifusa.txt` | 9632 | 1 | 0 | jomini |
-| `bookmark_japan_takenori.txt` | 9338 | 1 | 0 | jomini |
-| `bookmark_japan_takenori_mitsuyori.txt` | 9368 | 1 | 0 | jomini |
-| `bookmark_japan_takenori_takehira.txt` | 9357 | 1 | 0 | jomini |
-| `bookmark_japan_yorimichi.txt` | 9363 | 1 | 0 | jomini |
-| `bookmark_japan_yorimichi_morozane.txt` | 9270 | 1 | 0 | jomini |
-| `bookmark_japan_yorimichi_sadatsuna.txt` | 9280 | 1 | 0 | jomini |
-| `bookmark_japan_yoriyoshi.txt` | 9408 | 1 | 0 | jomini |
-| `bookmark_japan_yoriyoshi_yorisue.txt` | 9370 | 1 | 0 | jomini |
-| `bookmark_japan_yoriyoshi_yoshiie.txt` | 9350 | 1 | 0 | jomini |
-| `bookmark_laamps_alt_alp_arslan.txt` | 9230 | 1 | 0 | jomini |
-| `bookmark_laamps_alt_boudewijn_v.txt` | 9305 | 1 | 0 | jomini |
-| `bookmark_laamps_alt_konstantinos_x.txt` | 9431 | 1 | 0 | jomini |
-| `bookmark_laamps_alt_mensur_qutalmishoglu.txt` | 9414 | 1 | 0 | jomini |
-| `bookmark_laamps_alt_roussel_de_baeilleul.txt` | 9244 | 1 | 0 | jomini |
+| `bookmark_genpei_yoritomo.txt` | 9558 | 1 | 0 | jomini |
+| `bookmark_genpei_yoritomo_noriyori.txt` | 9567 | 1 | 0 | jomini |
+| `bookmark_genpei_yoritomo_yoshitsune.txt` | 9677 | 1 | 0 | jomini |
+| `bookmark_genpei_yoshinaka.txt` | 9574 | 1 | 0 | jomini |
+| `bookmark_genpei_yoshinaka_tomoe.txt` | 9290 | 1 | 0 | jomini |
+| `bookmark_genpei_yoshinaka_yoshitaka.txt` | 9445 | 1 | 0 | jomini |
+| `bookmark_hamburg_rimbert.txt` | 9575 | 1 | 0 | jomini |
+| `bookmark_hastings_denmark.txt` | 9376 | 1 | 0 | jomini |
+| `bookmark_hastings_denmark_alt_harald.txt` | 9369 | 1 | 0 | jomini |
+| `bookmark_hastings_denmark_alt_knud.txt` | 9440 | 1 | 0 | jomini |
+| `bookmark_hastings_england.txt` | 9471 | 1 | 0 | jomini |
+| `bookmark_hastings_england_alt_eadgifu.txt` | 9333 | 1 | 0 | jomini |
+| `bookmark_hastings_england_alt_tostig.txt` | 9526 | 1 | 0 | jomini |
+| `bookmark_hastings_normandy.txt` | 9487 | 1 | 0 | jomini |
+| `bookmark_hastings_normandy_alt_robert.txt` | 9449 | 1 | 0 | jomini |
+| `bookmark_hastings_normandy_alt_william.txt` | 9444 | 1 | 0 | jomini |
+| `bookmark_hastings_norway.txt` | 9503 | 1 | 0 | jomini |
+| `bookmark_hastings_norway_alt_ingegerd.txt` | 9282 | 1 | 0 | jomini |
+| `bookmark_hastings_norway_alt_olaf.txt` | 9453 | 1 | 0 | jomini |
+| `bookmark_hastings_scotland.txt` | 9514 | 1 | 0 | jomini |
+| `bookmark_hastings_scotland_alt_donald.txt` | 9492 | 1 | 0 | jomini |
+| `bookmark_hastings_scotland_alt_duncan.txt` | 9353 | 1 | 0 | jomini |
+| `bookmark_iberia_infanta_urraca.txt` | 9358 | 1 | 0 | jomini |
+| `bookmark_iberia_infanta_urraca_alt_elvira.txt` | 9397 | 1 | 0 | jomini |
+| `bookmark_iberia_king_alfonso.txt` | 9501 | 1 | 0 | jomini |
+| `bookmark_iberia_king_alfonso_alt_nuno.txt` | 9429 | 1 | 0 | jomini |
+| `bookmark_iberia_king_alfonso_alt_sancha.txt` | 9348 | 1 | 0 | jomini |
+| `bookmark_iberia_king_antso.txt` | 9409 | 1 | 0 | jomini |
+| `bookmark_iberia_king_antso_alt_ramiro.txt` | 9542 | 1 | 0 | jomini |
+| `bookmark_iberia_king_antso_alt_sancho.txt` | 9446 | 1 | 0 | jomini |
+| `bookmark_iberia_king_garcia.txt` | 9525 | 1 | 0 | jomini |
+| `bookmark_iberia_king_sancho.txt` | 9564 | 1 | 0 | jomini |
+| `bookmark_iberia_king_sancho_alt_rodrigo.txt` | 9809 | 1 | 0 | jomini |
+| `bookmark_japan_go_reizei.txt` | 9558 | 1 | 0 | jomini |
+| `bookmark_japan_go_reizei_go_sanjo.txt` | 9472 | 1 | 0 | jomini |
+| `bookmark_japan_go_reizei_tameyuki.txt` | 9437 | 1 | 0 | jomini |
+| `bookmark_japan_morofusa.txt` | 9495 | 1 | 0 | jomini |
+| `bookmark_japan_morofusa_akifusa.txt` | 9505 | 1 | 0 | jomini |
+| `bookmark_japan_morofusa_toshifusa.txt` | 9476 | 1 | 0 | jomini |
+| `bookmark_japan_takenori.txt` | 9531 | 1 | 0 | jomini |
+| `bookmark_japan_takenori_mitsuyori.txt` | 9526 | 1 | 0 | jomini |
+| `bookmark_japan_takenori_takehira.txt` | 9817 | 1 | 0 | jomini |
+| `bookmark_japan_yorimichi.txt` | 9505 | 1 | 0 | jomini |
+| `bookmark_japan_yorimichi_morozane.txt` | 9461 | 1 | 0 | jomini |
+| `bookmark_japan_yorimichi_sadatsuna.txt` | 9467 | 1 | 0 | jomini |
+| `bookmark_japan_yoriyoshi.txt` | 9550 | 1 | 0 | jomini |
+| `bookmark_japan_yoriyoshi_yorisue.txt` | 9511 | 1 | 0 | jomini |
+| `bookmark_japan_yoriyoshi_yoshiie.txt` | 9551 | 1 | 0 | jomini |
+| `bookmark_laamps_alt_alp_arslan.txt` | 9487 | 1 | 0 | jomini |
+| `bookmark_laamps_alt_boudewijn_v.txt` | 9527 | 1 | 0 | jomini |
+| `bookmark_laamps_alt_konstantinos_x.txt` | 9676 | 1 | 0 | jomini |
+| `bookmark_laamps_alt_mensur_qutalmishoglu.txt` | 9635 | 1 | 0 | jomini |
+| `bookmark_laamps_alt_roussel_de_baeilleul.txt` | 9446 | 1 | 0 | jomini |
 | `bookmark_laamps_atsiz_ibn_uvak.txt` | 8731 | 1 | 0 | jomini |
-| `bookmark_laamps_el_cid.txt` | 9590 | 1 | 0 | jomini |
-| `bookmark_laamps_hassan_sabbah.txt` | 9109 | 1 | 0 | jomini |
-| `bookmark_laamps_hereweard_the_wake.txt` | 9580 | 1 | 0 | jomini |
-| `bookmark_laamps_robert_crispin.txt` | 9501 | 1 | 0 | jomini |
-| `bookmark_laamps_suleyman_qutalmishoglu.txt` | 9587 | 1 | 0 | jomini |
-| `bookmark_laamps_wallada_bint_al_mustakfi.txt` | 9207 | 1 | 0 | jomini |
-| `bookmark_lupus_aquileia.txt` | 9616 | 1 | 0 | jomini |
-| `bookmark_mandalas_867_indra.txt` | 8925 | 1 | 0 | jomini |
-| `bookmark_mandalas_867_jayavarman_angkor.txt` | 9011 | 1 | 0 | jomini |
-| `bookmark_mandalas_867_lokapala.txt` | 9034 | 1 | 0 | jomini |
-| `bookmark_mandalas_867_padumaraja.txt` | 8984 | 1 | 0 | jomini |
-| `bookmark_mandalas_867_pyinbya.txt` | 8918 | 1 | 0 | jomini |
-| `bookmark_mandalas_867_saladu.txt` | 9387 | 1 | 0 | jomini |
-| `bookmark_mandalas_867_tanet.txt` | 8815 | 1 | 0 | jomini |
-| `bookmark_moravia_rostislav.txt` | 9447 | 1 | 0 | jomini |
-| `bookmark_moravia_rostislav_alt_svatopluk.txt` | 9551 | 1 | 0 | jomini |
-| `bookmark_nomads_cumans.txt` | 9197 | 1 | 0 | jomini |
-| `bookmark_nomads_eastern_karakhanids.txt` | 9126 | 1 | 0 | jomini |
+| `bookmark_laamps_el_cid.txt` | 9792 | 1 | 0 | jomini |
+| `bookmark_laamps_hassan_sabbah.txt` | 9303 | 1 | 0 | jomini |
+| `bookmark_laamps_hereweard_the_wake.txt` | 9789 | 1 | 0 | jomini |
+| `bookmark_laamps_robert_crispin.txt` | 9701 | 1 | 0 | jomini |
+| `bookmark_laamps_suleyman_qutalmishoglu.txt` | 9787 | 1 | 0 | jomini |
+| `bookmark_laamps_wallada_bint_al_mustakfi.txt` | 9407 | 1 | 0 | jomini |
+| `bookmark_lupus_aquileia.txt` | 9679 | 1 | 0 | jomini |
+| `bookmark_mandalas_867_indra.txt` | 9094 | 1 | 0 | jomini |
+| `bookmark_mandalas_867_jayavarman_angkor.txt` | 9210 | 1 | 0 | jomini |
+| `bookmark_mandalas_867_lokapala.txt` | 9231 | 1 | 0 | jomini |
+| `bookmark_mandalas_867_padumaraja.txt` | 9173 | 1 | 0 | jomini |
+| `bookmark_mandalas_867_pyinbya.txt` | 9118 | 1 | 0 | jomini |
+| `bookmark_mandalas_867_saladu.txt` | 9390 | 1 | 0 | jomini |
+| `bookmark_mandalas_867_tanet.txt` | 9071 | 1 | 0 | jomini |
+| `bookmark_merchants_1178_enrico_dandolo.txt` | 9575 | 1 | 0 | jomini |
+| `bookmark_merchants_1178_ezzelino_ii.txt` | 9493 | 1 | 0 | jomini |
+| `bookmark_merchants_1178_guido_guerra.txt` | 9360 | 1 | 0 | jomini |
+| `bookmark_merchants_1178_humbert_savoy.txt` | 9455 | 1 | 0 | jomini |
+| `bookmark_merchants_1178_jutta_urslingen.txt` | 9361 | 1 | 0 | jomini |
+| `bookmark_merchants_1178_konrad_urslingen.txt` | 9627 | 1 | 0 | jomini |
+| `bookmark_merchants_1178_marco_sanudo.txt` | 9452 | 1 | 0 | jomini |
+| `bookmark_merchants_1178_pietro_iii.txt` | 9545 | 1 | 0 | jomini |
+| `bookmark_merchants_1178_rinaldo_guidi.txt` | 9382 | 1 | 0 | jomini |
+| `bookmark_merchants_1178_speronella_dalesmanni.txt` | 9378 | 1 | 0 | jomini |
+| `bookmark_merchants_1178_thomas_savoy.txt` | 9208 | 1 | 0 | jomini |
+| `bookmark_merchants_bookmark_wuhsha_al_dallala_5.txt` | 9266 | 1 | 0 | jomini |
+| `bookmark_merchants_domenico_contarini.txt` | 9339 | 1 | 0 | jomini |
+| `bookmark_merchants_greek_salvidi_1.txt` | 9794 | 1 | 0 | jomini |
+| `bookmark_merchants_nattal_sahu.txt` | 9321 | 1 | 0 | jomini |
+| `bookmark_merchants_sun_zhong.txt` | 12046 | 1 | 0 | jomini |
+| `bookmark_merchants_vitale_faliero.txt` | 9495 | 1 | 0 | jomini |
+| `bookmark_merchants_wuhsha_al_dallala.txt` | 9370 | 1 | 0 | jomini |
+| `bookmark_moravia_rostislav.txt` | 9384 | 1 | 0 | jomini |
+| `bookmark_moravia_rostislav_alt_svatopluk.txt` | 9573 | 1 | 0 | jomini |
+| `bookmark_nomads_cumans.txt` | 9338 | 1 | 0 | jomini |
+| `bookmark_nomads_eastern_karakhanids.txt` | 9368 | 1 | 0 | jomini |
 | `bookmark_nomads_ghudayya.txt` | 9171 | 1 | 0 | jomini |
 | `bookmark_nomads_ghudayya_haditha.txt` | 9162 | 1 | 0 | jomini |
 | `bookmark_nomads_hamid.txt` | 9188 | 1 | 0 | jomini |
-| `bookmark_nomads_inanch_bilge.txt` | 9232 | 1 | 0 | jomini |
-| `bookmark_nomads_inanch_bilge_gurbesu.txt` | 9161 | 1 | 0 | jomini |
-| `bookmark_nomads_inanch_bilge_tayang.txt` | 9168 | 1 | 0 | jomini |
-| `bookmark_nomads_jamukha.txt` | 9475 | 1 | 0 | jomini |
-| `bookmark_nomads_keraits.txt` | 9222 | 1 | 0 | jomini |
-| `bookmark_nomads_keraits_hongji.txt` | 9206 | 1 | 0 | jomini |
-| `bookmark_nomads_keraits_margus.txt` | 9122 | 1 | 0 | jomini |
+| `bookmark_nomads_inanch_bilge.txt` | 9475 | 1 | 0 | jomini |
+| `bookmark_nomads_inanch_bilge_gurbesu.txt` | 9361 | 1 | 0 | jomini |
+| `bookmark_nomads_inanch_bilge_tayang.txt` | 9465 | 1 | 0 | jomini |
+| `bookmark_nomads_jamukha.txt` | 9545 | 1 | 0 | jomini |
+| `bookmark_nomads_keraits.txt` | 9525 | 1 | 0 | jomini |
+| `bookmark_nomads_keraits_hongji.txt` | 9480 | 1 | 0 | jomini |
+| `bookmark_nomads_keraits_margus.txt` | 9372 | 1 | 0 | jomini |
 | `bookmark_nomads_koncek.txt` | 9126 | 1 | 0 | jomini |
 | `bookmark_nomads_koncek_kotyan.txt` | 9148 | 1 | 0 | jomini |
 | `bookmark_nomads_koncek_svoboda.txt` | 9019 | 1 | 0 | jomini |
-| `bookmark_nomads_late_kirghiz.txt` | 9116 | 1 | 0 | jomini |
+| `bookmark_nomads_late_kirghiz.txt` | 9419 | 1 | 0 | jomini |
 | `bookmark_nomads_mihyu.txt` | 9152 | 1 | 0 | jomini |
 | `bookmark_nomads_mihyu_abd_al_haqq.txt` | 9093 | 1 | 0 | jomini |
-| `bookmark_nomads_pechenegs.txt` | 9165 | 1 | 0 | jomini |
+| `bookmark_nomads_pechenegs.txt` | 9367 | 1 | 0 | jomini |
 | `bookmark_nomads_qaraqush.txt` | 9145 | 1 | 0 | jomini |
-| `bookmark_nomads_temujin.txt` | 9329 | 1 | 0 | jomini |
-| `bookmark_nomads_temujin_borte.txt` | 9077 | 1 | 0 | jomini |
-| `bookmark_nomads_temujin_hoelun.txt` | 9136 | 1 | 0 | jomini |
-| `bookmark_nomads_togrul.txt` | 9194 | 1 | 0 | jomini |
-| `bookmark_nomads_togrul_oghuul.txt` | 9219 | 1 | 0 | jomini |
-| `bookmark_nomads_wolila.txt` | 9152 | 1 | 0 | jomini |
-| `bookmark_nomads_wolila_zhilugu.txt` | 9133 | 1 | 0 | jomini |
-| `bookmark_northmen_bjorn_ironside.txt` | 9228 | 1 | 0 | jomini |
-| `bookmark_northmen_bjorn_ironside_alt_eirikr.txt` | 9158 | 1 | 0 | jomini |
-| `bookmark_northmen_bjorn_ironside_alt_ingrid.txt` | 9111 | 1 | 0 | jomini |
-| `bookmark_northmen_earl_alfred.txt` | 9144 | 1 | 0 | jomini |
-| `bookmark_northmen_earl_alfred_alt_aethelred.txt` | 9203 | 1 | 0 | jomini |
-| `bookmark_northmen_halfdan_whiteshirt.txt` | 9254 | 1 | 0 | jomini |
-| `bookmark_northmen_halfdan_whiteshirt_alt_gudfrid.txt` | 9252 | 1 | 0 | jomini |
-| `bookmark_northmen_halfdan_whiteshirt_alt_saga.txt` | 9008 | 1 | 0 | jomini |
-| `bookmark_northmen_ivar_the_boneless.txt` | 9329 | 1 | 0 | jomini |
-| `bookmark_northmen_ivar_the_boneless_alt_barid.txt` | 9032 | 1 | 0 | jomini |
-| `bookmark_northmen_ivar_the_boneless_alt_sigfroth.txt` | 9019 | 1 | 0 | jomini |
-| `bookmark_northmen_sigurdr_snake_in_the_eye.txt` | 9263 | 1 | 0 | jomini |
-| `bookmark_northmen_sigurdr_snake_in_the_eye_alt_alof.txt` | 8939 | 1 | 0 | jomini |
-| `bookmark_northmen_sigurdr_snake_in_the_eye_alt_knud.txt` | 9084 | 1 | 0 | jomini |
-| `bookmark_persia_amir_yaqub.txt` | 9321 | 1 | 0 | jomini |
-| `bookmark_persia_ismail_alt_nasr.txt` | 9093 | 1 | 0 | jomini |
-| `bookmark_persia_ismail_samani.txt` | 9031 | 1 | 0 | jomini |
-| `bookmark_persia_muhammad_ibn_abdallah.txt` | 9111 | 1 | 0 | jomini |
-| `bookmark_persia_muhammad_ibn_abdallah_alt_caliph.txt` | 9128 | 1 | 0 | jomini |
-| `bookmark_persia_muhammad_ibn_abdallah_alt_muhammad_ibn_tahir.txt` | 9112 | 1 | 0 | jomini |
-| `bookmark_persia_rostam.txt` | 9282 | 1 | 0 | jomini |
-| `bookmark_persia_rostam_alt_hasan.txt` | 9071 | 1 | 0 | jomini |
-| `bookmark_persia_rostam_alt_shervin.txt` | 8847 | 1 | 0 | jomini |
-| `bookmark_persia_suri_of_mandesh.txt` | 9097 | 1 | 0 | jomini |
-| `bookmark_persia_suri_of_mandesh_alt_abdullah.txt` | 9140 | 1 | 0 | jomini |
+| `bookmark_nomads_temujin.txt` | 9467 | 1 | 0 | jomini |
+| `bookmark_nomads_temujin_borte.txt` | 9319 | 1 | 0 | jomini |
+| `bookmark_nomads_temujin_hoelun.txt` | 9438 | 1 | 0 | jomini |
+| `bookmark_nomads_togrul.txt` | 9439 | 1 | 0 | jomini |
+| `bookmark_nomads_togrul_oghuul.txt` | 9482 | 1 | 0 | jomini |
+| `bookmark_nomads_wolila.txt` | 9389 | 1 | 0 | jomini |
+| `bookmark_nomads_wolila_zhilugu.txt` | 9490 | 1 | 0 | jomini |
+| `bookmark_northmen_bjorn_ironside.txt` | 9551 | 1 | 0 | jomini |
+| `bookmark_northmen_bjorn_ironside_alt_eirikr.txt` | 9511 | 1 | 0 | jomini |
+| `bookmark_northmen_bjorn_ironside_alt_ingrid.txt` | 9332 | 1 | 0 | jomini |
+| `bookmark_northmen_earl_alfred.txt` | 9381 | 1 | 0 | jomini |
+| `bookmark_northmen_earl_alfred_alt_aethelred.txt` | 9404 | 1 | 0 | jomini |
+| `bookmark_northmen_halfdan_whiteshirt.txt` | 9521 | 1 | 0 | jomini |
+| `bookmark_northmen_halfdan_whiteshirt_alt_gudfrid.txt` | 9557 | 1 | 0 | jomini |
+| `bookmark_northmen_halfdan_whiteshirt_alt_saga.txt` | 9228 | 1 | 0 | jomini |
+| `bookmark_northmen_ivar_the_boneless.txt` | 9652 | 1 | 0 | jomini |
+| `bookmark_northmen_ivar_the_boneless_alt_barid.txt` | 9329 | 1 | 0 | jomini |
+| `bookmark_northmen_ivar_the_boneless_alt_sigfroth.txt` | 9329 | 1 | 0 | jomini |
+| `bookmark_northmen_sigurdr_snake_in_the_eye.txt` | 9567 | 1 | 0 | jomini |
+| `bookmark_northmen_sigurdr_snake_in_the_eye_alt_alof.txt` | 9204 | 1 | 0 | jomini |
+| `bookmark_northmen_sigurdr_snake_in_the_eye_alt_knud.txt` | 9439 | 1 | 0 | jomini |
+| `bookmark_persia_amir_yaqub.txt` | 9587 | 1 | 0 | jomini |
+| `bookmark_persia_ismail_alt_nasr.txt` | 9355 | 1 | 0 | jomini |
+| `bookmark_persia_ismail_samani.txt` | 9295 | 1 | 0 | jomini |
+| `bookmark_persia_muhammad_ibn_abdallah.txt` | 9332 | 1 | 0 | jomini |
+| `bookmark_persia_muhammad_ibn_abdallah_alt_caliph.txt` | 9397 | 1 | 0 | jomini |
+| `bookmark_persia_muhammad_ibn_abdallah_alt_muhammad_ibn_tahir.txt` | 9332 | 1 | 0 | jomini |
+| `bookmark_persia_rostam.txt` | 9426 | 1 | 0 | jomini |
+| `bookmark_persia_rostam_alt_hasan.txt` | 9292 | 1 | 0 | jomini |
+| `bookmark_persia_rostam_alt_shervin.txt` | 9112 | 1 | 0 | jomini |
+| `bookmark_persia_suri_of_mandesh.txt` | 9360 | 1 | 0 | jomini |
+| `bookmark_persia_suri_of_mandesh_alt_abdullah.txt` | 9393 | 1 | 0 | jomini |
 | `bookmark_persia_suri_of_mandesh_alt_farhana.txt` | 8585 | 1 | 0 | jomini |
-| `bookmark_persia_yaqub_alt_amr.txt` | 9160 | 1 | 0 | jomini |
-| `bookmark_persia_yaqub_alt_sebuk_eri.txt` | 9181 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_duchess_matilda.txt` | 9163 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_duke_robert.txt` | 9447 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_duke_robert_alt_bohemond.txt` | 9088 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_duke_robert_alt_roger.txt` | 9075 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_duke_vratislav.txt` | 9324 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_duke_vratislav_alt_judita.txt` | 8957 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_duke_vratislav_alt_ota.txt` | 9075 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_emir_yahya.txt` | 9486 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_emir_yahya_alt_yahya2.txt` | 8885 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_emir_yahya_alt_zahida.txt` | 9116 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_petty_king_murchad.txt` | 9228 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_petty_king_murchad_alt_bebinn.txt` | 8969 | 1 | 0 | jomini |
-| `bookmark_rags_to_riches_petty_king_murchad_alt_brian.txt` | 9156 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_gokbori.txt` | 9414 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_gokbori_ghazi.txt` | 9459 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_gokbori_yusuf.txt` | 9193 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_levon.txt` | 9193 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_levon_roupen.txt` | 9242 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_raimon.txt` | 9326 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_raimon_eschiva.txt` | 9198 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_saladin.txt` | 9431 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_saladin_ali.txt` | 9003 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_saladin_saphadin.txt` | 9225 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_sibylla.txt` | 9279 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_sibylla_baudouin.txt` | 9621 | 1 | 0 | jomini |
-| `bookmark_swords_of_faith_sibylla_baudouin_son.txt` | 8902 | 1 | 0 | jomini |
-| `challenge_character_aba_socotra.txt` | 9125 | 1 | 0 | jomini |
-| `challenge_character_aella_northumberland.txt` | 9242 | 1 | 0 | jomini |
-| `challenge_character_ahmad_egypt.txt` | 9144 | 1 | 0 | jomini |
-| `challenge_character_alfonsu_asturias.txt` | 9182 | 1 | 0 | jomini |
-| `challenge_character_algimantas_lithuanians.txt` | 9223 | 1 | 0 | jomini |
-| `challenge_character_ali_siracusa.txt` | 9078 | 1 | 0 | jomini |
-| `challenge_character_ali_taizz.txt` | 9155 | 1 | 0 | jomini |
-| `challenge_character_alusian_vidin.txt` | 9194 | 1 | 0 | jomini |
-| `challenge_character_amoghavarsha_karnata.txt` | 9161 | 1 | 0 | jomini |
-| `challenge_character_anawrahta_pagan.txt` | 9131 | 1 | 0 | jomini |
-| `challenge_character_ashot_armenia.txt` | 9242 | 1 | 0 | jomini |
-| `challenge_character_badr_acre.txt` | 9089 | 1 | 0 | jomini |
-| `challenge_character_berenguer_barcelona.txt` | 9314 | 1 | 0 | jomini |
-| `challenge_character_dawit_dembiya.txt` | 9066 | 1 | 0 | jomini |
-| `challenge_character_dumnarth_cornwall.txt` | 9278 | 1 | 0 | jomini |
-| `challenge_character_dyre_kiev.txt` | 9209 | 1 | 0 | jomini |
-| `challenge_character_eadgar_warwickshire.txt` | 9209 | 1 | 0 | jomini |
-| `challenge_character_erik_svealand.txt` | 9228 | 1 | 0 | jomini |
-| `challenge_character_fariburz_shirvan.txt` | 9179 | 1 | 0 | jomini |
-| `challenge_character_gregorios_napoli.txt` | 9247 | 1 | 0 | jomini |
-| `challenge_character_gudrod_western_isles.txt` | 9168 | 1 | 0 | jomini |
-| `challenge_character_gunda_orangallu.txt` | 9141 | 1 | 0 | jomini |
-| `challenge_character_haraldr_vestfold.txt` | 9106 | 1 | 0 | jomini |
-| `challenge_character_heinrich_angria.txt` | 9344 | 1 | 0 | jomini |
-| `challenge_character_henri_champagne.txt` | 9330 | 1 | 0 | jomini |
-| `challenge_character_herbert_vermandois.txt` | 9164 | 1 | 0 | jomini |
-| `challenge_character_ishaq_baalbek.txt` | 9229 | 1 | 0 | jomini |
-| `challenge_character_john_ulster.txt` | 9331 | 1 | 0 | jomini |
-| `challenge_character_khusraw_malik_punjab.txt` | 9183 | 1 | 0 | jomini |
-| `challenge_character_krutoj_nordmark.txt` | 9250 | 1 | 0 | jomini |
-| `challenge_character_kulin_bosna.txt` | 9270 | 1 | 0 | jomini |
-| `challenge_character_lambert_spoleto.txt` | 9249 | 1 | 0 | jomini |
-| `challenge_character_maghan_sibi.txt` | 9097 | 1 | 0 | jomini |
-| `challenge_character_mohammed_azerbaijan.txt` | 9182 | 1 | 0 | jomini |
-| `challenge_character_muhammad_africa.txt` | 9180 | 1 | 0 | jomini |
-| `challenge_character_nur_al_din_muhammed_nizari.txt` | 9157 | 1 | 0 | jomini |
-| `challenge_character_piarres_albarracin.txt` | 9260 | 1 | 0 | jomini |
-| `challenge_character_pierre_piedmonte.txt` | 9246 | 1 | 0 | jomini |
-| `challenge_character_prithviraja_rajputana.txt` | 9170 | 1 | 0 | jomini |
-| `challenge_character_raoul_valois.txt` | 9238 | 1 | 0 | jomini |
-| `challenge_character_renaud_kerak.txt` | 9356 | 1 | 0 | jomini |
-| `challenge_character_rhodri_gwynedd.txt` | 9269 | 1 | 0 | jomini |
-| `challenge_character_richard_capua.txt` | 9254 | 1 | 0 | jomini |
-| `challenge_character_richard_poitiers.txt` | 9265 | 1 | 0 | jomini |
-| `challenge_character_rogier_albi.txt` | 9198 | 1 | 0 | jomini |
-| `challenge_character_rostislav_tmutarakan.txt` | 9051 | 1 | 0 | jomini |
-| `challenge_character_sargis_greater_armenia.txt` | 9221 | 1 | 0 | jomini |
-| `challenge_character_shisnand_coimbra.txt` | 9241 | 1 | 0 | jomini |
-| `challenge_character_siemowit_wielkopolska.txt` | 9234 | 1 | 0 | jomini |
-| `challenge_character_vicayalaya_chola_nadu.txt` | 9447 | 1 | 0 | jomini |
-| `challenge_character_werner_aargau.txt` | 9092 | 1 | 0 | jomini |
-| `challenge_character_werner_worms.txt` | 9095 | 1 | 0 | jomini |
+| `bookmark_persia_yaqub_alt_amr.txt` | 9428 | 1 | 0 | jomini |
+| `bookmark_persia_yaqub_alt_sebuk_eri.txt` | 9502 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_duchess_matilda.txt` | 9380 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_duke_robert.txt` | 9709 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_duke_robert_alt_bohemond.txt` | 9397 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_duke_robert_alt_roger.txt` | 9269 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_duke_vratislav.txt` | 9545 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_duke_vratislav_alt_judita.txt` | 9394 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_duke_vratislav_alt_ota.txt` | 9587 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_emir_yahya.txt` | 9708 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_emir_yahya_alt_yahya2.txt` | 9236 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_emir_yahya_alt_zahida.txt` | 9295 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_petty_king_murchad.txt` | 9441 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_petty_king_murchad_alt_bebinn.txt` | 9249 | 1 | 0 | jomini |
+| `bookmark_rags_to_riches_petty_king_murchad_alt_brian.txt` | 9422 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_gokbori.txt` | 9616 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_gokbori_ghazi.txt` | 9662 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_gokbori_yusuf.txt` | 9394 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_levon.txt` | 9391 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_levon_roupen.txt` | 9444 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_raimon.txt` | 9603 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_raimon_eschiva.txt` | 9485 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_saladin.txt` | 9632 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_saladin_ali.txt` | 9250 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_saladin_saphadin.txt` | 9368 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_sibylla.txt` | 9479 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_sibylla_baudouin.txt` | 9821 | 1 | 0 | jomini |
+| `bookmark_swords_of_faith_sibylla_baudouin_son.txt` | 9206 | 1 | 0 | jomini |
+| `challenge_character_aba_socotra.txt` | 9326 | 1 | 0 | jomini |
+| `challenge_character_aella_northumberland.txt` | 9464 | 1 | 0 | jomini |
+| `challenge_character_ahmad_egypt.txt` | 9366 | 1 | 0 | jomini |
+| `challenge_character_alfonsu_asturias.txt` | 9503 | 1 | 0 | jomini |
+| `challenge_character_algimantas_lithuanians.txt` | 9424 | 1 | 0 | jomini |
+| `challenge_character_ali_siracusa.txt` | 9360 | 1 | 0 | jomini |
+| `challenge_character_ali_taizz.txt` | 9417 | 1 | 0 | jomini |
+| `challenge_character_alusian_vidin.txt` | 9503 | 1 | 0 | jomini |
+| `challenge_character_amoghavarsha_karnata.txt` | 9233 | 1 | 0 | jomini |
+| `challenge_character_anawrahta_pagan.txt` | 9145 | 1 | 0 | jomini |
+| `challenge_character_ashot_armenia.txt` | 9460 | 1 | 0 | jomini |
+| `challenge_character_badr_acre.txt` | 9313 | 1 | 0 | jomini |
+| `challenge_character_berenguer_barcelona.txt` | 9576 | 1 | 0 | jomini |
+| `challenge_character_dawit_dembiya.txt` | 9290 | 1 | 0 | jomini |
+| `challenge_character_dumnarth_cornwall.txt` | 9541 | 1 | 0 | jomini |
+| `challenge_character_dyre_kiev.txt` | 9431 | 1 | 0 | jomini |
+| `challenge_character_eadgar_warwickshire.txt` | 9490 | 1 | 0 | jomini |
+| `challenge_character_erik_svealand.txt` | 9460 | 1 | 0 | jomini |
+| `challenge_character_fariburz_shirvan.txt` | 9402 | 1 | 0 | jomini |
+| `challenge_character_gregorios_napoli.txt` | 9450 | 1 | 0 | jomini |
+| `challenge_character_gudrod_western_isles.txt` | 9398 | 1 | 0 | jomini |
+| `challenge_character_gunda_orangallu.txt` | 9405 | 1 | 0 | jomini |
+| `challenge_character_haraldr_vestfold.txt` | 9471 | 1 | 0 | jomini |
+| `challenge_character_heinrich_angria.txt` | 9609 | 1 | 0 | jomini |
+| `challenge_character_henri_champagne.txt` | 9574 | 1 | 0 | jomini |
+| `challenge_character_herbert_vermandois.txt` | 9385 | 1 | 0 | jomini |
+| `challenge_character_ishaq_baalbek.txt` | 9536 | 1 | 0 | jomini |
+| `challenge_character_john_ulster.txt` | 9616 | 1 | 0 | jomini |
+| `challenge_character_khusraw_malik_punjab.txt` | 9385 | 1 | 0 | jomini |
+| `challenge_character_krutoj_nordmark.txt` | 9552 | 1 | 0 | jomini |
+| `challenge_character_kulin_bosna.txt` | 9545 | 1 | 0 | jomini |
+| `challenge_character_lambert_spoleto.txt` | 9512 | 1 | 0 | jomini |
+| `challenge_character_maghan_sibi.txt` | 9299 | 1 | 0 | jomini |
+| `challenge_character_mohammed_azerbaijan.txt` | 9383 | 1 | 0 | jomini |
+| `challenge_character_muhammad_africa.txt` | 9449 | 1 | 0 | jomini |
+| `challenge_character_nur_al_din_muhammed_nizari.txt` | 9364 | 1 | 0 | jomini |
+| `challenge_character_piarres_albarracin.txt` | 9496 | 1 | 0 | jomini |
+| `challenge_character_pierre_piedmonte.txt` | 9467 | 1 | 0 | jomini |
+| `challenge_character_prithviraja_rajputana.txt` | 9371 | 1 | 0 | jomini |
+| `challenge_character_raoul_valois.txt` | 9606 | 1 | 0 | jomini |
+| `challenge_character_renaud_kerak.txt` | 9629 | 1 | 0 | jomini |
+| `challenge_character_rhodri_gwynedd.txt` | 9550 | 1 | 0 | jomini |
+| `challenge_character_richard_capua.txt` | 9478 | 1 | 0 | jomini |
+| `challenge_character_richard_poitiers.txt` | 9466 | 1 | 0 | jomini |
+| `challenge_character_rogier_albi.txt` | 9397 | 1 | 0 | jomini |
+| `challenge_character_rostislav_tmutarakan.txt` | 9332 | 1 | 0 | jomini |
+| `challenge_character_sargis_greater_armenia.txt` | 9480 | 1 | 0 | jomini |
+| `challenge_character_shisnand_coimbra.txt` | 9823 | 1 | 0 | jomini |
+| `challenge_character_siemowit_wielkopolska.txt` | 9541 | 1 | 0 | jomini |
+| `challenge_character_vicayalaya_chola_nadu.txt` | 9710 | 1 | 0 | jomini |
+| `challenge_character_werner_aargau.txt` | 9285 | 1 | 0 | jomini |
+| `challenge_character_werner_worms.txt` | 9319 | 1 | 0 | jomini |
 | `historical_export_easteregg_alessandro_bragalini.txt` | 8521 | 1 | 0 | jomini |
 | `historical_export_easteregg_alexander_oltner.txt` | 8488 | 1 | 0 | jomini |
 | `historical_export_easteregg_alexander_windahl.txt` | 9160 | 1 | 0 | jomini |
@@ -1047,6 +1065,78 @@
 ### bookmark_mandalas_867_tanet.txt（1 条目）
 
 - bookmark_mandalas_867_tanet
+
+### bookmark_merchants_1178_enrico_dandolo.txt（1 条目）
+
+- bookmark_merchants_1178_enrico_dandolo
+
+### bookmark_merchants_1178_ezzelino_ii.txt（1 条目）
+
+- bookmark_merchants_1178_ezzelino_ii
+
+### bookmark_merchants_1178_guido_guerra.txt（1 条目）
+
+- bookmark_merchants_1178_guido_guerra
+
+### bookmark_merchants_1178_humbert_savoy.txt（1 条目）
+
+- bookmark_merchants_1178_humbert_savoy
+
+### bookmark_merchants_1178_jutta_urslingen.txt（1 条目）
+
+- bookmark_merchants_1178_jutta_urslingen
+
+### bookmark_merchants_1178_konrad_urslingen.txt（1 条目）
+
+- bookmark_merchants_1178_konrad_urslingen
+
+### bookmark_merchants_1178_marco_sanudo.txt（1 条目）
+
+- bookmark_merchants_1178_marco_sanudo
+
+### bookmark_merchants_1178_pietro_iii.txt（1 条目）
+
+- bookmark_merchants_1178_pietro_iii
+
+### bookmark_merchants_1178_rinaldo_guidi.txt（1 条目）
+
+- bookmark_merchants_1178_rinaldo_guidi
+
+### bookmark_merchants_1178_speronella_dalesmanni.txt（1 条目）
+
+- bookmark_merchants_1178_speronella_dalesmanni
+
+### bookmark_merchants_1178_thomas_savoy.txt（1 条目）
+
+- bookmark_merchants_1178_thomas_savoy
+
+### bookmark_merchants_bookmark_wuhsha_al_dallala_5.txt（1 条目）
+
+- bookmark_merchants_bookmark_wuhsha_al_dallala_5
+
+### bookmark_merchants_domenico_contarini.txt（1 条目）
+
+- bookmark_merchants_domenico_contarini
+
+### bookmark_merchants_greek_salvidi_1.txt（1 条目）
+
+- bookmark_merchants_greek_salvidi_1
+
+### bookmark_merchants_nattal_sahu.txt（1 条目）
+
+- bookmark_merchants_nattal_sahu
+
+### bookmark_merchants_sun_zhong.txt（1 条目）
+
+- bookmark_merchants_sun_zhong
+
+### bookmark_merchants_vitale_faliero.txt（1 条目）
+
+- bookmark_merchants_vitale_faliero
+
+### bookmark_merchants_wuhsha_al_dallala.txt（1 条目）
+
+- bookmark_merchants_wuhsha_al_dallala
 
 ### bookmark_moravia_rostislav.txt（1 条目）
 

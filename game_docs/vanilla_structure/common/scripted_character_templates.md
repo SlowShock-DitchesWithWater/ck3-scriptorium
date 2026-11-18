@@ -1,8 +1,8 @@
 # common/scripted_character_templates 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：45（其中 Jomini 解析 44 个）
-- 顶层块条目总数：410，跨文件唯一条目 410
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：49（其中 Jomini 解析 48 个）
+- 顶层块条目总数：437，跨文件唯一条目 437
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -13,7 +13,9 @@
 | `00_court_position_templates.txt` | 19615 | 35 | 0 | jomini |
 | `00_foundling_templates.txt` | 213 | 1 | 0 | jomini |
 | `00_fund_inspiration_character_templates.txt` | 710 | 3 | 0 | jomini |
-| `00_hold_court_character_templates.txt` | 11165 | 17 | 0 | jomini |
+| `00_gdp_guelph_ghibelline_character_templates.txt` | 941 | 1 | 0 | jomini |
+| `00_gdp_republic_unrest_character_templates.txt` | 1343 | 2 | 0 | jomini |
+| `00_hold_court_character_templates.txt` | 11582 | 18 | 0 | jomini |
 | `00_holy_order_character_templates.txt` | 8777 | 3 | 0 | jomini |
 | `00_invader_templates.txt` | 2531 | 4 | 0 | jomini |
 | `00_knight_templates.txt` | 2856 | 3 | 0 | jomini |
@@ -23,9 +25,9 @@
 | `00_officials_templates.txt` | 4528 | 4 | 0 | jomini |
 | `00_peasant_faction_leader_template.txt` | 6203 | 3 | 0 | jomini |
 | `00_peasant_leader_templates.txt` | 1180 | 2 | 0 | jomini |
-| `00_peasants_template.txt` | 30785 | 34 | 0 | jomini |
+| `00_peasants_template.txt` | 35776 | 39 | 0 | jomini |
 | `00_physician_character_template.txt` | 1867 | 3 | 0 | jomini |
-| `00_pool_repopulation_character_templates.txt` | 38504 | 8 | 0 | jomini |
+| `00_pool_repopulation_character_templates.txt` | 38894 | 8 | 0 | jomini |
 | `00_priest_character_template.txt` | 24786 | 7 | 0 | jomini |
 | `00_saharan_nomad_template.txt` | 1314 | 1 | 0 | jomini |
 | `00_scholar_template.txt` | 2422 | 4 | 0 | jomini |
@@ -35,6 +37,7 @@
 | `01_bp1_character_templates.txt` | 2329 | 2 | 0 | jomini |
 | `01_bp1_filippa_character_templates.txt` | 5881 | 6 | 0 | jomini |
 | `01_bp2_character_templates.txt` | 514 | 1 | 0 | jomini |
+| `01_burgher_faction_leader_template.txt` | 1147 | 1 | 0 | jomini |
 | `01_ep1_character_templates.txt` | 25872 | 19 | 0 | jomini |
 | `01_fp1_character_templates.txt` | 29959 | 21 | 0 | jomini |
 | `01_tgp_japan_character_templates.txt` | 3059 | 2 | 0 | jomini |
@@ -51,6 +54,7 @@
 | `09_mpo_character_templates.txt` | 22391 | 12 | 0 | jomini |
 | `10_ach_character_templates.txt` | 5663 | 4 | 0 | jomini |
 | `_scripted_character_templates.info` | 8890 | - | - | 纯文档（非 Jomini） |
+| `gdp_character_templates.txt` | 19583 | 17 | 0 | jomini |
 | `pam_character_templates.txt` | 6893 | 4 | 0 | jomini |
 | `pam_secular_faith_character_templates.txt` | 988 | 1 | 0 | jomini |
 | `tgp_character_templates.txt` | 24559 | 24 | 0 | jomini |
@@ -121,7 +125,16 @@
 - adventurer_female_lover_character
 - adventurer_male_lover_character
 
-### 00_hold_court_character_templates.txt（17 条目）
+### 00_gdp_guelph_ghibelline_character_templates.txt（1 条目）
+
+- gg_ruler_template
+
+### 00_gdp_republic_unrest_character_templates.txt（2 条目）
+
+- gdp_republic_demagogue_template
+- gdp_republic_assassin_template
+
+### 00_hold_court_character_templates.txt（18 条目）
 
 - demanding_poet_character
 - demanding_poet_lover_character
@@ -135,6 +148,7 @@
 - ambassador_template
 - mime_template
 - good_merchant_template
+- bad_merchant_template
 - diplomacy_court_position_holder_template
 - stewardship_court_position_holder_template
 - intrigue_court_position_holder_template
@@ -222,7 +236,7 @@
 - peasant_leader_stewardship_character
 - peasant_leader_martial_character
 
-### 00_peasants_template.txt（34 条目）
+### 00_peasants_template.txt（39 条目）
 
 - beautiful_peasant_character
 - servant_character
@@ -258,6 +272,11 @@
 - local_noble_character
 - mediocre_spouse
 - master_mason_character
+- beautiful_carnival_character
+- entertainer_basic_carnival_character
+- entertainer_extensive_carnival_character
+- entertainer_extravagant_carnival_character
+- craftman_carnival_character
 
 ### 00_physician_character_template.txt（3 条目）
 
@@ -344,6 +363,10 @@
 ### 01_bp2_character_templates.txt（1 条目）
 
 - bp2_imaginary_friend_template
+
+### 01_burgher_faction_leader_template.txt（1 条目）
+
+- burgher_faction_leader_template
 
 ### 01_ep1_character_templates.txt（19 条目）
 
@@ -562,6 +585,26 @@
 - cunning_courtesan_character
 - fearsome_courtesan_character
 - experienced_courtesan_character
+
+### gdp_character_templates.txt（17 条目）
+
+- charlatan_recruit_template
+- hired_muscle_recruit_template
+- numerate_recruit_template
+- traveler_recruit_template
+- urchin_recruit_template
+- herbalist_recruit_template
+- guild_master_template
+- curator_template
+- generated_merchant_template
+- generated_scholar_template
+- gdp_seasoned_caravaneer_template
+- bandit_captain_character
+- gdp_master_craftsman_template
+- trader_stewardship_template
+- trader_martial_template
+- trader_diplomacy_template
+- generated_patrician_template
 
 ### pam_character_templates.txt（4 条目）
 

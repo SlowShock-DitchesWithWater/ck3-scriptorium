@@ -1,8 +1,8 @@
 # common/important_actions 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：36（其中 Jomini 解析 35 个）
-- 顶层块条目总数：301，跨文件唯一条目 301
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：39（其中 Jomini 解析 38 个）
+- 顶层块条目总数：338，跨文件唯一条目 338
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -15,36 +15,39 @@
 | `00_diarchy_actions.txt` | 16116 | 14 | 0 | jomini |
 | `00_dynasty_actions.txt` | 424 | 1 | 0 | jomini |
 | `00_education_actions.txt` | 3338 | 4 | 0 | jomini |
-| `00_inheritance_actions.txt` | 12466 | 10 | 0 | jomini |
+| `00_inheritance_actions.txt` | 12848 | 10 | 0 | jomini |
 | `00_lifestyle.txt` | 3394 | 8 | 0 | jomini |
 | `00_marriage_actions.txt` | 9784 | 8 | 0 | jomini |
 | `00_mercenaries_actions.txt` | 469 | 1 | 0 | jomini |
-| `00_personal_actions.txt` | 14546 | 12 | 0 | jomini |
+| `00_personal_actions.txt` | 14877 | 12 | 0 | jomini |
 | `00_raid.txt` | 1080 | 1 | 0 | jomini |
-| `00_reactive_advice.txt` | 42124 | 56 | 0 | jomini |
+| `00_reactive_advice.txt` | 41832 | 55 | 0 | jomini |
 | `00_reactive_advice_japan.txt` | 3056 | 4 | 0 | jomini |
 | `00_reactive_advice_playtest.txt` | 595 | 1 | 0 | jomini |
-| `00_realm_actions.txt` | 23109 | 28 | 0 | jomini |
+| `00_realm_actions.txt` | 25969 | 31 | 0 | jomini |
 | `00_temp_actions.txt` | 1880 | 0 | 0 | jomini |
-| `00_title_actions.txt` | 2592 | 2 | 0 | jomini |
-| `00_war_actions.txt` | 5892 | 5 | 0 | jomini |
+| `00_title_actions.txt` | 2815 | 2 | 0 | jomini |
+| `00_war_actions.txt` | 6610 | 5 | 0 | jomini |
 | `01_bp1_actions.txt` | 744 | 1 | 0 | jomini |
 | `01_ep1_actions.txt` | 4398 | 4 | 0 | jomini |
-| `01_ep1_reactive_advice.txt` | 1981 | 2 | 0 | jomini |
-| `01_fp1_actions.txt` | 2827 | 2 | 0 | jomini |
+| `01_ep1_reactive_advice.txt` | 1980 | 2 | 0 | jomini |
+| `01_fp1_actions.txt` | 2931 | 2 | 0 | jomini |
 | `03_fp2_actions.txt` | 2905 | 2 | 0 | jomini |
 | `03_fp2_reactive_advice.txt` | 785 | 1 | 0 | jomini |
 | `04_ep2_actions.txt` | 2716 | 3 | 0 | jomini |
 | `05_bp2_actions.txt` | 9358 | 4 | 0 | jomini |
 | `05_fp3_actions.txt` | 1043 | 2 | 0 | jomini |
 | `06_ce1_actions.txt` | 2651 | 4 | 0 | jomini |
-| `07_ep3_actions.txt` | 7994 | 8 | 0 | jomini |
+| `07_ep3_actions.txt` | 8078 | 8 | 0 | jomini |
 | `09_mpo_actions.txt` | 13839 | 15 | 0 | jomini |
 | `10_empire_faith_gate_actions.txt` | 2210 | 1 | 0 | jomini |
 | `_important_actions.info` | 3348 | - | - | 纯文档（非 Jomini） |
-| `contract_actions.txt` | 16909 | 13 | 0 | jomini |
-| `pam_actions.txt` | 40810 | 26 | 0 | jomini |
-| `tgp_actions.txt` | 39422 | 32 | 0 | jomini |
+| `contract_actions.txt` | 17037 | 13 | 0 | jomini |
+| `gdp_reactive_advice.txt` | 3941 | 6 | 0 | jomini |
+| `gdp_republic_actions.txt` | 4544 | 5 | 0 | jomini |
+| `merchant_actions.txt` | 28004 | 24 | 0 | jomini |
+| `pam_actions.txt` | 40584 | 26 | 0 | jomini |
+| `tgp_actions.txt` | 39825 | 32 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -171,7 +174,7 @@
 
 - action_being_raided
 
-### 00_reactive_advice.txt（56 条目）
+### 00_reactive_advice.txt（55 条目）
 
 - action_reactive_advice_mercenaries
 - action_reactive_advice_succession
@@ -197,7 +200,6 @@
 - action_reactive_advice_regency_for_liege
 - action_reactive_advice_regency_for_regent
 - action_reactive_advice_set_future_regent
-- action_reactive_advice_travel_planning
 - action_reactive_advice_house_unity
 - action_reactive_advice_tax_collector
 - action_reactive_advice_legitimacy
@@ -241,7 +243,7 @@
 
 - action_lesson_tgp_playtest_intro_mandala
 
-### 00_realm_actions.txt（28 条目）
+### 00_realm_actions.txt（31 条目）
 
 - action_can_lawfully_imprison
 - action_can_pardon
@@ -271,6 +273,9 @@
 - action_station_men_at_arms
 - action_title_lost_from_realm_by_vassal_war
 - action_can_raze_holding
+- action_take_loan
+- action_loan_owed
+- action_demand_repayment
 
 ### 00_temp_actions.txt（0 条目）
 
@@ -392,6 +397,50 @@
 - action_new_criminal_task_contract
 - action_new_governance_issue
 - action_new_tier_3_governance_issue
+
+### gdp_reactive_advice.txt（6 条目）
+
+- action_reactive_advice_building_needs
+- action_reactive_advice_construction_queue
+- action_reactive_advice_merchant_introduction
+- action_reactive_advice_company_direction
+- action_reactive_advice_sponsor_construction
+- action_reactive_advice_republican_politics
+
+### gdp_republic_actions.txt（5 条目）
+
+- action_patrician_in_debt
+- action_can_select_house_ambition
+- action_elevate_republic_tier
+- action_can_construct_trade_posts
+- action_above_trade_post_limit
+
+### merchant_actions.txt（24 条目）
+
+- action_can_make_patron_request_interaction
+- action_can_make_loan_money_interaction
+- action_can_compel_seize_realm_debtor_to_war
+- action_can_make_sponsor_war_interaction
+- action_merchant_company_in_debt
+- action_merchant_company_purpose
+- action_increase_company_size
+- action_create_trade_route
+- action_trade_opportunities_available
+- action_luxury_contracts_available
+- action_unity_contracts_available
+- action_assign_trader
+- action_request_charter
+- action_leverage_charter
+- action_merchant_patron_fund_buildings_promise
+- action_gdp_trade_envoys_return_promise
+- action_move_company_size
+- action_move_company_nearby_market
+- action_associate_request
+- action_associate_request_move_company
+- action_can_merchant_ransom
+- action_entice_merchants
+- action_commission_merchant
+- action_distribution_route_fulfills_no_needs
 
 ### pam_actions.txt（26 条目）
 

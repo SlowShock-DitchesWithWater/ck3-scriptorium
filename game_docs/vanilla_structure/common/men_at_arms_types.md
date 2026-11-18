@@ -1,31 +1,31 @@
 # common/men_at_arms_types 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：11（其中 Jomini 解析 10 个）
-- 顶层块条目总数：111，跨文件唯一条目 111
+- 顶层块条目总数：112，跨文件唯一条目 112
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_cultural_maa_types.txt` | 30511 | 37 | 16 | jomini |
-| `00_fp3_maa_types.txt` | 5389 | 4 | 16 | jomini |
-| `00_holy_order_maa_types.txt` | 3109 | 2 | 13 | jomini |
-| `00_maa_types.txt` | 14441 | 14 | 15 | jomini |
-| `00_regional_maa_types.txt` | 2900 | 2 | 15 | jomini |
-| `01_accolade_maa_types.txt` | 12660 | 11 | 16 | jomini |
-| `01_fp1_maa_types.txt` | 4301 | 4 | 16 | jomini |
-| `07_ep3_maa_types.txt` | 10168 | 11 | 16 | jomini |
-| `09_mpo_maa_types.txt` | 9670 | 9 | 16 | jomini |
-| `10_tgp_maa_types.txt` | 16396 | 17 | 16 | jomini |
+| `00_cultural_maa_types.txt` | 32210 | 38 | 16 | jomini |
+| `00_fp3_maa_types.txt` | 5478 | 4 | 16 | jomini |
+| `00_holy_order_maa_types.txt` | 3153 | 2 | 13 | jomini |
+| `00_maa_types.txt` | 15328 | 14 | 15 | jomini |
+| `00_regional_maa_types.txt` | 2944 | 2 | 15 | jomini |
+| `01_accolade_maa_types.txt` | 13552 | 11 | 16 | jomini |
+| `01_fp1_maa_types.txt` | 4389 | 4 | 16 | jomini |
+| `07_ep3_maa_types.txt` | 10410 | 11 | 16 | jomini |
+| `09_mpo_maa_types.txt` | 9847 | 9 | 16 | jomini |
+| `10_tgp_maa_types.txt` | 16909 | 17 | 16 | jomini |
 | `_men_at_arms_types.info` | 4897 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_cultural_maa_types.txt（37 条目）
+### 00_cultural_maa_types.txt（38 条目）
 
 - huscarl
 - landsknecht
@@ -34,6 +34,7 @@
 - gendarme
 - chasseur
 - picchieri
+- condottieri
 - praetorian
 - caballero
 - monaspa

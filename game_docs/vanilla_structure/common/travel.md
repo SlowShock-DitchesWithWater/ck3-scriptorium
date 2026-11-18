@@ -1,8 +1,8 @@
 # common/travel 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：6（其中 Jomini 解析 4 个）
-- 顶层块条目总数：49，跨文件唯一条目 49
+- 顶层块条目总数：52，跨文件唯一条目 52
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -11,9 +11,9 @@
 |---|---|---|---|---|
 | `point_of_interest_types/_travel_point_of_interest_types.info` | 996 | - | - | 纯文档（非 Jomini） |
 | `point_of_interest_types/pam_saint_point_of_interest_types.txt` | 4344 | 1 | 0 | jomini |
-| `point_of_interest_types/travel_point_of_interest_types.txt` | 48937 | 19 | 0 | jomini |
+| `point_of_interest_types/travel_point_of_interest_types.txt` | 49003 | 19 | 0 | jomini |
 | `travel_options/_travel_options.info` | 2726 | - | - | 纯文档（非 Jomini） |
-| `travel_options/travel_options.txt` | 40882 | 29 | 0 | jomini |
+| `travel_options/travel_options.txt` | 43465 | 32 | 0 | jomini |
 | `travel_options/travel_options_modifiers.txt` | 88 | 0 | 0 | jomini |
 
 ## 条目名 → 定义文件
@@ -46,7 +46,7 @@
 - poi_mandala_capital
 - poi_grand_cathedral
 
-### travel_options/travel_options.txt（29 条目）
+### travel_options/travel_options.txt（32 条目）
 
 - adventurers_scout_for_talent_option
 - adventurers_make_local_deals_option
@@ -77,6 +77,9 @@
 - anxious_option
 - circumspect_option
 - estate_mounts_option
+- innkeepers_mounts_option
+- trusted_lodgings_option
+- honored_escort_option
 
 ### travel_options/travel_options_modifiers.txt（0 条目）
 

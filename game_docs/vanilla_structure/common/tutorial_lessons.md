@@ -1,8 +1,8 @@
 # common/tutorial_lessons 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：10（其中 Jomini 解析 9 个）
-- 顶层块条目总数：116，跨文件唯一条目 116
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：11（其中 Jomini 解析 10 个）
+- 顶层块条目总数：124，跨文件唯一条目 124
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -11,14 +11,15 @@
 |---|---|---|---|---|
 | `00_ep4_japan_reactive_advice.txt` | 21102 | 4 | 0 | jomini |
 | `00_ep4_playtest_intro.txt` | 2638 | 1 | 0 | jomini |
-| `00_tutorial_lessons_basics.txt` | 85381 | 17 | 0 | jomini |
+| `00_tutorial_lessons_basics.txt` | 85471 | 17 | 0 | jomini |
 | `00_tutorial_lessons_china.txt` | 32614 | 2 | 0 | jomini |
-| `00_tutorial_lessons_reactive.txt` | 139455 | 68 | 0 | jomini |
+| `00_tutorial_lessons_reactive.txt` | 139598 | 68 | 0 | jomini |
 | `00_tutorial_lessons_war.txt` | 16259 | 15 | 0 | jomini |
 | `01_ep1_tutorial_lessons_reactive.txt` | 11812 | 3 | 0 | jomini |
 | `03_fp2_tutorial_lessons_reactive.txt` | 5578 | 1 | 0 | jomini |
 | `07_ep3_tutorial_lessons_reactive.txt` | 18311 | 5 | 0 | jomini |
 | `_tutorial_lesson.info` | 5275 | - | - | 纯文档（非 Jomini） |
+| `gdp_tutorial_lesson_advice.txt` | 39218 | 8 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -166,6 +167,17 @@
 - reactive_advice_admin_gov_troops
 - reactive_advice_agent_scheme_rework
 - reactive_advice_laamp_contract_move
+
+### gdp_tutorial_lesson_advice.txt（8 条目）
+
+- reactive_advice_building_needs
+- reactive_advice_construction_queue
+- reactive_advice_trade_route_planner
+- reactive_advice_merchant_introduction
+- reactive_advice_company_direction
+- reactive_advice_sponsor_construction
+- reactive_advice_republican_politics
+- reactive_advice_distribution_route_planner
 
 ### 未解析文件
 

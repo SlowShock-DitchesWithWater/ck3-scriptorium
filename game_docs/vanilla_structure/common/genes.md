@@ -1,6 +1,6 @@
 # common/genes 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：12（其中 Jomini 解析 11 个）
 - 顶层块条目总数：13，跨文件唯一条目 6
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
@@ -10,16 +10,16 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `00_genes_color.txt` | 345 | 1 | 0 | jomini |
-| `01_genes_morph.txt` | 431579 | 3 | 12 | jomini |
+| `01_genes_morph.txt` | 433237 | 3 | 12 | jomini |
 | `02_genes_accessories_misc.txt` | 2976 | 1 | 0 | jomini |
-| `03_genes_special_accessories_hairstyles.txt` | 49066 | 1 | 0 | jomini |
+| `03_genes_special_accessories_hairstyles.txt` | 49295 | 1 | 0 | jomini |
 | `04_genes_special_accessories_beards.txt` | 20895 | 1 | 0 | jomini |
-| `05_genes_special_accessories_clothes.txt` | 108659 | 1 | 0 | jomini |
-| `06_genes_special_accessories_headgear.txt` | 98313 | 1 | 0 | jomini |
-| `07_genes_special_accessories_misc.txt` | 63224 | 1 | 0 | jomini |
-| `08_genes_special_visual_traits.txt` | 34009 | 1 | 0 | jomini |
+| `05_genes_special_accessories_clothes.txt` | 113283 | 1 | 0 | jomini |
+| `06_genes_special_accessories_headgear.txt` | 106418 | 1 | 0 | jomini |
+| `07_genes_special_accessories_misc.txt` | 72595 | 1 | 0 | jomini |
+| `08_genes_special_visual_traits.txt` | 34905 | 1 | 0 | jomini |
 | `09_genes_special_makeup.txt` | 8097 | 1 | 0 | jomini |
-| `10_genes_special_misc.txt` | 7031 | 1 | 0 | jomini |
+| `10_genes_special_misc.txt` | 7689 | 1 | 0 | jomini |
 | `_genes.info` | 1052 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件

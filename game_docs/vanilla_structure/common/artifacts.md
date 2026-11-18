@@ -1,37 +1,37 @@
 # common/artifacts 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：31（其中 Jomini 解析 24 个）
-- 顶层块条目总数：1085，跨文件唯一条目 1047
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：32（其中 Jomini 解析 25 个）
+- 顶层块条目总数：1115，跨文件唯一条目 1074
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `blueprints/00_reforge.txt` | 61448 | 38 | 0 | jomini |
+| `blueprints/00_reforge.txt` | 62523 | 45 | 0 | jomini |
 | `blueprints/_blueprints.info` | 1409 | - | - | 纯文档（非 Jomini） |
 | `feature_groups/00_groups.txt` | 2633 | 59 | 0 | jomini |
 | `feature_groups/_feature_groups.info` | 27 | - | - | 纯文档（非 Jomini） |
-| `features/00_features.txt` | 203127 | 635 | 0 | jomini |
+| `features/00_features.txt` | 203706 | 635 | 0 | jomini |
 | `features/_features.info` | 270 | - | - | 纯文档（非 Jomini） |
-| `slots/00_default.txt` | 2411 | 24 | 0 | jomini |
+| `slots/00_default.txt` | 6201 | 36 | 0 | jomini |
 | `slots/01_holy_site.txt` | 321 | 3 | 0 | jomini |
 | `slots/_slots.info` | 1197 | - | - | 纯文档（非 Jomini） |
 | `templates/00_badge_templates.txt` | 396 | 1 | 0 | jomini |
-| `templates/00_event_templates.txt` | 5454 | 15 | 0 | jomini |
+| `templates/00_event_templates.txt` | 6488 | 16 | 0 | jomini |
 | `templates/00_historical_artifacts_templates.txt` | 25747 | 47 | 0 | jomini |
 | `templates/00_type_templates.txt` | 2049 | 6 | 0 | jomini |
 | `templates/01_ep2_templates.txt` | 3 | 0 | 0 | jomini |
 | `templates/02_ep3_templates.txt` | 2353 | 5 | 0 | jomini |
 | `templates/_templates.info` | 1750 | - | - | 纯文档（非 Jomini） |
 | `templates/pam_saint_relic_templates.txt` | 1651 | 2 | 0 | jomini |
-| `types/00_types.txt` | 12190 | 66 | 0 | jomini |
+| `types/00_types.txt` | 12552 | 69 | 0 | jomini |
 | `types/_types.info` | 585 | - | - | 纯文档（非 Jomini） |
 | `visuals/000_placeholder.txt` | 202 | 1 | 0 | jomini |
-| `visuals/00_court_artifacts.txt` | 106296 | 58 | 0 | jomini |
-| `visuals/00_historical.txt` | 26962 | 48 | 0 | jomini |
-| `visuals/00_personal_misc.txt` | 30872 | 29 | 0 | jomini |
+| `visuals/00_court_artifacts.txt` | 109698 | 58 | 0 | jomini |
+| `visuals/00_historical.txt` | 26966 | 48 | 0 | jomini |
+| `visuals/00_personal_misc.txt` | 33448 | 29 | 0 | jomini |
 | `visuals/00_weapon_visuals.txt` | 20708 | 8 | 0 | jomini |
 | `visuals/03_fp2_artifacts.txt` | 1669 | 8 | 0 | jomini |
 | `visuals/04_ep2_artifacts.txt` | 6165 | 18 | 0 | jomini |
@@ -40,12 +40,13 @@
 | `visuals/09_mpo_artifacts.txt` | 328 | 3 | 0 | jomini |
 | `visuals/10_ce3_artifacts.txt` | 2556 | 5 | 0 | jomini |
 | `visuals/_visuals.info` | 1040 | - | - | 纯文档（非 Jomini） |
+| `visuals/domicile_artifacts.txt` | 14820 | 7 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### blueprints/00_reforge.txt（38 条目）
+### blueprints/00_reforge.txt（45 条目）
 
 - axe_to_court
 - hammer_to_court
@@ -85,6 +86,13 @@
 - fp3_sassanian_sword_to_court
 - fp3_replica_sassanian_sword_to_court
 - longsword_to_court
+- library_item_to_court
+- curio_to_court
+- creature_to_court_bird_pedestal
+- creature_to_court_monkey_trophy
+- creature_to_court_small_hide
+- creature_to_court_large_hide
+- creature_to_court
 
 ### feature_groups/00_groups.txt（59 条目）
 
@@ -786,7 +794,7 @@
 - animal_trinket_type_foot
 - bird_feather_type_feather
 
-### slots/00_default.txt（24 条目）
+### slots/00_default.txt（36 条目）
 
 - crown
 - regalia
@@ -812,6 +820,18 @@
 - pedestal_2
 - pedestal_3
 - pedestal_4
+- library_1
+- library_2
+- library_3
+- library_4
+- curio_1
+- curio_2
+- curio_3
+- curio_4
+- creature_1
+- creature_2
+- creature_3
+- creature_4
 
 ### slots/01_holy_site.txt（3 条目）
 
@@ -823,7 +843,7 @@
 
 - pilgrim_badge_template
 
-### templates/00_event_templates.txt（15 条目）
+### templates/00_event_templates.txt（16 条目）
 
 - arabic_book_template
 - small_religious_carving_template
@@ -840,6 +860,7 @@
 - tgp_severed_head_template
 - ryukyu_shaku_template
 - ryukyu_crown_template
+- merchant_charter_artifact_template
 
 ### templates/00_historical_artifacts_templates.txt（47 条目）
 
@@ -917,7 +938,7 @@
 - pam_saint_relic_template
 - pam_holy_myron_template
 
-### types/00_types.txt（66 条目）
+### types/00_types.txt（69 条目）
 
 - helmet
 - helmet_simple
@@ -975,6 +996,7 @@
 - throne_special
 - book
 - chronicle
+- library_item
 - elixir
 - panacea
 - philosophers_stone
@@ -985,6 +1007,8 @@
 - composite
 - bow
 - crossbow
+- creature
+- curio
 
 ### visuals/000_placeholder.txt（1 条目）
 
@@ -1202,6 +1226,16 @@
 - pam_thurible
 - pam_situla
 - pam_crozier
+
+### visuals/domicile_artifacts.txt（7 条目）
+
+- library_item
+- creature
+- creature_court_trophy_bird
+- creature_court_trophy_monkey
+- creature_court_small_hide
+- creature_court_large_hide
+- curio
 
 ### 未解析文件
 

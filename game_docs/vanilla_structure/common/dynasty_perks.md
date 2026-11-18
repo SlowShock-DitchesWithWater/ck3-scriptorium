@@ -1,24 +1,25 @@
 # common/dynasty_perks 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：12（其中 Jomini 解析 11 个）
-- 顶层块条目总数：110，跨文件唯一条目 110
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：13（其中 Jomini 解析 12 个）
+- 顶层块条目总数：120，跨文件唯一条目 120
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_dynasty_perks.txt` | 9263 | 35 | 0 | jomini |
+| `00_dynasty_perks.txt` | 9311 | 35 | 0 | jomini |
 | `01_ep1_dynasty_perks.txt` | 2155 | 5 | 0 | jomini |
 | `01_ep2_dynasty_perks.txt` | 3190 | 5 | 0 | jomini |
-| `01_fp1_dynasty_perks.txt` | 4172 | 10 | 0 | jomini |
-| `03_fp2_dynasty_perks.txt` | 3466 | 10 | 0 | jomini |
+| `01_fp1_dynasty_perks.txt` | 4173 | 10 | 0 | jomini |
+| `03_fp2_dynasty_perks.txt` | 3461 | 10 | 0 | jomini |
 | `03_fp3_dynasty_perks.txt` | 2551 | 5 | 0 | jomini |
-| `05_ce1_dynasty_perks.txt` | 3879 | 10 | 0 | jomini |
-| `06_ep3_dynasty_perks.txt` | 2270 | 5 | 0 | jomini |
+| `05_ce1_dynasty_perks.txt` | 3892 | 10 | 0 | jomini |
+| `06_ep3_dynasty_perks.txt` | 2205 | 5 | 0 | jomini |
 | `07_mpo_dynasty_perks.txt` | 1985 | 5 | 0 | jomini |
-| `08_tgp_dynasty_perks.txt` | 8075 | 15 | 0 | jomini |
+| `08_tgp_dynasty_perks.txt` | 8014 | 15 | 0 | jomini |
+| `09_gdp_dynasty_perks.txt` | 5329 | 10 | 0 | jomini |
 | `09_pam_dynasty_perks.txt` | 2380 | 5 | 0 | jomini |
 | `_dynasty_perks.info` | 1052 | - | - | 纯文档（非 Jomini） |
 
@@ -160,6 +161,19 @@
 - tgp_sea_legacy_3
 - tgp_sea_legacy_4
 - tgp_sea_legacy_5
+
+### 09_gdp_dynasty_perks.txt（10 条目）
+
+- gdp_republic_legacy_1
+- gdp_republic_legacy_2
+- gdp_republic_legacy_3
+- gdp_republic_legacy_4
+- gdp_republic_legacy_5
+- gdp_merchant_legacy_1
+- gdp_merchant_legacy_2
+- gdp_merchant_legacy_3
+- gdp_merchant_legacy_4
+- gdp_merchant_legacy_5
 
 ### 09_pam_dynasty_perks.txt（5 条目）
 

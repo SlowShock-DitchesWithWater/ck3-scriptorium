@@ -1,8 +1,8 @@
 # common/subject_contracts 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：18（其中 Jomini 解析 16 个）
-- 顶层块条目总数：87，跨文件唯一条目 87
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：19（其中 Jomini 解析 17 个）
+- 顶层块条目总数：97，跨文件唯一条目 97
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -10,23 +10,24 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `contracts/_subject_contracts.info` | 8614 | - | - | 纯文档（非 Jomini） |
-| `contracts/administrative.txt` | 10455 | 3 | 0 | jomini |
-| `contracts/celestial.txt` | 31817 | 14 | 0 | jomini |
-| `contracts/clan.txt` | 1896 | 1 | 0 | jomini |
-| `contracts/default_tributary.txt` | 2501 | 3 | 0 | jomini |
+| `contracts/administrative.txt` | 10551 | 3 | 0 | jomini |
+| `contracts/celestial.txt` | 31962 | 14 | 0 | jomini |
+| `contracts/clan.txt` | 1902 | 1 | 0 | jomini |
+| `contracts/default_tributary.txt` | 2877 | 3 | 0 | jomini |
 | `contracts/feudal.txt` | 4465 | 3 | 0 | jomini |
 | `contracts/herder.txt` | 156 | 1 | 0 | jomini |
-| `contracts/japan_administrative.txt` | 6660 | 3 | 0 | jomini |
+| `contracts/japan_administrative.txt` | 6671 | 3 | 0 | jomini |
 | `contracts/mandala.txt` | 4872 | 4 | 0 | jomini |
-| `contracts/meritocratic.txt` | 13367 | 7 | 0 | jomini |
+| `contracts/merchant.txt` | 3777 | 4 | 0 | jomini |
+| `contracts/meritocratic.txt` | 13376 | 7 | 0 | jomini |
 | `contracts/nomad.txt` | 5928 | 3 | 0 | jomini |
-| `contracts/republic.txt` | 2523 | 1 | 0 | jomini |
+| `contracts/republic.txt` | 11858 | 6 | 0 | jomini |
 | `contracts/special_contracts.txt` | 20800 | 17 | 2 | jomini |
-| `contracts/theocratic.txt` | 906 | 1 | 0 | jomini |
-| `contracts/tribal.txt` | 392 | 1 | 0 | jomini |
+| `contracts/theocratic.txt` | 775 | 1 | 0 | jomini |
+| `contracts/tribal.txt` | 391 | 1 | 0 | jomini |
 | `contracts/wanua.txt` | 1228 | 2 | 0 | jomini |
-| `groups/_subject_contract_groups.info` | 2570 | - | - | 纯文档（非 Jomini） |
-| `groups/subject_contract_groups.txt` | 6953 | 23 | 0 | jomini |
+| `groups/_subject_contract_groups.info` | 2762 | - | - | 纯文档（非 Jomini） |
+| `groups/subject_contract_groups.txt` | 7632 | 24 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -88,6 +89,13 @@
 - mandala_government_levies
 - mandala_government_prestige
 
+### contracts/merchant.txt（4 条目）
+
+- merchant_taxes
+- merchant_prestige
+- merchant_competitiveness
+- merchant_marriage
+
 ### contracts/meritocratic.txt（7 条目）
 
 - meritocratic_obligations
@@ -104,9 +112,14 @@
 - nomad_government_taxes
 - nomad_government_prestige
 
-### contracts/republic.txt（1 条目）
+### contracts/republic.txt（6 条目）
 
 - republic_government_obligations
+- republic_government_salaries
+- republic_government_treasury_conversion
+- republic_government_free_city
+- republic_government_defensive_obligation
+- republic_government_war_aids
 
 ### contracts/special_contracts.txt（17 条目）
 
@@ -141,7 +154,7 @@
 - wanua_obligations
 - barter_goods_obligations
 
-### groups/subject_contract_groups.txt（23 条目）
+### groups/subject_contract_groups.txt（24 条目）
 
 - feudal_vassal
 - republic_vassal
@@ -166,6 +179,7 @@
 - wanua_vassal
 - tributary_wanua
 - meritocratic_vassal
+- tributary_merchant
 
 ### 未解析文件
 

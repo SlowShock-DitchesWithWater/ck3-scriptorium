@@ -1,70 +1,75 @@
 # common/court_positions 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：47（其中 Jomini 解析 45 个）
-- 顶层块条目总数：166，跨文件唯一条目 166
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：51（其中 Jomini 解析 49 个）
+- 顶层块条目总数：186，跨文件唯一条目 186
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `tasks/00_antiquarian_tasks.txt` | 8633 | 3 | 0 | jomini |
+| `tasks/00_antiquarian_tasks.txt` | 10668 | 4 | 0 | jomini |
 | `tasks/00_bookmaker_tasks.txt` | 2886 | 2 | 0 | jomini |
 | `tasks/00_boyan_tasks.txt` | 2322 | 2 | 0 | jomini |
 | `tasks/00_caravan_master_tasks.txt` | 4870 | 3 | 0 | jomini |
 | `tasks/00_charioteer_tasks.txt` | 2624 | 1 | 0 | jomini |
 | `tasks/00_cherbi_tasks.txt` | 1493 | 1 | 0 | jomini |
-| `tasks/00_chief_qadi_tasks.txt` | 1818 | 1 | 0 | jomini |
-| `tasks/00_chronicler_tasks.txt` | 7193 | 3 | 0 | jomini |
-| `tasks/00_court_artificer_tasks.txt` | 6689 | 3 | 0 | jomini |
+| `tasks/00_chief_qadi_tasks.txt` | 1887 | 1 | 0 | jomini |
+| `tasks/00_chronicler_tasks.txt` | 7302 | 3 | 0 | jomini |
+| `tasks/00_court_artificer_tasks.txt` | 7460 | 3 | 0 | jomini |
 | `tasks/00_court_brahmin_tasks.txt` | 801 | 1 | 0 | jomini |
-| `tasks/00_court_brewmaster_tasks.txt` | 3271 | 3 | 0 | jomini |
+| `tasks/00_court_brewmaster_tasks.txt` | 3275 | 3 | 0 | jomini |
 | `tasks/00_court_guru_tasks.txt` | 3157 | 3 | 0 | jomini |
-| `tasks/00_court_jester_tasks.txt` | 6539 | 3 | 0 | jomini |
+| `tasks/00_court_jester_tasks.txt` | 6571 | 3 | 0 | jomini |
 | `tasks/00_court_musician_tasks.txt` | 1719 | 1 | 0 | jomini |
-| `tasks/00_court_physician_tasks.txt` | 5464 | 3 | 0 | jomini |
+| `tasks/00_court_physician_tasks.txt` | 5756 | 3 | 0 | jomini |
 | `tasks/00_court_poet_tasks.txt` | 8414 | 1 | 0 | jomini |
-| `tasks/00_court_tutor_tasks.txt` | 12338 | 2 | 0 | jomini |
+| `tasks/00_court_tutor_tasks.txt` | 12371 | 2 | 0 | jomini |
 | `tasks/00_cupbearer_tasks.txt` | 2795 | 2 | 0 | jomini |
 | `tasks/00_executioner_tasks.txt` | 1192 | 1 | 0 | jomini |
 | `tasks/00_fire_dragon_engineer_tasks.txt` | 3098 | 2 | 0 | jomini |
 | `tasks/00_food_taster_tasks.txt` | 2736 | 2 | 0 | jomini |
 | `tasks/00_foreign_emissary_tasks.txt` | 2927 | 1 | 0 | jomini |
-| `tasks/00_grand_guardian_tasks.txt` | 5778 | 3 | 0 | jomini |
-| `tasks/00_grand_mentor_tasks.txt` | 10648 | 3 | 0 | jomini |
-| `tasks/00_grand_preceptor_tasks.txt` | 4170 | 3 | 0 | jomini |
-| `tasks/00_harem_manager_tasks.txt` | 6179 | 3 | 0 | jomini |
+| `tasks/00_grand_guardian_tasks.txt` | 5788 | 3 | 0 | jomini |
+| `tasks/00_grand_mentor_tasks.txt` | 11572 | 3 | 0 | jomini |
+| `tasks/00_grand_preceptor_tasks.txt` | 4234 | 3 | 0 | jomini |
+| `tasks/00_harem_manager_tasks.txt` | 6001 | 3 | 0 | jomini |
 | `tasks/00_high_almoner_tasks.txt` | 3065 | 2 | 0 | jomini |
-| `tasks/00_khlon_glan_tasks.txt` | 2616 | 1 | 0 | jomini |
+| `tasks/00_khlon_glan_tasks.txt` | 2611 | 1 | 0 | jomini |
 | `tasks/00_master_of_the_horse_tasks.txt` | 2739 | 2 | 0 | jomini |
 | `tasks/00_master_of_the_hunt_tasks.txt` | 12629 | 3 | 0 | jomini |
-| `tasks/00_personal_champion_tasks.txt` | 5592 | 3 | 0 | jomini |
-| `tasks/00_royal_architect_tasks.txt` | 3364 | 2 | 0 | jomini |
-| `tasks/00_seneschal_tasks.txt` | 4188 | 3 | 0 | jomini |
-| `tasks/00_siege_engineer_tasks.txt` | 2388 | 1 | 0 | jomini |
+| `tasks/00_personal_champion_tasks.txt` | 6209 | 3 | 0 | jomini |
+| `tasks/00_royal_architect_tasks.txt` | 3359 | 2 | 0 | jomini |
+| `tasks/00_seneschal_tasks.txt` | 4937 | 3 | 0 | jomini |
+| `tasks/00_siege_engineer_tasks.txt` | 2651 | 1 | 0 | jomini |
 | `tasks/00_stargazer_tasks.txt` | 4125 | 2 | 0 | jomini |
-| `tasks/00_wet_nurse_tasks.txt` | 5539 | 3 | 0 | jomini |
+| `tasks/00_wet_nurse_tasks.txt` | 5538 | 3 | 0 | jomini |
 | `tasks/00_yeke_jarquchi_tasks.txt` | 1820 | 1 | 0 | jomini |
 | `tasks/00_yurtchi_tasks.txt` | 1426 | 2 | 0 | jomini |
-| `tasks/01_eparch_tasks.txt` | 11406 | 4 | 0 | jomini |
-| `tasks/_court_position_tasks.info` | 4365 | - | - | 纯文档（非 Jomini） |
-| `types/00_admin_court_position.txt` | 8543 | 1 | 0 | jomini |
-| `types/00_camp_officers.txt` | 118165 | 28 | 3 | jomini |
-| `types/00_celestial_court_positions.txt` | 43778 | 7 | 0 | jomini |
-| `types/00_court_positions.txt` | 257836 | 34 | 0 | jomini |
-| `types/00_mandala_court_positions.txt` | 16952 | 3 | 0 | jomini |
-| `types/00_mpo_court_positions.txt` | 48042 | 8 | 0 | jomini |
-| `types/_court_positions.info` | 19861 | - | - | 纯文档（非 Jomini） |
+| `tasks/01_eparch_tasks.txt` | 11426 | 4 | 0 | jomini |
+| `tasks/_court_position_tasks.info` | 5254 | - | - | 纯文档（非 Jomini） |
+| `tasks/gdp_merchant_associate_tasks.txt` | 19954 | 11 | 0 | jomini |
+| `tasks/gdp_republic_tasks.txt` | 3629 | 2 | 0 | jomini |
+| `types/00_admin_court_position.txt` | 8590 | 1 | 0 | jomini |
+| `types/00_camp_officers.txt` | 118612 | 28 | 3 | jomini |
+| `types/00_celestial_court_positions.txt` | 44303 | 7 | 0 | jomini |
+| `types/00_court_positions.txt` | 271768 | 34 | 0 | jomini |
+| `types/00_gdp_associate_positions.txt` | 33749 | 5 | 3 | jomini |
+| `types/00_mandala_court_positions.txt` | 17017 | 3 | 0 | jomini |
+| `types/00_mpo_court_positions.txt` | 48063 | 8 | 0 | jomini |
+| `types/00_republic_court_positions.txt` | 6661 | 1 | 0 | jomini |
+| `types/_court_positions.info` | 20027 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### tasks/00_antiquarian_tasks.txt（3 条目）
+### tasks/00_antiquarian_tasks.txt（4 条目）
 
 - antiquarian_court_position_task_improve_artifacts
 - antiquarian_court_position_task_exibit_artifacts
+- antiquarian_court_position_task_exibit_artifacts_merchant
 - antiquarian_court_position_task_scout_for_artifacts
 
 ### tasks/00_bookmaker_tasks.txt（2 条目）
@@ -261,7 +266,26 @@
 - eparch_appease_populace
 - eparch_support_troops
 - eparch_enforce_public_order
-- eparch_development
+- eparch_prosperity
+
+### tasks/gdp_merchant_associate_tasks.txt（11 条目）
+
+- partner_handle_trade
+- partner_mentoring
+- translator_foreign_deals
+- fixer_investigate_competition
+- fixer_unite_house
+- fixer_sow_dissent
+- translator_learn_language
+- market_agent_extend_networks
+- market_agent_negotiate_contracts
+- bailiff_threaten_debtors
+- bailiff_collect_loans
+
+### tasks/gdp_republic_tasks.txt（2 条目）
+
+- roman_censor_appoint_senators
+- roman_censor_public_morale
 
 ### types/00_admin_court_position.txt（1 条目）
 
@@ -345,6 +369,14 @@
 - court_artificer_court_position
 - garuda_court_position
 
+### types/00_gdp_associate_positions.txt（5 条目）
+
+- partner_court_position
+- fixer_court_position
+- translator_court_position
+- market_agent_court_position
+- bailiff_court_position
+
 ### types/00_mandala_court_positions.txt（3 条目）
 
 - court_guru_court_position
@@ -361,6 +393,10 @@
 - yeke_jarquchi_court_position
 - foreign_emissary_court_position
 - keeper_of_the_horses_court_position
+
+### types/00_republic_court_positions.txt（1 条目）
+
+- roman_censor_court_position
 
 ### 未解析文件
 

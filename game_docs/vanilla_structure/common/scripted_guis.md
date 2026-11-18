@@ -1,8 +1,8 @@
 # common/scripted_guis 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：9（其中 Jomini 解析 9 个）
-- 顶层块条目总数：54，跨文件唯一条目 54
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：10（其中 Jomini 解析 10 个）
+- 顶层块条目总数：59，跨文件唯一条目 59
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -11,9 +11,10 @@
 |---|---|---|---|---|
 | `00_character.txt` | 110 | 1 | 0 | jomini |
 | `00_empire_faith_gate_guis.txt` | 3396 | 7 | 0 | jomini |
-| `00_religion.txt` | 6819 | 11 | 0 | jomini |
+| `00_religion.txt` | 7283 | 11 | 0 | jomini |
 | `ce1_funeral_scripted_guis.txt` | 332 | 2 | 0 | jomini |
 | `ep2_activities.txt` | 1193 | 3 | 0 | jomini |
+| `gdp_scripted_guis.txt` | 739 | 5 | 0 | jomini |
 | `knight_permissions_sguis.txt` | 390 | 3 | 0 | jomini |
 | `pam_scripted_guis.txt` | 3299 | 16 | 0 | jomini |
 | `tgp_examination.txt` | 873 | 7 | 0 | jomini |
@@ -61,6 +62,14 @@
 - tournament_is_character_martial_eligible_in_contest
 - tournament_is_player_available_to_compete_non_martial
 - tournament_is_player_available_to_compete_martial
+
+### gdp_scripted_guis.txt（5 条目）
+
+- gdp_assembly_approval_for_decrees_trigger_gui
+- gdp_assembly_approval_for_laws_trigger_gui
+- merchant_has_any_charter_gui
+- merchant_has_charter_from_patron_gui
+- merchant_has_charter_from_scope_patron_gui
 
 ### knight_permissions_sguis.txt（3 条目）
 

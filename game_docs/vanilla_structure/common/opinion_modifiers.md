@@ -1,8 +1,8 @@
 # common/opinion_modifiers 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：76（其中 Jomini 解析 75 个）
-- 顶层块条目总数：1630，跨文件唯一条目 1630
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：81（其中 Jomini 解析 80 个）
+- 顶层块条目总数：1704，跨文件唯一条目 1704
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -21,7 +21,7 @@
 | `00_council_opinions.txt` | 127 | 1 | 0 | jomini |
 | `00_council_task_opinions.txt` | 2899 | 24 | 0 | jomini |
 | `00_court_events_opinions_linnea.txt` | 131 | 1 | 0 | jomini |
-| `00_crime_and_prison_opinions.txt` | 10339 | 72 | 0 | jomini |
+| `00_crime_and_prison_opinions.txt` | 10631 | 74 | 0 | jomini |
 | `00_decision_opinions.txt` | 491 | 4 | 0 | jomini |
 | `00_doctrinal_crime_opinions.txt` | 2207 | 17 | 0 | jomini |
 | `00_dynasty_opinions.txt` | 1148 | 10 | 0 | jomini |
@@ -29,6 +29,7 @@
 | `00_election_opinions.txt` | 221 | 2 | 0 | jomini |
 | `00_fabricate_hook_opinions.txt` | 264 | 2 | 0 | jomini |
 | `00_friendship_opinions.txt` | 2518 | 24 | 0 | jomini |
+| `00_gdp_guelph_ghibelline_opinions.txt` | 1061 | 12 | 0 | jomini |
 | `00_holy_order_opinions.txt` | 386 | 4 | 0 | jomini |
 | `00_intrigue_scheme_opinions.txt` | 2396 | 21 | 0 | jomini |
 | `00_lifestyle_governance_opinions.txt` | 1831 | 15 | 0 | jomini |
@@ -39,7 +40,7 @@
 | `00_lover_opinions.txt` | 1574 | 16 | 0 | jomini |
 | `00_marriage_opinions.txt` | 3735 | 22 | 0 | jomini |
 | `00_martial_lifestyle_opinions.txt` | 531 | 5 | 0 | jomini |
-| `00_opinion_modifiers.txt` | 40010 | 367 | 0 | jomini |
+| `00_opinion_modifiers.txt` | 40426 | 373 | 0 | jomini |
 | `00_peasant_affair_opinions.txt` | 283 | 2 | 0 | jomini |
 | `00_poetry_opinions.txt` | 712 | 4 | 1 | jomini |
 | `00_prison_opinions.txt` | 1599 | 16 | 0 | jomini |
@@ -75,10 +76,14 @@
 | `10_ach_opinions.txt` | 643 | 6 | 0 | jomini |
 | `10_dlc_tgp_japan_opinions.txt` | 6027 | 54 | 0 | jomini |
 | `10_dlc_tgp_opinions.txt` | 2689 | 19 | 0 | jomini |
+| `11_dlc_gdp_opinions.txt` | 4081 | 35 | 0 | jomini |
 | `_opinions.info` | 2837 | - | - | 纯文档（非 Jomini） |
 | `clerical_chastity_opinions.txt` | 168 | 2 | 0 | jomini |
 | `dlc/pam/pam_opinion_modifiers.txt` | 846 | 6 | 0 | jomini |
-| `pam_opinions.txt` | 4447 | 29 | 0 | jomini |
+| `gdp_carnival_opinions.txt` | 466 | 5 | 0 | jomini |
+| `gdp_republic_opinions.txt` | 931 | 10 | 0 | jomini |
+| `influence_house_ambition_opinions.txt` | 427 | 3 | 0 | jomini |
+| `pam_opinions.txt` | 4530 | 30 | 0 | jomini |
 | `pam_secular_faith_opinions.txt` | 291 | 2 | 0 | jomini |
 | `tgp_imperial_examination_opinions.txt` | 261 | 3 | 0 | jomini |
 | `tgp_mandala_opinions.txt` | 1663 | 15 | 0 | jomini |
@@ -305,7 +310,7 @@
 
 - dumped_animal_on_me_opinion
 
-### 00_crime_and_prison_opinions.txt（72 条目）
+### 00_crime_and_prison_opinions.txt（74 条目）
 
 - treachery_opinion
 - treasonous_revoke_refusal
@@ -321,6 +326,7 @@
 - failed_to_treat_kin_crime_opinion
 - theft_opinion
 - embezzled_opinion
+- spy_opinion
 - attempted_arrest_opinion
 - attempted_imprisonment_opinion
 - rebellious_vassal_opinion
@@ -379,6 +385,7 @@
 - purged_banishment_opinion
 - purged_execution_opinion
 - impugned_my_sovereignty
+- enemy_of_the_state_opinion
 
 ### 00_decision_opinions.txt（4 条目）
 
@@ -469,6 +476,21 @@
 - comrades_in_arms_opinion
 - stood_by_me_opinion
 - humored_opinion
+
+### 00_gdp_guelph_ghibelline_opinions.txt（12 条目）
+
+- seized_guelph_leadership_opinion
+- seized_ghibelline_leadership_opinion
+- joined_guelphs_opinion
+- joined_ghibellines_opinion
+- favored_by_pope_opinion
+- scorned_pope_opinion
+- gg_switch_sides_denied_opinion
+- gg_recruit_partisan_denied_opinion
+- gg_align_undecided_denied_opinion
+- gg_replace_ruler_denied_opinion
+- gg_banished_guelphs_opinion
+- gg_banished_ghibellines_opinion
 
 ### 00_holy_order_opinions.txt（4 条目）
 
@@ -604,7 +626,7 @@
 - honorable_duelist
 - dishonorable_duelist
 
-### 00_opinion_modifiers.txt（367 条目）
+### 00_opinion_modifiers.txt（373 条目）
 
 - friendliness_opinion
 - helpful_opinion
@@ -946,7 +968,12 @@
 - satisfied_opinion
 - impressed_by_kindness
 - paid_me_respect
+- offended_opinion
+- fired_opinion
+- investor_scammer_opinion
+- inspired_opinion
 - revoked_order_lease_opinion
+- showed_interest
 - heathen_mandate_opinion
 - tithed_opinion
 - gave_away_my_pressed_claim_opinion
@@ -963,6 +990,7 @@
 - clerical_transfer_title_opinion
 - refused_vassal_transfer
 - church_favoring_another_house_opinion
+- house_ambition_communal
 - incited_holy_war_opinion
 - incited_claim_war_opinion
 - excommunicated_opinion
@@ -1839,6 +1867,44 @@
 - requested_incursion_opinion
 - tgp_hegemon_picked_different_era_opinion
 
+### 11_dlc_gdp_opinions.txt（35 条目）
+
+- merchant_patron_made_request_opinion
+- merchant_driven_hard_opinion
+- merchant_polished_introductions_opinion
+- trader_assigned_opinion
+- abused_charter_authority_opinion
+- abused_charter_authority_patron_opinion
+- gravely_abused_charter_authority_opinion
+- abused_charter_authority_family_opinion
+- refused_charter_revocation_opinion
+- refused_trade_post_revocation_opinion
+- refused_trade_post_revocation_legal_opinion
+- revoked_my_charter_opinion
+- forged_charter_opinion
+- merge_company_hostile_opinion
+- charitable_charter_authority_opinion
+- merchant_sponsored_construction_opinion
+- attempted_hostile_takeover_opinion
+- hostile_takeover_opinion
+- granted_charter_opinion
+- granted_toll_exception_opinion
+- revoked_my_toll_exception_opinion
+- steal_market_insights_opinion
+- attempted_steal_market_insights_opinion
+- steal_trade_post_opinion
+- attempted_steal_trade_post_opinion
+- merchant_ransom_opinion
+- broke_deal_opinion
+- gdp_repudiated_my_loan_opinion
+- gdp_interest_free_loan_opinion
+- gdp_usurious_loan_opinion
+- gdp_disrupt_trade_routes_discovered_opinion
+- gdp_destroyed_republic_opinion
+- gdp_smuggler_opinion
+- gdp_trader_broken_return_promise_opinion
+- gdp_commissioned_route_opinion
+
 ### clerical_chastity_opinions.txt（2 条目）
 
 - resented_forced_chastity_opinion
@@ -1853,7 +1919,34 @@
 - pam_rite_quarrel_slighted_opinion
 - pam_rite_quarrel_overruled_opinion
 
-### pam_opinions.txt（29 条目）
+### gdp_carnival_opinions.txt（5 条目）
+
+- funny_prankster_opinion
+- unfunny_prankster_opinion
+- good_house_diplomacy_opinion
+- bad_house_diplomacy_opinion
+- impressive_display_opinion
+
+### gdp_republic_opinions.txt（10 条目）
+
+- offender_trade_league_opinion
+- league_commune_founder_opinion
+- league_expelled_from_market_opinion
+- gave_up_land_opinion
+- political_enemy_opinion
+- political_ally_opinion
+- sumptuary_law_opinion
+- wasted_treasury_opinion
+- approved_law_opinion
+- rejected_law_opinion
+
+### influence_house_ambition_opinions.txt（3 条目）
+
+- scheme_infleunce_houe_ambition_opinion
+- infleunce_houe_ambition_misunderstanding_opinion
+- infleunce_houe_ambition_good_rumors_opinion
+
+### pam_opinions.txt（30 条目）
 
 - rejected_becoming_theocracy_opinion
 - disapproves_of_wealth_redistribution_opinion
@@ -1884,6 +1977,7 @@
 - treasury_budget_cardinal_increase_medium
 - treasury_budget_cardinal_increase_large
 - pam_praise_the_gods_clergy_bond_opinion
+- pam_challenged_hof_opinion
 
 ### pam_secular_faith_opinions.txt（2 条目）
 

@@ -1,15 +1,15 @@
 # common/message_filter_types 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：3（其中 Jomini 解析 2 个）
-- 顶层块条目总数：195，跨文件唯一条目 195
+- 顶层块条目总数：210，跨文件唯一条目 210
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_message_filter_types.txt` | 14352 | 194 | 0 | jomini |
+| `00_message_filter_types.txt` | 15376 | 209 | 0 | jomini |
 | `_message_filter_types.info` | 900 | - | - | 纯文档（非 Jomini） |
 | `passive_rite_learning_message_filter_types.txt` | 151 | 1 | 0 | jomini |
 
@@ -17,7 +17,7 @@
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_message_filter_types.txt（194 条目）
+### 00_message_filter_types.txt（209 条目）
 
 - heir_change
 - character_level_change
@@ -151,6 +151,7 @@
 - struggle_phase
 - house_unity_stage
 - house_unity_change
+- house_unity_effect
 - diarch
 - accolade_activity
 - accolade_rank
@@ -192,6 +193,7 @@
 - gok_gained_vassal
 - great_steppe
 - silk_road
+- guelph_ghibelline
 - house_relation_changed
 - mandala_aspect
 - mandala_contract
@@ -203,10 +205,23 @@
 - appointed_to_title
 - character_becomes_saint
 - spiritual_fulfillment_changed
+- merchant_nearby
+- trade_contracts
+- trade_routes
+- trade_route_changes
+- trade_route_maturity
+- market_toll_changes
+- trade_good_category_level_change
+- army_affects_trade
+- voting_session
+- republic_notification
+- republic_popular_opinion
+- house_aspiration_level_change
 - clerical_region
 - ecumenical_council_ruling
 - great_schism_progress
 - order_espousing_beliefs
+- build_queue
 - generic_interface_message_good
 - generic_interface_message_bad
 - generic_interface_message_neutral

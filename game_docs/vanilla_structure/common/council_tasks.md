@@ -1,33 +1,34 @@
 # common/council_tasks 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：10（其中 Jomini 解析 9 个）
-- 顶层块条目总数：72，跨文件唯一条目 72
+- 顶层块条目总数：75，跨文件唯一条目 75
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_chancellor_tasks.txt` | 26313 | 4 | 0 | jomini |
-| `00_court_chaplain_tasks.txt` | 32936 | 3 | 0 | jomini |
-| `00_kurultai_tasks.txt` | 139946 | 32 | 0 | jomini |
-| `00_marshal_tasks.txt` | 26004 | 4 | 0 | jomini |
+| `00_chancellor_tasks.txt` | 30206 | 5 | 0 | jomini |
+| `00_court_chaplain_tasks.txt` | 34336 | 3 | 0 | jomini |
+| `00_kurultai_tasks.txt` | 140541 | 32 | 0 | jomini |
+| `00_marshal_tasks.txt` | 26600 | 4 | 0 | jomini |
 | `00_spouse_tasks.txt` | 5537 | 6 | 0 | jomini |
-| `00_spymaster_tasks.txt` | 21236 | 3 | 0 | jomini |
-| `00_steward_tasks.txt` | 53956 | 5 | 0 | jomini |
+| `00_spymaster_tasks.txt` | 22602 | 3 | 0 | jomini |
+| `00_steward_tasks.txt` | 64111 | 7 | 0 | jomini |
 | `00_vizier_tasks.txt` | 5607 | 6 | 0 | jomini |
 | `01_ministry_tasks.txt` | 10573 | 9 | 0 | jomini |
-| `_council_tasks.info` | 7829 | - | - | 纯文档（非 Jomini） |
+| `_council_tasks.info` | 7828 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_chancellor_tasks.txt（4 条目）
+### 00_chancellor_tasks.txt（5 条目）
 
 - task_foreign_affairs
 - task_domestic_affairs
+- task_republic_assembly_preparation
 - task_integrate_title
 - task_bestow_royal_favor
 
@@ -94,10 +95,12 @@
 - task_support_schemes
 - task_find_secrets
 
-### 00_steward_tasks.txt（5 条目）
+### 00_steward_tasks.txt（7 条目）
 
 - task_collect_taxes
 - task_develop_county
+- task_republic_trade_logistics
+- task_republic_market_oversight
 - task_promote_culture
 - task_accept_culture
 - task_convince_dejure

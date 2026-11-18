@@ -6,7 +6,7 @@
 > 内容来源：ck3.paradoxwikis.com（CC BY-SA 3.0），每条目标注 oldid 与抓取日期。
 
 <!-- ck3wiki-mod-kb:snapshot BEGIN -->
-> 快照：抓取 2026-10-23 · wiki 141 页 · 游戏 1.20.1（dump 并入 2026-10-29） · 锚点 oldid：Effects=20200，Triggers=26702，Event modding=37279 · 地图层并入 2026-11-02
+> 快照：抓取 2026-10-23 · wiki 141 页 · 游戏 1.21.0（dump 并入 2026-11-18） · 锚点 oldid：Effects=20200，Triggers=26702，Event modding=37279 · 地图层并入 2026-11-18
 <!-- ck3wiki-mod-kb:snapshot END -->
 
 <!-- ck3wiki-mod-kb:entry BEGIN Scripting -->
@@ -2673,10 +2673,10 @@
 ## 权威层 effects（全量 effect 签名）
 
 - **文件位置**：`game_docs/script_docs/effects.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/effects.log`，2128 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/effects.log`，2399 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：写任何 effect 调用前，查权威签名、参数与 Supported Scopes；与 wiki（Effects/Commands/Effects list）冲突时以此为准。
-- **中文摘要**：游戏 1.20.0 debug dump 全量 effects 清单，含用法示例与作用域。
+- **中文摘要**：游戏 debug dump 全量 effects 清单，含用法示例与作用域。
 - **英文关键词**：effects；Supported Scopes；usage
 <!-- ck3wiki-mod-kb:entry END game:effects.md -->
 
@@ -2684,7 +2684,7 @@
 ## 权威层 triggers（全量 trigger 签名）
 
 - **文件位置**：`game_docs/script_docs/triggers.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/triggers.log`，1937 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/triggers.log`，2163 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：写任何 trigger/limit 前，查权威签名与 Supported Scopes；与 wiki（Triggers/Triggers list）冲突时以此为准。
 - **中文摘要**：全量 triggers 清单：签名、用法与支持作用域。
@@ -2695,7 +2695,7 @@
 ## 权威层 event_targets
 
 - **文件位置**：`game_docs/script_docs/event_targets.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/event_targets.log`，328 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/event_targets.log`，377 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：查某 scope 下可用的 event target 链（如 father.holder）时；比 wiki Scopes list 权威。
 - **中文摘要**：全量 event targets：target 链与来源分组。
@@ -2706,7 +2706,7 @@
 ## 权威层 event_scopes
 
 - **文件位置**：`game_docs/script_docs/event_scopes.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/event_scopes.log`，74 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/event_scopes.log`，88 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：查全部 scope 类型清单或事件可用 scope 时。
 - **中文摘要**：全部 event scope 类型权威清单。
@@ -2717,7 +2717,7 @@
 ## 权威层 modifiers
 
 - **文件位置**：`game_docs/script_docs/modifiers.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/modifiers.log`，761 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/modifiers.log`，976 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：查某 modifier 是否存在及形态时；与 wiki Modifier list 冲突时以此为准。
 - **中文摘要**：全量 modifier 清单与用法形态。
@@ -2728,7 +2728,7 @@
 ## 权威层 on_actions
 
 - **文件位置**：`game_docs/script_docs/on_actions.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/on_actions.log`，932 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/on_actions.log`，1061 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：要把逻辑挂到 on_action（on_xxx 钩子）或查有哪些可挂钩子时。
 - **中文摘要**：全量 on_action 钩子清单与触发说明。
@@ -2739,7 +2739,7 @@
 ## 权威层 custom_localization
 
 - **文件位置**：`game_docs/script_docs/custom_localization.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/custom_localization.log`，2782 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/custom_localization.log`，2993 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：查原版 customizable_localization 键名与结构时。
 - **中文摘要**：全量 custom localization 条目转储。
@@ -2750,7 +2750,7 @@
 ## 权威层 data_types（common）
 
 - **文件位置**：`game_docs/script_docs/data_types_common.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/data_types/data_types_common.txt`，368 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/data_types/data_types_common.txt`，368 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：查 common 域 data type 的字段/方法签名时。
 - **中文摘要**：common 域 data types 权威转储。
@@ -2761,7 +2761,7 @@
 ## 权威层 data_types（gui）
 
 - **文件位置**：`game_docs/script_docs/data_types_gui.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/data_types/data_types_gui.txt`，875 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/data_types/data_types_gui.txt`，880 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：写 GUI 时查 gui 域 data type 的字段/方法签名。
 - **中文摘要**：gui 域 data types 权威转储。
@@ -2772,7 +2772,7 @@
 ## 权威层 data_types（internal gui）
 
 - **文件位置**：`game_docs/script_docs/data_types_internalclausewitzgui.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/data_types/data_types_internalclausewitzgui.txt`，2479 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/data_types/data_types_internalclausewitzgui.txt`，2506 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：查引擎内部 GUI data type（进阶 GUI modding）时。
 - **中文摘要**：引擎内部 GUI data types 权威转储。
@@ -2783,7 +2783,7 @@
 ## 权威层 data_types（script）
 
 - **文件位置**：`game_docs/script_docs/data_types_script.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/data_types/data_types_script.txt`，670 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/data_types/data_types_script.txt`，748 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：查脚本域 data type 的字段/方法签名时。
 - **中文摘要**：脚本域 data types 权威转储。
@@ -2794,7 +2794,7 @@
 ## 权威层 data_types（uncategorized）
 
 - **文件位置**：`game_docs/script_docs/data_types_uncategorized.md`
-- **来源**：游戏 1.20.1 script_docs dump（`game logs/data_types/data_types_uncategorized.txt`，20227 条，并入 2026-10-29）
+- **来源**：游戏 1.21.0 script_docs dump（`game logs/data_types/data_types_uncategorized.txt`，22852 条，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：前四个 data_types 文件都查不到某类型时，查此未分类兜底清单。
 - **中文摘要**：未分类 data types 权威转储（条目最多）。
@@ -2805,7 +2805,7 @@
 ## 原版结构索引 INDEX
 
 - **文件位置**：`game_docs/vanilla_structure/INDEX.md`
-- **来源**：游戏 1.20.1 目录扫描（128 个 common 子目录，78167 行条目映射，扫描 2026-10-29）
+- **来源**：游戏 1.21.0 目录扫描（137 个 common 子目录，96296 行条目映射，扫描 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：查「某类内容在原版哪些文件、多少条目」或浏览 common 子目录时。
 - **中文摘要**：原版结构总索引：128 个 common 子目录的文件/条目计数与查询方式。
@@ -2816,7 +2816,7 @@
 ## 原版条目定位表 entry_map
 
 - **文件位置**：`game_docs/vanilla_structure/entry_map.tsv`
-- **来源**：游戏 1.20.1 目录扫描（128 个 common 子目录，78167 行条目映射，扫描 2026-10-29）
+- **来源**：游戏 1.21.0 目录扫描（137 个 common 子目录，96296 行条目映射，扫描 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：查「某条目名（trait/definition/…）定义在原版哪个文件哪一行」时。
 - **中文摘要**：78167 行 条目名→定义文件/行号 TSV；grep -P "^<条目名>	" 定位。
@@ -2827,7 +2827,7 @@
 ## 地图数据档案 dossier
 
 - **文件位置**：`game_docs/map_docs/map_data_dossier.md`
-- **来源**：游戏 1.20.1 地图层实测（13270 活动省份，并入 2026-11-02）
+- **来源**：游戏 1.21.0 地图层实测（13475 活动省份，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：做任何地图 MOD（heightmap/省份/河流/自定义分辨率）前查实测格式与尺寸约束；与 wiki Map modding（1.1 时代）冲突时以此为准。
 - **中文摘要**：地图侧实测档案：map_data 文件规格、heightmap=省份图 2 倍、河流调色板实测、default.map/adjacencies 结构、编辑器灰盒证据、视觉层蒙版新布局。
@@ -2838,7 +2838,7 @@
 ## 省份索引 province_index
 
 - **文件位置**：`game_docs/map_docs/province_index.tsv`
-- **来源**：游戏 1.20.1 地图层实测（13270 活动省份，并入 2026-11-02）
+- **来源**：游戏 1.21.0 地图层实测（13475 活动省份，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：查某省份 id 的 RGB/名称，或反查某颜色/名称对应哪个省份时。
 - **中文摘要**：definition.csv 全量省份 TSV（id/r/g/b/名称/状态/源行号）；grep -P "^<id>	" 定位。
@@ -2849,7 +2849,7 @@
 ## auto-nudge 摆放参数表
 
 - **文件位置**：`game_docs/map_docs/nudger_parameters.md`
-- **来源**：游戏 1.20.1 地图层实测（13270 活动省份，并入 2026-11-02）
+- **来源**：游戏 1.21.0 地图层实测（13475 活动省份，并入 2026-11-18）
 - **权威层**：与 wiki 冲突时以本条目为准（dump 层）
 - **何时查**：调编辑器 auto-nudge 自动摆放参数或排查地图对象摆放问题时。
 - **中文摘要**：随游戏分发的约 60 个自动摆放参数实测表（语义为推断注解）。
@@ -2869,10 +2869,13 @@
 <!-- ck3wiki-mod-kb:reading-room END -->
 
 <!-- ck3wiki-mod-kb:copy-room BEGIN -->
-## 抄写室 · 其他 Mod 知识库（mods_docs，本地生成不发布；构建方式见 `copy_room/README.md`）
+## 抄写室 · 其他 Mod 知识库（copy_room/<mod-id>/，本地生成不发布）
 
-### 2887120253-elder-kings-2
-- Mod 知识库 · Elder Kings 2
-- **位置**：`mods_docs/2887120253-elder-kings-2/`（README / script_docs / structure / DIFF_vs_vanilla）
+为其他 mod（工坊/本地）建立的同构知识库，服务子 mod 开发：
+mod 加载态签名层（script_docs/）、结构索引（structure/entry_map.tsv）、换图 mod 的地图档案（map_docs/）、与原版的签名差异（DIFF_vs_vanilla.md）。
+
+- 构建与检索约定：`copy_room/README.md`（构建入口：`scripts/copy_room.py`）
+- 本机已有知识库：`ls copy_room/`（每个 KB 自带 README 记录来源与组成）
+- 子 mod 开发时 mod 专属签名优先查 mod KB；与原版同名条目以 mod 层为准，原版行为回查 `game_docs/`
 
 <!-- ck3wiki-mod-kb:copy-room END -->

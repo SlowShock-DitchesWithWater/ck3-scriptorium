@@ -7,7 +7,7 @@ r"""原版结构索引层（工单08）：游戏目录 → `game_docs/vanilla_st
 - 输出（全部为结构信息，零原版内容复制——产品中连 "{" 都不允许出现，
   详见 run() 的结构断言）：
   - `INDEX.md`：总索引（common 子目录摘要表、根散文件、查询用法）；
-  - `common/<子目录>.md`：common 全部 128 个顶层子目录逐个的结构摘要
+  - `common/<子目录>.md`：common 全部顶层子目录逐个的结构摘要
     （文件清单 + 每文件顶层块名/条目索引）——common 全覆盖是硬验收项；
   - `entry_map.tsv`：`条目名 \t 定义文件路径 \t 行号` 全局映射，
     查某 trait/opinion/... 定义在哪个文件可直接 grep 命中；
@@ -50,7 +50,8 @@ REPO_ROOT = config.REPO_ROOT
 # ① --game-dir 参数；② 环境变量 CK3_GAME_DIR；③ scripts/state/local_paths.json
 # （本地配置，gitignored）的 game_dir 键。都没有则报错并给出上述三种配置方式。
 DEFAULT_OUT_DIR = REPO_ROOT / "game_docs" / "vanilla_structure"
-DEFAULT_GAME_VERSION = "1.20.0"   # spec 环境事实附录基准（私有文档）
+DEFAULT_GAME_VERSION = "1.21.0"   # spec 环境事实附录基准（私有文档）；
+# 与 game_layer/map_layer 基准一致——run.py --stage game 会传解析出的实际版本
 
 
 def resolve_game_dir(cli_value: str | None) -> Path:
@@ -626,7 +627,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--out", default=str(DEFAULT_OUT_DIR),
                     help="产物目录（默认 game_docs/vanilla_structure）")
     ap.add_argument("--game-version", default=DEFAULT_GAME_VERSION,
-                    help="快照标注的游戏版本（默认 1.20.0 基准事实）")
+                    help="快照标注的游戏版本（默认 1.21.0 基准事实；"
+                         "run.py --stage game 会传 dump 解析出的实际版本）")
     ap.add_argument("--no-manifest", action="store_true",
                     help="不写 manifest（测试用）")
     ap.add_argument("--check", action="store_true",

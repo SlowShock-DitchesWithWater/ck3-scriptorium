@@ -1,198 +1,214 @@
 # common/scripted_effects 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：185（其中 Jomini 解析 185 个）
-- 顶层块条目总数：4123，跨文件唯一条目 4123
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：201（其中 Jomini 解析 201 个）
+- 顶层块条目总数：4735，跨文件唯一条目 4735
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_accolades_scripted_effects.txt` | 339853 | 53 | 0 | jomini |
-| `00_achievement_effects.txt` | 9931 | 10 | 0 | jomini |
-| `00_activity_effects.txt` | 116295 | 45 | 0 | jomini |
-| `00_administrative_effects.txt` | 14065 | 7 | 0 | jomini |
-| `00_adultery_effects.txt` | 17321 | 9 | 0 | jomini |
+| `00_accolades_scripted_effects.txt` | 340790 | 53 | 0 | jomini |
+| `00_achievement_effects.txt` | 11527 | 12 | 0 | jomini |
+| `00_activity_effects.txt` | 120554 | 45 | 0 | jomini |
+| `00_administrative_effects.txt` | 14196 | 8 | 0 | jomini |
+| `00_adultery_effects.txt` | 17248 | 9 | 0 | jomini |
 | `00_adventure_effects.txt` | 2002 | 2 | 0 | jomini |
-| `00_ai_budget_effects.txt` | 24122 | 1 | 0 | jomini |
-| `00_ai_conqueror_effects.txt` | 21089 | 1 | 0 | jomini |
+| `00_ai_budget_effects.txt` | 24741 | 2 | 0 | jomini |
+| `00_ai_conqueror_effects.txt` | 21317 | 1 | 0 | jomini |
 | `00_ai_value_effects.txt` | 17421 | 3 | 0 | jomini |
 | `00_alert_actions_effects.txt` | 552 | 2 | 0 | jomini |
 | `00_almohad_invasion_effects.txt` | 8710 | 9 | 0 | jomini |
 | `00_animal_effects.txt` | 62161 | 41 | 0 | jomini |
-| `00_antiquarian_artifact_improvement_effects.txt` | 30040 | 14 | 0 | jomini |
-| `00_artifact_badge_scripted_effects.txt` | 12465 | 7 | 0 | jomini |
+| `00_antiquarian_artifact_improvement_effects.txt` | 37203 | 14 | 0 | jomini |
+| `00_artifact_badge_scripted_effects.txt` | 12194 | 7 | 0 | jomini |
 | `00_bastard_effects.txt` | 27204 | 16 | 0 | jomini |
 | `00_board_game_effects.txt` | 14745 | 12 | 0 | jomini |
 | `00_bookmark_effects.txt` | 544 | 1 | 0 | jomini |
 | `00_bp1_artifact_creation_effects.txt` | 3879 | 7 | 0 | jomini |
-| `00_building_effects.txt` | 85674 | 25 | 0 | jomini |
+| `00_building_effects.txt` | 42650 | 13 | 0 | jomini |
 | `00_camp_officer_effects.txt` | 12800 | 87 | 0 | jomini |
-| `00_casus_belli_effects.txt` | 15768 | 6 | 11 | jomini |
-| `00_childhood_effects.txt` | 16203 | 6 | 0 | jomini |
+| `00_casus_belli_effects.txt` | 16191 | 7 | 11 | jomini |
+| `00_childhood_effects.txt` | 16229 | 6 | 0 | jomini |
 | `00_commander_effects.txt` | 17093 | 7 | 0 | jomini |
 | `00_compliment_effects.txt` | 21468 | 7 | 0 | jomini |
-| `00_councillor_effects.txt` | 32126 | 21 | 0 | jomini |
-| `00_county_corruption_effects.txt` | 55835 | 41 | 0 | jomini |
-| `00_court_position_effects.txt` | 106609 | 120 | 0 | jomini |
-| `00_courtier_guest_management_effects.txt` | 38166 | 11 | 0 | jomini |
-| `00_culture_effects.txt` | 23474 | 10 | 0 | jomini |
+| `00_councillor_effects.txt` | 32127 | 21 | 0 | jomini |
+| `00_county_corruption_effects.txt` | 96324 | 63 | 0 | jomini |
+| `00_court_position_effects.txt` | 106531 | 120 | 0 | jomini |
+| `00_courtier_guest_management_effects.txt` | 38778 | 12 | 0 | jomini |
+| `00_culture_effects.txt` | 24817 | 12 | 0 | jomini |
 | `00_custom_loc_effects.txt` | 2345 | 3 | 0 | jomini |
-| `00_death_management_effects.txt` | 2246 | 7 | 0 | jomini |
-| `00_debug_and_shortcut_effects.txt` | 1354 | 4 | 0 | jomini |
-| `00_decisions_effects.txt` | 92884 | 45 | 0 | jomini |
-| `00_diarchy_scripted_effects.txt` | 74467 | 50 | 0 | jomini |
+| `00_death_management_effects.txt` | 2284 | 7 | 0 | jomini |
+| `00_debug_and_shortcut_effects.txt` | 2479 | 7 | 0 | jomini |
+| `00_decisions_effects.txt` | 92931 | 45 | 0 | jomini |
+| `00_diarchy_scripted_effects.txt` | 74478 | 50 | 0 | jomini |
 | `00_diplomacy_lifestyle_effects.txt` | 12878 | 14 | 0 | jomini |
-| `00_diplomacy_perk_effects.txt` | 22130 | 11 | 0 | jomini |
+| `00_diplomacy_perk_effects.txt` | 23924 | 14 | 0 | jomini |
 | `00_dummy_gender_effects.txt` | 11785 | 20 | 0 | jomini |
-| `00_education_effects.txt` | 80749 | 37 | 0 | jomini |
+| `00_education_effects.txt` | 84447 | 38 | 0 | jomini |
 | `00_empire_faith_gate_effects.txt` | 2321 | 2 | 0 | jomini |
-| `00_ep1_artifact_creation_effects.txt` | 397942 | 73 | 0 | jomini |
-| `00_ep1_artifact_effects.txt` | 15351 | 11 | 0 | jomini |
+| `00_ep1_artifact_creation_effects.txt` | 402031 | 73 | 0 | jomini |
+| `00_ep1_artifact_effects.txt` | 16169 | 11 | 0 | jomini |
 | `00_ep1_court_type_effects.txt` | 9068 | 4 | 0 | jomini |
 | `00_ep1_hold_court_effects.txt` | 40160 | 13 | 0 | jomini |
 | `00_ep1_inspiration_effects.txt` | 102602 | 7 | 0 | jomini |
-| `00_ep1_inspiration_effects_sean.txt` | 34314 | 11 | 0 | jomini |
-| `00_ep3_decision_effects.txt` | 18565 | 7 | 0 | jomini |
+| `00_ep1_inspiration_effects_sean.txt` | 34616 | 12 | 0 | jomini |
+| `00_ep3_decision_effects.txt` | 19723 | 8 | 0 | jomini |
 | `00_experience_effects.txt` | 1548 | 3 | 0 | jomini |
-| `00_faction_effects.txt` | 49855 | 18 | 0 | jomini |
-| `00_feast_scripted_effects.txt` | 6769 | 6 | 0 | jomini |
-| `00_flavorization_effects.txt` | 4830 | 3 | 0 | jomini |
+| `00_faction_effects.txt` | 50515 | 19 | 0 | jomini |
+| `00_feast_scripted_effects.txt` | 6835 | 6 | 0 | jomini |
+| `00_flavorization_effects.txt` | 4827 | 3 | 0 | jomini |
 | `00_funeral_scripted_effects.txt` | 1859 | 1 | 0 | jomini |
-| `00_game_rule_effects.txt` | 74131 | 17 | 0 | jomini |
+| `00_game_rule_effects.txt` | 73358 | 16 | 0 | jomini |
+| `00_gdp_guelph_ghibelline_scripted_effects.txt` | 74990 | 61 | 0 | jomini |
 | `00_governance_lifestyle_effects.txt` | 3 | 0 | 0 | jomini |
 | `00_government_effects.txt` | 3626 | 6 | 0 | jomini |
 | `00_historical_characters_scripted_effects.txt` | 319328 | 3 | 0 | jomini |
 | `00_history_effects.txt` | 1367 | 2 | 0 | jomini |
-| `00_holding_effects.txt` | 1952 | 3 | 0 | jomini |
-| `00_holy_order_effects.txt` | 147342 | 23 | 0 | jomini |
+| `00_holding_effects.txt` | 2610 | 4 | 0 | jomini |
+| `00_holy_order_effects.txt` | 148816 | 23 | 0 | jomini |
 | `00_hook_effects.txt` | 1922 | 4 | 0 | jomini |
-| `00_hunt_effects.txt` | 106375 | 72 | 0 | jomini |
-| `00_interaction_effects.txt` | 144351 | 68 | 5 | jomini |
+| `00_hunt_effects.txt` | 106426 | 72 | 0 | jomini |
+| `00_interaction_effects.txt` | 153104 | 71 | 5 | jomini |
 | `00_intercourse_effects.txt` | 883 | 3 | 0 | jomini |
 | `00_intrigue_lifestyle_effects.txt` | 20966 | 8 | 0 | jomini |
 | `00_intrigue_perk_effects.txt` | 2899 | 1 | 0 | jomini |
 | `00_journey_effects.txt` | 4872 | 4 | 0 | jomini |
-| `00_laamp_effects.txt` | 66824 | 25 | 0 | jomini |
-| `00_learning_lifestyle_effects.txt` | 31876 | 21 | 0 | jomini |
+| `00_laamp_effects.txt` | 67519 | 25 | 0 | jomini |
+| `00_learning_lifestyle_effects.txt` | 31921 | 21 | 0 | jomini |
 | `00_lifestyle_focus_effects.txt` | 23331 | 14 | 0 | jomini |
 | `00_lover_effects.txt` | 2826 | 3 | 0 | jomini |
-| `00_major_decisions_scripted_effects.txt` | 126194 | 56 | 0 | jomini |
-| `00_major_decisions_scripted_effects_2.txt` | 5990 | 7 | 0 | jomini |
-| `00_major_decisions_scripted_effects_3.txt` | 26750 | 13 | 0 | jomini |
-| `00_marriage_effects.txt` | 2456 | 3 | 0 | jomini |
-| `00_marriage_interaction_effects.txt` | 49579 | 12 | 0 | jomini |
+| `00_major_decisions_scripted_effects.txt` | 126245 | 56 | 0 | jomini |
+| `00_major_decisions_scripted_effects_2.txt` | 6015 | 7 | 0 | jomini |
+| `00_major_decisions_scripted_effects_3.txt` | 30177 | 14 | 0 | jomini |
+| `00_marriage_effects.txt` | 3651 | 4 | 0 | jomini |
+| `00_marriage_interaction_effects.txt` | 51493 | 12 | 0 | jomini |
 | `00_martial_lifestyle_effects.txt` | 19972 | 10 | 0 | jomini |
 | `00_men_at_arms_effects.txt` | 529 | 0 | 0 | jomini |
-| `00_mongol_invasion_effects.txt` | 330594 | 34 | 1 | jomini |
-| `00_murder_effects.txt` | 22600 | 12 | 0 | jomini |
+| `00_mongol_invasion_effects.txt` | 330592 | 34 | 1 | jomini |
+| `00_murder_effects.txt` | 22848 | 13 | 0 | jomini |
 | `00_music_effects.txt` | 336 | 1 | 0 | jomini |
-| `00_nickname_effects.txt` | 178136 | 5 | 0 | jomini |
+| `00_nickname_effects.txt` | 178227 | 5 | 0 | jomini |
 | `00_parent_effects.txt` | 1710 | 3 | 0 | jomini |
 | `00_personal_details_effects.txt` | 31038 | 8 | 0 | jomini |
 | `00_personality_trait_effects.txt` | 53028 | 7 | 0 | jomini |
-| `00_petition_liege_effects.txt` | 34678 | 40 | 0 | jomini |
-| `00_pilgrimage_effects.txt` | 40713 | 27 | 0 | jomini |
+| `00_petition_liege_effects.txt` | 34673 | 40 | 0 | jomini |
+| `00_pilgrimage_effects.txt` | 40683 | 27 | 0 | jomini |
 | `00_playdate_scripted_effects.txt` | 1143 | 4 | 0 | jomini |
-| `00_poetry_effects.txt` | 23009 | 33 | 3 | jomini |
+| `00_poetry_effects.txt` | 23019 | 33 | 3 | jomini |
 | `00_pool_effects.txt` | 3131 | 3 | 0 | jomini |
 | `00_pregnancy_effects.txt` | 10025 | 7 | 0 | jomini |
-| `00_prison_effects.txt` | 73376 | 27 | 0 | jomini |
-| `00_realm_effects.txt` | 3393 | 4 | 0 | jomini |
+| `00_prison_effects.txt` | 75956 | 28 | 0 | jomini |
+| `00_realm_effects.txt` | 3392 | 4 | 0 | jomini |
 | `00_regional_scripted_effects.txt` | 20936 | 4 | 0 | jomini |
-| `00_relation_effects.txt` | 33432 | 23 | 0 | jomini |
-| `00_religion_effects.txt` | 41530 | 41 | 0 | jomini |
-| `00_religious_interaction_effects.txt` | 54734 | 40 | 0 | jomini |
-| `00_roaming_effects.txt` | 3101 | 9 | 0 | jomini |
+| `00_relation_effects.txt` | 39737 | 26 | 0 | jomini |
+| `00_religion_effects.txt` | 42919 | 41 | 0 | jomini |
+| `00_religious_interaction_effects.txt` | 55245 | 40 | 0 | jomini |
+| `00_roaming_effects.txt` | 3099 | 9 | 0 | jomini |
 | `00_romance_effects.txt` | 26323 | 8 | 0 | jomini |
-| `00_scheme_scripted_effects.txt` | 424808 | 204 | 0 | jomini |
-| `00_scripted_effects.txt` | 4172 | 7 | 0 | jomini |
-| `00_secret_effects.txt` | 69449 | 41 | 0 | jomini |
+| `00_scheme_scripted_effects.txt` | 431256 | 216 | 0 | jomini |
+| `00_scripted_effects.txt` | 26825 | 21 | 0 | jomini |
+| `00_secret_effects.txt` | 71193 | 42 | 0 | jomini |
 | `00_setup_tests_effect.txt` | 2172 | 1 | 0 | jomini |
 | `00_sibling_effects.txt` | 1936 | 5 | 0 | jomini |
-| `00_single_combat_effects.txt` | 17577 | 12 | 0 | jomini |
+| `00_single_combat_effects.txt` | 17609 | 12 | 0 | jomini |
 | `00_skill_effects.txt` | 4791 | 7 | 0 | jomini |
 | `00_spouse_effects.txt` | 3473 | 1 | 0 | jomini |
 | `00_stewardship_lifestyle_effects.txt` | 17580 | 24 | 0 | jomini |
 | `00_stewardship_perk_effects.txt` | 2894 | 2 | 0 | jomini |
 | `00_story_cycle_same_gender_pen_pal_effects.txt` | 3209 | 3 | 0 | jomini |
 | `00_stress_effects.txt` | 25415 | 14 | 0 | jomini |
-| `00_task_contract_scripted_effects.txt` | 852 | 2 | 0 | jomini |
+| `00_task_contract_scripted_effects.txt` | 886 | 2 | 0 | jomini |
 | `00_tax_rivalry_effects.txt` | 802 | 2 | 0 | jomini |
 | `00_title_effects.txt` | 1943 | 4 | 0 | jomini |
-| `00_travel_effects.txt` | 1867 | 12 | 0 | jomini |
-| `00_tributary_setup_effects.txt` | 65307 | 14 | 0 | jomini |
-| `00_unity_effects.txt` | 6709 | 6 | 0 | jomini |
-| `00_wanderer_lifestyle_effects.txt` | 26480 | 30 | 0 | jomini |
+| `00_travel_effects.txt` | 3254 | 13 | 0 | jomini |
+| `00_tributary_setup_effects.txt` | 65349 | 14 | 0 | jomini |
+| `00_unity_effects.txt` | 6659 | 6 | 0 | jomini |
+| `00_wanderer_lifestyle_effects.txt` | 31878 | 33 | 0 | jomini |
 | `00_wanderer_perk_effects.txt` | 460 | 1 | 0 | jomini |
-| `00_war_effects.txt` | 75993 | 36 | 0 | jomini |
+| `00_war_effects.txt` | 83435 | 65 | 0 | jomini |
 | `00_while_loop_effects.txt` | 2033 | 4 | 0 | jomini |
 | `00_witch_effects.txt` | 4543 | 4 | 0 | jomini |
 | `00_yearly_event_effects.txt` | 9128 | 3 | 0 | jomini |
-| `01_building_upgrade_effects.txt` | 5487 | 3 | 0 | jomini |
-| `01_dlc_bp1_filippa_scripted_effects.txt` | 7092 | 2 | 0 | jomini |
-| `01_dlc_fp1_scripted_effects.txt` | 34807 | 28 | 0 | jomini |
-| `01_dlc_fp3_scripted_effects.txt` | 34754 | 19 | 0 | jomini |
-| `01_ep1_court_artifact_creation_effects.txt` | 186382 | 43 | 0 | jomini |
+| `01_building_upgrade_effects.txt` | 117 | 0 | 0 | jomini |
+| `01_dlc_bp1_filippa_scripted_effects.txt` | 7068 | 2 | 0 | jomini |
+| `01_dlc_fp1_scripted_effects.txt` | 33545 | 28 | 0 | jomini |
+| `01_dlc_fp3_scripted_effects.txt` | 34751 | 19 | 0 | jomini |
+| `01_ep1_court_artifact_creation_effects.txt` | 192057 | 43 | 0 | jomini |
 | `01_ep1_court_event_effects.txt` | 2741 | 3 | 0 | jomini |
 | `01_ep1_interaction_scripted_effects.txt` | 567 | 1 | 0 | jomini |
 | `01_exp1_historical_artifacts_creation_effect.txt` | 136554 | 123 | 0 | jomini |
-| `02_dlc_ep1_decision_scripted_effects.txt` | 983 | 2 | 0 | jomini |
-| `02_ep2_artifact_effects.txt` | 31671 | 5 | 0 | jomini |
+| `02_dlc_ep1_decision_scripted_effects.txt` | 1024 | 2 | 0 | jomini |
+| `02_ep2_artifact_effects.txt` | 31505 | 5 | 0 | jomini |
 | `02_starting_holy_site_relics_effects.txt` | 50787 | 49 | 0 | jomini |
 | `03_bp1_haunted_by_ghosts_effects.txt` | 1576 | 3 | 0 | jomini |
-| `03_bp1_scripted_effects.txt` | 34589 | 10 | 0 | jomini |
-| `03_bp2_scripted_effects.txt` | 51397 | 13 | 0 | jomini |
-| `03_dlc_fp2_scripted_effects.txt` | 65244 | 55 | 0 | jomini |
+| `03_bp1_scripted_effects.txt` | 34728 | 10 | 0 | jomini |
+| `03_bp2_scripted_effects.txt` | 51881 | 13 | 0 | jomini |
+| `03_dlc_fp2_scripted_effects.txt` | 66766 | 56 | 0 | jomini |
 | `03_dlc_fp3_artifact_creation_effects.txt` | 12291 | 8 | 0 | jomini |
-| `03_dlc_fp3_scripted_effects.txt` | 16732 | 11 | 0 | jomini |
+| `03_dlc_fp3_scripted_effects.txt` | 16736 | 11 | 0 | jomini |
 | `04_dlc_ep2_tour_effects.txt` | 17935 | 14 | 0 | jomini |
-| `04_dlc_ep2_tournament_effects.txt` | 270957 | 112 | 0 | jomini |
-| `04_dlc_ep2_wedding_effects.txt` | 6835 | 8 | 0 | jomini |
+| `04_dlc_ep2_tournament_effects.txt` | 271096 | 112 | 0 | jomini |
+| `04_dlc_ep2_wedding_effects.txt` | 7262 | 8 | 0 | jomini |
 | `05_bp2_hostage_effects.txt` | 20822 | 9 | 0 | jomini |
-| `05_dlc_bp2_effects.txt` | 36510 | 18 | 0 | jomini |
+| `05_dlc_bp2_effects.txt` | 37772 | 19 | 0 | jomini |
 | `05_dlc_fp3_scripted_effects.txt` | 35571 | 17 | 0 | jomini |
-| `06_dlc_ce1_epidemics_effects.txt` | 22222 | 16 | 0 | jomini |
+| `06_dlc_ce1_epidemics_effects.txt` | 22767 | 17 | 0 | jomini |
 | `06_dlc_ce1_leg_b_effects.txt` | 18866 | 2 | 0 | jomini |
-| `06_dlc_ce1_legend_effects.txt` | 72841 | 50 | 0 | jomini |
-| `06_dlc_ce1_legitimacy_effects.txt` | 12324 | 22 | 0 | jomini |
-| `07_dlc_ep3_scripted_effects.txt` | 337046 | 154 | 0 | jomini |
-| `07_dlc_ep3_story_cycle_adventurer_ai_scripted_effects.txt` | 52599 | 6 | 0 | jomini |
-| `07_frankokratia_scripted_effects.txt` | 159928 | 26 | 0 | jomini |
-| `08_bp3_effects.txt` | 33607 | 36 | 0 | jomini |
-| `09_dlc_mpo_scripted_effects.txt` | 153395 | 78 | 0 | jomini |
-| `09_mpo_greatest_of_khans_effects.txt` | 201678 | 19 | 0 | jomini |
+| `06_dlc_ce1_legend_effects.txt` | 73161 | 50 | 0 | jomini |
+| `06_dlc_ce1_legitimacy_effects.txt` | 13213 | 22 | 0 | jomini |
+| `07_dlc_ep3_scripted_effects.txt` | 351068 | 160 | 0 | jomini |
+| `07_dlc_ep3_story_cycle_adventurer_ai_scripted_effects.txt` | 53125 | 6 | 0 | jomini |
+| `07_frankokratia_scripted_effects.txt` | 158432 | 27 | 0 | jomini |
+| `08_bp3_effects.txt` | 23601 | 32 | 0 | jomini |
+| `09_dlc_mpo_scripted_effects.txt` | 156325 | 81 | 0 | jomini |
+| `09_mpo_greatest_of_khans_effects.txt` | 201904 | 19 | 0 | jomini |
 | `09_mpo_settlement_issue_effects.txt` | 5280 | 14 | 0 | jomini |
-| `10_ach_effects.txt` | 171983 | 59 | 0 | jomini |
-| `10_dlc_tgp_dynastic_cycle_scripted_effects.txt` | 77704 | 13 | 0 | jomini |
-| `10_dlc_tgp_history_effects.txt` | 14135 | 2 | 0 | jomini |
-| `10_dlc_tgp_house_bloc_scripted_effects.txt` | 45837 | 20 | 0 | jomini |
-| `10_dlc_tgp_house_relation_scripted_effects.txt` | 12665 | 8 | 0 | jomini |
-| `10_dlc_tgp_japan_scripted_effects.txt` | 158094 | 40 | 0 | jomini |
-| `10_dlc_tgp_korea_scripted_effects.txt` | 4725 | 2 | 0 | jomini |
-| `10_dlc_tgp_natural_disaster_scripted_effects.txt` | 30637 | 27 | 0 | jomini |
-| `10_dlc_tgp_scripted_effects.txt` | 282886 | 105 | 0 | jomini |
-| `10_dlc_tgp_silk_road_scripted_effects.txt` | 21540 | 23 | 0 | jomini |
-| `11_dlc_pam_scripted_effects.txt` | 52554 | 26 | 0 | jomini |
-| `11_petition_head_of_faith_effects.txt` | 28603 | 42 | 0 | jomini |
+| `10_ach_effects.txt` | 172766 | 59 | 0 | jomini |
+| `10_dlc_tgp_dynastic_cycle_scripted_effects.txt` | 77671 | 13 | 0 | jomini |
+| `10_dlc_tgp_history_effects.txt` | 98091 | 4 | 0 | jomini |
+| `10_dlc_tgp_house_bloc_scripted_effects.txt` | 46453 | 20 | 0 | jomini |
+| `10_dlc_tgp_house_relation_scripted_effects.txt` | 13381 | 8 | 0 | jomini |
+| `10_dlc_tgp_japan_scripted_effects.txt` | 159036 | 41 | 0 | jomini |
+| `10_dlc_tgp_korea_scripted_effects.txt` | 4765 | 2 | 0 | jomini |
+| `10_dlc_tgp_natural_disaster_scripted_effects.txt` | 32591 | 27 | 0 | jomini |
+| `10_dlc_tgp_scripted_effects.txt` | 282409 | 107 | 0 | jomini |
+| `10_dlc_tgp_silk_road_scripted_effects.txt` | 24429 | 25 | 0 | jomini |
+| `10_tgp_wanua_resource_building_effects.txt` | 3768 | 2 | 0 | jomini |
+| `11_dlc_pam_scripted_effects.txt` | 52733 | 26 | 0 | jomini |
+| `11_petition_head_of_faith_effects.txt` | 28605 | 42 | 0 | jomini |
 | `20_health_balancing_effects.txt` | 158 | 0 | 0 | jomini |
-| `20_health_effects.txt` | 107548 | 57 | 0 | jomini |
+| `20_health_effects.txt` | 107636 | 59 | 0 | jomini |
+| `domicile_effects.txt` | 30089 | 12 | 0 | jomini |
 | `easteregg_historical_artifact_creation_effects.txt` | 651 | 1 | 0 | jomini |
-| `pam_antipope_effects.txt` | 24421 | 27 | 0 | jomini |
-| `pam_ecumenical_council_effects.txt` | 38273 | 23 | 0 | jomini |
-| `pam_effects.txt` | 376452 | 275 | 11 | jomini |
+| `gdp_burgher_scripted_effects.txt` | 47369 | 57 | 0 | jomini |
+| `gdp_domicile_artifact_creation_scripted_effects.txt` | 29524 | 17 | 0 | jomini |
+| `gdp_domicile_effects.txt` | 429 | 1 | 0 | jomini |
+| `gdp_merchant_luxury_contract_scripted_effects.txt` | 75247 | 5 | 0 | jomini |
+| `gdp_merchant_patron_contract_scripted_effects.txt` | 3101 | 6 | 0 | jomini |
+| `gdp_merchant_scripted_effects.txt` | 234720 | 182 | 0 | jomini |
+| `gdp_merchant_trade_opportunity_scripted_effects.txt` | 26786 | 31 | 0 | jomini |
+| `gdp_merchant_unity_contract_scripted_effects.txt` | 6717 | 4 | 0 | jomini |
+| `gdp_republic_effects.txt` | 189310 | 70 | 0 | jomini |
+| `gdp_trade_scheme_effects.txt` | 5917 | 10 | 0 | jomini |
+| `gdp_trader_activity_scripted_effects.txt` | 20946 | 14 | 0 | jomini |
+| `gdp_tradition_scripted_effects.txt` | 500 | 2 | 0 | jomini |
+| `gdp_visit_holding_decision_scripted_effects.txt` | 7890 | 21 | 0 | jomini |
+| `pam_antipope_effects.txt` | 26622 | 28 | 0 | jomini |
+| `pam_ecumenical_council_effects.txt` | 42137 | 26 | 0 | jomini |
+| `pam_effects.txt` | 379760 | 275 | 16 | jomini |
 | `pam_heresy_historical_founder_effects.txt` | 25473 | 22 | 0 | jomini |
 | `pam_heresy_shared_effects.txt` | 24450 | 18 | 0 | jomini |
-| `pam_investiture_council_effects.txt` | 27510 | 21 | 0 | jomini |
+| `pam_investiture_council_effects.txt` | 28114 | 21 | 0 | jomini |
 | `pam_saint_effects.txt` | 27634 | 11 | 0 | jomini |
 | `pam_secular_faith_effects.txt` | 9458 | 3 | 0 | jomini |
-| `passive_rite_learning_effects.txt` | 52814 | 22 | 0 | jomini |
+| `passive_rite_learning_effects.txt` | 53099 | 22 | 0 | jomini |
 | `sanctify_artifact_effects.txt` | 1249 | 1 | 0 | jomini |
-| `tgp_debate_scripted_effects.txt` | 24792 | 8 | 0 | jomini |
-| `tgp_imperial_examination_scripted_effects.txt` | 51732 | 29 | 0 | jomini |
-| `tgp_mandala_scripted_effects.txt` | 98141 | 157 | 0 | jomini |
-| `tgp_tribute_mission_scripted_effects.txt` | 19957 | 9 | 0 | jomini |
+| `tgp_debate_scripted_effects.txt` | 24798 | 8 | 0 | jomini |
+| `tgp_imperial_examination_scripted_effects.txt` | 51763 | 29 | 0 | jomini |
+| `tgp_mandala_scripted_effects.txt` | 98221 | 157 | 0 | jomini |
+| `tgp_tribute_mission_scripted_effects.txt` | 20290 | 9 | 0 | jomini |
 | `titus_natural_primitivism_effects.txt` | 3430 | 5 | 0 | jomini |
 
 ## 条目名 → 定义文件
@@ -201,7 +217,7 @@
 
 ### 00_accolades_scripted_effects.txt（53 条目）
 
-- accolades_development_growth_for_least_developed_county_effect
+- accolades_prosperity_growth_for_least_developed_county_effect
 - accolades_contender_tournament_xp_gain_effect
 - accolades_all_knights_liege_tournament_xp_gain_effect
 - accolades_activity_complete_tour_glory_effect
@@ -255,7 +271,7 @@
 - accolade_to_mercenary_effect
 - create_type_appropriate_maa_effect
 
-### 00_achievement_effects.txt（10 条目）
+### 00_achievement_effects.txt（12 条目）
 
 - add_achievement_flag_effect
 - add_achievement_variable_effect
@@ -267,6 +283,8 @@
 - player_succeeded_at_a_thousand_and_one_nights_achievement_effect
 - process_tour_achievement_tallies_effect
 - ce3_papal_bull_check_effect
+- ep5_09_wearer_of_many_hats_achievement_record_effect
+- ep5_12_would_you_like_fries_with_that_check_effect
 
 ### 00_activity_effects.txt（45 条目）
 
@@ -284,6 +302,7 @@
 - disburse_murder_feast_activity_rewards
 - disburse_activity_stress_loss
 - disburse_feast_reveler_rewards
+- disburse_carnival_rewards
 - activity_on_war_declared_events_effect
 - activity_setup_special_type_progression_effect
 - activity_special_type_progression_variable
@@ -314,9 +333,8 @@
 - invalidation_nobody_present_effect
 - invalidation_host_isolated_effect
 - invalidation_host_or_special_guest_isolated_effect
-- debug_test_activity_event_effect
 
-### 00_administrative_effects.txt（7 条目）
+### 00_administrative_effects.txt（8 条目）
 
 - change_to_administrative_hereditary_effect
 - change_to_administrative_holding_effect
@@ -325,6 +343,7 @@
 - give_new_noble_family_title_effect
 - set_up_domicile_estate_effect
 - noble_family_title_realm_setup_effect
+- empty_treasury_effect
 
 ### 00_adultery_effects.txt（9 条目）
 
@@ -343,9 +362,10 @@
 - start_adventure_effect
 - set_adventure_distance_variable_effect
 
-### 00_ai_budget_effects.txt（1 条目）
+### 00_ai_budget_effects.txt（2 条目）
 
 - ai_budget_manipulation_effect
+- purge_excess_baron_gold_effect
 
 ### 00_ai_conqueror_effects.txt（1 条目）
 
@@ -493,33 +513,21 @@
 - add_camphor_effect
 - add_ambergris_effect
 
-### 00_building_effects.txt（25 条目）
+### 00_building_effects.txt（13 条目）
 
-- add_next_building_tier_effect
-- add_random_building_variable_effect
-- add_random_building_construct_effect
-- destroy_or_downgrade_building_effect
-- destroy_or_downgrade_ducal_building_effect
-- destroy_or_downgrade_tribal_building_effect
-- destroy_random_building_variable_effect
-- destroy_random_building_effect
-- destroy_or_downgrade_estate_building_2_effect
-- destroy_or_downgrade_estate_building_3_effect
-- destroy_or_downgrade_estate_building_4_effect
-- destroy_or_downgrade_estate_building_5_effect
-- destroy_or_downgrade_estate_building_6_effect
-- destroy_or_downgrade_estate_building_2_4_replacement_effect
-- destroy_or_downgrade_estate_building_2_6_replacement_effect
-- destroy_or_downgrade_estate_building_3_6_replacement_effect
-- destroy_random_estate_building_variable_effect
-- destroy_random_estate_building_effect
-- destroy_random_east_asian_estate_building_variable_effect
-- destroy_random_east_asian_estate_building_effect
 - add_random_economic_building_effect
 - add_random_fortification_building_effect
 - add_random_military_building_effect
+- add_random_building_variable_effect
+- add_random_building_construct_effect
+- add_next_building_tier_effect
+- destroy_or_downgrade_district_building_effect
+- destroy_random_building_variable_effect
+- destroy_random_building_effect
 - destroy_or_downgrade_temple_effect
 - add_next_temple_tier_effect
+- upgrade_holding_primary_building_effect
+- tower_of_pisa_lean_effect
 
 ### 00_camp_officer_effects.txt（87 条目）
 
@@ -611,11 +619,12 @@
 - laureate_camp_officer_title_revoked_effect
 - laureate_camp_officer_title_invalidated_effect
 
-### 00_casus_belli_effects.txt（6 条目）
+### 00_casus_belli_effects.txt（7 条目）
 
 - modify_all_participants_fame_values
 - modify_all_participants_fame_values_crusading_claim
 - modify_allies_of_participants_fame_values
+- modify_allies_of_participants_fame_both_same_values
 - modify_allies_of_participants_fame_both_values
 - modify_allies_of_participants_fame_values_crusading_claim
 - add_hook_from_temp_de_jure_liege_to_attacker
@@ -673,7 +682,7 @@
 - make_councillor_start_up_effect
 - assign_landed_realm_priest_effect
 
-### 00_county_corruption_effects.txt（41 条目）
+### 00_county_corruption_effects.txt（63 条目）
 
 - add_inefficient_tax_collection_modifier_effect
 - add_deserting_levies_modifier_effect
@@ -694,6 +703,22 @@
 - add_random_county_corruption_modifier_effect
 - add_random_county_corruption_low_control_effect
 - add_random_county_corruption_in_debt_effect
+- remove_county_corruption_inefficient_tax_collection_modifier_tiers_effect
+- remove_county_corruption_deserting_levies_modifier_tiers_effect
+- remove_county_corruption_smuggling_ring_modifier_tiers_effect
+- remove_county_corruption_bandits_rampant_modifier_tiers_effect
+- remove_county_corruption_inefficient_census_modifier_tiers_effect
+- remove_county_corruption_lack_of_sheriffs_modifier_tiers_effect
+- remove_county_corruption_lack_of_courts_modifier_tiers_effect
+- remove_county_corruption_thieves_guild_modifier_tiers_effect
+- remove_county_corruption_unsafe_highways_modifier_tiers_effect
+- remove_county_corruption_uncooperative_guilds_modifier_tiers_effect
+- remove_county_corruption_lackluster_administration_modifier_tiers_effect
+- remove_county_corruption_roaming_bandits_modifier_tiers_effect
+- remove_county_corruption_wild_beast_attacks_modifier_tiers_effect
+- remove_county_corruption_upset_shepherds_modifier_tiers_effect
+- remove_county_corruption_rogue_warriors_modifier_tiers_effect
+- remove_county_corruption_unruly_nomads_modifier_tiers_effect
 - remove_inefficient_tax_collection_modifier_effect
 - remove_deserting_levies_modifier_effect
 - remove_smuggling_ring_modifier_effect
@@ -716,6 +741,12 @@
 - remove_random_county_corruption_modifier_effect
 - remove_every_county_corruption_modifier_effect
 - marshal_remove_random_county_corruption_modifier_effect
+- escalate_random_county_corruption_modifier_effect
+- add_merchant_smuggling_ring_county_corruption_modifier_effect
+- inform_market_of_smuggling_modifier_effect
+- inform_market_of_smuggling_removal_modifier_effect
+- inform_market_of_banditry_modifier_effect
+- inform_market_of_banditry_removal_modifier_effect
 
 ### 00_court_position_effects.txt（120 条目）
 
@@ -840,22 +871,25 @@
 - revoke_specific_court_position_effect
 - fire_specific_court_position_effect
 
-### 00_courtier_guest_management_effects.txt（11 条目）
+### 00_courtier_guest_management_effects.txt（12 条目）
 
+- select_fallback_pool_duchy_in_kingdom_effect
 - select_fallback_pool_to_move_to_effect
 - fallback_move_to_pool_effect
 - select_pool_to_move_to_effect
 - move_to_pool_effect
 - select_and_move_to_pool_effect
 - courtier_guest_pool_character_secret_giving_effect
-- pool_character_development_effect
+- pool_character_prosperity_effect
 - purge_excess_wanderer_riches_effect
 - wanderer_give_random_commander_trait_effect
 - wanderer_give_random_economic_trait_effect
 - remove_travel_option_added_character_effect
 
-### 00_culture_effects.txt（10 条目）
+### 00_culture_effects.txt（12 条目）
 
+- diverge_culture_from_norse_effect
+- convert_kingdom_de_jure_counties_effect
 - convert_county_and_holder_if_in_region_effect
 - merge_cultures_in_region_effect
 - convert_player_realm_from_old_culture_to_new_effect
@@ -883,12 +917,15 @@
 - silent_disappear_ai_if_not_hired_with_flag
 - save_died_in_battle_variables_effect
 
-### 00_debug_and_shortcut_effects.txt（4 条目）
+### 00_debug_and_shortcut_effects.txt（7 条目）
 
+- debug_fire_event_effect
+- debug_add_breaches_all_active_schemes_effect
+- debug_add_advantages_all_active_schemes_effect
+- log_debug_variable_for_persian_struggle_effect
 - increment_variable_effect
 - increment_variable_remove_at_zero_effect
 - increment_global_variable_effect
-- log_debug_variable_for_persian_struggle_effect
 
 ### 00_decisions_effects.txt（45 条目）
 
@@ -957,7 +994,7 @@
 - diarch_legal_meddling_interaction_fail_effect
 - diarch_legal_meddling_interaction_apply_success_effect
 - diarch_legal_meddling_interaction_apply_fail_effect
-- diarch_syphon_treasury_interaction_syphon_development_growth_effect
+- diarch_syphon_treasury_interaction_syphon_prosperity_growth_effect
 - diarch_syphon_treasury_interaction_syphon_control_effect
 - diarch_syphon_treasury_interaction_caught_embezzling_effect
 - diarch_shift_privileges_interaction_success_apply_modifiers_vague_effect
@@ -1008,7 +1045,7 @@
 - diplomacy_foreign_1150_successful_county_switch_effect
 - diplomacy_foreign_1150_failed_county_switch_effect
 
-### 00_diplomacy_perk_effects.txt（11 条目）
+### 00_diplomacy_perk_effects.txt（14 条目）
 
 - sound_foundations_skill_gain_effect
 - sound_foundations_random_removal_effect
@@ -1017,6 +1054,9 @@
 - save_commission_epic_loc_variables
 - clear_commission_epic_loc_variables
 - update_embassies_effect
+- update_merchant_embassies_effect
+- update_public_credit_perk_effect
+- update_company_ledger_perk_effect
 - try_remove_perk_alliance_opinion_effect
 - friendly_counsel_skill_gain_effect
 - friendly_counsel_random_removal_effect
@@ -1045,8 +1085,9 @@
 - dummy_attracted_gender_effect
 - random_dummy_gender_peasant_effect
 
-### 00_education_effects.txt（37 条目）
+### 00_education_effects.txt（38 条目）
 
+- domicile_education_bonus_effect
 - education_point_acquisition_effect
 - education_point_acquisition_additional_points_effect
 - education_point_acquisition_support_effect
@@ -1213,13 +1254,14 @@
 - save_adventurer_location_effect
 - inspiration_adventure_create_artifact_effect
 
-### 00_ep1_inspiration_effects_sean.txt（11 条目）
+### 00_ep1_inspiration_effects_sean.txt（12 条目）
 
 - grant_inspiration_to_character_effect
 - grant_stewardship_inspiration_to_character_effect
 - grant_learning_inspiration_to_character_effect
 - grant_martial_inspiration_to_character_effect
 - grant_inspiration_to_character_no_court_artifacts_effect
+- grant_merchant_inspiration_to_character_effect
 - grant_new_inspiration_in_character_realm_effect
 - grant_new_inspiration_in_region_effect
 - grant_new_inspiration_in_world_effect
@@ -1227,10 +1269,11 @@
 - inspired_character_seek_out_new_royal_court_effect
 - on_sponsored_inspiration_effect
 
-### 00_ep3_decision_effects.txt（7 条目）
+### 00_ep3_decision_effects.txt（8 条目）
 
 - convert_to_administrative_from_feudalism_effect
 - convert_to_administrative_from_feudalism_game_start_effect
+- convert_to_administrative_from_tribalism_game_start_effect
 - apply_historic_administrative_game_rule_effect
 - convert_to_feudalism_from_administrative_effect
 - humiliate_stooge_counter_effect
@@ -1243,7 +1286,7 @@
 - gain_appropriate_lifestyle_medium_xp_effect
 - gain_appropriate_lifestyle_major_xp_effect
 
-### 00_faction_effects.txt（18 条目）
+### 00_faction_effects.txt（19 条目）
 
 - join_faction_with_leave_blocker_effect
 - add_faction_cooldown_effect
@@ -1256,6 +1299,7 @@
 - successful_nomadic_revolt_outcome_effect
 - spawn_popular_revolt_troops
 - spawn_nomadic_revolt_troops
+- peasant_war_popular_opinion_to_baseline_effect
 - peasant_faction_demands_enforced
 - invalidate_claimant_factions_on_death_effect
 - invalidate_ceremonial_claimant_factions_on_death_effect
@@ -1283,7 +1327,7 @@
 
 - funeral_add_funeral_targets_to_list
 
-### 00_game_rule_effects.txt（17 条目）
+### 00_game_rule_effects.txt（16 条目）
 
 - game_rule_create_spouse_and_children
 - game_rule_full_gender_equality_effect
@@ -1297,11 +1341,74 @@
 - game_rule_faith_acceptance_effect
 - game_rule_sexuality_distribution_reroll_effect
 - game_rule_sexuality_distribution_effect
-- child_sexuality_distribution_effect
 - game_rule_exclave_independence_effect
 - log_harm_event_death_as_variable_effect
 - log_harm_event_incapability_as_variable_effect
 - log_harm_event_spared_as_variable_effect
+
+### 00_gdp_guelph_ghibelline_scripted_effects.txt（61 条目）
+
+- gg_invalidation_missing_leader_message_effect
+- try_set_up_new_gg_leader_effect
+- gg_gather_claim_leadership_schemes_effect
+- gg_become_new_leader_effect
+- gg_claim_leadership_exposed_failure_effect
+- gg_clean_up_participant_groups_effect
+- gg_clean_up_swap_variables_effect
+- gg_clean_up_pope_modifiers_effect
+- gg_swap_to_undecided_effect
+- gg_swap_to_undecided_forced_effect
+- gg_change_side_to_ghibelline_effect
+- gg_change_side_to_guelph_effect
+- gg_increment_recruitment_var_effect
+- gg_guelph_situation_victory_effect
+- gg_ghibelline_situation_victory_effect
+- gg_situation_compromise_display_effect
+- gg_situation_compromise_actual_effect
+- gg_situation_compromise_involvement_effect
+- gg_situation_compromise_effect
+- gg_record_hostility_effect
+- gg_triggered_catalyst_effect
+- gg_reconciliation_catalyst_effect
+- gg_untargeted_catalyst_effect
+- gg_untargeted_reconciliation_catalyst_effect
+- gg_scheme_catalyst_warning_effect
+- gg_hostile_scheme_catalyst_warning_effect
+- gg_potential_catalyst_tooltip_effect
+- gg_potential_untargeted_catalyst_tooltip_effect
+- gg_failed_scheme_effect
+- gg_relation_catalyst_effect
+- gg_add_involvement_effect
+- gg_involvement_scheme_unaligned_target_tooltip_effect
+- gg_involvement_scheme_tooltip_effect
+- gg_involvement_scheme_same_side_tooltip_effect
+- gg_involvement_scheme_effect
+- gg_involvement_catalyst_would_invalidate_situation_tooltip_effect
+- gg_claim_unites_pope_and_emperor_tooltip_effect
+- gg_involvement_catalyst_effect
+- gg_involvement_interaction_effect
+- gg_involvement_catalyst_interaction_effect
+- gg_involvement_cb_participant_effect
+- gg_involvement_cb_victory_effect
+- gg_involvement_cb_white_peace_effect
+- gg_involvement_cb_defeat_effect
+- gg_involvement_cb_effect
+- gg_involvement_decision_effect
+- gdp_setup_historical_house_relation_effect
+- save_gg_leaders_as_scopes_effect
+- fulfill_concordat_of_worms_effect
+- actual_abandon_concordat_of_worms_effect
+- abandon_concordat_of_worms_effect
+- save_lombard_league_creator_scopes_effect
+- try_to_set_up_lombard_league_with_effect
+- gg_become_independent_effect
+- create_lombard_league_effect
+- actual_add_to_lombard_league_effect
+- try_to_add_to_lombard_league_effect
+- display_join_lombard_league_effect
+- display_who_might_join_lombard_league_effect
+- save_attacker_exiled_courtier_scope_effect
+- gg_should_give_splash_screen_effect
 
 ### 00_governance_lifestyle_effects.txt（0 条目）
 
@@ -1327,9 +1434,10 @@
 - eliminate_&_replace_faith_effect
 - eliminate_and_replace_rite_effect
 
-### 00_holding_effects.txt（3 条目）
+### 00_holding_effects.txt（4 条目）
 
 - holding_pre_feudalize_effect
+- holding_convert_tribal_keeping_buildings_effect
 - holding_pre_tribalize_effect
 - clan_convert_capital_effect
 
@@ -1441,7 +1549,7 @@
 - nerge_progression_medium_effect
 - nerge_progression_large_effect
 
-### 00_interaction_effects.txt（68 条目）
+### 00_interaction_effects.txt（71 条目）
 
 - notify_puppeteer_of_outcome_effect
 - blackmail_interaction_effect
@@ -1503,6 +1611,8 @@
 - revoke_holy_order_duel_victor_apply_effects_effect
 - add_clan_unity_interaction_effect
 - apply_clan_unity_interaction_effect
+- add_house_unity_interaction_effect
+- apply_house_unity_interaction_effect
 - diarch_declare_recipient_criminal_effect
 - diarch_declare_claim_war_effect
 - diarch_declare_vassalisation_war_effect
@@ -1511,6 +1621,7 @@
 - ep3_hof_ask_for_influence_interaction_effect
 - torture_memory_effect
 - ai_religious_request_blocker_effect
+- invite_to_court_interaction_effect
 
 ### 00_intercourse_effects.txt（3 条目）
 
@@ -1556,6 +1667,7 @@
 - laamp_rewards_apply_knight_errant_xp_effect
 - lower_gallowsbait_xp_effect
 - gain_patron_and_hook_from_council_task_contract_effect
+- laamp_add_indebted_hook_holders_to_patrons_effect
 - task_contract_justicar_contract_tracker_effect
 - task_successful_noncrim_contract_count_effect
 - laamp_clear_inappropriate_buildings_effect
@@ -1566,7 +1678,6 @@
 - laamp_contract_grab_suitable_rival_for_disposal_effect
 - select_thriving_predator_animal_effect
 - relation_increase_harrying_stats_effect
-- laamp_city_builder_construction_effect
 
 ### 00_learning_lifestyle_effects.txt（21 条目）
 
@@ -1684,7 +1795,7 @@
 - give_or_make_temporal_head_of_faith_title
 - appoint_a_righteous_caliph_scripted_effect
 
-### 00_major_decisions_scripted_effects_3.txt（13 条目）
+### 00_major_decisions_scripted_effects_3.txt（14 条目）
 
 - take_stewardship_of_the_sacred_river_effect
 - establish_bactrian_supremacy_effect
@@ -1699,11 +1810,13 @@
 - recreate_ere_decision_effect
 - reinstitute_grain_dole_decision_effect
 - create_dar_al_islam_effect
+- form_carolingian_hegemony_gdp_scripted_effect
 
-### 00_marriage_effects.txt（3 条目）
+### 00_marriage_effects.txt（4 条目）
 
 - marry_on_realm_law
 - marry_spouse_1_dominant
+- betroth_on_realm_law
 - vassals_dislike_marry_lowborn_effect
 
 ### 00_marriage_interaction_effects.txt（12 条目）
@@ -1775,7 +1888,7 @@
 - change_mongol_successor_illegal_government
 - mongol_breakup_purge_mongolia_exclaves_effect
 
-### 00_murder_effects.txt（12 条目）
+### 00_murder_effects.txt（13 条目）
 
 - murder_consequences_known_or_exposed_effect
 - murder_consequences_known_or_exposed_hidden_opinion_effect
@@ -1787,6 +1900,7 @@
 - murder_opinion_effect
 - attempted_murder_opinion_effect
 - abduct_opinion_effect
+- abduct_relatives_opinion_effect
 - attempted_abduction_opinion_effect
 - set_local_venomous_creature_effect
 
@@ -1844,13 +1958,13 @@
 - petition_liege_0101_faction_dismantle_effect
 - petition_liege_0101_county_control_effect
 - petition_liege_0101_county_convert_effect
-- petition_liege_0101_county_opinion_effect
+- petition_liege_0101_popular_opinion_effect
 - petition_liege_0101_fortify_border_effect
 - petition_liege_0101_title_liege_effect
 - petition_liege_0101_title_vassal_effect
 - petition_liege_0101_construct_city_effect
 - petition_liege_0101_construct_temple_effect
-- petition_liege_0101_development_effect
+- petition_liege_0101_prosperity_effect
 - petition_liege_0101_house_fief_effect
 - petition_liege_0121_regent_effect
 - petition_liege_0121_appointment_effect
@@ -1961,10 +2075,11 @@
 - pregnancy_termination_attempt_effect
 - kill_child_and_possible_twins_effect
 
-### 00_prison_effects.txt（27 条目）
+### 00_prison_effects.txt（28 条目）
 
 - ransom_interaction_effect
 - human_sacrifice_personal_execution_piety_bonus_effect
+- merchant_extracted_leverage_ransom_effect
 - execute_senior_clergy_outrage_effect
 - clerical_kill_piety_effect
 - clerical_kill_memory_effect
@@ -2005,7 +2120,7 @@
 - select_local_farm_animal_effect
 - select_scapegoat_faith_effect
 
-### 00_relation_effects.txt（23 条目）
+### 00_relation_effects.txt（26 条目）
 
 - progress_towards_friend_effect
 - progress_towards_rival_effect
@@ -2030,6 +2145,9 @@
 - progress_towards_rival_ai_effect
 - progress_towards_intent_effect
 - clear_grudges_effect
+- set_relation_grudge_effect
+- set_relation_rival_effect
+- set_relation_nemesis_effect
 
 ### 00_religion_effects.txt（41 条目）
 
@@ -2071,7 +2189,7 @@
 - consume_free_holy_site_action_effect
 - record_dynamic_holy_site_kingdom_effect
 - release_dynamic_holy_site_kingdom_effect
-- add_holy_site_fallback_special_building_slot_effect
+- add_holy_site_fallback_special_district_slot_effect
 - notify_faith_of_holy_site_change_effect
 - create_conversion_memory_effect
 
@@ -2141,7 +2259,7 @@
 - whom_do_i_love_the_most_effect
 - casual_sex_or_lover_event_effect
 
-### 00_scheme_scripted_effects.txt（204 条目）
+### 00_scheme_scripted_effects.txt（216 条目）
 
 - try_to_force_assign_character_to_random_agent_slot_effect
 - force_assign_character_to_random_agent_slot_effect
@@ -2188,6 +2306,8 @@
 - elope_scheme_prep_effect
 - expand_power_base_scheme_prep_effect
 - fabricate_hook_scheme_prep_effect
+- overthrow_government_scheme_prep_effect
+- gdp_incite_unrest_scheme_prep_effect
 - foster_legitimacy_scheme_prep_effect
 - generate_claim_scheme_prep_effect
 - learn_language_scheme_prep_effect
@@ -2208,6 +2328,10 @@
 - coerce_tributary_scheme_prep_effect
 - coerce_contribution_scheme_prep_effect
 - leverage_contribution_scheme_prep_effect
+- gg_switch_sides_scheme_prep_effect
+- gg_claim_leadership_scheme_prep_effect
+- gg_align_undecided_scheme_prep_effect
+- gg_replace_ruler_scheme_prep_effect
 - laamp_base_0001_contract_scheme_prep_effect
 - laamp_base_0011_contract_scheme_prep_effect
 - laamp_base_0021_contract_scheme_prep_effect
@@ -2250,6 +2374,7 @@
 - laamp_prison_break_scheme_prep_effect
 - laamp_help_find_secrets_scheme_prep_effect
 - celestial_minister_find_secrets_scheme_prep_effect
+- gdp_patrician_find_secrets_scheme_prep_effect
 - murder_consequences_known_or_exposed_apply_dread_effect
 - scheme_owner_pov_murder_success_effect
 - murder_success_kill_effect
@@ -2338,27 +2463,46 @@
 - inform_player_of_relevant_countermeasure_activated_effect
 - dispute_borders_scheme_prep_effect
 - subsume_province_scheme_prep_effect
+- hostile_takeover_scheme_prep_effect
+- steal_market_insights_scheme_prep_effect
+- steal_trade_post_scheme_prep_effect
 - raid_estate_opinion_effect
 - education_5_scheme_progress_effect
 - steal_herd_success_effect
 - steal_herd_failure_effect
 - purge_ai_scheme_slots_effect
 - coup_ceremonial_liege_scheme_prep_effect
+- roll_scheme_success_or_failure_effect
 - abduction_rivalry_progress_effect
 - abduction_rivalry_progress_tooltip_forecast_effect
-- debug_test_scheme_event_effect
+- influence_house_ambition_end_effect
+- republic_promote_candidate_scheme_end_effect
 
-### 00_scripted_effects.txt（7 条目）
+### 00_scripted_effects.txt（21 条目）
 
 - save_var_scope_effect
-- set_up_loan_effect
-- clear_loanee_variables_effect
+- set_up_new_loan_effect
+- set_up_loan_story_effect
+- loan_free_interest_effect
+- loan_disguised_interest_effect
+- loan_open_interest_effect
+- increase_existing_loan_effect
+- loan_base_effect
+- loan_interest_free_message_effect
+- loan_interest_disguised_message_effect
+- loan_interest_open_message_effect
+- transfer_loan_effect
+- repay_and_end_loan_story_effect
+- loan_repayment_refusal_effect
+- forgive_loan_effect
+- end_loan_story_effect
+- end_loan_story_consequences_tooltip_effect
 - disease_data_save_contraction_effect
 - add_character_artifact_claim_to_scope_effect
 - get_random_location_effect
 - add_to_bought_truce_list
 
-### 00_secret_effects.txt（41 条目）
+### 00_secret_effects.txt（42 条目）
 
 - blackmail_target_with_secret_effect
 - shunned_or_criminal_sf_impact_effect
@@ -2401,6 +2545,7 @@
 - give_secret_and_save_as_secret_effect
 - save_my_known_father_effect
 - add_random_blackmailable_secret_effect
+- give_spy_secret_effect
 
 ### 00_setup_tests_effect.txt（1 条目）
 
@@ -2515,7 +2660,7 @@
 - asturias_becomes_leon_and_castille_effect
 - adjust_de_jure_effect
 
-### 00_travel_effects.txt（12 条目）
+### 00_travel_effects.txt（13 条目）
 
 - mp_pause_travel_plan
 - mp_resume_travel_plan
@@ -2529,6 +2674,7 @@
 - add_poi_learning_experience_effect_minor
 - add_poi_wanderer_experience_effect
 - poi_lifestyle_experience_effect
+- make_local_deals_haggle_risk_effect
 
 ### 00_tributary_setup_effects.txt（14 条目）
 
@@ -2556,7 +2702,7 @@
 - refuse_faith_conversion_add_clan_unity_effect
 - notify_players_about_unity_change_effect
 
-### 00_wanderer_lifestyle_effects.txt（30 条目）
+### 00_wanderer_lifestyle_effects.txt（33 条目）
 
 - visiting_poi_effect
 - visiting_poi_variable_effect
@@ -2569,6 +2715,8 @@
 - local_arbitration_effect
 - local_arbitration_positive_effect
 - voyager_souvenirs_aplenty_effect
+- merchant_souvenirs_aplenty_travel_effect
+- merchant_souvenirs_aplenty_clear_effect
 - voyager_souvenirs_aplenty_completion_effect
 - voyager_gracious_host_impeccable_guest_effect
 - wayfarer_storyteller_fame_effect
@@ -2587,31 +2735,37 @@
 - mapmaking_mythical_lie_effect
 - reminiscing_event_effect
 - local_guild_effect
+- local_guild_build_guild_workshop_effect
 - local_guild_reward_effect
 
 ### 00_wanderer_perk_effects.txt（1 条目）
 
 - of_the_people_effect
 
-### 00_war_effects.txt（36 条目）
+### 00_war_effects.txt（65 条目）
 
 - on_declared_war_play_music
 - on_declared_war
 - break_alliance_due_to_attack_effect
 - break_tributary_contract_due_to_attack_effect
+- add_counties_to_taken_list
+- add_counties_and_duchies_to_taken_list
+- decide_take_title_or_vassal
+- move_vassals_to_taken_list
 - conquest_cb_title_transfer
 - expansion_cb_title_transfer
 - expedition_cb_title_transfer
-- struggle_cb_title_transfer
+- expansion_inform_higher_titles_result
+- conquest_inform_higher_titles_result
 - excommunication_cb_piety_change
 - on_lost_aggression_war_discontent_loss
 - on_lost_faction_revolt_war
-- on_lost_request_revolt_war
 - on_white_peace_faction_revolt_war
-- on_white_peace_request_revolt_war
 - change_liege_or_become_independent
 - on_peasant_faction_war_win_common
 - on_claimant_faction_war_win_common
+- save_grandeur_for_claimant
+- set_grandeur_for_claimant
 - release_prisoners_of_war_effect
 - send_captured_combatant_message
 - send_slain_combatant_message
@@ -2624,6 +2778,7 @@
 - notify_players_about_neighboring_war_resolution_effect
 - show_pow_release_message_effect
 - add_prestige_war_defender_effect
+- add_piety_for_war_effect
 - pay_short_term_gold_reparations_effect
 - pay_short_term_gold_reparations_prefer_greater_income_effect
 - mongol_invasion_county_looting_chance_effect
@@ -2631,6 +2786,29 @@
 - allies_progress_towards_friendship_effect
 - commander_trait_leveling_leveling_effect
 - on_ceremonial_claimant_faction_war_win_common
+- claim_war_add_favor
+- claim_war_claim_pressed
+- break_alliance_due_to_diplo_range_effect
+- general_on_war_end_effect
+- on_victory_effect
+- on_victory_faction_war_effect
+- on_victory_aggressive_war_effect
+- on_white_peace_effect
+- on_white_peace_faction_war_effect
+- on_defeat_effect
+- on_defeat_aggressive_war_effect
+- on_defeat_faction_war_effect
+- on_victory_claim_cb_handle_titles
+- on_victory_claim_ceremonial_liege_effects
+- on_victory_claim_vassalize_effects
+- on_victory_claim_cb_effect
+- on_victory_special_claim_cb_effect_setup
+- on_victory_special_claim_cb_effect_resolve
+- on_white_peace_claim_cb_effect
+- on_defeat_claim_cb_effect
+- on_victory_ghw_effect
+- ghw_on_war_end_effect
+- on_victory_invasion_cb_take_occupied_tooltip
 
 ### 00_while_loop_effects.txt（4 条目）
 
@@ -2652,11 +2830,9 @@
 - yearly_0001_improve_skill_effect
 - yearly_0001_improve_vassal_skill_effect
 
-### 01_building_upgrade_effects.txt（3 条目）
+### 01_building_upgrade_effects.txt（0 条目）
 
-- upgrade_farm_building
-- upgrade_tradeport
-- upgrade_guildhall
+（无顶层块）
 
 ### 01_dlc_bp1_filippa_scripted_effects.txt（2 条目）
 
@@ -2998,7 +3174,7 @@
 - remove_rock_story_modifiers_effect
 - remove_rock_name_effect
 
-### 03_dlc_fp2_scripted_effects.txt（55 条目）
+### 03_dlc_fp2_scripted_effects.txt（56 条目）
 
 - fp2_struggle_ending_culture_list_effect
 - fp2_struggle_ending_involved_list_effect
@@ -3055,6 +3231,7 @@
 - fp2_struggle_compromise_tooltip_effect
 - fp2_struggle_conciliation_ender_effect
 - fp2_struggle_conciliation_tooltip_effect
+- fp2_border_raid_effect
 
 ### 03_dlc_fp3_artifact_creation_effects.txt（8 条目）
 
@@ -3236,7 +3413,7 @@
 - guardian_travel_invalidation_effect
 - bp2_hostage_war_end_tooltip_effect
 
-### 05_dlc_bp2_effects.txt（18 条目）
+### 05_dlc_bp2_effects.txt（19 条目）
 
 - resolve_adult_education_success_reward_effect
 - adult_education_completed_log_entry_effect
@@ -3256,6 +3433,7 @@
 - bp2_university_student_setup
 - adopt_effect
 - adventurer_adopt_effect
+- merchant_adopt_effect
 
 ### 05_dlc_fp3_scripted_effects.txt（17 条目）
 
@@ -3277,7 +3455,7 @@
 - fp3_save_sunni_caliph_or_previous_effect
 - fp3_struggle_apply_catalyst_interloper_uninvolved_gain_struggle_titles
 
-### 06_dlc_ce1_epidemics_effects.txt（16 条目）
+### 06_dlc_ce1_epidemics_effects.txt（17 条目）
 
 - grab_epidemic_disease_effect
 - notify_holders_and_above
@@ -3292,9 +3470,10 @@
 - add_plague_county_modifiers
 - plague_recovery_event_effect
 - cant_touch_this_achievement_effect
-- apply_infection_development_loss
+- apply_infection_prosperity_loss
 - apply_infection_fertility_loss
 - bd_random_game_rule_effect
+- apply_infection_trade_disruption
 
 ### 06_dlc_ce1_leg_b_effects.txt（2 条目）
 
@@ -3379,9 +3558,10 @@
 - add_major_legitimacy_no_tier_effect
 - add_massive_legitimacy_no_tier_effect
 
-### 07_dlc_ep3_scripted_effects.txt（154 条目）
+### 07_dlc_ep3_scripted_effects.txt（160 条目）
 
 - create_landless_adventurer_title_history_effect
+- set_landless_adventurer_government_type_effect
 - create_landless_adventurer_title_effect
 - set_landless_government_effect
 - disburse_knight_errant_decision_rewards_effect
@@ -3392,9 +3572,11 @@
 - laamp_switch_playable_character_effect
 - ep3_become_landed_save_liege_effect
 - ep3_become_landed_transfer_effect
+- ep3_become_landed_ennobled_penalty_effect
 - ep3_become_landed_cleanup_effect
 - ep3_become_landed_warning_effect
 - purchase_land_interaction_effect
+- purchase_land_interaction_save_scopes_effect
 - purchase_land_interaction_shortened_effect
 - procure_estate_interaction_effect
 - negotiate_settlement_interaction_effect
@@ -3421,6 +3603,7 @@
 - temporarily_lock_visit_settlement_effect
 - torture_grants_influence_effect
 - create_noble_family_effect
+- create_noble_family_with_liege_effect
 - give_noble_family_title_effect
 - increase_governance_effect
 - spawn_governance_contract_effect
@@ -3490,6 +3673,7 @@
 - add_randomised_double_moon_modifier_effect
 - random_rain_snow_chance_effect
 - governor_resignation_title_transfer_effect
+- refresh_estate_household_clerks_house_modifier_effect
 - boost_governor_efficiency_success_effect
 - boost_governor_efficiency_duel_effect
 - damage_governor_efficiency_success_effect
@@ -3535,6 +3719,7 @@
 - add_random_external_estate_building
 - estate_newly_built_grain_field_effect
 - demand_pastureland_adventurer_interaction_effect
+- ep3_adventurer_sponsorship_invasion_effect
 
 ### 07_dlc_ep3_story_cycle_adventurer_ai_scripted_effects.txt（6 条目）
 
@@ -3545,7 +3730,7 @@
 - ep3_adventurer_ai_war_declare_effect
 - ep3_adventurer_ai_war_find_target_effect
 
-### 07_frankokratia_scripted_effects.txt（26 条目）
+### 07_frankokratia_scripted_effects.txt（27 条目）
 
 - ep3_frankokratia_save_financier_effect
 - ep3_frankokratia_story_setup_save_vars_effect
@@ -3573,17 +3758,16 @@
 - expunge_latin_dominion_effect
 - frankokratia_latin_emp_end_msg_effect
 - frankokratia_remove__war_leader_var_effect
+- complete_frankokratia_story_effect
 
-### 08_bp3_effects.txt（36 条目）
+### 08_bp3_effects.txt（32 条目）
 
 - wandering_lifestyle_exp_post_travel_effect
 - inspection_success_chance_change_effect
 - inspection_success_chance_change_focus_effect
 - inspection_success_chance_change_not_focus_effect
 - inspection_claim_effects
-- inspection_fighting_guilds_effect
-- inspection_fighting_guilds_setup_reward_effect
-- inspection_survey_intent_development
+- inspection_survey_intent_prosperity
 - inspection_survey_intent_control
 - inspection_survey_intent_county_modifier
 - inspection_survey_intent_province_modifier
@@ -3592,8 +3776,6 @@
 - inspection_survey_local_message_permanent_province_modifier
 - inspection_survey_local_message_specific_location_province_modifier
 - court_brewmaster_assign_modifier_positive_effect
-- brewery_counter_effect
-- brewery_counter_start_effect
 - souvenirs_aplenty_gallowsbait_effect
 - landless_inspector_assign_terrain_effect
 - landless_inspector_upgrade_terrain_tier_effect
@@ -3613,7 +3795,7 @@
 - hire_for_court_position_journey_laamp_replacement_effect
 - hire_for_two_court_position_journey_laamp_replacement_effect
 
-### 09_dlc_mpo_scripted_effects.txt（78 条目）
+### 09_dlc_mpo_scripted_effects.txt（81 条目）
 
 - creating_kingdom_empire_title_effect
 - migration_find_fitting_title_effect
@@ -3624,6 +3806,7 @@
 - update_domicile_and_courtier_location_effect
 - migration_set_obedient_vassal_effect
 - offer_confederation_accepter_effect
+- leave_confederation_membership_effect
 - confederation_realm_transfer_effect
 - mpo_mongol_recovered_head_content_effect
 - mpo_beheaded_warrior_artifact_creation_effect
@@ -3644,6 +3827,7 @@
 - mpo_target_hastiluder_xp_gain_effect
 - nomad_domicile_refund_effect
 - nomad_convert_people_to_tribe_effect
+- nomad_convert_realm_to_tribal_effect
 - nomad_convert_people_to_clan_effect
 - nomad_convert_people_to_feudal_effect
 - mpo_overrunning_vassal_title_distribution_effect
@@ -3693,6 +3877,7 @@
 - nomadic_realm_split_effect
 - mpo_abuse_authority_county_effect
 - mpo_release_herder_land_effect
+- take_sub_realm_county_as_new_capital_effect
 
 ### 09_mpo_greatest_of_khans_effects.txt（19 条目）
 
@@ -3784,10 +3969,10 @@
 - ach_easier_imprisonment_host_reward_effect
 - ach_stress_host_reward_effect
 - ach_better_councillors_host_reward_effect
-- ach_vassal_development_boost_host_reward_effect
+- ach_vassal_prosperity_boost_host_reward_effect
 - ach_vassal_defensive_boost_host_reward_effect
 - ach_artifact_boost_host_reward_effect
-- ach_host_development_boost_host_reward_effect
+- ach_host_prosperity_boost_host_reward_effect
 - ach_host_defense_boost_host_reward_effect
 - coronation_create_artifact_yearly_effect
 - coronation_broken_oath_punishment_effect
@@ -3811,9 +3996,11 @@
 - tgp_dynastic_cycle_add_to_movement_effect
 - tgp_catalyst_from_decision_effect
 
-### 10_dlc_tgp_history_effects.txt（2 条目）
+### 10_dlc_tgp_history_effects.txt（4 条目）
 
 - tgp_make_military_celestial_provinces_effect
+- tgp_pass_provincial_exam_effect
+- tgp_pass_all_exams_effect
 - tgp_dynasty_house_name_setup_effect
 
 ### 10_dlc_tgp_house_bloc_scripted_effects.txt（20 条目）
@@ -3850,7 +4037,7 @@
 - promote_appointment_house_relation_effect
 - damage_appointment_house_relation_effect
 
-### 10_dlc_tgp_japan_scripted_effects.txt（40 条目）
+### 10_dlc_tgp_japan_scripted_effects.txt（41 条目）
 
 - japan_establish_house_fief_effect
 - set_house_of_all_descendants_effect
@@ -3885,6 +4072,7 @@
 - tgp_set_minamoto_taira_dynasty_prestige_effect
 - tgp_japan_soryo_eradicate_cb_transfer_effect
 - japanese_establish_soryo_administration_reward_effect
+- tgp_japan_internal_soryo_war_crime_effect
 - tgp_learn_chinese_effect_game_start
 - tgp_learn_chinese_effect_birthday
 - create_love_artifact_poetry_effect
@@ -3928,7 +4116,7 @@
 - tenet_benevolent_governance_disaster_relief_effect
 - tenet_benevolent_governance_disaster_neglect_effect
 
-### 10_dlc_tgp_scripted_effects.txt（105 条目）
+### 10_dlc_tgp_scripted_effects.txt（107 条目）
 
 - spawn_celestial_governance_contract_effect
 - remove_other_grand_guardian_modifiers_effect
@@ -3980,6 +4168,8 @@
 - develop_celestial_tributaries
 - pledge_loyalty_to_liege_refund_and_cleanup_effect
 - add_merit_if_relevant_effect
+- military_service_yearly_merit_effect
+- military_career_war_victory_merit_effect
 - scheme_change_movement_power_effect
 - event_change_movement_power_effect
 - petition_change_movement_power_effect
@@ -4036,7 +4226,7 @@
 - tgp_wipe_domicile_effect
 - disburse_festival_piety_reward_effect
 
-### 10_dlc_tgp_silk_road_scripted_effects.txt（23 条目）
+### 10_dlc_tgp_silk_road_scripted_effects.txt（25 条目）
 
 - tgp_silk_road_downstream_player_sub_region_effect
 - tgp_silk_road_downstream_effect
@@ -4046,6 +4236,7 @@
 - tgp_silk_road_downstream_peace_message_effect
 - tgp_silk_road_innovation_setup_add_effect
 - tgp_silk_road_innovation_setup_effect
+- lacquerware_innovation_setup_effect
 - tgp_silk_road_movement_stream_effect
 - tgp_silk_road_movement_china_effect
 - tgp_silk_road_decision_scope_effect
@@ -4060,7 +4251,13 @@
 - tgp_silk_road_china_stability_effect
 - tgp_silk_road_feudalize_holding_effect
 - tgp_silk_road_byzantium_destroyed_effect
+- tgp_silk_road_china_destroyed_effect
 - tgp_silk_road_phase_message_effect
+
+### 10_tgp_wanua_resource_building_effects.txt（2 条目）
+
+- remove_wanua_resource_barter_building_chain_effect
+- remove_wanua_resource_barter_buildings_effect
 
 ### 11_dlc_pam_scripted_effects.txt（26 条目）
 
@@ -4140,9 +4337,11 @@
 
 （无顶层块）
 
-### 20_health_effects.txt（57 条目）
+### 20_health_effects.txt（59 条目）
 
 - contract_disease_effect
+- contract_disease_unchecked_effect
+- contract_disease_epidemic_effect
 - contract_disease_notify_effect
 - recover_from_disease_effect
 - recover_from_disease_notify_effect
@@ -4200,11 +4399,485 @@
 - attempted_suicide_effect
 - upgrade_infirm_to_incapable_effect
 
+### domicile_effects.txt（12 条目）
+
+- destroy_or_downgrade_estate_building_2_effect
+- destroy_or_downgrade_estate_building_3_effect
+- destroy_or_downgrade_estate_building_4_effect
+- destroy_or_downgrade_estate_building_5_effect
+- destroy_or_downgrade_estate_building_6_effect
+- destroy_or_downgrade_estate_building_2_4_replacement_effect
+- destroy_or_downgrade_estate_building_2_6_replacement_effect
+- destroy_or_downgrade_estate_building_3_6_replacement_effect
+- destroy_random_estate_building_variable_effect
+- destroy_random_estate_building_effect
+- destroy_random_east_asian_estate_building_variable_effect
+- destroy_random_east_asian_estate_building_effect
+
 ### easteregg_historical_artifact_creation_effects.txt（1 条目）
 
 - create_artifact_easteregg_henry_longsword_effect
 
-### pam_antipope_effects.txt（27 条目）
+### gdp_burgher_scripted_effects.txt（57 条目）
+
+- burgher_resolve_county_effect
+- burgher_find_local_notable_effect
+- burgher_find_or_create_local_burgher_effect
+- burgher_find_petitioner_effect
+- setup_burgher_leader_effect
+- burgher_resume_pending_leaders_on_war_end_effect
+- burgher_resume_pending_leader_dissolve_effect
+- burgher_dissolve_leader_effect
+- burgher_advance_privilege_level_effect
+- burgher_grant_privilege_effect
+- burgher_grant_lesser_privilege_effect
+- burgher_remove_privilege_tiers_effect
+- burgher_grant_privilege_tier_effect
+- burgher_grant_demanded_privilege_effect
+- burgher_settle_demand_effect
+- burgher_select_demand_effect
+- burgher_bestow_privilege_effect
+- burgher_bestow_named_privilege_effect
+- burgher_defuse_county_factions_effect
+- burgher_provoke_county_factions_effect
+- burgher_revoke_privileges_effect
+- burgher_refuse_demand_effect
+- burgher_refusal_revolt_effect
+- burgher_free_member_county_effect
+- burgher_form_civic_league_effect
+- burgher_win_self_rule_effect
+- burgher_grant_city_charter_effect
+- burgher_found_city_republic_effect
+- burgher_sponsor_republic_type_effect
+- burgher_sponsor_spoils_effect
+- burgher_sponsor_charter_spoils_effect
+- burgher_sponsor_pay_effect
+- burgher_sponsor_bankers_due_effect
+- burgher_agitator_takes_commune_effect
+- burgher_agitator_joins_commune_effect
+- gdp_civic_agitation_scheme_prep_effect
+- gdp_civic_agitation_success_effect
+- burgher_link_sponsor_effect
+- burgher_sponsor_war_support_effect
+- burgher_broken_charter_effect
+- burgher_clear_sponsor_links_effect
+- burgher_faction_drop_pledges_effect
+- burgher_faction_clear_sponsor_effect
+- burgher_notify_sponsor_effect
+- hanseatic_give_member_modifier_effect
+- hanseatic_take_member_modifier_effect
+- hanseatic_give_county_modifier_effect
+- hanseatic_take_county_modifier_effect
+- hanseatic_apply_member_benefits_effect
+- hanseatic_remove_member_benefits_effect
+- hanseatic_sync_family_head_benefits_effect
+- hanseatic_sync_county_benefits_effect
+- hanseatic_elevate_all_members_effect
+- league_pair_cohesion_effect
+- league_trade_route_cohesion_effect
+- hanseatic_ask_personal_monopoly_holders_effect
+- hanseatic_convert_personal_monopolies_effect
+
+### gdp_domicile_artifact_creation_scripted_effects.txt（17 条目）
+
+- create_library_artifact_effect
+- create_curio_artifact_effect
+- select_local_creature_effect
+- select_dealer_creature_effect
+- create_domicile_creature_artifact_object_effect
+- create_creature_artifact_effect
+- luxury_contract_standard_creature_effect
+- luxury_contract_dangerous_creature_effect
+- assign_creature_gender_effect
+- reforge_creature_artifact_effect
+- domicile_library_artifact_modifiers_effect
+- domicile_library_artifact_category_modifiers_effect
+- domicile_curio_artifact_modifiers_effect
+- domicile_creature_artifact_modifiers_effect
+- domicile_artifact_add_trade_modifiers_effect
+- domicile_artifact_add_trade_modifier_effect
+- domicile_artifact_add_tiered_trade_modifier_effect
+
+### gdp_domicile_effects.txt（1 条目）
+
+- merchant_company_setup_effect
+
+### gdp_merchant_luxury_contract_scripted_effects.txt（5 条目）
+
+- merchant_luxury_contract_travel_or_progress_effect
+- manage_new_luxury_contract_effect
+- save_random_region_province_effect
+- luxury_contract_save_destination_effect
+- luxury_contract_task_contract_scopes_effect
+
+### gdp_merchant_patron_contract_scripted_effects.txt（6 条目）
+
+- fire_generic_patron_contract_scheme_on_going_events_effect
+- manage_new_patron_contract_effect
+- patron_contract_task_contract_scopes_effect
+- patron_contract_scheme_scopes_effect
+- merchant_base_patron_contract_schemes_set_up_outcome_immediate_effect
+- merchant_base_patron_hobnob_patron_contract_scheme_prep_effect
+
+### gdp_merchant_scripted_effects.txt（182 条目）
+
+- add_merchant_competitive_pressure_effect
+- update_merchant_house_of_knives_effect
+- gdp_update_merchant_legacy_3_company_direction_effect
+- merchant_partner_mentoring_spread_skill_effect
+- update_merchant_learn_on_the_job_effect
+- merchant_company_law_remove_purpose_effect
+- merchant_company_law_purpose_effect
+- gdp_usury_lend_at_interest_effect
+- gdp_update_usury_reputation_effect
+- gdp_purpose_events_0002_lend_effect
+- gdp_usury_repudiate_loan_effect
+- bailiff_collect_loan_payment_effect
+- update_merchant_missionary_network_effect
+- update_merchant_scholastic_exceptions_effect
+- update_merchant_known_along_the_route_effect
+- merchant_inspector_clear_specialized_market_modifiers_effect
+- merchant_inspector_clear_specialized_market_effect
+- merchant_inspector_validate_specialized_market_effect
+- merchant_inspector_apply_specialized_market_effect
+- merchant_inspector_set_specialized_market_effect
+- merchant_binding_contracts_trade_opportunity_success_effect
+- merchant_port_factors_trade_opportunity_success_effect
+- gdp_merchant_legacy_4_visit_entrepot_effect
+- update_merchant_defender_of_the_faith_effect
+- merchant_market_familiarity_travel_effect
+- merchant_travel_logs_danger_xp_effect
+- trade_opportunities_competitive_pressure_success_effect
+- trade_opportunities_competitive_pressure_critical_success_effect
+- trade_opportunities_competitive_pressure_failure_effect
+- merchant_contract_failure_reputation_effect
+- merchant_contract_failure_expertise_effect
+- spend_merchant_competitive_pressure_effect
+- spend_merchant_competitive_pressure_organize_venture_effect
+- spend_merchant_competitive_pressure_put_on_notice_effect
+- spend_merchant_competitive_pressure_merge_company_effect
+- merchant_corner_the_market_effect
+- organize_the_venture_effect
+- undercut_the_competition_effect
+- clear_merchant_company_focus_effect
+- apply_merchant_public_works_focus_effect
+- apply_merchant_private_profit_focus_effect
+- gdp_merchant_reclaim_house_company_title_effect
+- gdp_merchant_patron_fund_buildings_start_promise_effect
+- gdp_merchant_patron_fund_buildings_fulfill_promise_if_matching_effect
+- gdp_merchant_assign_merchant_patron_tributary_effect
+- gdp_notify_subject_overlord_changed_effect
+- gdp_notify_subject_overlord_gained_effect
+- gdp_notify_subject_overlord_lost_effect
+- gdp_merchant_charter_patron_death_effect
+- gdp_merchant_charter_transfer_patron_effect
+- gdp_merchant_patron_change_on_title_transfer_effect
+- create_merchant_title_effect
+- adventurer_prestige_reset_effect
+- gdp_invalidate_merchant_task_contracts_on_government_change_effect
+- gdp_invalidate_landless_adventurer_task_contracts_on_government_change_effect
+- merchant_trade_opportunity_save_lost_reason_effect
+- merchant_trade_opportunity_send_lost_toast_effect
+- merchant_trade_opportunity_contract_invalidated_message_effect
+- merchant_trade_opportunity_travel_cancelled_effect
+- merchant_trade_opportunity_travel_complete_or_invalidated_effect
+- merchant_luxury_contract_invalidated_message_effect
+- merchant_patron_contract_invalidated_message_effect
+- gdp_merchant_courtier_becomes_associate_effect
+- gdp_merchant_mark_courtiers_list_as_associates_effect
+- gdp_merchant_restore_voluntary_laamp_associates_from_list_effect
+- gdp_merchant_handover_company_for_voluntary_laamp_effect
+- gdp_merchant_liquidate_company_effect
+- destroy_merchant_effect
+- gdp_merchant_forgive_debtors_effect
+- gdp_merchant_becomes_patrician_effect
+- gdp_merchant_procures_estate_effect
+- gdp_merchant_feudalize_purchased_tribal_land_effect
+- new_republic_population_effect
+- create_republic_title_effect
+- gdp_merchant_population_cull_effect
+- gdp_minority_merchant_spawn_roll_effect
+- gdp_minority_merchant_found_company_effect
+- gdp_minority_merchant_repopulate_effect
+- gdp_create_starting_merchants_near_player_effect
+- add_random_internal_main_company_building
+- add_random_internal_civic_company_building
+- add_random_internal_warehouse_company_building
+- add_random_internal_production_company_building
+- add_random_internal_trade_company_building
+- gdp_raise_starting_company_buildings_effect
+- upgrade_random_external_company_building_effect
+- generate_appropriate_merchant_buildings
+- assign_random_trader_find_highest_task_effect
+- assign_random_trader_task_setup_effect
+- set_starting_company_size_effect
+- gdp_sponsor_merchant_company_effect
+- set_starting_company_acumen_effect
+- gdp_merchant_creditor_loan_acumen_effect
+- set_starting_trade_expertise_effect
+- merchant_charter_abuse_counter_effect
+- merchant_charter_abuse_stance_escalate_effect
+- merchant_charter_abuse_stance_min_indifferent_effect
+- merchant_charter_benefit_counter_effect
+- merchant_charter_authority_scope_effect
+- merchant_charter_abuse_authority_county_effect
+- merchant_charter_benevolent_authority_county_effect
+- create_merchant_charter_artifact_effect
+- merchant_charter_destroy_held_charters_effect
+- select_merchant_personality_type_effect
+- trade_opportunity_partner_invalidated_effect
+- commission_merchant_effect
+- merchant_broke_commission_fallout_effect
+- request_monopoly_effect
+- notify_trade_monopoly_competitors_effect
+- gdp_ai_take_trade_monopoly_effect
+- update_merchant_competition_effect
+- gdp_merchant_seize_realm_spawn_hired_host_toast_effect
+- gdp_merchant_seize_realm_on_victory_effect
+- gdp_merchant_seize_realm_on_white_peace_effect
+- gdp_merchant_seize_realm_on_defeat_effect
+- gdp_merchant_seize_realm_invite_debtor_effect
+- gdp_move_company_invalidate_trade_effect
+- gdp_try_create_move_company_size_action_effect
+- gdp_move_company_departure_effect
+- save_random_trade_route_with_goods_category_effect
+- save_random_trade_route_and_market_with_goods_category_produced_effect
+- gdp_merchant_recreate_trade_monopolies_for_new_owner_effect
+- gdp_merge_company_effect
+- merchant_caravaneer_capstone_reward_effect
+- merchant_artisan_capstone_reward_effect
+- merchant_creditor_capstone_reward_effect
+- merchant_creditor_capstone_prestige_effect
+- gdp_merchant_spent_indebted_hook_effect
+- gdp_hostile_takeover_effect
+- gdp_merchant_associate_promise_completed_effect
+- gdp_merchant_associate_promise_completed_merchant_effect
+- gdp_merchant_silk_road_market_promise_completed_effect
+- add_dealbreaker_secret_effect
+- reveal_dealbreaker_secret_effect
+- add_disguised_usury_secret_effect
+- gdp_move_disguised_usury_secret_effect
+- gdp_usury_pay_back_disguised_interest_effect
+- gdp_usury_penance_try_fire_effect
+- gdp_usury_debtor_discover_interest_tooltip_effect
+- gdp_increase_trade_expertise_xp_effect
+- gdp_tgf_setup_good_effect
+- gdp_tgf_setup_buy_report_effect
+- gdp_tgf_set_widget_good_effect
+- gdp_tgf_clear_widget_good_effect
+- gdp_tgf_create_study_curio_effect
+- gdp_tgf_roll_artifact_rarity_effect
+- gdp_tgf_add_one_artifact_trade_modifier_effect
+- gdp_tgf_add_artifact_trade_modifiers_effect
+- gdp_tgf_setup_packable_good_effect
+- gdp_tgf_set_background_location_effect
+- gdp_tgf_add_tiered_route_modifier_effect
+- gdp_tgf_add_tiered_county_modifier_effect
+- gdp_tgf_add_tiered_character_modifier_effect
+- gdp_steal_market_insights_effect
+- gdp_increase_expertise_lower_than_target_effect
+- merchant_record_ransom_hook_effect
+- merchant_ransom_interaction_effect
+- gdp_evict_merchant_from_realm_effect
+- trade_opportunity_on_accepted_effect
+- trade_route_trader_opinion_effect
+- trade_route_unassigned_traders_opinion_effect
+- trade_route_created_summary_effect
+- trade_route_edited_summary_effect
+- gdp_trade_route_maturity_update_effect
+- gdp_trade_route_maturity_start_effect
+- gdp_trade_route_maturity_reset_effect
+- gdp_merchant_ai_market_recruit_create_character_effect
+- gdp_merchant_ai_market_recruit_effect
+- craft_artifact_scheme_prep_effect
+- reforge_transferred_artifact_effect
+- gdp_trader_pilgrimage_expertise_reward_effect
+- gdp_trader_feast_expertise_reward_effect
+- gdp_trader_hunt_expertise_reward_effect
+- gdp_company_location_building_lost_effect
+- gdp_company_location_buildings_refund_effect
+- gdp_tgf_add_category_modifier_effect
+- gdp_historical_company_expertise_effect
+- gdp_historical_company_setup_effect
+- gdp_schmooze_reset_conclusion_markets_effect
+- gdp_add_schmooze_modifier_effect
+- gdp_log_schmooze_successful_effect
+- gdp_log_schmooze_successful_empty_effect
+
+### gdp_merchant_trade_opportunity_scripted_effects.txt（31 条目）
+
+- trade_opportunity_task_contract_scopes_effect
+- trade_opportunity_scheme_scopes_effect
+- fire_generic_trade_opportunity_scheme_on_going_events_effect
+- populate_location_with_trade_opportunities_effect
+- replace_stale_trade_opportunities_effect
+- clear_trade_opportunity_type_cooldown_effect
+- promote_goods_task_contract_pick_trade_good_effect
+- promote_goods_apply_trade_opportunity_outcome_effect
+- market_investment_merchant_funded_outcome_effect
+- manage_new_trade_opportunity_contract_effect
+- create_put_on_notice_challenge_competitor_trade_opportunity_effect
+- create_put_on_notice_sabotage_competition_trade_opportunity_effect
+- create_put_on_notice_disrupt_charter_trade_opportunity_effect
+- merchant_base_trade_opportunity_schemes_set_up_outcome_immediate_effect
+- merchant_base_challenge_competitor_trade_opportunity_scheme_prep_effect
+- merchant_base_promote_goods_trade_opportunity_scheme_prep_effect
+- merchant_base_market_investment_trade_opportunity_scheme_prep_effect
+- merchant_base_exploit_upheaval_trade_opportunity_scheme_prep_effect
+- merchant_base_alleviate_upheaval_trade_opportunity_scheme_prep_effect
+- merchant_base_support_guilds_trade_opportunity_scheme_prep_effect
+- merchant_base_seek_debtors_trade_opportunity_scheme_prep_effect
+- merchant_base_sabotage_competition_trade_opportunity_scheme_prep_effect
+- merchant_base_build_category_connections_trade_opportunity_scheme_prep_effect
+- merchant_base_disrupt_charter_trade_opportunity_scheme_prep_effect
+- merchant_base_silk_road_network_trade_opportunity_scheme_prep_effect
+- merchant_base_silk_road_caravan_trade_opportunity_scheme_prep_effect
+- merchant_base_entrepot_buy_trade_opportunity_scheme_prep_effect
+- merchant_base_entrepot_sell_trade_opportunity_scheme_prep_effect
+- merchant_base_negotiate_tolls_trade_opportunity_scheme_prep_effect
+- merchant_base_smuggle_goods_trade_opportunity_scheme_prep_effect
+- alleviate_upheaval_modifier_removal_effect
+
+### gdp_merchant_unity_contract_scripted_effects.txt（4 条目）
+
+- manage_new_unity_contract_effect
+- unity_contract_task_contract_setup_scopes_effect
+- unity_contract_irregularies_scope_effect
+- unity_irregularities_failure_effect
+
+### gdp_republic_effects.txt（70 条目）
+
+- gdp_found_a_republic_effect
+- gdp_republic_patricians_start_at_level_2_effect
+- gdp_patrician_domicile_level_2_effect
+- gdp_patrician_domicile_level_2_parent_effect
+- gdp_patrician_domicile_level_2_internal_effect
+- gdp_trade_league_proclaim_commune_effect
+- gdp_trade_league_enforce_monopoly_effect
+- gdp_league_collect_contested_trade_assets_effect
+- gdp_trade_league_win_trade_war_effect
+- gdp_league_add_affiliated_league_to_list_effect
+- gdp_monopoly_add_league_to_list_effect
+- gdp_league_expel_rivals_from_market_effect
+- gdp_league_expulsion_shown_opinion_effect
+- gdp_save_patrician_liege_effect
+- gdp_republic_restore_family_succession_law_effect
+- gdp_create_patrician_family_effect
+- gdp_convert_tribal_realm_to_republic_effect
+- gdp_convert_tribal_holdings_for_republic_effect
+- gdp_feudalize_tribal_vassals_for_republic_effect
+- gdp_remove_tribal_authority_laws_effect
+- gdp_rank_up_republic_effect
+- gdp_restore_the_roman_republic_effect
+- gdp_enacted_decree_effect
+- gdp_consume_banishment_approval_effect
+- gdp_consume_proscription_approval_effect
+- gdp_consume_execution_approval_effect
+- gdp_clear_indicted_character_effect
+- gdp_pledge_assembly_vote_effect
+- gdp_spend_pledged_law_approvers_effect
+- gdp_clear_pledged_law_approvers_effect
+- gdp_provide_patrician_house_support_effect
+- gdp_adjust_number_of_patrician_families_effect
+- gdp_consume_republic_assembly_preparation_effect
+- add_scaling_trade_modifier_to_char_effect
+- gdp_republic_unrest_district_shutdown_modifier_effect
+- gdp_republic_unrest_resolve_full_effect
+- gdp_republic_unrest_resolve_partial_effect
+- gdp_republic_unrest_resolve_fail_effect
+- gdp_republic_unrest_lower_building_if_exists_effect
+- gdp_republic_unrest_flee_reset_domicile_effect
+- gdp_republic_unrest_clear_internal_buildings_effect
+- gdp_republic_unrest_0301_aftermath_effect
+- gdp_republic_popular_opinion_setup_effect
+- gdp_republic_popular_opinion_county_modifier_effect
+- gdp_republic_popular_opinion_market_modifier_effect
+- gdp_republic_popular_opinion_prosperity_progress_effect
+- gdp_republic_popular_opinion_prosperity_level_effect
+- gdp_republic_popular_opinion_county_control_effect
+- gdp_republic_popular_opinion_province_size_effect
+- gdp_incite_unrest_apply_effect
+- gdp_clear_league_focused_category_modifiers_effect
+- gdp_apply_league_focused_category_modifier_effect
+- gdp_set_league_focused_category_effect
+- gdp_trade_league_replace_missing_leader_effect
+- gdp_set_trade_league_leading_title_from_character_effect
+- gdp_hre_elector_loss_warning_effect
+- gdp_republic_patricians_become_merchants_warning_effect
+- random_gift_artifact_commerce_effect
+- random_gift_artifact_aggrandizement_effect
+- random_gift_artifact_communal_effect
+- random_gift_artifact_signorial_effect
+- random_gift_artifact_agitation_effect
+- random_gift_creature_selection_effect
+- gdp_ambition_execute_and_banish_bonus_effect
+- gdp_add_ambition_promote_scheme_bonus_effect
+- gdp_destroyed_republic_patrician_effect
+- convert_to_feudalism_from_republic_effect
+- gdp_find_deposed_republic_successor_effect
+- gdp_restore_republic_elections_effect
+- gdp_restore_republic_elections_merchant_effect
+
+### gdp_trade_scheme_effects.txt（10 条目）
+
+- gdp_improve_trade_scheme_set_focus_effect
+- gdp_improve_trade_scheme_prep_effect
+- gdp_improve_trade_scheme_read_focus_effect
+- gdp_improve_trade_scheme_route_destroyed_effect
+- gdp_improve_trade_route_apply_effect
+- gdp_disrupt_trade_routes_scheme_prep_effect
+- gdp_disrupt_trade_routes_roll_effect
+- gdp_disrupt_trade_routes_apply_effect
+- gdp_disrupt_trade_routes_discovered_effect
+- gdp_disrupt_trade_routes_notify_target_effect
+
+### gdp_trader_activity_scripted_effects.txt（14 条目）
+
+- gdp_trader_save_district_trade_category_effect
+- gdp_trader_cancel_owned_travel_effect
+- gdp_trader_start_round_effect
+- gdp_trader_scheme_setup_effect
+- gdp_trader_resume_paused_travel_effect
+- gdp_trader_scheme_complete_effect
+- gdp_trader_scheme_invalidated_effect
+- gdp_trader_start_picked_scheme_effect
+- gdp_trader_pick_work_scheme_effect
+- gdp_trader_start_work_scheme_effect
+- gdp_trader_request_return_home_effect
+- gdp_return_trade_envoys_effect
+- gdp_send_trade_envoys_effect
+- gdp_trade_envoys_resume_idle_traders_effect
+
+### gdp_tradition_scripted_effects.txt（2 条目）
+
+- gdp_binding_oaths_broke_word_effect
+- gdp_binding_oaths_cheaper_alliance_call_effect
+
+### gdp_visit_holding_decision_scripted_effects.txt（21 条目）
+
+- visit_holding_refresh_all_options_tracker_effect
+- visit_holding_set_option_cooldown_effect
+- visit_holding_set_option_cooldown_guilds_effect
+- visit_holding_set_option_cooldown_market_dock_effect
+- visit_holding_set_option_cooldown_patron_effect
+- visit_holding_set_option_cooldown_worship_effect
+- visit_holding_refresh_patron_area_tracker_effect
+- temporarily_lock_visit_holding_effect
+- visit_holding_mark_hub_area_visited_effect
+- visit_holding_return_to_market_dock_hub_effect
+- visit_holding_rare_recruit_return_to_hub_after_recruit_effect
+- visit_holding_clean_up_variables_effect
+- visit_holding_consider_merchant_position_effect
+- visit_holding_pick_merchant_court_position_effect
+- visit_holding_appoint_rare_recruit_court_position_effect
+- visit_holding_been_to_rare_recruit_effect
+- visit_holding_set_rare_recruit_loc_tracker_effect
+- visit_holding_ensure_stewardship_education_min_2_effect
+- visit_holding_mark_rare_spawn_seen_effect
+- visit_holding_ensure_visiting_associate_effect
+- visit_holding_rare_recruit_duel_loss_effect
+
+### pam_antipope_effects.txt（28 条目）
 
 - pam_antipope_declared_catalyst_effect
 - pam_antipope_sponsored_catalyst_effect
@@ -4233,8 +4906,9 @@
 - pam_challenge_hof_war_fire_followup_events_effect
 - pam_challenge_hof_war_fire_faith_letter_effect
 - pam_antiking_victory_effect
+- pam_conversion_christian_church_participation_effect
 
-### pam_ecumenical_council_effects.txt（23 条目）
+### pam_ecumenical_council_effects.txt（26 条目）
 
 - ecumenical_council_gather_clergy_effect
 - ecumenical_council_gather_non_clergy_effect
@@ -4247,6 +4921,9 @@
 - ecumenical_council_set_proposal_effect
 - ecumenical_council_conservative_backlash_effect
 - ecumenical_council_make_core_preview_effect
+- ecumenical_council_save_host_branched_rite_effect
+- ecumenical_council_host_rite_adopt_core_tenet_effect
+- ecumenical_council_host_rite_adopt_doctrine_effect
 - ecumenical_council_apply_debate_outcome_effect
 - ecumenical_council_personal_tenet_fulfillment_effect
 - ecumenical_council_current_debate_personal_tenet_fulfillment_effect
@@ -4447,6 +5124,8 @@
 - pam_tenet_popularity_on_game_start_effect
 - pam_tenet_popularity_boost_rite_effect
 - pam_tenet_popularity_seed_status_effect
+- pam_tenet_popularity_decay_prohibited_yearly_effect
+- pam_tenet_popularity_lower_prohibited_effect
 - pam_save_selected_interaction_tenet_effect
 - pam_replace_personal_tenet_effect
 - pam_notify_holy_war_instigator_effect_win
@@ -4491,8 +5170,6 @@
 - pam_refire_great_schism_catalyst_effect
 - pam_fire_great_schism_start_event_effect
 - pam_offer_great_schism_stance_effect
-- pam_offer_great_schism_stance_to_new_player_effect
-- pam_send_great_schism_stance_offer_effect
 - pam_childbirth_piety_reward_effect
 - pam_seduction_piety_reward_effect
 - pam_childbirth_spiritual_fulfillment_reward_effect

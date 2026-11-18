@@ -1,20 +1,22 @@
 # common/factions 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：7（其中 Jomini 解析 6 个）
-- 顶层块条目总数：12，跨文件唯一条目 12
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：9（其中 Jomini 解析 8 个）
+- 顶层块条目总数：14，跨文件唯一条目 14
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_factions.txt` | 34351 | 3 | 0 | jomini |
-| `00_nation_fracturing_faction.txt` | 10815 | 1 | 0 | jomini |
-| `00_nomadic_faction.txt` | 13392 | 1 | 0 | jomini |
-| `00_peasant_faction_new.txt` | 17888 | 1 | 1 | jomini |
-| `00_populist_faction.txt` | 48187 | 2 | 0 | jomini |
-| `10_tgp_factions.txt` | 39594 | 4 | 0 | jomini |
+| `00_factions.txt` | 37580 | 3 | 0 | jomini |
+| `00_nation_fracturing_faction.txt` | 11489 | 1 | 0 | jomini |
+| `00_nomadic_faction.txt` | 13507 | 1 | 0 | jomini |
+| `00_peasant_faction_new.txt` | 18919 | 1 | 1 | jomini |
+| `00_populist_faction.txt` | 49520 | 2 | 0 | jomini |
+| `00_republic_popular_faction.txt` | 3823 | 1 | 0 | jomini |
+| `01_burgher_autonomy_faction.txt` | 14402 | 1 | 0 | jomini |
+| `10_tgp_factions.txt` | 39429 | 4 | 0 | jomini |
 | `_factions.info` | 11017 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
@@ -43,6 +45,14 @@
 
 - populist_faction
 - escalated_peasant_faction
+
+### 00_republic_popular_faction.txt（1 条目）
+
+- republic_popular_faction
+
+### 01_burgher_autonomy_faction.txt（1 条目）
+
+- burgher_autonomy_faction
 
 ### 10_tgp_factions.txt（4 条目）
 

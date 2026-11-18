@@ -1,6 +1,6 @@
 # CK3 地图工作流指南（地图室）
 
-> 权威顺序同知识库：`game_docs/map_docs/`（游戏 1.20.1 实测档案）> `pages/Map modding.md`
+> 权威顺序同知识库：`game_docs/map_docs/`（游戏 1.21.0 实测档案）> `pages/Map modding.md`
 > （wiki oldid 34676，页面标注版本 1.1）。本文所有版本敏感结论都带来源；
 > 未经 1.20 验证的历史偏方会明确标注。配套工具：`map_room/validate_map.py`。
 

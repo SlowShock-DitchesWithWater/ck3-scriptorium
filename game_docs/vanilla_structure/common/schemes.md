@@ -1,8 +1,8 @@
 # common/schemes 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：50（其中 Jomini 解析 46 个）
-- 顶层块条目总数：483，跨文件唯一条目 483
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：72（其中 Jomini 解析 68 个）
+- 顶层块条目总数：550，跨文件唯一条目 550
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -10,53 +10,75 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `agent_types/_agent_types.info` | 889 | - | - | 纯文档（非 Jomini） |
-| `agent_types/agent_types.txt` | 148838 | 65 | 0 | jomini |
+| `agent_types/agent_types.txt` | 170522 | 75 | 0 | jomini |
 | `pulse_actions/_pulse_actions.info` | 788 | - | - | 纯文档（非 Jomini） |
 | `pulse_actions/general_scheme_pulse_actions.txt` | 176628 | 315 | 1 | jomini |
-| `scheme_countermeasures/00_basic_countermeasures.txt` | 27311 | 24 | 15 | jomini |
+| `scheme_countermeasures/00_basic_countermeasures.txt` | 27391 | 24 | 15 | jomini |
 | `scheme_countermeasures/_scheme_countermeasures.info` | 1529 | - | - | 纯文档（非 Jomini） |
-| `scheme_types/_schemes.info` | 12423 | - | - | 纯文档（非 Jomini） |
+| `scheme_types/_schemes.info` | 12610 | - | - | 纯文档（非 Jomini） |
 | `scheme_types/abduct_scheme.txt` | 8239 | 1 | 0 | jomini |
-| `scheme_types/befriend_scheme.txt` | 19463 | 1 | 0 | jomini |
+| `scheme_types/befriend_scheme.txt` | 20468 | 1 | 0 | jomini |
 | `scheme_types/challenge_status_scheme.txt` | 6156 | 1 | 0 | jomini |
 | `scheme_types/claim_throne_scheme.txt` | 5855 | 1 | 0 | jomini |
 | `scheme_types/coerce_contribution_scheme.txt` | 5106 | 1 | 0 | jomini |
 | `scheme_types/coerce_tributary_scheme.txt` | 6990 | 1 | 0 | jomini |
 | `scheme_types/convert_to_witchcraft_scheme.txt` | 9245 | 1 | 0 | jomini |
 | `scheme_types/court_scheme.txt` | 23687 | 1 | 0 | jomini |
-| `scheme_types/damage_legitimacy_scheme.txt` | 4392 | 1 | 0 | jomini |
+| `scheme_types/damage_legitimacy_scheme.txt` | 4393 | 1 | 0 | jomini |
 | `scheme_types/depose_scheme.txt` | 4898 | 1 | 0 | jomini |
 | `scheme_types/diarch_schemes.txt` | 7000 | 1 | 0 | jomini |
 | `scheme_types/disbelieve_mandala_scheme.txt` | 5420 | 1 | 0 | jomini |
 | `scheme_types/elope_scheme.txt` | 9418 | 1 | 0 | jomini |
-| `scheme_types/ep3_dispute_border_scheme.txt` | 7909 | 1 | 0 | jomini |
+| `scheme_types/ep3_dispute_border_scheme.txt` | 8020 | 1 | 0 | jomini |
 | `scheme_types/ep3_found_despotate_scheme.txt` | 6299 | 1 | 0 | jomini |
-| `scheme_types/ep3_ingratiate_family_scheme.txt` | 7803 | 1 | 0 | jomini |
+| `scheme_types/ep3_ingratiate_family_scheme.txt` | 7862 | 1 | 0 | jomini |
 | `scheme_types/ep3_prepare_fire_dromons_scheme.txt` | 3345 | 1 | 0 | jomini |
 | `scheme_types/ep3_raid_estate_scheme.txt` | 12424 | 1 | 0 | jomini |
-| `scheme_types/ep3_subsume_province_scheme.txt` | 9290 | 1 | 0 | jomini |
+| `scheme_types/ep3_subsume_province_scheme.txt` | 9233 | 1 | 0 | jomini |
 | `scheme_types/ep3_teach_governor_scheme.txt` | 7772 | 1 | 0 | jomini |
 | `scheme_types/expand_power_base_scheme.txt` | 3768 | 1 | 0 | jomini |
-| `scheme_types/fabricate_hook_scheme.txt` | 12029 | 1 | 0 | jomini |
+| `scheme_types/fabricate_hook_scheme.txt` | 11198 | 1 | 0 | jomini |
 | `scheme_types/find_follower_of_faith.txt` | 4022 | 1 | 0 | jomini |
-| `scheme_types/foster_legitimacy_scheme.txt` | 4864 | 1 | 0 | jomini |
+| `scheme_types/foster_legitimacy_scheme.txt` | 4865 | 1 | 0 | jomini |
+| `scheme_types/gdp_civic_agitation_scheme.txt` | 5746 | 1 | 0 | jomini |
+| `scheme_types/gdp_incite_unrest_scheme.txt` | 5858 | 1 | 0 | jomini |
+| `scheme_types/gdp_influence_house_ambition_scheme.txt` | 8631 | 1 | 0 | jomini |
+| `scheme_types/gdp_merchant_patron_contract_schemes.txt` | 2873 | 1 | 1 | jomini |
+| `scheme_types/gdp_merchant_schemes.txt` | 18833 | 3 | 0 | jomini |
+| `scheme_types/gdp_merchant_trade_opportunity_schemes.txt` | 45926 | 16 | 1 | jomini |
+| `scheme_types/gdp_overthrow_government_scheme.txt` | 11346 | 1 | 0 | jomini |
+| `scheme_types/gdp_patrician_find_secrets_scheme.txt` | 5638 | 1 | 0 | jomini |
+| `scheme_types/gdp_patrician_promote_scheme.txt` | 5073 | 1 | 0 | jomini |
+| `scheme_types/gdp_patrician_slander_scheme.txt` | 5362 | 1 | 0 | jomini |
+| `scheme_types/gdp_steal_trade_post_scheme.txt` | 7839 | 1 | 0 | jomini |
+| `scheme_types/gdp_trade_schemes.txt` | 18714 | 4 | 0 | jomini |
+| `scheme_types/gdp_trader_schemes_diplomacy.txt` | 12912 | 7 | 0 | jomini |
+| `scheme_types/gdp_trader_schemes_intrigue.txt` | 4281 | 2 | 0 | jomini |
+| `scheme_types/gdp_trader_schemes_learning.txt` | 5831 | 3 | 0 | jomini |
+| `scheme_types/gdp_trader_schemes_martial.txt` | 1606 | 1 | 0 | jomini |
+| `scheme_types/gdp_trader_schemes_stewardship.txt` | 11441 | 7 | 0 | jomini |
 | `scheme_types/generate_claim_scheme.txt` | 5507 | 1 | 0 | jomini |
+| `scheme_types/gg_align_undecided_scheme.txt` | 11947 | 1 | 0 | jomini |
+| `scheme_types/gg_claim_leadership_scheme.txt` | 14491 | 1 | 0 | jomini |
+| `scheme_types/gg_replace_ruler_scheme.txt` | 11468 | 1 | 0 | jomini |
+| `scheme_types/gg_switch_sides_scheme.txt` | 13208 | 1 | 0 | jomini |
 | `scheme_types/laamp_base_contract_schemes.txt` | 90004 | 29 | 1 | jomini |
 | `scheme_types/laamp_extra_contract_schemes.txt` | 14791 | 6 | 0 | jomini |
-| `scheme_types/learn_language_scheme.txt` | 10658 | 1 | 0 | jomini |
+| `scheme_types/learn_language_scheme.txt` | 10762 | 1 | 0 | jomini |
 | `scheme_types/leverage_contribution_scheme.txt` | 4735 | 1 | 0 | jomini |
-| `scheme_types/murder_scheme.txt` | 9527 | 1 | 0 | jomini |
+| `scheme_types/murder_scheme.txt` | 9611 | 1 | 0 | jomini |
 | `scheme_types/pam_study_scheme.txt` | 9095 | 1 | 0 | jomini |
 | `scheme_types/promote_scheme.txt` | 5052 | 1 | 0 | jomini |
+| `scheme_types/republic_promote_candidate_scheme.txt` | 4210 | 1 | 0 | jomini |
 | `scheme_types/seduce_scheme.txt` | 32768 | 1 | 0 | jomini |
-| `scheme_types/seize_realm_scheme.txt` | 8627 | 1 | 0 | jomini |
+| `scheme_types/seize_realm_scheme.txt` | 8626 | 1 | 0 | jomini |
 | `scheme_types/slander_scheme.txt` | 5414 | 1 | 0 | jomini |
-| `scheme_types/steal_back_artifact_scheme.txt` | 6639 | 1 | 0 | jomini |
+| `scheme_types/steal_back_artifact_scheme.txt` | 6567 | 1 | 0 | jomini |
 | `scheme_types/steal_herd_scheme.txt` | 7822 | 1 | 0 | jomini |
-| `scheme_types/study_faith_scheme.txt` | 12885 | 1 | 0 | jomini |
-| `scheme_types/sway_scheme.txt` | 13634 | 1 | 0 | jomini |
-| `scheme_types/tgp_coup_ceremonial_liege.txt` | 7722 | 1 | 0 | jomini |
-| `scheme_types/tgp_dynastic_cycle_schemes.txt` | 25441 | 4 | 0 | jomini |
+| `scheme_types/study_faith_scheme.txt` | 12929 | 1 | 0 | jomini |
+| `scheme_types/sway_scheme.txt` | 14684 | 1 | 0 | jomini |
+| `scheme_types/tgp_coup_ceremonial_liege.txt` | 7721 | 1 | 0 | jomini |
+| `scheme_types/tgp_dynastic_cycle_schemes.txt` | 25554 | 4 | 0 | jomini |
 | `scheme_types/tgp_mentoring_scheme.txt` | 12149 | 1 | 0 | jomini |
 | `scheme_types/tgp_study_scheme.txt` | 4356 | 1 | 0 | jomini |
 
@@ -64,7 +86,7 @@
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### agent_types/agent_types.txt（65 条目）
+### agent_types/agent_types.txt（75 条目）
 
 - agent_hitman
 - agent_vampire
@@ -119,6 +141,7 @@
 - agent_lookout_success
 - agent_lookout_speed
 - agent_alibi
+- agent_alibi_title
 - agent_justiciar
 - agent_justiciar_speed
 - agent_decoy
@@ -131,6 +154,15 @@
 - agent_courtesan
 - agent_amanuensis
 - agent_eunuch_speed
+- agent_peddler
+- agent_appraiser
+- agent_broker
+- agent_overseer
+- agent_messenger
+- agent_conspirator
+- agent_demagogue
+- agent_commander
+- agent_financier
 
 ### pulse_actions/general_scheme_pulse_actions.txt（315 条目）
 
@@ -573,9 +605,128 @@
 
 - foster_legitimacy_scheme
 
+### scheme_types/gdp_civic_agitation_scheme.txt（1 条目）
+
+- gdp_civic_agitation_scheme
+
+### scheme_types/gdp_incite_unrest_scheme.txt（1 条目）
+
+- gdp_incite_unrest_scheme
+
+### scheme_types/gdp_influence_house_ambition_scheme.txt（1 条目）
+
+- influence_house_ambition
+
+### scheme_types/gdp_merchant_patron_contract_schemes.txt（1 条目）
+
+- merchant_patron_hobnob_patron_contract_scheme
+
+### scheme_types/gdp_merchant_schemes.txt（3 条目）
+
+- hostile_takeover
+- steal_market_insights
+- craft_artifact
+
+### scheme_types/gdp_merchant_trade_opportunity_schemes.txt（16 条目）
+
+- merchant_challenge_competitor_trade_opportunity_scheme
+- merchant_promote_goods_trade_opportunity_scheme
+- merchant_market_investment_trade_opportunity_scheme
+- merchant_exploit_upheaval_trade_opportunity_scheme
+- merchant_alleviate_upheaval_trade_opportunity_scheme
+- merchant_support_guilds_trade_opportunity_scheme
+- merchant_seek_debtors_trade_opportunity_scheme
+- merchant_sabotage_competition_trade_opportunity_scheme
+- merchant_build_category_connections_trade_opportunity_scheme
+- merchant_disrupt_charter_trade_opportunity_scheme
+- merchant_silk_road_network_trade_opportunity_scheme
+- merchant_silk_road_caravan_trade_opportunity_scheme
+- merchant_entrepot_buy_trade_opportunity_scheme
+- merchant_entrepot_sell_trade_opportunity_scheme
+- merchant_negotiate_tolls_trade_opportunity_scheme
+- merchant_smuggle_goods_trade_opportunity_scheme
+
+### scheme_types/gdp_overthrow_government_scheme.txt（1 条目）
+
+- overthrow_government
+
+### scheme_types/gdp_patrician_find_secrets_scheme.txt（1 条目）
+
+- patrician_find_secrets
+
+### scheme_types/gdp_patrician_promote_scheme.txt（1 条目）
+
+- patrician_promote
+
+### scheme_types/gdp_patrician_slander_scheme.txt（1 条目）
+
+- patrician_slander
+
+### scheme_types/gdp_steal_trade_post_scheme.txt（1 条目）
+
+- steal_trade_post
+
+### scheme_types/gdp_trade_schemes.txt（4 条目）
+
+- gdp_improve_trade_capacity
+- gdp_improve_trade_competitiveness
+- gdp_improve_trade_expertise
+- gdp_disrupt_trade_routes
+
+### scheme_types/gdp_trader_schemes_diplomacy.txt（7 条目）
+
+- gdp_trader_negotiating_with_ruler_scheme
+- gdp_trader_building_connections_scheme
+- gdp_trader_lobbying_advantages_scheme
+- gdp_trader_building_reputation_scheme
+- gdp_trader_championing_patron_scheme
+- gdp_trader_entertaining_merchants_scheme
+- gdp_trader_hiring_local_talent_scheme
+
+### scheme_types/gdp_trader_schemes_intrigue.txt（2 条目）
+
+- gdp_trader_undermining_competitor_scheme
+- gdp_trader_recruiting_informants_scheme
+
+### scheme_types/gdp_trader_schemes_learning.txt（3 条目）
+
+- gdp_trader_learning_from_locals_scheme
+- gdp_trader_studying_local_crafts_scheme
+- gdp_trader_appraising_goods_scheme
+
+### scheme_types/gdp_trader_schemes_martial.txt（1 条目）
+
+- gdp_trader_securing_safe_passage_scheme
+
+### scheme_types/gdp_trader_schemes_stewardship.txt（7 条目）
+
+- gdp_trader_negotiate_deals_scheme
+- gdp_trader_finding_a_deal_scheme
+- gdp_trader_securing_surplus_scheme
+- gdp_trader_appraising_market_scheme
+- gdp_trader_organizing_caravan_scheme
+- gdp_trader_exploring_new_markets_scheme
+- gdp_trader_identifying_rare_goods_scheme
+
 ### scheme_types/generate_claim_scheme.txt（1 条目）
 
 - generate_claim
+
+### scheme_types/gg_align_undecided_scheme.txt（1 条目）
+
+- gg_align_undecided
+
+### scheme_types/gg_claim_leadership_scheme.txt（1 条目）
+
+- gg_claim_leadership
+
+### scheme_types/gg_replace_ruler_scheme.txt（1 条目）
+
+- gg_replace_ruler
+
+### scheme_types/gg_switch_sides_scheme.txt（1 条目）
+
+- gg_switch_sides
 
 ### scheme_types/laamp_base_contract_schemes.txt（29 条目）
 
@@ -637,6 +788,10 @@
 ### scheme_types/promote_scheme.txt（1 条目）
 
 - promote
+
+### scheme_types/republic_promote_candidate_scheme.txt（1 条目）
+
+- republic_promote_candidate_scheme
 
 ### scheme_types/seduce_scheme.txt（1 条目）
 

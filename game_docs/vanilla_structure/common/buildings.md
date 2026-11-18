@@ -1,137 +1,3283 @@
 # common/buildings 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：23（其中 Jomini 解析 22 个）
-- 顶层块条目总数：989，跨文件唯一条目 989
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：87（其中 Jomini 解析 85 个）
+- 顶层块条目总数：3548，跨文件唯一条目 3548
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_admin_buildings.txt` | 10666 | 8 | 0 | jomini |
-| `00_castle_buildings.txt` | 79825 | 4 | 13 | jomini |
-| `00_city_buildings.txt` | 85364 | 12 | 12 | jomini |
-| `00_common_buildings.txt` | 11324 | 8 | 0 | jomini |
-| `00_duchy_capital_buildings.txt` | 65542 | 47 | 0 | jomini |
-| `00_legendary_buildings.txt` | 6937 | 5 | 0 | jomini |
-| `00_nomad_buildings.txt` | 7643 | 2 | 2 | jomini |
-| `00_special_buildings.txt` | 212712 | 199 | 0 | jomini |
-| `00_special_mines.txt` | 218225 | 215 | 0 | jomini |
-| `00_standard_economy_buildings.txt` | 243292 | 160 | 0 | jomini |
-| `00_standard_fortification_buildings.txt` | 52591 | 32 | 0 | jomini |
-| `00_standard_military_buildings.txt` | 161366 | 104 | 0 | jomini |
-| `00_temple_buildings.txt` | 209344 | 36 | 14 | jomini |
-| `00_tribal_buildings.txt` | 37176 | 30 | 3 | jomini |
-| `99_ach_buildings.txt` | 8257 | 12 | 0 | jomini |
-| `99_background_graphics_buildings.txt` | 22928 | 6 | 0 | jomini |
-| `_buildings.info` | 16280 | - | - | 纯文档（非 Jomini） |
-| `ccp3_special_buildings.txt` | 32491 | 26 | 0 | jomini |
-| `cp6_special_buildings.txt` | 21166 | 12 | 0 | jomini |
-| `cp8_special_buildings.txt` | 26813 | 23 | 0 | jomini |
-| `pam_buildings.txt` | 15770 | 8 | 3 | jomini |
-| `temple_citadel_buildings.txt` | 183803 | 28 | 15 | jomini |
-| `tgp_great_project_buildings.txt` | 13314 | 12 | 0 | jomini |
+| `00_duchy_capital_buildings.txt` | 115682 | 81 | 0 | jomini |
+| `01_duchy_office_buildings.txt` | 135396 | 134 | 0 | jomini |
+| `99_ach_buildings.txt` | 8227 | 12 | 0 | jomini |
+| `99_background_graphics_buildings.txt` | 19719 | 6 | 0 | jomini |
+| `_buildings.info` | 23131 | - | - | 纯文档（非 Jomini） |
+| `_old_buildings.info` | 584485 | - | - | 纯文档（非 Jomini） |
+| `entrepot_district_buildings/00_entrepot_district_buildings.txt` | 61666 | 29 | 0 | jomini |
+| `great_district_buildings/republic_great_plaza_district_buildings.txt` | 79629 | 69 | 9 | jomini |
+| `holding_buildings/00_castle_buildings.txt` | 200805 | 4 | 14 | jomini |
+| `holding_buildings/00_city_buildings.txt` | 189556 | 4 | 12 | jomini |
+| `holding_buildings/00_nomad_buildings.txt` | 10002 | 2 | 2 | jomini |
+| `holding_buildings/00_temple_buildings.txt` | 270283 | 4 | 14 | jomini |
+| `holding_buildings/00_tribal_buildings.txt` | 57755 | 2 | 3 | jomini |
+| `holding_buildings/temple_citadel_buildings.txt` | 250846 | 4 | 15 | jomini |
+| `holding_district_buildings/00_castle_district_buildings.txt` | 63618 | 30 | 0 | jomini |
+| `holding_district_buildings/00_city_district_buildings.txt` | 34890 | 25 | 0 | jomini |
+| `holding_district_buildings/00_temple_citadel_district_buildings.txt` | 16011 | 12 | 0 | jomini |
+| `holding_district_buildings/00_temple_district_buildings.txt` | 39818 | 25 | 0 | jomini |
+| `holding_district_buildings/00_tribal_district_buildings.txt` | 8047 | 6 | 0 | jomini |
+| `pam_buildings.txt` | 20666 | 7 | 3 | jomini |
+| `regular_district_buildings/00_border_forts_district_buildings.txt` | 54082 | 40 | 0 | jomini |
+| `regular_district_buildings/00_bureaucratic_district_buildings.txt` | 88102 | 60 | 0 | jomini |
+| `regular_district_buildings/00_entertainment_district_buildings.txt` | 111348 | 50 | 0 | jomini |
+| `regular_district_buildings/00_guild_district_buildings.txt` | 188467 | 100 | 0 | jomini |
+| `regular_district_buildings/00_household_district_buildings.txt` | 214499 | 55 | 0 | jomini |
+| `regular_district_buildings/00_mandala_district_buildings.txt` | 96111 | 40 | 0 | jomini |
+| `regular_district_buildings/00_manor_houses_district_buildings.txt` | 68943 | 40 | 0 | jomini |
+| `regular_district_buildings/00_market_district_buildings.txt` | 79488 | 45 | 0 | jomini |
+| `regular_district_buildings/00_military_district_buildings.txt` | 161901 | 85 | 0 | jomini |
+| `regular_district_buildings/00_patrician_district_buildings.txt` | 119743 | 70 | 0 | jomini |
+| `regular_district_buildings/00_port_district_buildings.txt` | 67248 | 35 | 0 | jomini |
+| `regular_district_buildings/00_religious_community_district_buildings.txt` | 119431 | 65 | 0 | jomini |
+| `regular_district_buildings/00_temple_district_buildings.txt` | 157771 | 65 | 0 | jomini |
+| `regular_district_buildings/00_tribal_economy_and_prestige_district_buildings.txt` | 82692 | 45 | 0 | jomini |
+| `regular_district_buildings/00_tribal_military_district_buildings.txt` | 70912 | 40 | 0 | jomini |
+| `regular_district_buildings/00_tribal_wanua_district_buildings.txt` | 99873 | 45 | 0 | jomini |
+| `regular_district_buildings/00_urban_housing_district_buildings.txt` | 77058 | 40 | 0 | jomini |
+| `regular_district_buildings/00_villages_district_buildings.txt` | 206185 | 95 | 0 | jomini |
+| `regular_district_buildings/00_walls_district_buildings.txt` | 81761 | 45 | 0 | jomini |
+| `regular_primary_buildings.txt` | 208419 | 76 | 0 | jomini |
+| `resource_district_buildings/alum_district_buildings.txt` | 11756 | 8 | 0 | jomini |
+| `resource_district_buildings/amber_district_buildings.txt` | 40304 | 28 | 0 | jomini |
+| `resource_district_buildings/cattle_district_buildings.txt` | 74202 | 38 | 0 | jomini |
+| `resource_district_buildings/ceramics_district_buildings.txt` | 71754 | 48 | 0 | jomini |
+| `resource_district_buildings/copper_district_buildings.txt` | 30354 | 19 | 0 | jomini |
+| `resource_district_buildings/cotton_district_buildings.txt` | 62791 | 38 | 0 | jomini |
+| `resource_district_buildings/dyes_district_buildings.txt` | 54897 | 33 | 0 | jomini |
+| `resource_district_buildings/fish_district_buildings.txt` | 73972 | 43 | 0 | jomini |
+| `resource_district_buildings/flax_district_buildings.txt` | 47332 | 28 | 0 | jomini |
+| `resource_district_buildings/fruit_district_buildings.txt` | 62592 | 38 | 0 | jomini |
+| `resource_district_buildings/furs_district_buildings.txt` | 58783 | 38 | 0 | jomini |
+| `resource_district_buildings/gems_district_buildings.txt` | 3503 | 3 | 0 | jomini |
+| `resource_district_buildings/gold_district_buildings.txt` | 3508 | 3 | 0 | jomini |
+| `resource_district_buildings/grain_district_buildings.txt` | 90099 | 53 | 0 | jomini |
+| `resource_district_buildings/hemp_district_buildings.txt` | 46438 | 38 | 0 | jomini |
+| `resource_district_buildings/honey_district_buildings.txt` | 43315 | 28 | 0 | jomini |
+| `resource_district_buildings/horse_district_buildings.txt` | 38544 | 23 | 0 | jomini |
+| `resource_district_buildings/incense_district_buildings.txt` | 49224 | 33 | 0 | jomini |
+| `resource_district_buildings/iron_district_buildings.txt` | 32530 | 23 | 0 | jomini |
+| `resource_district_buildings/ivory_district_buildings.txt` | 46352 | 33 | 0 | jomini |
+| `resource_district_buildings/jade_district_buildings.txt` | 3508 | 3 | 0 | jomini |
+| `resource_district_buildings/medicaments_district_buildings.txt` | 61704 | 38 | 0 | jomini |
+| `resource_district_buildings/millet_district_buildings.txt` | 67396 | 43 | 0 | jomini |
+| `resource_district_buildings/mine_district_buildings.txt` | 44491 | 15 | 0 | jomini |
+| `resource_district_buildings/oil_district_buildings.txt` | 44757 | 33 | 0 | jomini |
+| `resource_district_buildings/rice_district_buildings.txt` | 73335 | 48 | 0 | jomini |
+| `resource_district_buildings/salt_district_buildings.txt` | 43533 | 28 | 0 | jomini |
+| `resource_district_buildings/shared_resource_district_buildings.txt` | 142492 | 78 | 0 | jomini |
+| `resource_district_buildings/silk_district_buildings.txt` | 61685 | 43 | 0 | jomini |
+| `resource_district_buildings/silver_district_buildings.txt` | 3550 | 3 | 0 | jomini |
+| `resource_district_buildings/spices_district_buildings.txt` | 45258 | 33 | 0 | jomini |
+| `resource_district_buildings/stone_district_buildings.txt` | 60134 | 48 | 0 | jomini |
+| `resource_district_buildings/sugar_district_buildings.txt` | 35265 | 23 | 0 | jomini |
+| `resource_district_buildings/tea_district_buildings.txt` | 42264 | 28 | 0 | jomini |
+| `resource_district_buildings/wanua_resource_district_buildings.txt` | 231228 | 180 | 0 | jomini |
+| `resource_district_buildings/wine_district_buildings.txt` | 55401 | 38 | 0 | jomini |
+| `resource_district_buildings/wood_district_buildings.txt` | 66886 | 38 | 0 | jomini |
+| `resource_district_buildings/wool_district_buildings.txt` | 63435 | 40 | 0 | jomini |
+| `special_buildings/00_legendary_buildings.txt` | 8552 | 5 | 0 | jomini |
+| `special_buildings/00_special_buildings.txt` | 367448 | 201 | 0 | jomini |
+| `special_buildings/00_special_mines.txt` | 322920 | 219 | 0 | jomini |
+| `special_buildings/ccp3_special_buildings.txt` | 50356 | 26 | 0 | jomini |
+| `special_buildings/cp6_special_buildings.txt` | 29933 | 12 | 0 | jomini |
+| `special_buildings/cp8_special_buildings.txt` | 37283 | 23 | 0 | jomini |
+| `tgp_great_project_buildings.txt` | 34176 | 11 | 0 | jomini |
+| `trade_post_buildings/basic_trade_post_buildings.txt` | 152329 | 100 | 0 | jomini |
+| `trade_post_buildings/hanseatic_kontor_buildings.txt` | 2904 | 3 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_admin_buildings.txt（8 条目）
+### 00_duchy_capital_buildings.txt（81 条目）
 
-- capital_bureau_01
-- capital_bureau_02
-- capital_bureau_03
-- capital_bureau_04
-- capital_bureau_05
-- capital_bureau_06
-- capital_bureau_07
-- capital_bureau_08
+- dragon_kiln_01
+- dragon_kiln_02
+- dragon_kiln_03
+- dragon_kiln_04
+- dragon_kiln_05
+- examination_hall_01
+- examination_hall_02
+- examination_hall_03
+- examination_hall_04
+- examination_hall_05
+- tower_of_silence_01
+- charnel_grounds_01
+- charnel_grounds_02
+- charnel_grounds_03
+- charnel_grounds_04
+- charnel_grounds_05
+- burial_site_01
+- burial_site_02
+- burial_site_03
+- burial_site_04
+- burial_site_05
+- royal_garden_01
+- royal_garden_02
+- royal_garden_03
+- royal_garden_04
+- royal_garden_05
+- leisure_palace_01
+- leisure_palace_02
+- leisure_palace_03
+- leisure_palace_04
+- leisure_palace_05
+- royal_forest_01
+- royal_forest_02
+- royal_forest_03
+- royal_forest_04
+- royal_forest_05
+- reception_rooms_1
+- reception_rooms_2
+- reception_rooms_3
+- reception_rooms_4
+- reception_rooms_5
+- great_megalith_01
+- military_duchy_building_01
+- military_duchy_building_02
+- military_duchy_building_03
+- military_duchy_building_04
+- archery_ranges_01
+- archery_ranges_02
+- archery_ranges_03
+- archery_ranges_04
+- archery_ranges_05
+- blacksmiths_01
+- blacksmiths_02
+- blacksmiths_03
+- blacksmiths_04
+- blacksmiths_05
+- jousting_lists_01
+- jousting_lists_02
+- jousting_lists_03
+- jousting_lists_04
+- jousting_lists_05
+- march_01
+- march_02
+- march_03
+- march_04
+- march_05
+- military_academy_01
+- military_academy_02
+- military_academy_03
+- military_academy_04
+- military_academy_05
+- royal_armory_01
+- royal_armory_02
+- royal_armory_03
+- royal_armory_04
+- royal_armory_05
+- siege_works_01
+- siege_works_02
+- siege_works_03
+- siege_works_04
+- siege_works_05
 
-### 00_castle_buildings.txt（4 条目）
+### 01_duchy_office_buildings.txt（134 条目）
+
+- bailiwick_01
+- bailiwick_02
+- bailiwick_03
+- bailiwick_04
+- staple_district_01
+- staple_district_02
+- staple_district_03
+- staple_district_04
+- endowment_district_01
+- endowment_district_02
+- endowment_district_03
+- endowment_district_04
+- assay_district_01
+- assay_district_02
+- assay_district_03
+- assay_district_04
+- ducal_residence_01
+- ducal_residence_02
+- ducal_residence_03
+- ducal_residence_04
+- governance_district_01
+- governance_district_02
+- governance_district_03
+- governance_district_04
+- survey_office_01
+- survey_office_02
+- survey_office_03
+- survey_office_04
+- survey_office_05
+- verderers_hall_01
+- verderers_hall_02
+- verderers_hall_03
+- verderers_hall_04
+- verderers_hall_05
+- colonization_office_01
+- colonization_office_02
+- colonization_office_03
+- colonization_office_04
+- colonization_office_05
+- ducal_chase_01
+- ducal_chase_02
+- ducal_chase_03
+- ducal_chase_04
+- ducal_chase_05
+- courts_of_commons_01
+- courts_of_commons_02
+- courts_of_commons_03
+- courts_of_commons_04
+- courts_of_commons_05
+- staple_court_01
+- staple_court_02
+- staple_court_03
+- staple_court_04
+- staple_court_05
+- court_of_the_towns_01
+- court_of_the_towns_02
+- court_of_the_towns_03
+- court_of_the_towns_04
+- court_of_the_towns_05
+- alnagers_office_01
+- alnagers_office_02
+- alnagers_office_03
+- alnagers_office_04
+- alnagers_office_05
+- admiralty_court_01
+- admiralty_court_02
+- admiralty_court_03
+- admiralty_court_04
+- admiralty_court_05
+- grain_exchange_01
+- grain_exchange_02
+- grain_exchange_03
+- grain_exchange_04
+- grain_exchange_05
+- town_liberties_court_01
+- town_liberties_court_02
+- town_liberties_court_03
+- town_liberties_court_04
+- town_liberties_court_05
+- consistory_01
+- consistory_02
+- consistory_03
+- consistory_04
+- consistory_05
+- almonry_general_01
+- almonry_general_02
+- almonry_general_03
+- almonry_general_04
+- almonry_general_05
+- pilgrimage_office_01
+- pilgrimage_office_02
+- pilgrimage_office_03
+- pilgrimage_office_04
+- pilgrimage_office_05
+- mining_office_01
+- mining_office_02
+- mining_office_03
+- mining_office_04
+- mining_office_05
+- exchequer_01
+- exchequer_02
+- exchequer_03
+- exchequer_04
+- exchequer_05
+- minting_court_01
+- minting_court_02
+- minting_court_03
+- minting_court_04
+- minting_court_05
+- prerogative_chancery_01
+- prerogative_chancery_02
+- prerogative_chancery_03
+- prerogative_chancery_04
+- prerogative_chancery_05
+- reckoning_school_01
+- reckoning_school_02
+- reckoning_school_03
+- reckoning_school_04
+- reckoning_school_05
+- feodarys_circuit_01
+- feodarys_circuit_02
+- feodarys_circuit_03
+- feodarys_circuit_04
+- feodarys_circuit_05
+- state_granary_01
+- state_granary_02
+- state_granary_03
+- state_granary_04
+- state_granary_05
+- celestial_great_barracks_01
+- celestial_great_barracks_02
+- celestial_great_barracks_03
+- celestial_great_barracks_04
+- celestial_great_barracks_05
+
+### 99_ach_buildings.txt（12 条目）
+
+- oath_warriors_building_01
+- oath_warriors_building_02
+- oath_warriors_building_03
+- oath_warriors_building_04
+- oath_faithful_building_01
+- oath_faithful_building_02
+- oath_faithful_building_03
+- oath_faithful_building_04
+- oath_poor_building_01
+- oath_poor_building_02
+- oath_poor_building_03
+- oath_poor_building_04
+
+### 99_background_graphics_buildings.txt（6 条目）
+
+- walls_00
+- walls_01_tribal
+- walls_01
+- walls_02
+- walls_03
+- walls_04
+
+### entrepot_district_buildings/00_entrepot_district_buildings.txt（29 条目）
+
+- pb_entrepot_01
+- pb_entrepot_02
+- pb_entrepot_03
+- pb_entrepot_04
+- entrepot_aromatic_market_1
+- entrepot_aromatic_market_2
+- entrepot_aromatic_market_3
+- entrepot_aromatic_market_4
+- entrepot_aromatic_market_5
+- entrepot_mercers_market_1
+- entrepot_mercers_market_2
+- entrepot_mercers_market_3
+- entrepot_mercers_market_4
+- entrepot_mercers_market_5
+- entrepot_additive_market_1
+- entrepot_additive_market_2
+- entrepot_additive_market_3
+- entrepot_additive_market_4
+- entrepot_additive_market_5
+- entrepot_fabric_market_1
+- entrepot_fabric_market_2
+- entrepot_fabric_market_3
+- entrepot_fabric_market_4
+- entrepot_fabric_market_5
+- entrepot_jewelers_market_1
+- entrepot_jewelers_market_2
+- entrepot_jewelers_market_3
+- entrepot_jewelers_market_4
+- entrepot_jewelers_market_5
+
+### great_district_buildings/republic_great_plaza_district_buildings.txt（69 条目）
+
+- pb_republic_city_hall_01
+- pb_republic_city_hall_02
+- pb_republic_city_hall_03
+- pb_republic_city_hall_04
+- republic_loggia_01
+- republic_loggia_02
+- republic_loggia_03
+- republic_loggia_04
+- republic_loggia_05
+- republic_statute_hall_01
+- republic_statute_hall_02
+- republic_statute_hall_03
+- republic_statute_hall_04
+- republic_statute_hall_05
+- republic_council_chamber_01
+- republic_council_chamber_02
+- republic_council_chamber_03
+- republic_council_chamber_04
+- republic_council_chamber_05
+- republic_debt_office_01
+- republic_debt_office_02
+- republic_debt_office_03
+- republic_debt_office_04
+- republic_debt_office_05
+- republic_civic_hospital_01
+- republic_civic_hospital_02
+- republic_civic_hospital_03
+- republic_civic_hospital_04
+- republic_civic_hospital_05
+- republic_weigh_house_01
+- republic_weigh_house_02
+- republic_weigh_house_03
+- republic_weigh_house_04
+- republic_weigh_house_05
+- republic_clock_tower_01
+- republic_clock_tower_02
+- republic_clock_tower_03
+- republic_clock_tower_04
+- republic_clock_tower_05
+- republic_civic_ward_01
+- republic_civic_ward_02
+- republic_civic_ward_03
+- republic_civic_ward_04
+- republic_civic_ward_05
+- republic_league_chapter_house_01
+- republic_league_chapter_house_02
+- republic_league_chapter_house_03
+- republic_league_chapter_house_04
+- republic_league_chapter_house_05
+- republic_podesta_residence_01
+- republic_podesta_residence_02
+- republic_podesta_residence_03
+- republic_podesta_residence_04
+- republic_podesta_residence_05
+- republic_fountain_01
+- republic_fountain_02
+- republic_fountain_03
+- republic_fountain_04
+- republic_fountain_05
+- republic_basilica_01
+- republic_basilica_02
+- republic_basilica_03
+- republic_basilica_04
+- republic_basilica_05
+- patron_saint_sanctuary_1
+- patron_saint_sanctuary_2
+- patron_saint_sanctuary_3
+- patron_saint_sanctuary_4
+- patron_saint_sanctuary_5
+
+### holding_buildings/00_castle_buildings.txt（4 条目）
 
 - castle_01
 - castle_02
 - castle_03
 - castle_04
 
-### 00_city_buildings.txt（12 条目）
+### holding_buildings/00_city_buildings.txt（4 条目）
 
 - city_01
 - city_02
 - city_03
 - city_04
-- guild_halls_01
-- guild_halls_02
-- guild_halls_03
-- guild_halls_04
-- guild_halls_05
-- guild_halls_06
-- guild_halls_07
-- guild_halls_08
 
-### 00_common_buildings.txt（8 条目）
+### holding_buildings/00_nomad_buildings.txt（2 条目）
 
-- hospices_01
-- hospices_02
-- hospices_03
-- hospices_04
-- hospices_05
-- hospices_06
-- hospices_07
-- hospices_08
+- nomadic_camp_01
+- herder_camp_01
 
-### 00_duchy_capital_buildings.txt（47 条目）
+### holding_buildings/00_temple_buildings.txt（4 条目）
 
-- dragon_kiln_01
-- dragon_kiln_02
-- dragon_kiln_03
-- examination_hall_01
-- examination_hall_02
-- examination_hall_03
-- tower_of_silence_01
-- charnel_grounds_01
-- charnel_grounds_02
-- charnel_grounds_03
-- burial_site_01
-- burial_site_02
-- burial_site_03
-- royal_garden_01
-- royal_garden_02
-- royal_garden_03
-- military_academy_01
-- military_academy_02
-- military_academy_03
-- march_01
-- march_02
-- march_03
-- siege_works_01
-- siege_works_02
-- siege_works_03
-- royal_armory_01
-- royal_armory_02
-- royal_armory_03
-- jousting_lists_01
-- jousting_lists_02
-- jousting_lists_03
-- blacksmiths_01
-- blacksmiths_02
-- blacksmiths_03
-- archery_ranges_01
-- archery_ranges_02
-- archery_ranges_03
-- tax_assessor_01
-- tax_assessor_02
-- tax_assessor_03
-- leisure_palace_01
-- leisure_palace_02
-- leisure_palace_03
-- royal_forest_01
-- royal_forest_02
-- royal_forest_03
-- great_megalith_01
+- temple_01
+- temple_02
+- temple_03
+- temple_04
 
-### 00_legendary_buildings.txt（5 条目）
+### holding_buildings/00_tribal_buildings.txt（2 条目）
+
+- tribe_01
+- tribe_02
+
+### holding_buildings/temple_citadel_buildings.txt（4 条目）
+
+- temple_citadel_01
+- temple_citadel_02
+- temple_citadel_03
+- temple_citadel_04
+
+### holding_district_buildings/00_castle_district_buildings.txt（30 条目）
+
+- castle_garrison_1
+- castle_garrison_2
+- castle_garrison_3
+- castle_garrison_4
+- castle_garrison_5
+- castle_great_hall_1
+- castle_great_hall_2
+- castle_great_hall_3
+- castle_great_hall_4
+- castle_great_hall_5
+- castle_court_1
+- castle_court_2
+- castle_court_3
+- castle_court_4
+- castle_court_5
+- castle_citadel_1
+- castle_citadel_2
+- castle_citadel_3
+- castle_citadel_4
+- castle_citadel_5
+- castle_training_grounds_1
+- castle_training_grounds_2
+- castle_training_grounds_3
+- castle_training_grounds_4
+- castle_training_grounds_5
+- castle_larder_1
+- castle_larder_2
+- castle_larder_3
+- castle_larder_4
+- castle_larder_5
+
+### holding_district_buildings/00_city_district_buildings.txt（25 条目）
+
+- city_town_market_1
+- city_town_market_2
+- city_town_market_3
+- city_town_market_4
+- city_town_market_5
+- city_town_watch_1
+- city_town_watch_2
+- city_town_watch_3
+- city_town_watch_4
+- city_town_watch_5
+- city_local_shrine_1
+- city_local_shrine_2
+- city_local_shrine_3
+- city_local_shrine_4
+- city_local_shrine_5
+- city_magistrate_1
+- city_magistrate_2
+- city_magistrate_3
+- city_magistrate_4
+- city_magistrate_5
+- city_council_hall_1
+- city_council_hall_2
+- city_council_hall_3
+- city_council_hall_4
+- city_council_hall_5
+
+### holding_district_buildings/00_temple_citadel_district_buildings.txt（12 条目）
+
+- temple_citadel_tithe_collection_1
+- temple_citadel_tithe_collection_2
+- temple_citadel_tithe_collection_3
+- temple_citadel_tithe_collection_4
+- temple_citadel_shrine_1
+- temple_citadel_shrine_2
+- temple_citadel_shrine_3
+- temple_citadel_shrine_4
+- temple_citadel_outer_wall_1
+- temple_citadel_outer_wall_2
+- temple_citadel_outer_wall_3
+- temple_citadel_outer_wall_4
+
+### holding_district_buildings/00_temple_district_buildings.txt（25 条目）
+
+- temple_hostels_1
+- temple_hostels_2
+- temple_hostels_3
+- temple_hostels_4
+- temple_hostels_5
+- temple_reliquary_1
+- temple_reliquary_2
+- temple_reliquary_3
+- temple_reliquary_4
+- temple_reliquary_5
+- temple_religious_fairs_1
+- temple_religious_fairs_2
+- temple_religious_fairs_3
+- temple_religious_fairs_4
+- temple_religious_fairs_5
+- temple_hospices_1
+- temple_hospices_2
+- temple_hospices_3
+- temple_hospices_4
+- temple_hospices_5
+- megalith_1
+- megalith_2
+- megalith_3
+- megalith_4
+- megalith_5
+
+### holding_district_buildings/00_tribal_district_buildings.txt（6 条目）
+
+- tribe_warriors_compound_1
+- tribe_warriors_compound_2
+- tribe_craftsmens_lodge_1
+- tribe_craftsmens_lodge_2
+- tribe_sacred_grove_1
+- tribe_sacred_grove_2
+
+### pam_buildings.txt（7 条目）
+
+- great_project_cathedral_01
+- great_project_cathedral_02
+- great_project_cathedral_03
+- pam_abbey_of_st_gall_01
+- pam_palais_de_papes_01
+- pam_lateran_basilica_01
+- pam_reims_cathedral_01
+
+### regular_district_buildings/00_border_forts_district_buildings.txt（40 条目）
+
+- watchtowers_1
+- watchtowers_2
+- watchtowers_3
+- watchtowers_4
+- watchtowers_5
+- scout_camps_1
+- scout_camps_2
+- scout_camps_3
+- scout_camps_4
+- scout_camps_5
+- toll_gates_1
+- toll_gates_2
+- toll_gates_3
+- toll_gates_4
+- toll_gates_5
+- militia_musterhouses_1
+- militia_musterhouses_2
+- militia_musterhouses_3
+- militia_musterhouses_4
+- militia_musterhouses_5
+- victualing_depots_1
+- victualing_depots_2
+- victualing_depots_3
+- victualing_depots_4
+- victualing_depots_5
+- palisaded_villages_1
+- palisaded_villages_2
+- palisaded_villages_3
+- palisaded_villages_4
+- palisaded_villages_5
+- marcher_garrisons_1
+- marcher_garrisons_2
+- marcher_garrisons_3
+- marcher_garrisons_4
+- marcher_garrisons_5
+- border_bulwarks_1
+- border_bulwarks_2
+- border_bulwarks_3
+- border_bulwarks_4
+- border_bulwarks_5
+
+### regular_district_buildings/00_bureaucratic_district_buildings.txt（60 条目）
+
+- city_archive_1
+- city_archive_2
+- city_archive_3
+- city_archive_4
+- city_archive_5
+- bureaucratic_mint_1
+- bureaucratic_mint_2
+- bureaucratic_mint_3
+- bureaucratic_mint_4
+- bureaucratic_mint_5
+- postmasters_office_1
+- postmasters_office_2
+- postmasters_office_3
+- postmasters_office_4
+- postmasters_office_5
+- census_register_1
+- census_register_2
+- census_register_3
+- census_register_4
+- census_register_5
+- college_of_arms_1
+- college_of_arms_2
+- college_of_arms_3
+- college_of_arms_4
+- college_of_arms_5
+- printing_press_1
+- printing_press_2
+- printing_press_3
+- printing_press_4
+- printing_press_5
+- court_of_law_1
+- court_of_law_2
+- court_of_law_3
+- court_of_law_4
+- court_of_law_5
+- notary_1
+- notary_2
+- notary_3
+- notary_4
+- notary_5
+- diwan_al_zimam_1
+- diwan_al_zimam_2
+- diwan_al_zimam_3
+- diwan_al_zimam_4
+- diwan_al_zimam_5
+- administrative_palace_1
+- administrative_palace_2
+- administrative_palace_3
+- administrative_palace_4
+- administrative_palace_5
+- family_lineage_archive_1
+- family_lineage_archive_2
+- family_lineage_archive_3
+- family_lineage_archive_4
+- family_lineage_archive_5
+- capital_magistracy_1
+- capital_magistracy_2
+- capital_magistracy_3
+- capital_magistracy_4
+- capital_magistracy_5
+
+### regular_district_buildings/00_entertainment_district_buildings.txt（50 条目）
+
+- tavern_street_1
+- tavern_street_2
+- tavern_street_3
+- tavern_street_4
+- tavern_street_5
+- cookshops_1
+- cookshops_2
+- cookshops_3
+- cookshops_4
+- cookshops_5
+- public_execution_site_1
+- public_execution_site_2
+- public_execution_site_3
+- public_execution_site_4
+- public_execution_site_5
+- performance_stage_1
+- performance_stage_2
+- performance_stage_3
+- performance_stage_4
+- performance_stage_5
+- bathhouses_1
+- bathhouses_2
+- bathhouses_3
+- bathhouses_4
+- bathhouses_5
+- brothels_1
+- brothels_2
+- brothels_3
+- brothels_4
+- brothels_5
+- guild_feast_hall_1
+- guild_feast_hall_2
+- guild_feast_hall_3
+- guild_feast_hall_4
+- guild_feast_hall_5
+- enclosed_lists_1
+- enclosed_lists_2
+- enclosed_lists_3
+- enclosed_lists_4
+- enclosed_lists_5
+- banquet_hall_1
+- banquet_hall_2
+- banquet_hall_3
+- banquet_hall_4
+- banquet_hall_5
+- tea_house_1
+- tea_house_2
+- tea_house_3
+- tea_house_4
+- tea_house_5
+
+### regular_district_buildings/00_guild_district_buildings.txt（100 条目）
+
+- brewers_guild_1
+- brewers_guild_2
+- brewers_guild_3
+- brewers_guild_4
+- brewers_guild_5
+- luxury_carpet_workshop_1
+- luxury_carpet_workshop_2
+- luxury_carpet_workshop_3
+- luxury_carpet_workshop_4
+- luxury_carpet_workshop_5
+- guild_carpenters_1
+- guild_carpenters_2
+- guild_carpenters_3
+- guild_carpenters_4
+- guild_carpenters_5
+- guild_butchery_1
+- guild_butchery_2
+- guild_butchery_3
+- guild_butchery_4
+- guild_butchery_5
+- guild_builders_1
+- guild_builders_2
+- guild_builders_3
+- guild_builders_4
+- guild_builders_5
+- guild_tannery_1
+- guild_tannery_2
+- guild_tannery_3
+- guild_tannery_4
+- guild_tannery_5
+- guild_parchment_workshop_1
+- guild_parchment_workshop_2
+- guild_parchment_workshop_3
+- guild_parchment_workshop_4
+- guild_parchment_workshop_5
+- blacksmiths_guild_1
+- blacksmiths_guild_2
+- blacksmiths_guild_3
+- blacksmiths_guild_4
+- blacksmiths_guild_5
+- bladesmiths_of_toledo_1
+- bladesmiths_of_toledo_2
+- bladesmiths_of_toledo_3
+- bladesmiths_of_toledo_4
+- bladesmiths_of_toledo_5
+- weavers_guild_1
+- weavers_guild_2
+- weavers_guild_3
+- weavers_guild_4
+- weavers_guild_5
+- guild_textiles_silk_1
+- guild_textiles_silk_2
+- guild_textiles_silk_3
+- guild_textiles_silk_4
+- guild_textiles_silk_5
+- guild_glassmakers_1
+- guild_glassmakers_2
+- guild_glassmakers_3
+- guild_glassmakers_4
+- guild_glassmakers_5
+- guild_goldsmiths_1
+- guild_goldsmiths_2
+- guild_goldsmiths_3
+- guild_goldsmiths_4
+- guild_goldsmiths_5
+- guild_hall_1
+- guild_hall_2
+- guild_hall_3
+- guild_hall_4
+- guild_hall_5
+- guild_charities_1
+- guild_charities_2
+- guild_charities_3
+- guild_charities_4
+- guild_charities_5
+- guild_hospitals_1
+- guild_hospitals_2
+- guild_hospitals_3
+- guild_hospitals_4
+- guild_hospitals_5
+- guild_notary_1
+- guild_notary_2
+- guild_notary_3
+- guild_notary_4
+- guild_notary_5
+- guild_court_of_law_1
+- guild_court_of_law_2
+- guild_court_of_law_3
+- guild_court_of_law_4
+- guild_court_of_law_5
+- scribe_shop_1
+- scribe_shop_2
+- scribe_shop_3
+- scribe_shop_4
+- scribe_shop_5
+- scholarly_guilds_1
+- scholarly_guilds_2
+- scholarly_guilds_3
+- scholarly_guilds_4
+- scholarly_guilds_5
+
+### regular_district_buildings/00_household_district_buildings.txt（55 条目）
+
+- royal_great_hall_1
+- royal_great_hall_2
+- royal_great_hall_3
+- royal_great_hall_4
+- royal_great_hall_5
+- royal_chapel_1
+- royal_chapel_2
+- royal_chapel_3
+- royal_chapel_4
+- royal_chapel_5
+- knights_stables_1
+- knights_stables_2
+- knights_stables_3
+- knights_stables_4
+- knights_stables_5
+- royal_knights_hall_1
+- royal_knights_hall_2
+- royal_knights_hall_3
+- royal_knights_hall_4
+- royal_knights_hall_5
+- royal_court_workshops_1
+- royal_court_workshops_2
+- royal_court_workshops_3
+- royal_court_workshops_4
+- royal_court_workshops_5
+- royal_wardrobe_1
+- royal_wardrobe_2
+- royal_wardrobe_3
+- royal_wardrobe_4
+- royal_wardrobe_5
+- royal_mausoleum_1
+- royal_mausoleum_2
+- royal_mausoleum_3
+- royal_mausoleum_4
+- royal_mausoleum_5
+- royal_palace_library_1
+- royal_palace_library_2
+- royal_palace_library_3
+- royal_palace_library_4
+- royal_palace_library_5
+- ambassadorial_residences_1
+- ambassadorial_residences_2
+- ambassadorial_residences_3
+- ambassadorial_residences_4
+- ambassadorial_residences_5
+- royal_inner_court_1
+- royal_inner_court_2
+- royal_inner_court_3
+- royal_inner_court_4
+- royal_inner_court_5
+- banner_halls_1
+- banner_halls_2
+- banner_halls_3
+- banner_halls_4
+- banner_halls_5
+
+### regular_district_buildings/00_mandala_district_buildings.txt（40 条目）
+
+- temple_viharas_1
+- temple_viharas_2
+- temple_viharas_3
+- temple_viharas_4
+- temple_viharas_5
+- audience_pavilions_1
+- audience_pavilions_2
+- audience_pavilions_3
+- audience_pavilions_4
+- audience_pavilions_5
+- donation_store_1
+- donation_store_2
+- donation_store_3
+- donation_store_4
+- donation_store_5
+- martial_cloisters_1
+- martial_cloisters_2
+- martial_cloisters_3
+- martial_cloisters_4
+- martial_cloisters_5
+- sacred_steles_1
+- sacred_steles_2
+- sacred_steles_3
+- sacred_steles_4
+- sacred_steles_5
+- temple_treasuries_1
+- temple_treasuries_2
+- temple_treasuries_3
+- temple_treasuries_4
+- temple_treasuries_5
+- dharma_halls_1
+- dharma_halls_2
+- dharma_halls_3
+- dharma_halls_4
+- dharma_halls_5
+- devaraja_image_1
+- devaraja_image_2
+- devaraja_image_3
+- devaraja_image_4
+- devaraja_image_5
+
+### regular_district_buildings/00_manor_houses_district_buildings.txt（40 条目）
+
+- manor_tower_1
+- manor_tower_2
+- manor_tower_3
+- manor_tower_4
+- manor_tower_5
+- manor_hunting_grounds_1
+- manor_hunting_grounds_2
+- manor_hunting_grounds_3
+- manor_hunting_grounds_4
+- manor_hunting_grounds_5
+- manor_kitchens_1
+- manor_kitchens_2
+- manor_kitchens_3
+- manor_kitchens_4
+- manor_kitchens_5
+- manor_chamber_blocks_1
+- manor_chamber_blocks_2
+- manor_chamber_blocks_3
+- manor_chamber_blocks_4
+- manor_chamber_blocks_5
+- manor_buying_agent_1
+- manor_buying_agent_2
+- manor_buying_agent_3
+- manor_buying_agent_4
+- manor_buying_agent_5
+- manor_reeves_office_1
+- manor_reeves_office_2
+- manor_reeves_office_3
+- manor_reeves_office_4
+- manor_reeves_office_5
+- manor_parlor_1
+- manor_parlor_2
+- manor_parlor_3
+- manor_parlor_4
+- manor_parlor_5
+- manor_study_1
+- manor_study_2
+- manor_study_3
+- manor_study_4
+- manor_study_5
+
+### regular_district_buildings/00_market_district_buildings.txt（45 条目）
+
+- day_market_1
+- day_market_2
+- day_market_3
+- day_market_4
+- day_market_5
+- livestock_market_1
+- livestock_market_2
+- livestock_market_3
+- livestock_market_4
+- livestock_market_5
+- fabric_market_1
+- fabric_market_2
+- fabric_market_3
+- fabric_market_4
+- fabric_market_5
+- merchant_lodging_houses_1
+- merchant_lodging_houses_2
+- merchant_lodging_houses_3
+- merchant_lodging_houses_4
+- merchant_lodging_houses_5
+- moneychangers_1
+- moneychangers_2
+- moneychangers_3
+- moneychangers_4
+- moneychangers_5
+- market_court_1
+- market_court_2
+- market_court_3
+- market_court_4
+- market_court_5
+- wholesale_market_1
+- wholesale_market_2
+- wholesale_market_3
+- wholesale_market_4
+- wholesale_market_5
+- tailor_shops_1
+- tailor_shops_2
+- tailor_shops_3
+- tailor_shops_4
+- tailor_shops_5
+- high_street_market_1
+- high_street_market_2
+- high_street_market_3
+- high_street_market_4
+- high_street_market_5
+
+### regular_district_buildings/00_military_district_buildings.txt（85 条目）
+
+- mustering_grounds_1
+- mustering_grounds_2
+- mustering_grounds_3
+- mustering_grounds_4
+- mustering_grounds_5
+- militia_camps_1
+- militia_camps_2
+- militia_camps_3
+- militia_camps_4
+- militia_camps_5
+- archery_ranges_1
+- archery_ranges_2
+- archery_ranges_3
+- archery_ranges_4
+- archery_ranges_5
+- cavalry_stables_1
+- cavalry_stables_2
+- cavalry_stables_3
+- cavalry_stables_4
+- cavalry_stables_5
+- horse_archer_paddocks_1
+- horse_archer_paddocks_2
+- horse_archer_paddocks_3
+- horse_archer_paddocks_4
+- horse_archer_paddocks_5
+- armorer_1
+- armorer_2
+- armorer_3
+- armorer_4
+- armorer_5
+- heavy_cavalry_compound_1
+- heavy_cavalry_compound_2
+- heavy_cavalry_compound_3
+- heavy_cavalry_compound_4
+- heavy_cavalry_compound_5
+- military_infirmaries_1
+- military_infirmaries_2
+- military_infirmaries_3
+- military_infirmaries_4
+- military_infirmaries_5
+- regimental_fort_1
+- regimental_fort_2
+- regimental_fort_3
+- regimental_fort_4
+- regimental_fort_5
+- gunsmiths_1
+- gunsmiths_2
+- gunsmiths_3
+- gunsmiths_4
+- gunsmiths_5
+- elephantry_barracks_1
+- elephantry_barracks_2
+- elephantry_barracks_3
+- elephantry_barracks_4
+- elephantry_barracks_5
+- camelry_compound_1
+- camelry_compound_2
+- camelry_compound_3
+- camelry_compound_4
+- camelry_compound_5
+- jungle_fort_1
+- jungle_fort_2
+- jungle_fort_3
+- jungle_fort_4
+- jungle_fort_5
+- workers_camps_1
+- workers_camps_2
+- workers_camps_3
+- workers_camps_4
+- workers_camps_5
+- siegecraft_academies_1
+- siegecraft_academies_2
+- siegecraft_academies_3
+- siegecraft_academies_4
+- siegecraft_academies_5
+- powder_mills_1
+- powder_mills_2
+- powder_mills_3
+- powder_mills_4
+- powder_mills_5
+- surveyors_hall_1
+- surveyors_hall_2
+- surveyors_hall_3
+- surveyors_hall_4
+- surveyors_hall_5
+
+### regular_district_buildings/00_patrician_district_buildings.txt（70 条目）
+
+- reception_suites_1
+- reception_suites_2
+- reception_suites_3
+- reception_suites_4
+- reception_suites_5
+- confectionaries_1
+- confectionaries_2
+- confectionaries_3
+- confectionaries_4
+- confectionaries_5
+- wine_cellars_1
+- wine_cellars_2
+- wine_cellars_3
+- wine_cellars_4
+- wine_cellars_5
+- family_chapels_1
+- family_chapels_2
+- family_chapels_3
+- family_chapels_4
+- family_chapels_5
+- fine_tailors_1
+- fine_tailors_2
+- fine_tailors_3
+- fine_tailors_4
+- fine_tailors_5
+- confraternity_hall_1
+- confraternity_hall_2
+- confraternity_hall_3
+- confraternity_hall_4
+- confraternity_hall_5
+- patrician_audience_halls_1
+- patrician_audience_halls_2
+- patrician_audience_halls_3
+- patrician_audience_halls_4
+- patrician_audience_halls_5
+- funerary_complexes_1
+- funerary_complexes_2
+- funerary_complexes_3
+- funerary_complexes_4
+- funerary_complexes_5
+- garden_calligraphy_houses_1
+- garden_calligraphy_houses_2
+- garden_calligraphy_houses_3
+- garden_calligraphy_houses_4
+- garden_calligraphy_houses_5
+- garden_complex_1
+- garden_complex_2
+- garden_complex_3
+- garden_complex_4
+- garden_complex_5
+- writing_offices_1
+- writing_offices_2
+- writing_offices_3
+- writing_offices_4
+- writing_offices_5
+- menageries_1
+- menageries_2
+- menageries_3
+- menageries_4
+- menageries_5
+- perfume_street_1
+- perfume_street_2
+- perfume_street_3
+- perfume_street_4
+- perfume_street_5
+- fortified_compounds_1
+- fortified_compounds_2
+- fortified_compounds_3
+- fortified_compounds_4
+- fortified_compounds_5
+
+### regular_district_buildings/00_port_district_buildings.txt（35 条目）
+
+- shipyards_1
+- shipyards_2
+- shipyards_3
+- shipyards_4
+- shipyards_5
+- wharf_1
+- wharf_2
+- wharf_3
+- wharf_4
+- wharf_5
+- victualing_quarter_1
+- victualing_quarter_2
+- victualing_quarter_3
+- victualing_quarter_4
+- victualing_quarter_5
+- customs_house_1
+- customs_house_2
+- customs_house_3
+- customs_house_4
+- customs_house_5
+- sailors_taverns_1
+- sailors_taverns_2
+- sailors_taverns_3
+- sailors_taverns_4
+- sailors_taverns_5
+- foreign_trade_quarter_1
+- foreign_trade_quarter_2
+- foreign_trade_quarter_3
+- foreign_trade_quarter_4
+- foreign_trade_quarter_5
+- maritime_court_1
+- maritime_court_2
+- maritime_court_3
+- maritime_court_4
+- maritime_court_5
+
+### regular_district_buildings/00_religious_community_district_buildings.txt（65 条目）
+
+- hostelry_1
+- hostelry_2
+- hostelry_3
+- hostelry_4
+- hostelry_5
+- herbal_gardens_1
+- herbal_gardens_2
+- herbal_gardens_3
+- herbal_gardens_4
+- herbal_gardens_5
+- monastic_grange_1
+- monastic_grange_2
+- monastic_grange_3
+- monastic_grange_4
+- monastic_grange_5
+- religious_school_1
+- religious_school_2
+- religious_school_3
+- religious_school_4
+- religious_school_5
+- cemeteries_1
+- cemeteries_2
+- cemeteries_3
+- cemeteries_4
+- cemeteries_5
+- infirmary_1
+- infirmary_2
+- infirmary_3
+- infirmary_4
+- infirmary_5
+- walled_compound_1
+- walled_compound_2
+- walled_compound_3
+- walled_compound_4
+- walled_compound_5
+- water_management_1
+- water_management_2
+- water_management_3
+- water_management_4
+- water_management_5
+- forges_and_bloomeries_1
+- forges_and_bloomeries_2
+- forges_and_bloomeries_3
+- forges_and_bloomeries_4
+- forges_and_bloomeries_5
+- spiritual_endowment_1
+- spiritual_endowment_2
+- spiritual_endowment_3
+- spiritual_endowment_4
+- spiritual_endowment_5
+- temple_archives_1
+- temple_archives_2
+- temple_archives_3
+- temple_archives_4
+- temple_archives_5
+- ribat_1
+- ribat_2
+- ribat_3
+- ribat_4
+- ribat_5
+- sacred_grove_1
+- sacred_grove_2
+- sacred_grove_3
+- sacred_grove_4
+- sacred_grove_5
+
+### regular_district_buildings/00_temple_district_buildings.txt（65 条目）
+
+- sacristy_1
+- sacristy_2
+- sacristy_3
+- sacristy_4
+- sacristy_5
+- processions_2
+- processions_3
+- processions_4
+- processions_5
+- belltower_1
+- belltower_2
+- belltower_3
+- belltower_4
+- belltower_5
+- minaret_1
+- minaret_2
+- minaret_3
+- minaret_4
+- minaret_5
+- scriptorium_1
+- scriptorium_2
+- scriptorium_3
+- scriptorium_4
+- scriptorium_5
+- temple_school_1
+- temple_school_2
+- temple_school_3
+- temple_school_4
+- temple_school_5
+- clerical_housing_1
+- clerical_housing_2
+- clerical_housing_3
+- clerical_housing_4
+- clerical_housing_5
+- charities_1
+- charities_2
+- charities_3
+- charities_4
+- charities_5
+- hospitals_1
+- hospitals_2
+- hospitals_3
+- hospitals_4
+- hospitals_5
+- church_treasury_1
+- church_treasury_2
+- church_treasury_3
+- church_treasury_4
+- church_treasury_5
+- processions_1
+- ecclesiastical_courts_1
+- ecclesiastical_courts_2
+- ecclesiastical_courts_3
+- ecclesiastical_courts_4
+- ecclesiastical_courts_5
+- sacred_pool_1
+- sacred_pool_2
+- sacred_pool_3
+- sacred_pool_4
+- sacred_pool_5
+- sacred_forge_1
+- sacred_forge_2
+- sacred_forge_3
+- sacred_forge_4
+- sacred_forge_5
+
+### regular_district_buildings/00_tribal_economy_and_prestige_district_buildings.txt（45 条目）
+
+- chiefs_hall_1
+- chiefs_hall_2
+- chiefs_hall_3
+- chiefs_hall_4
+- chiefs_hall_5
+- hunters_lodges_1
+- hunters_lodges_2
+- hunters_lodges_3
+- hunters_lodges_4
+- hunters_lodges_5
+- foraging_storage_1
+- foraging_storage_2
+- foraging_storage_3
+- foraging_storage_4
+- foraging_storage_5
+- communal_farming_1
+- communal_farming_2
+- communal_farming_3
+- communal_farming_4
+- communal_farming_5
+- pastures_1
+- pastures_2
+- pastures_3
+- pastures_4
+- pastures_5
+- trophy_hall_1
+- trophy_hall_2
+- trophy_hall_3
+- trophy_hall_4
+- trophy_hall_5
+- temple_sanctuary_1
+- temple_sanctuary_2
+- temple_sanctuary_3
+- temple_sanctuary_4
+- temple_sanctuary_5
+- traders_meet_1
+- traders_meet_2
+- traders_meet_3
+- traders_meet_4
+- traders_meet_5
+- tinkerers_shops_1
+- tinkerers_shops_2
+- tinkerers_shops_3
+- tinkerers_shops_4
+- tinkerers_shops_5
+
+### regular_district_buildings/00_tribal_military_district_buildings.txt（40 条目）
+
+- warrior_households_1
+- warrior_households_2
+- warrior_households_3
+- warrior_households_4
+- warrior_households_5
+- armed_clans_1
+- armed_clans_2
+- armed_clans_3
+- armed_clans_4
+- armed_clans_5
+- hunter_lodgings_1
+- hunter_lodgings_2
+- hunter_lodgings_3
+- hunter_lodgings_4
+- hunter_lodgings_5
+- war_storage_1
+- war_storage_2
+- war_storage_3
+- war_storage_4
+- war_storage_5
+- martial_festivals_1
+- martial_festivals_2
+- martial_festivals_3
+- martial_festivals_4
+- martial_festivals_5
+- fortified_holds_1
+- fortified_holds_2
+- fortified_holds_3
+- fortified_holds_4
+- fortified_holds_5
+- keen_weapons_1
+- keen_weapons_2
+- keen_weapons_3
+- keen_weapons_4
+- keen_weapons_5
+- chiefly_armsmen_1
+- chiefly_armsmen_2
+- chiefly_armsmen_3
+- chiefly_armsmen_4
+- chiefly_armsmen_5
+
+### regular_district_buildings/00_tribal_wanua_district_buildings.txt（45 条目）
+
+- bartering_markets_1
+- bartering_markets_2
+- bartering_markets_3
+- bartering_markets_4
+- bartering_markets_5
+- idjang_forts_1
+- idjang_forts_2
+- idjang_forts_3
+- idjang_forts_4
+- idjang_forts_5
+- sagely_elders_1
+- sagely_elders_2
+- sagely_elders_3
+- sagely_elders_4
+- sagely_elders_5
+- water_temples_1
+- water_temples_2
+- water_temples_3
+- water_temples_4
+- water_temples_5
+- harvest_festivals_1
+- harvest_festivals_2
+- harvest_festivals_3
+- harvest_festivals_4
+- harvest_festivals_5
+- kora_kora_yards_1
+- kora_kora_yards_2
+- kora_kora_yards_3
+- kora_kora_yards_4
+- kora_kora_yards_5
+- chiefly_longhouse_1
+- chiefly_longhouse_2
+- chiefly_longhouse_3
+- chiefly_longhouse_4
+- chiefly_longhouse_5
+- wantilan_compound_1
+- wantilan_compound_2
+- wantilan_compound_3
+- wantilan_compound_4
+- wantilan_compound_5
+- storehouses_1
+- storehouses_2
+- storehouses_3
+- storehouses_4
+- storehouses_5
+
+### regular_district_buildings/00_urban_housing_district_buildings.txt（40 条目）
+
+- communal_wells_1
+- communal_wells_2
+- communal_wells_3
+- communal_wells_4
+- communal_wells_5
+- burgage_plots_1
+- burgage_plots_2
+- burgage_plots_3
+- burgage_plots_4
+- burgage_plots_5
+- noble_townhouses_1
+- noble_townhouses_2
+- noble_townhouses_3
+- noble_townhouses_4
+- noble_townhouses_5
+- suburb_1
+- suburb_2
+- suburb_3
+- suburb_4
+- suburb_5
+- travellers_inns_1
+- travellers_inns_2
+- travellers_inns_3
+- travellers_inns_4
+- travellers_inns_5
+- civic_projects_1
+- civic_projects_2
+- civic_projects_3
+- civic_projects_4
+- civic_projects_5
+- foreigners_quarter_1
+- foreigners_quarter_2
+- foreigners_quarter_3
+- foreigners_quarter_4
+- foreigners_quarter_5
+- cereal_stockpile_1
+- cereal_stockpile_2
+- cereal_stockpile_3
+- cereal_stockpile_4
+- cereal_stockpile_5
+
+### regular_district_buildings/00_villages_district_buildings.txt（95 条目）
+
+- meadowlands_pastures_1
+- meadowlands_pastures_2
+- meadowlands_pastures_3
+- meadowlands_pastures_4
+- meadowlands_pastures_5
+- farming_fields_1
+- farming_fields_2
+- farming_fields_3
+- farming_fields_4
+- farming_fields_5
+- communal_plantations_1
+- communal_plantations_2
+- communal_plantations_3
+- communal_plantations_4
+- communal_plantations_5
+- communal_woodland_1
+- communal_woodland_2
+- communal_woodland_3
+- communal_woodland_4
+- communal_woodland_5
+- pit_mining_1
+- pit_mining_2
+- pit_mining_3
+- pit_mining_4
+- pit_mining_5
+- market_fairs_1
+- market_fairs_2
+- market_fairs_3
+- market_fairs_4
+- market_fairs_5
+- village_butcher_1
+- village_butcher_2
+- village_butcher_3
+- village_butcher_4
+- village_butcher_5
+- blacksmiths_forge_1
+- blacksmiths_forge_2
+- blacksmiths_forge_3
+- blacksmiths_forge_4
+- blacksmiths_forge_5
+- communal_mill_1
+- communal_mill_2
+- communal_mill_3
+- communal_mill_4
+- communal_mill_5
+- roadside_inns_1
+- roadside_inns_2
+- roadside_inns_3
+- roadside_inns_4
+- roadside_inns_5
+- local_bailiffs_1
+- local_bailiffs_2
+- local_bailiffs_3
+- local_bailiffs_4
+- local_bailiffs_5
+- village_granaries_1
+- village_granaries_2
+- village_granaries_3
+- village_granaries_4
+- village_granaries_5
+- village_council_1
+- village_council_2
+- village_council_3
+- village_council_4
+- village_council_5
+- village_hunter_1
+- village_hunter_2
+- village_hunter_3
+- village_hunter_4
+- village_hunter_5
+- terrace_gardens_1
+- terrace_gardens_2
+- terrace_gardens_3
+- terrace_gardens_4
+- terrace_gardens_5
+- turbary_common_1
+- turbary_common_2
+- turbary_common_3
+- turbary_common_4
+- turbary_common_5
+- caravanserai_1
+- caravanserai_2
+- caravanserai_3
+- caravanserai_4
+- caravanserai_5
+- castello_1
+- castello_2
+- castello_3
+- castello_4
+- castello_5
+- village_weaver_1
+- village_weaver_2
+- village_weaver_3
+- village_weaver_4
+- village_weaver_5
+
+### regular_district_buildings/00_walls_district_buildings.txt（45 条目）
+
+- moats_1
+- moats_2
+- moats_3
+- moats_4
+- moats_5
+- ramparts_1
+- ramparts_2
+- ramparts_3
+- ramparts_4
+- ramparts_5
+- city_watch_1
+- city_watch_2
+- city_watch_3
+- city_watch_4
+- city_watch_5
+- outer_walls_1
+- outer_walls_2
+- outer_walls_3
+- outer_walls_4
+- outer_walls_5
+- gatehouses_1
+- gatehouses_2
+- gatehouses_3
+- gatehouses_4
+- gatehouses_5
+- wall_wardens_offices_1
+- wall_wardens_offices_2
+- wall_wardens_offices_3
+- wall_wardens_offices_4
+- wall_wardens_offices_5
+- ceremony_office_1
+- ceremony_office_2
+- ceremony_office_3
+- ceremony_office_4
+- ceremony_office_5
+- bulwarks_and_gun_loops_1
+- bulwarks_and_gun_loops_2
+- bulwarks_and_gun_loops_3
+- bulwarks_and_gun_loops_4
+- bulwarks_and_gun_loops_5
+- borghi_1
+- borghi_2
+- borghi_3
+- borghi_4
+- borghi_5
+
+### regular_primary_buildings.txt（76 条目）
+
+- pb_guild_01
+- pb_guild_02
+- pb_guild_03
+- pb_guild_04
+- pb_market_01
+- pb_market_02
+- pb_market_03
+- pb_market_04
+- pb_port_01
+- pb_port_02
+- pb_port_03
+- pb_port_04
+- pb_border_forts_01
+- pb_border_forts_02
+- pb_border_forts_03
+- pb_border_forts_04
+- pb_walls_01
+- pb_walls_02
+- pb_walls_03
+- pb_walls_04
+- pb_military_01
+- pb_military_02
+- pb_military_03
+- pb_military_04
+- pb_bureaucratic_01
+- pb_bureaucratic_02
+- pb_bureaucratic_03
+- pb_bureaucratic_04
+- pb_royal_palace_01
+- pb_royal_palace_02
+- pb_royal_palace_03
+- pb_royal_palace_04
+- pb_mandala_01
+- pb_mandala_02
+- pb_mandala_03
+- pb_mandala_04
+- pb_temple_01
+- pb_temple_02
+- pb_temple_03
+- pb_temple_04
+- pb_entertainment_01
+- pb_entertainment_02
+- pb_entertainment_03
+- pb_entertainment_04
+- pb_patrician_01
+- pb_patrician_02
+- pb_patrician_03
+- pb_patrician_04
+- pb_urban_housing_01
+- pb_urban_housing_02
+- pb_urban_housing_03
+- pb_urban_housing_04
+- pb_manor_houses_01
+- pb_manor_houses_02
+- pb_manor_houses_03
+- pb_manor_houses_04
+- pb_religious_community_01
+- pb_religious_community_02
+- pb_religious_community_03
+- pb_religious_community_04
+- pb_villages_01
+- pb_villages_02
+- pb_villages_03
+- pb_villages_04
+- pb_tribal_economy_prestige_01
+- pb_tribal_economy_prestige_02
+- pb_tribal_economy_prestige_03
+- pb_tribal_economy_prestige_04
+- pb_tribal_military_01
+- pb_tribal_military_02
+- pb_tribal_military_03
+- pb_tribal_military_04
+- pb_tribal_wanua_01
+- pb_tribal_wanua_02
+- pb_tribal_wanua_03
+- pb_tribal_wanua_04
+
+### resource_district_buildings/alum_district_buildings.txt（8 条目）
+
+- minor_alum_mine_1
+- minor_alum_mine_2
+- minor_alum_mine_3
+- alum_apothecary_1
+- alum_apothecary_2
+- alum_apothecary_3
+- alum_apothecary_4
+- alum_apothecary_5
+
+### resource_district_buildings/amber_district_buildings.txt（28 条目）
+
+- amber_collectors_1
+- amber_collectors_2
+- amber_collectors_3
+- amber_resource_building_1
+- amber_resource_building_2
+- amber_resource_building_3
+- amber_resource_building_4
+- amber_resource_building_5
+- amber_resource_building_6
+- amber_resource_building_7
+- amber_resource_building_8
+- amber_resource_building_9
+- amber_resource_building_10
+- bead_turner_1
+- bead_turner_2
+- bead_turner_3
+- bead_turner_4
+- bead_turner_5
+- amber_oil_maker_1
+- amber_oil_maker_2
+- amber_oil_maker_3
+- amber_oil_maker_4
+- amber_oil_maker_5
+- amber_carver_1
+- amber_carver_2
+- amber_carver_3
+- amber_carver_4
+- amber_carver_5
+
+### resource_district_buildings/cattle_district_buildings.txt（38 条目）
+
+- cattle_resource_building_1
+- cattle_resource_building_2
+- cattle_resource_building_3
+- cattle_resource_building_4
+- cattle_resource_building_5
+- cattle_resource_building_6
+- cattle_resource_building_7
+- cattle_resource_building_8
+- cattle_resource_building_9
+- cattle_resource_building_10
+- butchery_1
+- butchery_2
+- butchery_3
+- butchery_4
+- butchery_5
+- cheesemaker_1
+- cheesemaker_2
+- cheesemaker_3
+- cheesemaker_4
+- cheesemaker_5
+- minor_grazing_1
+- minor_grazing_2
+- minor_grazing_3
+- tallow_rendering_1
+- tallow_rendering_2
+- tallow_rendering_3
+- tallow_rendering_4
+- tallow_rendering_5
+- manure_piles_1
+- manure_piles_2
+- manure_piles_3
+- manure_piles_4
+- manure_piles_5
+- cheese_cave_1
+- cheese_cave_2
+- cheese_cave_3
+- cheese_cave_4
+- cheese_cave_5
+
+### resource_district_buildings/ceramics_district_buildings.txt（48 条目）
+
+- local_pottery_1
+- local_pottery_2
+- local_pottery_3
+- ceramics_resource_building_1
+- ceramics_resource_building_2
+- ceramics_resource_building_3
+- ceramics_resource_building_4
+- ceramics_resource_building_5
+- ceramics_resource_building_6
+- ceramics_resource_building_7
+- ceramics_resource_building_8
+- ceramics_resource_building_9
+- ceramics_resource_building_10
+- fuel_charcoal_burners_1
+- fuel_charcoal_burners_2
+- fuel_charcoal_burners_3
+- fuel_charcoal_burners_4
+- fuel_charcoal_burners_5
+- ceramics_glazeworks_1
+- ceramics_glazeworks_2
+- ceramics_glazeworks_3
+- ceramics_glazeworks_4
+- ceramics_glazeworks_5
+- luxury_ceramics_workshops_1
+- luxury_ceramics_workshops_2
+- luxury_ceramics_workshops_3
+- luxury_ceramics_workshops_4
+- luxury_ceramics_workshops_5
+- ceramics_dragon_kiln_1
+- ceramics_dragon_kiln_2
+- ceramics_dragon_kiln_3
+- ceramics_dragon_kiln_4
+- ceramics_dragon_kiln_5
+- ceramic_tile_workshops_1
+- ceramic_tile_workshops_2
+- ceramic_tile_workshops_3
+- ceramic_tile_workshops_4
+- ceramic_tile_workshops_5
+- fritware_workshops_1
+- fritware_workshops_2
+- fritware_workshops_3
+- fritware_workshops_4
+- fritware_workshops_5
+- pipe_making_shops_1
+- pipe_making_shops_2
+- pipe_making_shops_3
+- pipe_making_shops_4
+- pipe_making_shops_5
+
+### resource_district_buildings/copper_district_buildings.txt（19 条目）
+
+- copper_freeminers_1
+- copper_freeminers_2
+- copper_freeminers_3
+- bronze_artisan_workshop_1
+- bronze_artisan_workshop_2
+- bronze_artisan_workshop_3
+- bronze_artisan_workshop_4
+- bronze_artisan_workshop_5
+- bell_foundry_1
+- bell_foundry_2
+- bell_foundry_3
+- artillery_works_1
+- artillery_works_2
+- artillery_works_3
+- mint_1
+- mint_2
+- mint_3
+- mint_4
+- mint_5
+
+### resource_district_buildings/cotton_district_buildings.txt（38 条目）
+
+- minor_cotton_fields_1
+- minor_cotton_fields_2
+- minor_cotton_fields_3
+- cotton_resource_building_1
+- cotton_resource_building_2
+- cotton_resource_building_3
+- cotton_resource_building_4
+- cotton_resource_building_5
+- cotton_resource_building_6
+- cotton_resource_building_7
+- cotton_resource_building_8
+- cotton_resource_building_9
+- cotton_resource_building_10
+- textiles_cotton_building_1
+- textiles_cotton_building_2
+- textiles_cotton_building_3
+- textiles_cotton_building_4
+- textiles_cotton_building_5
+- wickmaker_1
+- wickmaker_2
+- wickmaker_3
+- wickmaker_4
+- wickmaker_5
+- quilting_workshop_1
+- quilting_workshop_2
+- quilting_workshop_3
+- quilting_workshop_4
+- quilting_workshop_5
+- cottonseed_mill_1
+- cottonseed_mill_2
+- cottonseed_mill_3
+- cottonseed_mill_4
+- cottonseed_mill_5
+- mixed_fabric_weaver_1
+- mixed_fabric_weaver_2
+- mixed_fabric_weaver_3
+- mixed_fabric_weaver_4
+- mixed_fabric_weaver_5
+
+### resource_district_buildings/dyes_district_buildings.txt（33 条目）
+
+- dyes_local_1
+- dyes_local_2
+- dyes_local_3
+- dyes_resource_building_1
+- dyes_resource_building_2
+- dyes_resource_building_3
+- dyes_resource_building_4
+- dyes_resource_building_5
+- dyes_resource_building_6
+- dyes_resource_building_7
+- dyes_resource_building_8
+- dyes_resource_building_9
+- dyes_resource_building_10
+- lake_pigment_workshop_1
+- lake_pigment_workshop_2
+- lake_pigment_workshop_3
+- lake_pigment_workshop_4
+- lake_pigment_workshop_5
+- dyeing_pits_1
+- dyeing_pits_2
+- dyeing_pits_3
+- dyeing_pits_4
+- dyeing_pits_5
+- dyes_packing_warehouse_1
+- dyes_packing_warehouse_2
+- dyes_packing_warehouse_3
+- dyes_packing_warehouse_4
+- dyes_packing_warehouse_5
+- illumination_workshop_1
+- illumination_workshop_2
+- illumination_workshop_3
+- illumination_workshop_4
+- illumination_workshop_5
+
+### resource_district_buildings/fish_district_buildings.txt（43 条目）
+
+- fishing_villages_1
+- fishing_villages_2
+- fishing_villages_3
+- fish_resource_building_1
+- fish_resource_building_2
+- fish_resource_building_3
+- fish_resource_building_4
+- fish_resource_building_5
+- fish_resource_building_6
+- fish_resource_building_7
+- fish_resource_building_8
+- fish_resource_building_9
+- fish_resource_building_10
+- fish_saltery_1
+- fish_saltery_2
+- fish_saltery_3
+- fish_saltery_4
+- fish_saltery_5
+- netmakers_1
+- netmakers_2
+- netmakers_3
+- netmakers_4
+- netmakers_5
+- fish_oil_vats_1
+- fish_oil_vats_2
+- fish_oil_vats_3
+- fish_oil_vats_4
+- fish_oil_vats_5
+- glue_cauldrons_1
+- glue_cauldrons_2
+- glue_cauldrons_3
+- glue_cauldrons_4
+- glue_cauldrons_5
+- garum_vats_1
+- garum_vats_2
+- garum_vats_3
+- garum_vats_4
+- garum_vats_5
+- pearl_fishery_1
+- pearl_fishery_2
+- pearl_fishery_3
+- pearl_fishery_4
+- pearl_fishery_5
+
+### resource_district_buildings/flax_district_buildings.txt（28 条目）
+
+- local_flax_1
+- local_flax_2
+- local_flax_3
+- flax_resource_building_1
+- flax_resource_building_2
+- flax_resource_building_3
+- flax_resource_building_4
+- flax_resource_building_5
+- flax_resource_building_6
+- flax_resource_building_7
+- flax_resource_building_8
+- flax_resource_building_9
+- flax_resource_building_10
+- textiles_flax_building_1
+- textiles_flax_building_2
+- textiles_flax_building_3
+- textiles_flax_building_4
+- textiles_flax_building_5
+- linseed_oil_1
+- linseed_oil_2
+- linseed_oil_3
+- linseed_oil_4
+- linseed_oil_5
+- varnishing_workshop_1
+- varnishing_workshop_2
+- varnishing_workshop_3
+- varnishing_workshop_4
+- varnishing_workshop_5
+
+### resource_district_buildings/fruit_district_buildings.txt（38 条目）
+
+- fruit_gardens_1
+- fruit_distillery_1
+- fruit_distillery_2
+- fruit_distillery_3
+- fruit_distillery_4
+- fruit_distillery_5
+- fruit_gardens_2
+- fruit_gardens_3
+- fruit_resource_building_1
+- fruit_resource_building_2
+- fruit_resource_building_3
+- fruit_resource_building_4
+- fruit_resource_building_5
+- fruit_resource_building_6
+- fruit_resource_building_7
+- fruit_resource_building_8
+- fruit_resource_building_9
+- fruit_resource_building_10
+- cider_brewery_1
+- cider_brewery_2
+- cider_brewery_3
+- cider_brewery_4
+- cider_brewery_5
+- drying_terraces_1
+- drying_terraces_2
+- drying_terraces_3
+- drying_terraces_4
+- drying_terraces_5
+- preserved_fruit_workshops_1
+- preserved_fruit_workshops_2
+- preserved_fruit_workshops_3
+- preserved_fruit_workshops_4
+- preserved_fruit_workshops_5
+- syrup_boiling_vats_1
+- syrup_boiling_vats_2
+- syrup_boiling_vats_3
+- syrup_boiling_vats_4
+- syrup_boiling_vats_5
+
+### resource_district_buildings/furs_district_buildings.txt（38 条目）
+
+- trappers_1
+- trappers_2
+- trappers_3
+- furs_resource_building_1
+- furs_resource_building_2
+- furs_resource_building_3
+- furs_resource_building_4
+- furs_resource_building_5
+- furs_resource_building_6
+- furs_resource_building_7
+- furs_resource_building_8
+- furs_resource_building_9
+- furs_resource_building_10
+- furriers_1
+- furriers_2
+- furriers_3
+- furriers_4
+- furriers_5
+- furs_trade_post_1
+- furs_trade_post_2
+- furs_trade_post_3
+- furs_trade_post_4
+- furs_trade_post_5
+- musk_processing_shop_1
+- musk_processing_shop_2
+- musk_processing_shop_3
+- musk_processing_shop_4
+- musk_processing_shop_5
+- smokehouse_1
+- smokehouse_2
+- smokehouse_3
+- smokehouse_4
+- smokehouse_5
+- noble_hunting_lodges_1
+- noble_hunting_lodges_2
+- noble_hunting_lodges_3
+- noble_hunting_lodges_4
+- noble_hunting_lodges_5
+
+### resource_district_buildings/gems_district_buildings.txt（3 条目）
+
+- gem_freeminers_1
+- gem_freeminers_2
+- gem_freeminers_3
+
+### resource_district_buildings/gold_district_buildings.txt（3 条目）
+
+- gold_freeminers_1
+- gold_freeminers_2
+- gold_freeminers_3
+
+### resource_district_buildings/grain_district_buildings.txt（53 条目）
+
+- minor_grain_farms_1
+- minor_grain_farms_2
+- minor_grain_farms_3
+- grain_resource_building_1
+- grain_resource_building_2
+- grain_resource_building_3
+- grain_resource_building_4
+- grain_resource_building_5
+- grain_resource_building_6
+- grain_resource_building_7
+- grain_resource_building_8
+- grain_resource_building_9
+- grain_resource_building_10
+- beer_brewery_1
+- beer_brewery_2
+- beer_brewery_3
+- beer_brewery_4
+- beer_brewery_5
+- grain_distillery_1
+- grain_distillery_2
+- grain_distillery_3
+- grain_distillery_4
+- grain_distillery_5
+- biscuit_bakery_1
+- biscuit_bakery_2
+- biscuit_bakery_3
+- biscuit_bakery_4
+- biscuit_bakery_5
+- straw_weavery_1
+- straw_weavery_2
+- straw_weavery_3
+- straw_weavery_4
+- straw_weavery_5
+- pasta_mill_1
+- pasta_mill_2
+- pasta_mill_3
+- pasta_mill_4
+- pasta_mill_5
+- bran_mill_1
+- bran_mill_2
+- bran_mill_3
+- bran_mill_4
+- bran_mill_5
+- grain_stores_1
+- grain_stores_2
+- grain_stores_3
+- grain_stores_4
+- grain_stores_5
+- communal_bread_ovens_1
+- communal_bread_ovens_2
+- communal_bread_ovens_3
+- communal_bread_ovens_4
+- communal_bread_ovens_5
+
+### resource_district_buildings/hemp_district_buildings.txt（38 条目）
+
+- local_hemp_1
+- local_hemp_2
+- local_hemp_3
+- hemp_resource_building_1
+- hemp_resource_building_2
+- hemp_resource_building_3
+- hemp_resource_building_4
+- hemp_resource_building_5
+- hemp_resource_building_6
+- hemp_resource_building_7
+- hemp_resource_building_8
+- hemp_resource_building_9
+- hemp_resource_building_10
+- hemp_thatching_1
+- hemp_thatching_2
+- hemp_thatching_3
+- hemp_thatching_4
+- hemp_thatching_5
+- ropeworks_1
+- ropeworks_2
+- ropeworks_3
+- ropeworks_4
+- ropeworks_5
+- hemp_weaving_1
+- hemp_weaving_2
+- hemp_weaving_3
+- hemp_weaving_4
+- hemp_weaving_5
+- hemp_naval_supplies_1
+- hemp_naval_supplies_2
+- hemp_naval_supplies_3
+- hemp_naval_supplies_4
+- hemp_naval_supplies_5
+- breaking_mill_1
+- breaking_mill_2
+- breaking_mill_3
+- breaking_mill_4
+- breaking_mill_5
+
+### resource_district_buildings/honey_district_buildings.txt（28 条目）
+
+- beehives_1
+- beehives_2
+- beehives_3
+- honey_resource_building_1
+- honey_resource_building_2
+- honey_resource_building_3
+- honey_resource_building_4
+- honey_resource_building_5
+- honey_resource_building_6
+- honey_resource_building_7
+- honey_resource_building_8
+- honey_resource_building_9
+- honey_resource_building_10
+- honey_apothecary_1
+- honey_apothecary_2
+- honey_apothecary_3
+- honey_apothecary_4
+- honey_apothecary_5
+- honey_waxworks_1
+- honey_waxworks_2
+- honey_waxworks_3
+- honey_waxworks_4
+- honey_waxworks_5
+- mead_brewery_1
+- mead_brewery_2
+- mead_brewery_3
+- mead_brewery_4
+- mead_brewery_5
+
+### resource_district_buildings/horse_district_buildings.txt（23 条目）
+
+- horse_grazing_1
+- horse_grazing_2
+- horse_grazing_3
+- horses_resource_building_1
+- horses_resource_building_2
+- horses_resource_building_3
+- horses_resource_building_4
+- horses_resource_building_5
+- horses_resource_building_6
+- horses_resource_building_7
+- horses_resource_building_8
+- horses_resource_building_9
+- horses_resource_building_10
+- warhorse_training_1
+- warhorse_training_2
+- warhorse_training_3
+- warhorse_training_4
+- warhorse_training_5
+- horse_studfarm_1
+- horse_studfarm_2
+- horse_studfarm_3
+- horse_studfarm_4
+- horse_studfarm_5
+
+### resource_district_buildings/incense_district_buildings.txt（33 条目）
+
+- incense_harvester_1
+- incense_harvester_2
+- incense_harvester_3
+- incense_resource_building_1
+- incense_resource_building_2
+- incense_resource_building_3
+- incense_resource_building_4
+- incense_resource_building_5
+- incense_resource_building_6
+- incense_resource_building_7
+- incense_resource_building_8
+- incense_resource_building_9
+- incense_resource_building_10
+- compound_perfumery_1
+- compound_perfumery_2
+- compound_perfumery_3
+- compound_perfumery_4
+- compound_perfumery_5
+- incense_warehouse_1
+- incense_warehouse_2
+- incense_warehouse_3
+- incense_warehouse_4
+- incense_warehouse_5
+- incense_distillation_workshop_1
+- incense_distillation_workshop_2
+- incense_distillation_workshop_3
+- incense_distillation_workshop_4
+- incense_distillation_workshop_5
+- cosmetic_shop_1
+- cosmetic_shop_2
+- cosmetic_shop_3
+- cosmetic_shop_4
+- cosmetic_shop_5
+
+### resource_district_buildings/iron_district_buildings.txt（23 条目）
+
+- iron_freeminers_1
+- iron_freeminers_2
+- iron_freeminers_3
+- blast_furnace_1
+- blast_furnace_2
+- blast_furnace_3
+- blast_furnace_4
+- blast_furnace_5
+- wind_furnace_1
+- wind_furnace_2
+- wind_furnace_3
+- wind_furnace_4
+- wind_furnace_5
+- tool_smith_1
+- tool_smith_2
+- tool_smith_3
+- tool_smith_4
+- tool_smith_5
+- weapon_armor_smith_1
+- weapon_armor_smith_2
+- weapon_armor_smith_3
+- weapon_armor_smith_4
+- weapon_armor_smith_5
+
+### resource_district_buildings/ivory_district_buildings.txt（33 条目）
+
+- ivory_camp_1
+- ivory_camp_2
+- ivory_camp_3
+- ivory_resource_building_1
+- ivory_resource_building_2
+- ivory_resource_building_3
+- ivory_resource_building_4
+- ivory_resource_building_5
+- ivory_resource_building_6
+- ivory_resource_building_7
+- ivory_resource_building_8
+- ivory_resource_building_9
+- ivory_resource_building_10
+- sacred_elephant_compound_1
+- sacred_elephant_compound_2
+- sacred_elephant_compound_3
+- sacred_elephant_compound_4
+- sacred_elephant_compound_5
+- military_elephant_compound_1
+- military_elephant_compound_2
+- military_elephant_compound_3
+- military_elephant_compound_4
+- military_elephant_compound_5
+- ivory_labor_elephants_1
+- ivory_labor_elephants_2
+- ivory_labor_elephants_3
+- ivory_labor_elephants_4
+- ivory_labor_elephants_5
+- ivory_carvers_1
+- ivory_carvers_2
+- ivory_carvers_3
+- ivory_carvers_4
+- ivory_carvers_5
+
+### resource_district_buildings/jade_district_buildings.txt（3 条目）
+
+- minor_jade_mine_1
+- minor_jade_mine_2
+- minor_jade_mine_3
+
+### resource_district_buildings/medicaments_district_buildings.txt（38 条目）
+
+- herb_gardens_1
+- herb_gardens_2
+- herb_gardens_3
+- medicaments_resource_building_1
+- medicaments_resource_building_2
+- medicaments_resource_building_3
+- medicaments_resource_building_4
+- medicaments_resource_building_5
+- medicaments_resource_building_6
+- medicaments_resource_building_7
+- medicaments_resource_building_8
+- medicaments_resource_building_9
+- medicaments_resource_building_10
+- local_hospital_1
+- local_hospital_2
+- local_hospital_3
+- local_hospital_4
+- local_hospital_5
+- apothecary_1
+- apothecary_2
+- apothecary_3
+- apothecary_4
+- apothecary_5
+- theriac_workshop_1
+- theriac_workshop_2
+- theriac_workshop_3
+- theriac_workshop_4
+- theriac_workshop_5
+- perfumery_1
+- perfumery_2
+- perfumery_3
+- perfumery_4
+- perfumery_5
+- stupefactives_apothecary_1
+- stupefactives_apothecary_2
+- stupefactives_apothecary_3
+- stupefactives_apothecary_4
+- stupefactives_apothecary_5
+
+### resource_district_buildings/millet_district_buildings.txt（43 条目）
+
+- millet_fields_1
+- millet_fields_2
+- millet_fields_3
+- millet_resource_building_1
+- millet_resource_building_2
+- millet_resource_building_3
+- millet_resource_building_4
+- millet_resource_building_5
+- millet_resource_building_6
+- millet_resource_building_7
+- millet_resource_building_8
+- millet_resource_building_9
+- millet_resource_building_10
+- double_cropping_1
+- double_cropping_2
+- double_cropping_3
+- double_cropping_4
+- double_cropping_5
+- sorghum_stalk_builder_1
+- sorghum_stalk_builder_2
+- sorghum_stalk_builder_3
+- sorghum_stalk_builder_4
+- sorghum_stalk_builder_5
+- millet_distillery_1
+- millet_distillery_2
+- millet_distillery_3
+- millet_distillery_4
+- millet_distillery_5
+- fodder_stores_1
+- fodder_stores_2
+- fodder_stores_3
+- fodder_stores_4
+- fodder_stores_5
+- millet_brewery_1
+- millet_brewery_2
+- millet_brewery_3
+- millet_brewery_4
+- millet_brewery_5
+- millet_granaries_1
+- millet_granaries_2
+- millet_granaries_3
+- millet_granaries_4
+- millet_granaries_5
+
+### resource_district_buildings/mine_district_buildings.txt（15 条目）
+
+- mine_tier_1
+- mine_tier_2
+- mine_tier_3
+- mine_tier_4
+- mine_tier_5
+- mine_tier_6
+- mine_tier_7
+- mine_tier_8
+- mine_tier_9
+- mine_tier_10
+- jewellers_workshop_1
+- jewellers_workshop_2
+- jewellers_workshop_3
+- jewellers_workshop_4
+- jewellers_workshop_5
+
+### resource_district_buildings/oil_district_buildings.txt（33 条目）
+
+- olive_groves_1
+- olive_groves_2
+- olive_groves_3
+- oil_resource_building_1
+- oil_resource_building_2
+- oil_resource_building_3
+- oil_resource_building_4
+- oil_resource_building_5
+- oil_resource_building_6
+- oil_resource_building_7
+- oil_resource_building_8
+- oil_resource_building_9
+- oil_resource_building_10
+- oil_soapworks_1
+- oil_soapworks_2
+- oil_soapworks_3
+- oil_soapworks_4
+- oil_soapworks_5
+- olive_mill_1
+- olive_mill_2
+- olive_mill_3
+- olive_mill_4
+- olive_mill_5
+- oil_apothecary_1
+- oil_apothecary_2
+- oil_apothecary_3
+- oil_apothecary_4
+- oil_apothecary_5
+- oil_waxworks_1
+- oil_waxworks_2
+- oil_waxworks_3
+- oil_waxworks_4
+- oil_waxworks_5
+
+### resource_district_buildings/rice_district_buildings.txt（48 条目）
+
+- small_rice_paddies_1
+- small_rice_paddies_2
+- small_rice_paddies_3
+- rice_resource_building_1
+- rice_resource_building_2
+- rice_resource_building_3
+- rice_resource_building_4
+- rice_resource_building_5
+- rice_resource_building_6
+- rice_resource_building_7
+- rice_resource_building_8
+- rice_resource_building_9
+- rice_resource_building_10
+- rice_winery_1
+- rice_winery_2
+- rice_winery_3
+- rice_winery_4
+- rice_winery_5
+- rice_straw_weaving_1
+- rice_straw_weaving_2
+- rice_straw_weaving_3
+- rice_straw_weaving_4
+- rice_straw_weaving_5
+- rice_thatching_1
+- rice_thatching_2
+- rice_thatching_3
+- rice_thatching_4
+- rice_thatching_5
+- rice_bran_mill_1
+- rice_bran_mill_2
+- rice_bran_mill_3
+- rice_bran_mill_4
+- rice_bran_mill_5
+- husk_warehouse_1
+- husk_warehouse_2
+- husk_warehouse_3
+- husk_warehouse_4
+- husk_warehouse_5
+- fine_flour_mills_1
+- fine_flour_mills_2
+- fine_flour_mills_3
+- fine_flour_mills_4
+- fine_flour_mills_5
+- rice_confectionary_1
+- rice_confectionary_2
+- rice_confectionary_3
+- rice_confectionary_4
+- rice_confectionary_5
+
+### resource_district_buildings/salt_district_buildings.txt（28 条目）
+
+- salt_collectors_1
+- salt_collectors_2
+- salt_collectors_3
+- salt_resource_building_1
+- salt_resource_building_2
+- salt_resource_building_3
+- salt_resource_building_4
+- salt_resource_building_5
+- salt_resource_building_6
+- salt_resource_building_7
+- salt_resource_building_8
+- salt_resource_building_9
+- salt_resource_building_10
+- pan_smith_1
+- pan_smith_2
+- pan_smith_3
+- pan_smith_4
+- pan_smith_5
+- sack_basket_weavers_1
+- sack_basket_weavers_2
+- sack_basket_weavers_3
+- sack_basket_weavers_4
+- sack_basket_weavers_5
+- salt_taxation_office_1
+- salt_taxation_office_2
+- salt_taxation_office_3
+- salt_taxation_office_4
+- salt_taxation_office_5
+
+### resource_district_buildings/shared_resource_district_buildings.txt（78 条目）
+
+- qanat_system_1
+- qanat_system_2
+- qanat_system_3
+- qanat_system_4
+- qanat_system_5
+- irrigation_network_1
+- irrigation_network_2
+- irrigation_network_3
+- irrigation_network_4
+- irrigation_network_5
+- monsoon_water_management_1
+- monsoon_water_management_2
+- monsoon_water_management_3
+- monsoon_water_management_4
+- monsoon_water_management_5
+- cooper_workshop_1
+- cooper_workshop_2
+- cooper_workshop_3
+- cooper_workshop_4
+- cooper_workshop_5
+- cattle_tannery_1
+- cattle_tannery_2
+- cattle_tannery_3
+- cattle_tannery_4
+- cattle_tannery_5
+- wool_tannery_1
+- wool_tannery_2
+- wool_tannery_3
+- wool_tannery_4
+- wool_tannery_5
+- furs_tannery_1
+- furs_tannery_2
+- furs_tannery_3
+- furs_tannery_4
+- furs_tannery_5
+- paper_workshop_1
+- paper_workshop_2
+- paper_workshop_3
+- paper_workshop_4
+- paper_workshop_5
+- dyehouse_1
+- dyehouse_2
+- dyehouse_3
+- dyehouse_4
+- dyehouse_5
+- seasonal_labor_shared_1
+- seasonal_labor_shared_2
+- seasonal_labor_shared_3
+- seasonal_labor_shared_4
+- seasonal_labor_shared_5
+- cordwainers_1
+- cordwainers_2
+- cordwainers_3
+- cordwainers_4
+- cordwainers_5
+- saddlers_1
+- saddlers_2
+- saddlers_3
+- saddlers_4
+- saddlers_5
+- small_mining_pit_1
+- small_mining_pit_2
+- small_mining_pit_3
+- murex_fisheries_1
+- murex_fisheries_2
+- murex_fisheries_3
+- murex_fisheries_4
+- murex_fisheries_5
+- walrus_hunting_camp_1
+- walrus_hunting_camp_2
+- walrus_hunting_camp_3
+- walrus_hunting_camp_4
+- walrus_hunting_camp_5
+- naphta_pit_1
+- naphta_pit_2
+- naphta_pit_3
+- naphta_pit_4
+- naphta_pit_5
+
+### resource_district_buildings/silk_district_buildings.txt（43 条目）
+
+- minor_silk_plantation_1
+- minor_silk_plantation_2
+- minor_silk_plantation_3
+- silk_resource_building_1
+- silk_resource_building_2
+- silk_resource_building_3
+- silk_resource_building_4
+- silk_resource_building_5
+- silk_resource_building_6
+- silk_resource_building_7
+- silk_resource_building_8
+- silk_resource_building_9
+- silk_resource_building_10
+- textiles_silk_building_1
+- textiles_silk_building_2
+- textiles_silk_building_3
+- textiles_silk_building_4
+- textiles_silk_building_5
+- textiles_silk_building_6
+- textiles_silk_building_7
+- textiles_silk_building_8
+- textiles_silk_building_9
+- textiles_silk_building_10
+- mulberry_paper_mill_1
+- mulberry_paper_mill_2
+- mulberry_paper_mill_3
+- mulberry_paper_mill_4
+- mulberry_paper_mill_5
+- floss_spinnery_1
+- floss_spinnery_2
+- floss_spinnery_3
+- floss_spinnery_4
+- floss_spinnery_5
+- pupae_grinder_1
+- pupae_grinder_2
+- pupae_grinder_3
+- pupae_grinder_4
+- pupae_grinder_5
+- half_silk_weavery_1
+- half_silk_weavery_2
+- half_silk_weavery_3
+- half_silk_weavery_4
+- half_silk_weavery_5
+
+### resource_district_buildings/silver_district_buildings.txt（3 条目）
+
+- silver_freeminers_1
+- silver_freeminers_2
+- silver_freeminers_3
+
+### resource_district_buildings/spices_district_buildings.txt（33 条目）
+
+- spice_gardens_1
+- spice_gardens_2
+- spice_gardens_3
+- spices_resource_building_1
+- spices_resource_building_2
+- spices_resource_building_3
+- spices_resource_building_4
+- spices_resource_building_5
+- spices_resource_building_6
+- spices_resource_building_7
+- spices_resource_building_8
+- spices_resource_building_9
+- spices_resource_building_10
+- spice_apothecary_1
+- spice_apothecary_2
+- spice_apothecary_3
+- spice_apothecary_4
+- spice_apothecary_5
+- compound_powder_grinder_1
+- compound_powder_grinder_2
+- compound_powder_grinder_3
+- compound_powder_grinder_4
+- compound_powder_grinder_5
+- comfit_maker_1
+- comfit_maker_2
+- comfit_maker_3
+- comfit_maker_4
+- comfit_maker_5
+- garbler_office_1
+- garbler_office_2
+- garbler_office_3
+- garbler_office_4
+- garbler_office_5
+
+### resource_district_buildings/stone_district_buildings.txt（48 条目）
+
+- stone_cutters_1
+- stone_cutters_2
+- stone_cutters_3
+- stone_resource_building_1
+- stone_resource_building_2
+- stone_resource_building_3
+- stone_resource_building_4
+- stone_resource_building_5
+- stone_resource_building_6
+- stone_resource_building_7
+- stone_resource_building_8
+- stone_resource_building_9
+- stone_resource_building_10
+- stone_masons_1
+- stone_masons_2
+- stone_masons_3
+- stone_masons_4
+- stone_masons_5
+- stone_statue_workshop_1
+- stone_statue_workshop_2
+- stone_statue_workshop_3
+- stone_statue_workshop_4
+- stone_statue_workshop_5
+- millstone_workshop_1
+- millstone_workshop_2
+- millstone_workshop_3
+- millstone_workshop_4
+- millstone_workshop_5
+- whetstone_workshop_1
+- whetstone_workshop_2
+- whetstone_workshop_3
+- whetstone_workshop_4
+- whetstone_workshop_5
+- mortar_workshop_1
+- mortar_workshop_2
+- mortar_workshop_3
+- mortar_workshop_4
+- mortar_workshop_5
+- quarry_port_1
+- quarry_port_2
+- quarry_port_3
+- quarry_port_4
+- quarry_port_5
+- grindstone_maker_1
+- grindstone_maker_2
+- grindstone_maker_3
+- grindstone_maker_4
+- grindstone_maker_5
+
+### resource_district_buildings/sugar_district_buildings.txt（23 条目）
+
+- small_sugar_plantations_1
+- sugar_distillery_1
+- sugar_distillery_2
+- sugar_distillery_3
+- sugar_distillery_4
+- sugar_distillery_5
+- small_sugar_plantations_2
+- small_sugar_plantations_3
+- sugar_resource_building_1
+- sugar_resource_building_2
+- sugar_resource_building_3
+- sugar_resource_building_4
+- sugar_resource_building_5
+- sugar_resource_building_6
+- sugar_resource_building_7
+- sugar_resource_building_8
+- sugar_resource_building_9
+- sugar_resource_building_10
+- confectionary_1
+- confectionary_2
+- confectionary_3
+- confectionary_4
+- confectionary_5
+
+### resource_district_buildings/tea_district_buildings.txt（28 条目）
+
+- tea_gardens_1
+- tea_gardens_2
+- tea_gardens_3
+- tea_resource_building_1
+- tea_resource_building_2
+- tea_resource_building_3
+- tea_resource_building_4
+- tea_resource_building_5
+- tea_resource_building_6
+- tea_resource_building_7
+- tea_resource_building_8
+- tea_resource_building_9
+- tea_resource_building_10
+- tea_charcoal_burners_1
+- tea_charcoal_burners_2
+- tea_charcoal_burners_3
+- tea_charcoal_burners_4
+- tea_charcoal_burners_5
+- local_tea_house_1
+- local_tea_house_2
+- local_tea_house_3
+- local_tea_house_4
+- local_tea_house_5
+- jar_packing_workshops_1
+- jar_packing_workshops_2
+- jar_packing_workshops_3
+- jar_packing_workshops_4
+- jar_packing_workshops_5
+
+### resource_district_buildings/wanua_resource_district_buildings.txt（180 条目）
+
+- wanua_wood_barter_1
+- wanua_wood_barter_2
+- wanua_wood_barter_3
+- wanua_wood_barter_4
+- wanua_wood_barter_5
+- wanua_grain_barter_1
+- wanua_grain_barter_2
+- wanua_grain_barter_3
+- wanua_grain_barter_4
+- wanua_grain_barter_5
+- wanua_wool_barter_1
+- wanua_wool_barter_2
+- wanua_wool_barter_3
+- wanua_wool_barter_4
+- wanua_wool_barter_5
+- wanua_cattle_barter_1
+- wanua_cattle_barter_2
+- wanua_cattle_barter_3
+- wanua_cattle_barter_4
+- wanua_cattle_barter_5
+- wanua_cotton_barter_1
+- wanua_cotton_barter_2
+- wanua_cotton_barter_3
+- wanua_cotton_barter_4
+- wanua_cotton_barter_5
+- wanua_stone_barter_1
+- wanua_stone_barter_2
+- wanua_stone_barter_3
+- wanua_stone_barter_4
+- wanua_stone_barter_5
+- wanua_fish_barter_1
+- wanua_fish_barter_2
+- wanua_fish_barter_3
+- wanua_fish_barter_4
+- wanua_fish_barter_5
+- wanua_wine_barter_1
+- wanua_wine_barter_2
+- wanua_wine_barter_3
+- wanua_wine_barter_4
+- wanua_wine_barter_5
+- wanua_oil_barter_1
+- wanua_oil_barter_2
+- wanua_oil_barter_3
+- wanua_oil_barter_4
+- wanua_oil_barter_5
+- wanua_rice_barter_1
+- wanua_rice_barter_2
+- wanua_rice_barter_3
+- wanua_rice_barter_4
+- wanua_rice_barter_5
+- wanua_millet_barter_1
+- wanua_millet_barter_2
+- wanua_millet_barter_3
+- wanua_millet_barter_4
+- wanua_millet_barter_5
+- wanua_salt_barter_1
+- wanua_salt_barter_2
+- wanua_salt_barter_3
+- wanua_salt_barter_4
+- wanua_salt_barter_5
+- wanua_amber_barter_1
+- wanua_amber_barter_2
+- wanua_amber_barter_3
+- wanua_amber_barter_4
+- wanua_amber_barter_5
+- wanua_silk_barter_1
+- wanua_silk_barter_2
+- wanua_silk_barter_3
+- wanua_silk_barter_4
+- wanua_silk_barter_5
+- wanua_furs_barter_1
+- wanua_furs_barter_2
+- wanua_furs_barter_3
+- wanua_furs_barter_4
+- wanua_furs_barter_5
+- wanua_spices_barter_1
+- wanua_spices_barter_2
+- wanua_spices_barter_3
+- wanua_spices_barter_4
+- wanua_spices_barter_5
+- wanua_tea_barter_1
+- wanua_tea_barter_2
+- wanua_tea_barter_3
+- wanua_tea_barter_4
+- wanua_tea_barter_5
+- wanua_dyes_barter_1
+- wanua_dyes_barter_2
+- wanua_dyes_barter_3
+- wanua_dyes_barter_4
+- wanua_dyes_barter_5
+- wanua_ivory_barter_1
+- wanua_ivory_barter_2
+- wanua_ivory_barter_3
+- wanua_ivory_barter_4
+- wanua_ivory_barter_5
+- wanua_sugar_barter_1
+- wanua_sugar_barter_2
+- wanua_sugar_barter_3
+- wanua_sugar_barter_4
+- wanua_sugar_barter_5
+- wanua_incense_barter_1
+- wanua_incense_barter_2
+- wanua_incense_barter_3
+- wanua_incense_barter_4
+- wanua_incense_barter_5
+- wanua_medicaments_barter_1
+- wanua_medicaments_barter_2
+- wanua_medicaments_barter_3
+- wanua_medicaments_barter_4
+- wanua_medicaments_barter_5
+- wanua_ceramics_barter_1
+- wanua_ceramics_barter_2
+- wanua_ceramics_barter_3
+- wanua_ceramics_barter_4
+- wanua_ceramics_barter_5
+- wanua_hemp_barter_1
+- wanua_hemp_barter_2
+- wanua_hemp_barter_3
+- wanua_hemp_barter_4
+- wanua_hemp_barter_5
+- wanua_flax_barter_1
+- wanua_flax_barter_2
+- wanua_flax_barter_3
+- wanua_flax_barter_4
+- wanua_flax_barter_5
+- wanua_honey_barter_1
+- wanua_honey_barter_2
+- wanua_honey_barter_3
+- wanua_honey_barter_4
+- wanua_honey_barter_5
+- wanua_fruit_barter_1
+- wanua_fruit_barter_2
+- wanua_fruit_barter_3
+- wanua_fruit_barter_4
+- wanua_fruit_barter_5
+- wanua_horses_barter_1
+- wanua_horses_barter_2
+- wanua_horses_barter_3
+- wanua_horses_barter_4
+- wanua_horses_barter_5
+- wanua_mine_iron_barter_1
+- wanua_mine_iron_barter_2
+- wanua_mine_iron_barter_3
+- wanua_mine_iron_barter_4
+- wanua_mine_iron_barter_5
+- wanua_mine_copper_barter_1
+- wanua_mine_copper_barter_2
+- wanua_mine_copper_barter_3
+- wanua_mine_copper_barter_4
+- wanua_mine_copper_barter_5
+- wanua_mine_gold_barter_1
+- wanua_mine_gold_barter_2
+- wanua_mine_gold_barter_3
+- wanua_mine_gold_barter_4
+- wanua_mine_gold_barter_5
+- wanua_mine_silver_barter_1
+- wanua_mine_silver_barter_2
+- wanua_mine_silver_barter_3
+- wanua_mine_silver_barter_4
+- wanua_mine_silver_barter_5
+- wanua_mine_gems_barter_1
+- wanua_mine_gems_barter_2
+- wanua_mine_gems_barter_3
+- wanua_mine_gems_barter_4
+- wanua_mine_gems_barter_5
+- wanua_mine_alum_barter_1
+- wanua_mine_alum_barter_2
+- wanua_mine_alum_barter_3
+- wanua_mine_alum_barter_4
+- wanua_mine_alum_barter_5
+- wanua_mine_jade_barter_1
+- wanua_mine_jade_barter_2
+- wanua_mine_jade_barter_3
+- wanua_mine_jade_barter_4
+- wanua_mine_jade_barter_5
+- wanua_mine_salt_barter_1
+- wanua_mine_salt_barter_2
+- wanua_mine_salt_barter_3
+- wanua_mine_salt_barter_4
+- wanua_mine_salt_barter_5
+
+### resource_district_buildings/wine_district_buildings.txt（38 条目）
+
+- small_winery_1
+- small_winery_2
+- small_winery_3
+- wine_resource_building_1
+- wine_resource_building_2
+- wine_resource_building_3
+- wine_resource_building_4
+- wine_resource_building_5
+- wine_resource_building_6
+- wine_resource_building_7
+- wine_resource_building_8
+- wine_resource_building_9
+- wine_resource_building_10
+- beam_press_1
+- beam_press_2
+- beam_press_3
+- beam_press_4
+- beam_press_5
+- long_term_wine_storage_1
+- long_term_wine_storage_2
+- long_term_wine_storage_3
+- long_term_wine_storage_4
+- long_term_wine_storage_5
+- vinegar_stores_1
+- vinegar_stores_2
+- vinegar_stores_3
+- vinegar_stores_4
+- vinegar_stores_5
+- wine_distillery_1
+- wine_distillery_2
+- wine_distillery_3
+- wine_distillery_4
+- wine_distillery_5
+- tartar_collector_1
+- tartar_collector_2
+- tartar_collector_3
+- tartar_collector_4
+- tartar_collector_5
+
+### resource_district_buildings/wood_district_buildings.txt（38 条目）
+
+- minor_forestry_1
+- minor_forestry_2
+- minor_forestry_3
+- forestry_resource_building_1
+- forestry_resource_building_2
+- forestry_resource_building_3
+- forestry_resource_building_4
+- forestry_resource_building_5
+- forestry_resource_building_6
+- forestry_resource_building_7
+- forestry_resource_building_8
+- forestry_resource_building_9
+- forestry_resource_building_10
+- charcoal_production_1
+- charcoal_production_2
+- charcoal_production_3
+- charcoal_production_4
+- charcoal_production_5
+- forest_glass_1
+- forest_glass_2
+- forest_glass_3
+- forest_glass_4
+- forest_glass_5
+- hunting_lodges_1
+- hunting_lodges_2
+- hunting_lodges_3
+- hunting_lodges_4
+- hunting_lodges_5
+- firewood_collection_1
+- firewood_collection_2
+- firewood_collection_3
+- firewood_collection_4
+- firewood_collection_5
+- lacquerware_workshop_1
+- lacquerware_workshop_2
+- lacquerware_workshop_3
+- lacquerware_workshop_4
+- lacquerware_workshop_5
+
+### resource_district_buildings/wool_district_buildings.txt（40 条目）
+
+- sheep_pastures_1
+- sheep_pastures_2
+- sheep_pastures_3
+- wool_resource_building_1
+- wool_resource_building_2
+- wool_resource_building_3
+- wool_resource_building_4
+- wool_resource_building_5
+- wool_resource_building_6
+- wool_resource_building_7
+- wool_resource_building_8
+- wool_resource_building_9
+- wool_resource_building_10
+- ointment_maker_1
+- ointment_maker_2
+- textiles_wool_building_1
+- textiles_wool_building_2
+- textiles_wool_building_3
+- textiles_wool_building_4
+- textiles_wool_building_5
+- rug_weaving_1
+- rug_weaving_2
+- rug_weaving_3
+- rug_weaving_4
+- rug_weaving_5
+- wool_oil_finishing_1
+- wool_oil_finishing_2
+- wool_oil_finishing_3
+- wool_oil_finishing_4
+- wool_oil_finishing_5
+- fulling_mill_1
+- fulling_mill_2
+- fulling_mill_3
+- fulling_mill_4
+- fulling_mill_5
+- wool_cheesemaker_1
+- wool_cheesemaker_2
+- wool_cheesemaker_3
+- wool_cheesemaker_4
+- wool_cheesemaker_5
+
+### special_buildings/00_legendary_buildings.txt（5 条目）
 
 - legendary_shrine
 - legendary_palace
@@ -139,12 +3285,7 @@
 - legendary_watchtower
 - legendary_hunting_lodge
 
-### 00_nomad_buildings.txt（2 条目）
-
-- nomadic_camp_01
-- herder_camp_01
-
-### 00_special_buildings.txt（199 条目）
+### special_buildings/00_special_buildings.txt（201 条目）
 
 - holy_site_cathedral_01
 - holy_site_mosque_01
@@ -296,12 +3437,12 @@
 - hoshi_ryokan_01
 - herat_bazaar_01
 - herat_bazaar_02
-- dvin_shuka_01
-- dvin_shuka_02
+- tabriz_bazaar_01
+- tabriz_bazaar_02
 - lhasa_market_01
 - lhasa_market_02
-- khiva_bazaar_01
-- khiva_bazaar_02
+- gurganj_bazaar_01
+- gurganj_bazaar_02
 - changan_market_01
 - changan_market_02
 - lahur_bazaar_01
@@ -345,8 +3486,10 @@
 - nanhua_temple_01
 - mozu_tombs
 - trosky_castle_01
+- tower_of_pisa
+- tower_of_pisa_leaning
 
-### 00_special_mines.txt（215 条目）
+### special_buildings/00_special_mines.txt（219 条目）
 
 - generic_copper_mines_01
 - generic_copper_mines_02
@@ -456,6 +3599,10 @@
 - turda_mines_02
 - turda_mines_03
 - turda_mines_04
+- wieliczka_mines_01
+- wieliczka_mines_02
+- wieliczka_mines_03
+- wieliczka_mines_04
 - zigong_mines_01
 - zigong_mines_02
 - zigong_mines_03
@@ -564,408 +3711,7 @@
 - tada_mines_03
 - tada_mines_04
 
-### 00_standard_economy_buildings.txt（160 条目）
-
-- caravanserai_01
-- caravanserai_02
-- caravanserai_03
-- caravanserai_04
-- caravanserai_05
-- caravanserai_06
-- caravanserai_07
-- caravanserai_08
-- watermills_01
-- watermills_02
-- watermills_03
-- watermills_04
-- watermills_05
-- watermills_06
-- watermills_07
-- watermills_08
-- windmills_01
-- windmills_02
-- windmills_03
-- windmills_04
-- windmills_05
-- windmills_06
-- windmills_07
-- windmills_08
-- qanats_01
-- qanats_02
-- qanats_03
-- qanats_04
-- qanats_05
-- qanats_06
-- qanats_07
-- qanats_08
-- murex_farm_01
-- murex_farm_02
-- murex_farm_03
-- murex_farm_04
-- murex_farm_05
-- murex_farm_06
-- murex_farm_07
-- murex_farm_08
-- paddy_fields_01
-- paddy_fields_02
-- paddy_fields_03
-- paddy_fields_04
-- paddy_fields_05
-- paddy_fields_06
-- paddy_fields_07
-- paddy_fields_08
-- spice_plantation_01
-- spice_plantation_02
-- spice_plantation_03
-- spice_plantation_04
-- spice_plantation_05
-- spice_plantation_06
-- spice_plantation_07
-- spice_plantation_08
-- waterworks_01
-- waterworks_02
-- waterworks_03
-- waterworks_04
-- waterworks_05
-- waterworks_06
-- waterworks_07
-- waterworks_08
-- common_tradeport_01
-- common_tradeport_02
-- common_tradeport_03
-- common_tradeport_04
-- common_tradeport_05
-- common_tradeport_06
-- common_tradeport_07
-- common_tradeport_08
-- pastures_01
-- pastures_02
-- pastures_03
-- pastures_04
-- pastures_05
-- pastures_06
-- pastures_07
-- pastures_08
-- hunting_grounds_01
-- hunting_grounds_02
-- hunting_grounds_03
-- hunting_grounds_04
-- hunting_grounds_05
-- hunting_grounds_06
-- hunting_grounds_07
-- hunting_grounds_08
-- orchards_01
-- orchards_02
-- orchards_03
-- orchards_04
-- orchards_05
-- orchards_06
-- orchards_07
-- orchards_08
-- farm_estates_01
-- farm_estates_02
-- farm_estates_03
-- farm_estates_04
-- farm_estates_05
-- farm_estates_06
-- farm_estates_07
-- farm_estates_08
-- cereal_fields_01
-- cereal_fields_02
-- cereal_fields_03
-- cereal_fields_04
-- cereal_fields_05
-- cereal_fields_06
-- cereal_fields_07
-- cereal_fields_08
-- logging_camps_01
-- logging_camps_02
-- logging_camps_03
-- logging_camps_04
-- logging_camps_05
-- logging_camps_06
-- logging_camps_07
-- logging_camps_08
-- peat_quarries_01
-- peat_quarries_02
-- peat_quarries_03
-- peat_quarries_04
-- peat_quarries_05
-- peat_quarries_06
-- peat_quarries_07
-- peat_quarries_08
-- hill_farms_01
-- hill_farms_02
-- hill_farms_03
-- hill_farms_04
-- hill_farms_05
-- hill_farms_06
-- hill_farms_07
-- hill_farms_08
-- elephant_pens_01
-- elephant_pens_02
-- elephant_pens_03
-- elephant_pens_04
-- elephant_pens_05
-- elephant_pens_06
-- elephant_pens_07
-- elephant_pens_08
-- plantations_01
-- plantations_02
-- plantations_03
-- plantations_04
-- plantations_05
-- plantations_06
-- plantations_07
-- plantations_08
-- quarries_01
-- quarries_02
-- quarries_03
-- quarries_04
-- quarries_05
-- quarries_06
-- quarries_07
-- quarries_08
-
-### 00_standard_fortification_buildings.txt（32 条目）
-
-- ramparts_01
-- ramparts_02
-- ramparts_03
-- ramparts_04
-- ramparts_05
-- ramparts_06
-- ramparts_07
-- ramparts_08
-- curtain_walls_01
-- curtain_walls_02
-- curtain_walls_03
-- curtain_walls_04
-- curtain_walls_05
-- curtain_walls_06
-- curtain_walls_07
-- curtain_walls_08
-- watchtowers_01
-- watchtowers_02
-- watchtowers_03
-- watchtowers_04
-- watchtowers_05
-- watchtowers_06
-- watchtowers_07
-- watchtowers_08
-- hill_forts_01
-- hill_forts_02
-- hill_forts_03
-- hill_forts_04
-- hill_forts_05
-- hill_forts_06
-- hill_forts_07
-- hill_forts_08
-
-### 00_standard_military_buildings.txt（104 条目）
-
-- wind_furnace_01
-- wind_furnace_02
-- wind_furnace_03
-- wind_furnace_04
-- wind_furnace_05
-- wind_furnace_06
-- wind_furnace_07
-- wind_furnace_08
-- powder_magazine_01
-- powder_magazine_02
-- powder_magazine_03
-- powder_magazine_04
-- powder_magazine_05
-- powder_magazine_06
-- powder_magazine_07
-- powder_magazine_08
-- workshops_01
-- workshops_02
-- workshops_03
-- workshops_04
-- workshops_05
-- workshops_06
-- workshops_07
-- workshops_08
-- horse_pastures_01
-- horse_pastures_02
-- horse_pastures_03
-- horse_pastures_04
-- horse_pastures_05
-- horse_pastures_06
-- horse_pastures_07
-- horse_pastures_08
-- hillside_grazing_01
-- hillside_grazing_02
-- hillside_grazing_03
-- hillside_grazing_04
-- hillside_grazing_05
-- hillside_grazing_06
-- hillside_grazing_07
-- hillside_grazing_08
-- warrior_lodges_01
-- warrior_lodges_02
-- warrior_lodges_03
-- warrior_lodges_04
-- warrior_lodges_05
-- warrior_lodges_06
-- warrior_lodges_07
-- warrior_lodges_08
-- military_camps_01
-- military_camps_02
-- military_camps_03
-- military_camps_04
-- military_camps_05
-- military_camps_06
-- military_camps_07
-- military_camps_08
-- regimental_grounds_01
-- regimental_grounds_02
-- regimental_grounds_03
-- regimental_grounds_04
-- regimental_grounds_05
-- regimental_grounds_06
-- regimental_grounds_07
-- regimental_grounds_08
-- outposts_01
-- outposts_02
-- outposts_03
-- outposts_04
-- outposts_05
-- outposts_06
-- outposts_07
-- outposts_08
-- barracks_01
-- barracks_02
-- barracks_03
-- barracks_04
-- barracks_05
-- barracks_06
-- barracks_07
-- barracks_08
-- camel_farms_01
-- camel_farms_02
-- camel_farms_03
-- camel_farms_04
-- camel_farms_05
-- camel_farms_06
-- camel_farms_07
-- camel_farms_08
-- stables_01
-- stables_02
-- stables_03
-- stables_04
-- stables_05
-- stables_06
-- stables_07
-- stables_08
-- smiths_01
-- smiths_02
-- smiths_03
-- smiths_04
-- smiths_05
-- smiths_06
-- smiths_07
-- smiths_08
-
-### 00_temple_buildings.txt（36 条目）
-
-- temple_01
-- temple_02
-- temple_03
-- temple_04
-- scriptorium_01
-- scriptorium_02
-- scriptorium_03
-- scriptorium_04
-- scriptorium_05
-- scriptorium_06
-- scriptorium_07
-- scriptorium_08
-- monastic_schools_01
-- monastic_schools_02
-- monastic_schools_03
-- monastic_schools_04
-- monastic_schools_05
-- monastic_schools_06
-- monastic_schools_07
-- monastic_schools_08
-- megalith_01
-- megalith_02
-- megalith_03
-- megalith_04
-- megalith_05
-- megalith_06
-- megalith_07
-- megalith_08
-- breweries_01
-- breweries_02
-- breweries_03
-- breweries_04
-- breweries_05
-- breweries_06
-- breweries_07
-- breweries_08
-
-### 00_tribal_buildings.txt（30 条目）
-
-- tribe_01
-- tribe_02
-- longhouses_01
-- longhouses_02
-- war_camps_01
-- war_camps_02
-- palisades_01
-- palisades_02
-- market_villages_01
-- market_villages_02
-- idjang_forts_01
-- idjang_forts_02
-- idjang_forts_03
-- idjang_forts_04
-- wantilan_01
-- wantilan_02
-- wantilan_03
-- wantilan_04
-- kora_kora_yards_01
-- kora_kora_yards_02
-- kora_kora_yards_03
-- kora_kora_yards_04
-- water_temples_01
-- water_temples_02
-- water_temples_03
-- water_temples_04
-- stilted_granaries_01
-- stilted_granaries_02
-- stilted_granaries_03
-- stilted_granaries_04
-
-### 99_ach_buildings.txt（12 条目）
-
-- oath_warriors_building_01
-- oath_warriors_building_02
-- oath_warriors_building_03
-- oath_warriors_building_04
-- oath_faithful_building_01
-- oath_faithful_building_02
-- oath_faithful_building_03
-- oath_faithful_building_04
-- oath_poor_building_01
-- oath_poor_building_02
-- oath_poor_building_03
-- oath_poor_building_04
-
-### 99_background_graphics_buildings.txt（6 条目）
-
-- walls_00
-- walls_01_tribal
-- walls_01
-- walls_02
-- walls_03
-- walls_04
-
-### ccp3_special_buildings.txt（26 条目）
+### special_buildings/ccp3_special_buildings.txt（26 条目）
 
 - drassanes_01
 - kyz_kala_01
@@ -994,7 +3740,7 @@
 - vatapi_caves_01
 - jaisalmer_fort_01
 
-### cp6_special_buildings.txt（12 条目）
+### special_buildings/cp6_special_buildings.txt（12 条目）
 
 - holy_site_st_peters_basilica_01
 - mont_st_michel_01
@@ -1009,7 +3755,7 @@
 - qutb_minar_03
 - qutb_minar_04
 
-### cp8_special_buildings.txt（23 条目）
+### special_buildings/cp8_special_buildings.txt（23 条目）
 
 - goguryeo_tomb_01
 - buddha_kamakura_01
@@ -1035,56 +3781,13 @@
 - temples_angkor_01
 - temples_angkor_02
 
-### pam_buildings.txt（8 条目）
-
-- great_project_cathedral_under_construction
-- great_project_cathedral_01
-- great_project_cathedral_02
-- great_project_cathedral_03
-- pam_abbey_of_st_gall_01
-- pam_palais_de_papes_01
-- pam_lateran_basilica_01
-- pam_reims_cathedral_01
-
-### temple_citadel_buildings.txt（28 条目）
-
-- temple_citadel_01
-- temple_citadel_02
-- temple_citadel_03
-- temple_citadel_04
-- citadel_shrine_01
-- citadel_shrine_02
-- citadel_shrine_03
-- citadel_shrine_04
-- citadel_shrine_05
-- citadel_shrine_06
-- citadel_shrine_07
-- citadel_shrine_08
-- sacred_pool_01
-- sacred_pool_02
-- sacred_pool_03
-- sacred_pool_04
-- sacred_pool_05
-- sacred_pool_06
-- sacred_pool_07
-- sacred_pool_08
-- vihara_halls_01
-- vihara_halls_02
-- vihara_halls_03
-- vihara_halls_04
-- vihara_halls_05
-- vihara_halls_06
-- vihara_halls_07
-- vihara_halls_08
-
-### tgp_great_project_buildings.txt（12 条目）
+### tgp_great_project_buildings.txt（11 条目）
 
 - mandala_capital_01
 - mandala_capital_02
 - mandala_capital_03
 - mandala_capital_04
 - mandala_capital_05
-- celestial_great_barracks_01
 - the_great_wall_01
 - the_great_wall_02
 - the_great_wall_03
@@ -1092,6 +3795,116 @@
 - the_great_wall_shanhai_pass
 - the_great_wall_liaodong
 
+### trade_post_buildings/basic_trade_post_buildings.txt（100 条目）
+
+- pb_trade_office_01
+- pb_trade_office_02
+- pb_trade_office_03
+- pb_trade_office_04
+- trade_counting_house_01
+- trade_counting_house_02
+- trade_counting_house_03
+- trade_counting_house_04
+- trade_counting_house_05
+- trade_treasury_01
+- trade_treasury_02
+- trade_treasury_03
+- trade_treasury_04
+- trade_treasury_05
+- trade_recruitment_office_01
+- trade_recruitment_office_02
+- trade_recruitment_office_03
+- trade_recruitment_office_04
+- trade_recruitment_office_05
+- trade_mercenary_office_01
+- trade_mercenary_office_02
+- trade_mercenary_office_03
+- trade_mercenary_office_04
+- trade_mercenary_office_05
+- trade_watchtower_01
+- trade_watchtower_02
+- trade_watchtower_03
+- trade_watchtower_04
+- trade_watchtower_05
+- trade_shipyard_01
+- trade_shipyard_02
+- trade_shipyard_03
+- trade_shipyard_04
+- trade_shipyard_05
+- trade_lodgings_01
+- trade_lodgings_02
+- trade_lodgings_03
+- trade_lodgings_04
+- trade_lodgings_05
+- trade_warehouse_01
+- trade_warehouse_02
+- trade_warehouse_03
+- trade_warehouse_04
+- trade_warehouse_05
+- trade_secure_storeroom_01
+- trade_secure_storeroom_02
+- trade_secure_storeroom_03
+- trade_secure_storeroom_04
+- trade_secure_storeroom_05
+- trade_granary_01
+- trade_granary_02
+- trade_granary_03
+- trade_granary_04
+- trade_granary_05
+- trade_cellar_01
+- trade_cellar_02
+- trade_cellar_03
+- trade_cellar_04
+- trade_cellar_05
+- trade_food_depot_01
+- trade_food_depot_02
+- trade_food_depot_03
+- trade_food_depot_04
+- trade_food_depot_05
+- trade_consulate_01
+- trade_consulate_02
+- trade_consulate_03
+- trade_consulate_04
+- trade_consulate_05
+- trade_cloth_hall_01
+- trade_cloth_hall_02
+- trade_cloth_hall_03
+- trade_cloth_hall_04
+- trade_cloth_hall_05
+- trade_tanners_stables_01
+- trade_tanners_stables_02
+- trade_tanners_stables_03
+- trade_tanners_stables_04
+- trade_tanners_stables_05
+- trade_blacksmith_quarter_01
+- trade_blacksmith_quarter_02
+- trade_blacksmith_quarter_03
+- trade_blacksmith_quarter_04
+- trade_blacksmith_quarter_05
+- trade_gem_exchange_01
+- trade_gem_exchange_02
+- trade_gem_exchange_03
+- trade_gem_exchange_04
+- trade_gem_exchange_05
+- trade_apothecary_guild_01
+- trade_apothecary_guild_02
+- trade_apothecary_guild_03
+- trade_apothecary_guild_04
+- trade_apothecary_guild_05
+- trade_league_arsenal_01
+- trade_league_arsenal_02
+- trade_league_arsenal_03
+- trade_league_treasury_01
+- trade_league_treasury_02
+- trade_league_treasury_03
+
+### trade_post_buildings/hanseatic_kontor_buildings.txt（3 条目）
+
+- hanseatic_kontor_01
+- hanseatic_kontor_02
+- hanseatic_kontor_03
+
 ### 未解析文件
 
 - `_buildings.info` — 纯文档（非 Jomini）
+- `_old_buildings.info` — 纯文档（非 Jomini）

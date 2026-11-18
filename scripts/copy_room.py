@@ -1,20 +1,27 @@
 # -*- coding: utf-8 -*-
-"""抄写室（copy_room）—— 为其他 mod 建立同构知识库（2026-11-09 新增）。
+"""抄写室（copy_room/）—— 为其他 mod 建立同构知识库（2026-11-09 新增；
+2026-11-09 重组：产物自 mods_docs/ 移入 copy_room/<mod-id>/，文档与产物同处一室）。
 
 子命令：
   --list              枚举可建的 mod：Steam 工坊（多库发现）+ Documents 本地 mod
-  --build --id N      为工坊 mod N 建 KB（签名层+结构层+差异报告）
+  --build --id N      为工坊 mod N 建 KB（签名层+结构层+地图层+差异报告）
   --build --path P    为本地/任意 mod 文件夹 P 建 KB（--name 覆盖命名）
-  --sync              把已建 KB 清单再生进 catalog.md 抄写室标记区块
-  --check             校验 mods_docs 与 catalog 区块同步（空也通过）
+  --sync              把抄写室指引区块（静态）写进/修复 catalog.md
+  --check             校验 catalog 抄写室区块在位且一致（CI 跑；KB 为本地产物不影响判定）
 
-双通道复用现有管线（进程级调用，零代码耦合）：
-  签名层 = game_layer.py --source <dump目录> --out mods_docs/<mod>/script_docs
+三通道复用现有管线（进程级调用，零代码耦合）：
+  签名层 = game_layer.py --source <dump目录> --out copy_room/<mod-id>/script_docs
            （前置：用户以目标 mod 加载态跑过 script_docs + dump_data_types）
-  结构层 = vanilla_index.py --game-dir <mod文件夹> --out mods_docs/<mod>/structure
-差异报告 = mods_docs/<mod>/script_docs 与 game_docs/script_docs 的 ### 条目集对比
+  结构层 = vanilla_index.py --game-dir <mod文件夹> --out copy_room/<mod-id>/structure
+  地图层 = map_layer.py --game-dir <mod> --out copy_room/<mod-id>/map_docs
+           （mod 自带 map_data/definition.csv 时自动构建，否则优雅跳过）
+差异报告 = copy_room/<mod-id>/script_docs 与 game_docs/script_docs 的 ### 条目集对比
 
-发布边界：mods_docs/ 不入仓库（.gitignore）；本脚本与 copy_room/ 文档发布。
+原版侧的同构刷新入口是 scripts/run.py --stage game（三通道一条命令）；
+本脚本只管 mod 侧。
+
+发布边界：copy_room/<mod-id>/ 不入仓库（.gitignore 的 copy_room/* 规则，
+README.md 除外）；本脚本与 copy_room/README.md 文档发布。
 """
 import re
 import subprocess
@@ -27,7 +34,7 @@ from lib import config  # noqa: E402
 
 PY = sys.executable
 SCRIPTS = config.REPO_ROOT / "scripts"
-MODS_DOCS = config.REPO_ROOT / "mods_docs"
+COPY_ROOM = config.REPO_ROOT / "copy_room"
 CK3_APPID = "1158310"
 PARADOX_MODS = (Path.home() / "Documents" / "Paradox Interactive"
                 / "Crusader Kings III" / "mod")
@@ -107,8 +114,9 @@ def slugify(s: str) -> str:
 # ------------------------------------------------ 建 KB
 
 def build(mod: dict, dump_dir: Path | None) -> int:
-    mid = mod.get("id") or slugify(mod["name"])
-    target = MODS_DOCS / f"{mid}-{slugify(mod['name'])}"
+    slug = slugify(mod["name"])
+    dirname = f"{mod['id']}-{slug}" if mod.get("id") else slug
+    target = COPY_ROOM / dirname
     sig_out = target / "script_docs"
     struct_out = target / "structure"
     dump = dump_dir or (Path.home() / "Documents" / "Paradox Interactive"
@@ -117,8 +125,10 @@ def build(mod: dict, dump_dir: Path | None) -> int:
     print(f"[copy_room] 目标 mod：{mod['name']}（{mod.get('origin', '?')}）")
     print(f"[copy_room] 产物目录：{target.relative_to(config.REPO_ROOT)}")
 
-    # 通道 1：签名层（需要 dump；缺失时跳过并提示，结构层仍可建）
-    if any(dump.glob("*.log")):
+    # 通道 1：签名层（需要 dump；缺失时跳过并提示，结构层仍可建）。
+    # 哨兵 = effects.log（script_docs 的首个白名单产物）；更深的不完整
+    # （如缺 data_types\）由 game_layer 的白名单断言精确报错。
+    if (dump / "effects.log").is_file():
         r = subprocess.run([PY, "-X", "utf8", str(SCRIPTS / "game_layer.py"),
                             "--source", str(dump), "--out", str(sig_out),
                             "--no-manifest"], capture_output=True, text=True,
@@ -127,7 +137,7 @@ def build(mod: dict, dump_dir: Path | None) -> int:
         if r.returncode != 0:
             return r.returncode
     else:
-        print(f"[copy_room] 警告：{dump} 无清单日志——签名层跳过。"
+        print(f"[copy_room] 警告：{dump} 无 effects.log——签名层跳过。"
               f"请以目标 mod 加载态在游戏控制台跑 script_docs + dump_data_types 后重跑。")
 
     # 通道 2：结构层（直接扫 mod 文件夹）
@@ -223,20 +233,30 @@ def write_readme(target: Path, mod: dict, has_sig: bool) -> None:
 # ------------------------------------------------ catalog 区块
 
 def render_section() -> str:
+    """抄写室区块 = 静态指引（机器无关）。
+
+    mod KB 是本地产物（不入仓库），区块不罗列具体 KB——罗列会让发布版
+    catalog 依赖某台机器的目录。本机有哪些 KB 用 `ls copy_room/` 即得，
+    每个 KB 自带 README 记录来源与组成。
+    """
     lines = [MARK_BEGIN,
-             "## 抄写室 · 其他 Mod 知识库（mods_docs，本地生成不发布；"
-             "构建方式见 `copy_room/README.md`）", ""]
-    kbs = sorted(MODS_DOCS.glob("*/README.md")) if MODS_DOCS.is_dir() else []
-    if not kbs:
-        lines.append("（暂无 mod 知识库。`python scripts/copy_room.py --list` 枚举，"
-                     "`--build --id <工坊id>` 或 `--path <mod文件夹>` 构建，"
-                     "`--sync` 并入本目录。）")
-    for r in kbs:
-        lines += [f"### {r.parent.name}", f"- {r.read_text(encoding='utf-8').splitlines()[0].lstrip('# ').strip()}",
-                  f"- **位置**：`mods_docs/{r.parent.name}/`（README / script_docs / "
-                  "structure / DIFF_vs_vanilla）", ""]
-    lines.append(MARK_END)
+             "## 抄写室 · 其他 Mod 知识库（copy_room/<mod-id>/，本地生成不发布）",
+             "",
+             "为其他 mod（工坊/本地）建立的同构知识库，服务子 mod 开发：",
+             "mod 加载态签名层（script_docs/）、结构索引（structure/entry_map.tsv）、"
+             "换图 mod 的地图档案（map_docs/）、与原版的签名差异（DIFF_vs_vanilla.md）。",
+             "",
+             "- 构建与检索约定：`copy_room/README.md`（构建入口：`scripts/copy_room.py`）",
+             "- 本机已有知识库：`ls copy_room/`（每个 KB 自带 README 记录来源与组成）",
+             "- 子 mod 开发时 mod 专属签名优先查 mod KB；与原版同名条目以 mod 层为准，"
+             "原版行为回查 `game_docs/`",
+             "",
+             MARK_END]
     return "\n".join(lines) + "\n"
+
+
+def _local_kb_count() -> int:
+    return len(list(COPY_ROOM.glob("*/README.md")))
 
 
 def sync() -> int:
@@ -249,8 +269,8 @@ def sync() -> int:
     else:
         text = text.rstrip("\n") + "\n\n" + section
     cat.write_text(text, encoding="utf-8", newline="\n")
-    n = len(list(MODS_DOCS.glob("*/README.md"))) if MODS_DOCS.is_dir() else 0
-    print(f"[copy_room] catalog 区块已同步（{n} 个 KB）")
+    print(f"[copy_room] catalog 抄写室区块已同步（静态指引；"
+          f"本机 KB {_local_kb_count()} 个，ls copy_room/ 查看）")
     return 0
 
 
@@ -258,9 +278,9 @@ def check() -> int:
     want = render_section()
     text = config.CATALOG_PATH.read_text(encoding="utf-8") if config.CATALOG_PATH.is_file() else ""
     ok = want.strip() in text
-    n = len([p for p in MODS_DOCS.glob("*/README.md")]) if MODS_DOCS.is_dir() else 0
-    print(f"[copy_room][check] mod KB {n} 个；catalog 区块"
-          f"{'一致' if ok else '不一致（跑 --sync）'}")
+    print(f"[copy_room][check] catalog 抄写室区块"
+          f"{'在位且一致' if ok else '缺失或不一致（跑 --sync）'}；"
+          f"本机 KB {_local_kb_count()} 个（本地产物，不影响判定）")
     return 0 if ok else 1
 
 
@@ -289,12 +309,14 @@ def main(argv: list[str] | None = None) -> int:
             if not p.is_dir():
                 print(f"[copy_room] 路径不存在：{p}")
                 return 2
+            name = (args[args.index("--name") + 1] if "--name" in args else "")
             desc = p / "descriptor.mod"
             meta = parse_descriptor(desc) if desc.is_file() else {}
-            target = {"id": "", "name": meta.get("name", p.name),
+            target = {"id": "", "name": name or meta.get("name", p.name),
                       "path": str(p), "origin": "path", "version": ""}
         if target is None:
-            print("用法：--build --id <工坊id> | --build --path <mod文件夹> [--dump <dump目录>]")
+            print("用法：--build --id <工坊id> | --build --path <mod文件夹> "
+                  "[--name <名字>] [--dump <dump目录>]")
             return 2
         dump = Path(args[args.index("--dump") + 1]) if "--dump" in args else None
         return build(target, dump)

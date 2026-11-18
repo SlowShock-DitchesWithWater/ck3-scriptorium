@@ -1,8 +1,8 @@
 # common/culture 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：152（其中 Jomini 解析 141 个）
-- 顶层块条目总数：2532，跨文件唯一条目 2532
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：160（其中 Jomini 解析 149 个）
+- 顶层块条目总数：2613，跨文件唯一条目 2611
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -12,87 +12,89 @@
 | `_cultural_traits.info` | 5239 | - | - | 纯文档（非 Jomini） |
 | `aesthetics_bundles/00_aesthetics.txt` | 5830 | 9 | 0 | jomini |
 | `aesthetics_bundles/_aesthetics_bundles.info` | 495 | - | - | 纯文档（非 Jomini） |
-| `creation_names/00_names.txt` | 32919 | 75 | 0 | jomini |
-| `creation_names/00_names_hybrid.txt` | 37876 | 62 | 0 | jomini |
+| `creation_names/00_names.txt` | 37661 | 97 | 0 | jomini |
+| `creation_names/00_names_hybrid.txt` | 35232 | 58 | 0 | jomini |
 | `creation_names/_creation_names.info` | 1357 | - | - | 纯文档（非 Jomini） |
 | `cultures/00_akan.txt` | 2102 | 3 | 0 | jomini |
 | `cultures/00_amuric.txt` | 809 | 1 | 0 | jomini |
-| `cultures/00_arabic.txt` | 3990 | 5 | 0 | jomini |
+| `cultures/00_arabic.txt` | 4268 | 5 | 0 | jomini |
 | `cultures/00_baltic.txt` | 2621 | 3 | 0 | jomini |
 | `cultures/00_balto_finnic.txt` | 3983 | 5 | 0 | jomini |
-| `cultures/00_bantu.txt` | 1459 | 2 | 0 | jomini |
-| `cultures/00_berber.txt` | 2994 | 4 | 0 | jomini |
+| `cultures/00_bantu.txt` | 1674 | 2 | 0 | jomini |
+| `cultures/00_berber.txt` | 3300 | 4 | 0 | jomini |
 | `cultures/00_brythonic.txt` | 4094 | 5 | 0 | jomini |
 | `cultures/00_burman.txt` | 2343 | 3 | 0 | jomini |
 | `cultures/00_byzantine.txt` | 1316 | 1 | 0 | jomini |
 | `cultures/00_caucasian.txt` | 1732 | 2 | 0 | jomini |
-| `cultures/00_central_african.txt` | 2851 | 4 | 0 | jomini |
-| `cultures/00_central_germanic.txt` | 6231 | 7 | 0 | jomini |
+| `cultures/00_central_african.txt` | 3066 | 4 | 0 | jomini |
+| `cultures/00_central_germanic.txt` | 6126 | 7 | 0 | jomini |
 | `cultures/00_cham.txt` | 1852 | 2 | 0 | jomini |
-| `cultures/00_chinese.txt` | 3720 | 4 | 0 | jomini |
+| `cultures/00_chinese.txt` | 3743 | 4 | 0 | jomini |
 | `cultures/00_dead.txt` | 5359 | 7 | 0 | jomini |
-| `cultures/00_dravidian.txt` | 3076 | 4 | 0 | jomini |
+| `cultures/00_dravidian.txt` | 3178 | 4 | 0 | jomini |
 | `cultures/00_east_african.txt` | 3849 | 5 | 0 | jomini |
-| `cultures/00_east_slavic.txt` | 3238 | 4 | 0 | jomini |
-| `cultures/00_frankish.txt` | 3529 | 4 | 0 | jomini |
+| `cultures/00_east_slavic.txt` | 4112 | 5 | 0 | jomini |
+| `cultures/00_egyptian.txt` | 806 | 1 | 0 | jomini |
+| `cultures/00_frankish.txt` | 5362 | 6 | 0 | jomini |
 | `cultures/00_goidelic.txt` | 1701 | 2 | 0 | jomini |
-| `cultures/00_hmongic.txt` | 1782 | 2 | 0 | jomini |
+| `cultures/00_hmongic.txt` | 1790 | 2 | 0 | jomini |
 | `cultures/00_iberian.txt` | 8599 | 10 | 0 | jomini |
-| `cultures/00_indo_aryan.txt` | 9248 | 14 | 0 | jomini |
-| `cultures/00_iranian.txt` | 10606 | 11 | 0 | jomini |
-| `cultures/00_israelite.txt` | 3930 | 5 | 0 | jomini |
+| `cultures/00_indo_aryan.txt` | 9350 | 14 | 0 | jomini |
+| `cultures/00_iranian.txt` | 12273 | 12 | 0 | jomini |
+| `cultures/00_israelite.txt` | 4876 | 6 | 0 | jomini |
 | `cultures/00_japonic.txt` | 3559 | 4 | 0 | jomini |
 | `cultures/00_khmer.txt` | 2851 | 3 | 0 | jomini |
 | `cultures/00_korean.txt` | 5334 | 5 | 0 | jomini |
-| `cultures/00_latin.txt` | 5587 | 7 | 0 | jomini |
+| `cultures/00_latin.txt` | 6226 | 7 | 0 | jomini |
 | `cultures/00_magyar.txt` | 1778 | 2 | 0 | jomini |
-| `cultures/00_malayic.txt` | 11129 | 12 | 0 | jomini |
-| `cultures/00_mongolic.txt` | 7154 | 8 | 0 | jomini |
+| `cultures/00_malayic.txt` | 11231 | 12 | 0 | jomini |
+| `cultures/00_mongolic.txt` | 7699 | 9 | 0 | jomini |
 | `cultures/00_nakkavaram.txt` | 727 | 1 | 0 | jomini |
-| `cultures/00_north_germanic.txt` | 4355 | 4 | 0 | jomini |
-| `cultures/00_qiangic.txt` | 1782 | 2 | 0 | jomini |
-| `cultures/00_sahelian.txt` | 2156 | 3 | 0 | jomini |
-| `cultures/00_sahelian_ibl.txt` | 2327 | 3 | 0 | jomini |
+| `cultures/00_north_germanic.txt` | 7278 | 7 | 0 | jomini |
+| `cultures/00_qiangic.txt` | 1783 | 2 | 0 | jomini |
+| `cultures/00_sahelian.txt` | 2269 | 3 | 0 | jomini |
+| `cultures/00_sahelian_ibl.txt` | 2542 | 3 | 0 | jomini |
 | `cultures/00_senegambian.txt` | 2082 | 3 | 0 | jomini |
-| `cultures/00_somalian.txt` | 1448 | 2 | 0 | jomini |
+| `cultures/00_somalian.txt` | 1561 | 2 | 0 | jomini |
 | `cultures/00_south_slavic.txt` | 4211 | 5 | 0 | jomini |
-| `cultures/00_syriac.txt` | 742 | 1 | 0 | jomini |
-| `cultures/00_tai.txt` | 1928 | 2 | 0 | jomini |
+| `cultures/00_syriac.txt` | 1564 | 2 | 0 | jomini |
+| `cultures/00_tai.txt` | 1935 | 2 | 0 | jomini |
 | `cultures/00_tibetan.txt` | 3831 | 6 | 0 | jomini |
 | `cultures/00_tujia.txt` | 632 | 1 | 0 | jomini |
 | `cultures/00_tungusic.txt` | 3245 | 2 | 0 | jomini |
-| `cultures/00_turkic.txt` | 17010 | 20 | 0 | jomini |
+| `cultures/00_turkic.txt` | 17126 | 20 | 0 | jomini |
 | `cultures/00_ugro_permian.txt` | 2527 | 3 | 0 | jomini |
 | `cultures/00_viet.txt` | 1061 | 1 | 0 | jomini |
 | `cultures/00_vlach.txt` | 1005 | 1 | 0 | jomini |
 | `cultures/00_volga_finnic.txt` | 3821 | 5 | 0 | jomini |
-| `cultures/00_west_african.txt` | 3855 | 5 | 0 | jomini |
+| `cultures/00_west_african.txt` | 3957 | 5 | 0 | jomini |
 | `cultures/00_west_germanic.txt` | 3610 | 4 | 0 | jomini |
 | `cultures/00_west_slavic.txt` | 5177 | 6 | 0 | jomini |
 | `cultures/00_yoruba.txt` | 2812 | 4 | 0 | jomini |
-| `cultures/_cultures.info` | 5634 | - | - | 纯文档（非 Jomini） |
-| `eras/00_culture_eras.txt` | 2251 | 4 | 0 | jomini |
+| `cultures/_cultures.info` | 5858 | - | - | 纯文档（非 Jomini） |
+| `eras/00_culture_eras.txt` | 2514 | 4 | 0 | jomini |
 | `eras/_culture_eras.info` | 1914 | - | - | 纯文档（非 Jomini） |
 | `innovations/00_cultural_maa_innovations.txt` | 9161 | 14 | 32 | jomini |
-| `innovations/00_early_medieval_innovations.txt` | 12719 | 17 | 36 | jomini |
-| `innovations/00_fp3_innovations.txt` | 3914 | 2 | 30 | jomini |
-| `innovations/00_high_medieval_innovations.txt` | 12735 | 18 | 38 | jomini |
-| `innovations/00_late_medieval_innovations.txt` | 12353 | 17 | 37 | jomini |
-| `innovations/00_tribal_innovations.txt` | 11736 | 20 | 38 | jomini |
-| `innovations/01_fp1_innovations.txt` | 4101 | 2 | 33 | jomini |
+| `innovations/00_early_medieval_innovations.txt` | 18618 | 23 | 46 | jomini |
+| `innovations/00_fp3_innovations.txt` | 3957 | 2 | 30 | jomini |
+| `innovations/00_high_medieval_innovations.txt` | 17203 | 23 | 45 | jomini |
+| `innovations/00_late_medieval_innovations.txt` | 18057 | 23 | 44 | jomini |
+| `innovations/00_tribal_innovations.txt` | 15238 | 26 | 45 | jomini |
+| `innovations/01_fp1_innovations.txt` | 4207 | 2 | 33 | jomini |
 | `innovations/02_ce1_innovations.txt` | 786 | 1 | 1 | jomini |
 | `innovations/_culture_innovations.info` | 5810 | - | - | 纯文档（非 Jomini） |
-| `innovations/tgp_innovations.txt` | 15057 | 17 | 46 | jomini |
-| `name_equivalency/00_names.txt` | 75601 | 1452 | 0 | jomini |
+| `innovations/tgp_innovations.txt` | 16821 | 19 | 46 | jomini |
+| `name_equivalency/00_names.txt` | 76005 | 1457 | 0 | jomini |
 | `name_equivalency/_info.info` | 802 | - | - | 纯文档（非 Jomini） |
 | `name_lists/00_ainu.txt` | 3144 | 1 | 0 | jomini |
 | `name_lists/00_akan.txt` | 5378 | 3 | 0 | jomini |
-| `name_lists/00_arabic.txt` | 23497 | 6 | 0 | jomini |
+| `name_lists/00_arabic.txt` | 23499 | 6 | 0 | jomini |
 | `name_lists/00_balhae.txt` | 12209 | 1 | 0 | jomini |
 | `name_lists/00_baltic.txt` | 6056 | 3 | 0 | jomini |
 | `name_lists/00_balto_finnic.txt` | 11937 | 5 | 0 | jomini |
 | `name_lists/00_bantu.txt` | 8560 | 2 | 0 | jomini |
 | `name_lists/00_berber.txt` | 17297 | 4 | 0 | jomini |
+| `name_lists/00_bouxcuengh.txt` | 5936 | 1 | 0 | jomini |
 | `name_lists/00_brythonic.txt` | 25439 | 5 | 0 | jomini |
 | `name_lists/00_burman.txt` | 3256 | 2 | 0 | jomini |
 | `name_lists/00_byzantine.txt` | 35085 | 5 | 0 | jomini |
@@ -102,65 +104,71 @@
 | `name_lists/00_dead.txt` | 17560 | 4 | 0 | jomini |
 | `name_lists/00_dravidian.txt` | 17461 | 4 | 0 | jomini |
 | `name_lists/00_east_african.txt` | 8118 | 4 | 0 | jomini |
-| `name_lists/00_east_slavic.txt` | 10496 | 4 | 0 | jomini |
-| `name_lists/00_frankish.txt` | 73243 | 7 | 0 | jomini |
+| `name_lists/00_east_slavic.txt` | 14948 | 5 | 0 | jomini |
+| `name_lists/00_egyptian.txt` | 1620 | 1 | 0 | jomini |
+| `name_lists/00_frankish.txt` | 85473 | 9 | 0 | jomini |
 | `name_lists/00_goidelic.txt` | 21606 | 2 | 0 | jomini |
+| `name_lists/00_hmongic.txt` | 6058 | 1 | 0 | jomini |
 | `name_lists/00_iberian.txt` | 44990 | 9 | 0 | jomini |
-| `name_lists/00_indo_aryan.txt` | 82375 | 13 | 0 | jomini |
-| `name_lists/00_iranian.txt` | 37049 | 10 | 0 | jomini |
-| `name_lists/00_israelite.txt` | 6603 | 3 | 0 | jomini |
+| `name_lists/00_indo_aryan.txt` | 82387 | 13 | 0 | jomini |
+| `name_lists/00_iranian.txt` | 38768 | 11 | 0 | jomini |
+| `name_lists/00_israelite.txt` | 7802 | 4 | 0 | jomini |
 | `name_lists/00_japanese.txt` | 53415 | 2 | 0 | jomini |
+| `name_lists/00_khitan.txt` | 3467 | 1 | 0 | jomini |
 | `name_lists/00_khmer.txt` | 10250 | 1 | 0 | jomini |
 | `name_lists/00_korean.txt` | 6412 | 1 | 0 | jomini |
-| `name_lists/00_latin.txt` | 36658 | 6 | 0 | jomini |
+| `name_lists/00_latin.txt` | 36677 | 6 | 0 | jomini |
 | `name_lists/00_magyar.txt` | 9554 | 2 | 0 | jomini |
 | `name_lists/00_malay.txt` | 13911 | 8 | 0 | jomini |
-| `name_lists/00_mongolic.txt` | 14262 | 7 | 0 | jomini |
+| `name_lists/00_mongolic.txt` | 12323 | 6 | 0 | jomini |
 | `name_lists/00_nakkavaram.txt` | 1641 | 1 | 0 | jomini |
 | `name_lists/00_nivkh.txt` | 1653 | 1 | 0 | jomini |
-| `name_lists/00_north_germanic.txt` | 21475 | 4 | 0 | jomini |
+| `name_lists/00_north_germanic.txt` | 29429 | 6 | 0 | jomini |
 | `name_lists/00_qiangic.txt` | 7992 | 2 | 0 | jomini |
 | `name_lists/00_ryukyuan.txt` | 2420 | 1 | 0 | jomini |
 | `name_lists/00_sahelian.txt` | 11675 | 6 | 0 | jomini |
 | `name_lists/00_senegambian.txt` | 1941 | 3 | 0 | jomini |
 | `name_lists/00_somalian.txt` | 7531 | 3 | 0 | jomini |
 | `name_lists/00_south_slavic.txt` | 17378 | 6 | 0 | jomini |
+| `name_lists/00_syriac.txt` | 1539 | 1 | 0 | jomini |
 | `name_lists/00_tai.txt` | 3477 | 1 | 0 | jomini |
 | `name_lists/00_tibetan.txt` | 44653 | 6 | 0 | jomini |
-| `name_lists/00_tungusic.txt` | 10750 | 2 | 0 | jomini |
+| `name_lists/00_tungusic.txt` | 12418 | 2 | 0 | jomini |
 | `name_lists/00_turkic.txt` | 44180 | 18 | 0 | jomini |
 | `name_lists/00_ugro_permian.txt` | 6452 | 3 | 0 | jomini |
 | `name_lists/00_vietnamese.txt` | 3653 | 1 | 0 | jomini |
 | `name_lists/00_volga_finnic.txt` | 11167 | 5 | 0 | jomini |
 | `name_lists/00_west_african.txt` | 9033 | 5 | 0 | jomini |
-| `name_lists/00_west_germanic.txt` | 17371 | 4 | 0 | jomini |
+| `name_lists/00_west_germanic.txt` | 17400 | 4 | 0 | jomini |
 | `name_lists/00_west_slavic.txt` | 23962 | 6 | 0 | jomini |
+| `name_lists/00_yi.txt` | 5993 | 1 | 0 | jomini |
 | `name_lists/00_yoruba.txt` | 8053 | 4 | 0 | jomini |
 | `name_lists/_example.info` | 5653 | - | - | 纯文档（非 Jomini） |
 | `name_lists/_name_lists.info` | 3497 | - | - | 纯文档（非 Jomini） |
-| `pillars/00_ethos.txt` | 3303 | 7 | 0 | jomini |
+| `pillars/00_ethos.txt` | 3313 | 7 | 0 | jomini |
 | `pillars/00_head_determination.txt` | 306 | 2 | 0 | jomini |
-| `pillars/00_heritage.txt` | 9866 | 59 | 0 | jomini |
-| `pillars/00_language.txt` | 26580 | 91 | 0 | jomini |
+| `pillars/00_heritage.txt` | 18541 | 59 | 0 | jomini |
+| `pillars/00_language.txt` | 26858 | 92 | 0 | jomini |
 | `pillars/00_martial_custom.txt` | 4160 | 3 | 0 | jomini |
 | `pillars/_pillars.info` | 1846 | - | - | 纯文档（非 Jomini） |
-| `traditions/00_combat_traditions.txt` | 56616 | 24 | 0 | jomini |
+| `traditions/00_combat_traditions.txt` | 57139 | 24 | 0 | jomini |
 | `traditions/00_debug_traditions.txt` | 657 | 1 | 0 | jomini |
-| `traditions/00_maa_traditions.txt` | 46757 | 21 | 0 | jomini |
-| `traditions/00_realm_traditions.txt` | 81009 | 36 | 0 | jomini |
-| `traditions/00_regional_traditions.txt` | 31927 | 15 | 0 | jomini |
-| `traditions/00_ritual_traditions.txt` | 35540 | 18 | 0 | jomini |
-| `traditions/00_societal_traditions.txt` | 64092 | 29 | 0 | jomini |
-| `traditions/01_fp1_traditions.txt` | 13226 | 5 | 0 | jomini |
-| `traditions/03_fp2_traditions.txt` | 9246 | 4 | 0 | jomini |
-| `traditions/03_fp3_traditions.txt` | 18684 | 7 | 0 | jomini |
+| `traditions/00_maa_traditions.txt` | 47518 | 21 | 0 | jomini |
+| `traditions/00_realm_traditions.txt` | 83662 | 36 | 0 | jomini |
+| `traditions/00_regional_traditions.txt` | 33655 | 15 | 0 | jomini |
+| `traditions/00_ritual_traditions.txt` | 36294 | 18 | 0 | jomini |
+| `traditions/00_societal_traditions.txt` | 65988 | 29 | 0 | jomini |
+| `traditions/01_fp1_traditions.txt` | 13347 | 5 | 0 | jomini |
+| `traditions/03_fp2_traditions.txt` | 9287 | 4 | 0 | jomini |
+| `traditions/03_fp3_traditions.txt` | 18836 | 7 | 0 | jomini |
 | `traditions/04_ep2_traditions.txt` | 2083 | 1 | 0 | jomini |
-| `traditions/06_ce1_traditions.txt` | 2384 | 1 | 0 | jomini |
-| `traditions/07_ep3_traditions.txt` | 15316 | 6 | 0 | jomini |
-| `traditions/09_ach_traditions.txt` | 667 | 1 | 0 | jomini |
-| `traditions/09_mpo_traditions.txt` | 8204 | 4 | 0 | jomini |
+| `traditions/06_ce1_traditions.txt` | 2441 | 1 | 0 | jomini |
+| `traditions/07_ep3_traditions.txt` | 15827 | 6 | 0 | jomini |
+| `traditions/09_ach_traditions.txt` | 665 | 1 | 0 | jomini |
+| `traditions/09_mpo_traditions.txt` | 8515 | 4 | 0 | jomini |
+| `traditions/11_gdp_traditions.txt` | 24515 | 9 | 0 | jomini |
 | `traditions/_traditions.info` | 826 | - | - | 纯文档（非 Jomini） |
-| `traditions/tgp_traditions.txt` | 50297 | 25 | 0 | jomini |
+| `traditions/tgp_traditions.txt` | 51502 | 25 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -178,7 +186,7 @@
 - aesthetics_scottish
 - aesthetics_sicilian
 
-### creation_names/00_names.txt（75 条目）
+### creation_names/00_names.txt（97 条目）
 
 - nomadic_house_name
 - scanian
@@ -198,7 +206,6 @@
 - kabylian
 - austrian
 - burgundian
-- arpitan
 - lothringian
 - lorrainian
 - angevin
@@ -219,12 +226,10 @@
 - munda
 - shirvani
 - pontic
-- novgorodian
 - geatish
 - gutish
 - venetian
 - mervi
-- parsi
 - icelandic
 - omani
 - khaleeji
@@ -232,10 +237,35 @@
 - gorani
 - luri
 - tabari
+- genoese
+- pisan
+- florentine
+- sienese
+- lucchese
+- aretine
+- milanese
+- pavese
+- cremonese
+- brescian
+- mantuan
+- comasque
+- paduan
+- trevisan
+- bolognese
+- ferrarese
+- ravennese
+- modenese
+- parmesan
+- anconitan
+- orvietan
+- amalfitan
+- ragusan
 - ligurian
 - romagnol
 - tuscan
 - umbrian
+- piedmontese
+- veronese
 - new_english
 - moroccan
 - algerian
@@ -256,12 +286,11 @@
 - cypriot
 - wamvita
 
-### creation_names/00_names_hybrid.txt（62 条目）
+### creation_names/00_names_hybrid.txt（58 条目）
 
 - nomadic_house_name_hybrid
 - azeri_hybrid
 - anatolian_turkish
-- norse_gael
 - danelander
 - engelsk
 - anglo_norse
@@ -298,18 +327,15 @@
 - kulfoldi
 - dramor
 - coigriche
-- arpitan_hybrid
 - new_english_hybrid
 - upper_saxon_hybrid
 - dobrujan
 - aromanian
 - dalmatian_hybrid
 - neapolitan_hybrid
-- siculo_norman
 - arvorigeg
 - gallo
 - scota
-- parsi_hybrid
 - arvanite_hybrid
 - wendish_hybrid
 - bohemian_hybrid
@@ -442,19 +468,26 @@
 - daju
 - beja
 
-### cultures/00_east_slavic.txt（4 条目）
+### cultures/00_east_slavic.txt（5 条目）
 
 - russian
 - ilmenian
+- novgorodian
 - severian
 - volhynian
 
-### cultures/00_frankish.txt（4 条目）
+### cultures/00_egyptian.txt（1 条目）
+
+- remenkimi
+
+### cultures/00_frankish.txt（6 条目）
 
 - frankish
 - french
 - norman
+- italo_norman
 - occitan
+- arpitan
 
 ### cultures/00_goidelic.txt（2 条目）
 
@@ -496,13 +529,14 @@
 - nepali
 - brahui
 
-### cultures/00_iranian.txt（11 条目）
+### cultures/00_iranian.txt（12 条目）
 
 - persian
 - kurdish
 - baloch
 - daylamite
 - tajik
+- parsi
 - afghan
 - saka
 - sogdian
@@ -510,13 +544,14 @@
 - tocharian
 - alan
 
-### cultures/00_israelite.txt（5 条目）
+### cultures/00_israelite.txt（6 条目）
 
 - ashkenazi
 - sephardi
 - radhanite
 - kochinim
 - bavlim
+- mustaarabi
 
 ### cultures/00_japonic.txt（4 条目）
 
@@ -569,7 +604,7 @@
 - papuan
 - amis
 
-### cultures/00_mongolic.txt（8 条目）
+### cultures/00_mongolic.txt（9 条目）
 
 - mongol
 - buryat
@@ -579,17 +614,21 @@
 - khitan
 - shiwei
 - tuyuhun
+- serbi
 
 ### cultures/00_nakkavaram.txt（1 条目）
 
 - nakkavaram
 
-### cultures/00_north_germanic.txt（4 条目）
+### cultures/00_north_germanic.txt（7 条目）
 
 - norse
 - swedish
 - norwegian
 - danish
+- geatish
+- icelandic
+- norse_gael
 
 ### cultures/00_qiangic.txt（2 条目）
 
@@ -627,9 +666,10 @@
 - bulgarian
 - albanian
 
-### cultures/00_syriac.txt（1 条目）
+### cultures/00_syriac.txt（2 条目）
 
 - assyrian
+- mandaean
 
 ### cultures/00_tai.txt（2 条目）
 
@@ -754,7 +794,7 @@
 - innovation_repeating_crossbow
 - innovation_pole_vault
 
-### innovations/00_early_medieval_innovations.txt（17 条目）
+### innovations/00_early_medieval_innovations.txt（23 条目）
 
 - innovation_battlements
 - innovation_mangonel
@@ -762,14 +802,20 @@
 - innovation_house_soldiers
 - innovation_horseshoes
 - innovation_arched_saddle
+- innovation_riveted_mail
 - innovation_hereditary_rule
 - innovation_manorialism
-- innovation_development_02
+- innovation_prosperity_02
 - innovation_currency_02
 - innovation_royal_prerogative
 - innovation_chronicle_writing
 - innovation_armilary_sphere
 - innovation_baliffs
+- innovation_heavy_plow
+- innovation_prospecting
+- innovation_coppicing
+- innovation_monasticism
+- innovation_craft_ordinances
 - innovation_reconquista
 - innovation_stem_duchies
 - innovation_ghilman
@@ -779,7 +825,7 @@
 - fp3_innovation_mural_sextant
 - fp3_innovation_fritware
 
-### innovations/00_high_medieval_innovations.txt（18 条目）
+### innovations/00_high_medieval_innovations.txt（23 条目）
 
 - innovation_hoardings
 - innovation_trebuchet
@@ -787,20 +833,25 @@
 - innovation_men_at_arms
 - innovation_knighthood
 - innovation_advanced_bowmaking
+- innovation_coat_of_plates
 - innovation_heraldry
 - innovation_windmills
 - innovation_divine_right
 - innovation_land_grants
 - innovation_scutage
 - innovation_guilds
-- innovation_development_03
+- innovation_prosperity_03
 - innovation_currency_03
+- innovation_blast_furnaces
+- innovation_merchant_law
+- innovation_vaulting
 - innovation_east_settling
 - innovation_seigneurialism
 - innovation_muladi
 - innovation_french_peerage
+- innovation_glassmaking
 
-### innovations/00_late_medieval_innovations.txt（17 条目）
+### innovations/00_late_medieval_innovations.txt（23 条目）
 
 - innovation_machicolations
 - innovation_gunpowder
@@ -808,19 +859,25 @@
 - innovation_standing_armies
 - innovation_sappers
 - innovation_plate_armor
+- innovation_tempered_steel
 - innovation_primogeniture
 - innovation_cranes
 - innovation_noblesse_oblige
 - innovation_rightful_ownership
 - innovation_ermine_cloaks
 - innovation_court_officials
-- innovation_development_04
+- innovation_prosperity_04
 - innovation_currency_04
+- innovation_putting_out_system
+- innovation_deep_mining
+- innovation_pilot_books
+- innovation_agronomy
+- innovation_bricks
 - innovation_wierdijks
 - innovation_condottieri
 - innovation_deccan_unity
 
-### innovations/00_tribal_innovations.txt（20 条目）
+### innovations/00_tribal_innovations.txt（26 条目）
 
 - innovation_motte
 - innovation_catapult
@@ -828,7 +885,8 @@
 - innovation_mustering_grounds
 - innovation_bannus
 - innovation_quilted_armor
-- innovation_development_01
+- innovation_pattern_welding
+- innovation_prosperity_01
 - innovation_currency_01
 - innovation_gavelkind
 - innovation_crop_rotation
@@ -840,8 +898,13 @@
 - innovation_longboats
 - innovation_elephantry
 - innovation_war_camels
+- innovation_carpet_weaving
 - innovation_wootz_steel
 - innovation_african_canoes
+- innovation_mead_brewing
+- innovation_stockfisk
+- innovation_damascus_steel
+- innovation_calicoes_and_muslin
 
 ### innovations/01_fp1_innovations.txt（2 条目）
 
@@ -852,14 +915,16 @@
 
 - innovation_sanitation
 
-### innovations/tgp_innovations.txt（17 条目）
+### innovations/tgp_innovations.txt（19 条目）
 
 - innovation_fire_medicine
 - innovation_champa_rice
 - innovation_rocket_cart
 - innovation_sericulture
 - innovation_compass
+- innovation_tea_culture
 - innovation_dragon_kiln
+- innovation_lacquerware
 - innovation_block_printing
 - innovation_grenades
 - innovation_cupellation
@@ -872,7 +937,7 @@
 - innovation_waterworks
 - innovation_tiefutu
 
-### name_equivalency/00_names.txt（1452 条目）
+### name_equivalency/00_names.txt（1457 条目）
 
 - aaron_male
 - aasa_female
@@ -1291,6 +1356,7 @@
 - ednyfed_male
 - edward_male
 - edwin_male
+- edwina_female
 - egbert_male
 - egidius_male
 - egil_male
@@ -1824,6 +1890,7 @@
 - murdoch_male
 - muriel_female
 - murron_female
+- musco_male
 - mustafa_male
 - mutarrif_male
 - nahir_male
@@ -2021,6 +2088,7 @@
 - saad_male
 - saba_male
 - saba_female
+- sabinianus_male
 - sabrisho_male
 - sadayavarman_male
 - sadmarkar_female
@@ -2053,6 +2121,7 @@
 - serhilda_female
 - severin_male
 - severus_male
+- severinus_male
 - sevilay_female
 - sevindik_female
 - sextus_male
@@ -2274,6 +2343,7 @@
 - vitaca_female
 - vitalian_male
 - vitalinus_male
+- vitalianus_male
 - vitalis_male
 - vito_male
 - vivianus_male
@@ -2376,6 +2446,10 @@
 - name_list_zaghawa
 - name_list_guanches
 
+### name_lists/00_bouxcuengh.txt（1 条目）
+
+- name_list_bouxcuengh
+
 ### name_lists/00_brythonic.txt（5 条目）
 
 - name_list_pictish
@@ -2439,20 +2513,27 @@
 - name_list_welayta
 - name_list_daju
 
-### name_lists/00_east_slavic.txt（4 条目）
+### name_lists/00_east_slavic.txt（5 条目）
 
 - name_list_russian
 - name_list_ilmenian
+- name_list_novgorodian
 - name_list_severian
 - name_list_volhynian
 
-### name_lists/00_frankish.txt（7 条目）
+### name_lists/00_egyptian.txt（1 条目）
+
+- name_list_remenkimi
+
+### name_lists/00_frankish.txt（9 条目）
 
 - name_list_frankish
 - name_list_french
 - name_list_norman
 - name_list_late_norman
+- name_list_italo_norman
 - name_list_occitan
+- name_list_arpitan
 - name_list_outremer
 - name_list_romansh
 
@@ -2460,6 +2541,10 @@
 
 - name_list_irish
 - name_list_gaelic
+
+### name_lists/00_hmongic.txt（1 条目）
+
+- name_list_hmongic
 
 ### name_lists/00_iberian.txt（9 条目）
 
@@ -2489,7 +2574,7 @@
 - name_list_sinhala
 - name_list_nepali
 
-### name_lists/00_iranian.txt（10 条目）
+### name_lists/00_iranian.txt（11 条目）
 
 - name_list_persian
 - name_list_sogdian
@@ -2501,17 +2586,23 @@
 - name_list_daylamite
 - name_list_khwarezmian
 - name_list_tajik
+- name_list_parsi
 
-### name_lists/00_israelite.txt（3 条目）
+### name_lists/00_israelite.txt（4 条目）
 
 - name_list_ashkenazi
 - name_list_sephardi
 - name_list_radhanite
+- name_list_mustaarabi
 
 ### name_lists/00_japanese.txt（2 条目）
 
 - name_list_yamato
 - name_list_emishi
+
+### name_lists/00_khitan.txt（1 条目）
+
+- name_list_khitan
 
 ### name_lists/00_khmer.txt（1 条目）
 
@@ -2546,14 +2637,13 @@
 - name_list_iloko
 - name_list_amis
 
-### name_lists/00_mongolic.txt（7 条目）
+### name_lists/00_mongolic.txt（6 条目）
 
 - name_list_mongol
 - name_list_buryat
 - name_list_oirat
 - name_list_naiman
 - name_list_kerait
-- name_list_khitan
 - name_list_tuyuhun
 
 ### name_lists/00_nakkavaram.txt（1 条目）
@@ -2564,12 +2654,14 @@
 
 - name_list_nivkh
 
-### name_lists/00_north_germanic.txt（4 条目）
+### name_lists/00_north_germanic.txt（6 条目）
 
 - name_list_norse
 - name_list_swedish
 - name_list_norwegian
 - name_list_danish
+- name_list_norse_gael
+- name_list_icelandic
 
 ### name_lists/00_qiangic.txt（2 条目）
 
@@ -2609,6 +2701,10 @@
 - name_list_vlach
 - name_list_bulgarian
 - name_list_albanian
+
+### name_lists/00_syriac.txt（1 条目）
+
+- name_list_mandaean
 
 ### name_lists/00_tai.txt（1 条目）
 
@@ -2690,6 +2786,10 @@
 - name_list_polabian
 - name_list_slovien
 - name_list_carantanian
+
+### name_lists/00_yi.txt（1 条目）
+
+- name_list_yi
 
 ### name_lists/00_yoruba.txt（4 条目）
 
@@ -2775,7 +2875,7 @@
 - heritage_mon_khmer
 - heritage_viet
 
-### pillars/00_language.txt（91 条目）
+### pillars/00_language.txt（92 条目）
 
 - language_anglic
 - language_arabic
@@ -2799,6 +2899,7 @@
 - language_east_slavic
 - language_ethiopic
 - language_finnic
+- language_arpitan
 - language_frankish
 - language_french
 - language_goidelic
@@ -3092,6 +3193,18 @@
 - tradition_mpo_wolves_of_the_deep_steppe
 - tradition_devoted_horsemanship
 - tradition_mpo_northern_tribes
+
+### traditions/11_gdp_traditions.txt（9 条目）
+
+- tradition_fortune_seekers
+- tradition_saharan_traders
+- tradition_silk_road_traders
+- tradition_monsoon_traders
+- tradition_binding_oaths
+- tradition_roman_law
+- tradition_civic_religion
+- tradition_contado
+- tradition_contract_warfare
 
 ### traditions/tgp_traditions.txt（25 条目）
 

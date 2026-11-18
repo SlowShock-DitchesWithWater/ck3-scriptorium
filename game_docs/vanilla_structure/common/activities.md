@@ -1,8 +1,8 @@
 # common/activities 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：75（其中 Jomini 解析 69 个）
-- 顶层块条目总数：476，跨文件唯一条目 476
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：78（其中 Jomini 解析 72 个）
+- 顶层块条目总数：498，跨文件唯一条目 498
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -10,38 +10,40 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `activity_group_types/00_activity_group_types.txt` | 834 | 6 | 0 | jomini |
-| `activity_group_types/_activity_group_types.info` | 427 | - | - | 纯文档（非 Jomini） |
-| `activity_locales/_activity_locales.info` | 3027 | - | - | 纯文档（非 Jomini） |
+| `activity_group_types/_activity_group_types.info` | 653 | - | - | 纯文档（非 Jomini） |
+| `activity_locales/_activity_locales.info` | 3548 | - | - | 纯文档（非 Jomini） |
 | `activity_locales/tournament_locales.txt` | 9220 | 6 | 0 | jomini |
-| `activity_types/_activity_type.info` | 42782 | - | - | 纯文档（非 Jomini） |
-| `activity_types/camp_party.txt` | 19991 | 1 | 0 | jomini |
-| `activity_types/chariot_race.txt` | 52065 | 1 | 0 | jomini |
-| `activity_types/coronation.txt` | 132014 | 1 | 0 | jomini |
-| `activity_types/debate.txt` | 29276 | 1 | 0 | jomini |
-| `activity_types/ecumenical_council.txt` | 61937 | 1 | 0 | jomini |
-| `activity_types/feast.txt` | 136915 | 1 | 7 | jomini |
-| `activity_types/festival.txt` | 30074 | 1 | 0 | jomini |
-| `activity_types/funeral.txt` | 43891 | 1 | 7 | jomini |
-| `activity_types/gruesome_festival.txt` | 42843 | 1 | 0 | jomini |
-| `activity_types/hike.txt` | 25905 | 1 | 0 | jomini |
-| `activity_types/hunt.txt` | 144117 | 1 | 0 | jomini |
-| `activity_types/imperial_examination.txt` | 57968 | 1 | 0 | jomini |
-| `activity_types/inspection.txt` | 32904 | 1 | 0 | jomini |
-| `activity_types/local_examination.txt` | 47125 | 1 | 0 | jomini |
-| `activity_types/monument_expedition.txt` | 46274 | 1 | 0 | jomini |
+| `activity_types/_activity_type.info` | 42842 | - | - | 纯文档（非 Jomini） |
+| `activity_types/camp_party.txt` | 19997 | 1 | 0 | jomini |
+| `activity_types/carnival.txt` | 16931 | 1 | 0 | jomini |
+| `activity_types/chariot_race.txt` | 52050 | 1 | 0 | jomini |
+| `activity_types/coronation.txt` | 133750 | 1 | 0 | jomini |
+| `activity_types/debate.txt` | 29239 | 1 | 0 | jomini |
+| `activity_types/ecumenical_council.txt` | 60654 | 1 | 0 | jomini |
+| `activity_types/feast.txt` | 139769 | 1 | 7 | jomini |
+| `activity_types/festival.txt` | 29897 | 1 | 0 | jomini |
+| `activity_types/funeral.txt` | 43809 | 1 | 7 | jomini |
+| `activity_types/gruesome_festival.txt` | 42474 | 1 | 0 | jomini |
+| `activity_types/hike.txt` | 25505 | 1 | 0 | jomini |
+| `activity_types/hunt.txt` | 140362 | 1 | 0 | jomini |
+| `activity_types/imperial_examination.txt` | 58016 | 1 | 0 | jomini |
+| `activity_types/inspection.txt` | 31373 | 1 | 0 | jomini |
+| `activity_types/local_examination.txt` | 46679 | 1 | 0 | jomini |
+| `activity_types/monument_expedition.txt` | 45932 | 1 | 0 | jomini |
 | `activity_types/pam_investiture_council.txt` | 22294 | 1 | 0 | jomini |
-| `activity_types/pilgrimage.txt` | 111931 | 1 | 0 | jomini |
-| `activity_types/playdate.txt` | 23430 | 1 | 0 | jomini |
-| `activity_types/tour.txt` | 101071 | 1 | 0 | jomini |
-| `activity_types/tournament.txt` | 161567 | 1 | 0 | jomini |
-| `activity_types/university_visit.txt` | 60133 | 1 | 0 | jomini |
-| `activity_types/wedding.txt` | 110810 | 1 | 0 | jomini |
-| `activity_types/witch_ritual.txt` | 20133 | 1 | 0 | jomini |
+| `activity_types/pilgrimage.txt` | 112190 | 1 | 0 | jomini |
+| `activity_types/playdate.txt` | 23209 | 1 | 0 | jomini |
+| `activity_types/tour.txt` | 100154 | 1 | 0 | jomini |
+| `activity_types/tournament.txt` | 162651 | 1 | 0 | jomini |
+| `activity_types/university_visit.txt` | 60079 | 1 | 0 | jomini |
+| `activity_types/wedding.txt` | 111183 | 1 | 0 | jomini |
+| `activity_types/witch_ritual.txt` | 19912 | 1 | 0 | jomini |
 | `guest_invite_rules/_invite_rules.info` | 750 | - | - | 纯文档（非 Jomini） |
-| `guest_invite_rules/activity_invite_rules.txt` | 30507 | 61 | 0 | jomini |
+| `guest_invite_rules/activity_invite_rules.txt` | 32793 | 65 | 0 | jomini |
 | `intents/_intents.info` | 3080 | - | - | 纯文档（非 Jomini） |
 | `intents/camp_party_intents.txt` | 382 | 1 | 0 | jomini |
-| `intents/chariot_race_intents.txt` | 6757 | 3 | 0 | jomini |
+| `intents/carnival_intents.txt` | 675 | 2 | 0 | jomini |
+| `intents/chariot_race_intents.txt` | 6768 | 3 | 0 | jomini |
 | `intents/coronation_intents.txt` | 4964 | 10 | 0 | jomini |
 | `intents/debate_intents.txt` | 2134 | 3 | 0 | jomini |
 | `intents/ecumenical_council_intents.txt` | 4259 | 5 | 0 | jomini |
@@ -53,7 +55,7 @@
 | `intents/journey_intents.txt` | 1085 | 2 | 0 | jomini |
 | `intents/pilgrimage_intents.txt` | 1505 | 2 | 0 | jomini |
 | `intents/roaming_intents.txt` | 669 | 3 | 0 | jomini |
-| `intents/shared_intents.txt` | 8212 | 7 | 0 | jomini |
+| `intents/shared_intents.txt` | 9672 | 8 | 0 | jomini |
 | `intents/spread_tenet_intents.txt` | 1970 | 2 | 0 | jomini |
 | `intents/survey_intents.txt` | 483 | 3 | 0 | jomini |
 | `intents/tour_intents.txt` | 2536 | 3 | 0 | jomini |
@@ -62,25 +64,26 @@
 | `intents/witch_ritual_intents.txt` | 269 | 1 | 0 | jomini |
 | `pulse_actions/_pulse_actions.info` | 698 | - | - | 纯文档（非 Jomini） |
 | `pulse_actions/camp_party_actions.txt` | 38443 | 24 | 0 | jomini |
+| `pulse_actions/carnival_actions.txt` | 18590 | 14 | 0 | jomini |
 | `pulse_actions/chariot_race_actions.txt` | 7305 | 6 | 0 | jomini |
 | `pulse_actions/coronation_pulse_actions.txt` | 12721 | 15 | 0 | jomini |
 | `pulse_actions/debate_pulse_actions.txt` | 8880 | 5 | 0 | jomini |
 | `pulse_actions/education_actions.txt` | 17778 | 14 | 0 | jomini |
 | `pulse_actions/feast_pulse_actions.txt` | 19720 | 12 | 0 | jomini |
-| `pulse_actions/feast_pulse_actions_oltner.txt` | 37717 | 21 | 0 | jomini |
-| `pulse_actions/festival_actions.txt` | 15214 | 14 | 0 | jomini |
+| `pulse_actions/feast_pulse_actions_oltner.txt` | 37715 | 21 | 0 | jomini |
+| `pulse_actions/festival_actions.txt` | 15758 | 14 | 0 | jomini |
 | `pulse_actions/general_actions.txt` | 1812 | 2 | 0 | jomini |
-| `pulse_actions/hunt_pulse_actions.txt` | 51918 | 26 | 0 | jomini |
+| `pulse_actions/hunt_pulse_actions.txt` | 49548 | 26 | 0 | jomini |
 | `pulse_actions/imperial_examination_actions.txt` | 20639 | 13 | 0 | jomini |
-| `pulse_actions/journey_actions.txt` | 9779 | 12 | 0 | jomini |
+| `pulse_actions/journey_actions.txt` | 9778 | 12 | 0 | jomini |
 | `pulse_actions/pam_mendicant_preachers_apa.txt` | 1088 | 1 | 0 | jomini |
 | `pulse_actions/passive_rite_learning_apa.txt` | 4623 | 4 | 0 | jomini |
-| `pulse_actions/pilgrimage_actions.txt` | 25288 | 22 | 0 | jomini |
+| `pulse_actions/pilgrimage_actions.txt` | 25286 | 22 | 0 | jomini |
 | `pulse_actions/playdate_actions.txt` | 17171 | 15 | 0 | jomini |
 | `pulse_actions/roaming_actions.txt` | 23846 | 29 | 0 | jomini |
 | `pulse_actions/spread_tenet_apa.txt` | 3740 | 2 | 0 | jomini |
-| `pulse_actions/survey_actions.txt` | 10442 | 15 | 0 | jomini |
-| `pulse_actions/tour_actions.txt` | 29262 | 18 | 0 | jomini |
+| `pulse_actions/survey_actions.txt` | 10462 | 15 | 0 | jomini |
+| `pulse_actions/tour_actions.txt` | 29287 | 18 | 0 | jomini |
 | `pulse_actions/tournament_actions.txt` | 18827 | 20 | 0 | jomini |
 | `pulse_actions/wedding_pulse_actions.txt` | 42533 | 17 | 0 | jomini |
 | `pulse_actions/witch_ritual_actions.txt` | 5030 | 7 | 0 | jomini |
@@ -110,6 +113,10 @@
 ### activity_types/camp_party.txt（1 条目）
 
 - activity_camp_party
+
+### activity_types/carnival.txt（1 条目）
+
+- activity_carnival
 
 ### activity_types/chariot_race.txt（1 条目）
 
@@ -199,7 +206,7 @@
 
 - activity_witch_ritual
 
-### guest_invite_rules/activity_invite_rules.txt（61 条目）
+### guest_invite_rules/activity_invite_rules.txt（65 条目）
 
 - activity_invite_rule_friends
 - activity_invite_rule_potential_friends
@@ -241,6 +248,9 @@
 - activity_invite_rule_landless_adventurers
 - activity_invite_rule_landless_adventurers_restricted_range
 - activity_invite_rule_landless_adventurers_restricted_range_opinion
+- activity_invite_rule_merchants
+- activity_invite_rule_merchants_restricted_range
+- activity_invite_rule_merchants_restricted_range_opinion
 - activity_invite_rule_followers
 - activity_invite_rule_local_lord
 - activity_invite_rule_councillors
@@ -262,10 +272,16 @@
 - activity_invite_archbishops
 - activity_invite_clergy
 - activity_invite_rule_clergy
+- activity_invite_rule_carnival
 
 ### intents/camp_party_intents.txt（1 条目）
 
 - fireside_chat_intent
+
+### intents/carnival_intents.txt（2 条目）
+
+- go_incognito_intent
+- flaunt_wealth_intent
 
 ### intents/chariot_race_intents.txt（3 条目）
 
@@ -347,7 +363,7 @@
 - roaming_mystic_intent
 - roaming_storyteller_intent
 
-### intents/shared_intents.txt（7 条目）
+### intents/shared_intents.txt（8 条目）
 
 - reduce_stress_intent
 - murder_attendee_intent
@@ -356,6 +372,7 @@
 - spread_legend_intent
 - legitimacy_intent
 - impose_obedience_intent
+- schmooze_intent
 
 ### intents/spread_tenet_intents.txt（2 条目）
 
@@ -415,6 +432,23 @@
 - apa_camp_party_tales_of_lands_lost
 - apa_camp_party_blademaster_sparring
 - apa_camp_party_tales_of_piety
+
+### pulse_actions/carnival_actions.txt（14 条目）
+
+- carnival_friendship
+- carnival_romance
+- carnival_rivalry
+- beautiful_carnival
+- carnival_learning
+- liege_carnival_presence
+- liege_carnival_prosperity
+- carnival_decorations
+- carnival_drunk
+- carnival_flaunt_wealth_rivals
+- carnival_flaunt_wealth_prestige
+- carnival_house_relation_good
+- carnival_house_relation_bad
+- carnival_brawl
 
 ### pulse_actions/chariot_race_actions.txt（6 条目）
 

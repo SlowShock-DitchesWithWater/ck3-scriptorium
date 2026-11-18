@@ -1,8 +1,8 @@
 # common/on_action 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：174（其中 Jomini 解析 173 个）
-- 顶层块条目总数：940，跨文件唯一条目 932
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：194（其中 Jomini 解析 193 个）
+- 顶层块条目总数：1073，跨文件唯一条目 1061
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -13,45 +13,47 @@
 | `_on_actions.info` | 6125 | - | - | 纯文档（非 Jomini） |
 | `accolade_on_actions.txt` | 7775 | 8 | 0 | jomini |
 | `activities/activities_on_actions.txt` | 5 | 0 | 0 | jomini |
-| `activities/coronation_on_actions.txt` | 20835 | 6 | 0 | jomini |
+| `activities/carnival_on_action.txt` | 1127 | 1 | 0 | jomini |
+| `activities/coronation_on_actions.txt` | 20859 | 6 | 0 | jomini |
 | `activities/debate_on_actions.txt` | 2221 | 4 | 0 | jomini |
 | `activities/ecumenical_council_on_actions.txt` | 5525 | 3 | 0 | jomini |
-| `activities/feast_on_actions.txt` | 13667 | 6 | 0 | jomini |
+| `activities/feast_on_actions.txt` | 15129 | 6 | 0 | jomini |
 | `activities/festival_on_actions.txt` | 1500 | 1 | 0 | jomini |
 | `activities/hold_court_on_actions.txt` | 2189 | 1 | 0 | jomini |
-| `activities/hunt_on_actions.txt` | 10179 | 9 | 0 | jomini |
-| `activities/imperial_examination_on_actions.txt` | 8091 | 8 | 0 | jomini |
+| `activities/hunt_on_actions.txt` | 10357 | 9 | 0 | jomini |
+| `activities/imperial_examination_on_actions.txt` | 8143 | 8 | 0 | jomini |
 | `activities/journey_on_actions.txt` | 747 | 1 | 0 | jomini |
 | `activities/pilgrimage_on_actions.txt` | 11904 | 19 | 0 | jomini |
 | `activities/playdate_on_actions.txt` | 1628 | 2 | 0 | jomini |
 | `activities/roaming_on_actions.txt` | 962 | 2 | 0 | jomini |
-| `activities/survey_on_actions.txt` | 884 | 3 | 0 | jomini |
-| `alliance_on_actions.txt` | 10775 | 3 | 0 | jomini |
-| `army_on_actions.txt` | 26517 | 12 | 0 | jomini |
-| `barter_on_actions.txt` | 3578 | 5 | 0 | jomini |
-| `birthday.txt` | 7233 | 6 | 0 | jomini |
+| `activities/survey_on_actions.txt` | 1076 | 3 | 0 | jomini |
+| `alliance_on_actions.txt` | 11161 | 3 | 0 | jomini |
+| `army_on_actions.txt` | 33316 | 12 | 0 | jomini |
+| `assembly_on_actions.txt` | 3105 | 2 | 0 | jomini |
+| `barter_on_actions.txt` | 3911 | 5 | 0 | jomini |
+| `birthday.txt` | 7412 | 6 | 0 | jomini |
 | `bp2_on_actions.txt` | 6730 | 3 | 0 | jomini |
 | `ce1_on_actions.txt` | 10141 | 4 | 0 | jomini |
-| `character_created_on_actions.txt` | 1668 | 1 | 0 | jomini |
-| `character_levels.txt` | 11406 | 8 | 0 | jomini |
+| `character_created_on_actions.txt` | 1713 | 1 | 0 | jomini |
+| `character_levels.txt` | 11599 | 8 | 0 | jomini |
 | `child_birth_on_actions.txt` | 36996 | 7 | 0 | jomini |
-| `childhood_on_actions.txt` | 31762 | 25 | 0 | jomini |
+| `childhood_on_actions.txt` | 33766 | 28 | 0 | jomini |
 | `clan_events_on_actions.txt` | 696 | 1 | 0 | jomini |
-| `combat_on_actions.txt` | 18857 | 4 | 0 | jomini |
-| `confederation_on_actions.txt` | 3592 | 3 | 0 | jomini |
+| `combat_on_actions.txt` | 19379 | 4 | 0 | jomini |
+| `confederation_on_actions.txt` | 3535 | 3 | 0 | jomini |
 | `conqueror_on_actions.txt` | 512 | 1 | 0 | jomini |
-| `councillor_on_actions.txt` | 19570 | 42 | 0 | jomini |
-| `county_on_actions.txt` | 1787 | 3 | 0 | jomini |
+| `councillor_on_actions.txt` | 20987 | 45 | 0 | jomini |
+| `county_on_actions.txt` | 4785 | 5 | 0 | jomini |
 | `court_events.txt` | 4266 | 2 | 0 | jomini |
 | `court_grandeur_on_actions.txt` | 240 | 1 | 0 | jomini |
-| `court_maintenance_on_actions.txt` | 2061 | 4 | 0 | jomini |
+| `court_maintenance_on_actions.txt` | 2427 | 4 | 0 | jomini |
 | `court_position_on_action.txt` | 1921 | 1 | 0 | jomini |
 | `court_type_on_actions.txt` | 118 | 1 | 0 | jomini |
-| `courtier_guest_management_on_actions.txt` | 1932 | 4 | 0 | jomini |
-| `culture_on_actions.txt` | 16653 | 10 | 0 | jomini |
-| `death.txt` | 65997 | 6 | 0 | jomini |
+| `courtier_guest_management_on_actions.txt` | 1931 | 4 | 0 | jomini |
+| `culture_on_actions.txt` | 16837 | 10 | 0 | jomini |
+| `death.txt` | 69962 | 7 | 0 | jomini |
 | `decision_on_actions.txt` | 215 | 2 | 0 | jomini |
-| `diarchy_on_action.txt` | 19701 | 5 | 0 | jomini |
+| `diarchy_on_action.txt` | 20657 | 5 | 0 | jomini |
 | `dlc/bp2/bp2_adult_education_on_action.txt` | 876 | 2 | 0 | jomini |
 | `dlc/bp2/bp2_destiny_child_on_action.txt` | 765 | 1 | 0 | jomini |
 | `dlc/bp2/bp2_hostage_on_actions.txt` | 14096 | 8 | 0 | jomini |
@@ -61,7 +63,7 @@
 | `dlc/ep1/ep1_inspiration_on_actions.txt` | 477 | 2 | 0 | jomini |
 | `dlc/ep1/ep1_pay_homage_on_actions.txt` | 8682 | 2 | 0 | jomini |
 | `dlc/ep1/ep1_petition_liege_on_actions.txt` | 4033 | 10 | 0 | jomini |
-| `dlc/ep2/ep2_tour_on_actions.txt` | 11686 | 7 | 0 | jomini |
+| `dlc/ep2/ep2_tour_on_actions.txt` | 11685 | 7 | 0 | jomini |
 | `dlc/ep2/ep2_tournament_on_actions.txt` | 23843 | 39 | 0 | jomini |
 | `dlc/ep2/ep2_wedding_on_actions.txt` | 6635 | 6 | 0 | jomini |
 | `dlc/ep3/camp_party_on_action.txt` | 878 | 2 | 0 | jomini |
@@ -73,65 +75,75 @@
 | `dlc/ep3/story_adventurer_ai_contract.txt` | 2433 | 3 | 0 | jomini |
 | `dlc/ep3/violet_poet_on_action.txt` | 474 | 1 | 0 | jomini |
 | `dlc/fp2/fp2_other_decision_on_actions.txt` | 625 | 4 | 0 | jomini |
-| `dlc/mpo/mpo_on_actions_2.txt` | 18349 | 12 | 0 | jomini |
+| `dlc/gdp/gdp_burgher_on_actions.txt` | 1259 | 4 | 0 | jomini |
+| `dlc/gdp/gdp_merchant_luxury_contract_on_actions.txt` | 3562 | 5 | 0 | jomini |
+| `dlc/gdp/gdp_merchant_on_actions.txt` | 18439 | 13 | 0 | jomini |
+| `dlc/gdp/gdp_merchant_patron_contract_on_actions.txt` | 1773 | 3 | 0 | jomini |
+| `dlc/gdp/gdp_merchant_trade_opportunity_on_actions.txt` | 52673 | 33 | 0 | jomini |
+| `dlc/gdp/gdp_merchant_unity_contract_on_actions.txt` | 1120 | 2 | 0 | jomini |
+| `dlc/gdp/gdp_republic_on_actions.txt` | 494 | 1 | 0 | jomini |
+| `dlc/gdp/gdp_republic_popular_opinion_on_actions.txt` | 9681 | 5 | 0 | jomini |
+| `dlc/gdp/gdp_republic_unrest_on_actions.txt` | 1836 | 5 | 0 | jomini |
+| `dlc/gdp/gdp_trade_league_on_actions.txt` | 1056 | 2 | 0 | jomini |
+| `dlc/gdp/monopoly_on_actions.txt` | 4876 | 4 | 0 | jomini |
+| `dlc/mpo/mpo_on_actions_2.txt` | 18343 | 12 | 0 | jomini |
 | `dlc/mpo/mpo_season_events_on_actions.txt` | 6 | 0 | 0 | jomini |
 | `dlc/mpo/mpo_the_great_steppe_on_actions.txt` | 15221 | 4 | 0 | jomini |
-| `dlc/pam/pam_on_actions.txt` | 13669 | 21 | 0 | jomini |
-| `dlc/tgp/tgp_china_minister_on_action.txt` | 13153 | 1 | 0 | jomini |
+| `dlc/pam/pam_on_actions.txt` | 14076 | 21 | 0 | jomini |
+| `dlc/tgp/tgp_china_minister_on_action.txt` | 13282 | 1 | 0 | jomini |
 | `dlc/tgp/tgp_china_yearly_on_actions.txt` | 2545 | 1 | 0 | jomini |
 | `dlc/tgp/tgp_japan_poetry_on_actions.txt` | 412 | 1 | 0 | jomini |
 | `dlc/tgp/tgp_japan_yearly_on_actions.txt` | 3006 | 1 | 0 | jomini |
-| `dlc/tgp/tgp_mandala_on_actions.txt` | 49080 | 42 | 0 | jomini |
+| `dlc/tgp/tgp_mandala_on_actions.txt` | 49354 | 42 | 0 | jomini |
 | `dlc/tgp/tgp_mandala_yearly_on_actions.txt` | 316 | 1 | 0 | jomini |
-| `dlc/tgp/tgp_natural_disaster_on_actions.txt` | 2083 | 7 | 0 | jomini |
+| `dlc/tgp/tgp_natural_disaster_on_actions.txt` | 2082 | 7 | 0 | jomini |
 | `dlc/tgp/tgp_pledge_loyalty_to_liege_on_actions.txt` | 2049 | 2 | 0 | jomini |
-| `dlc/tgp/tgp_silk_road_on_actions.txt` | 285 | 1 | 0 | jomini |
 | `dlc/tgp/tgp_tribute_mission_on_actions.txt` | 931 | 2 | 0 | jomini |
-| `domicile_on_actions.txt` | 2267 | 4 | 0 | jomini |
-| `dynastic_cycle_on_actions.txt` | 9766 | 2 | 0 | jomini |
-| `dynasty_on_actions.txt` | 16170 | 10 | 0 | jomini |
-| `ep1_inspirations_on_actions.txt` | 7920 | 5 | 0 | jomini |
-| `ep3_on_actions.txt` | 14176 | 6 | 0 | jomini |
+| `domicile_on_actions.txt` | 2815 | 4 | 0 | jomini |
+| `dynastic_cycle_on_actions.txt` | 9767 | 2 | 0 | jomini |
+| `dynasty_on_actions.txt` | 16362 | 10 | 0 | jomini |
+| `ep1_inspirations_on_actions.txt` | 8322 | 5 | 0 | jomini |
+| `ep3_on_actions.txt` | 14192 | 6 | 0 | jomini |
 | `faction_on_actions.txt` | 2895 | 2 | 0 | jomini |
 | `fp1_on_actions.txt` | 552 | 2 | 0 | jomini |
 | `fp2_on_actions.txt` | 4999 | 5 | 0 | jomini |
 | `fp3_on_actions.txt` | 1046 | 2 | 0 | jomini |
-| `game_start.txt` | 219748 | 2 | 0 | jomini |
-| `governance_on_actions.txt` | 57879 | 48 | 0 | jomini |
-| `government_on_actions.txt` | 3396 | 1 | 0 | jomini |
-| `health_on_actions.txt` | 14207 | 6 | 0 | jomini |
-| `holy_order_on_actions.txt` | 14796 | 4 | 0 | jomini |
+| `game_start.txt` | 253245 | 2 | 0 | jomini |
+| `governance_on_actions.txt` | 57911 | 48 | 0 | jomini |
+| `government_on_actions.txt` | 6577 | 2 | 0 | jomini |
+| `health_on_actions.txt` | 15110 | 7 | 0 | jomini |
+| `holy_order_on_actions.txt` | 14846 | 4 | 0 | jomini |
 | `hook_on_actions.txt` | 995 | 1 | 0 | jomini |
-| `inventory_on_actions.txt` | 13630 | 11 | 0 | jomini |
+| `inventory_on_actions.txt` | 14762 | 11 | 0 | jomini |
 | `knight_on_actions.txt` | 2159 | 3 | 0 | jomini |
 | `lifestyles/diplomacy_lifestyle_on_actions.txt` | 6953 | 9 | 0 | jomini |
-| `lifestyles/general_lifestyle_on_actions.txt` | 337 | 1 | 0 | jomini |
+| `lifestyles/general_lifestyle_on_actions.txt` | 834 | 1 | 0 | jomini |
 | `lifestyles/intrigue_lifestyle_on_actions.txt` | 6119 | 6 | 0 | jomini |
 | `lifestyles/learning_lifestyle_on_actions.txt` | 6264 | 8 | 0 | jomini |
 | `lifestyles/martial_lifestyle_on_actions.txt` | 8847 | 12 | 0 | jomini |
 | `lifestyles/stewardship_lifestyle_on_actions.txt` | 9681 | 16 | 0 | jomini |
 | `lifestyles/wanderer_lifestyle_on_actions.txt` | 3669 | 6 | 0 | jomini |
 | `mandate_on_actions.txt` | 2566 | 6 | 0 | jomini |
-| `marriage_concubinage.txt` | 11598 | 5 | 0 | jomini |
+| `marriage_concubinage.txt` | 12761 | 6 | 0 | jomini |
 | `mercenary_on_actions.txt` | 3104 | 2 | 0 | jomini |
-| `player_change_on_actions.txt` | 509 | 1 | 0 | jomini |
-| `player_select_destiny_on_actions.txt` | 22404 | 2 | 0 | jomini |
-| `prison_on_actions.txt` | 12493 | 8 | 0 | jomini |
-| `province_on_actions.txt` | 27321 | 5 | 0 | jomini |
-| `realm_maintenance_on_actions.txt` | 1963 | 4 | 0 | jomini |
+| `player_change_on_actions.txt` | 980 | 1 | 0 | jomini |
+| `player_select_destiny_on_actions.txt` | 22707 | 2 | 0 | jomini |
+| `prison_on_actions.txt` | 14099 | 8 | 0 | jomini |
+| `province_on_actions.txt` | 29159 | 5 | 0 | jomini |
+| `realm_maintenance_on_actions.txt` | 2475 | 5 | 0 | jomini |
 | `relations/bishop_on_actions.txt` | 785 | 1 | 0 | jomini |
 | `relations/jester_on_actions.txt` | 312 | 1 | 0 | jomini |
 | `relations/parent_on_actions.txt` | 456 | 1 | 0 | jomini |
-| `relations/relation_on_actions.txt` | 46606 | 40 | 0 | jomini |
+| `relations/relation_on_actions.txt` | 46986 | 40 | 0 | jomini |
 | `relations/sibling_on_actions.txt` | 1138 | 3 | 0 | jomini |
-| `relations/spouse_on_actions.txt` | 11768 | 11 | 1 | jomini |
+| `relations/spouse_on_actions.txt` | 11767 | 11 | 1 | jomini |
 | `relations/vassal_on_actions.txt` | 295 | 2 | 0 | jomini |
-| `religion_on_actions.txt` | 60212 | 24 | 0 | jomini |
+| `religion_on_actions.txt` | 61344 | 24 | 0 | jomini |
 | `royal_court_acquisition.txt` | 415 | 1 | 0 | jomini |
-| `ruler_designer.txt` | 4318 | 1 | 0 | jomini |
-| `scheme_on_actions.txt` | 5783 | 4 | 0 | jomini |
-| `schemes/abduct_on_actions.txt` | 4591 | 5 | 0 | jomini |
-| `schemes/befriend_on_actions.txt` | 9920 | 7 | 0 | jomini |
+| `ruler_designer.txt` | 4646 | 1 | 0 | jomini |
+| `scheme_on_actions.txt` | 6689 | 4 | 0 | jomini |
+| `schemes/abduct_on_actions.txt` | 2721 | 6 | 0 | jomini |
+| `schemes/befriend_on_actions.txt` | 9919 | 7 | 0 | jomini |
 | `schemes/claim_throne_on_actions.txt` | 3234 | 5 | 0 | jomini |
 | `schemes/coerce_and_leverage_contribution_on_actions.txt` | 588 | 1 | 0 | jomini |
 | `schemes/coerce_tributary_on_actions.txt` | 361 | 1 | 0 | jomini |
@@ -139,9 +151,16 @@
 | `schemes/disbelieve_mandala_on_actions.txt` | 959 | 1 | 0 | jomini |
 | `schemes/elope_on_actions.txt` | 1458 | 1 | 0 | jomini |
 | `schemes/fabricate_hook_on_actions.txt` | 1034 | 2 | 0 | jomini |
+| `schemes/gdp_civic_agitation_scheme_on_actions.txt` | 207 | 2 | 0 | jomini |
+| `schemes/gdp_incite_unrest_scheme_on_actions.txt` | 648 | 4 | 0 | jomini |
+| `schemes/generic_intrigue_scheme_ongoing_on_actions.txt` | 3042 | 5 | 0 | jomini |
+| `schemes/gg_schemes_on_actions.txt` | 1229 | 4 | 0 | jomini |
+| `schemes/influence_house_ambition_on_action.txt` | 779 | 3 | 0 | jomini |
 | `schemes/learn_language_on_actions.txt` | 2270 | 3 | 0 | jomini |
-| `schemes/murder_on_actions.txt` | 15196 | 13 | 0 | jomini |
-| `schemes/seduce_on_actions.txt` | 5357 | 5 | 0 | jomini |
+| `schemes/murder_on_actions.txt` | 13144 | 14 | 0 | jomini |
+| `schemes/overthrow_government_on_action.txt` | 216 | 2 | 0 | jomini |
+| `schemes/republic_promote_candidate_scheme_on_actions.txt` | 304 | 2 | 0 | jomini |
+| `schemes/seduce_on_actions.txt` | 5360 | 5 | 0 | jomini |
 | `schemes/steal_back_artifact_on_actions.txt` | 2290 | 3 | 0 | jomini |
 | `schemes/steal_herd_on_actions.txt` | 2964 | 3 | 0 | jomini |
 | `schemes/study_confucian_classics_on_actions.txt` | 1793 | 2 | 0 | jomini |
@@ -172,17 +191,18 @@
 | `story_cycles/story_cycle_warhorse_on_actions.txt` | 534 | 2 | 0 | jomini |
 | `story_cycles/story_cycle_witch_trial_on_actions.txt` | 583 | 1 | 0 | jomini |
 | `stress_coping_decisions_on_actions.txt` | 1937 | 14 | 0 | jomini |
-| `stress_on_actions.txt` | 7606 | 12 | 0 | jomini |
+| `stress_on_actions.txt` | 7583 | 11 | 0 | jomini |
 | `struggle_on_actions.txt` | 1846 | 4 | 0 | jomini |
-| `task_contract_on_actions.txt` | 4016 | 7 | 0 | jomini |
-| `title_on_actions.txt` | 144096 | 14 | 0 | jomini |
-| `traits_on_actions.txt` | 1753 | 2 | 0 | jomini |
-| `travel_on_actions.txt` | 71526 | 22 | 0 | jomini |
-| `tutorial.txt` | 3785 | 1 | 0 | jomini |
-| `war_on_actions.txt` | 66559 | 7 | 0 | jomini |
+| `task_contract_on_actions.txt` | 4303 | 7 | 0 | jomini |
+| `title_on_actions.txt` | 157405 | 16 | 0 | jomini |
+| `trade_on_actions.txt` | 18907 | 13 | 0 | jomini |
+| `traits_on_actions.txt` | 2249 | 2 | 0 | jomini |
+| `travel_on_actions.txt` | 76714 | 22 | 0 | jomini |
+| `tutorial.txt` | 3629 | 1 | 0 | jomini |
+| `war_on_actions.txt` | 68717 | 7 | 0 | jomini |
 | `witch_on_actions.txt` | 517 | 1 | 0 | jomini |
 | `yearly_groups_on_actions.txt` | 28736 | 5 | 0 | jomini |
-| `yearly_on_actions.txt` | 147647 | 18 | 0 | jomini |
+| `yearly_on_actions.txt` | 156334 | 21 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -207,6 +227,10 @@
 ### activities/activities_on_actions.txt（0 条目）
 
 （无顶层块）
+
+### activities/carnival_on_action.txt（1 条目）
+
+- carnival_random_pulse
 
 ### activities/coronation_on_actions.txt（6 条目）
 
@@ -333,6 +357,11 @@
 - on_defeat_raid_army
 - on_raid_intent_invalidated
 
+### assembly_on_actions.txt（2 条目）
+
+- on_assembly_vote_started
+- on_assembly_vote_ended
+
 ### barter_on_actions.txt（5 条目）
 
 - on_barter_action_start
@@ -388,9 +417,12 @@
 - on_pregnancy_father
 - on_pregnancy_ended_mother
 
-### childhood_on_actions.txt（25 条目）
+### childhood_on_actions.txt（28 条目）
 
 - child_personality_gain
+- child_personality_gain_imprisoned
+- child_personality_gain_east_asian
+- child_personality_gain_standard
 - childhood_ongoing
 - on_3rd_birthday
 - on_6th_birthday
@@ -437,7 +469,7 @@
 
 - ongoing_conqueror_events
 
-### councillor_on_actions.txt（42 条目）
+### councillor_on_actions.txt（45 条目）
 
 - on_leave_council
 - on_fired_from_council
@@ -455,11 +487,14 @@
 - task_domestic_affairs_side_effects
 - task_integrate_title_side_effects
 - task_bestow_royal_favor_side_effects
+- task_republic_assembly_preparation_side_effects
 - task_fabricate_claim_success_effect
 - task_collect_taxes_side_effects
 - task_develop_county_side_effects
 - task_promote_culture_side_effects
 - task_accept_culture_side_effects
+- task_republic_trade_logistics_side_effects
+- task_republic_market_oversight_side_effects
 - task_religious_relations_side_effects
 - task_convert_side_effects
 - task_fabricate_claim_side_effects
@@ -482,11 +517,13 @@
 - task_explore_cultures_on_action
 - task_explore_cultures_side_effects
 
-### county_on_actions.txt（3 条目）
+### county_on_actions.txt（5 条目）
 
 - on_county_rite_change
 - on_county_faith_change
 - on_county_culture_change
+- on_province_size_level_increased
+- on_province_size_level_decreased
 
 ### court_events.txt（2 条目）
 
@@ -532,13 +569,14 @@
 - on_county_auto_granted_to_local_culture
 - on_county_auto_granted_to_herder
 
-### death.txt（6 条目）
+### death.txt（7 条目）
 
 - on_death
 - story_cycle_pet_dog_removal
 - pam_propagate_word_of_my_sainthood_convert
 - pam_dulia_personal_sainthood_convert
 - ce3_theocrat_dynasty_chain_succession
+- ludwig_german_salzburg_to_karlmann
 - on_natural_death_second_chance
 
 ### decision_on_actions.txt（2 条目）
@@ -722,6 +760,116 @@
 - fp2_struggle_council_toledo_debate
 - fp2_struggle_council_toledo_fallback
 
+### dlc/gdp/gdp_burgher_on_actions.txt（4 条目）
+
+- burgher_autonomy_demand
+- burgher_autonomy_demand_self_rule
+- burgher_autonomy_demand_privileges
+- burgher_autonomy_demand_lesser_privileges
+
+### dlc/gdp/gdp_merchant_luxury_contract_on_actions.txt（5 条目）
+
+- spawn_luxury_contract_on_action
+- gdp_menagerie_acquisition
+- gdp_find_curio
+- gdp_menagerie_acquisition_random_pool_start
+- gdp_menagerie_acquisition_wilds_pool_start
+
+### dlc/gdp/gdp_merchant_on_actions.txt（13 条目）
+
+- on_birth_child
+- on_became_house_head
+- on_government_change
+- gdp_merchant_legacy_3_company_direction_on_action
+- yearly_playable_pulse
+- gdp_merchant_ai_prestige_purchase_pulse
+- gdp_merchant_population_global_pulse
+- gdp_merchant_yearly_events
+- gdp_tgf_travelling_merchant_pulse
+- gdp_merchant_company_debt_pulse
+- gdp_merchant_company_debt_grace_pulse
+- gdp_merchant_company_debt_direction_pulse
+- gdp_merchant_company_debt_monthly_pulse
+
+### dlc/gdp/gdp_merchant_patron_contract_on_actions.txt（3 条目）
+
+- merchant_base_patron_contract_scheme_on_going_events
+- merchant_patron_hobnob_patron_contract_scheme_ongoing_events
+- gdp_patron_hobnob
+
+### dlc/gdp/gdp_merchant_trade_opportunity_on_actions.txt（33 条目）
+
+- spawn_trade_opportunity_contract_on_action
+- gdp_challenge_competitor
+- gdp_promote_goods
+- gdp_market_investment
+- gdp_exploit_upheaval
+- gdp_support_guilds
+- gdp_seek_debtors
+- gdp_sabotage_competition
+- gdp_build_category_connections
+- gdp_disrupt_charter
+- gdp_silk_road_network
+- gdp_entrepot_buy
+- gdp_negotiate_tolls
+- gdp_smuggle_goods
+- merchant_challenge_competitor_trade_opportunity_scheme_on_going_events
+- merchant_promote_goods_trade_opportunity_scheme_on_going_events
+- merchant_market_investment_trade_opportunity_scheme_on_going_events
+- merchant_exploit_upheaval_trade_opportunity_scheme_on_going_events
+- merchant_alleviate_upheaval_trade_opportunity_scheme_on_going_events
+- merchant_support_guilds_trade_opportunity_scheme_on_going_events
+- merchant_seek_debtors_trade_opportunity_scheme_on_going_events
+- merchant_sabotage_competition_trade_opportunity_scheme_on_going_events
+- merchant_build_category_connections_trade_opportunity_scheme_on_going_events
+- merchant_disrupt_charter_trade_opportunity_scheme_on_going_events
+- merchant_silk_road_network_trade_opportunity_scheme_on_going_events
+- merchant_silk_road_caravan_trade_opportunity_scheme_on_going_events
+- merchant_entrepot_buy_trade_opportunity_scheme_on_going_events
+- merchant_entrepot_sell_trade_opportunity_scheme_on_going_events
+- merchant_negotiate_tolls_trade_opportunity_scheme_on_going_events
+- merchant_smuggle_goods_trade_opportunity_scheme_on_going_events
+- merchant_base_trade_opportunity_scheme_on_going_events
+- trade_opportunity_arrival_events
+- trade_opportunity_push_for_advantages_events
+
+### dlc/gdp/gdp_merchant_unity_contract_on_actions.txt（2 条目）
+
+- spawn_unity_contract_on_action
+- gdp_unity_irregularities
+
+### dlc/gdp/gdp_republic_on_actions.txt（1 条目）
+
+- patrician_stroll_on_action
+
+### dlc/gdp/gdp_republic_popular_opinion_on_actions.txt（5 条目）
+
+- gdp_republic_popular_opinion_pulse
+- gdp_republic_popular_opinion_mild_neg
+- gdp_republic_popular_opinion_severe_neg
+- gdp_republic_popular_opinion_mild_pos
+- gdp_republic_popular_opinion_strong_pos
+
+### dlc/gdp/gdp_republic_unrest_on_actions.txt（5 条目）
+
+- gdp_republic_unrest_demand
+- gdp_republic_unrest_severity_4
+- gdp_republic_unrest_severity_3
+- gdp_republic_unrest_severity_2
+- gdp_republic_unrest_severity_1
+
+### dlc/gdp/gdp_trade_league_on_actions.txt（2 条目）
+
+- gdp_league_focus_on_title_gain
+- gdp_league_focus_on_title_lost
+
+### dlc/gdp/monopoly_on_actions.txt（4 条目）
+
+- on_trade_monopoly_invalidated
+- gdp_merchant_ai_trade_monopoly_pulse
+- gdp_republic_ai_trade_monopoly_pulse
+- gdp_trade_league_ai_trade_monopoly_pulse
+
 ### dlc/mpo/mpo_on_actions_2.txt（12 条目）
 
 - mpo_yearly_events_nomads
@@ -852,10 +1000,6 @@
 - pledge_loyalty_to_liege_start
 - pledge_loyalty_to_liege_travel_planner_exit
 
-### dlc/tgp/tgp_silk_road_on_actions.txt（1 条目）
-
-- silk_road_market_visit_travel_planner_cancel_on_action
-
 ### dlc/tgp/tgp_tribute_mission_on_actions.txt（2 条目）
 
 - tribute_mission_start
@@ -982,14 +1126,16 @@
 - tgp_medieval_medicine
 - tgp_disaster_displacement
 
-### government_on_actions.txt（1 条目）
+### government_on_actions.txt（2 条目）
 
 - on_government_change
+- ep5_09_wearer_of_many_hats_achievement_pulse
 
-### health_on_actions.txt（6 条目）
+### health_on_actions.txt（7 条目）
 
 - yearly_health_pulse
 - disease_outbreak_pulse
+- wounded_recovery_pulse_schedule
 - wounded_recovery_pulse
 - commander_death_events_pulse
 - commit_suicide
@@ -1114,12 +1260,13 @@
 - diarchy_mandate_promote_might_random
 - diarchy_mandate_promote_merit_random
 
-### marriage_concubinage.txt（5 条目）
+### marriage_concubinage.txt（6 条目）
 
 - on_marriage
 - on_divorce
 - on_concubinage
 - on_concubinage_end
+- on_betrothal
 - on_betrothal_broken
 
 ### mercenary_on_actions.txt（2 条目）
@@ -1153,11 +1300,12 @@
 - on_building_started
 - on_building_cancelled
 - on_holding_razed
-- on_great_building_rebuilt
+- on_great_district_rebuilt
 
-### realm_maintenance_on_actions.txt（4 条目）
+### realm_maintenance_on_actions.txt（5 条目）
 
 - realm_maintenance_quarterly_pulse
+- county_corruption_escalation_pulse
 - in_debt_county_corruption_pulse
 - low_control_pulse
 - high_control_pulse
@@ -1284,13 +1432,14 @@
 - on_scheme_opportunity_changed
 - agent_events_on_action
 
-### schemes/abduct_on_actions.txt（5 条目）
+### schemes/abduct_on_actions.txt（6 条目）
 
 - abduct_setup
 - standard_abduct_method_setup
 - abduct_succeeded
 - abduct_failed
 - abduct_ongoing
+- abduct_specific_ongoing
 
 ### schemes/befriend_on_actions.txt（7 条目）
 
@@ -1336,15 +1485,49 @@
 - fabricate_hook_method_success_outcome
 - fabricate_hook_ongoing
 
+### schemes/gdp_civic_agitation_scheme_on_actions.txt（2 条目）
+
+- gdp_civic_agitation_scheme_success
+- gdp_civic_agitation_scheme_failure
+
+### schemes/gdp_incite_unrest_scheme_on_actions.txt（4 条目）
+
+- gdp_incite_unrest_scheme_success
+- gdp_incite_unrest_scheme_failure
+- gdp_incite_unrest_scheme_discovered
+- gdp_incite_unrest_ongoing
+
+### schemes/generic_intrigue_scheme_ongoing_on_actions.txt（5 条目）
+
+- generic_intrigue_agents_ongoing
+- generic_intrigue_target_ongoing
+- generic_intrigue_owner_ongoing
+- generic_intrigue_other_ongoing
+- generic_intrigue_lifestyle_ongoing
+
+### schemes/gg_schemes_on_actions.txt（4 条目）
+
+- gg_switch_sides_ongoing
+- gg_claim_leadership_ongoing
+- gg_align_undecided_ongoing
+- gg_replace_ruler_ongoing
+
+### schemes/influence_house_ambition_on_action.txt（3 条目）
+
+- influence_house_ambition_success
+- influence_house_ambition_failure
+- influence_house_ambition_ongoing
+
 ### schemes/learn_language_on_actions.txt（3 条目）
 
 - learn_language_success
 - learn_language_failure
 - learn_language_ongoing
 
-### schemes/murder_on_actions.txt（13 条目）
+### schemes/murder_on_actions.txt（14 条目）
 
 - murder_ongoing
+- murder_specific_ongoing
 - murder_success_pre_filter_on_action
 - murder_success_incapable_event_list_on_action
 - murder_success_imprisoned_event_list_on_action
@@ -1357,6 +1540,16 @@
 - murder_failure_standard_event_list_on_action
 - pick_unique_murder_intercept_on_action
 - pick_repeatable_murder_intercept_on_action
+
+### schemes/overthrow_government_on_action.txt（2 条目）
+
+- overthrow_government_success_outcome
+- overthrow_government_failure_outcome
+
+### schemes/republic_promote_candidate_scheme_on_actions.txt（2 条目）
+
+- republic_promote_candidate_scheme_success
+- republic_promote_candidate_scheme_failure
 
 ### schemes/seduce_on_actions.txt（5 条目）
 
@@ -1523,9 +1716,8 @@
 - stress_loss_confider
 - stress_loss_athletic
 
-### stress_on_actions.txt（12 条目）
+### stress_on_actions.txt（11 条目）
 
-- stress_pulse
 - on_stress_level_reduced
 - on_stress_level_1
 - on_stress_level_2
@@ -1555,9 +1747,11 @@
 - laamp_base_0031_contract_scheme_arrival_events
 - laamp_base_4015_contract_arrival_events
 
-### title_on_actions.txt（14 条目）
+### title_on_actions.txt（16 条目）
 
 - on_title_destroyed
+- on_term_ended
+- on_term_ended_events
 - on_title_gain
 - on_title_gain_inheritance
 - on_title_gain_usurpation
@@ -1571,6 +1765,22 @@
 - on_baron_found_or_created_for_title
 - on_realm_capital_change
 - on_primary_title_change
+
+### trade_on_actions.txt（13 条目）
+
+- on_trade_route_created
+- on_trade_route_edited
+- on_trade_route_destroyed
+- on_trade_good_category_level_up
+- on_trade_good_category_level_down
+- on_trader_assigned
+- on_gdp_trader_arrived_at_market
+- on_gdp_trader_continue_activity
+- on_market_changed_toll_level
+- on_toll_exception_changed
+- on_toll_exception_ended
+- gdp_trade_route_maturity_pulse
+- gdp_trade_envoys_resume_pulse
 
 ### traits_on_actions.txt（2 条目）
 
@@ -1628,17 +1838,20 @@
 - fp3_yearly_events
 - pam_christian_yearly_events
 
-### yearly_on_actions.txt（18 条目）
+### yearly_on_actions.txt（21 条目）
 
 - yearly_global_pulse
 - yearly_playable_pulse
 - three_year_playable_pulse
 - five_year_playable_pulse
 - quarterly_playable_pulse
+- lifestyle_progress_pulse
 - random_yearly_playable_pulse
 - random_yearly_everyone_pulse
 - five_year_everyone_pulse
 - three_year_pool_pulse
+- gdp_merchant_pool_pulse
+- gdp_minority_merchant_pool_pulse
 - prison_maintenance_pulse
 - ai_character_pulse
 - culture_hybridization_emergence_events

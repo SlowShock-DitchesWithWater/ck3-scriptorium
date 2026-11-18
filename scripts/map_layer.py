@@ -35,7 +35,7 @@ from vanilla_index import resolve_game_dir  # noqa: E402  三级解析复用
 
 REPO_ROOT = config.REPO_ROOT
 DEFAULT_OUT_DIR = REPO_ROOT / "game_docs" / "map_docs"
-DEFAULT_GAME_VERSION = "1.20.1"   # 与 manifest vanilla_structure 快照一致
+DEFAULT_GAME_VERSION = "1.21.0"   # 与 manifest vanilla_structure 快照一致
 
 # ---------------------------------------------------------------------------
 # PNG 头解析（stdlib）：IHDR → 尺寸/位深/颜色类型；PLTE → 调色板颜色

@@ -1,30 +1,30 @@
 # common/flavorization 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：10（其中 Jomini 解析 9 个）
-- 顶层块条目总数：1359，跨文件唯一条目 1359
+- 顶层块条目总数：1574，跨文件唯一条目 1574
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_flavorization.txt` | 13648 | 45 | 0 | jomini |
-| `00_title_holders.txt` | 280993 | 972 | 0 | jomini |
-| `01_domicile.txt` | 1634 | 6 | 0 | jomini |
+| `00_flavorization.txt` | 18661 | 63 | 0 | jomini |
+| `00_title_holders.txt` | 336230 | 1167 | 0 | jomini |
+| `01_domicile.txt` | 2044 | 8 | 0 | jomini |
 | `02_vassal_contracts.txt` | 4228 | 18 | 0 | jomini |
-| `10_tgp_flavorization.txt` | 6489 | 28 | 0 | jomini |
-| `10_tgp_japan_flavorization.txt` | 20025 | 80 | 0 | jomini |
-| `10_tgp_korea_flavorization.txt` | 13428 | 54 | 0 | jomini |
-| `11_tgp_china_flavorization.txt` | 41857 | 128 | 0 | jomini |
-| `20_pam_flavorization.txt` | 7349 | 28 | 0 | jomini |
-| `_flavourization.info` | 12222 | - | - | 纯文档（非 Jomini） |
+| `10_tgp_flavorization.txt` | 6477 | 28 | 0 | jomini |
+| `10_tgp_japan_flavorization.txt` | 19996 | 80 | 0 | jomini |
+| `10_tgp_korea_flavorization.txt` | 13455 | 54 | 0 | jomini |
+| `11_tgp_china_flavorization.txt` | 41848 | 128 | 0 | jomini |
+| `20_pam_flavorization.txt` | 7342 | 28 | 0 | jomini |
+| `_flavourization.info` | 12784 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_flavorization.txt（45 条目）
+### 00_flavorization.txt（63 条目）
 
 - prince_male_roman
 - prince_female_roman
@@ -69,10 +69,28 @@
 - emperor_administrative_vassal_byzantine_group
 - emperor_administrative_vassal_roman
 - duchy_landless_adventurer_camp
+- duchy_landless_merchant_company
+- county_landless_merchant_company
 - devaraja
 - devarani
+- republic_estate_holder_male
+- republic_estate_holder_female
+- republic_estate_holder_latin_male
+- republic_estate_holder_latin_female
+- republic_estate_holder_germanic_male
+- republic_estate_holder_germanic_female
+- republic_estate_holder_frankish_male
+- republic_estate_holder_frankish_female
+- republic_estate_holder_greek_male
+- republic_estate_holder_greek_female
+- republic_estate_holder_arabic_male
+- republic_estate_holder_arabic_female
+- republic_senator_male
+- republic_senator_female
+- republic_senator_male_domicile
+- republic_senator_female_domicile
 
-### 00_title_holders.txt（972 条目）
+### 00_title_holders.txt（1167 条目）
 
 - ecumenical_patriarch
 - ecumenical_matriarch
@@ -102,8 +120,11 @@
 - realm_priest_male
 - realm_priest_female
 - title_prince
+- title_prince_vassal
 - title_princess
+- title_princess_vassal
 - title_principality
+- title_principality_vassal
 - swiss_confederation
 - archduke
 - archduchess
@@ -338,6 +359,38 @@
 - duke_republic_female_latin_group
 - king_republic_male_latin_group
 - king_republic_female_latin_group
+- emperor_republic_male_latin_group
+- emperor_republic_female_latin_group
+- count_republic_life_male_latin
+- count_republic_life_female_latin
+- count_republic_appointed_male_latin
+- count_republic_appointed_female_latin
+- county_republic_appointed_latin
+- count_republic_hereditary_male_latin
+- count_republic_hereditary_female_latin
+- county_republic_hereditary_latin
+- duke_republic_life_male_latin
+- duke_republic_life_female_latin
+- duke_republic_appointed_male_latin
+- duke_republic_appointed_female_latin
+- duchy_republic_appointed_latin
+- duke_republic_hereditary_male_latin
+- duke_republic_hereditary_female_latin
+- duchy_republic_hereditary_latin
+- emperor_republic_hereditary_male_latin
+- emperor_republic_hereditary_female_latin
+- empire_republic_hereditary_latin
+- duke_republic_male_venice
+- duke_republic_female_venice
+- duchy_republic_venice
+- king_republic_male_venice
+- king_republic_female_venice
+- duke_republic_male_amalfi
+- duke_republic_female_amalfi
+- duke_republic_male_commune_roma
+- duke_republic_female_commune_roma
+- hegemon_republic_male_roman
+- hegemon_republic_female_roman
 - baron_feudal_male_roman
 - baron_feudal_female_roman
 - barony_feudal_roman
@@ -363,6 +416,32 @@
 - emperor_republic_male_roman
 - emperor_republic_female_roman
 - empire_republic_roman
+- count_republic_life_male_roman
+- count_republic_life_female_roman
+- count_republic_appointed_male_roman
+- count_republic_appointed_female_roman
+- county_republic_appointed_roman
+- count_republic_hereditary_male_roman
+- count_republic_hereditary_female_roman
+- county_republic_hereditary_roman
+- duke_republic_life_male_roman
+- duke_republic_life_female_roman
+- duke_republic_appointed_male_roman
+- duke_republic_appointed_female_roman
+- duchy_republic_appointed_roman
+- duke_republic_hereditary_male_roman
+- duke_republic_hereditary_female_roman
+- duchy_republic_hereditary_roman
+- king_republic_life_male_roman
+- king_republic_life_female_roman
+- king_republic_appointed_male_roman
+- king_republic_appointed_female_roman
+- kingdom_republic_appointed_roman
+- king_republic_hereditary_male_roman
+- king_republic_hereditary_female_roman
+- kingdom_republic_hereditary_roman
+- emperor_republic_life_male_roman
+- emperor_republic_life_female_roman
 - duke_feudal_male_greek
 - king_feudal_male_greek
 - king_feudal_female_greek
@@ -373,8 +452,58 @@
 - duke_republic_female_byzantine_group
 - king_republic_male_byzantine_group
 - king_republic_female_byzantine_group
+- count_republic_male_byzantine_group
+- count_republic_female_byzantine_group
+- county_republic_byzantine_group
+- duchy_republic_byzantine_group
+- kingdom_republic_byzantine_group
+- emperor_republic_male_byzantine_group
+- emperor_republic_female_byzantine_group
+- empire_republic_byzantine_group
+- count_republic_life_male_byzantine
+- count_republic_life_female_byzantine
+- count_republic_appointed_male_byzantine
+- count_republic_appointed_female_byzantine
+- county_republic_appointed_byzantine
+- count_republic_hereditary_male_byzantine
+- count_republic_hereditary_female_byzantine
+- county_republic_hereditary_byzantine
+- duke_republic_life_male_byzantine
+- duke_republic_life_female_byzantine
+- duke_republic_appointed_male_byzantine
+- duke_republic_appointed_female_byzantine
+- duchy_republic_appointed_byzantine
+- duke_republic_hereditary_male_byzantine
+- duke_republic_hereditary_female_byzantine
+- duchy_republic_hereditary_byzantine
 - emperor_feudal_male_german
 - emperor_feudal_female_german
+- count_republic_male_german
+- count_republic_female_german
+- county_republic_german
+- duke_republic_male_german
+- duke_republic_female_german
+- duchy_republic_german
+- kingdom_republic_german
+- empire_republic_german
+- count_republic_life_male_german
+- count_republic_life_female_german
+- count_republic_appointed_male_german
+- count_republic_appointed_female_german
+- county_republic_appointed_german
+- count_republic_hereditary_male_german
+- count_republic_hereditary_female_german
+- county_republic_hereditary_german
+- duke_republic_life_male_german
+- duke_republic_life_female_german
+- duke_republic_appointed_male_german
+- duke_republic_appointed_female_german
+- duchy_republic_appointed_german
+- duke_republic_hereditary_male_german
+- duke_republic_hereditary_female_german
+- duchy_republic_hereditary_german
+- king_republic_life_male_german
+- king_republic_life_female_german
 - baron_feudal_male_norse
 - baron_feudal_female_norse
 - count_feudal_male_norse
@@ -592,6 +721,57 @@
 - duke_republic_female_arabic_group
 - king_republic_male_arabic_group
 - king_republic_female_arabic_group
+- count_republic_life_male_islamic_group
+- count_republic_life_female_islamic_group
+- count_republic_appointed_male_islamic_group
+- count_republic_appointed_female_islamic_group
+- county_republic_appointed_islamic_group
+- count_republic_hereditary_male_islamic_group
+- count_republic_hereditary_female_islamic_group
+- county_republic_hereditary_islamic_group
+- duke_republic_life_male_islamic_group
+- duke_republic_life_female_islamic_group
+- duke_republic_appointed_male_islamic_group
+- duke_republic_appointed_female_islamic_group
+- duchy_republic_appointed_islamic_group
+- duke_republic_hereditary_male_islamic_group
+- duke_republic_hereditary_female_islamic_group
+- duchy_republic_hereditary_islamic_group
+- king_republic_life_male_islamic_group
+- king_republic_life_female_islamic_group
+- king_republic_hereditary_male_islamic_group
+- king_republic_hereditary_female_islamic_group
+- kingdom_republic_hereditary_islamic_group
+- count_republic_male_indian_group
+- count_republic_female_indian_group
+- county_republic_indian_group
+- duke_republic_male_indian_group
+- duke_republic_female_indian_group
+- duchy_republic_indian_group
+- king_republic_male_indian_group
+- king_republic_female_indian_group
+- kingdom_republic_indian_group
+- count_republic_life_male_indian_group
+- count_republic_life_female_indian_group
+- count_republic_appointed_male_indian_group
+- count_republic_appointed_female_indian_group
+- county_republic_appointed_indian_group
+- count_republic_hereditary_male_indian_group
+- count_republic_hereditary_female_indian_group
+- county_republic_hereditary_indian_group
+- duke_republic_life_male_indian_group
+- duke_republic_life_female_indian_group
+- duke_republic_appointed_male_indian_group
+- duke_republic_appointed_female_indian_group
+- duchy_republic_appointed_indian_group
+- duke_republic_hereditary_male_indian_group
+- duke_republic_hereditary_female_indian_group
+- duchy_republic_hereditary_indian_group
+- king_republic_life_male_indian_group
+- king_republic_life_female_indian_group
+- king_republic_hereditary_male_indian_group
+- king_republic_hereditary_female_indian_group
+- kingdom_republic_hereditary_indian_group
 - baron_feudal_male_turkish
 - baron_feudal_female_turkish
 - barony_feudal_turkish
@@ -827,6 +1007,35 @@
 - emperor_republic_male
 - emperor_republic_female
 - empire_republic
+- count_republic_life_male
+- count_republic_life_female
+- count_republic_appointed_male
+- count_republic_appointed_female
+- county_republic_appointed
+- count_republic_hereditary_male
+- count_republic_hereditary_female
+- county_republic_hereditary
+- duke_republic_life_male
+- duke_republic_life_female
+- duke_republic_appointed_male
+- duke_republic_appointed_female
+- duchy_republic_appointed
+- duke_republic_hereditary_male
+- duke_republic_hereditary_female
+- duchy_republic_hereditary
+- king_republic_life_male
+- king_republic_life_female
+- king_republic_appointed_male
+- king_republic_appointed_female
+- kingdom_republic_appointed
+- king_republic_hereditary_male
+- king_republic_hereditary_female
+- kingdom_republic_hereditary
+- emperor_republic_life_male
+- emperor_republic_life_female
+- emperor_republic_hereditary_male
+- emperor_republic_hereditary_female
+- empire_republic_hereditary
 - baron_theocracy_male
 - baron_theocracy_female
 - barony_theocracy
@@ -1027,6 +1236,8 @@
 - spouse_estate_holder_female
 - spouse_theocracy_female
 - spouse_theocracy_male
+- spouse_company_holder_male
+- spouse_company_holder_female
 - lady_in_shadows
 - co_ruler_female
 - co_ruler_male
@@ -1046,8 +1257,10 @@
 - count_herder_male
 - count_herder_female
 - county_herder
+- landless_merchant_male
+- landless_merchant_female
 
-### 01_domicile.txt（6 条目）
+### 01_domicile.txt（8 条目）
 
 - domicile_adventurer
 - domicile_estate
@@ -1055,6 +1268,8 @@
 - domicile_ecclesiastical_domicile_eastern
 - domicile_ecclesiastical_domicile_oriental
 - domicile_ecclesiastical_domicile_latin
+- domicile_merchant_company_merchant
+- domicile_merchant_company_republic
 
 ### 02_vassal_contracts.txt（18 条目）
 

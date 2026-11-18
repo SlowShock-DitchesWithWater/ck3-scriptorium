@@ -1,9 +1,9 @@
 # Event Scopes（script_docs 权威清单）
 
-- 来源：`game logs/event_scopes.log`（CK3 1.20.1 `script_docs` 控制台导出）
-- 源文件时间：2026-10-22T19:55:11+08:00（文件 mtime，视为 dump 生成时间）
-- 源文件大小：8898 字节
-- 条目数：74
+- 来源：`game logs/event_scopes.log`（CK3 1.21.0 `script_docs` 控制台导出）
+- 源文件时间：2026-11-18T19:02:21+08:00（文件 mtime，视为 dump 生成时间）
+- 源文件大小：10597 字节
+- 条目数：88
 - 正文逐字来自 dump，仅重排为每条目一节；与 wiki 层冲突时以本层为准。
 
 ### none
@@ -53,6 +53,46 @@ Execute Effects: yes
 Change Scopes: yes
 Save Token: lt
 Stores Variables: yes
+
+### title_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: title_type
+Stores Variables: no
+
+### building
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: building
+Stores Variables: yes
+
+### district
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: district
+Stores Variables: yes
+
+### building_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: building_type
+Stores Variables: no
+
+### district_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: district_type
+Stores Variables: no
 
 ### activity
 
@@ -374,6 +414,14 @@ Change Scopes: yes
 Save Token: culture_pillar
 Stores Variables: no
 
+### law
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: law
+Stores Variables: no
+
 ### government_type
 
 Evaluate Triggers: yes
@@ -596,4 +644,68 @@ Evaluate Triggers: yes
 Execute Effects: no
 Change Scopes: yes
 Save Token: great_project_type
+Stores Variables: no
+
+### trade_good_category
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: trade_good_category
+Stores Variables: no
+
+### trade_good_type
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: trade_good_type
+Stores Variables: no
+
+### trade_market
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: trade_market
+Stores Variables: yes
+
+### trade_route
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: trade_route
+Stores Variables: yes
+
+### trade_monopoly
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: trade_monopoly
+Stores Variables: yes
+
+### road
+
+Evaluate Triggers: yes
+Execute Effects: yes
+Change Scopes: yes
+Save Token: road
+Stores Variables: no
+
+### toll_level
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: toll_level
+Stores Variables: no
+
+### men_at_arms
+
+Evaluate Triggers: yes
+Execute Effects: no
+Change Scopes: yes
+Save Token: men_at_arms
 Stores Variables: no

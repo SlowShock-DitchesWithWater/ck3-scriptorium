@@ -9,6 +9,7 @@
 | `game_docs/`（script_docs 12 清单 + vanilla_structure 结构索引 + map_docs 地图实测档案） | 游戏自生 debug dump 的转换产物 + 原版文件结构元数据 + 地图侧实测事实 | 见下方「游戏衍生数据」节 |
 | `tests/fixtures/`（金样本 raw JSON 与 golden 期望产物） | CK3 Wiki api.php 响应的逐字副本及其清洗产物 | 同 pages/ 层：CC BY-SA 3.0，来源标注见 `tests/fixtures/fixtures.json` |
 | `reading_room/`（阅览室自选文章） | 用户自写的外部文章笔记 + 出处链接（**不含原文全文**——许可红线见其 README） | 笔记正文随仓库 **MIT**（自写内容）；引用的短片段版权归原出处，条目内已标注 |
+| `copy_room/`（抄写室） | 抄写室说明文档 `README.md`（mod 知识库的构建与检索约定）；`copy_room/<mod-id>/` 下的 KB 产物**不随仓库发布**（见下方「明确不在发布范围」） | 文档随仓库 **MIT**（原创）；KB 产物为 mod 衍生数据，版权归各 mod 作者 |
 
 ## 游戏衍生数据（game_docs/）
 
@@ -27,6 +28,9 @@ Paradox Interactive。** 2026-10-28 项目所有者权衡后决定随仓库发�
 
 ## 明确不在发布范围（.gitignore 已排除）
 
+- `copy_room/<mod-id>/`：抄写室的 mod 知识库产物——内容派生自各 mod
+  （版权归各 mod 作者）且体积可观；按 README 手册 D 三步可随时在本机
+  重建等价物（`copy_room/README.md`）。
 - `game logs/`：游戏的原始 dump 日志（含运行时会话日志）——体积与必要性
   考虑仅本地保留；按 README 手册 A 第 3-4 步可随时再生成 game_docs/。
 - `raw/`、`scripts/state/`：抓取原始存档与运行状态（含会话 cookie）。

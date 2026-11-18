@@ -1,36 +1,37 @@
 # common/scripted_modifiers 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：46（其中 Jomini 解析 45 个）
-- 顶层块条目总数：423，跨文件唯一条目 423
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：50（其中 Jomini 解析 49 个）
+- 顶层块条目总数：485，跨文件唯一条目 485
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_activity_scripted_modifiers.txt` | 69452 | 58 | 0 | jomini |
-| `00_ai_value_modifiers.txt` | 6570 | 12 | 0 | jomini |
-| `00_building_modifiers.txt` | 26338 | 49 | 0 | jomini |
-| `00_character_interaction_modifiers.txt` | 33285 | 6 | 0 | jomini |
+| `00_activity_scripted_modifiers.txt` | 68839 | 58 | 0 | jomini |
+| `00_ai_value_modifiers.txt` | 6662 | 12 | 0 | jomini |
+| `00_alliance_modifiers.txt` | 8441 | 1 | 0 | jomini |
+| `00_building_modifiers.txt` | 45413 | 85 | 1 | jomini |
+| `00_character_interaction_modifiers.txt` | 22246 | 5 | 0 | jomini |
 | `00_character_selection_scripted_modifiers.txt` | 502 | 2 | 0 | jomini |
 | `00_councillor_scripted_modifiers.txt` | 2026 | 2 | 0 | jomini |
 | `00_decisions_scripted_modifiers.txt` | 247 | 1 | 0 | jomini |
 | `00_diarchy_scripted_modifiers.txt` | 9879 | 27 | 0 | jomini |
-| `00_elective_successions_scripted_modifiers.txt` | 118554 | 15 | 0 | jomini |
+| `00_elective_successions_scripted_modifiers.txt` | 119134 | 15 | 0 | jomini |
 | `00_ep1_amenities_modifiers.txt` | 3 | 0 | 0 | jomini |
 | `00_ep1_artifact_modifiers.txt` | 1076 | 6 | 0 | jomini |
 | `00_ep1_inspiration_modifiers.txt` | 3948 | 4 | 0 | jomini |
-| `00_faction_modifiers.txt` | 121692 | 27 | 0 | jomini |
-| `00_hold_court_modifiers.txt` | 2470 | 5 | 0 | jomini |
+| `00_faction_modifiers.txt` | 121518 | 27 | 0 | jomini |
+| `00_hold_court_modifiers.txt` | 2469 | 5 | 0 | jomini |
 | `00_lifestyle_scripted_modifiers.txt` | 873 | 2 | 0 | jomini |
-| `00_marriage_scripted_modifiers.txt` | 82833 | 9 | 0 | jomini |
+| `00_marriage_scripted_modifiers.txt` | 82263 | 9 | 0 | jomini |
 | `00_military_scripted_modifiers.txt` | 434 | 1 | 0 | jomini |
 | `00_perk_modifiers.txt` | 346 | 1 | 0 | jomini |
 | `00_portrait_modifiers.txt` | 3630 | 20 | 0 | jomini |
-| `00_religion_scripted_modifiers.txt` | 121091 | 21 | 0 | jomini |
+| `00_religion_scripted_modifiers.txt` | 121544 | 21 | 0 | jomini |
 | `00_romance_and_seduction_scripted_modifiers.txt` | 3284 | 2 | 0 | jomini |
-| `00_scheme_scripted_modifiers.txt` | 110966 | 38 | 0 | jomini |
+| `00_scheme_scripted_modifiers.txt` | 121626 | 47 | 0 | jomini |
 | `00_scripted_relations_scripted_modifiers.txt` | 3443 | 2 | 0 | jomini |
 | `00_single_combat_scripted_modifiers.txt` | 1198 | 9 | 0 | jomini |
 | `00_spouse_scripted_modifiers.txt` | 45 | 0 | 0 | jomini |
@@ -45,14 +46,17 @@
 | `03_fp2_scripted_modifiers.txt` | 19438 | 12 | 0 | jomini |
 | `04_ep2_scripted_modifiers.txt` | 13641 | 11 | 0 | jomini |
 | `05_bp2_scripted_modifiers.txt` | 25366 | 15 | 0 | jomini |
-| `05_fp3_scripted_modifiers.txt` | 9478 | 8 | 0 | jomini |
+| `05_fp3_scripted_modifiers.txt` | 10057 | 8 | 0 | jomini |
 | `07_ep3_scripted_modifiers.txt` | 10045 | 8 | 6 | jomini |
 | `09_mpo_scripted_modifiers.txt` | 16673 | 1 | 0 | jomini |
 | `10_ach_scripted_modifiers.txt` | 2339 | 3 | 0 | jomini |
 | `10_tgp_faction_modifiers.txt` | 848 | 2 | 0 | jomini |
-| `10_tgp_japan_modifiers.txt` | 19381 | 6 | 0 | jomini |
+| `10_tgp_japan_modifiers.txt` | 16531 | 6 | 0 | jomini |
 | `10_tgp_scripted_modifiers.txt` | 3296 | 4 | 0 | jomini |
 | `_scripted_modifiers.info` | 664 | - | - | 纯文档（非 Jomini） |
+| `gdp_republic_modifiers.txt` | 17145 | 4 | 0 | jomini |
+| `gdp_scripted_modifiers.txt` | 4976 | 12 | 0 | jomini |
+| `gdp_trader_scripted_modifiers.txt` | 2574 | 1 | 0 | jomini |
 | `pam_scripted_modifiers.txt` | 741 | 1 | 0 | jomini |
 | `tgp_mandala_scripted_modifiers.txt` | 11578 | 13 | 0 | jomini |
 
@@ -95,7 +99,7 @@
 - hunt_activity_sighting_building_modifier
 - hunt_activity_game_building_modifier
 - hunt_activity_organization_modifier
-- hunt_activity_building_development_modifier
+- hunt_activity_building_prosperity_modifier
 - hunt_activity_hunter_lifestyle_modifier
 - hunt_murderer_modifier
 - hunt_boulder_jump_success_modifiers
@@ -136,66 +140,105 @@
 - ai_military_threat_modifier_with_cbs
 - ai_military_threat_modifier
 
-### 00_building_modifiers.txt（49 条目）
+### 00_alliance_modifiers.txt（1 条目）
 
+- common_ai_accept_alliance_modifiers
+
+### 00_building_modifiers.txt（85 条目）
+
+- ai_rural_building_modifier
+- ai_rural_synergy_modifier
+- ai_urban_building_modifier
+- ai_urban_identity_building_modifier
+- ai_cultural_unlock_building_modifier
+- ai_urban_district_building_modifier
+- ai_opinion_baseline_building_modifier
+- ai_control_baseline_building_modifier
+- ai_walls_building_modifier
+- ai_urban_housing_modifier
 - ai_general_building_modifier
-- ai_tier_1_building_modifier
-- ai_tier_1_economical_building_preference_modifier
-- ai_tier_1_pious_building_preference_modifier
 - ai_economical_building_preference_modifier
 - ai_pious_building_preference_modifier
 - ai_skirmisher_modifier
 - ai_archer_modifier
 - ai_heavy_infantry_modifier
-- ai_pikemen_modifier
 - ai_light_cavalry_modifier
 - ai_heavy_cavalry_modifier
-- ai_compensate_heavy_cavalry_modifier
-- ai_compensate_light_cavalry_modifier
 - ai_archer_cavalry_modifier
-- ai_camels_modifier
-- ai_elephants_modifier
-- ai_stacking_bonus_military_camps_modifier
-- ai_stacking_bonus_smiths_modifier
-- ai_stacking_bonus_stables_modifier
-- ai_stacking_bonus_horse_pastures_modifier
-- ai_stacking_bonus_hillside_grazing_modifier
-- ai_stacking_bonus_warrior_lodges_modifier
-- ai_stacking_bonus_wind_furnaces_modifier
-- ai_stacking_bonus_outposts_modifier
-- ai_stacking_bonus_camel_farms_modifier
-- ai_stacking_bonus_elephant_pens_modifier
 - ai_anti_synergy_cavalry_modifier
 - ai_anti_synergy_armored_infantry_modifier
 - ai_anti_synergy_light_infantry_modifier
 - culture_likely_to_fortify_modifier
-- ai_tradeport_improvement_from_culture_modifier
-- ai_pasture_improvement_from_culture_modifier
-- ai_hunting_grounds_improvement_from_culture_modifier
-- ai_orchard_improvement_from_culture_modifier
-- ai_farm_estate_improvement_from_culture_modifier
-- ai_paddy_fields_improvement_from_culture_modifier
-- ai_cereal_fields_improvement_from_culture_modifier
-- ai_outposts_improvement_from_culture_modifier
-- ai_barracks_improvement_from_culture_modifier
-- ai_logging_camp_improvement_from_culture_modifier
-- ai_peat_quarries_improvement_from_culture_modifier
-- ai_hill_farms_improvement_from_culture_modifier
-- ai_elephant_pens_improvement_from_culture_modifier
-- ai_plantations_improvement_from_culture_modifier
-- ai_quarries_improvement_from_culture_modifier
 - directive_to_fortify_modifier
 - directive_to_build_military_modifier
 - directive_to_build_economy_modifier
+- ai_upgrade_holding_modifier
+- ai_defensive_need_modifier
+- ai_military_context_modifier
+- ai_military_district_modifier
+- ai_military_district_upgrade_modifier
+- ai_knights_context_modifier
+- ai_civic_context_modifier
+- ai_tribal_context_modifier
+- ai_economic_terrain_modifier
+- ai_resource_building_need_modifier
+- ai_resource_building_staple_need_modifier
+- ai_resource_building_need_category_modifier
+- ai_resource_building_consumer_modifier
+- ai_resource_building_consumer_category_modifier
+- ai_resource_building_consumer_need_category_modifier
+- ai_income_production_building_modifier
+- ai_income_building_modifier
+- ai_urban_input_modifier
+- ai_urban_input_category_modifier
+- ai_urban_output_modifier
+- ai_merchant_attraction_modifier
+- ai_merchant_attraction_category_modifier
+- ai_cured_meat_producer_modifier
+- ai_cured_meat_from_input_modifier
+- ai_resource_new_building_modifier
+- ai_regular_new_building_modifier
+- ai_regular_new_district_modifier
+- ai_resource_building_upgrade_modifier
+- ai_regular_building_upgrade_modifier
+- ai_resource_district_upgrade_modifier
+- ai_regular_district_upgrade_modifier
+- ai_holding_district_building_modifier
+- ai_holding_district_upgrade_modifier
+- ai_duchy_new_district_modifier
+- ai_duchy_district_building_modifier
+- ai_duchy_district_upgrade_modifier
+- ai_special_district_modifier
+- ai_trade_post_new_district_modifier
+- ai_trade_post_new_building_modifier
+- ai_trade_post_building_upgrade_modifier
+- ai_trade_post_district_upgrade_modifier
+- ai_trade_post_general_building_modifier
+- ai_trade_post_economical_building_preference_modifier
+- ai_trade_post_directive_to_build_economy_modifier
+- ai_trade_post_directive_to_build_military_modifier
+- ai_trade_post_income_building_modifier
+- ai_trade_post_control_baseline_building_modifier
+- ai_trade_post_control_need_modifier
+- ai_trade_post_opinion_baseline_building_modifier
+- ai_trade_post_popular_opinion_need_modifier
+- ai_trade_post_merchant_attraction_modifier
+- ai_trade_post_defensive_need_modifier
+- ai_trade_post_directive_to_fortify_modifier
+- ai_capital_preference_modifier
+- ai_control_need_modifier
+- ai_popular_opinion_need_modifier
+- ai_market_shortage_modifier
+- ai_market_staple_shortage_modifier
+- ai_market_category_shortage_modifier
 
-### 00_character_interaction_modifiers.txt（6 条目）
+### 00_character_interaction_modifiers.txt（5 条目）
 
 - offer_vassalization_interaction_ai_acceptance_general
 - offer_vassalization_interaction_ai_acceptance_religion_and_culture
 - offer_vassalization_interaction_ai_acceptance_bonus
 - offer_vassalization_interaction_ai_acceptance_relation
 - offer_vassalization_interaction_ai_acceptance_diplomacy
-- negotiate_alliance_interaction_ai_acceptance
 
 ### 00_character_selection_scripted_modifiers.txt（2 条目）
 
@@ -394,7 +437,7 @@
 - incest_acceptance_modifier
 - simple_attraction_modifier
 
-### 00_scheme_scripted_modifiers.txt（38 条目）
+### 00_scheme_scripted_modifiers.txt（47 条目）
 
 - laamp_contract_scheme_basic_success_chance_modifier
 - scheme_type_skill_success_chance_modifier
@@ -412,6 +455,7 @@
 - ai_agent_join_chance_personal_inoffensive_modifier
 - ai_agent_join_chance_laamp_contract_modifier
 - ai_agent_join_chance_political_suite_modifier
+- ai_agent_join_chance_republican_political_modifier
 - scheme_prep_ai_should_execute_scheme_modifier
 - diarch_scheming_within_realm_bonus_modifier
 - diarch_scheming_title_within_realm_bonus_modifier
@@ -427,6 +471,14 @@
 - dangerous_hostile_scheme_base_chance_modifier
 - dangerous_hostile_scheme_title_base_chance_modifier
 - diplomacy_scheme_base_chance_modifier
+- is_gg_leader_modifier
+- is_gg_leader_mid_modifier
+- target_is_gg_leader_modifier
+- target_is_theocracy_modifier
+- target_is_kaiser_modifier
+- target_is_pope_modifier
+- target_is_pope_and_you_are_ghibelline_modifier
+- gg_phase_is_dictatus_papae_negative_modifier
 - hostile_scheme_base_chance_modifier
 - hostile_scheme_title_base_chance_modifier
 - ai_agent_join_chance_hostile_title_modifier
@@ -599,6 +651,32 @@
 - mentor_negative_evaluation_modifiers
 - mentor_balanced_evaluation_modifiers
 - tribute_mission_decision_ai_will_do_modifiers
+
+### gdp_republic_modifiers.txt（4 条目）
+
+- elector_voting_pattern_republican_elective_modifier
+- elector_voting_pattern_circumstances_republican_elective_modifier
+- actor_patrician_rating_modifier
+- request_trade_monopoly_common_republic_modifier
+
+### gdp_scripted_modifiers.txt（12 条目）
+
+- merchant_trade_opportunity_scheme_basic_success_chance_modifier
+- merchant_find_curio_poi_modifier
+- merchant_find_shared_duel_success_modifier
+- base_duel_compare_modifier
+- weight_up_trade_route_by_traded_good_with_category_xp_below_modifier
+- weight_up_trade_good_by_category_xp_below_modifier
+- luxury_contract_owned_creature_modifier
+- diversify_commission_route_market_need_modifier
+- diversify_commission_route_category_routes_modifier
+- diversify_commission_route_good_routes_modifier
+- diversify_commission_route_category_need_modifier
+- diversify_commission_route_good_need_modifier
+
+### gdp_trader_scripted_modifiers.txt（1 条目）
+
+- gdp_trader_scheme_success_chance_modifier
 
 ### pam_scripted_modifiers.txt（1 条目）
 

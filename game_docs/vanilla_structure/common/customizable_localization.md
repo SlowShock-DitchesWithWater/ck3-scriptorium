@@ -1,8 +1,8 @@
 # common/customizable_localization 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：159（其中 Jomini 解析 158 个）
-- 顶层块条目总数：2782，跨文件唯一条目 2782
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：165（其中 Jomini 解析 164 个）
+- 顶层块条目总数：2993，跨文件唯一条目 2993
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -10,24 +10,24 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `00_activity_loc.txt` | 14358 | 17 | 0 | jomini |
-| `00_adventurer_names.txt` | 318666 | 7 | 0 | jomini |
+| `00_adventurer_names.txt` | 318809 | 7 | 0 | jomini |
 | `00_ai_value_custom_loc.txt` | 2610 | 2 | 0 | jomini |
 | `00_animal_custom_loc.txt` | 3480 | 7 | 0 | jomini |
-| `00_appropriate_generic_words.txt` | 39767 | 30 | 0 | jomini |
+| `00_appropriate_generic_words.txt` | 49814 | 34 | 0 | jomini |
 | `00_artifact_court_custom_loc.txt` | 57514 | 43 | 0 | jomini |
-| `00_artifact_custom_loc.txt` | 87885 | 39 | 0 | jomini |
+| `00_artifact_custom_loc.txt` | 89058 | 42 | 0 | jomini |
 | `00_bad_roomate_custom_loc.txt` | 337 | 1 | 0 | jomini |
 | `00_board_game_custom_loc.txt` | 26078 | 17 | 0 | jomini |
 | `00_body_part_custom_loc.txt` | 10144 | 26 | 0 | jomini |
 | `00_bp3_wanderer_loc.txt` | 6844 | 10 | 0 | jomini |
-| `00_building_custom_localization.txt` | 69930 | 6 | 0 | jomini |
+| `00_building_custom_localization.txt` | 68093 | 7 | 0 | jomini |
 | `00_camp_party_custom_loc.txt` | 11131 | 3 | 0 | jomini |
 | `00_casus_belli.txt` | 524 | 1 | 0 | jomini |
-| `00_character_descriptions.txt` | 113885 | 13 | 0 | jomini |
-| `00_character_interaction_categories.txt` | 2360 | 2 | 0 | jomini |
-| `00_childhood_custom_localization.txt` | 5081 | 8 | 0 | jomini |
-| `00_compliment_custom_loc.txt` | 55910 | 11 | 0 | jomini |
-| `00_conversation_subjects.txt` | 38565 | 8 | 0 | jomini |
+| `00_character_descriptions.txt` | 114157 | 13 | 0 | jomini |
+| `00_character_interaction_categories.txt` | 2763 | 2 | 0 | jomini |
+| `00_childhood_custom_localization.txt` | 5102 | 8 | 0 | jomini |
+| `00_compliment_custom_loc.txt` | 56197 | 11 | 0 | jomini |
+| `00_conversation_subjects.txt` | 38836 | 8 | 0 | jomini |
 | `00_councillor_custom_loc.txt` | 4362 | 8 | 0 | jomini |
 | `00_curses_custom_loc.txt` | 1245 | 1 | 0 | jomini |
 | `00_custom_loc_sp.txt` | 5627 | 0 | 0 | jomini |
@@ -46,34 +46,36 @@
 | `00_dynasty_custom_loc.txt` | 1535 | 1 | 0 | jomini |
 | `00_education_custom_loc.txt` | 18293 | 7 | 0 | jomini |
 | `00_es_custom_loc.txt` | 86265 | 51 | 0 | jomini |
-| `00_event_custom_loc.txt` | 3240 | 2 | 0 | jomini |
+| `00_event_custom_loc.txt` | 3835 | 3 | 0 | jomini |
 | `00_faction_custom_loc.txt` | 248 | 1 | 0 | jomini |
 | `00_feast_custom_loc.txt` | 4556 | 5 | 0 | jomini |
-| `00_food_custom_loc.txt` | 84813 | 23 | 0 | jomini |
+| `00_food_custom_loc.txt` | 98372 | 25 | 0 | jomini |
 | `00_friendly_custom_localization.txt` | 529 | 2 | 0 | jomini |
 | `00_friendship_custom_localization.txt` | 3077 | 2 | 0 | jomini |
-| `00_generic_character_words.txt` | 14410 | 36 | 0 | jomini |
+| `00_gdp_great_project_custom_loc.txt` | 6005 | 2 | 0 | jomini |
+| `00_gdp_guelph_ghibelline_custom_loc.txt` | 3406 | 12 | 0 | jomini |
+| `00_generic_character_words.txt` | 16176 | 41 | 0 | jomini |
 | `00_governance_lifestyle_custom_loc.txt` | 1880 | 4 | 0 | jomini |
-| `00_government_custom_loc.txt` | 28136 | 45 | 0 | jomini |
-| `00_greeting_custom_loc.txt` | 49250 | 50 | 0 | jomini |
+| `00_government_custom_loc.txt` | 39443 | 58 | 0 | jomini |
+| `00_greeting_custom_loc.txt` | 49433 | 50 | 0 | jomini |
 | `00_health_custom_loc.txt` | 4409 | 7 | 0 | jomini |
 | `00_historical_character_loc.txt` | 47230 | 4 | 0 | jomini |
 | `00_hold_court_custom_joe.txt` | 6318 | 8 | 0 | jomini |
 | `00_incidental_details.txt` | 3732 | 2 | 0 | jomini |
-| `00_insult_custom_loc.txt` | 83932 | 12 | 0 | jomini |
+| `00_insult_custom_loc.txt` | 84453 | 13 | 0 | jomini |
 | `00_insult_poetry_custom_loc.txt` | 4496 | 6 | 0 | jomini |
-| `00_interactions_custom_loc.txt` | 3098 | 5 | 0 | jomini |
-| `00_interface_custom_loc.txt` | 2115 | 4 | 0 | jomini |
+| `00_interactions_custom_loc.txt` | 3276 | 5 | 0 | jomini |
+| `00_interface_custom_loc.txt` | 1889 | 4 | 0 | jomini |
 | `00_journey_focus_custom_loc.txt` | 1264 | 2 | 0 | jomini |
-| `00_knight_culture.txt` | 3074 | 8 | 0 | jomini |
+| `00_knight_culture.txt` | 3695 | 9 | 0 | jomini |
 | `00_kr_personality_quirks_custom_loc.txt` | 72934 | 32 | 0 | jomini |
-| `00_language_custom_loc.txt` | 7488 | 4 | 0 | jomini |
+| `00_language_custom_loc.txt` | 7446 | 4 | 0 | jomini |
 | `00_lifestyle_custom_localization.txt` | 6183 | 14 | 0 | jomini |
 | `00_love_letter_custom_loc.txt` | 18906 | 12 | 0 | jomini |
 | `00_lover_custom_localization.txt` | 15184 | 5 | 0 | jomini |
 | `00_maa_custom_loc.txt` | 8862 | 9 | 0 | jomini |
 | `00_magic_custom_loc.txt` | 705 | 3 | 0 | jomini |
-| `00_map_related_custom_loc.txt` | 10969 | 11 | 0 | jomini |
+| `00_map_related_custom_loc.txt` | 13566 | 14 | 0 | jomini |
 | `00_martial_lifestyle_custom_loc.txt` | 21132 | 16 | 0 | jomini |
 | `00_mottos.txt` | 1110 | 1 | 0 | jomini |
 | `00_notification_custom_loc.txt` | 341 | 1 | 0 | jomini |
@@ -86,21 +88,21 @@
 | `00_petition_liege_custom_loc.txt` | 2179 | 4 | 0 | jomini |
 | `00_pilgrimage_custom_loc.txt` | 12627 | 18 | 0 | jomini |
 | `00_pl_custom_loc.txt` | 39933 | 95 | 0 | jomini |
-| `00_pl_custom_loc_extra.txt` | 133002 | 68 | 0 | jomini |
+| `00_pl_custom_loc_extra.txt` | 133034 | 68 | 0 | jomini |
 | `00_pl_relations.txt` | 4207 | 15 | 0 | jomini |
 | `00_poetry_generation.txt` | 39975 | 75 | 0 | jomini |
 | `00_poetry_theme_words.txt` | 8857 | 11 | 0 | jomini |
 | `00_prison_custom_loc.txt` | 1794 | 6 | 0 | jomini |
 | `00_reaction_custom_loc.txt` | 599 | 1 | 0 | jomini |
 | `00_regional_custom_localization.txt` | 130033 | 64 | 0 | jomini |
-| `00_relations.txt` | 186834 | 50 | 0 | jomini |
+| `00_relations.txt` | 192341 | 50 | 0 | jomini |
 | `00_religion_custom_loc.txt` | 9376 | 3 | 0 | jomini |
 | `00_rich_presence_flavor_status.txt` | 15274 | 1 | 0 | jomini |
 | `00_rite_desc_custom_loc.txt` | 25438 | 2 | 0 | jomini |
 | `00_roaming_loc.txt` | 13697 | 8 | 0 | jomini |
 | `00_romance_custom_loc.txt` | 8564 | 3 | 0 | jomini |
-| `00_ruler_transition_loc.txt` | 47094 | 10 | 0 | jomini |
-| `00_scheme_custom_loc.txt` | 9933 | 6 | 0 | jomini |
+| `00_ruler_transition_loc.txt` | 53045 | 10 | 0 | jomini |
+| `00_scheme_custom_loc.txt` | 10297 | 6 | 0 | jomini |
 | `00_scholarship_lifestyle_custom_loc.txt` | 11906 | 4 | 0 | jomini |
 | `00_secret_events_custom_loc.txt` | 1184 | 1 | 0 | jomini |
 | `00_secrets_custom_loc.txt` | 2377 | 2 | 0 | jomini |
@@ -108,19 +110,19 @@
 | `00_servants.txt` | 4803 | 5 | 0 | jomini |
 | `00_sex_scene_custom_localisation.txt` | 5349 | 11 | 0 | jomini |
 | `00_signature_weapon_custom_localization.txt` | 47799 | 75 | 0 | jomini |
-| `00_skills_custom_loc.txt` | 4861 | 6 | 0 | jomini |
+| `00_skills_custom_loc.txt` | 4862 | 6 | 0 | jomini |
 | `00_statecraft_lifestyle_custom_loc.txt` | 696 | 1 | 0 | jomini |
 | `00_suitable_title_custom_loc.txt` | 4099 | 7 | 0 | jomini |
 | `00_sway_custom_loc.txt` | 689 | 0 | 0 | jomini |
-| `00_task_contract_custom_loc.txt` | 11098 | 8 | 0 | jomini |
+| `00_task_contract_custom_loc.txt` | 11231 | 8 | 0 | jomini |
 | `00_terrain_custom_loc.txt` | 3136 | 3 | 0 | jomini |
 | `00_test.txt` | 881 | 3 | 0 | jomini |
 | `00_title_custom_loc.txt` | 13198 | 25 | 0 | jomini |
 | `00_trait_custom_loc.txt` | 7335 | 6 | 0 | jomini |
-| `00_travel.txt` | 131066 | 23 | 0 | jomini |
+| `00_travel.txt` | 131280 | 23 | 0 | jomini |
 | `00_unfriendly_custom_loc.txt` | 2224 | 2 | 0 | jomini |
-| `00_vassal_custom_loc.txt` | 12472 | 4 | 0 | jomini |
-| `00_visit_settlement_custom_loc.txt` | 24875 | 25 | 0 | jomini |
+| `00_vassal_custom_loc.txt` | 12460 | 4 | 0 | jomini |
+| `00_visit_settlement_custom_loc.txt` | 24873 | 25 | 0 | jomini |
 | `00_war_custom_loc.txt` | 16185 | 5 | 0 | jomini |
 | `00_weird_objects.txt` | 533 | 1 | 0 | jomini |
 | `00_yearly_events_custom_loc.txt` | 1650 | 3 | 0 | jomini |
@@ -135,28 +137,31 @@
 | `04_bp2_custom_loc.txt` | 3414 | 4 | 0 | jomini |
 | `04_ep2_accolade_custom_loc.txt` | 900 | 1 | 0 | jomini |
 | `04_ep2_custom_loc.txt` | 59655 | 32 | 0 | jomini |
-| `04_ep2_hunt_custom_loc.txt` | 60950 | 52 | 0 | jomini |
-| `05_bp2_custom_loc.txt` | 13866 | 20 | 0 | jomini |
-| `06_ce1_epidemics_custom_loc.txt` | 6742 | 4 | 0 | jomini |
+| `04_ep2_hunt_custom_loc.txt` | 70747 | 59 | 0 | jomini |
+| `05_bp2_custom_loc.txt` | 13819 | 20 | 0 | jomini |
+| `06_ce1_epidemics_custom_loc.txt` | 6723 | 4 | 0 | jomini |
 | `06_ce1_leg_b_custom_loc.txt` | 5917 | 1 | 0 | jomini |
-| `06_ce1_legends_custom_loc.txt` | 22133 | 26 | 0 | jomini |
+| `06_ce1_legends_custom_loc.txt` | 22067 | 26 | 0 | jomini |
 | `06_legitimacy_custom_loc.txt` | 658 | 1 | 0 | jomini |
-| `07_ep3_custom_loc.txt` | 43296 | 66 | 0 | jomini |
+| `07_ep3_custom_loc.txt` | 46250 | 68 | 0 | jomini |
 | `08_bp3_battle_poi_custom_loc.txt` | 14028 | 8 | 0 | jomini |
-| `08_bp3_experimental_brew_loc.txt` | 7975 | 10 | 0 | jomini |
-| `08_bp3_survey_loc.txt` | 10169 | 7 | 0 | jomini |
+| `08_bp3_experimental_brew_loc.txt` | 8007 | 10 | 0 | jomini |
+| `08_bp3_survey_loc.txt` | 2746 | 5 | 0 | jomini |
 | `09_de_custom_loc_suffixes.txt` | 25550 | 196 | 0 | jomini |
 | `09_mpo_custom_loc.txt` | 16188 | 16 | 0 | jomini |
 | `09_mpo_custom_loc_2.txt` | 497 | 1 | 0 | jomini |
-| `10_ach_custom_loc.txt` | 36785 | 23 | 0 | jomini |
-| `10_tgp_custom_loc.txt` | 14484 | 20 | 0 | jomini |
+| `10_ach_custom_loc.txt` | 36455 | 23 | 0 | jomini |
+| `10_tgp_custom_loc.txt` | 14999 | 21 | 0 | jomini |
 | `10_tgp_japan_custom_loc.txt` | 3464 | 3 | 0 | jomini |
 | `99_fr_custom_loc.txt` | 80906 | 260 | 0 | jomini |
 | `99_pl_custom_loc.txt` | 6780 | 19 | 0 | jomini |
 | `99_pl_relations.txt` | 535 | 2 | 0 | jomini |
-| `99_ru_custom_loc.txt` | 77984 | 155 | 0 | jomini |
+| `99_ru_custom_loc.txt` | 18162 | 174 | 0 | jomini |
 | `_custom_loc.info` | 2060 | - | - | 纯文档（非 Jomini） |
 | `ecumenical_council_debate_status_loc.txt` | 10980 | 12 | 0 | jomini |
+| `gdp_burgher_custom_loc.txt` | 3532 | 3 | 0 | jomini |
+| `gdp_carnival_custom_loc.txt` | 3315 | 4 | 0 | jomini |
+| `gdp_custom_loc.txt` | 89818 | 107 | 0 | jomini |
 | `ledger_custom_loc.txt` | 381 | 1 | 0 | jomini |
 | `pam_bible_quotes.txt` | 356051 | 7 | 0 | jomini |
 | `pam_custom_loc.txt` | 12636 | 14 | 0 | jomini |
@@ -165,9 +170,10 @@
 | `pam_sway_to_rite_custom_loc.txt` | 2507 | 1 | 0 | jomini |
 | `pam_tenet_popularity.txt` | 1107 | 1 | 0 | jomini |
 | `sanctify_artifact_custom_loc.txt` | 1489 | 1 | 0 | jomini |
-| `tgp_custom_loc.txt` | 37505 | 34 | 0 | jomini |
+| `tgp_custom_loc.txt` | 38660 | 35 | 0 | jomini |
 | `tgp_imperial_examination_custom_loc.txt` | 2481 | 3 | 0 | jomini |
 | `tgp_mandala_custom_loc.txt` | 6395 | 7 | 0 | jomini |
+| `trade_goods_ru_custom_loc.txt` | 2386 | 21 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
@@ -218,7 +224,7 @@
 - GetCatDog
 - GetFelineCanine
 
-### 00_appropriate_generic_words.txt（30 条目）
+### 00_appropriate_generic_words.txt（34 条目）
 
 - GetSmallFood
 - GetSmallFoodIndef
@@ -233,9 +239,13 @@
 - GetRandomRegionalSmallGame
 - GetRandomRegionalSmallGamePlural
 - GetRandomRegionalBird
+- GetRandomRegionalBirdPlural
 - GetRandomRegionalWildDaytimeBird
+- GetRandomRegionalWildDaytimeBirdPlural
 - GetRandomRegionalWildDaytimeBirdProvince
 - GetRandomRegionalWood
+- GetRandomRegionalGem
+- GetRandomRegionalGemPlural
 - GetRandomAppropriateTree
 - GetSimpleColor
 - GetComplexColor
@@ -297,7 +307,7 @@
 - EpistleReciever
 - RandomIconTopic
 
-### 00_artifact_custom_loc.txt（39 条目）
+### 00_artifact_custom_loc.txt（42 条目）
 
 - ArtifactQuality
 - ArtifactAdverbQuality
@@ -338,6 +348,9 @@
 - ArtifactMarcoPoloDesc
 - ArtifactMarcoPoloEnd
 - ArtifactBowType
+- UniqueBowOrJustBow
+- DestroyOrSellArtifactLabel
+- CreatureReforgeSuffix
 
 ### 00_bad_roomate_custom_loc.txt（1 条目）
 
@@ -405,9 +418,10 @@
 - RiverNameLoc
 - DynamicIntroLoc
 
-### 00_building_custom_localization.txt（6 条目）
+### 00_building_custom_localization.txt（7 条目）
 
 - BaronyTownType
+- BaronyTownTypePossessive
 - GetFaithGrandTemple
 - GetFaithTemple
 - GetGuildType
@@ -847,10 +861,11 @@
 - ES_only_de_GetShortUIName
 - ES_only_a_GetShortUIName
 
-### 00_event_custom_loc.txt（2 条目）
+### 00_event_custom_loc.txt（3 条目）
 
 - RandomPrivateObject
 - ChildhoodTraitActivity
+- RandomMediumObject
 
 ### 00_faction_custom_loc.txt（1 条目）
 
@@ -864,7 +879,7 @@
 - DamageArtifactActionFollowup
 - GetMedievalDance
 
-### 00_food_custom_loc.txt（23 条目）
+### 00_food_custom_loc.txt（25 条目）
 
 - RegionalDrink
 - RegionalAlcoholicDrink
@@ -872,6 +887,8 @@
 - get_region_root_vegetable_plural
 - RegionalRootVegetable
 - RegionalRootVegetablePlural
+- RegionalSpice
+- RegionalSpicePlural
 - RegionalEdibleAnimal
 - RegionalEdibleAnimalPlural
 - RegionalEdibleMeat
@@ -900,7 +917,27 @@
 - friendship_metaphor
 - friendship_metaphor_with_tending
 
-### 00_generic_character_words.txt（36 条目）
+### 00_gdp_great_project_custom_loc.txt（2 条目）
+
+- GetGreatProjectDescription
+- GetGreatProjectName
+
+### 00_gdp_guelph_ghibelline_custom_loc.txt（12 条目）
+
+- GuelphGhibellinePeaceConflict
+- GetGuelphGhibelline
+- GetGuelphGhibellineConcept
+- GetGuelphsGhibellines
+- GetGuelphsGhibellinesConcept
+- GuelphGhibellineGetOpposite
+- GuelphsGhibellinesGetOpposite
+- GuelphGhibellineGetOppositeConcept
+- GetGuelphGhibellineMemberGroup
+- GetGuelphGhibellineLeaderGroup
+- GetHighestSkillAdjective
+- DescribeTargetSkill
+
+### 00_generic_character_words.txt（41 条目）
 
 - DaughterSon
 - WifeHusband
@@ -910,6 +947,8 @@
 - GirlBoyPlural
 - GirlBoyPossessive
 - GirlsBoysChildren
+- NoblewomanNobleman
+- NoblewomanNoblemanPossessive
 - WomanManGirlBoy
 - WomenMenPeople
 - WomenMen
@@ -928,9 +967,12 @@
 - MistressMaster
 - MistressMasterPossessive
 - LadyLordWomanMan
+- LadyLordWomanManPossessive
 - LadyLordNoble_GenderPreference
 - QueenKing
 - GetArticledAgeDescriptionGender
+- HostessHost
+- HostessHostPossessive
 - AttractionWomanMan
 - AttractionWomanManIndef
 - AttractionWomanManMultiple
@@ -946,7 +988,7 @@
 - Governance_1062_Client
 - Governance_1062_Client_U
 
-### 00_government_custom_loc.txt（45 条目）
+### 00_government_custom_loc.txt（58 条目）
 
 - GetTribalReformGovernment
 - GetGovernmentAuthority
@@ -958,6 +1000,7 @@
 - GetCourtyard
 - GetCourt
 - GetCourtConcept
+- GetCourtPositionOrAssociate
 - GetCourtierGendered
 - GetCourtier
 - GetCourtierPlural
@@ -966,6 +1009,10 @@
 - GetSubject
 - GetSubjectPlural
 - GetSuccessionHeirMotion
+- GetSuccessionRulerNoun
+- GetSuccessionFewRulers
+- GetSuccessionShyCouncil
+- GetSuccessionTrustingCouncil
 - GetDungeon
 - GetDungeonPlural
 - GetDungeonConcept
@@ -973,10 +1020,17 @@
 - GetRealmOrDomicile
 - GetRealmOrDomicileTooltip
 - GetRealmOrDomicileConcept
+- GetCourtOrDomicileArtifactConcept
+- GetCourtOrDomicileArtifactConceptPlural
+- GetCourtOrDomicileArtifactNoConcept
+- GetCourtOrDomicileArtifactNoConceptPlural
+- GetCourtOrDomicileArtifactNoRoyalCourtTabDesc
 - GetCourtPosition
 - GetCourtPositionPlural
+- GetCourtPositionConcept
 - GetCourtPositionConceptPlural
 - GetCourtOrOfficerPositionConceptPlural
+- GetGrantCourtPositionName
 - GetCourtOwnerConcept
 - GetCourtOwner
 - GetValidKnightsHeader
@@ -993,6 +1047,7 @@
 - GetGovernmentTypeIcon
 - GetTribalizeFeudalize
 - GetTribalFeudal
+- GetCourtButton
 
 ### 00_greeting_custom_loc.txt（50 条目）
 
@@ -1080,7 +1135,7 @@
 - GetIncidentalDetail
 - GetIncidentalDetailPresent
 
-### 00_insult_custom_loc.txt（12 条目）
+### 00_insult_custom_loc.txt（13 条目）
 
 - InsultNoun
 - InsultNounPlural
@@ -1094,6 +1149,7 @@
 - InsultAdjectiveClumsy
 - CriminalAdjective
 - CriminalCrierInsult
+- InsultNounDumb
 
 ### 00_insult_poetry_custom_loc.txt（6 条目）
 
@@ -1124,9 +1180,10 @@
 - journey_events_30_custom_loc
 - journey_events_30_short_custom_loc
 
-### 00_knight_culture.txt（8 条目）
+### 00_knight_culture.txt（9 条目）
 
 - KnightCulture
+- KnightCultureConsonant
 - KnightCulturePlural
 - KnightCultureNoTooltip
 - KnightCulturePluralNoTooltip
@@ -1235,11 +1292,12 @@
 - MagicPracticeTerm
 - MagicSuperstitionTerm
 
-### 00_map_related_custom_loc.txt（11 条目）
+### 00_map_related_custom_loc.txt（14 条目）
 
 - mythical_map_creatures
 - mythical_map_creatures_capitalized
 - GetProvinceFoliageDesc
+- GetProvinceFoliageDescAdjective
 - GetTerrainType
 - GetTerrainTypePlural
 - GetTerrainLand
@@ -1247,6 +1305,8 @@
 - GetTerrainTree
 - GetTerrainTreePlural
 - GetProvinceGroundDesc
+- GetProvinceGroundDescAdjective
+- GetProvinceAdjective
 - GetBadWeatherDesc
 
 ### 00_martial_lifestyle_custom_loc.txt（16 条目）
@@ -2346,7 +2406,7 @@
 - GetSmallHidingObject
 - GetRandomWeapon
 
-### 04_ep2_hunt_custom_loc.txt（52 条目）
+### 04_ep2_hunt_custom_loc.txt（59 条目）
 
 - GetAnimalType
 - GetAnimalTypeKill
@@ -2357,6 +2417,7 @@
 - GetAnimalTypeMismanaged
 - GetAnimalPlural
 - GetAnimalTypeTamePlural
+- GetAnimalPossessive
 - GetAnimalArticle
 - GetAnimalStrike
 - GetAnimalStrikePresent
@@ -2370,6 +2431,9 @@
 - GetAnimalChargePresentKill
 - GetAnimalChargeParticiple
 - GetAnimalChargeParticipleKill
+- GetAnimalWalk
+- GetAnimalWalkPresent
+- GetAnimalWalkParticiple
 - GetAnimalFeature
 - GetAnimalFeatureKill
 - GetAnimalGroup
@@ -2382,16 +2446,19 @@
 - GetAnimalDangerKill
 - GetAnimalTrack
 - GetAnimalTrackPlural
+- GetAnimalHide
 - GetAnimalColor
 - GetAnimalMale
 - GetAnimalFemale
 - GetAnimalChild
+- GetAnimalChildPlural
 - GetAnimalYoung
 - GetProvinceRandomPrestigiousGameType
 - ArtifactAnimalTrinketType
 - ActivityAnimalSafety
 - ActivityAnimalPrestige
 - GetRegionalDeerType
+- GetRegionalDeerTypeArticle
 - GetRegionalEagleType
 - GetRegionalWolfType
 - GetRegionalWolfPlural
@@ -2468,7 +2535,7 @@
 
 - LegitimacyLevelName
 
-### 07_ep3_custom_loc.txt（66 条目）
+### 07_ep3_custom_loc.txt（68 条目）
 
 - GetCourtType
 - GetCourtTypePlural
@@ -2518,6 +2585,7 @@
 - GetProvincialArmyConceptNoTooltip
 - GetProvincialArmiesConcept
 - GetProvincialArmiesConceptNoTooltip
+- GetNobleFamilySuffix
 - GetByzantineCoinWithGloss
 - GetBestEmpireWithAdjective
 - GetGuestsOrNot
@@ -2536,6 +2604,7 @@
 - GetContractOrIssuePossessive
 - GetContractOrIssuePossessivePlural
 - GetContractOrIssueGameConcept
+- GetContractOrIssueGameConceptPlural
 
 ### 08_bp3_battle_poi_custom_loc.txt（8 条目）
 
@@ -2561,15 +2630,13 @@
 - BrewNegativeType
 - BrewPositiveAdjective
 
-### 08_bp3_survey_loc.txt（7 条目）
+### 08_bp3_survey_loc.txt（5 条目）
 
-- SurveyArrivalIntroDevelopmentLoc
+- SurveyArrivalIntroProsperityLoc
 - SurveyArrivalIntroControlLoc
 - SurveyArrivalIntroOpinionLoc
 - SurveyArrivalIntroPopularOpinionLoc
 - SurveyMidDomainInfrastructureOptionsLoc
-- InspectionFightingGuilds1Loc
-- InspectionFightingGuilds2Loc
 
 ### 09_de_custom_loc_suffixes.txt（196 条目）
 
@@ -2819,9 +2886,10 @@
 - GetRegionalSword
 - GetChronicleSaga
 
-### 10_tgp_custom_loc.txt（20 条目）
+### 10_tgp_custom_loc.txt（21 条目）
 
 - BecomeTributaryInteractionName
+- SubjectStandingNoConcept
 - SubjectStanding
 - SubjectStandingIcon
 - CelestialTributaryRequest
@@ -3138,7 +3206,7 @@
 - RelationToMeVocative
 - RelationToMeShortVocative
 
-### 99_ru_custom_loc.txt（155 条目）
+### 99_ru_custom_loc.txt（174 条目）
 
 - get_region_flower_type_plural_RU_Gen
 - GetBuildingDwelling_RU_Dat_Pl
@@ -3294,7 +3362,26 @@
 - HornedMythicalCreature_RU_Acc
 - HornedMythicalCreature_RU_Inst
 - HornedMythicalCreature_RU_Prep
-- DescriptorMixedArticle_RULOC_Nom
+- GetGuelphsGhibellinesConcept_RU_Gen
+- GetGuelphsGhibellinesConcept_RU_Dat
+- GetGuelphsGhibellinesConcept_RU_Acc
+- GetGuelphsGhibellinesConcept_RU_Inst
+- GetGuelphsGhibellinesConcept_RU_Prep
+- GetGuelphsGhibellines_RU_Gen
+- GetGuelphsGhibellines_RU_Dat
+- GetGuelphsGhibellines_RU_Acc
+- GetGuelphsGhibellines_RU_Inst
+- GetGuelphsGhibellines_RU_Prep
+- GetGuelphGhibelline_RU_Gen
+- GetGuelphGhibelline_RU_Dat
+- GetGuelphGhibelline_RU_Acc
+- GetGuelphGhibelline_RU_Inst
+- GetGuelphGhibelline_RU_Prep
+- GetGuelphGhibellineConcept_RU_Gen
+- GetGuelphGhibellineConcept_RU_Dat
+- GetGuelphGhibellineConcept_RU_Acc
+- GetGuelphGhibellineConcept_RU_Inst
+- GetGuelphGhibellineConcept_RU_Prep
 
 ### ecumenical_council_debate_status_loc.txt（12 条目）
 
@@ -3310,6 +3397,129 @@
 - GetEcumenicalCouncilTenet1Resolution
 - GetEcumenicalCouncilTenet2Resolution
 - GetEcumenicalCouncilDoctrine1Resolution
+
+### gdp_burgher_custom_loc.txt（3 条目）
+
+- BurgherPluralNoun
+- FactionCountyMemberNoun
+- BurgherDemandedPrivilege
+
+### gdp_carnival_custom_loc.txt（4 条目）
+
+- CraftsmanDescOption
+- GetCarnival1025RealBeastName
+- GetCarnival1025RealBeastArticle
+- GetCarnival1025PitchArticle
+
+### gdp_custom_loc.txt（107 条目）
+
+- GetCurrencyDenomination
+- GetCurrencyDenominationPlural
+- GetCurrencyDenominationGloss
+- GetCurrencyDenominationGlossPlural
+- GetCurrencyDenominationD
+- GetCurrencyDenominationDPlural
+- GetCurrencyDenominationDGloss
+- GetCurrencyDenominationDGlossPlural
+- GetRegionalMarketTerm
+- GetRegionalMarketTermPlural
+- GetRegionalMarketTermGloss
+- GetRegionalMarketTermGlossPlural
+- GetRegionalUrbanEliteTerm
+- GetRegionalUrbanEliteTermPlural
+- GetVisitHolding1320CharacterDesc
+- GetVisitHoldingDecisionAvailableAreasHeader
+- GetVisitHoldingDecisionAvailableAreasGuilds
+- GetVisitHoldingDecisionAvailableAreasMarket
+- GetVisitHoldingDecisionAvailableAreasDocks
+- GetVisitHoldingDecisionAvailableAreasPatron
+- GetVisitHoldingDecisionAvailableAreasWorship
+- GetVisitHoldingDecisionExhaustedAreasHeader
+- GetVisitHoldingDecisionExhaustedAreasGuilds
+- GetVisitHoldingDecisionExhaustedAreasMarket
+- GetVisitHoldingDecisionExhaustedAreasDocks
+- GetVisitHoldingDecisionExhaustedAreasPatron
+- GetVisitHoldingDecisionExhaustedAreasWorship
+- GetVisitHoldingDecisionAllOptionsExhaustedTooltip
+- TributaryType
+- TributaryTypePlural
+- TributaryTypeNoTooltip
+- TributaryTypePluralNoTooltip
+- TributaryTypeNoTooltipLowercase
+- TributaryTypePluralNoTooltipLowercase
+- TributaryTypePluralPossessiveNoTooltipLowercase
+- SuzerainType
+- SuzerainTypePlural
+- SuzerainTypeNoTooltip
+- SuzerainTypePluralNoTooltip
+- SuzerainTypeNoTooltipLowercase
+- SuzerainTypePluralNoTooltipLowercase
+- SuzerainTypePluralPossessiveNoTooltipLowercase
+- SuzerainTypeCOA
+- GetLuxuryArtifactSentiment
+- GetDomicileArtifactCreatureType
+- IsAlreadyVisitingHolding
+- GetSubjectContractGroupGameConcept
+- GetHorseCamel
+- GetHorseCamelPossessive
+- GetSteedCamel
+- GetDonkeyDromedary
+- GetTradeGood
+- GetTradeGoodCategory
+- GetTradeGoodUnit
+- GetTradeGoodUnitPlural
+- GetTgfGoodLook
+- GetTgfGoodMade
+- GetTgfGoodSold
+- GetTgfGoodSmallest
+- GetTgfGoodFlaw
+- GetTgfGoodIsAre
+- GetTgfGoodIsThat
+- GetTgfGoodItIs
+- GetTgfGoodItThem
+- GetTgfGoodUnitArticle
+- GetTgfLocalDish
+- GetTgfGoodGatherers
+- GetTgfGoodCrafter
+- GetTgfCompanyWord
+- GetTgfFastName
+- GetTgfHempUse
+- GetTgfAilment
+- GetTgfSevenYearsRef
+- GetTgfGoodNickname
+- GetAntiquarianCourtPositionTitle
+- GetTraderLocationDesc
+- GetHouseUnity
+- GetHouseUnityConcept
+- GetHouseUnityLevel
+- GetHouseUnityLevelConcept
+- GetTravelogueTopic
+- GetTravelogueQuality
+- GetCompanySize
+- GetAssociateRequest
+- GetAssociateRequestExplanation
+- GetAssociateRequestFulfillment
+- RepublicPopularOpinionLvl5
+- RepublicPopularOpinionLvl6
+- RepublicPopularOpinionLvl7
+- RepublicPopularOpinionLvl8
+- GetLoanStoryInstrumentType
+- GetLoanStoryInstrumentTypeDebtor
+- GetRepublicCapitalControlDesc
+- GetFoundRepublicNewTitle
+- GetFoundRepublicMerchantTitle
+- GetFoundRepublicCadetBranch
+- GetBecomeMerchantCadetBranch
+- GetVisitHoldingColoredDiplomacySkillLevel
+- GetVisitHoldingColoredMartialSkillLevel
+- GetVisitHoldingColoredStewardshipSkillLevel
+- GetVisitHoldingColoredIntrigueSkillLevel
+- GetVisitHoldingColoredLearningSkillLevel
+- GetVisitHoldingRareRecruitAptitudeLine
+- GetMerchantCharterAbuseStanceDesc
+- GetGovernmentLegitimacyAdjective
+- MerchantOrPeddler
+- GetRepublicTermLength
 
 ### ledger_custom_loc.txt（1 条目）
 
@@ -3378,7 +3588,7 @@
 
 - SanctifiedArtifactPrefix
 
-### tgp_custom_loc.txt（34 条目）
+### tgp_custom_loc.txt（35 条目）
 
 - RandomVerySmallCreature
 - RandomVerySmallCreatureDwelling
@@ -3414,6 +3624,7 @@
 - GetMonographTheme
 - GetMonographTopic
 - GetMonographQuality
+- GetSilkRoadBuilding
 
 ### tgp_imperial_examination_custom_loc.txt（3 条目）
 
@@ -3430,6 +3641,30 @@
 - GetCapitalHoldingBuildingLevel02
 - GetCapitalHoldingBuildingLevel03
 - GetCapitalHoldingBuildingLevel04
+
+### trade_goods_ru_custom_loc.txt（21 条目）
+
+- GetTradeGood_RU_Nom
+- GetTradeGood_RU_Gen
+- GetTradeGood_RU_Dat
+- GetTradeGood_RU_Acc
+- GetTradeGood_RU_Inst
+- GetTradeGood_RU_Prep
+- GetTradeGoodCategory_RU_Gen
+- GetTradeGoodCategory_RU_Dat
+- GetTradeGoodCategory_RU_Acc
+- GetTradeGoodCategory_RU_Inst
+- GetTradeGoodCategory_RU_Prep
+- GetTradeGoodUnit_RU_Gen
+- GetTradeGoodUnit_RU_Dat
+- GetTradeGoodUnit_RU_Acc
+- GetTradeGoodUnit_RU_Inst
+- GetTradeGoodUnit_RU_Prep
+- GetTradeGoodUnitPlural_RU_Gen
+- GetTradeGoodUnitPlural_RU_Dat
+- GetTradeGoodUnitPlural_RU_Acc
+- GetTradeGoodUnitPlural_RU_Inst
+- GetTradeGoodUnitPlural_RU_Prep
 
 ### 未解析文件
 

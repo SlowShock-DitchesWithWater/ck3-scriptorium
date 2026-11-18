@@ -15,14 +15,17 @@ numbers anywhere else — they rot).
 |---|---|---|---|
 | Wiki explainer layer | `pages/` | Cleaned text from ck3.paradoxwikis.com Modding section | Low |
 | Game authority layer | `game_docs/script_docs/` | Debug dump from the game itself: effects / triggers / modifiers / on_actions / event_targets / event_scopes / custom_localization lists + 5 data_types files | **High** |
-| Vanilla structure index | `game_docs/vanilla_structure/` | entry-name → defining-file map + summaries of all 128 `common` subdirectories | Navigation |
+| Vanilla structure index | `game_docs/vanilla_structure/` | entry-name → defining-file map + a summary for every `common` subdirectory (count in the snapshot block) | Navigation |
 | Map knowledge layer | `game_docs/map_docs/` | Measured map facts: `map_data_dossier.md` (formats / dimensions / rivers palette / editor evidence), `province_index.tsv` (id↔RGB↔name), `nudger_parameters.md` | **High** (game-measured) |
 | Reading room (self-curated) | `reading_room/articles/` | User-written digests of external articles (forum deep-dives, guides) with source links; adding your own: `reading_room/README.md` | Reference (lowest) |
+| Copy Room (mod knowledge bases) | `copy_room/<mod-id>/` | Optional per-mod KBs built locally (merged-view signature layer + structure index + map docs for map-replacing mods + `DIFF_vs_vanilla.md`); local-only, **not shipped — may be absent** (how to build: `copy_room/README.md`, recipe F) | Top *within that mod's scope* |
 
 **Authority order: game_docs (dump) > pages (wiki) > reading_room (reference).**
 When layers conflict, the dump wins — and say so in your answer, pointing at the
 conflict. Reading-room notes are user-curated digests: never let them override
 dump/wiki, and cite them as "reading-room note" with their source line.
+A Copy Room KB outranks `game_docs` **within its mod's scope** (a sub-mod runs
+inside the parent mod's environment); for vanilla behaviour still use `game_docs`.
 
 **`game_docs/` ships with the repository** (built from the game's own debug
 dump; see the snapshot block for the current game version). It is game-derived
@@ -35,7 +38,7 @@ entry point, but never read it whole: grep it first, then follow the hit** (see 
 
 ## 1. Standard retrieval flow (four steps)
 
-1. **Classify the question**, then pick a recipe from section 2 (A signatures / B explainers / C entry location / D version-sensitive / E maps).
+1. **Classify the question**, then pick a recipe from section 2 (A signatures / B explainers / C entry location / D version-sensitive / E maps / F sub-mod development).
 2. **Query the catalog**: grep `catalog.md` for a keyword; when an entry hits, read only
    the file named in its `文件位置` (file-location) field — not the whole catalog, and
    not the whole target page either.
@@ -135,7 +138,7 @@ vanilla files).
 
 - To browse all files and entries of one content type: read
   `game_docs/vanilla_structure/INDEX.md` first, then the per-subdirectory summaries
-  under `game_docs/vanilla_structure/common/` (all 128 covered).
+  under `game_docs/vanilla_structure/common/` (full coverage).
 - Non-`common` directories (events / history / gui / gfx / …):
   `game_docs/vanilla_structure/other_dirs.md`.
 
@@ -167,6 +170,35 @@ layer, not the wiki**:
 4. Practical workflow, failure modes, and the validator:
    `map_room/WORKFLOW.md` + `map_room/validate_map.py` (the "Map Room" —
    see `map_room/README.md`).
+
+### Recipe F: sub-mod development (parent-mod knowledge bases, Copy Room)
+
+When developing a sub-mod / compatibility patch, first check whether the parent
+mod has a locally built KB (`ls copy_room/`; KBs are local-only products and
+usually absent in clones — if missing, the user can build one with the three
+steps in `copy_room/README.md`). If present, query the isomorphic paths:
+
+1. Mod-specific signatures (effects/triggers/on_actions/… added by the parent
+   mod) — same method as recipe A, different directory:
+
+   ```bash
+   grep -n "### add_magicka" copy_room/<mod-id>/script_docs/effects.md
+   ```
+
+2. Which parent-mod file defines an entry — same method as recipe C:
+
+   ```bash
+   grep -P "^education_intrigue_1\t" copy_room/<mod-id>/structure/entry_map.tsv
+   ```
+3. The mod's added/removed API surface vs vanilla:
+   read `copy_room/<mod-id>/DIFF_vs_vanilla.md`;
+4. Map questions for map-replacing mods: recipe E's method under
+   `copy_room/<mod-id>/map_docs/`.
+
+**Scope rule**: inside the parent mod's environment (sub-mod development) the
+mod layer wins for same-named entries; for purely vanilla questions still query
+`game_docs/`. The catalog's Copy Room section is a static pointer, not a
+listing — the authoritative KB list is `ls copy_room/`.
 
 ## 3. Context discipline (hard rules)
 

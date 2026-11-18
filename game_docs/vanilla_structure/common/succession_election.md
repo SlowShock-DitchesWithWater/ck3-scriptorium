@@ -1,23 +1,24 @@
 # common/succession_election 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：9（其中 Jomini 解析 8 个）
-- 顶层块条目总数：8，跨文件唯一条目 8
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：10（其中 Jomini 解析 9 个）
+- 顶层块条目总数：9，跨文件唯一条目 9
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_feudal_elective.txt` | 5876 | 1 | 0 | jomini |
+| `00_feudal_elective.txt` | 5877 | 1 | 0 | jomini |
 | `00_pam_clerical_elective.txt` | 2090 | 1 | 0 | jomini |
-| `01_princely_elective.txt` | 7446 | 1 | 0 | jomini |
+| `01_princely_elective.txt` | 7797 | 1 | 0 | jomini |
 | `02_gaelic_elective.txt` | 4448 | 1 | 0 | jomini |
 | `04_saxon_elective.txt` | 4529 | 1 | 0 | jomini |
-| `05_scandinavian_elective.txt` | 4765 | 1 | 0 | jomini |
-| `06_tribal_elective.txt` | 4845 | 1 | 0 | jomini |
+| `05_scandinavian_elective.txt` | 4764 | 1 | 0 | jomini |
+| `06_tribal_elective.txt` | 4844 | 1 | 0 | jomini |
+| `07_republican_elective.txt` | 3455 | 1 | 0 | jomini |
 | `09_confederation_elective.txt` | 4976 | 1 | 0 | jomini |
-| `_succession_election.info` | 4627 | - | - | 纯文档（非 Jomini） |
+| `_succession_election.info` | 5553 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
 
@@ -50,6 +51,10 @@
 ### 06_tribal_elective.txt（1 条目）
 
 - tribal_elective
+
+### 07_republican_elective.txt（1 条目）
+
+- republican_elective
 
 ### 09_confederation_elective.txt（1 条目）
 

@@ -46,3 +46,6 @@ jobs:
 
       - name: Reading Room catalog sync check
         run: python scripts/reading_room.py --check
+
+      - name: Copy Room catalog section check
+        run: python scripts/copy_room.py --check

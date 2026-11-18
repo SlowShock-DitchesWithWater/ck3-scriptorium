@@ -14,6 +14,12 @@ python scripts\run.py --page Scripting
 
 - `--page <标题>`：页面标题（MediaWiki 规范标题），默认 `Scripting`。
 - `--stage all|crawl|clean|organize|catalog|gate`：跑全流程或单阶段，默认 all。
+- `--stage game`：原版游戏层三通道一条命令刷新（与 wiki 管线并行，见
+  `game_layer.py`/`vanilla_index.py`/`map_layer.py` 的模块契约）：按
+  effects.log mtime 在仓库 `game logs\` 与 Documents logs 间取较新 dump →
+  三通道统一版本标注（extract_game_version：code_revisions.log →
+  debug.log → 基准默认）→ catalog 游戏层区块 → 质量门。mod 侧同构入口
+  是 `scripts/copy_room.py --build`（§7.6）。
 - `--force`：传给 crawl，忽略已抓记录强制重抓。
 - 各阶段脚本也可直接执行：`scripts/crawl.py --page X` 等。
 
@@ -44,11 +50,13 @@ ck3-scriptorium/             ← 仓库根（spec 中的存储组织；本地目
   raw/                       ← 阶段1：api.php 原始 JSON 存档（重放清洗用，发布时 gitignore）
   pages/                     ← 阶段2：清洗后结构化 Markdown（发布产物，CC BY-SA 3.0）
   game_docs/                 ← 工单07/08：script_docs dump 与原版结构索引（已发布：2026-10-28 用户决策，见 LICENSES.md）
+  copy_room/                 ← 抄写室（§7.6）：README 发布；<mod-id>/ 知识库产物本地不发布
   manifest.json              ← 每页版本登记（见 §3）
   catalog.md                 ← 唯一检索入口目录（见 §5）
   scripts/
-    run.py                   ← 统一入口
+    run.py                   ← 统一入口（wiki 管线 + --stage game 游戏层刷新）
     crawl.py / clean.py / organize.py / catalog.py / quality_gate.py
+    copy_room.py             ← 抄写室（mod 知识库构建，进程级复用三通道脚本）
     lib/
       config.py              ← 全部路径常量与 MIN_CRAWL_DELAY_SECONDS（唯一事实来源）
       session.py             ← 过盾 + cookie 导出 + 双通道 api.php 访问 + 限速
@@ -98,8 +106,10 @@ raw 与 pages 用同一函数，同名一一对应。例：`Scripting` →
 
 顶层还有 `game_docs` 键（与 `pages` 并列）：
 
-- `game_docs.game_version` / `game_version_source`：游戏版本标注（优先从
-  `game logs\code_revisions.log` 提取；为空时用基准事实 1.20.0 并注明来源）。
+- `game_docs.game_version` / `game_version_source`：游戏版本标注（提取链：
+  `code_revisions.log` → `debug.log` 的 jomini 启动行；均无版本信息时用
+  基准事实（见 game_layer.py 的 DEFAULT_GAME_VERSION）并注明来源。三个
+  层级脚本共用该提取/基准；`run.py --stage game` 解析一次并传三通道）。
 - `game_docs.script_docs["<产物名>"]`：12 个权威清单产物各一条——
   `source_file`（game logs 来源）、`entry_count`、`merged_at`（仅内容变化时
   刷新，保证幂等）、`source_mtime`（dump 会话时间近似）、`output_sha256`。
@@ -283,6 +293,26 @@ raw 与 pages 用同一函数，同名一一对应。例：`Scripting` →
   catalog.py 的重跑不触碰该区块）；`--check` 校验头部与同步（CI 跑）。
 - 权威级：参考（最低），dump > wiki > reading_room（AGENTS §0）。
 - 许可：笔记正文 MIT（自写）；短引用标注原出处（LICENSES.md）。
+
+## 7.6 抄写室（copy_room/，2026-11-09 新增；独立于管线阶段）
+
+其他 mod 的同构知识库，服务子 mod 开发（原版侧同构刷新入口：
+`run.py --stage game`）：
+
+- `scripts/copy_room.py`：`--list`（Steam 工坊多库 + Documents 本地 mod
+  发现）→ `--build --id <工坊id> | --path <文件夹> [--name] [--dump]`
+  → `copy_room/<mod-id>/`（进程级调用三通道脚本，各自 `--no-manifest`）：
+  签名层（mod 加载态 dump 必须由用户游戏内跑两条 dump 命令导出——
+  dump 为"原版+mod"合并视图）+ 结构层 + 地图层（mod 自带
+  `map_data/definition.csv` 时自动构建，否则跳过）+ 自动
+  `DIFF_vs_vanilla.md`（相对 `game_docs/script_docs` 的 ### 条目集对比）。
+- catalog 区块 `ck3wiki-mod-kb:copy-room`：**静态指引**（机器无关，不罗列
+  本机 KB——KB 为本地产物，罗列会让发布版 catalog 依赖某台机器的目录）；
+  `--sync` 重建区块、`--check` 校验在位（CI 跑；无本机 KB 也通过）。
+- 发布边界：`copy_room/<mod-id>/` 不入仓库（.gitignore `copy_room/*`，
+  README.md 除外）；KB 可随时按三步重建（`copy_room/README.md`）。
+- 权威级：该 mod 范围内最高（子 mod 运行在父 mod 环境）；查原版回
+  `game_docs/`（AGENTS §0、配方 F）。
 
 ## 8. 后续工单的衔接点
 

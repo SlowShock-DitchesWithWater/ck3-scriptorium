@@ -1,15 +1,15 @@
 # common/nicknames 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：12（其中 Jomini 解析 11 个）
-- 顶层块条目总数：729，跨文件唯一条目 729
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：13（其中 Jomini 解析 12 个）
+- 顶层块条目总数：787，跨文件唯一条目 787
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_nicknames.txt` | 16558 | 546 | 0 | jomini |
+| `00_nicknames.txt` | 16683 | 549 | 0 | jomini |
 | `01_bp1_nicknames.txt` | 414 | 9 | 0 | jomini |
 | `01_bp2_nicknames.txt` | 89 | 3 | 0 | jomini |
 | `01_fp3_nicknames.txt` | 505 | 12 | 0 | jomini |
@@ -18,15 +18,16 @@
 | `04_ep2_nicknames.txt` | 1243 | 29 | 0 | jomini |
 | `06_ce1_nicknames.txt` | 65 | 2 | 0 | jomini |
 | `07_ep3_nicknames.txt` | 3195 | 83 | 0 | jomini |
-| `10_tgp_nicknames.txt` | 315 | 8 | 0 | jomini |
+| `10_tgp_nicknames.txt` | 520 | 13 | 0 | jomini |
 | `11_pam_nicknames.txt` | 109 | 4 | 0 | jomini |
 | `_nicknames.info` | 1162 | - | - | 纯文档（非 Jomini） |
+| `gdp_nicknames.txt` | 1225 | 50 | 0 | jomini |
 
 ## 条目名 → 定义文件
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_nicknames.txt（546 条目）
+### 00_nicknames.txt（549 条目）
 
 - nick_bluetooth
 - nick_tanglehair
@@ -547,6 +548,8 @@
 - nick_curtmantle
 - nick_the_virgin
 - nick_the_angelic
+- nick_profession
+- nick_the_rapacious
 - nick_the_friar
 - nick_the_pole
 - nick_ganjavi
@@ -574,6 +577,7 @@
 - nick_khass_hajib
 - nick_haji
 - nick_dongpo
+- nick_wuhsha_al_dallala
 
 ### 01_bp1_nicknames.txt（9 条目）
 
@@ -770,7 +774,7 @@
 - nick_the_elysian_muse
 - nick_the_ploughman
 
-### 10_tgp_nicknames.txt（8 条目）
+### 10_tgp_nicknames.txt（13 条目）
 
 - nick_shinno
 - nick_murasaki_shikibu
@@ -780,6 +784,11 @@
 - nick_tenjin
 - nick_ushiwakamaru
 - nick_ho_seung
+- nick_zenji
+- nick_fubo_jiangjun
+- nick_mingde_huanghou
+- nick_guanxi_kongzi
+- nick_taiyangzi
 
 ### 11_pam_nicknames.txt（4 条目）
 
@@ -787,6 +796,59 @@
 - nick_the_concordant
 - nick_the_schismat
 - nick_the_reconciler
+
+### gdp_nicknames.txt（50 条目）
+
+- nick_heir_of_lothair
+- nick_negus_nagast
+- nick_the_caravaneer
+- nick_the_artisan
+- nick_the_lender
+- nick_amator_maris
+- nick_tgf_grain
+- nick_tgf_millet
+- nick_tgf_rice
+- nick_tgf_meat
+- nick_tgf_fish
+- nick_tgf_cheese
+- nick_tgf_fruit
+- nick_tgf_oil
+- nick_tgf_honey
+- nick_tgf_tea
+- nick_tgf_horses
+- nick_tgf_cattle
+- nick_tgf_silver
+- nick_tgf_gold
+- nick_tgf_iron
+- nick_tgf_copper
+- nick_tgf_beer
+- nick_tgf_wine
+- nick_tgf_gems
+- nick_tgf_amber
+- nick_tgf_ivory
+- nick_tgf_jade
+- nick_tgf_wood
+- nick_tgf_hemp
+- nick_tgf_wool
+- nick_tgf_cotton
+- nick_tgf_flax
+- nick_tgf_textiles
+- nick_tgf_furs
+- nick_tgf_leather
+- nick_tgf_sugar
+- nick_tgf_spices
+- nick_tgf_ceramics
+- nick_tgf_glass
+- nick_tgf_jewelry
+- nick_tgf_lacquerware
+- nick_tgf_silk
+- nick_tgf_incense
+- nick_tgf_medicaments
+- nick_tgf_stone
+- nick_tgf_salt
+- nick_tgf_alum
+- nick_tgf_dyes
+- nick_tgf_books_paper
 
 ### 未解析文件
 

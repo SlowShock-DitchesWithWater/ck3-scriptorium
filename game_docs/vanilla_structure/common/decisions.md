@@ -1,8 +1,8 @@
 # common/decisions 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：77（其中 Jomini 解析 76 个）
-- 顶层块条目总数：501，跨文件唯一条目 501
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：85（其中 Jomini 解析 84 个）
+- 顶层块条目总数：587，跨文件唯一条目 587
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
@@ -10,81 +10,89 @@
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
 | `00_artifact_decisions.txt` | 17440 | 1 | 0 | jomini |
-| `00_cultural_tradition_decisions.txt` | 17148 | 3 | 0 | jomini |
+| `00_cultural_tradition_decisions.txt` | 17226 | 3 | 0 | jomini |
 | `00_diarchy_decisions.txt` | 8351 | 1 | 0 | jomini |
-| `00_dynasty_decisions.txt` | 8178 | 1 | 0 | jomini |
+| `00_dynasty_decisions.txt` | 9660 | 1 | 0 | jomini |
 | `00_fp3_decisions.txt` | 13957 | 1 | 0 | jomini |
-| `00_guest_decisions.txt` | 7348 | 4 | 0 | jomini |
-| `00_holy_order_decisions.txt` | 27955 | 5 | 0 | jomini |
-| `00_lifestyle_decisions.txt` | 14409 | 8 | 8 | jomini |
-| `00_major_decisions_east_europe.txt` | 32251 | 11 | 0 | jomini |
-| `00_major_decisions_iberia_north_africa.txt` | 31460 | 8 | 0 | jomini |
-| `00_trait_decisions.txt` | 6475 | 3 | 4 | jomini |
-| `00_unity_decisions.txt` | 34099 | 14 | 0 | jomini |
-| `04_ep2_decisions.txt` | 2041 | 1 | 0 | jomini |
-| `06_ce1_decisions.txt` | 27435 | 5 | 0 | jomini |
-| `10_ach_oath_decisions.txt` | 38881 | 17 | 0 | jomini |
-| `10_culture_conversion_decisions.txt` | 13274 | 2 | 0 | jomini |
+| `00_guest_decisions.txt` | 7377 | 4 | 0 | jomini |
+| `00_holy_order_decisions.txt` | 29610 | 5 | 0 | jomini |
+| `00_lifestyle_decisions.txt` | 14796 | 8 | 8 | jomini |
+| `00_major_decisions_east_europe.txt` | 37636 | 12 | 0 | jomini |
+| `00_major_decisions_iberia_north_africa.txt` | 31835 | 8 | 0 | jomini |
+| `00_trait_decisions.txt` | 6510 | 3 | 4 | jomini |
+| `00_unity_decisions.txt` | 51810 | 20 | 0 | jomini |
+| `04_ep2_decisions.txt` | 2045 | 1 | 0 | jomini |
+| `06_ce1_decisions.txt` | 28205 | 5 | 0 | jomini |
+| `10_ach_oath_decisions.txt` | 38888 | 17 | 0 | jomini |
+| `10_culture_conversion_decisions.txt` | 13332 | 2 | 0 | jomini |
 | `10_nomad_culture_and_faith_decisions.txt` | 13377 | 6 | 0 | jomini |
 | `10_nomad_other_decisions.txt` | 9584 | 3 | 0 | jomini |
-| `10_religious_decisions.txt` | 79231 | 30 | 0 | jomini |
-| `30_activity_decisions.txt` | 30464 | 2 | 0 | jomini |
-| `30_court_decisions.txt` | 10141 | 1 | 0 | jomini |
-| `30_mongol_invasion_decisions.txt` | 6415 | 1 | 0 | jomini |
-| `40_japan_decisions.txt` | 16270 | 2 | 0 | jomini |
-| `50_holy_site_decisions.txt` | 19864 | 6 | 0 | jomini |
-| `80_major_decisions.txt` | 79302 | 23 | 0 | jomini |
-| `80_major_decisions_british_isles.txt` | 25254 | 8 | 0 | jomini |
-| `80_major_decisions_central_asia.txt` | 11745 | 4 | 0 | jomini |
-| `80_major_decisions_east_asia.txt` | 15160 | 6 | 0 | jomini |
-| `80_major_decisions_middle_east.txt` | 23184 | 10 | 0 | jomini |
-| `80_major_decisions_middle_europe.txt` | 31104 | 10 | 0 | jomini |
-| `80_major_decisions_roman.txt` | 36990 | 16 | 0 | jomini |
-| `80_major_decisions_south_asia.txt` | 15238 | 5 | 0 | jomini |
-| `90_minor_decisions.txt` | 60576 | 24 | 0 | jomini |
-| `_decisions.info` | 15416 | - | - | 纯文档（非 Jomini） |
+| `10_religious_decisions.txt` | 81199 | 31 | 0 | jomini |
+| `30_activity_decisions.txt` | 30458 | 2 | 0 | jomini |
+| `30_court_decisions.txt` | 10535 | 1 | 0 | jomini |
+| `30_mongol_invasion_decisions.txt` | 6416 | 1 | 0 | jomini |
+| `40_japan_decisions.txt` | 16070 | 2 | 0 | jomini |
+| `50_ai_building_decisions.txt` | 2612 | 2 | 0 | jomini |
+| `50_holy_site_decisions.txt` | 20073 | 6 | 0 | jomini |
+| `80_major_decisions.txt` | 82501 | 23 | 0 | jomini |
+| `80_major_decisions_british_isles.txt` | 30121 | 9 | 0 | jomini |
+| `80_major_decisions_central_asia.txt` | 11851 | 4 | 0 | jomini |
+| `80_major_decisions_east_asia.txt` | 15268 | 6 | 0 | jomini |
+| `80_major_decisions_middle_east.txt` | 23723 | 10 | 0 | jomini |
+| `80_major_decisions_middle_europe.txt` | 37902 | 11 | 0 | jomini |
+| `80_major_decisions_roman.txt` | 38502 | 16 | 0 | jomini |
+| `80_major_decisions_south_asia.txt` | 15377 | 5 | 0 | jomini |
+| `90_minor_decisions.txt` | 60895 | 24 | 0 | jomini |
+| `_decisions.info` | 16094 | - | - | 纯文档（非 Jomini） |
 | `clerical_chastity_decisions.txt` | 1127 | 1 | 0 | jomini |
-| `dlc_decisions/03_fp2_decisions.txt` | 42875 | 11 | 0 | jomini |
-| `dlc_decisions/bp3/00_bp3_other_decisions.txt` | 23819 | 6 | 0 | jomini |
-| `dlc_decisions/bp_2/00_bp2_other_decisions.txt` | 3305 | 1 | 0 | jomini |
+| `dlc_decisions/03_fp2_decisions.txt` | 42726 | 11 | 0 | jomini |
+| `dlc_decisions/bp3/00_bp3_other_decisions.txt` | 23823 | 6 | 0 | jomini |
+| `dlc_decisions/bp_2/00_bp2_other_decisions.txt` | 3415 | 1 | 0 | jomini |
 | `dlc_decisions/ce_1/ce1_legendary_decisions.txt` | 10382 | 8 | 0 | jomini |
-| `dlc_decisions/ep3_decisions.txt` | 81362 | 25 | 0 | jomini |
+| `dlc_decisions/ep3_decisions.txt` | 81683 | 25 | 0 | jomini |
 | `dlc_decisions/ep_1/00_ep1_court_grandeur_and_amenity_decisions.txt` | 7434 | 2 | 0 | jomini |
-| `dlc_decisions/ep_1/00_ep1_other_decisions.txt` | 13028 | 4 | 0 | jomini |
+| `dlc_decisions/ep_1/00_ep1_other_decisions.txt` | 13052 | 4 | 0 | jomini |
 | `dlc_decisions/ep_2/00_ep2_other_decisions.txt` | 3592 | 1 | 0 | jomini |
-| `dlc_decisions/ep_3/06_ep3_admin_decisions.txt` | 44656 | 10 | 0 | jomini |
-| `dlc_decisions/ep_3/06_ep3_hasan_story_cycle_decisions.txt` | 11159 | 5 | 0 | jomini |
-| `dlc_decisions/ep_3/06_ep3_laamp_decisions.txt` | 83293 | 20 | 6 | jomini |
+| `dlc_decisions/ep_3/06_ep3_admin_decisions.txt` | 45181 | 10 | 0 | jomini |
+| `dlc_decisions/ep_3/06_ep3_hasan_story_cycle_decisions.txt` | 11177 | 5 | 0 | jomini |
+| `dlc_decisions/ep_3/06_ep3_laamp_decisions.txt` | 83754 | 19 | 6 | jomini |
 | `dlc_decisions/ep_3/06_ep3_separatist_uprising_decision.txt` | 2777 | 1 | 0 | jomini |
-| `dlc_decisions/fp3_decisions.txt` | 38089 | 6 | 0 | jomini |
-| `dlc_decisions/fp_1/00_fp1_major_decisions.txt` | 16428 | 4 | 0 | jomini |
+| `dlc_decisions/fp3_decisions.txt` | 38212 | 6 | 0 | jomini |
+| `dlc_decisions/fp_1/00_fp1_major_decisions.txt` | 16463 | 4 | 0 | jomini |
 | `dlc_decisions/fp_1/00_fp1_other_decisions.txt` | 3045 | 1 | 0 | jomini |
 | `dlc_decisions/fp_3/fp3_dynasty_decisions.txt` | 15776 | 1 | 0 | jomini |
-| `dlc_decisions/fp_3/fp3_islamic_decisions.txt` | 12994 | 3 | 0 | jomini |
+| `dlc_decisions/fp_3/fp3_islamic_decisions.txt` | 12958 | 3 | 0 | jomini |
 | `dlc_decisions/fp_3/fp3_minor_decisions.txt` | 1129 | 1 | 0 | jomini |
 | `dlc_decisions/fp_3/fp3_scholarship_decisions.txt` | 6831 | 2 | 0 | jomini |
 | `dlc_decisions/fp_3/fp3_zoroastrian_decisions.txt` | 9645 | 4 | 0 | jomini |
-| `dlc_decisions/mpo/09_mpo_decisions_2.txt` | 4020 | 3 | 0 | jomini |
+| `dlc_decisions/gdp/gdp_guelph_ghibelline_decisions.txt` | 31223 | 9 | 0 | jomini |
+| `dlc_decisions/gdp/gdp_hanseatic_decisions.txt` | 2491 | 1 | 0 | jomini |
+| `dlc_decisions/gdp/gdp_merchant_decisions.txt` | 70480 | 23 | 0 | jomini |
+| `dlc_decisions/gdp/gdp_republic_decisions.txt` | 129166 | 33 | 0 | jomini |
+| `dlc_decisions/gdp/gdp_trade_league_decisions.txt` | 4079 | 1 | 0 | jomini |
+| `dlc_decisions/gdp/gdp_trade_scheme_decisions.txt` | 7277 | 3 | 0 | jomini |
+| `dlc_decisions/gdp/gdp_visit_holding_decision.txt` | 2671 | 1 | 0 | jomini |
+| `dlc_decisions/mpo/09_mpo_decisions_2.txt` | 4343 | 3 | 0 | jomini |
 | `dlc_decisions/mpo/mpo_court_astrologer_decision.txt` | 1425 | 1 | 0 | jomini |
-| `dlc_decisions/mpo/mpo_decisions.txt` | 159206 | 15 | 0 | jomini |
-| `dlc_decisions/mpo/mpo_flavor_decision.txt` | 17246 | 5 | 0 | jomini |
-| `dlc_decisions/mpo/mpo_pax_mongolica_decision.txt` | 2696 | 1 | 0 | jomini |
-| `dlc_decisions/pam/bulls_decisions.txt` | 23585 | 5 | 0 | jomini |
+| `dlc_decisions/mpo/mpo_decisions.txt` | 159912 | 15 | 0 | jomini |
+| `dlc_decisions/mpo/mpo_flavor_decision.txt` | 18271 | 5 | 0 | jomini |
+| `dlc_decisions/mpo/mpo_pax_mongolica_decision.txt` | 2746 | 1 | 0 | jomini |
+| `dlc_decisions/pam/bulls_decisions.txt` | 25838 | 5 | 0 | jomini |
 | `dlc_decisions/pam/pam_adorcism_decisions.txt` | 5815 | 2 | 0 | jomini |
-| `dlc_decisions/pam/pam_antipope_decisions.txt` | 13445 | 2 | 0 | jomini |
-| `dlc_decisions/pam/pam_decisions.txt` | 162556 | 39 | 0 | jomini |
-| `dlc_decisions/pam/pam_saint_decisions.txt` | 19643 | 3 | 0 | jomini |
-| `dlc_decisions/tgp/tgp_china_decisions.txt` | 39788 | 12 | 0 | jomini |
+| `dlc_decisions/pam/pam_antipope_decisions.txt` | 13806 | 2 | 0 | jomini |
+| `dlc_decisions/pam/pam_decisions.txt` | 171925 | 43 | 0 | jomini |
+| `dlc_decisions/pam/pam_saint_decisions.txt` | 19758 | 3 | 0 | jomini |
+| `dlc_decisions/tgp/tgp_china_decisions.txt` | 40066 | 12 | 0 | jomini |
 | `dlc_decisions/tgp/tgp_culture_decisions.txt` | 3685 | 1 | 0 | jomini |
-| `dlc_decisions/tgp/tgp_dynastic_cycle_decisions.txt` | 94204 | 11 | 0 | jomini |
-| `dlc_decisions/tgp/tgp_east_asia_decisions.txt` | 20611 | 7 | 0 | jomini |
-| `dlc_decisions/tgp/tgp_japan_decisions.txt` | 45987 | 14 | 0 | jomini |
+| `dlc_decisions/tgp/tgp_dynastic_cycle_decisions.txt` | 94759 | 11 | 0 | jomini |
+| `dlc_decisions/tgp/tgp_east_asia_decisions.txt` | 20742 | 7 | 0 | jomini |
+| `dlc_decisions/tgp/tgp_japan_decisions.txt` | 45950 | 14 | 0 | jomini |
 | `dlc_decisions/tgp/tgp_korea_decisions.txt` | 2893 | 1 | 0 | jomini |
-| `dlc_decisions/tgp/tgp_silk_road_decisions.txt` | 12984 | 1 | 0 | jomini |
-| `dlc_decisions/tgp/tgp_steppe_decisions.txt` | 14269 | 3 | 0 | jomini |
+| `dlc_decisions/tgp/tgp_silk_road_decisions.txt` | 12642 | 1 | 0 | jomini |
+| `dlc_decisions/tgp/tgp_steppe_decisions.txt` | 14287 | 3 | 0 | jomini |
 | `dlc_decisions/tgp/tgp_tenet_decisions.txt` | 3224 | 1 | 0 | jomini |
-| `dlc_decisions/tgp/tgp_tribute_mission_decisions.txt` | 22928 | 6 | 0 | jomini |
-| `test_decision.txt` | 8336 | 8 | 0 | jomini |
+| `dlc_decisions/tgp/tgp_tribute_mission_decisions.txt` | 23577 | 6 | 0 | jomini |
+| `test_decision.txt` | 8476 | 8 | 0 | jomini |
 | `tutorial_decisions.txt` | 34981 | 1 | 0 | jomini |
 
 ## 条目名 → 定义文件
@@ -139,7 +147,7 @@
 - local_arbitration_decision
 - draw_up_new_charts_decision
 
-### 00_major_decisions_east_europe.txt（11 条目）
+### 00_major_decisions_east_europe.txt（12 条目）
 
 - unite_the_western_slavs_decision
 - unite_the_southern_slavs_decision
@@ -152,6 +160,7 @@
 - accuse_krstjani_of_heresy_decision
 - launch_hungarian_migration_decision
 - found_kingdom_of_livonia_decision
+- establish_novgorodian_culture_decision
 
 ### 00_major_decisions_iberia_north_africa.txt（8 条目）
 
@@ -167,10 +176,10 @@
 ### 00_trait_decisions.txt（3 条目）
 
 - deceitful_progress_hostile_schemes_decision
-- diligent_development_focus_decision
+- diligent_prosperity_focus_decision
 - impatient_rushing_all_schemes_decision
 
-### 00_unity_decisions.txt（14 条目）
+### 00_unity_decisions.txt（20 条目）
 
 - unity_reinforce_army_decision
 - unity_establish_network_decision
@@ -182,10 +191,16 @@
 - unity_steer_house_direction_decision
 - unity_search_for_administrators_decision
 - unity_improve_logistics_decision
-- unity_promote_development_decision
+- unity_promote_prosperity_decision
 - unity_consult_house_decision
 - unity_establish_futuwaa_lodges_decision
 - unity_educate_youth_in_madrasas_decision
+- unity_regional_networks_decision
+- unity_family_business_decision
+- unity_merchant_prosperity_decision
+- unity_merchant_bailiffs_decision
+- unity_merchant_promote_diligence_decision
+- unity_merchant_promote_excess_decision
 
 ### 04_ep2_decisions.txt（1 条目）
 
@@ -239,7 +254,7 @@
 - summon_fair_courtiers_decision
 - create_cossack_kingdom_decision
 
-### 10_religious_decisions.txt（30 条目）
+### 10_religious_decisions.txt（31 条目）
 
 - take_vow_of_poverty_decision
 - renounce_vow_of_poverty_decision
@@ -270,6 +285,7 @@
 - inherit_ancestral_trait_decision
 - pursue_conquerors_mantle_decision
 - redistribute_realm_wealth_decision
+- visit_genizah_decision
 - launch_undirected_great_holy_war_decision
 
 ### 30_activity_decisions.txt（2 条目）
@@ -289,6 +305,11 @@
 
 - pledge_loyalty_to_liege_decision
 - petition_ceremonial_liege_decision
+
+### 50_ai_building_decisions.txt（2 条目）
+
+- ai_remove_capital_villages_decision
+- ai_remove_capital_household_decision
 
 ### 50_holy_site_decisions.txt（6 条目）
 
@@ -325,7 +346,7 @@
 - set_de_jure_capital_decision
 - restore_carthage_decision
 
-### 80_major_decisions_british_isles.txt（8 条目）
+### 80_major_decisions_british_isles.txt（9 条目）
 
 - reclaim_britannia_decision
 - embrace_english_culture_decision
@@ -335,6 +356,7 @@
 - formalise_the_daneland_decision
 - restore_dumnonia_decision
 - form_cumbria_decision
+- establish_norse_gael_culture_decision
 
 ### 80_major_decisions_central_asia.txt（4 条目）
 
@@ -365,7 +387,7 @@
 - found_empire_of_beth_nahrain_decision
 - create_dar_al_islam_decision
 
-### 80_major_decisions_middle_europe.txt（10 条目）
+### 80_major_decisions_middle_europe.txt（11 条目）
 
 - form_switzerland_kingdom_decision
 - form_austria_kingdom_decision
@@ -375,6 +397,7 @@
 - promote_gothic_innovations_decision
 - restore_holy_roman_empire_decision
 - establish_norman_culture_decision
+- establish_italo_norman_culture_decision
 - establish_the_electorate_of_saxony_decision
 - decision_restore_carantania
 
@@ -512,7 +535,7 @@
 - jester_entertainment_decision
 - adopt_puppy_decision
 - introduce_a_new_fashion_at_court_decision
-- promote_other_culture_development_decision
+- promote_other_culture_prosperity_decision
 
 ### dlc_decisions/ep_2/00_ep2_other_decisions.txt（1 条目）
 
@@ -539,7 +562,7 @@
 - hasan_found_the_assassins
 - hasan_expand_the_assassins
 
-### dlc_decisions/ep_3/06_ep3_laamp_decisions.txt（20 条目）
+### dlc_decisions/ep_3/06_ep3_laamp_decisions.txt（19 条目）
 
 - become_landless_adventurer_decision
 - wipe_slate_decision
@@ -557,7 +580,6 @@
 - zealous_missionary_prep_decision
 - zealous_missionary_start_decision
 - become_conqueror_decision
-- start_city_construction_decision
 - knight_errant_decision
 - butcher_animals_decision
 - humiliate_the_stooge_decision
@@ -611,6 +633,98 @@
 - destroy_the_magi_decision
 - kindle_royal_fire_decision
 - fp3_embrace_zoroastrianism_decision
+
+### dlc_decisions/gdp/gdp_guelph_ghibelline_decisions.txt（9 条目）
+
+- change_guelph_ghibelline_phase_decision
+- become_guelph_ghibelline_leader_decision
+- change_guelph_ghibelline_side_decision
+- step_down_as_guelph_ghibelline_leader_decision
+- pick_a_guelph_ghibelline_side_decision
+- guelph_victory_decision
+- ghibelline_victory_decision
+- form_lombard_league_decision
+- leave_lombard_league_decision
+
+### dlc_decisions/gdp/gdp_hanseatic_decisions.txt（1 条目）
+
+- found_the_hanseatic_league_decision
+
+### dlc_decisions/gdp/gdp_merchant_decisions.txt（23 条目）
+
+- become_merchant_decision
+- abuse_charter_authority_decision
+- benevolent_charter_authority_decision
+- forge_charter_decision
+- invite_merchants_decision
+- gdp_sponsor_merchant_company_decision
+- seek_trade_opportunity_decision
+- press_the_advantage_decision
+- choose_specialized_market_decision
+- pious_patronage_decision
+- organize_the_venture_decision
+- undercut_the_competition_decision
+- set_company_focus_decision
+- merchant_caravaneer_capstone_decision
+- merchant_artisan_capstone_decision
+- merchant_creditor_capstone_decision
+- merchant_write_travelogue_decision
+- merchant_spending_spree_decision
+- wipe_slate_merchant_decision
+- gdp_repudiate_usurious_loan_decision
+- craft_artifact_decision
+- gdp_send_trade_envoys_decision
+- gdp_return_trade_envoys_decision
+
+### dlc_decisions/gdp/gdp_republic_decisions.txt（33 条目）
+
+- gdp_adopt_republic_government_decision
+- gdp_adopt_republican_ways_decision
+- convert_to_feudalism_from_republic_decision
+- gdp_restore_roman_republic_decision
+- gdp_glorification_decision
+- gdp_popular_gifts_decision
+- gdp_popular_mandate_decision
+- gdp_civic_labor_decision
+- debase_the_coinage_decision
+- gdp_banishment_approval_decree_decision
+- gdp_proscription_approval_decree_decision
+- gdp_execution_approval_decree_decision
+- gdp_overthrow_government_decision
+- gdp_renounce_noble_family_title_decision
+- change_republican_election_aspirations_decision
+- gdp_republic_recruit_talent_decision
+- gdp_republic_clear_great_plaza_decision
+- gdp_republic_city_stroll_decision
+- gdp_improve_trade_post_market_decision
+- gdp_trade_post_charity_decision
+- gdp_gather_popular_support_decision
+- gdp_oust_from_trade_post_decision
+- gdp_fund_alms_decree_decision
+- gdp_tax_holiday_decree_decision
+- gdp_debt_forgiveness_decree_decision
+- gdp_finance_war_decree_decision
+- gdp_war_approval_decree_decision
+- gdp_quarantine_ship_decree_decision
+- gdp_enforce_curfew_decree_decision
+- gdp_sponsor_craft_guild_decision
+- gdp_request_noble_magistracy_decision
+- gdp_request_relief_from_bankruptcy_decision
+- gdp_petition_for_state_protection_decision
+
+### dlc_decisions/gdp/gdp_trade_league_decisions.txt（1 条目）
+
+- gdp_set_league_focus_decision
+
+### dlc_decisions/gdp/gdp_trade_scheme_decisions.txt（3 条目）
+
+- gdp_improve_trade_capacity_decision
+- gdp_improve_trade_competitiveness_decision
+- gdp_improve_trade_expertise_decision
+
+### dlc_decisions/gdp/gdp_visit_holding_decision.txt（1 条目）
+
+- gdp_visit_holding_decision
 
 ### dlc_decisions/mpo/09_mpo_decisions_2.txt（3 条目）
 
@@ -670,7 +784,7 @@
 - declare_antipope_decision
 - declare_yourself_antipope_decision
 
-### dlc_decisions/pam/pam_decisions.txt（39 条目）
+### dlc_decisions/pam/pam_decisions.txt（43 条目）
 
 - pam_decision_confession
 - pam_decision_act_of_devotion
@@ -682,6 +796,10 @@
 - pam_determine_patron_saint_decision
 - pam_decision_last_rites
 - create_hof_decision
+- start_test_select_rite
+- start_test_select_tenet
+- start_test_select_character
+- start_test_select_kingdom
 - pam_levy_the_tithes_decision
 - pam_send_legatine_mission_decision
 - pam_reform_monastic_endowment_decision

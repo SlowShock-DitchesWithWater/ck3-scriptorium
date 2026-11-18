@@ -1,18 +1,19 @@
 # common/great_projects 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
-- 文件数：5（其中 Jomini 解析 4 个）
-- 顶层块条目总数：24，跨文件唯一条目 24
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
+- 文件数：6（其中 Jomini 解析 5 个）
+- 顶层块条目总数：40，跨文件唯一条目 40
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `types/00_great_project_types.txt` | 184420 | 11 | 12 | jomini |
-| `types/00_ministry_projects.txt` | 123440 | 7 | 14 | jomini |
-| `types/00_natural_disasters.txt` | 76647 | 2 | 6 | jomini |
-| `types/01_pam_projects.txt` | 150383 | 4 | 6 | jomini |
+| `types/00_great_project_types.txt` | 185149 | 11 | 12 | jomini |
+| `types/00_ministry_projects.txt` | 123632 | 7 | 14 | jomini |
+| `types/00_natural_disasters.txt` | 76613 | 2 | 6 | jomini |
+| `types/00_republic_projects.txt` | 273788 | 16 | 3 | jomini |
+| `types/01_pam_projects.txt` | 131990 | 4 | 6 | jomini |
 | `types/_great_project_types.info` | 18410 | - | - | 纯文档（非 Jomini） |
 
 ## 条目名 → 定义文件
@@ -37,7 +38,7 @@
 
 - grand_campaign_project
 - minister_project_culture
-- minister_project_development
+- minister_project_prosperity
 - minister_project_establish_control
 - minister_project_train_troops
 - minister_project_conduct_census
@@ -47,6 +48,25 @@
 
 - great_project_earthquake
 - great_project_flood
+
+### types/00_republic_projects.txt（16 条目）
+
+- gdp_republic_civic_works
+- gdp_republic_great_plaza_project
+- gdp_republic_expand_great_plaza_project
+- gdp_republic_great_plaza_loggia_project
+- gdp_republic_great_plaza_statute_hall_project
+- gdp_republic_great_plaza_council_chamber_project
+- gdp_republic_great_plaza_debt_office_project
+- gdp_republic_great_plaza_civic_hospital_project
+- gdp_republic_great_plaza_weigh_house_project
+- gdp_republic_great_plaza_clock_tower_project
+- gdp_republic_great_plaza_civic_ward_project
+- gdp_republic_great_plaza_league_chapter_house_project
+- gdp_republic_great_plaza_podesta_residence_project
+- gdp_republic_great_plaza_fountain_project
+- gdp_republic_great_plaza_saint_sanctuary_project
+- gdp_republic_great_plaza_basilica_project
 
 ### types/01_pam_projects.txt（4 条目）
 

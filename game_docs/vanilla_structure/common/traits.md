@@ -1,16 +1,16 @@
 # common/traits 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：4（其中 Jomini 解析 1 个）
-- 顶层块条目总数：306，跨文件唯一条目 306
+- 顶层块条目总数：311，跨文件唯一条目 311
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。
 
 ## 文件清单
 
 | 文件 | 字节 | 顶层块 | 标量键 | 解析 |
 |---|---|---|---|---|
-| `00_traits.txt` | 341175 | 306 | 6 | jomini |
-| `_traits.info` | 13749 | - | - | 纯文档（非 Jomini） |
+| `00_traits.txt` | 355058 | 311 | 6 | jomini |
+| `_traits.info` | 13932 | - | - | 纯文档（非 Jomini） |
 | `old_trait_indexes.lookup` | 3607 | - | - | 索引表（逐行名，非块定义） |
 | `trait_conversion.lookup` | 739 | - | - | 索引表（逐行名，非块定义） |
 
@@ -18,7 +18,7 @@
 
 （查单条定义文件可直接 grep 全局映射：`entry_map.tsv` 首列即条目名；本文件按源文件分节列全量条目名。）
 
-### 00_traits.txt（306 条目）
+### 00_traits.txt（311 条目）
 
 - education_intrigue_1
 - education_intrigue_2
@@ -245,12 +245,14 @@
 - reincarnation
 - adventurer
 - adventurer_follower
+- merchant_associate
 - heresiarch
 - herald
 - peasant_leader
 - populist_leader
 - witch
 - disinherited
+- adopted_no_inheritance
 - denounced
 - decadent
 - extolled
@@ -299,6 +301,7 @@
 - education_republican_knowledge_2
 - education_republican_knowledge_3
 - education_republican_knowledge_4
+- education_republican_knowledge_5
 - tourney_participant
 - lifestyle_traveler
 - fp3_struggle_detractor
@@ -326,6 +329,8 @@
 - lifestyle_scholar
 - debug_enable_raiding_without_restrictions
 - debug_enable_raiding_per_standard_restrictions
+- lifestyle_merchant
+- dealbreaker
 
 ### 未解析文件
 

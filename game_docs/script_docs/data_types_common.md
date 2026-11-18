@@ -1,7 +1,7 @@
 # Data Types: common（script_docs 权威清单）
 
-- 来源：`game logs/data_types/data_types_common.txt`（CK3 1.20.1 `script_docs` 控制台导出）
-- 源文件时间：2026-10-22T19:56:41+08:00（文件 mtime，视为 dump 生成时间）
+- 来源：`game logs/data_types/data_types_common.txt`（CK3 1.21.0 `script_docs` 控制台导出）
+- 源文件时间：2026-11-18T19:02:24+08:00（文件 mtime，视为 dump 生成时间）
 - 源文件大小：41208 字节
 - 条目数：368
 - 正文逐字来自 dump，仅重排为每条目一节；与 wiki 层冲突时以本层为准。

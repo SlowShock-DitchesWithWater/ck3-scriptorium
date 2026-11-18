@@ -1,6 +1,6 @@
 # common/ai_war_stances 结构摘要
 
-- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.20.1；快照日期与指纹见 manifest.json）
+- 游戏目录：`F:\SteamLibrary\steamapps\common\Crusader Kings III\game`（CK3 1.21.0；快照日期与指纹见 manifest.json）
 - 文件数：4（其中 Jomini 解析 3 个）
 - 顶层块条目总数：7，跨文件唯一条目 7
 - 本摘要只含结构信息（路径/大小/顶层块名/计数），零原版内容复制。

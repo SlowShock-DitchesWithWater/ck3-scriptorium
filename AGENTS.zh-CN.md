@@ -13,13 +13,16 @@
 |---|---|---|---|
 | wiki 讲解层 | `pages/` | ck3.paradoxwikis.com Modding 栏目清洗文本 | 低 |
 | 游戏权威层 | `game_docs/script_docs/` | 游戏 debug dump：effects / triggers / modifiers / on_actions / event_targets / event_scopes / custom_localization 清单 + data_types×5 文件 | **高** |
-| 原版结构索引层 | `game_docs/vanilla_structure/` | 条目名→定义文件映射 + common 128 子目录摘要 | 导航 |
+| 原版结构索引层 | `game_docs/vanilla_structure/` | 条目名→定义文件映射 + common 全部子目录摘要（数量见快照块） | 导航 |
 | 地图知识层 | `game_docs/map_docs/` | 地图实测档案：`map_data_dossier.md`（格式/尺寸/河流调色板/编辑器证据）、`province_index.tsv`（id↔RGB↔名称）、`nudger_parameters.md` | **高**（游戏实测） |
 | 阅览室（自选文章） | `reading_room/articles/` | 用户自选外部文章的自写笔记（论坛深扒/攻略等）+ 出处链接；添加方式见 `reading_room/README.md` | 参考（最低） |
+| 抄写室（mod 知识库） | `copy_room/<mod-id>/` | 可选、本机为其他 mod 建的同构知识库（加载态签名层 + 结构索引 + 换图 mod 的 map_docs + `DIFF_vs_vanilla.md`）；本地生成**不随仓库发布，可能不存在**（构建见 `copy_room/README.md`，配方 F） | 该 mod 范围内**最高** |
 
 **权威顺序：game_docs（dump）> pages（wiki）> reading_room（参考）。**
 多层冲突时以 dump 为准，并在回答中指出冲突点。阅览室是用户自策的笔记，
 不得作为唯一依据推翻 dump/wiki；引用时标注"阅览室笔记"并附其来源行。
+抄写室 KB 在**该 mod 的范围内**优先于 game_docs（子 mod 运行在父 mod
+环境里）；查原版行为仍回 game_docs。
 
 **`game_docs/` 随仓库发布**（由游戏自身 debug dump 构建；当前对应游戏版本见
 catalog 快照块）。该层为游戏衍生数据，本仓库不主张任何权利（见
@@ -30,7 +33,7 @@ catalog 快照块）。该层为游戏衍生数据，本仓库不主张任何权
 
 ## 1. 标准检索流程（四步）
 
-1. **判断问题类型**，选第 2 节的配方（A 签名 / B 讲解 / C 条目定位 / D 版本敏感 / E 地图）。
+1. **判断问题类型**，选第 2 节的配方（A 签名 / B 讲解 / C 条目定位 / D 版本敏感 / E 地图 / F 子 mod 开发）。
 2. **查目录**：grep `catalog.md` 关键词，命中条目后按其「文件位置」「章节」字段
    只读对应文件——不要整读 catalog，也不要整读命中页。
 3. **目录未命中 → pages 兜底**：对 `pages/` 全目录做关键词 grep（命令见配方 B），
@@ -121,7 +124,7 @@ grep -P "^education_intrigue_1\t" game_docs/vanilla_structure/entry_map.tsv
 拿到路径后请读**用户本机游戏目录**里的原文件（本仓库不含原版全文）。
 
 - 浏览某类内容的全部文件与条目：先读 `game_docs/vanilla_structure/INDEX.md`，
-  再按其表格读 `game_docs/vanilla_structure/common/<子目录>.md`（128 个全覆盖）。
+  再按其表格读 `game_docs/vanilla_structure/common/<子目录>.md`（全覆盖）。
 - events / history / gui / gfx 等非 common 目录：`game_docs/vanilla_structure/other_dirs.md`。
 
 ### 配方 D：版本敏感事实（"从哪个版本起…"类问题）
@@ -147,6 +150,31 @@ wiki 的 Map modding 页是 1.1 时代内容且自我标注"1.18/1.19 起部分�
    但凡涉及尺寸/格式都要与 dossier 交叉核对，冲突以 dossier 为准且必须点名。
 4. 实操工作流、故障对照、校验器：`map_room/WORKFLOW.md` +
    `map_room/validate_map.py`（"地图室"，总览见 `map_room/README.md`）。
+
+### 配方 F：子 mod 开发（父 mod 知识库，抄写室）
+
+子 mod / 兼容补丁开发时，先看父 mod 有没有本地知识库（`ls copy_room/`；
+KB 为本机产物，克隆里通常没有；没有时可请用户按 `copy_room/README.md`
+三步构建）。有则按同构路径检索：
+
+1. mod 专属签名（父 mod 新增的 effect/trigger/on_action/…）——与配方 A
+   同法，换目录：
+
+   ```bash
+   grep -n "### add_magicka" copy_room/<mod-id>/script_docs/effects.md
+   ```
+
+2. 条目定义在父 mod 哪个文件——与配方 C 同法：
+
+   ```bash
+   grep -P "^education_intrigue_1\t" copy_room/<mod-id>/structure/entry_map.tsv
+   ```
+3. 该 mod 相对原版的新增/移除 API 面：读 `copy_room/<mod-id>/DIFF_vs_vanilla.md`；
+4. 换图 mod 的地图问题：配方 E 同法，目录换 `copy_room/<mod-id>/map_docs/`。
+
+**范围规则**：在父 mod 环境内（子 mod 开发）同名条目以 mod 层为准；
+纯原版问题仍查 `game_docs/`。catalog 的抄写室区块是静态指引，不罗列
+具体 KB——KB 清单以 `ls copy_room/` 为准。
 
 ## 3. 上下文纪律（硬规则）
 

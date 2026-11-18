@@ -1,9 +1,9 @@
 # Data Types: uncategorized（script_docs 权威清单）
 
-- 来源：`game logs/data_types/data_types_uncategorized.txt`（CK3 1.20.1 `script_docs` 控制台导出）
-- 源文件时间：2026-10-22T19:56:41+08:00（文件 mtime，视为 dump 生成时间）
-- 源文件大小：2187193 字节
-- 条目数：20227
+- 来源：`game logs/data_types/data_types_uncategorized.txt`（CK3 1.21.0 `script_docs` 控制台导出）
+- 源文件时间：2026-11-18T19:02:24+08:00（文件 mtime，视为 dump 生成时间）
+- 源文件大小：2476122 字节
+- 条目数：22852
 - 正文逐字来自 dump，仅重排为每条目一节；与 wiki 层冲突时以本层为准。
 
 ### ACCOLADE
@@ -96,10 +96,25 @@ Return type: CourtWindow
 Definition type: Global promote
 Return type: JominiGameRules
 
+### AccessHoldingView
+
+Definition type: Global promote
+Return type: HoldingView
+
 ### AccessKnightsView
 
 Definition type: Global promote
 Return type: KnightsView
+
+### AccessLandlessRulerFilterWindow
+
+Definition type: Global promote
+Return type: LandlessRulerFilterWindow
+
+### AccessLawChangeWindow
+
+Definition type: Global promote
+Return type: LawChangeWindow
 
 ### AccessLocalPlayerCachedData
 
@@ -130,6 +145,11 @@ Return type: BookmarkCharacter
 
 Definition type: Global promote
 Return type: Building
+
+### BUILDING_TYPE
+
+Definition type: Global promote
+Return type: BuildingType
 
 ### CHARACTER
 
@@ -221,6 +241,16 @@ Return type: Decision
 Definition type: Global promote
 Return type: Character
 
+### DISTRICT
+
+Definition type: Global promote
+Return type: District
+
+### DISTRICT_TYPE
+
+Definition type: Global promote
+Return type: DistrictType
+
 ### DOCTRINE_TYPE
 
 Definition type: Global promote
@@ -265,6 +295,11 @@ Return type: DynastyLegacy
 
 Definition type: Global promote
 Return type: DynastyPerk
+
+### END_TRADE_MARKET
+
+Definition type: Global promote
+Return type: TradeMarket
 
 ### EPIDEMIC
 
@@ -355,6 +390,11 @@ Return type: GreatProjectType
 
 Definition type: Global promote
 Return type: CharacterInteractionCategory
+
+### GetCountyControlModifierByLevel( Arg0 )
+
+Definition type: Global promote
+Return type: StaticModifier
 
 ### GetCourtGrandeurDiffFromExpectedLevelModifier( Arg0 )
 
@@ -496,10 +536,20 @@ Return type: ArmyComposition
 Definition type: Global promote
 Return type: Decision
 
+### GetPopularOpinionModifierByLevel( Arg0 )
+
+Definition type: Global promote
+Return type: StaticModifier
+
 ### GetPortraitType( Arg0 )
 
 Definition type: Global promote
 Return type: PortraitType
+
+### GetProvinceSizeModifierByLevel( Arg0 )
+
+Definition type: Global promote
+Return type: StaticModifier
 
 ### GetRelation( Arg0 )
 
@@ -641,6 +691,16 @@ Return type: HouseRelationLevel
 Definition type: Global promote
 Return type: HouseRelationType
 
+### HOUSE_UNITY_STAGE
+
+Definition type: Global promote
+Return type: HouseUnityStage
+
+### HOUSE_UNITY_TYPE
+
+Definition type: Global promote
+Return type: HouseUnityType
+
 ### IMPORTANT_ACTION_ITEM
 
 Definition type: Global promote
@@ -665,6 +725,11 @@ Return type: Inspiration
 
 Definition type: Global promote
 Return type: Character
+
+### INVENTORY_SLOT
+
+Definition type: Global promote
+Return type: InventorySlot
 
 ### LAW
 
@@ -891,6 +956,11 @@ Return type: Rite
 Definition type: Global promote
 Return type: RiteType
 
+### ROAD
+
+Definition type: Global promote
+Return type: Road
+
 ### SCHEME
 
 Definition type: Global promote
@@ -946,6 +1016,11 @@ Return type: SituationSubRegion
 Definition type: Global promote
 Return type: SituationType
 
+### START_TRADE_MARKET
+
+Definition type: Global promote
+Return type: TradeMarket
+
 ### STRUGGLE
 
 Definition type: Global promote
@@ -964,7 +1039,7 @@ Return type: Army
 ### TARGET_BUILDING
 
 Definition type: Global promote
-Return type: Building
+Return type: BuildingType
 
 ### TARGET_CHARACTER
 
@@ -1036,10 +1111,45 @@ Return type: Title
 Definition type: Global promote
 Return type: Title
 
+### TITLE_TYPE
+
+Definition type: Global promote
+Return type: TitleType
+
 ### TOKEN_PARAMETER
 
 Definition type: Global promote
 Return type: TokenParameter
+
+### TOLL_LEVEL
+
+Definition type: Global promote
+Return type: TollLevel
+
+### TRADE_GOOD_CATEGORY_TYPE
+
+Definition type: Global promote
+Return type: TradeGoodCategory
+
+### TRADE_GOOD_TYPE
+
+Definition type: Global promote
+Return type: TradeGoodType
+
+### TRADE_MARKET
+
+Definition type: Global promote
+Return type: TradeMarket
+
+### TRADE_MONOPOLY
+
+Definition type: Global promote
+Return type: TradeMonopoly
+
+### TRADE_ROUTE
+
+Definition type: Global promote
+Return type: TradeRoute
 
 ### TRAIT
 
@@ -1105,6 +1215,11 @@ Return type: SubjectContractType
 
 Definition type: Global promote
 Return type: VassalStance
+
+### VOTING_SESSION
+
+Definition type: Global promote
+Return type: VotingSession
 
 ### WAR
 
@@ -1196,12 +1311,22 @@ Return type: bool
 Definition type: Global function
 Return type: bool
 
-### CanMakeNobleFamilyCharacters
+### CanMakeMerchantCharacter
+
+Definition type: Global function
+Return type: bool
+
+### CanMakeNobleFamilyCharacter
 
 Definition type: Global function
 Return type: bool
 
 ### CanOpenLobby
+
+Definition type: Global function
+Return type: bool
+
+### CanPlayerUseProfitMode
 
 Definition type: Global function
 Return type: bool
@@ -1406,6 +1531,21 @@ Return type: CString
 Definition type: Global function
 Return type: CUTF8String
 
+### GetBasicNeedTradeGoodCategories
+
+Definition type: Global function
+Return type: [unregistered]
+
+### GetBasicTradeGoodTypes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### GetBasicTradeGoodsAloneInNeedCategory
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### GetBuildVersionDescription
 
 Definition type: Global function
@@ -1431,6 +1571,11 @@ Return type: CString
 Definition type: Global function
 Return type: CString
 
+### GetControlMarkerText( Arg0 )
+
+Definition type: Global function
+Return type: CString
+
 ### GetCostString( Arg0 )
 
 Definition type: Global function
@@ -1440,6 +1585,11 @@ Return type: CString
 
 Definition type: Global function
 Return type: CFixedPoint
+
+### GetCountyControlLevelNameNoTooltip( Arg0 )
+
+Definition type: Global function
+Return type: CString
 
 ### GetCourtGrandeurDiffFromExpectedLevelModifier( Arg0 )
 
@@ -1611,6 +1761,11 @@ Return type: CString
 Definition type: Global function
 Return type: CString
 
+### GetGlobalMapKeys( Arg0 )
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### GetGovernment( Arg0 )
 
 Definition type: Global function
@@ -1761,6 +1916,16 @@ Return type: CFixedPoint
 Definition type: Global function
 Return type: [unregistered]
 
+### GetNonBasicNeedTradeGoodCategories
+
+Definition type: Global function
+Return type: [unregistered]
+
+### GetNonBasicTradeGoodsAloneInNeedCategory
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### GetNullCharacter
 
 Definition type: Global function
@@ -1792,6 +1957,11 @@ Definition type: Global function
 Return type: int32
 
 ### GetOpenLobbyTooltip
+
+Definition type: Global function
+Return type: CString
+
+### GetOpinionMarkerText( Arg0 )
 
 Definition type: Global function
 Return type: CString
@@ -1866,6 +2036,11 @@ Return type: CString
 Definition type: Global function
 Return type: CString
 
+### GetPopularOpinionLevelNameNoTooltip( Arg0 )
+
+Definition type: Global function
+Return type: CString
+
 ### GetPortraitType( Arg0 )
 
 Definition type: Global function
@@ -1910,6 +2085,16 @@ Return type: int32
 
 Definition type: Global function
 Return type: int32
+
+### GetProvinceSizeLevelNameNoTooltip( Arg0 )
+
+Definition type: Global function
+Return type: CString
+
+### GetProvinceSizeMarkerText( Arg0 )
+
+Definition type: Global function
+Return type: CString
 
 ### GetRandomFrontendIllustration
 
@@ -2011,6 +2196,11 @@ Return type: int32
 Definition type: Global function
 Return type: Command
 
+### GetTradeGoodCategoryXpThreshold
+
+Definition type: Global function
+Return type: CFixedPoint
+
 ### GetTraitGroup( Arg0 )
 
 Definition type: Global function
@@ -2040,6 +2230,21 @@ Return type: CString
 
 Definition type: Global function
 Return type: int32
+
+### GlobalVariableMapContainsKey( Arg0, Arg1 )
+
+Definition type: Global function
+Return type: bool
+
+### GlobalVariableMapContainsValue( Arg0, Arg1 )
+
+Definition type: Global function
+Return type: bool
+
+### GlobalVariableMapExists( Arg0 )
+
+Definition type: Global function
+Return type: bool
 
 ### Glossary( Arg0, Arg1 )
 
@@ -2241,6 +2446,11 @@ Return type: bool
 Definition type: Global function
 Return type: bool
 
+### IsHolyOrderDetailViewShown( Arg0 )
+
+Definition type: Global function
+Return type: bool
+
 ### IsHost
 
 Definition type: Global function
@@ -2292,6 +2502,11 @@ Definition type: Global function
 Return type: bool
 
 ### IsMapMode( Arg0 )
+
+Definition type: Global function
+Return type: bool
+
+### IsMapModeOverlayOverride
 
 Definition type: Global function
 Return type: bool
@@ -2401,6 +2616,26 @@ Return type: void
 Definition type: Global function
 Return type: void
 
+### OnMouseEndDragging
+
+Definition type: Global function
+Return type: void
+
+### OnMouseEnterDraggable
+
+Definition type: Global function
+Return type: void
+
+### OnMouseLeaveDraggable
+
+Definition type: Global function
+Return type: void
+
+### OnMouseStartDragging
+
+Definition type: Global function
+Return type: void
+
 ### OnPause
 
 Definition type: Global function
@@ -2481,7 +2716,17 @@ Return type: void
 Definition type: Global function
 Return type: void
 
+### OpenHolyOrderDetailView( Arg0 )
+
+Definition type: Global function
+Return type: void
+
 ### OpenHouseCustomizationWindow( Arg0 )
+
+Definition type: Global function
+Return type: void
+
+### OpenLawChangeWindow( Arg0 )
 
 Definition type: Global function
 Return type: void
@@ -2801,6 +3046,11 @@ Return type: void
 Definition type: Global function
 Return type: void
 
+### ToggleHolyOrderDetailView( Arg0 )
+
+Definition type: Global function
+Return type: void
+
 ### ToggleLimitAgeForDeadPortraits
 
 Definition type: Global function
@@ -3036,12 +3286,22 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### activity_guest_short_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### activity_guests
 
 Definition type: Global function
 Return type: [unregistered]
 
 ### activity_guests_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### activity_guests_short_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -3057,6 +3317,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### activity_host_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### activity_host_short_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -3091,17 +3356,17 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### activity_state_passive
-
-Definition type: Global function
-Return type: [unregistered]
-
 ### activity_type
 
 Definition type: Global function
 Return type: [unregistered]
 
 ### activity_types
+
+Definition type: Global function
+Return type: [unregistered]
+
+### acumen
 
 Definition type: Global function
 Return type: [unregistered]
@@ -3182,6 +3447,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### advantage
+
+Definition type: Global function
+Return type: [unregistered]
+
+### advantage_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -3271,6 +3541,36 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### agricultural_income
+
+Definition type: Global function
+Return type: [unregistered]
+
+### agricultural_incomes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### agricultural_tax
+
+Definition type: Global function
+Return type: [unregistered]
+
+### agricultural_tax_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### agricultural_tax_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### agricultural_taxes
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### ai_cautious_personality
 
 Definition type: Global function
@@ -3327,6 +3627,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### alliance
+
+Definition type: Global function
+Return type: [unregistered]
+
+### alliance_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -3541,6 +3846,36 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### artisan_income
+
+Definition type: Global function
+Return type: [unregistered]
+
+### artisan_incomes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### artisan_tax
+
+Definition type: Global function
+Return type: [unregistered]
+
+### artisan_tax_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### artisan_tax_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### artisan_taxes
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### asexual
 
 Definition type: Global function
@@ -3611,6 +3946,41 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### assembly
+
+Definition type: Global function
+Return type: [unregistered]
+
+### assembly_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### associate
+
+Definition type: Global function
+Return type: [unregistered]
+
+### associate_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### associate_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### associates
+
+Definition type: Global function
+Return type: [unregistered]
+
+### associates_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### at_peace_opinion
 
 Definition type: Global function
@@ -3656,6 +4026,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### balanced
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### banish
 
 Definition type: Global function
@@ -3672,6 +4047,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### banished
+
+Definition type: Global function
+Return type: [unregistered]
+
+### banishes
 
 Definition type: Global function
 Return type: [unregistered]
@@ -3752,6 +4132,16 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### barters
+
+Definition type: Global function
+Return type: [unregistered]
+
+### basic_trade_good
+
+Definition type: Global function
+Return type: [unregistered]
+
+### basic_trade_goods
 
 Definition type: Global function
 Return type: [unregistered]
@@ -4141,6 +4531,21 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### building_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### building_need
+
+Definition type: Global function
+Return type: [unregistered]
+
+### building_needs
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### buildings
 
 Definition type: Global function
@@ -4192,6 +4597,21 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### buy_claim_interaction
+
+Definition type: Global function
+Return type: [unregistered]
+
+### buy_price
+
+Definition type: Global function
+Return type: [unregistered]
+
+### buy_price_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### buy_prices
 
 Definition type: Global function
 Return type: [unregistered]
@@ -4277,6 +4697,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### canonized
+
+Definition type: Global function
+Return type: [unregistered]
+
+### capacity
 
 Definition type: Global function
 Return type: [unregistered]
@@ -4521,6 +4946,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### character_interactions
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### character_modifier
 
 Definition type: Global function
@@ -4547,6 +4977,21 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### characters_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### charter
+
+Definition type: Global function
+Return type: [unregistered]
+
+### charter_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### charters
 
 Definition type: Global function
 Return type: [unregistered]
@@ -4672,6 +5117,36 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### city_holdings
+
+Definition type: Global function
+Return type: [unregistered]
+
+### civic_income
+
+Definition type: Global function
+Return type: [unregistered]
+
+### civic_incomes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### civic_tax
+
+Definition type: Global function
+Return type: [unregistered]
+
+### civic_tax_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### civic_tax_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### civic_taxes
 
 Definition type: Global function
 Return type: [unregistered]
@@ -4861,6 +5336,46 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### client
+
+Definition type: Global function
+Return type: [unregistered]
+
+### client_contract
+
+Definition type: Global function
+Return type: [unregistered]
+
+### client_contracts
+
+Definition type: Global function
+Return type: [unregistered]
+
+### client_merchant
+
+Definition type: Global function
+Return type: [unregistered]
+
+### client_merchant_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### client_merchants
+
+Definition type: Global function
+Return type: [unregistered]
+
+### client_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### clients
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### cloistered_emperor
 
 Definition type: Global function
@@ -5021,12 +5536,92 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### commerce_income
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commerce_incomes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commerce_tax
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commerce_tax_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commerce_tax_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commerce_taxes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commission
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### commission_epic
 
 Definition type: Global function
 Return type: [unregistered]
 
 ### commission_epic_decision
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commission_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commission_route
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commission_route_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commission_routes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commission_routes_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commissioned_route
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commissioned_routes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commissions
+
+Definition type: Global function
+Return type: [unregistered]
+
+### commissions_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -5046,12 +5641,197 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### companies
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_building
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_buildings
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_buildings_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_direction
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_direction_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_purpose
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_purposes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_concerted
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_concerted_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_cooperative
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_cooperative_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_divided
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_divided_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_fractious
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_fractious_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_independent
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_independent_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_level
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_level_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_levels
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_negative_actions
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sentiment_positive_actions
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_size
+
+Definition type: Global function
+Return type: [unregistered]
+
+### company_sizes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### competitive_pressure
+
+Definition type: Global function
+Return type: [unregistered]
+
+### competitive_pressure_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### competitiveness
+
+Definition type: Global function
+Return type: [unregistered]
+
+### competitiveness_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### complete_control
 
 Definition type: Global function
 Return type: [unregistered]
 
 ### complete_control_region
+
+Definition type: Global function
+Return type: [unregistered]
+
+### complete_monopolies
+
+Definition type: Global function
+Return type: [unregistered]
+
+### complete_monopoly
+
+Definition type: Global function
+Return type: [unregistered]
+
+### complete_monopoly_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### complete_monopoly_short
 
 Definition type: Global function
 Return type: [unregistered]
@@ -5121,6 +5901,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### confederation_cohesion
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### confederation_government
 
 Definition type: Global function
@@ -5152,6 +5937,21 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### conqueror_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### consorteries
+
+Definition type: Global function
+Return type: [unregistered]
+
+### consortery
+
+Definition type: Global function
+Return type: [unregistered]
+
+### consortery_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -5326,6 +6126,16 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### control_baseline
+
+Definition type: Global function
+Return type: [unregistered]
+
+### control_baselines
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### control_i
 
 Definition type: Global function
@@ -5476,6 +6286,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### counties_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### counts
 
 Definition type: Global function
@@ -5501,17 +6316,12 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### county_control_baseline
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### county_corruption
-
-Definition type: Global function
-Return type: [unregistered]
-
-### county_development
-
-Definition type: Global function
-Return type: [unregistered]
-
-### county_development_growth
 
 Definition type: Global function
 Return type: [unregistered]
@@ -5536,7 +6346,17 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### county_opinion
+### county_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### county_prosperity
+
+Definition type: Global function
+Return type: [unregistered]
+
+### county_prosperity_growth
 
 Definition type: Global function
 Return type: [unregistered]
@@ -5736,6 +6556,36 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### creature
+
+Definition type: Global function
+Return type: [unregistered]
+
+### creatures
+
+Definition type: Global function
+Return type: [unregistered]
+
+### creditor
+
+Definition type: Global function
+Return type: [unregistered]
+
+### creditor_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### creditors
+
+Definition type: Global function
+Return type: [unregistered]
+
+### creditors_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### crime
 
 Definition type: Global function
@@ -5931,6 +6781,16 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### curio
+
+Definition type: Global function
+Return type: [unregistered]
+
+### curios
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### damage
 
 Definition type: Global function
@@ -6016,6 +6876,26 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### debtor
+
+Definition type: Global function
+Return type: [unregistered]
+
+### debtor_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### debtors
+
+Definition type: Global function
+Return type: [unregistered]
+
+### debtors_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### debug_test_story
 
 Definition type: Global function
@@ -6052,6 +6932,16 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### defeat
+
+Definition type: Global function
+Return type: [unregistered]
+
+### deficit
+
+Definition type: Global function
+Return type: [unregistered]
+
+### deficits
 
 Definition type: Global function
 Return type: [unregistered]
@@ -6096,6 +6986,26 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### deputies
+
+Definition type: Global function
+Return type: [unregistered]
+
+### deputies_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### deputy
+
+Definition type: Global function
+Return type: [unregistered]
+
+### deputy_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### designate_chief_sacrifice
 
 Definition type: Global function
@@ -6132,21 +7042,6 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### develop_county
-
-Definition type: Global function
-Return type: [unregistered]
-
-### development
-
-Definition type: Global function
-Return type: [unregistered]
-
-### development_growth
-
-Definition type: Global function
-Return type: [unregistered]
-
-### development_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -6256,7 +7151,7 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### diligent_development_focus_decision
+### diligent_prosperity_focus_decision
 
 Definition type: Global function
 Return type: [unregistered]
@@ -6456,6 +7351,56 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### distribution
+
+Definition type: Global function
+Return type: [unregistered]
+
+### distribution_route
+
+Definition type: Global function
+Return type: [unregistered]
+
+### distribution_route_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### distribution_route_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### distribution_routes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### distribution_routes_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### district
+
+Definition type: Global function
+Return type: [unregistered]
+
+### district_tier
+
+Definition type: Global function
+Return type: [unregistered]
+
+### district_tiers
+
+Definition type: Global function
+Return type: [unregistered]
+
+### districts
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### diverge
 
 Definition type: Global function
@@ -6566,6 +7511,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### domain_limit_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### domain_taxes
 
 Definition type: Global function
@@ -6582,6 +7532,16 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### domicile
+
+Definition type: Global function
+Return type: [unregistered]
+
+### domicile_artifact
+
+Definition type: Global function
+Return type: [unregistered]
+
+### domicile_artifacts
 
 Definition type: Global function
 Return type: [unregistered]
@@ -6711,12 +7671,12 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### duchy_building
+### duchy_district
 
 Definition type: Global function
 Return type: [unregistered]
 
-### duchy_buildings
+### duchy_districts
 
 Definition type: Global function
 Return type: [unregistered]
@@ -6987,11 +7947,6 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### ecclesiastic_grant_claim_interaction
-
-Definition type: Global function
-Return type: [unregistered]
-
-### ecclesiastic_incite_claim_war_interaction
 
 Definition type: Global function
 Return type: [unregistered]
@@ -7301,6 +8256,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### ennobled
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### enshrine
 
 Definition type: Global function
@@ -7361,22 +8321,17 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### ep3_become_landless_adventurer_decision
+### entrepot
 
 Definition type: Global function
 Return type: [unregistered]
 
-### ep3_laamp_adventurer_invasion_war
+### entrepot_district
 
 Definition type: Global function
 Return type: [unregistered]
 
-### ep3_negotiate_settlement_interaction
-
-Definition type: Global function
-Return type: [unregistered]
-
-### ep3_purchase_land_interaction
+### entrepot_districts
 
 Definition type: Global function
 Return type: [unregistered]
@@ -7401,6 +8356,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### epidemic_resistance_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### epidemics
 
 Definition type: Global function
@@ -7412,11 +8372,6 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### epithets
-
-Definition type: Global function
-Return type: [unregistered]
-
-### equilibrium
 
 Definition type: Global function
 Return type: [unregistered]
@@ -7551,6 +8506,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### executes
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### executing
 
 Definition type: Global function
@@ -7566,7 +8526,7 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### existing_development
+### existing_prosperity
 
 Definition type: Global function
 Return type: [unregistered]
@@ -7587,6 +8547,46 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### experience
+
+Definition type: Global function
+Return type: [unregistered]
+
+### expertise
+
+Definition type: Global function
+Return type: [unregistered]
+
+### expertise_level
+
+Definition type: Global function
+Return type: [unregistered]
+
+### expertise_levels
+
+Definition type: Global function
+Return type: [unregistered]
+
+### expertise_progress
+
+Definition type: Global function
+Return type: [unregistered]
+
+### exploitative_monopolies
+
+Definition type: Global function
+Return type: [unregistered]
+
+### exploitative_monopoly
+
+Definition type: Global function
+Return type: [unregistered]
+
+### exploitative_monopoly_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### exploitative_monopoly_short
 
 Definition type: Global function
 Return type: [unregistered]
@@ -7786,6 +8786,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### family_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### family_manor
 
 Definition type: Global function
@@ -7876,7 +8881,7 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### fertility_equilibrium
+### fertility_baseline
 
 Definition type: Global function
 Return type: [unregistered]
@@ -7961,6 +8966,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### focused
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### focuses
 
 Definition type: Global function
@@ -7977,6 +8987,26 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### following
+
+Definition type: Global function
+Return type: [unregistered]
+
+### food_requirement
+
+Definition type: Global function
+Return type: [unregistered]
+
+### food_requirements
+
+Definition type: Global function
+Return type: [unregistered]
+
+### food_supplies
+
+Definition type: Global function
+Return type: [unregistered]
+
+### food_supply
 
 Definition type: Global function
 Return type: [unregistered]
@@ -8106,6 +9136,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### full_maintenance
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### funeral
 
 Definition type: Global function
@@ -8146,6 +9181,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### garrison_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### garrison_reinforcement
 
 Definition type: Global function
@@ -8162,6 +9202,26 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### gender_laws
+
+Definition type: Global function
+Return type: [unregistered]
+
+### gg_involvement
+
+Definition type: Global function
+Return type: [unregistered]
+
+### gg_involvement_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### ghibelline
+
+Definition type: Global function
+Return type: [unregistered]
+
+### ghibellines
 
 Definition type: Global function
 Return type: [unregistered]
@@ -8197,6 +9257,26 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### goliardic_shenanigans
+
+Definition type: Global function
+Return type: [unregistered]
+
+### good
+
+Definition type: Global function
+Return type: [unregistered]
+
+### good_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### goods
+
+Definition type: Global function
+Return type: [unregistered]
+
+### goods_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -8411,12 +9491,17 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### great_building
+### grasping
 
 Definition type: Global function
 Return type: [unregistered]
 
-### great_buildings
+### great_district
+
+Definition type: Global function
+Return type: [unregistered]
+
+### great_districts
 
 Definition type: Global function
 Return type: [unregistered]
@@ -8546,6 +9631,26 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### guelph
+
+Definition type: Global function
+Return type: [unregistered]
+
+### guelph_ghibelline_precursor_situation
+
+Definition type: Global function
+Return type: [unregistered]
+
+### guelph_ghibelline_situation
+
+Definition type: Global function
+Return type: [unregistered]
+
+### guelphs
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### guest
 
 Definition type: Global function
@@ -8562,6 +9667,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### gurkhan
+
+Definition type: Global function
+Return type: [unregistered]
+
+### gurkhan_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -8856,6 +9966,21 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### holding_district
+
+Definition type: Global function
+Return type: [unregistered]
+
+### holding_districts
+
+Definition type: Global function
+Return type: [unregistered]
+
+### holding_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### holding_type
 
 Definition type: Global function
@@ -8976,6 +10101,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### honored_guest
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### hook
 
 Definition type: Global function
@@ -9041,6 +10171,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### hostile_army_long
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### hostile_scheme
 
 Definition type: Global function
@@ -9062,6 +10197,16 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### house
+
+Definition type: Global function
+Return type: [unregistered]
+
+### house_ambition
+
+Definition type: Global function
+Return type: [unregistered]
+
+### house_ambitions
 
 Definition type: Global function
 Return type: [unregistered]
@@ -9267,26 +10412,6 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### hunt_success_chance_no_prefix
-
-Definition type: Global function
-Return type: [unregistered]
-
-### hunting_task_contract
-
-Definition type: Global function
-Return type: [unregistered]
-
-### hunting_task_contract_possessive
-
-Definition type: Global function
-Return type: [unregistered]
-
-### hunting_task_contracts
-
-Definition type: Global function
-Return type: [unregistered]
-
-### hunting_task_contracts_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -9526,6 +10651,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### independence
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### independence_faction
 
 Definition type: Global function
@@ -9651,6 +10781,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### inspiration_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### inspirations
 
 Definition type: Global function
@@ -9687,6 +10822,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### interactions
+
+Definition type: Global function
+Return type: [unregistered]
+
+### interest
 
 Definition type: Global function
 Return type: [unregistered]
@@ -9896,11 +11036,6 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### kindle_royal_fire_decision
-
-Definition type: Global function
-Return type: [unregistered]
-
 ### king
 
 Definition type: Global function
@@ -10006,6 +11141,21 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### landless_title
+
+Definition type: Global function
+Return type: [unregistered]
+
+### landless_title_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### landless_titles
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### language
 
 Definition type: Global function
@@ -10047,6 +11197,26 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### leading_houses
+
+Definition type: Global function
+Return type: [unregistered]
+
+### leading_title
+
+Definition type: Global function
+Return type: [unregistered]
+
+### league_cohesion
+
+Definition type: Global function
+Return type: [unregistered]
+
+### league_focus
+
+Definition type: Global function
+Return type: [unregistered]
+
+### league_focuses
 
 Definition type: Global function
 Return type: [unregistered]
@@ -10117,16 +11287,6 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### leasing
-
-Definition type: Global function
-Return type: [unregistered]
-
-### legalism
-
-Definition type: Global function
-Return type: [unregistered]
-
-### legalistic
 
 Definition type: Global function
 Return type: [unregistered]
@@ -10271,12 +11431,22 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### lending
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### lessee
 
 Definition type: Global function
 Return type: [unregistered]
 
 ### levies
+
+Definition type: Global function
+Return type: [unregistered]
+
+### levies_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -10386,6 +11556,31 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### loan
+
+Definition type: Global function
+Return type: [unregistered]
+
+### loan_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### loaned
+
+Definition type: Global function
+Return type: [unregistered]
+
+### loans
+
+Definition type: Global function
+Return type: [unregistered]
+
+### loans_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### local_arbitration
 
 Definition type: Global function
@@ -10407,6 +11602,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### location
+
+Definition type: Global function
+Return type: [unregistered]
+
+### lombard_league
 
 Definition type: Global function
 Return type: [unregistered]
@@ -10451,6 +11651,31 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### luxury_contract
+
+Definition type: Global function
+Return type: [unregistered]
+
+### luxury_contract_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### luxury_contract_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### luxury_contracts
+
+Definition type: Global function
+Return type: [unregistered]
+
+### luxury_contracts_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### main_phase
 
 Definition type: Global function
@@ -10472,6 +11697,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### majesty_tour
+
+Definition type: Global function
+Return type: [unregistered]
+
+### make_a_request
 
 Definition type: Global function
 Return type: [unregistered]
@@ -10541,12 +11771,22 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### mandala_ritual_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### mandala_ritual_tier
 
 Definition type: Global function
 Return type: [unregistered]
 
 ### mandala_rituals
+
+Definition type: Global function
+Return type: [unregistered]
+
+### mandala_rituals_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -10611,11 +11851,6 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### manipulation
-
-Definition type: Global function
-Return type: [unregistered]
-
 ### manor
 
 Definition type: Global function
@@ -10642,6 +11877,161 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### mansions
+
+Definition type: Global function
+Return type: [unregistered]
+
+### maritime_income
+
+Definition type: Global function
+Return type: [unregistered]
+
+### maritime_incomes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### maritime_tax
+
+Definition type: Global function
+Return type: [unregistered]
+
+### maritime_tax_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### maritime_tax_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### maritime_taxes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_balance
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_balance_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_balances
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_balances_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_capital
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_capital_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_capitals
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_capitals_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_owner
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_owner_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_owners
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_owners_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_priorities
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_priority
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_prosperity
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_prosperity_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_share
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_shares
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_toll
+
+Definition type: Global function
+Return type: [unregistered]
+
+### market_tolls
+
+Definition type: Global function
+Return type: [unregistered]
+
+### markets
+
+Definition type: Global function
+Return type: [unregistered]
+
+### markets_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -10741,6 +12131,26 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### max_trade_goods
+
+Definition type: Global function
+Return type: [unregistered]
+
+### max_trade_goods_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### max_trade_markets
+
+Definition type: Global function
+Return type: [unregistered]
+
+### max_trade_markets_short
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### maximum_piety_level
 
 Definition type: Global function
@@ -10766,12 +12176,37 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### member_title
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### men_at_arms
 
 Definition type: Global function
 Return type: [unregistered]
 
 ### men_at_arms_counter
+
+Definition type: Global function
+Return type: [unregistered]
+
+### men_at_arms_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### menagerie
+
+Definition type: Global function
+Return type: [unregistered]
+
+### menagerie_creature
+
+Definition type: Global function
+Return type: [unregistered]
+
+### menagerie_creatures
 
 Definition type: Global function
 Return type: [unregistered]
@@ -10836,6 +12271,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### mercenary_limit
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### mercenary_task_contract
 
 Definition type: Global function
@@ -10852,6 +12292,71 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### mercenary_task_contracts_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchant
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchant_charter
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchant_charters
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchant_families
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchant_family
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchant_family_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchant_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchant_patron
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchant_patron_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchant_patrons
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchant_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchants
+
+Definition type: Global function
+Return type: [unregistered]
+
+### merchants_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -11032,6 +12537,36 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### minimal_centralization
+
+Definition type: Global function
+Return type: [unregistered]
+
+### mining_income
+
+Definition type: Global function
+Return type: [unregistered]
+
+### mining_incomes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### mining_tax
+
+Definition type: Global function
+Return type: [unregistered]
+
+### mining_tax_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### mining_tax_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### mining_taxes
 
 Definition type: Global function
 Return type: [unregistered]
@@ -11281,6 +12816,31 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### monopolies
+
+Definition type: Global function
+Return type: [unregistered]
+
+### monopolize_trade
+
+Definition type: Global function
+Return type: [unregistered]
+
+### monopolize_trade_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### monopoly
+
+Definition type: Global function
+Return type: [unregistered]
+
+### monopoly_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### monument_expedition
 
 Definition type: Global function
@@ -11372,6 +12932,16 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### natural_prowess
+
+Definition type: Global function
+Return type: [unregistered]
+
+### need
+
+Definition type: Global function
+Return type: [unregistered]
+
+### needs
 
 Definition type: Global function
 Return type: [unregistered]
@@ -11482,6 +13052,16 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### nomadic_authority
+
+Definition type: Global function
+Return type: [unregistered]
+
+### nomadic_confederation
+
+Definition type: Global function
+Return type: [unregistered]
+
+### nomadic_confederations
 
 Definition type: Global function
 Return type: [unregistered]
@@ -11636,7 +13216,17 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### officer_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### officers
+
+Definition type: Global function
+Return type: [unregistered]
+
+### officers_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -11652,6 +13242,51 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### opinions
+
+Definition type: Global function
+Return type: [unregistered]
+
+### opportunistic
+
+Definition type: Global function
+Return type: [unregistered]
+
+### opportunities
+
+Definition type: Global function
+Return type: [unregistered]
+
+### opportunities_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### opportunity
+
+Definition type: Global function
+Return type: [unregistered]
+
+### opportunity_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### opportunity_scheme
+
+Definition type: Global function
+Return type: [unregistered]
+
+### opportunity_scheme_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### opportunity_schemes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### opportunity_schemes_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -11681,12 +13316,37 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### owner
+
+Definition type: Global function
+Return type: [unregistered]
+
+### owner_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### owners
+
+Definition type: Global function
+Return type: [unregistered]
+
+### owners_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### owning_legend
 
 Definition type: Global function
 Return type: [unregistered]
 
 ### paiza
+
+Definition type: Global function
+Return type: [unregistered]
+
+### paizas
 
 Definition type: Global function
 Return type: [unregistered]
@@ -11746,12 +13406,117 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### partition_share
+### patrician
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patrician_families
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patrician_family
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patrician_family_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patrician_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patrician_rating
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patrician_rating_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patricians
 
 Definition type: Global function
 Return type: [unregistered]
 
 ### patrilineal
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_contract
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_contract_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_contract_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_contract_scheme
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_contract_scheme_patron_contract
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_contract_scheme_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_contract_schemes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_contract_schemes_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_contracts
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_contracts_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_scheme
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_scheme_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_schemes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### patron_schemes_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -11817,6 +13582,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### perpetual_hook
+
+Definition type: Global function
+Return type: [unregistered]
+
+### perpetual_hook_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -12061,6 +13831,26 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### popular_opinion
+
+Definition type: Global function
+Return type: [unregistered]
+
+### popular_opinion_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### potential_production
+
+Definition type: Global function
+Return type: [unregistered]
+
+### potential_productions
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### power_sharing
 
 Definition type: Global function
@@ -12216,6 +14006,16 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### primary_good
+
+Definition type: Global function
+Return type: [unregistered]
+
+### primary_goods
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### primary_heir
 
 Definition type: Global function
@@ -12301,6 +14101,46 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### produced
+
+Definition type: Global function
+Return type: [unregistered]
+
+### production
+
+Definition type: Global function
+Return type: [unregistered]
+
+### productions
+
+Definition type: Global function
+Return type: [unregistered]
+
+### profit
+
+Definition type: Global function
+Return type: [unregistered]
+
+### profit_route
+
+Definition type: Global function
+Return type: [unregistered]
+
+### profit_route_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### profit_routes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### profit_routes_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### progress_to_victory
 
 Definition type: Global function
@@ -12326,7 +14166,7 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### promote_other_culture_development_decision
+### promote_other_culture_prosperity_decision
 
 Definition type: Global function
 Return type: [unregistered]
@@ -12346,7 +14186,22 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### prosperity
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### prosperity_decree
+
+Definition type: Global function
+Return type: [unregistered]
+
+### prosperity_growth
+
+Definition type: Global function
+Return type: [unregistered]
+
+### prosperity_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -12491,6 +14346,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### put_on_notice
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### radiance
 
 Definition type: Global function
@@ -12571,6 +14431,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### rapacious
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### rarity
 
 Definition type: Global function
@@ -12646,7 +14511,7 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### rebuilt_building
+### rebuilt_district
 
 Definition type: Global function
 Return type: [unregistered]
@@ -12662,6 +14527,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### recently_disembarked
+
+Definition type: Global function
+Return type: [unregistered]
+
+### reduced_maintenance
 
 Definition type: Global function
 Return type: [unregistered]
@@ -12841,6 +14711,16 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### religious_income
+
+Definition type: Global function
+Return type: [unregistered]
+
+### religious_incomes
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### religious_relations
 
 Definition type: Global function
@@ -12862,6 +14742,26 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### religious_superiors
+
+Definition type: Global function
+Return type: [unregistered]
+
+### religious_tax
+
+Definition type: Global function
+Return type: [unregistered]
+
+### religious_tax_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### religious_tax_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### religious_taxes
 
 Definition type: Global function
 Return type: [unregistered]
@@ -12896,6 +14796,41 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### republic_administration
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republic_administration_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republic_administrations
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republic_decree
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republic_decree_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republic_decrees
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republic_decrees_short
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### republic_government
 
 Definition type: Global function
@@ -12906,7 +14841,47 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### republic_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republic_senate
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republic_senate_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republic_senator
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republic_senators
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### republican
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republican_armies
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republican_army
+
+Definition type: Global function
+Return type: [unregistered]
+
+### republicans
 
 Definition type: Global function
 Return type: [unregistered]
@@ -12926,7 +14901,17 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### request_contract_change
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### request_ecclesiastical_title_expansion_interaction
+
+Definition type: Global function
+Return type: [unregistered]
+
+### request_merchant_charter
 
 Definition type: Global function
 Return type: [unregistered]
@@ -12941,12 +14926,12 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### restored_emperor
+### resource_district
 
 Definition type: Global function
 Return type: [unregistered]
 
-### restored_emperor_possessive
+### resource_districts
 
 Definition type: Global function
 Return type: [unregistered]
@@ -13151,6 +15136,41 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### road
+
+Definition type: Global function
+Return type: [unregistered]
+
+### road_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### road_tier
+
+Definition type: Global function
+Return type: [unregistered]
+
+### road_tier_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### road_tiers
+
+Definition type: Global function
+Return type: [unregistered]
+
+### roads
+
+Definition type: Global function
+Return type: [unregistered]
+
+### roads_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### roaming_longer_length_travel
 
 Definition type: Global function
@@ -13166,7 +15186,37 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### route
+
+Definition type: Global function
+Return type: [unregistered]
+
+### route_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### route_length
+
+Definition type: Global function
+Return type: [unregistered]
+
+### route_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### routed_soldiers
+
+Definition type: Global function
+Return type: [unregistered]
+
+### routes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### routes_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -13196,7 +15246,7 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### ruined_building
+### ruined_district
 
 Definition type: Global function
 Return type: [unregistered]
@@ -13212,6 +15262,21 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### rulers
+
+Definition type: Global function
+Return type: [unregistered]
+
+### rural_district
+
+Definition type: Global function
+Return type: [unregistered]
+
+### rural_districts
+
+Definition type: Global function
+Return type: [unregistered]
+
+### ruthless_oversight
 
 Definition type: Global function
 Return type: [unregistered]
@@ -13316,6 +15381,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### scheme_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### scheme_opportunities
 
 Definition type: Global function
@@ -13351,7 +15421,17 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### scheme_owner_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### scheme_owners
+
+Definition type: Global function
+Return type: [unregistered]
+
+### scheme_owners_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -13441,12 +15521,22 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### scheme_target_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### scheme_target_target
 
 Definition type: Global function
 Return type: [unregistered]
 
 ### scheme_targets
+
+Definition type: Global function
+Return type: [unregistered]
+
+### scheme_targets_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -13511,6 +15601,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### secret_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### secret_scheme
 
 Definition type: Global function
@@ -13566,6 +15661,26 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### seize_realm_cb
+
+Definition type: Global function
+Return type: [unregistered]
+
+### sell_price
+
+Definition type: Global function
+Return type: [unregistered]
+
+### sell_price_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### sell_prices
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### sell_titles
 
 Definition type: Global function
@@ -13581,12 +15696,77 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### sentiment
+
+Definition type: Global function
+Return type: [unregistered]
+
+### sentiment_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### settlement_growth
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### settlement_issue
 
 Definition type: Global function
 Return type: [unregistered]
 
+### settlement_issue_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### settlement_issue_tier
+
+Definition type: Global function
+Return type: [unregistered]
+
+### settlement_issues
+
+Definition type: Global function
+Return type: [unregistered]
+
+### settlement_issues_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### settlement_size
+
+Definition type: Global function
+Return type: [unregistered]
+
+### settlement_size_baseline
+
+Definition type: Global function
+Return type: [unregistered]
+
+### settlement_size_baselines
+
+Definition type: Global function
+Return type: [unregistered]
+
+### settlement_size_growth
+
+Definition type: Global function
+Return type: [unregistered]
+
+### settlement_size_growth_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### settlement_size_growth_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### settlement_size_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -13652,6 +15832,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### siege_weapon
+
+Definition type: Global function
+Return type: [unregistered]
+
+### siege_weapon_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -13801,6 +15986,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### situation_catalysts
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### situation_dynastic_cycle_phase
 
 Definition type: Global function
@@ -13822,6 +16012,16 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### situation_phase
+
+Definition type: Global function
+Return type: [unregistered]
+
+### situation_phase_phase
+
+Definition type: Global function
+Return type: [unregistered]
+
+### situation_phase_phases
 
 Definition type: Global function
 Return type: [unregistered]
@@ -13871,7 +16071,17 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### size
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### skill
+
+Definition type: Global function
+Return type: [unregistered]
+
+### skill_challenge_no_prefix
 
 Definition type: Global function
 Return type: [unregistered]
@@ -13882,6 +16092,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### skill_challenges_no_prefix
+
+Definition type: Global function
+Return type: [unregistered]
+
+### skill_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -13966,22 +16181,12 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### special_building
+### special_district
 
 Definition type: Global function
 Return type: [unregistered]
 
-### special_buildings
-
-Definition type: Global function
-Return type: [unregistered]
-
-### special_guest
-
-Definition type: Global function
-Return type: [unregistered]
-
-### special_guests
+### special_districts
 
 Definition type: Global function
 Return type: [unregistered]
@@ -14076,6 +16281,21 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### stacking_modifier
+
+Definition type: Global function
+Return type: [unregistered]
+
+### standard_district
+
+Definition type: Global function
+Return type: [unregistered]
+
+### standard_districts
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### state_faith
 
 Definition type: Global function
@@ -14107,6 +16327,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### stationed_regiment
+
+Definition type: Global function
+Return type: [unregistered]
+
+### stationed_regiment_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -14267,6 +16492,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### stress_critical_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### stress_gain
 
 Definition type: Global function
 Return type: [unregistered]
@@ -14531,6 +16761,16 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### sub_region
+
+Definition type: Global function
+Return type: [unregistered]
+
+### sub_regions
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### subject
 
 Definition type: Global function
@@ -14611,7 +16851,22 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### supply_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### supply_limit
+
+Definition type: Global function
+Return type: [unregistered]
+
+### supply_limit_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### supply_limit_short
 
 Definition type: Global function
 Return type: [unregistered]
@@ -14622,6 +16877,16 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### supremacy
+
+Definition type: Global function
+Return type: [unregistered]
+
+### surplus
+
+Definition type: Global function
+Return type: [unregistered]
+
+### surpluses
 
 Definition type: Global function
 Return type: [unregistered]
@@ -14652,6 +16917,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### swing_scales_of_power_interaction
+
+Definition type: Global function
+Return type: [unregistered]
+
+### task
 
 Definition type: Global function
 Return type: [unregistered]
@@ -15076,6 +17346,11 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### title_tier_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### title_tiers
 
 Definition type: Global function
@@ -15111,6 +17386,16 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### toll
+
+Definition type: Global function
+Return type: [unregistered]
+
+### tolls
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### top_liege
 
 Definition type: Global function
@@ -15137,6 +17422,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### tortured
+
+Definition type: Global function
+Return type: [unregistered]
+
+### tortures
 
 Definition type: Global function
 Return type: [unregistered]
@@ -15207,6 +17497,426 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### tours
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_acumen
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_acumen_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_categories
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_categories_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_category
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_category_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_companies
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_company
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_competitiveness
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_contract
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_contract_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_contract_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_contract_tier
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_contract_tier_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_contract_tier_tier
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_contracts
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_contracts_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_deficit
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_deficits
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_expertise
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_expertise_level
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_expertise_progress
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_good
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_good_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_goods
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_goods_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_goods_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_goods_production
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_league
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_league_leader
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_league_leader_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_league_member
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_league_member_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_league_members
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_league_members_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_league_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_leagues
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_market
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_market_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_markets
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_markets_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_monopolies
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_monopoly
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunities
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunities_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity_scheme
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity_scheme_opportunity
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity_scheme_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity_scheme_trade_opportunity
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity_schemes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity_schemes_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity_tier
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity_tier_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_opportunity_tier_tier
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_post
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_post_district
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_post_districts
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_post_limit
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_post_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_posts
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_route
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_route_capacity
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_route_capacity_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_route_capacity_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_route_length
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_route_length_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_route_modifier
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_route_modifier_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_route_modifiers
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_route_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_routes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_routes_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_scheme
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_schemes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_surplus
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trade_surpluses
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trader
+
+Definition type: Global function
+Return type: [unregistered]
+
+### trader_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### traders
+
+Definition type: Global function
+Return type: [unregistered]
+
+### traders_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -15307,6 +18017,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### travel_safety
+
+Definition type: Global function
+Return type: [unregistered]
+
+### travel_safety_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -15471,7 +18186,7 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
-### treasury_vassal_development
+### treasury_vassal_prosperity
 
 Definition type: Global function
 Return type: [unregistered]
@@ -15522,6 +18237,36 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### tribal_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### tribal_income
+
+Definition type: Global function
+Return type: [unregistered]
+
+### tribal_incomes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### tribal_tax
+
+Definition type: Global function
+Return type: [unregistered]
+
+### tribal_tax_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### tribal_tax_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### tribal_taxes
 
 Definition type: Global function
 Return type: [unregistered]
@@ -15582,16 +18327,6 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### tributes
-
-Definition type: Global function
-Return type: [unregistered]
-
-### trilateral_interaction
-
-Definition type: Global function
-Return type: [unregistered]
-
-### trilateral_interactions
 
 Definition type: Global function
 Return type: [unregistered]
@@ -15666,7 +18401,42 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### unimportant
+
+Definition type: Global function
+Return type: [unregistered]
+
+### unimportant_characters
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### unity
+
+Definition type: Global function
+Return type: [unregistered]
+
+### unity_contract
+
+Definition type: Global function
+Return type: [unregistered]
+
+### unity_contract_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### unity_contract_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### unity_contracts
+
+Definition type: Global function
+Return type: [unregistered]
+
+### unity_contracts_possessive
 
 Definition type: Global function
 Return type: [unregistered]
@@ -15756,6 +18526,71 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### urban_district
+
+Definition type: Global function
+Return type: [unregistered]
+
+### urban_districts
+
+Definition type: Global function
+Return type: [unregistered]
+
+### urban_income
+
+Definition type: Global function
+Return type: [unregistered]
+
+### urban_incomes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### urban_tax
+
+Definition type: Global function
+Return type: [unregistered]
+
+### urban_tax_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### urban_taxes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### urban_taxes_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### usurer
+
+Definition type: Global function
+Return type: [unregistered]
+
+### usurer_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### usurers
+
+Definition type: Global function
+Return type: [unregistered]
+
+### usurers_possessive
+
+Definition type: Global function
+Return type: [unregistered]
+
+### usurious
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### usurp
 
 Definition type: Global function
@@ -15772,6 +18607,11 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### usurped
+
+Definition type: Global function
+Return type: [unregistered]
+
+### usury
 
 Definition type: Global function
 Return type: [unregistered]
@@ -15831,7 +18671,17 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### vassal_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### vassal_limit
+
+Definition type: Global function
+Return type: [unregistered]
+
+### vassal_limit_i
 
 Definition type: Global function
 Return type: [unregistered]
@@ -16006,6 +18856,16 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### voting_session
+
+Definition type: Global function
+Return type: [unregistered]
+
+### voting_sessions
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### voting_strength
 
 Definition type: Global function
@@ -16131,22 +18991,12 @@ Return type: [unregistered]
 Definition type: Global function
 Return type: [unregistered]
 
+### weak_hook_i
+
+Definition type: Global function
+Return type: [unregistered]
+
 ### weak_hooks
-
-Definition type: Global function
-Return type: [unregistered]
-
-### wedding_banquet
-
-Definition type: Global function
-Return type: [unregistered]
-
-### wedding_ceremony
-
-Definition type: Global function
-Return type: [unregistered]
-
-### wedding_night
 
 Definition type: Global function
 Return type: [unregistered]
@@ -16192,6 +19042,36 @@ Definition type: Global function
 Return type: [unregistered]
 
 ### withering_mind_mitigation
+
+Definition type: Global function
+Return type: [unregistered]
+
+### woodland_income
+
+Definition type: Global function
+Return type: [unregistered]
+
+### woodland_incomes
+
+Definition type: Global function
+Return type: [unregistered]
+
+### woodland_tax
+
+Definition type: Global function
+Return type: [unregistered]
+
+### woodland_tax_i
+
+Definition type: Global function
+Return type: [unregistered]
+
+### woodland_tax_short
+
+Definition type: Global function
+Return type: [unregistered]
+
+### woodland_taxes
 
 Definition type: Global function
 Return type: [unregistered]
@@ -16666,6 +19546,12 @@ Macro replacement: JoinText( Localize( 'double_line_break' ), Relation.GetDescri
 Description: Get the tooltip for the scripted relation between owner and target
 Definition type: Global macro
 
+### GetSuzerainRelationship( Character )
+
+Macro replacement: SelectLocalization( IsLandlessMerchant( Character ), 'PATRON', 'SUZERAIN' )
+Description: Get the right type of suzerain relationship
+Definition type: Global macro
+
 ### GetTargetCharacterPtV( Target )
 
 Macro replacement: Target.MakeScope.Var( 'progress_to_victory' ).GetValue
@@ -16706,6 +19592,12 @@ Definition type: Global macro
 
 Macro replacement: GetScriptedGui( 'tgp_has_access_to_ministry_trigger_gui' ).IsValid( GuiScope.AddScope( 'owner', ScopeCharacter.MakeScope ).End )
 Description: Has the character failed the Children examination?
+Definition type: Global macro
+
+### HasEmptyActiveEffects( TradeGoodCategory )
+
+Macro replacement: StringIsEmpty( TradeGoodCategory.GetTradeGoodCategoryActiveEffectsDesc( Character.Self ) )
+Description: Does the trade good category not have an active effects description?
 Definition type: Global macro
 
 ### HasFailedChildrenExamination( ScopeCharacter )
@@ -16894,6 +19786,18 @@ Macro replacement: TargetCharacter.GetGovernment.IsType( 'landless_adventurer_go
 Description: Is the character a Landless Adventurer?
 Definition type: Global macro
 
+### IsLandlessAdventurerOrMerchant( TargetCharacter )
+
+Macro replacement: Or( TargetCharacter.GetGovernment.IsType( 'landless_adventurer_government' ), TargetCharacter.GetGovernment.IsType( 'merchant_government' ) )
+Description: Is the character a Landless Adventurer or Merchant?
+Definition type: Global macro
+
+### IsLandlessMerchant( TargetCharacter )
+
+Macro replacement: TargetCharacter.GetGovernment.IsType( 'merchant_government' )
+Description: Is the character a Landless Merchant?
+Definition type: Global macro
+
 ### IsMartialContest
 
 Macro replacement: Nor3( IsContestType( 'tournament_phase_board_game' ), IsContestType( 'tournament_phase_recital' ), IsContestType( 'tournament_phase_horse_race' ) )
@@ -16928,6 +19832,12 @@ Definition type: Global macro
 
 Macro replacement: AddLocalizationIf( EqualTo_CFixedPoint( GetPlayer.MakeScope.Var(SetVariable).GetValue, '(CFixedPoint)0' ), 'coronation_value_still_undecided' )
 Description: Checks if the current Oath taken still has its value decided or not
+Definition type: Global macro
+
+### IsPatrician( TargetCharacter )
+
+Macro replacement: And( TargetCharacter.GetGovernment.IsType( 'republic_government' ), Not( TargetCharacter.IsLandedRuler ) )
+Description: Is the character a landless Republican Character?
 Definition type: Global macro
 
 ### IsPlayerAvailableToCompeteMartial
@@ -16972,6 +19882,18 @@ Macro replacement: ObjectsEqual( GetPlayer.GetRite.Self, Rite.Self )
 Description: Is this player rite?
 Definition type: Global macro
 
+### IsRepublican( TargetCharacter )
+
+Macro replacement: TargetCharacter.GetGovernment.IsType( 'republic_government' )
+Description: Is the character a Republican Character?
+Definition type: Global macro
+
+### IsRevokeTollInteraction
+
+Macro replacement: ObjectsEqual( CharacterInteractionConfirmationWindow.GetInteraction.Self, GetCharacterInteraction( 'revoke_toll_exception_interaction' ).Self )
+Description: Is this interaction Revoke Toll Exception?
+Definition type: Global macro
+
 ### IsSelectedTaxObligation( Obligation )
 
 Macro replacement: ObjectsEqual( TaxSlotObligationsWindow.GetSelectedObligation, Obligation )
@@ -16988,6 +19910,12 @@ Definition type: Global macro
 
 Macro replacement: VariableSystem.HasValue( 'activity_locale_view', ViewVariable )
 Description: Is the specified view being displayed
+Definition type: Global macro
+
+### IsTradeGoodCategoryActive( TradeGoodCategory )
+
+Macro replacement: Or( GreaterThan_int32( TradeGoodCategory.GetTradeGoodCategoryLevel( Character.Self ), '(int32)0' ), TradeGoodCategory.IsActivelyTradedGood( Character.Self ) )
+Description: Has the trade good a positive category level?
 Definition type: Global macro
 
 ### IsUsingTenetPopularity( Faith )
@@ -17038,6 +19966,18 @@ Macro replacement: LessThan_CFixedPoint(Value, '(CFixedPoint)0')
 Description: Tests if a CFixedPoint is less than zero or not
 Definition type: Global macro
 
+### MaaProvinceStatAlpha( Stat )
+
+Macro replacement: Select_float(NotEqualTo_CFixedPoint(MenAtArmsType.GetProvinceStat( GetPlayer, Province.Self, Title.Self, Stat ),'(CFixedPoint)0'), '(float)1.0','(float)0.4')
+Description: Alpha blend logic for province (location) stat icons in window_menatarms.gui
+Definition type: Global macro
+
+### MaaStatAlpha( Stat )
+
+Macro replacement: Select_float(NotEqualTo_CFixedPoint(MenAtArmsType.GetStat( GetPlayer, Province.Self, Title.Self, Stat ),'(CFixedPoint)0'), '(float)1.0','(float)0.4')
+Description: Alpha blend logic for other MaA stat icons in window_menatarms_type_view.gui
+Definition type: Global macro
+
 ### MakeLineIf( Condition, LocKey )
 
 Macro replacement: ConcatIfNeitherEmpty(AddLocalizationIf(Condition, LocKey), Localize( 'NEWLINE' ))
@@ -17048,6 +19988,24 @@ Definition type: Global macro
 
 Macro replacement: ConcatIfNeitherEmpty(AddLocalizationIf(Condition, LocKey), Localize( 'DOUBLE_NEWLINE' ))
 Description: Add a loc key with a double trailing newline if a condition is satisfied
+Definition type: Global macro
+
+### MerchantHasAnyCharter( Character )
+
+Macro replacement: GetScriptedGui( 'merchant_has_any_charter_gui' ).IsValid( GuiScope.SetRoot( Character.MakeScope ).End )
+Description: Does the merchant have any patron charter artifact?
+Definition type: Global macro
+
+### MerchantHasCharterFromPatron( Character )
+
+Macro replacement: GetScriptedGui( 'merchant_has_charter_from_patron_gui' ).IsValid( GuiScope.SetRoot( Character.MakeScope ).End )
+Description: Does the merchant have a charter from their current suzerain (patron)?
+Definition type: Global macro
+
+### MerchantHasCharterFromScopePatron( Character, PatronCharacter )
+
+Macro replacement: GetScriptedGui( 'merchant_has_charter_from_scope_patron_gui' ).IsValid( GuiScope.SetRoot( Character.MakeScope ).AddScope( 'patron', PatronCharacter.MakeScope ).End )
+Description: Does the merchant have a charter from PatronCharacter?
 Definition type: Global macro
 
 ### Negate( Value )
@@ -17178,7 +20136,7 @@ Definition type: Global macro
 
 ### ProvincialLawCharacter( TargetCharacter )
 
-Macro replacement: Or( TargetCharacter.GetGovernment.IsType( 'administrative_government' ), TargetCharacter.GetGovernment.IsType( 'celestial_government' ) )
+Macro replacement: TargetCharacter.GetGovernment.HasGovernmentFlag( 'government_has_provincial_law' )
 Description: Does the character have provincial laws?
 Definition type: Global macro
 
@@ -18343,6 +21301,11 @@ Definition type: Type
 Definition type: Promote
 Return type: Character
 
+### ActiveCouncilTask.GetCouncillorOrCourtOwner
+
+Definition type: Promote
+Return type: Character
+
 ### ActiveCouncilTask.GetCourtOwner
 
 Definition type: Promote
@@ -18414,6 +21377,11 @@ Definition type: Function
 Return type: bool
 
 ### ActiveCouncilTask.GetCouncillor
+
+Definition type: Function
+Return type: [unregistered]
+
+### ActiveCouncilTask.GetCouncillorOrCourtOwner
 
 Definition type: Function
 Return type: [unregistered]
@@ -24831,6 +27799,64 @@ Return type: CString
 Definition type: Function
 Return type: [unregistered]
 
+### AssemblyItem
+
+Definition type: Type
+
+### AssemblyItem.GetMember
+
+Definition type: Promote
+Return type: Character
+
+### AssemblyItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### AssemblyItem.GetMember
+
+Definition type: Function
+Return type: [unregistered]
+
+### AssemblyItem.IsMajorMember
+
+Definition type: Function
+Return type: bool
+
+### AssemblyItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### AssemblyWindow
+
+Definition type: Type
+
+### AssemblyWindow.GetRepublicWindow
+
+Definition type: Promote
+Return type: GovernmentRepublicWindow
+
+### AssemblyWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### AssemblyWindow.Close
+
+Definition type: Function
+Return type: void
+
+### AssemblyWindow.GetRepublicWindow
+
+Definition type: Function
+Return type: [unregistered]
+
+### AssemblyWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### AssetSettings
 
 Definition type: Type
@@ -26713,6 +29739,295 @@ Return type: void
 Definition type: Function
 Return type: void
 
+### BeneficiaryCharacterList
+
+Definition type: Type
+
+### BeneficiaryCharacterList.GetCategory( Arg0 )
+
+Definition type: Promote
+Return type: CharacterListFilterCategory
+
+### BeneficiaryCharacterList.GetCompetitivenessTooltip( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### BeneficiaryCharacterList.GetFilter( Arg0 )
+
+Definition type: Promote
+Return type: CharacterListFilter
+
+### BeneficiaryCharacterList.GetFilterWithDefault( Arg0, Arg1 )
+
+Definition type: Promote
+Return type: CharacterListFilter
+
+### BeneficiaryCharacterList.GetMatchingFilterPreset
+
+Definition type: Promote
+Return type: CharacterFilterPreset
+
+### BeneficiaryCharacterList.GetSelectedPreset
+
+Definition type: Promote
+Return type: CharacterFilterPreset
+
+### BeneficiaryCharacterList.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.ApplyFiltersSort
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.CanSavePreset
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.CanSavePresetTooltip
+
+Definition type: Function
+Return type: CString
+
+### BeneficiaryCharacterList.ClearPattern
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.DeleteFilterPreset( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.DeleteSelectedPreset
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.FiltersShown
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.FinishEdit
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.GetApplyFilterPresetTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### BeneficiaryCharacterList.GetCategory( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.GetCompetitivenessTooltip( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.GetFilter( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.GetFilterCategories
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.GetFilterPresetName
+
+Definition type: Function
+Return type: CString
+
+### BeneficiaryCharacterList.GetFilterWithDefault( Arg0, Arg1 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.GetList
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.GetMatchedPatterns
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.GetMatchingFilterPreset
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.GetOpenLoadFilterWarning
+
+Definition type: Function
+Return type: CString
+
+### BeneficiaryCharacterList.GetSavePresetWarning
+
+Definition type: Function
+Return type: CString
+
+### BeneficiaryCharacterList.GetSavedFilterPresets
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.GetSelectedPreset
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.GetSelectedPresetIndex
+
+Definition type: Function
+Return type: CVector2i
+
+### BeneficiaryCharacterList.GetSortOrder
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.GetTotalNumber
+
+Definition type: Function
+Return type: int32
+
+### BeneficiaryCharacterList.GetUnsaveableFiltersWarning
+
+Definition type: Function
+Return type: CString
+
+### BeneficiaryCharacterList.HasFilterPresets
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.HasItems
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.HasMatchingFilterPreset
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.HasOnlyInapplicableFilters
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.HasSelectedPreset
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.HasTextInEdit
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.HideFilterPresets
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.IsAllDefault
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.IsBuildingList
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.IsFilterPresetsShown
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.IsSortingBySkill( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.IsSuggesting
+
+Definition type: Function
+Return type: bool
+
+### BeneficiaryCharacterList.NumberOfShownCharacters
+
+Definition type: Function
+Return type: int32
+
+### BeneficiaryCharacterList.OnFilterPresetNameEdit
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.OnResetFilters
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.OnToggleFilters
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.RevertSortOrder
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.SaveFiltersToPreset
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.SelectPresetIndex
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### BeneficiaryCharacterList.SetPattern
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.SetSavePresetName( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.ShowFilterPresets
+
+Definition type: Function
+Return type: void
+
+### BeneficiaryCharacterList.SortBySkill( Arg0 )
+
+Definition type: Function
+Return type: void
+
 ### BlackmailInteractionWindow
 
 Definition type: Type
@@ -27166,99 +30481,137 @@ Return type: [unregistered]
 Definition type: Function
 Return type: Command
 
+### BuildQueueReserveItem
+
+Definition type: Type
+
+### BuildQueueReserveItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildQueueReserveItem.GetCategoryName
+
+Definition type: Function
+Return type: CString
+
+### BuildQueueReserveItem.GetValue
+
+Definition type: Function
+Return type: CFixedPoint
+
+### BuildQueueReserveItem.IsAmountReserved( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### BuildQueueReserveItem.OnValueChangeButtonClick( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### BuildQueueReserveItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildQueueWindow
+
+Definition type: Type
+
+### BuildQueueWindow.AccessReserves
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildQueueWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildQueueWindow.Close
+
+Definition type: Function
+Return type: void
+
+### BuildQueueWindow.GetActiveConstructionItems
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildQueueWindow.GetItems
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildQueueWindow.GetQueuedItems
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildQueueWindow.GetReserves
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildQueueWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### Building
 
 Definition type: Type
+
+### Building.GetBuildingConstructor
+
+Definition type: Promote
+Return type: Character
+
+### Building.GetProvince
+
+Definition type: Promote
+Return type: Province
+
+### Building.GetType
+
+Definition type: Promote
+Return type: BuildingType
+
+### Building.MakeScope
+
+Definition type: Promote
+Return type: Scope
 
 ### Building.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
 
-### Building.GetBaseCostDescription( Arg0 )
+### Building.Custom( Arg0 )
 
 Definition type: Function
 Return type: CString
 
-### Building.GetDescKey
-
-Definition type: Function
-Return type: CString
-
-### Building.GetDescription
-
-Definition type: Function
-Return type: CString
-
-### Building.GetEffectDescription( Arg0 )
-
-Definition type: Function
-Return type: CString
-
-### Building.GetEffectDescriptionAtProvince( Arg0, Arg1 )
-
-Definition type: Function
-Return type: CString
-
-### Building.GetIcon
+### Building.GetBuildingConstructor
 
 Definition type: Function
 Return type: [unregistered]
-
-### Building.GetIllustration( Arg0 )
-
-Definition type: Function
-Return type: [unregistered]
-
-### Building.GetKey
-
-Definition type: Function
-Return type: CString
-
-### Building.GetLevel
-
-Definition type: Function
-Return type: int32
 
 ### Building.GetName
 
 Definition type: Function
 Return type: CString
 
-### Building.GetNameNoTooltip
-
-Definition type: Function
-Return type: CString
-
-### Building.GetRebuildCostDescription( Arg0 )
-
-Definition type: Function
-Return type: CString
-
-### Building.GetTypeDescription
-
-Definition type: Function
-Return type: CString
-
-### Building.GetTypeIcon
+### Building.GetProvince
 
 Definition type: Function
 Return type: [unregistered]
 
-### Building.GetTypeName
-
-Definition type: Function
-Return type: CString
-
-### Building.HasIcon
+### Building.GetType
 
 Definition type: Function
 Return type: [unregistered]
-
-### Building.IsValid
-
-Definition type: Function
-Return type: bool
 
 ### Building.Self
 
@@ -27272,7 +30625,7 @@ Definition type: Type
 ### BuildingLevelItem.GetBuilding
 
 Definition type: Promote
-Return type: Building
+Return type: BuildingType
 
 ### BuildingLevelItem.AccessSelf
 
@@ -27284,7 +30637,7 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
-### BuildingLevelItem.GetTooltip
+### BuildingLevelItem.GetTooltip( Arg0 )
 
 Definition type: Function
 Return type: CString
@@ -27300,6 +30653,159 @@ Definition type: Function
 Return type: void
 
 ### BuildingLevelItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildingNeedChecklistSlot
+
+Definition type: Type
+
+### BuildingNeedChecklistSlot.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildingNeedChecklistSlot.IsFilled
+
+Definition type: Function
+Return type: bool
+
+### BuildingNeedChecklistSlot.IsUnfilled
+
+Definition type: Function
+Return type: bool
+
+### BuildingNeedChecklistSlot.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildingType
+
+Definition type: Type
+
+### BuildingType.MakeScope
+
+Definition type: Promote
+Return type: Scope
+
+### BuildingType.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildingType.CalcTriggeredName( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.CalcTriggeredNameNoTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.Custom( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetBaseCostDescription( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetDescKey
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetDescription
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetEffectDescription( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetEffectDescriptionAtProvince( Arg0, Arg1 )
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetEffectDescriptionAtProvinceWithoutNeeds( Arg0, Arg1 )
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetEffectDescriptionWithoutNeeds( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildingType.GetKey
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetLevel
+
+Definition type: Function
+Return type: int32
+
+### BuildingType.GetName
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetNameNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetNeeds
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildingType.GetNeedsAtProvince( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildingType.GetTypeDescription
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.GetTypeIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildingType.GetTypeName
+
+Definition type: Function
+Return type: CString
+
+### BuildingType.HasIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### BuildingType.IsValid
+
+Definition type: Function
+Return type: bool
+
+### BuildingType.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -28257,6 +31763,11 @@ Return type: CString
 Definition type: Function
 Return type: [unregistered]
 
+### CasusBelliType.GetKey
+
+Definition type: Function
+Return type: CString
+
 ### CasusBelliType.GetName
 
 Definition type: Function
@@ -28752,6 +32263,16 @@ Return type: Date
 Definition type: Promote
 Return type: Province
 
+### Character.GetCeremonialLiege
+
+Definition type: Promote
+Return type: Character
+
+### Character.GetCeremonialLiegeTitle
+
+Definition type: Promote
+Return type: Title
+
 ### Character.GetChallenger
 
 Definition type: Promote
@@ -28776,6 +32297,11 @@ Return type: Character
 
 Definition type: Promote
 Return type: Army
+
+### Character.GetCompetitivenessTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
 
 ### Character.GetConcubinist
 
@@ -28927,6 +32453,16 @@ Return type: GovernmentType
 Definition type: Promote
 Return type: CourtPosition
 
+### Character.GetHighestTradeGoodCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### Character.GetHighestWithGovernmentRule( Arg0 )
+
+Definition type: Promote
+Return type: Character
+
 ### Character.GetHomeCourt
 
 Definition type: Promote
@@ -28997,6 +32533,11 @@ Return type: Army
 Definition type: Promote
 Return type: Date
 
+### Character.GetLawProposerOrPlayer
+
+Definition type: Promote
+Return type: Character
+
 ### Character.GetLegitimacyLevel
 
 Definition type: Promote
@@ -29026,6 +32567,11 @@ Return type: Title
 
 Definition type: Promote
 Return type: Lifestyle
+
+### Character.GetMonthlyAcumenBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
 
 ### Character.GetMonthlyLegitimacyTooltip
 
@@ -29122,6 +32668,11 @@ Return type: Character
 Definition type: Promote
 Return type: Character
 
+### Character.GetRealmTermEndDate
+
+Definition type: Promote
+Return type: Date
+
 ### Character.GetRelationOfType( Arg0 )
 
 Definition type: Promote
@@ -29207,10 +32758,20 @@ Return type: Character
 Definition type: Promote
 Return type: Character
 
+### Character.GetTheocraticLesseeBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
 ### Character.GetTopLiege
 
 Definition type: Promote
 Return type: Character
+
+### Character.GetTradeMarketForMerchant
+
+Definition type: Promote
+Return type: TradeMarket
 
 ### Character.GetTraitFromGroup( Arg0 )
 
@@ -29317,6 +32878,11 @@ Return type: CFixedPoint
 Definition type: Function
 Return type: [unregistered]
 
+### Character.CanAcceptCommissionRoutes
+
+Definition type: Function
+Return type: bool
+
 ### Character.CanAdoptCourtLanguage( Arg0 )
 
 Definition type: Function
@@ -29347,6 +32913,11 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### Character.CanCreateProfitTradeRoutes
+
+Definition type: Function
+Return type: bool
+
 ### Character.CanCreateTriggeredLegend( Arg0 )
 
 Definition type: Function
@@ -29372,7 +32943,17 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### Character.CanIssueCommissionRoutes
+
+Definition type: Function
+Return type: bool
+
 ### Character.CanOpenDecision( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### Character.CanOwnTradePosts
 
 Definition type: Function
 Return type: bool
@@ -29587,6 +33168,11 @@ Return type: CString
 Definition type: Function
 Return type: CString
 
+### Character.GetAiLawApprovalDesc( Arg0 )
+
+Definition type: Function
+Return type: CString
+
 ### Character.GetAnimatedPortrait( Arg0, Arg1, Arg2, Arg3 )
 
 Definition type: Function
@@ -29607,20 +33193,10 @@ Return type: CString
 Definition type: Function
 Return type: CString
 
-### Character.GetApprovalReasons
-
-Definition type: Function
-Return type: CString
-
 ### Character.GetAssignedTaxSlot
 
 Definition type: Function
 Return type: [unregistered]
-
-### Character.GetAverageDevelopment
-
-Definition type: Function
-Return type: CFixedPoint
 
 ### Character.GetAveragePowerfulVassalLegitimacyExpectation
 
@@ -29662,6 +33238,11 @@ Return type: CString
 Definition type: Function
 Return type: CString
 
+### Character.GetBaseCompetitiveness
+
+Definition type: Function
+Return type: CFixedPoint
+
 ### Character.GetBaseWeight
 
 Definition type: Function
@@ -29681,6 +33262,11 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: [unregistered]
+
+### Character.GetBuildQueueLength
+
+Definition type: Function
+Return type: int32
 
 ### Character.GetCanAdoptCourtLanguageText( Arg0 )
 
@@ -29716,6 +33302,16 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CString
+
+### Character.GetCeremonialLiege
+
+Definition type: Function
+Return type: [unregistered]
+
+### Character.GetCeremonialLiegeTitle
+
+Definition type: Function
+Return type: [unregistered]
 
 ### Character.GetChallenger
 
@@ -29918,6 +33514,16 @@ Definition type: Function
 Return type: CString
 
 ### Character.GetCommandingArmy
+
+Definition type: Function
+Return type: [unregistered]
+
+### Character.GetCompetitiveness
+
+Definition type: Function
+Return type: CFixedPoint
+
+### Character.GetCompetitivenessTooltip
 
 Definition type: Function
 Return type: [unregistered]
@@ -30212,6 +33818,16 @@ Return type: [unregistered]
 Definition type: Function
 Return type: CFixedPoint
 
+### Character.GetCurrentCommissionRouteCount
+
+Definition type: Function
+Return type: int32
+
+### Character.GetCurrentDistributionRouteCount
+
+Definition type: Function
+Return type: int32
+
 ### Character.GetCurrentDomainFertility
 
 Definition type: Function
@@ -30222,12 +33838,27 @@ Return type: int32
 Definition type: Function
 Return type: [unregistered]
 
+### Character.GetCurrentIssuedCommissionRouteCount
+
+Definition type: Function
+Return type: int32
+
 ### Character.GetCurrentLocation
 
 Definition type: Function
 Return type: [unregistered]
 
 ### Character.GetCurrentMilitaryStrength
+
+Definition type: Function
+Return type: int32
+
+### Character.GetCurrentProfitRouteCount
+
+Definition type: Function
+Return type: int32
+
+### Character.GetCurrentTradeRouteCount
 
 Definition type: Function
 Return type: int32
@@ -30912,6 +34543,11 @@ Return type: CString
 Definition type: Function
 Return type: [unregistered]
 
+### Character.GetGovernorEfficiencyBreakdown
+
+Definition type: Function
+Return type: CString
+
 ### Character.GetHealth
 
 Definition type: Function
@@ -30991,6 +34627,16 @@ Return type: CString
 
 Definition type: Function
 Return type: CString
+
+### Character.GetHighestTradeGoodCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### Character.GetHighestWithGovernmentRule( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
 
 ### Character.GetHistoryId
 
@@ -31197,6 +34843,11 @@ Return type: CString
 Definition type: Function
 Return type: [unregistered]
 
+### Character.GetLawProposerOrPlayer
+
+Definition type: Function
+Return type: [unregistered]
+
 ### Character.GetLegendSeeds
 
 Definition type: Function
@@ -31287,7 +34938,17 @@ Return type: int32
 Definition type: Function
 Return type: CString
 
+### Character.GetMaxCommissionRouteCount
+
+Definition type: Function
+Return type: int32
+
 ### Character.GetMaxConsorts
+
+Definition type: Function
+Return type: int32
+
+### Character.GetMaxDistributionRouteCount
 
 Definition type: Function
 Return type: int32
@@ -31322,12 +34983,27 @@ Return type: int32
 Definition type: Function
 Return type: int32
 
+### Character.GetMaxProfitRouteCount
+
+Definition type: Function
+Return type: int32
+
 ### Character.GetMaxSpouses
 
 Definition type: Function
 Return type: int32
 
 ### Character.GetMaxTaxSlotsCount
+
+Definition type: Function
+Return type: int32
+
+### Character.GetMaxTradePosts
+
+Definition type: Function
+Return type: int32
+
+### Character.GetMaxTradeRouteCount
 
 Definition type: Function
 Return type: int32
@@ -31341,6 +35017,16 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: int32
+
+### Character.GetMercenaryLimit
+
+Definition type: Function
+Return type: int32
+
+### Character.GetMercenaryLimitTooltip
+
+Definition type: Function
+Return type: CString
 
 ### Character.GetMerit
 
@@ -31401,6 +35087,16 @@ Return type: CString
 
 Definition type: Function
 Return type: CString
+
+### Character.GetModifierValue( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### Character.GetMonthlyAcumen
+
+Definition type: Function
+Return type: CFixedPoint
 
 ### Character.GetMonthlyLegitimacy
 
@@ -31637,12 +35333,12 @@ Return type: int32
 Definition type: Function
 Return type: int32
 
-### Character.GetNumVassalsTowardsLimit
+### Character.GetNumTradePosts
 
 Definition type: Function
 Return type: int32
 
-### Character.GetNumberOfBuildings
+### Character.GetNumVassalsTowardsLimit
 
 Definition type: Function
 Return type: int32
@@ -31877,6 +35573,11 @@ Return type: CString
 Definition type: Function
 Return type: CString
 
+### Character.GetPlayerInteractionWithTargetDistrictTooltip( Arg0, Arg1 )
+
+Definition type: Function
+Return type: CString
+
 ### Character.GetPlayerInteractionWithTargetSecretTooltip( Arg0, Arg1 )
 
 Definition type: Function
@@ -32046,6 +35747,16 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CString
+
+### Character.GetRealmTermEndDate
+
+Definition type: Function
+Return type: [unregistered]
+
+### Character.GetRealmTermProgressPercent
+
+Definition type: Function
+Return type: int32
 
 ### Character.GetRelationAndGuestDesc
 
@@ -32351,6 +36062,11 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CString
+
+### Character.GetTheocraticLesseeBreakdown
+
+Definition type: Function
+Return type: [unregistered]
 
 ### Character.GetTheocraticRulerIncomeRules
 
@@ -32952,6 +36668,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: CFixedPoint
 
+### Character.GetTotalMercenaryCount
+
+Definition type: Function
+Return type: int32
+
 ### Character.GetTotalMerit
 
 Definition type: Function
@@ -32966,6 +36687,21 @@ Return type: int32
 
 Definition type: Function
 Return type: int32
+
+### Character.GetTradePostLimitBreakdown
+
+Definition type: Function
+Return type: CString
+
+### Character.GetTradePosts
+
+Definition type: Function
+Return type: [unregistered]
+
+### Character.GetTradeRoutes
+
+Definition type: Function
+Return type: [unregistered]
 
 ### Character.GetTraitFromGroup( Arg0 )
 
@@ -33457,7 +37193,22 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### Character.HasClericalElectorTitle
+
+Definition type: Function
+Return type: bool
+
+### Character.HasClericalRegion
+
+Definition type: Function
+Return type: bool
+
 ### Character.HasCompanionAI
+
+Definition type: Function
+Return type: bool
+
+### Character.HasCompanyTitle
 
 Definition type: Function
 Return type: bool
@@ -33632,6 +37383,11 @@ Return type: bool
 Definition type: Function
 Return type: [unregistered]
 
+### Character.HasRealmTermEndDate
+
+Definition type: Function
+Return type: bool
+
 ### Character.HasRegnalName
 
 Definition type: Function
@@ -33752,6 +37508,11 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### Character.IsAtMercenaryLimit
+
+Definition type: Function
+Return type: bool
+
 ### Character.IsAtWar
 
 Definition type: Function
@@ -33863,11 +37624,6 @@ Definition type: Function
 Return type: bool
 
 ### Character.IsFounderOfDynasty
-
-Definition type: Function
-Return type: bool
-
-### Character.IsGovernor
 
 Definition type: Function
 Return type: bool
@@ -33987,6 +37743,11 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### Character.IsMerchant
+
+Definition type: Function
+Return type: bool
+
 ### Character.IsMeritCapped
 
 Definition type: Function
@@ -34003,11 +37764,6 @@ Definition type: Function
 Return type: bool
 
 ### Character.IsObscured
-
-Definition type: Function
-Return type: bool
-
-### Character.IsOpposing
 
 Definition type: Function
 Return type: bool
@@ -34058,6 +37814,11 @@ Definition type: Function
 Return type: bool
 
 ### Character.IsPlayerInteractionWithTargetCharacterValid( Arg0, Arg1 )
+
+Definition type: Function
+Return type: bool
+
+### Character.IsPlayerInteractionWithTargetDistrictValid( Arg0, Arg1 )
 
 Definition type: Function
 Return type: bool
@@ -34133,6 +37894,11 @@ Definition type: Function
 Return type: bool
 
 ### Character.IsTheocraticLesseeOf( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### Character.IsTrader
 
 Definition type: Function
 Return type: bool
@@ -34213,6 +37979,11 @@ Definition type: Function
 Return type: void
 
 ### Character.OpenPlayerInteractionWithTargetCharacter( Arg0, Arg1 )
+
+Definition type: Function
+Return type: void
+
+### Character.OpenPlayerInteractionWithTargetDistrict( Arg0, Arg1 )
 
 Definition type: Function
 Return type: void
@@ -34386,6 +38157,11 @@ Return type: bool
 
 Definition type: Function
 Return type: [unregistered]
+
+### Character.UsesBuildQueue
+
+Definition type: Function
+Return type: bool
 
 ### Character.UsesObedience
 
@@ -34751,6 +38527,11 @@ Return type: Character
 Definition type: Promote
 Return type: Artifact
 
+### CharacterInteractionConfirmationWindow.GetSelectedDistrict
+
+Definition type: Promote
+Return type: District
+
 ### CharacterInteractionConfirmationWindow.GetSelectedMaa
 
 Definition type: Promote
@@ -34760,6 +38541,26 @@ Return type: Regiment
 
 Definition type: Promote
 Return type: Title
+
+### CharacterInteractionConfirmationWindow.GetSelectedTollLevel
+
+Definition type: Promote
+Return type: TollLevel
+
+### CharacterInteractionConfirmationWindow.GetSelectedTradeGoodCategoryType
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### CharacterInteractionConfirmationWindow.GetSelectedTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### CharacterInteractionConfirmationWindow.GetSelectedTradeMarket
+
+Definition type: Promote
+Return type: TradeMarket
 
 ### CharacterInteractionConfirmationWindow.GetTopCharacterItem
 
@@ -34906,6 +38707,11 @@ Return type: CString
 Definition type: Function
 Return type: CString
 
+### CharacterInteractionConfirmationWindow.GetDistricts
+
+Definition type: Function
+Return type: [unregistered]
+
 ### CharacterInteractionConfirmationWindow.GetEffectsDescription
 
 Definition type: Function
@@ -34996,12 +38802,37 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### CharacterInteractionConfirmationWindow.GetSelectedDistrict
+
+Definition type: Function
+Return type: [unregistered]
+
 ### CharacterInteractionConfirmationWindow.GetSelectedMaa
 
 Definition type: Function
 Return type: [unregistered]
 
 ### CharacterInteractionConfirmationWindow.GetSelectedTitle
+
+Definition type: Function
+Return type: [unregistered]
+
+### CharacterInteractionConfirmationWindow.GetSelectedTollLevel
+
+Definition type: Function
+Return type: [unregistered]
+
+### CharacterInteractionConfirmationWindow.GetSelectedTradeGoodCategoryType
+
+Definition type: Function
+Return type: [unregistered]
+
+### CharacterInteractionConfirmationWindow.GetSelectedTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### CharacterInteractionConfirmationWindow.GetSelectedTradeMarket
 
 Definition type: Function
 Return type: [unregistered]
@@ -35022,6 +38853,21 @@ Definition type: Function
 Return type: [unregistered]
 
 ### CharacterInteractionConfirmationWindow.GetTopCharacterItem
+
+Definition type: Function
+Return type: [unregistered]
+
+### CharacterInteractionConfirmationWindow.GetTradeGoodCategoryTypes
+
+Definition type: Function
+Return type: [unregistered]
+
+### CharacterInteractionConfirmationWindow.GetTradeGoodTypes
+
+Definition type: Function
+Return type: [unregistered]
+
+### CharacterInteractionConfirmationWindow.GetTradeMarkets
 
 Definition type: Function
 Return type: [unregistered]
@@ -35066,12 +38912,37 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### CharacterInteractionConfirmationWindow.HasSelectedDistrict
+
+Definition type: Function
+Return type: bool
+
 ### CharacterInteractionConfirmationWindow.HasSelectedMaa
 
 Definition type: Function
 Return type: bool
 
 ### CharacterInteractionConfirmationWindow.HasSelectedTitle
+
+Definition type: Function
+Return type: bool
+
+### CharacterInteractionConfirmationWindow.HasSelectedTollLevel
+
+Definition type: Function
+Return type: bool
+
+### CharacterInteractionConfirmationWindow.HasSelectedTradeGoodCategoryType
+
+Definition type: Function
+Return type: bool
+
+### CharacterInteractionConfirmationWindow.HasSelectedTradeGoodType
+
+Definition type: Function
+Return type: bool
+
+### CharacterInteractionConfirmationWindow.HasSelectedTradeMarket
 
 Definition type: Function
 Return type: bool
@@ -35156,7 +39027,32 @@ Return type: bool
 Definition type: Function
 Return type: void
 
+### CharacterInteractionConfirmationWindow.SetSelectedDistrict( Arg0 )
+
+Definition type: Function
+Return type: void
+
 ### CharacterInteractionConfirmationWindow.SetSelectedMaa( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### CharacterInteractionConfirmationWindow.SetSelectedTollLevel( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### CharacterInteractionConfirmationWindow.SetSelectedTradeGoodCategoryType( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### CharacterInteractionConfirmationWindow.SetSelectedTradeGoodType( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### CharacterInteractionConfirmationWindow.SetSelectedTradeMarket( Arg0 )
 
 Definition type: Function
 Return type: void
@@ -35206,12 +39102,32 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### CharacterInteractionConfirmationWindow.UsesDistrictTarget
+
+Definition type: Function
+Return type: bool
+
 ### CharacterInteractionConfirmationWindow.UsesMaaTarget
 
 Definition type: Function
 Return type: bool
 
 ### CharacterInteractionConfirmationWindow.UsesTitleTarget
+
+Definition type: Function
+Return type: bool
+
+### CharacterInteractionConfirmationWindow.UsesTradeGoodCategoryTypeTarget
+
+Definition type: Function
+Return type: bool
+
+### CharacterInteractionConfirmationWindow.UsesTradeGoodTypeTarget
+
+Definition type: Function
+Return type: bool
+
+### CharacterInteractionConfirmationWindow.UsesTradeMarketTarget
 
 Definition type: Function
 Return type: bool
@@ -35240,7 +39156,7 @@ Return type: PuppetType
 Definition type: Function
 Return type: [unregistered]
 
-### CharacterInteractionMenuWindow.AreMoreInteractionsVisisble
+### CharacterInteractionMenuWindow.AreMoreInteractionsVisible
 
 Definition type: Function
 Return type: bool
@@ -37128,6 +41044,310 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: [unregistered]
+
+### ClientCharacterList
+
+Definition type: Type
+
+### ClientCharacterList.AccessCharacterList
+
+Definition type: Promote
+Return type: CharacterSelectionList
+
+### ClientCharacterList.GetCategory( Arg0 )
+
+Definition type: Promote
+Return type: CharacterListFilterCategory
+
+### ClientCharacterList.GetFilter( Arg0 )
+
+Definition type: Promote
+Return type: CharacterListFilter
+
+### ClientCharacterList.GetFilterWithDefault( Arg0, Arg1 )
+
+Definition type: Promote
+Return type: CharacterListFilter
+
+### ClientCharacterList.GetMatchingFilterPreset
+
+Definition type: Promote
+Return type: CharacterFilterPreset
+
+### ClientCharacterList.GetSelectedPreset
+
+Definition type: Promote
+Return type: CharacterFilterPreset
+
+### ClientCharacterList.GetTaxBreakdown( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### ClientCharacterList.AccessCharacterList
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.ApplyFiltersSort
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.CanSavePreset
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.CanSavePresetTooltip
+
+Definition type: Function
+Return type: CString
+
+### ClientCharacterList.ClearPattern
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.DeleteFilterPreset( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.DeleteSelectedPreset
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.FiltersShown
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.FinishEdit
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.GetApplyFilterPresetTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### ClientCharacterList.GetCategory( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.GetFilter( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.GetFilterCategories
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.GetFilterPresetName
+
+Definition type: Function
+Return type: CString
+
+### ClientCharacterList.GetFilterWithDefault( Arg0, Arg1 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.GetList
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.GetMatchedPatterns
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.GetMatchingFilterPreset
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.GetOpenLoadFilterWarning
+
+Definition type: Function
+Return type: CString
+
+### ClientCharacterList.GetSavePresetWarning
+
+Definition type: Function
+Return type: CString
+
+### ClientCharacterList.GetSavedFilterPresets
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.GetSelectedPreset
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.GetSelectedPresetIndex
+
+Definition type: Function
+Return type: CVector2i
+
+### ClientCharacterList.GetSortOrder
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.GetTaxBreakdown( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.GetTaxContribution( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### ClientCharacterList.GetTotalNumber
+
+Definition type: Function
+Return type: int32
+
+### ClientCharacterList.GetUnsaveableFiltersWarning
+
+Definition type: Function
+Return type: CString
+
+### ClientCharacterList.HasFilterPresets
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.HasItems
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.HasMatchingFilterPreset
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.HasOnlyInapplicableFilters
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.HasSelectedPreset
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.HasTextInEdit
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.HideFilterPresets
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.IsAllDefault
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.IsBuildingList
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.IsFilterPresetsShown
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.IsSortingBySkill( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.IsSuggesting
+
+Definition type: Function
+Return type: bool
+
+### ClientCharacterList.NumberOfShownCharacters
+
+Definition type: Function
+Return type: int32
+
+### ClientCharacterList.OnFilterPresetNameEdit
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.OnResetFilters
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.OnToggleFilters
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.RevertSortOrder
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.SaveFiltersToPreset
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.SelectPresetIndex
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### ClientCharacterList.SetPattern
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.SetSavePresetName( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.ShowFilterPresets
+
+Definition type: Function
+Return type: void
+
+### ClientCharacterList.SortBySkill( Arg0 )
+
+Definition type: Function
+Return type: void
 
 ### CloudSaveData
 
@@ -39139,14 +43359,358 @@ Return type: void
 Definition type: Function
 Return type: [unregistered]
 
+### CompetitorsLeaderboard
+
+Definition type: Type
+
+### CompetitorsLeaderboard.AccessCharacterList
+
+Definition type: Promote
+Return type: CharacterSelectionList
+
+### CompetitorsLeaderboard.GetCategory( Arg0 )
+
+Definition type: Promote
+Return type: CharacterListFilterCategory
+
+### CompetitorsLeaderboard.GetFilter( Arg0 )
+
+Definition type: Promote
+Return type: CharacterListFilter
+
+### CompetitorsLeaderboard.GetFilterWithDefault( Arg0, Arg1 )
+
+Definition type: Promote
+Return type: CharacterListFilter
+
+### CompetitorsLeaderboard.GetMatchingFilterPreset
+
+Definition type: Promote
+Return type: CharacterFilterPreset
+
+### CompetitorsLeaderboard.GetSelectedPreset
+
+Definition type: Promote
+Return type: CharacterFilterPreset
+
+### CompetitorsLeaderboard.AccessCharacterList
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.ApplyFiltersSort
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.CanSavePreset
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.CanSavePresetTooltip
+
+Definition type: Function
+Return type: CString
+
+### CompetitorsLeaderboard.ClearPattern
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.Close
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.DeleteFilterPreset( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.DeleteSelectedPreset
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.FiltersShown
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.FinishEdit
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.GetAggregateCompetitivenessForItem( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### CompetitorsLeaderboard.GetApplyFilterPresetTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### CompetitorsLeaderboard.GetCategory( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.GetFilter( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.GetFilterCategories
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.GetFilterPresetName
+
+Definition type: Function
+Return type: CString
+
+### CompetitorsLeaderboard.GetFilterWithDefault( Arg0, Arg1 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.GetList
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.GetMatchedPatterns
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.GetMatchingFilterPreset
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.GetOpenLoadFilterWarning
+
+Definition type: Function
+Return type: CString
+
+### CompetitorsLeaderboard.GetPeakCompetitivenessDescForItem( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### CompetitorsLeaderboard.GetSavePresetWarning
+
+Definition type: Function
+Return type: CString
+
+### CompetitorsLeaderboard.GetSavedFilterPresets
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.GetSelectedPreset
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.GetSelectedPresetIndex
+
+Definition type: Function
+Return type: CVector2i
+
+### CompetitorsLeaderboard.GetSharedGoodCountForItem( Arg0 )
+
+Definition type: Function
+Return type: int32
+
+### CompetitorsLeaderboard.GetSharedGoodsListForItem( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### CompetitorsLeaderboard.GetSharedMarketCountForItem( Arg0 )
+
+Definition type: Function
+Return type: int32
+
+### CompetitorsLeaderboard.GetSharedMarketsListForItem( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### CompetitorsLeaderboard.GetSortOrder
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.GetTotalNumber
+
+Definition type: Function
+Return type: int32
+
+### CompetitorsLeaderboard.GetUnsaveableFiltersWarning
+
+Definition type: Function
+Return type: CString
+
+### CompetitorsLeaderboard.HasFilterPresets
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.HasItems
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.HasMatchingFilterPreset
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.HasOnlyInapplicableFilters
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.HasSelectedPreset
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.HasTextInEdit
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.HideFilterPresets
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.IsAllDefault
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.IsBuildingList
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.IsFilterPresetsShown
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.IsSortingBySkill( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.IsSuggesting
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.IsVisible
+
+Definition type: Function
+Return type: bool
+
+### CompetitorsLeaderboard.NumberOfShownCharacters
+
+Definition type: Function
+Return type: int32
+
+### CompetitorsLeaderboard.OnFilterPresetNameEdit
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.OnResetFilters
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.OnToggleFilters
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.RevertSortOrder
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.SaveFiltersToPreset
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.SelectPresetIndex
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### CompetitorsLeaderboard.SetPattern
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.SetSavePresetName( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.ShowFilterPresets
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.SortBySkill( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### CompetitorsLeaderboard.Toggle
+
+Definition type: Function
+Return type: void
+
 ### ComplexBar
 
 Definition type: Type
+
+### ComplexBar.GetItemAtLevel( Arg0 )
+
+Definition type: Promote
+Return type: ComplexBarItem
 
 ### ComplexBar.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
+
+### ComplexBar.GetBaselineValue
+
+Definition type: Function
+Return type: CFixedPoint
 
 ### ComplexBar.GetCurrentFilledWidth
 
@@ -39182,6 +43746,11 @@ Return type: int32
 
 Definition type: Function
 Return type: int32
+
+### ComplexBar.GetItemAtLevel( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
 
 ### ComplexBar.GetItems
 
@@ -39297,6 +43866,16 @@ Return type: int32
 Definition type: Function
 Return type: int32
 
+### ComplexBarItem.GetRangeMax
+
+Definition type: Function
+Return type: CFixedPoint
+
+### ComplexBarItem.GetRangeMin
+
+Definition type: Function
+Return type: CFixedPoint
+
 ### ComplexBarItem.GetValue
 
 Definition type: Function
@@ -39389,6 +43968,11 @@ Return type: [unregistered]
 
 Definition type: Type
 
+### Confederation.GetAspiration
+
+Definition type: Promote
+Return type: ConfederationAspiration
+
 ### Confederation.GetCohesionLevel
 
 Definition type: Promote
@@ -39403,6 +43987,11 @@ Return type: CoatOfArms
 
 Definition type: Promote
 Return type: DynastyHouse
+
+### Confederation.GetLeadingTitle
+
+Definition type: Promote
+Return type: Title
 
 ### Confederation.GetType
 
@@ -39423,6 +44012,11 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CString
+
+### Confederation.GetAspiration
+
+Definition type: Function
+Return type: [unregistered]
 
 ### Confederation.GetCohesion
 
@@ -39445,6 +44039,11 @@ Definition type: Function
 Return type: CString
 
 ### Confederation.GetCohesionPerHouse( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### Confederation.GetCohesionPerTitle( Arg0 )
 
 Definition type: Function
 Return type: CFixedPoint
@@ -39474,12 +44073,22 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### Confederation.GetLeadingTitle
+
+Definition type: Function
+Return type: [unregistered]
+
 ### Confederation.GetMemberCount
 
 Definition type: Function
 Return type: int32
 
 ### Confederation.GetMemberHouses
+
+Definition type: Function
+Return type: [unregistered]
+
+### Confederation.GetMemberTitles
 
 Definition type: Function
 Return type: [unregistered]
@@ -39493,6 +44102,11 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CString
+
+### Confederation.GetTradeMonopolies
+
+Definition type: Function
+Return type: [unregistered]
 
 ### Confederation.GetType
 
@@ -39509,12 +44123,32 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### Confederation.HasLeadingTitle
+
+Definition type: Function
+Return type: bool
+
+### Confederation.HasTradeMonopoly
+
+Definition type: Function
+Return type: bool
+
+### Confederation.IsHouseBasedConfederation
+
+Definition type: Function
+Return type: bool
+
 ### Confederation.IsHovered
 
 Definition type: Function
 Return type: bool
 
 ### Confederation.IsSelected
+
+Definition type: Function
+Return type: bool
+
+### Confederation.IsTitleBasedConfederation
 
 Definition type: Function
 Return type: bool
@@ -39535,6 +44169,59 @@ Definition type: Function
 Return type: void
 
 ### Confederation.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### ConfederationAspiration
+
+Definition type: Type
+
+### ConfederationAspiration.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### ConfederationAspiration.GetIllustration
+
+Definition type: Function
+Return type: [unregistered]
+
+### ConfederationAspiration.GetLevels
+
+Definition type: Function
+Return type: [unregistered]
+
+### ConfederationAspiration.GetName
+
+Definition type: Function
+Return type: CString
+
+### ConfederationAspiration.HasMultipleLevels
+
+Definition type: Function
+Return type: bool
+
+### ConfederationAspiration.IsValid
+
+Definition type: Function
+Return type: bool
+
+### ConfederationAspiration.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### ConfederationAspirationLevel
+
+Definition type: Type
+
+### ConfederationAspirationLevel.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### ConfederationAspirationLevel.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -39582,6 +44269,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: CString
 
+### ConfederationType.GetDiplomaticIconFrameIndex
+
+Definition type: Function
+Return type: int32
+
 ### ConfederationType.GetLevels
 
 Definition type: Function
@@ -39598,6 +44290,11 @@ Definition type: Function
 Return type: CString
 
 ### ConfederationType.IsHouseBasedConfederation
+
+Definition type: Function
+Return type: bool
+
+### ConfederationType.IsTitleBasedConfederation
 
 Definition type: Function
 Return type: bool
@@ -39651,6 +44348,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: void
 
+### ConfederationWindow.ClearHoveredTitle
+
+Definition type: Function
+Return type: void
+
 ### ConfederationWindow.Close
 
 Definition type: Function
@@ -39696,10 +44398,20 @@ Return type: int32
 Definition type: Function
 Return type: [unregistered]
 
+### ConfederationWindow.GetMemberTitles
+
+Definition type: Function
+Return type: [unregistered]
+
 ### ConfederationWindow.GetProgressBar
 
 Definition type: Function
 Return type: [unregistered]
+
+### ConfederationWindow.GetTitleMilitaryStrengthTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
 
 ### ConfederationWindow.GetTotalCohesionMonthlyTooltip
 
@@ -39721,12 +44433,27 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### ConfederationWindow.IsPlayerTitleHeadOfConfederation
+
+Definition type: Function
+Return type: bool
+
+### ConfederationWindow.IsTitleHovered( Arg0 )
+
+Definition type: Function
+Return type: bool
+
 ### ConfederationWindow.Self
 
 Definition type: Function
 Return type: [unregistered]
 
 ### ConfederationWindow.SetHoveredHouse( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### ConfederationWindow.SetHoveredTitle( Arg0 )
 
 Definition type: Function
 Return type: void
@@ -40420,6 +45147,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: CFixedPoint
 
+### County.GetBaseControl
+
+Definition type: Function
+Return type: CFixedPoint
+
 ### County.GetBaseCountyFertility
 
 Definition type: Function
@@ -40429,6 +45161,16 @@ Return type: CFixedPoint
 
 Definition type: Function
 Return type: CString
+
+### County.GetBaseOpinion
+
+Definition type: Function
+Return type: int32
+
+### County.GetBaseOpinionLevel
+
+Definition type: Function
+Return type: int32
 
 ### County.GetCapital
 
@@ -40455,15 +45197,20 @@ Return type: CString
 Definition type: Function
 Return type: [unregistered]
 
-### County.GetCountyControlEffectsDesc
+### County.GetCountyControlBaselineLevel
 
 Definition type: Function
-Return type: CString
+Return type: int32
 
-### County.GetCountyDevelopmentEffectsDesc
+### County.GetCountyControlLevel
 
 Definition type: Function
-Return type: CString
+Return type: int32
+
+### County.GetCountyControlLevelMax
+
+Definition type: Function
+Return type: int32
 
 ### County.GetCountyFertility
 
@@ -40485,15 +45232,20 @@ Return type: int32
 Definition type: Function
 Return type: [unregistered]
 
-### County.GetCountyOpinion
+### County.GetCountyProsperityEffectsDesc
 
 Definition type: Function
-Return type: int32
+Return type: CString
 
 ### County.GetCulture
 
 Definition type: Function
 Return type: [unregistered]
+
+### County.GetCurrentOpinion
+
+Definition type: Function
+Return type: int32
 
 ### County.GetCurrentPhaseType( Arg0 )
 
@@ -40504,31 +45256,6 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: [unregistered]
-
-### County.GetDevelopmentLevel
-
-Definition type: Function
-Return type: int32
-
-### County.GetDevelopmentProgress
-
-Definition type: Function
-Return type: CFixedPoint
-
-### County.GetDevelopmentProgressMax
-
-Definition type: Function
-Return type: CFixedPoint
-
-### County.GetDevelopmentProgressOutOfMax
-
-Definition type: Function
-Return type: CString
-
-### County.GetDevelopmentRate
-
-Definition type: Function
-Return type: CFixedPoint
 
 ### County.GetFaith
 
@@ -40545,7 +45272,62 @@ Return type: CFixedPoint
 Definition type: Function
 Return type: CString
 
+### County.GetMonthlyControlChange
+
+Definition type: Function
+Return type: CFixedPoint
+
+### County.GetMonthlyOpinionChange
+
+Definition type: Function
+Return type: CFixedPoint
+
+### County.GetMonthlyOpinionEffectsDesc
+
+Definition type: Function
+Return type: CString
+
+### County.GetMonthlyProsperityChange
+
+Definition type: Function
+Return type: CFixedPoint
+
 ### County.GetName
+
+Definition type: Function
+Return type: CString
+
+### County.GetOpinionLevel
+
+Definition type: Function
+Return type: int32
+
+### County.GetPopularOpinionLevelMax
+
+Definition type: Function
+Return type: int32
+
+### County.GetPotentialTradeGoodTypes
+
+Definition type: Function
+Return type: [unregistered]
+
+### County.GetProsperityLevel
+
+Definition type: Function
+Return type: int32
+
+### County.GetProsperityProgress
+
+Definition type: Function
+Return type: CFixedPoint
+
+### County.GetProsperityProgressMax
+
+Definition type: Function
+Return type: CFixedPoint
+
+### County.GetProsperityProgressOutOfMax
 
 Definition type: Function
 Return type: CString
@@ -40585,16 +45367,60 @@ Return type: [unregistered]
 Definition type: Function
 Return type: bool
 
+### CountyComplexBars
+
+Definition type: Type
+
+### CountyComplexBars.AccessCountyControlBar( Arg0 )
+
+Definition type: Promote
+Return type: ComplexBar
+
+### CountyComplexBars.AccessPopularOpinionBar( Arg0 )
+
+Definition type: Promote
+Return type: ComplexBar
+
+### CountyComplexBars.AccessProvinceSizeBar( Arg0 )
+
+Definition type: Promote
+Return type: ComplexBar
+
+### CountyComplexBars.AccessCountyControlBar( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### CountyComplexBars.AccessPopularOpinionBar( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### CountyComplexBars.AccessProvinceSizeBar( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### CountyComplexBars.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### CountyComplexBars.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### CountyDataBreakdowns
 
 Definition type: Type
 
-### CountyDataBreakdowns.AccessControl( Arg0 )
+### CountyDataBreakdowns.AccessBaseControl( Arg0 )
 
 Definition type: Promote
 Return type: ValueBreakdown
 
-### CountyDataBreakdowns.AccessDevelopmentChange( Arg0 )
+### CountyDataBreakdowns.AccessControl( Arg0 )
 
 Definition type: Promote
 Return type: ValueBreakdown
@@ -40604,17 +45430,37 @@ Return type: ValueBreakdown
 Definition type: Promote
 Return type: ValueBreakdown
 
+### CountyDataBreakdowns.AccessMonthlyOpinion( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
 ### CountyDataBreakdowns.AccessOpinion( Arg0 )
 
 Definition type: Promote
 Return type: ValueBreakdown
 
-### CountyDataBreakdowns.AccessControl( Arg0 )
+### CountyDataBreakdowns.AccessProsperityChange( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### CountyDataBreakdowns.AccessProvinceSizeBaseline( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### CountyDataBreakdowns.AccessProvinceSizeChange( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### CountyDataBreakdowns.AccessBaseControl( Arg0 )
 
 Definition type: Function
 Return type: [unregistered]
 
-### CountyDataBreakdowns.AccessDevelopmentChange( Arg0 )
+### CountyDataBreakdowns.AccessControl( Arg0 )
 
 Definition type: Function
 Return type: [unregistered]
@@ -40624,7 +45470,27 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### CountyDataBreakdowns.AccessMonthlyOpinion( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
 ### CountyDataBreakdowns.AccessOpinion( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### CountyDataBreakdowns.AccessProsperityChange( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### CountyDataBreakdowns.AccessProvinceSizeBaseline( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### CountyDataBreakdowns.AccessProvinceSizeChange( Arg0 )
 
 Definition type: Function
 Return type: [unregistered]
@@ -40648,6 +45514,11 @@ Definition type: Type
 Definition type: Promote
 Return type: CountyDataBreakdowns
 
+### CountyGroup.AccessComplexBars
+
+Definition type: Promote
+Return type: CountyComplexBars
+
 ### CountyGroup.GetCapitalProvince
 
 Definition type: Promote
@@ -40659,6 +45530,11 @@ Definition type: Promote
 Return type: Title
 
 ### CountyGroup.AccessBreakdowns
+
+Definition type: Function
+Return type: [unregistered]
+
+### CountyGroup.AccessComplexBars
 
 Definition type: Function
 Return type: [unregistered]
@@ -41224,6 +46100,45 @@ Definition type: Function
 Return type: CString
 
 ### CourtGrandeurWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### CourtOrCouncilPositionItem
+
+Definition type: Type
+
+### CourtOrCouncilPositionItem.GetCouncilPositionType
+
+Definition type: Promote
+Return type: CouncilPositionType
+
+### CourtOrCouncilPositionItem.GetCourtPositionItem
+
+Definition type: Promote
+Return type: CourtPositionItem
+
+### CourtOrCouncilPositionItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### CourtOrCouncilPositionItem.GetCouncilPositionType
+
+Definition type: Function
+Return type: [unregistered]
+
+### CourtOrCouncilPositionItem.GetCourtPositionItem
+
+Definition type: Function
+Return type: [unregistered]
+
+### CourtOrCouncilPositionItem.IsCouncilPosition
+
+Definition type: Function
+Return type: bool
+
+### CourtOrCouncilPositionItem.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -42096,6 +47011,11 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: float
+
+### CourtPositionsWindow.GetCourtOrCouncilPositionItems
+
+Definition type: Function
+Return type: [unregistered]
 
 ### CourtPositionsWindow.GetCourtOwner
 
@@ -43314,6 +48234,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### CourtTaskInteractionItem.GetPositionName
+
+Definition type: Function
+Return type: CString
+
 ### CourtTaskInteractionItem.Select
 
 Definition type: Function
@@ -43332,6 +48257,11 @@ Definition type: Type
 
 Definition type: Promote
 Return type: CharacterInteractionConfirmationWindow
+
+### CourtTaskInteractionWindow.GetCourtOwner
+
+Definition type: Promote
+Return type: Character
 
 ### CourtTaskInteractionWindow.GetSelectedPosition
 
@@ -43359,6 +48289,11 @@ Definition type: Function
 Return type: void
 
 ### CourtTaskInteractionWindow.GetCharacterInteractionConfirmationWindow
+
+Definition type: Function
+Return type: [unregistered]
+
+### CourtTaskInteractionWindow.GetCourtOwner
 
 Definition type: Function
 Return type: [unregistered]
@@ -43775,6 +48710,11 @@ Return type: CString
 
 Definition type: Function
 Return type: [unregistered]
+
+### CourtWindow.HasEmbeddedCouncilor
+
+Definition type: Function
+Return type: bool
 
 ### CourtWindow.IsShowCourt
 
@@ -44281,7 +49221,7 @@ Return type: CFixedPoint
 Definition type: Function
 Return type: CString
 
-### Culture.GetAverageDevelopment
+### Culture.GetAverageProsperity
 
 Definition type: Function
 Return type: int32
@@ -46132,6 +51072,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: CString
 
+### Decision.GetApprovalPercent( Arg0 )
+
+Definition type: Function
+Return type: int32
+
 ### Decision.GetCommandDescForCharacter( Arg0 )
 
 Definition type: Function
@@ -46143,6 +51088,11 @@ Definition type: Function
 Return type: CString
 
 ### Decision.GetDescriptionForPlayer
+
+Definition type: Function
+Return type: CString
+
+### Decision.GetEffectsDesc( Arg0 )
 
 Definition type: Function
 Return type: CString
@@ -46247,14 +51197,53 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### DecisionApprovalWindow
+
+Definition type: Type
+
+### DecisionApprovalWindow.GetDecisionDetailView
+
+Definition type: Promote
+Return type: DecisionDetailView
+
+### DecisionApprovalWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### DecisionApprovalWindow.Close
+
+Definition type: Function
+Return type: void
+
+### DecisionApprovalWindow.GetDecisionDetailView
+
+Definition type: Function
+Return type: [unregistered]
+
+### DecisionApprovalWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### DecisionDetailView
 
 Definition type: Type
+
+### DecisionDetailView.AccessApprovalBar
+
+Definition type: Promote
+Return type: ComplexBar
 
 ### DecisionDetailView.GetDecision
 
 Definition type: Promote
 Return type: Decision
+
+### DecisionDetailView.AccessApprovalBar
+
+Definition type: Function
+Return type: [unregistered]
 
 ### DecisionDetailView.AccessSelf
 
@@ -46275,6 +51264,26 @@ Return type: void
 
 Definition type: Function
 Return type: void
+
+### DecisionDetailView.GetAiApprovalDesc( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### DecisionDetailView.GetApprovalThreshold
+
+Definition type: Function
+Return type: int32
+
+### DecisionDetailView.GetApprovalThresholdPercent
+
+Definition type: Function
+Return type: CString
+
+### DecisionDetailView.GetApprovingMembers
+
+Definition type: Function
+Return type: [unregistered]
 
 ### DecisionDetailView.GetConfirmClickSound
 
@@ -46311,6 +51320,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: CString
 
+### DecisionDetailView.GetDissentingMembers
+
+Definition type: Function
+Return type: [unregistered]
+
 ### DecisionDetailView.GetDynamicPosition
 
 Definition type: Function
@@ -46325,6 +51339,21 @@ Return type: CString
 
 Definition type: Function
 Return type: CString
+
+### DecisionDetailView.GetNumberOfApprovers
+
+Definition type: Function
+Return type: int32
+
+### DecisionDetailView.GetNumberOfDissenters
+
+Definition type: Function
+Return type: int32
+
+### DecisionDetailView.GetPowerfulVassals
+
+Definition type: Function
+Return type: [unregistered]
 
 ### DecisionDetailView.GetRequirementsDescription
 
@@ -46367,6 +51396,16 @@ Definition type: Function
 Return type: bool
 
 ### DecisionDetailView.IsOpenedFromRoyalCourt
+
+Definition type: Function
+Return type: bool
+
+### DecisionDetailView.IsOpposingDecision( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### DecisionDetailView.RequiresApproval
 
 Definition type: Function
 Return type: bool
@@ -48051,6 +53090,189 @@ Return type: bool
 Definition type: Function
 Return type: [unregistered]
 
+### District
+
+Definition type: Type
+
+### District.GetHolding
+
+Definition type: Promote
+Return type: Holding
+
+### District.GetOwningTitle
+
+Definition type: Promote
+Return type: Title
+
+### District.GetType
+
+Definition type: Promote
+Return type: DistrictType
+
+### District.MakeScope
+
+Definition type: Promote
+Return type: Scope
+
+### District.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### District.CanConstructInDistrict( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### District.Custom( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### District.GetBuildings
+
+Definition type: Function
+Return type: [unregistered]
+
+### District.GetHolding
+
+Definition type: Function
+Return type: [unregistered]
+
+### District.GetOwningTitle
+
+Definition type: Function
+Return type: [unregistered]
+
+### District.GetType
+
+Definition type: Function
+Return type: [unregistered]
+
+### District.IsOwnedByTitle
+
+Definition type: Function
+Return type: bool
+
+### District.IsRuined
+
+Definition type: Function
+Return type: bool
+
+### District.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### DistrictType
+
+Definition type: Type
+
+### DistrictType.GetPrimaryBuildingType
+
+Definition type: Promote
+Return type: BuildingType
+
+### DistrictType.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### DistrictType.CalcTriggeredName( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### DistrictType.CalcTriggeredNameNoTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### DistrictType.Custom( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### DistrictType.GetBackground( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### DistrictType.GetBuildingTypes
+
+Definition type: Function
+Return type: [unregistered]
+
+### DistrictType.GetColor
+
+Definition type: Function
+Return type: CVector4f
+
+### DistrictType.GetFlavorDescription
+
+Definition type: Function
+Return type: CString
+
+### DistrictType.GetGameplayDescription
+
+Definition type: Function
+Return type: CString
+
+### DistrictType.GetIllustration( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### DistrictType.GetKey
+
+Definition type: Function
+Return type: CString
+
+### DistrictType.GetName
+
+Definition type: Function
+Return type: CString
+
+### DistrictType.GetNameNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### DistrictType.GetPrimaryBuildingType
+
+Definition type: Function
+Return type: [unregistered]
+
+### DistrictType.GetRebuildCostDescription( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### DistrictType.GetSmallTypeIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### DistrictType.GetTypeIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### DistrictType.HasFlavorDescription
+
+Definition type: Function
+Return type: bool
+
+### DistrictType.HasGameplayDescription
+
+Definition type: Function
+Return type: bool
+
+### DistrictType.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### DivergenceWindow
 
 Definition type: Type
@@ -48997,6 +54219,11 @@ Return type: Command
 Definition type: Function
 Return type: CString
 
+### Domicile.GetAcumen
+
+Definition type: Function
+Return type: CFixedPoint
+
 ### Domicile.GetBuildingUnderConstruction
 
 Definition type: Function
@@ -49474,6 +54701,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: CString
 
+### DomicileBuildingSlot.GetDepth
+
+Definition type: Function
+Return type: int32
+
 ### DomicileBuildingSlot.GetInternalSlotTooltip( Arg0 )
 
 Definition type: Function
@@ -49917,6 +55149,45 @@ Return type: int32
 Definition type: Function
 Return type: [unregistered]
 
+### DomicileSceneItem
+
+Definition type: Type
+
+### DomicileSceneItem.GetBuildingSlot
+
+Definition type: Promote
+Return type: DomicileBuildingSlot
+
+### DomicileSceneItem.GetTextureLayer
+
+Definition type: Promote
+Return type: DomicileTextureLayer
+
+### DomicileSceneItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### DomicileSceneItem.GetBuildingSlot
+
+Definition type: Function
+Return type: [unregistered]
+
+### DomicileSceneItem.GetTextureLayer
+
+Definition type: Function
+Return type: [unregistered]
+
+### DomicileSceneItem.IsBuilding
+
+Definition type: Function
+Return type: bool
+
+### DomicileSceneItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### DomicileSettings
 
 Definition type: Type
@@ -49931,12 +55202,7 @@ Return type: DomicileType
 Definition type: Function
 Return type: [unregistered]
 
-### DomicileSettings.GetBackgroundTexture
-
-Definition type: Function
-Return type: [unregistered]
-
-### DomicileSettings.GetForegroundTexture
+### DomicileSettings.GetLayers
 
 Definition type: Function
 Return type: [unregistered]
@@ -49955,6 +55221,30 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: void
+
+### DomicileTextureLayer
+
+Definition type: Type
+
+### DomicileTextureLayer.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### DomicileTextureLayer.GetDepth
+
+Definition type: Function
+Return type: int32
+
+### DomicileTextureLayer.GetTexture
+
+Definition type: Function
+Return type: [unregistered]
+
+### DomicileTextureLayer.Self
+
+Definition type: Function
+Return type: [unregistered]
 
 ### DomicileTreeNode
 
@@ -50029,7 +55319,7 @@ Return type: bool
 Definition type: Function
 Return type: [unregistered]
 
-### DomicileType.GetIllustration
+### DomicileType.GetIllustration( Arg0 )
 
 Definition type: Function
 Return type: [unregistered]
@@ -50198,6 +55488,11 @@ Return type: void
 Definition type: Function
 Return type: bool
 
+### DomicileWindow.CanPotentiallySlotHoldSelectedArtifact( Arg0 )
+
+Definition type: Function
+Return type: bool
+
 ### DomicileWindow.CanPutInSelectedArtifactSlot( Arg0 )
 
 Definition type: Function
@@ -50258,6 +55553,16 @@ Return type: int32
 Definition type: Function
 Return type: [unregistered]
 
+### DomicileWindow.GetArtifactSlotAvailabilityTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### DomicileWindow.GetArtifactSlots
+
+Definition type: Function
+Return type: [unregistered]
+
 ### DomicileWindow.GetArtifactSortOptions
 
 Definition type: Function
@@ -50308,12 +55613,12 @@ Return type: [unregistered]
 Definition type: Function
 Return type: DomicileSettings
 
-### DomicileWindow.GetFilteredArtifacts
+### DomicileWindow.GetFollowerCardItems
 
 Definition type: Function
 Return type: [unregistered]
 
-### DomicileWindow.GetFollowerCardItems
+### DomicileWindow.GetFrameTexture
 
 Definition type: Function
 Return type: [unregistered]
@@ -50322,6 +55627,11 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CString
+
+### DomicileWindow.GetHeaderTexture
+
+Definition type: Function
+Return type: [unregistered]
 
 ### DomicileWindow.GetHoveredCultureSetIndex
 
@@ -50354,6 +55664,11 @@ Definition type: Function
 Return type: [unregistered]
 
 ### DomicileWindow.GetRelationOfType( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### DomicileWindow.GetSceneItems
 
 Definition type: Function
 Return type: [unregistered]
@@ -50393,11 +55708,6 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
-### DomicileWindow.GetSortedArtifactsForSelectedSlot
-
-Definition type: Function
-Return type: [unregistered]
-
 ### DomicileWindow.GetTemperamentFrame
 
 Definition type: Function
@@ -50418,10 +55728,10 @@ Return type: CString
 Definition type: Function
 Return type: CString
 
-### DomicileWindow.HasFilteredArtifacts
+### DomicileWindow.GetUniqueDomicileArtifactSlotTypes
 
 Definition type: Function
-Return type: bool
+Return type: [unregistered]
 
 ### DomicileWindow.HasRenameWindow
 
@@ -50438,12 +55748,27 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### DomicileWindow.HasSortedArtifacts
+
+Definition type: Function
+Return type: bool
+
+### DomicileWindow.HasUpgrade
+
+Definition type: Function
+Return type: bool
+
 ### DomicileWindow.InspectLineTreeBuilding( Arg0 )
 
 Definition type: Function
 Return type: void
 
 ### DomicileWindow.IsArtifactSelected( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### DomicileWindow.IsArtifactSlotAvailable( Arg0 )
 
 Definition type: Function
 Return type: bool
@@ -50614,6 +55939,162 @@ Definition type: Function
 Return type: void
 
 ### DomicileWindow.UnequipArtifact( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### DragDropExample
+
+Definition type: Type
+
+### DragDropExample.AccessDraggableObjects
+
+Definition type: Function
+Return type: [unregistered]
+
+### DragDropExample.AccessDroppableSlots
+
+Definition type: Function
+Return type: [unregistered]
+
+### DragDropExample.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### DragDropExample.AddDroppableSlot
+
+Definition type: Function
+Return type: void
+
+### DragDropExample.InsertObjectAtIndex( Arg0, Arg1 )
+
+Definition type: Function
+Return type: void
+
+### DragDropExample.MoveToEndOfArray( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### DragDropExample.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### DragDropWindow
+
+Definition type: Type
+
+### DragDropWindow.AccessInventorySlotExample
+
+Definition type: Promote
+Return type: DragDropExample
+
+### DragDropWindow.AccessListOrderExample1
+
+Definition type: Promote
+Return type: DragDropExample
+
+### DragDropWindow.AccessListOrderExample2
+
+Definition type: Promote
+Return type: DragDropExample
+
+### DragDropWindow.AccessInventorySlotExample
+
+Definition type: Function
+Return type: [unregistered]
+
+### DragDropWindow.AccessListOrderExample1
+
+Definition type: Function
+Return type: [unregistered]
+
+### DragDropWindow.AccessListOrderExample2
+
+Definition type: Function
+Return type: [unregistered]
+
+### DragDropWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### DragDropWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### DraggableObject
+
+Definition type: Type
+
+### DraggableObject.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### DraggableObject.GetColor
+
+Definition type: Function
+Return type: CVector4f
+
+### DraggableObject.GetIndex
+
+Definition type: Function
+Return type: int32
+
+### DraggableObject.GetName
+
+Definition type: Function
+Return type: CString
+
+### DraggableObject.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### DroppableSlot
+
+Definition type: Type
+
+### DroppableSlot.GetCurrentDraggableObject
+
+Definition type: Promote
+Return type: DraggableObject
+
+### DroppableSlot.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### DroppableSlot.ClearCurrentDraggableObject
+
+Definition type: Function
+Return type: void
+
+### DroppableSlot.GetCurrentDraggableObject
+
+Definition type: Function
+Return type: [unregistered]
+
+### DroppableSlot.GetIndex
+
+Definition type: Function
+Return type: int32
+
+### DroppableSlot.HasCurrentDraggableObject
+
+Definition type: Function
+Return type: bool
+
+### DroppableSlot.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### DroppableSlot.SetCurrentDraggableObject( Arg0 )
 
 Definition type: Function
 Return type: void
@@ -51078,6 +56559,11 @@ Return type: HouseAspiration
 Definition type: Promote
 Return type: CoatOfArms
 
+### DynastyHouse.GetHousePowerBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
 ### DynastyHouse.GetHouseRelationWith( Arg0 )
 
 Definition type: Promote
@@ -51087,6 +56573,11 @@ Return type: HouseRelation
 
 Definition type: Promote
 Return type: Title
+
+### DynastyHouse.GetHouseUnityType
+
+Definition type: Promote
+Return type: HouseUnityType
 
 ### DynastyHouse.MakeScope
 
@@ -51259,6 +56750,11 @@ Definition type: Function
 Return type: [unregistered]
 
 ### DynastyHouse.GetHouseTitle
+
+Definition type: Function
+Return type: [unregistered]
+
+### DynastyHouse.GetHouseUnityType
 
 Definition type: Function
 Return type: [unregistered]
@@ -56383,6 +61879,11 @@ Return type: TopScope
 Definition type: Function
 Return type: [unregistered]
 
+### FaithWindow.GetNumberOfValidInteractionsWithFilter( Arg0, Arg1 )
+
+Definition type: Function
+Return type: int32
+
 ### FaithWindow.GetOtherFaithHolySiteItems
 
 Definition type: Function
@@ -56644,6 +62145,11 @@ Definition type: Type
 Definition type: Promote
 Return type: CharacterSelectionList
 
+### FindVassalListWindow.GetMeritItem( Arg0 )
+
+Definition type: Promote
+Return type: MeritItem
+
 ### FindVassalListWindow.GetRelevanceBreakdown( Arg0 )
 
 Definition type: Promote
@@ -56673,6 +62179,11 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CString
+
+### FindVassalListWindow.GetMeritItem( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
 
 ### FindVassalListWindow.GetRelevance( Arg0 )
 
@@ -56708,10 +62219,25 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### FlatLandlessMapIcon.GetTradeRouteEndPoints
+
+Definition type: Function
+Return type: [unregistered]
+
 ### FlatLandlessMapIcon.HasDomicile
 
 Definition type: Function
 Return type: bool
+
+### FlatLandlessMapIcon.HasTradeRouteEndPoint
+
+Definition type: Function
+Return type: bool
+
+### FlatLandlessMapIcon.OnTradeRouteEndPointClick( Arg0 )
+
+Definition type: Function
+Return type: void
 
 ### FlatLandlessMapIcon.Self
 
@@ -57052,11 +62578,6 @@ Return type: int32
 Definition type: Function
 Return type: [unregistered]
 
-### FrontEndMainView.GetSubscriptionStatusText
-
-Definition type: Function
-Return type: CString
-
 ### FrontEndMainView.GoNextChallengeCharacter
 
 Definition type: Function
@@ -57067,7 +62588,7 @@ Return type: void
 Definition type: Function
 Return type: void
 
-### FrontEndMainView.IsSteamAvailable
+### FrontEndMainView.IsSteamSubscriptionActive
 
 Definition type: Function
 Return type: bool
@@ -57341,24 +62862,39 @@ Definition type: Type
 ### GUIBuildingItem.GetCurrentOrConstrucingBuilding
 
 Definition type: Promote
-Return type: Building
+Return type: BuildingType
+
+### GUIBuildingItem.GetDragDropObject
+
+Definition type: Promote
+Return type: GuiBuildingDragDropObject
 
 ### GUIBuildingItem.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
 
+### GUIBuildingItem.AddAfterDropHighlight
+
+Definition type: Function
+Return type: void
+
+### GUIBuildingItem.AddInfrontDropHighlight
+
+Definition type: Function
+Return type: void
+
+### GUIBuildingItem.CanConstructAnyBuildingImmediately
+
+Definition type: Function
+Return type: bool
+
 ### GUIBuildingItem.CanConstructBuilding
 
 Definition type: Function
 Return type: bool
 
-### GUIBuildingItem.CanUpgrade
-
-Definition type: Function
-Return type: bool
-
-### GUIBuildingItem.CanUpgradePrimaryBuilding
+### GUIBuildingItem.CanUpgradeImmediately
 
 Definition type: Function
 Return type: bool
@@ -57368,30 +62904,40 @@ Return type: bool
 Definition type: Function
 Return type: void
 
+### GUIBuildingItem.DropAfter( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### GUIBuildingItem.DropInfront( Arg0 )
+
+Definition type: Function
+Return type: void
+
 ### GUIBuildingItem.GetBuildingDisabledDesc
 
 Definition type: Function
 Return type: CString
 
-### GUIBuildingItem.GetBuildingRuinedDesc
+### GUIBuildingItem.GetBuildingNeeds
 
 Definition type: Function
-Return type: CString
+Return type: [unregistered]
 
 ### GUIBuildingItem.GetConstructingProgress
 
 Definition type: Function
 Return type: CFixedPoint
 
-### GUIBuildingItem.GetLevelFrame
-
-Definition type: Function
-Return type: int32
-
-### GUIBuildingItem.GetLevelTexture
+### GUIBuildingItem.GetDragDropObject
 
 Definition type: Function
 Return type: [unregistered]
+
+### GUIBuildingItem.GetLocalQueuePosition
+
+Definition type: Function
+Return type: int32
 
 ### GUIBuildingItem.GetTooltip
 
@@ -57408,17 +62954,17 @@ Return type: uint32
 Definition type: Function
 Return type: uint32
 
-### GUIBuildingItem.HasControlOfBuilding
+### GUIBuildingItem.HasAfterDropHighlight
 
 Definition type: Function
 Return type: bool
 
-### GUIBuildingItem.HasLevel
+### GUIBuildingItem.HasBuilding
 
 Definition type: Function
 Return type: bool
 
-### GUIBuildingItem.HasPotentialBuilding
+### GUIBuildingItem.HasInfrontDropHighlight
 
 Definition type: Function
 Return type: bool
@@ -57443,11 +62989,6 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
-### GUIBuildingItem.IsBuildingRuined
-
-Definition type: Function
-Return type: bool
-
 ### GUIBuildingItem.IsBuildingSlotShown
 
 Definition type: Function
@@ -57458,7 +62999,27 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### GUIBuildingItem.IsEmptySlot
+
+Definition type: Function
+Return type: bool
+
 ### GUIBuildingItem.IsHighlighted
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingItem.IsInQueue
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingItem.IsOperational
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingItem.IsPrimaryBuilding
 
 Definition type: Function
 Return type: bool
@@ -57468,7 +63029,176 @@ Return type: bool
 Definition type: Function
 Return type: void
 
+### GUIBuildingItem.OnRightClick
+
+Definition type: Function
+Return type: void
+
+### GUIBuildingItem.RemoveDropHighlight
+
+Definition type: Function
+Return type: void
+
 ### GUIBuildingItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIBuildingNeedItem
+
+Definition type: Type
+
+### GUIBuildingNeedItem.GetFocusableGood
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### GUIBuildingNeedItem.GetMarketGoodBalance( Arg0 )
+
+Definition type: Promote
+Return type: TradeMarketGood
+
+### GUIBuildingNeedItem.GetTradeGoodCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### GUIBuildingNeedItem.GetTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### GUIBuildingNeedItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIBuildingNeedItem.CalcSourceDescription
+
+Definition type: Function
+Return type: CString
+
+### GUIBuildingNeedItem.CanFocusGood
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingNeedItem.GetAvailableAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### GUIBuildingNeedItem.GetChecklist
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIBuildingNeedItem.GetCurrentlyConsumedAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### GUIBuildingNeedItem.GetCurrentlyConsumedCount
+
+Definition type: Function
+Return type: int32
+
+### GUIBuildingNeedItem.GetDescription( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### GUIBuildingNeedItem.GetFocusableGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIBuildingNeedItem.GetMarketGoodBalance( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIBuildingNeedItem.GetMaxNeededAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### GUIBuildingNeedItem.GetMaxNeededCount
+
+Definition type: Function
+Return type: int32
+
+### GUIBuildingNeedItem.GetNeededAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### GUIBuildingNeedItem.GetPerLevelModifierDescription( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### GUIBuildingNeedItem.GetTradeGoodCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIBuildingNeedItem.GetTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIBuildingNeedItem.HasFulfillment
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingNeedItem.HasSourceDescription
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingNeedItem.IsCategoryNeed
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingNeedItem.IsCompletelyFilled
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingNeedItem.IsCompletelyUnfilled
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingNeedItem.IsDimmed
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingNeedItem.IsPartiallyFilled
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingNeedItem.IsRepeating
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingNeedItem.IsSkippingInternalFulfillment
+
+Definition type: Function
+Return type: bool
+
+### GUIBuildingNeedItem.OnClickFocusGood
+
+Definition type: Function
+Return type: void
+
+### GUIBuildingNeedItem.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -57498,6 +63228,320 @@ Definition type: Function
 Return type: void
 
 ### GUICountyHolding.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIDistrictItem
+
+Definition type: Type
+
+### GUIDistrictItem.GetCurrentOrConstrucingDistrict
+
+Definition type: Promote
+Return type: DistrictType
+
+### GUIDistrictItem.GetDistrict
+
+Definition type: Promote
+Return type: District
+
+### GUIDistrictItem.GetDragDropObject
+
+Definition type: Promote
+Return type: GuiDistrictDragDropObject
+
+### GUIDistrictItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIDistrictItem.AddAboveDropHighlight
+
+Definition type: Function
+Return type: void
+
+### GUIDistrictItem.AddBelowDropHighlight
+
+Definition type: Function
+Return type: void
+
+### GUIDistrictItem.CanCancel
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.CanConstructAnyDistrictImmediately
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.CanConstructDistrict
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.CanHaveBuildingInDistrict
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.CanShowCancel
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.CanUpgradePrimaryBuilding
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.CancelConstruction
+
+Definition type: Function
+Return type: void
+
+### GUIDistrictItem.DropAbove( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### GUIDistrictItem.DropBelow( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### GUIDistrictItem.GetCancelTooltip
+
+Definition type: Function
+Return type: CString
+
+### GUIDistrictItem.GetCannotHaveDistrictReason
+
+Definition type: Function
+Return type: CString
+
+### GUIDistrictItem.GetConstructingProgress
+
+Definition type: Function
+Return type: CFixedPoint
+
+### GUIDistrictItem.GetDistrictDisabledDesc
+
+Definition type: Function
+Return type: CString
+
+### GUIDistrictItem.GetDistrictNeeds
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIDistrictItem.GetDistrictProduction
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIDistrictItem.GetDistrictRuinedDesc
+
+Definition type: Function
+Return type: CString
+
+### GUIDistrictItem.GetDistrictTypeText
+
+Definition type: Function
+Return type: CString
+
+### GUIDistrictItem.GetDragDropObject
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIDistrictItem.GetLocalQueuePosition
+
+Definition type: Function
+Return type: int32
+
+### GUIDistrictItem.GetNumberOfBuildings
+
+Definition type: Function
+Return type: int32
+
+### GUIDistrictItem.GetNumberOfFreeBuildingSlots
+
+Definition type: Function
+Return type: int32
+
+### GUIDistrictItem.GetRemainingConstructionTime
+
+Definition type: Function
+Return type: CString
+
+### GUIDistrictItem.GetTooltipParentAnchor
+
+Definition type: Function
+Return type: uint32
+
+### GUIDistrictItem.GetTooltipWidgetAnchor
+
+Definition type: Function
+Return type: uint32
+
+### GUIDistrictItem.HasAboveDropHighlight
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.HasBelowDropHighlight
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.HasControlOfDistrict
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.HasDistrict
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.HasImmediatelyConstructableBuilding
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.HasImmediatelyUpgradableBuilding
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.HasOwningTitle
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsAnotherDistrictConstructing
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsBuildNewIconShown
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsConstructing
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsConstructingBuilding
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsDistrictButtonEnabled
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsDistrictButtonShown
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsDistrictDisabled
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsDistrictInactive
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsDistrictRuined
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsDistrictSlotShown
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsDuchyCapitalDistrict
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsEmptySlot
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsGreatDistrict
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsHighlighted
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsHoldingDistrict
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsInQueue
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsOperational
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsRebuilding
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsRegularDistrict
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsResourceDistrict
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsSpecialDistrict
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.IsTradePostDistrict
+
+Definition type: Function
+Return type: bool
+
+### GUIDistrictItem.OnClick
+
+Definition type: Function
+Return type: void
+
+### GUIDistrictItem.RemoveDropHighlight
+
+Definition type: Function
+Return type: void
+
+### GUIDistrictItem.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -57550,60 +63594,40 @@ Return type: [unregistered]
 
 Definition type: Type
 
-### GUIPotentialBuildingItem.GetBuilding
+### GUIPotentialBuildingItem.AccessAsPotentialItem
 
 Definition type: Promote
-Return type: Building
+Return type: GUIPotentialItem
 
-### GUIPotentialBuildingItem.GetConstructionTime
+### GUIPotentialBuildingItem.AccessAsPotentialItem
 
-Definition type: Promote
-Return type: ValueBreakdown
-
-### GUIPotentialBuildingItem.GetCost
-
-Definition type: Promote
-Return type: ValueBreakdown
-
-### GUIPotentialBuildingItem.GetPietyCost
-
-Definition type: Promote
-Return type: ValueBreakdown
-
-### GUIPotentialBuildingItem.GetPrestigeCost
-
-Definition type: Promote
-Return type: ValueBreakdown
+Definition type: Function
+Return type: [unregistered]
 
 ### GUIPotentialBuildingItem.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
 
-### GUIPotentialBuildingItem.CanAffordCost( Arg0 )
-
-Definition type: Function
-Return type: bool
-
 ### GUIPotentialBuildingItem.CanConstruct
 
 Definition type: Function
 Return type: bool
 
-### GUIPotentialBuildingItem.Construct
+### GUIPotentialBuildingItem.CanOpenSponsorConstructionInteraction
 
 Definition type: Function
-Return type: void
+Return type: bool
 
-### GUIPotentialBuildingItem.GetConstructionTime
-
-Definition type: Function
-Return type: [unregistered]
-
-### GUIPotentialBuildingItem.GetCost
+### GUIPotentialBuildingItem.CanQueue
 
 Definition type: Function
-Return type: [unregistered]
+Return type: bool
+
+### GUIPotentialBuildingItem.GetDistrictLevelRequirement
+
+Definition type: Function
+Return type: int32
 
 ### GUIPotentialBuildingItem.GetLevelIcon
 
@@ -57615,35 +63639,40 @@ Return type: [unregistered]
 Definition type: Function
 Return type: int32
 
-### GUIPotentialBuildingItem.GetPietyCost
-
-Definition type: Function
-Return type: [unregistered]
-
-### GUIPotentialBuildingItem.GetPrestigeCost
-
-Definition type: Function
-Return type: [unregistered]
-
-### GUIPotentialBuildingItem.GetTooltip
+### GUIPotentialBuildingItem.GetSponsorConstructionBlockTooltip
 
 Definition type: Function
 Return type: CString
 
-### GUIPotentialBuildingItem.HasCost
+### GUIPotentialBuildingItem.GetTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### GUIPotentialBuildingItem.GetUpgradeLevels
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIPotentialBuildingItem.IsSponsorConstructionVisible
 
 Definition type: Function
 Return type: bool
 
-### GUIPotentialBuildingItem.HasPietyCost
+### GUIPotentialBuildingItem.MeetsDistrictLevelRequirement
 
 Definition type: Function
 Return type: bool
 
-### GUIPotentialBuildingItem.HasPrestigeCost
+### GUIPotentialBuildingItem.OpenSponsorConstructionInteraction
 
 Definition type: Function
-Return type: bool
+Return type: void
+
+### GUIPotentialBuildingItem.Queue
+
+Definition type: Function
+Return type: void
 
 ### GUIPotentialBuildingItem.Self
 
@@ -57655,6 +63684,213 @@ Return type: [unregistered]
 Definition type: Function
 Return type: void
 
+### GUIPotentialDistrictItem
+
+Definition type: Type
+
+### GUIPotentialDistrictItem.AccessAsPotentialItem
+
+Definition type: Promote
+Return type: GUIPotentialItem
+
+### GUIPotentialDistrictItem.GetDistrictType
+
+Definition type: Promote
+Return type: DistrictType
+
+### GUIPotentialDistrictItem.AccessAsPotentialItem
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIPotentialDistrictItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIPotentialDistrictItem.CanConstruct
+
+Definition type: Function
+Return type: bool
+
+### GUIPotentialDistrictItem.CanOpenSponsorConstructionInteraction
+
+Definition type: Function
+Return type: bool
+
+### GUIPotentialDistrictItem.CanQueue
+
+Definition type: Function
+Return type: bool
+
+### GUIPotentialDistrictItem.GetPotentialBuildingTypes
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIPotentialDistrictItem.GetSponsorConstructionBlockTooltip
+
+Definition type: Function
+Return type: CString
+
+### GUIPotentialDistrictItem.GetTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### GUIPotentialDistrictItem.IsSponsorConstructionVisible
+
+Definition type: Function
+Return type: bool
+
+### GUIPotentialDistrictItem.OpenSponsorConstructionInteraction
+
+Definition type: Function
+Return type: void
+
+### GUIPotentialDistrictItem.Queue
+
+Definition type: Function
+Return type: void
+
+### GUIPotentialDistrictItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIPotentialDistrictItem.ShowDetails
+
+Definition type: Function
+Return type: void
+
+### GUIPotentialItem
+
+Definition type: Type
+
+### GUIPotentialItem.GetBuilding
+
+Definition type: Promote
+Return type: BuildingType
+
+### GUIPotentialItem.GetConstructionTime
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### GUIPotentialItem.GetGoldCost( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### GUIPotentialItem.GetPietyCost( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### GUIPotentialItem.GetPrestigeCost( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### GUIPotentialItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIPotentialItem.CanAffordCost( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### GUIPotentialItem.GetBuildingNeeds
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIPotentialItem.GetConstructionTime
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIPotentialItem.GetGoldCost( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIPotentialItem.GetPietyCost( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIPotentialItem.GetPrestigeCost( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIPotentialItem.HasCost
+
+Definition type: Function
+Return type: bool
+
+### GUIPotentialItem.HasPietyCost
+
+Definition type: Function
+Return type: bool
+
+### GUIPotentialItem.HasPrestigeCost
+
+Definition type: Function
+Return type: bool
+
+### GUIPotentialItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIProductionItem
+
+Definition type: Type
+
+### GUIProductionItem.GetProductionBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### GUIProductionItem.GetTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### GUIProductionItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIProductionItem.GetAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### GUIProductionItem.GetProductionBreakdown
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIProductionItem.GetTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUIProductionItem.HasMarketBalance
+
+Definition type: Function
+Return type: bool
+
+### GUIProductionItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### GUITrackItem
 
 Definition type: Type
@@ -57662,24 +63898,24 @@ Definition type: Type
 ### GUITrackItem.GetConstructingBuilding
 
 Definition type: Promote
-Return type: Building
+Return type: BuildingType
 
 ### GUITrackItem.GetCurrentBuilding
 
 Definition type: Promote
-Return type: Building
+Return type: BuildingType
 
 ### GUITrackItem.GetNextBuilding
 
 Definition type: Promote
-Return type: Building
+Return type: BuildingType
 
 ### GUITrackItem.GetNextConstructionTime
 
 Definition type: Promote
 Return type: ValueBreakdown
 
-### GUITrackItem.GetNextCost
+### GUITrackItem.GetNextGoldCost( Arg0 )
 
 Definition type: Promote
 Return type: ValueBreakdown
@@ -57697,14 +63933,14 @@ Return type: ValueBreakdown
 ### GUITrackItem.GetSelectedBuilding
 
 Definition type: Promote
-Return type: Building
+Return type: BuildingType
 
 ### GUITrackItem.GetSelectedConstructionTime
 
 Definition type: Promote
 Return type: ValueBreakdown
 
-### GUITrackItem.GetSelectedCost
+### GUITrackItem.GetSelectedCost( Arg0 )
 
 Definition type: Promote
 Return type: ValueBreakdown
@@ -57745,6 +63981,16 @@ Definition type: Function
 Return type: bool
 
 ### GUITrackItem.CanConstructSelectedBuilding
+
+Definition type: Function
+Return type: bool
+
+### GUITrackItem.CanOpenSponsorConstructionInteraction
+
+Definition type: Function
+Return type: bool
+
+### GUITrackItem.CanQueueNextBuilding
 
 Definition type: Function
 Return type: bool
@@ -57794,7 +64040,7 @@ Return type: CString
 Definition type: Function
 Return type: CFixedPoint
 
-### GUITrackItem.GetCurrentBuildingTooltip
+### GUITrackItem.GetCurrentBuildingTooltip( Arg0 )
 
 Definition type: Function
 Return type: CString
@@ -57804,7 +64050,7 @@ Return type: CString
 Definition type: Function
 Return type: [unregistered]
 
-### GUITrackItem.GetNextBuildingTooltip
+### GUITrackItem.GetNextBuildingTooltip( Arg0 )
 
 Definition type: Function
 Return type: CString
@@ -57814,7 +64060,7 @@ Return type: CString
 Definition type: Function
 Return type: [unregistered]
 
-### GUITrackItem.GetNextCost
+### GUITrackItem.GetNextGoldCost( Arg0 )
 
 Definition type: Function
 Return type: [unregistered]
@@ -57864,7 +64110,12 @@ Return type: CString
 Definition type: Function
 Return type: CString
 
-### GUITrackItem.GetSelectedBuildingTooltip
+### GUITrackItem.GetSelectedBuildingNeeds
+
+Definition type: Function
+Return type: [unregistered]
+
+### GUITrackItem.GetSelectedBuildingTooltip( Arg0 )
 
 Definition type: Function
 Return type: CString
@@ -57874,7 +64125,7 @@ Return type: CString
 Definition type: Function
 Return type: [unregistered]
 
-### GUITrackItem.GetSelectedCost
+### GUITrackItem.GetSelectedCost( Arg0 )
 
 Definition type: Function
 Return type: [unregistered]
@@ -57888,6 +64139,16 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: [unregistered]
+
+### GUITrackItem.GetSponsorConstructionBlockTooltip
+
+Definition type: Function
+Return type: CString
+
+### GUITrackItem.GetTrackLength
+
+Definition type: Function
+Return type: int32
 
 ### GUITrackItem.GoBack
 
@@ -57904,7 +64165,7 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
-### GUITrackItem.HasNextCost
+### GUITrackItem.HasNextGoldCost
 
 Definition type: Function
 Return type: bool
@@ -57959,6 +64220,11 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### GUITrackItem.IsSponsorConstructionVisible
+
+Definition type: Function
+Return type: bool
+
 ### GUITrackItem.IsUpgradingWithGreatProject
 
 Definition type: Function
@@ -57975,6 +64241,11 @@ Definition type: Function
 Return type: void
 
 ### GUITrackItem.OnNextBuildingClick
+
+Definition type: Function
+Return type: void
+
+### GUITrackItem.OpenSponsorConstructionInteraction
 
 Definition type: Function
 Return type: void
@@ -58674,11 +64945,6 @@ Return type: ProminentHouseMemberCharacterList
 Definition type: Promote
 Return type: Title
 
-### GovernmentAdministrationWindow.GetHousePowerTooltip( Arg0 )
-
-Definition type: Promote
-Return type: ValueBreakdown
-
 ### GovernmentAdministrationWindow.GetInvestmentCapTooltip( Arg0 )
 
 Definition type: Promote
@@ -58788,11 +65054,6 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CString
-
-### GovernmentAdministrationWindow.GetHousePowerTooltip( Arg0 )
-
-Definition type: Function
-Return type: [unregistered]
 
 ### GovernmentAdministrationWindow.GetHousesWithThemes
 
@@ -58924,6 +65185,245 @@ Return type: void
 Definition type: Function
 Return type: void
 
+### GovernmentRepublicWindow
+
+Definition type: Type
+
+### GovernmentRepublicWindow.AccessCapitalOpinionBar
+
+Definition type: Promote
+Return type: ComplexBar
+
+### GovernmentRepublicWindow.GetAmbitionFromIndex( Arg0 )
+
+Definition type: Promote
+Return type: HouseAspiration
+
+### GovernmentRepublicWindow.GetCapitalBaseOpinionBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### GovernmentRepublicWindow.GetCapitalCounty
+
+Definition type: Promote
+Return type: County
+
+### GovernmentRepublicWindow.GetCapitalMonthlyOpinionBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### GovernmentRepublicWindow.GetEmptyAmbition
+
+Definition type: Promote
+Return type: HouseAspiration
+
+### GovernmentRepublicWindow.GetOngoingVotingSession
+
+Definition type: Promote
+Return type: VotingSession
+
+### GovernmentRepublicWindow.GetRepublicTypeLaws
+
+Definition type: Promote
+Return type: GuiLawGroup
+
+### GovernmentRepublicWindow.GetTopRepublicRuler
+
+Definition type: Promote
+Return type: Character
+
+### GovernmentRepublicWindow.GetTopRepublicTitle
+
+Definition type: Promote
+Return type: Title
+
+### GovernmentRepublicWindow.AccessCapitalOpinionBar
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.Close
+
+Definition type: Function
+Return type: void
+
+### GovernmentRepublicWindow.GetAmbitionFromIndex( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetAmbitionMembersFromIndex( Arg0 )
+
+Definition type: Function
+Return type: int32
+
+### GovernmentRepublicWindow.GetAssembly
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetAssemblySortOptions
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetCapitalCounty
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetCurrentAssemblySortIndex
+
+Definition type: Function
+Return type: int32
+
+### GovernmentRepublicWindow.GetCurrentHouseSortIndex
+
+Definition type: Function
+Return type: int32
+
+### GovernmentRepublicWindow.GetEmptyAmbition
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetHouseSortOptions
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetHouses
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetNoAmbitionMembers
+
+Definition type: Function
+Return type: int32
+
+### GovernmentRepublicWindow.GetOngoingVotingSession
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetRepublicLaws
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetRepublicTypeLaws
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetSuccessionLaws
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetTitleLaws
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetTopRepublicRuler
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetTopRepublicTitle
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetTotalAssemblyCount
+
+Definition type: Function
+Return type: int32
+
+### GovernmentRepublicWindow.GetTreasuryLaws
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.GetVotingSessionApprovalPercent
+
+Definition type: Function
+Return type: int32
+
+### GovernmentRepublicWindow.HasOngoingVotingSession
+
+Definition type: Function
+Return type: bool
+
+### GovernmentRepublicWindow.IsAssemblySortReversed
+
+Definition type: Function
+Return type: bool
+
+### GovernmentRepublicWindow.IsHouseSortReversed
+
+Definition type: Function
+Return type: bool
+
+### GovernmentRepublicWindow.IsTopRuler( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### GovernmentRepublicWindow.OnDecreeClick( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### GovernmentRepublicWindow.OnSelectAssemblySort
+
+Definition type: Function
+Return type: void
+
+### GovernmentRepublicWindow.OnSelectHouseSort
+
+Definition type: Function
+Return type: void
+
+### GovernmentRepublicWindow.ReverseAssemblySortOrder
+
+Definition type: Function
+Return type: void
+
+### GovernmentRepublicWindow.ReverseHouseSortOrder
+
+Definition type: Function
+Return type: void
+
+### GovernmentRepublicWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### GovernmentRepublicWindow.ShouldShowVotingSession
+
+Definition type: Function
+Return type: bool
+
+### GovernmentRepublicWindow.ShowAssembly
+
+Definition type: Function
+Return type: void
+
+### GovernmentRepublicWindow.ToggleShowVotingSession
+
+Definition type: Function
+Return type: void
+
 ### GovernmentType
 
 Definition type: Type
@@ -58942,6 +65442,11 @@ Return type: Scope
 
 Definition type: Function
 Return type: [unregistered]
+
+### GovernmentType.CanHaveTitleMaa
+
+Definition type: Function
+Return type: bool
 
 ### GovernmentType.Custom( Arg0 )
 
@@ -59103,7 +65608,7 @@ Return type: [unregistered]
 Definition type: Function
 Return type: bool
 
-### GovernmentType.IsAffectedByDevelopment
+### GovernmentType.IsAffectedByProsperity
 
 Definition type: Function
 Return type: bool
@@ -59122,6 +65627,16 @@ Return type: bool
 
 Definition type: Function
 Return type: [unregistered]
+
+### GovernmentType.UsesAssembly
+
+Definition type: Function
+Return type: bool
+
+### GovernmentType.UsesStandardAdminView
+
+Definition type: Function
+Return type: bool
 
 ### GovernmentTypeFilter
 
@@ -59384,46 +65899,46 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
-### GreatBuildingIcon
+### GreatDistrictIcon
 
 Definition type: Type
 
-### GreatBuildingIcon.GetBuildingType
+### GreatDistrictIcon.GetDistrictType
 
 Definition type: Promote
-Return type: Building
+Return type: DistrictType
 
-### GreatBuildingIcon.AccessSelf
+### GreatDistrictIcon.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
 
-### GreatBuildingIcon.CanConstruct
+### GreatDistrictIcon.CanConstruct
 
 Definition type: Function
 Return type: bool
 
-### GreatBuildingIcon.GetBuildingType
+### GreatDistrictIcon.GetDistrictType
 
 Definition type: Function
 Return type: [unregistered]
 
-### GreatBuildingIcon.GetEffect
+### GreatDistrictIcon.GetEffect
 
 Definition type: Function
 Return type: CString
 
-### GreatBuildingIcon.IsBuilt
+### GreatDistrictIcon.IsBuilt
 
 Definition type: Function
 Return type: bool
 
-### GreatBuildingIcon.IsEnabled
+### GreatDistrictIcon.IsEnabled
 
 Definition type: Function
 Return type: bool
 
-### GreatBuildingIcon.Self
+### GreatDistrictIcon.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -59892,6 +66407,11 @@ Return type: CString
 
 Definition type: Function
 Return type: CFixedPoint
+
+### GreatProject.GetConstructionTimeLeft
+
+Definition type: Function
+Return type: CString
 
 ### GreatProject.GetContributions
 
@@ -60670,6 +67190,20 @@ Return type: void
 Definition type: Function
 Return type: [unregistered]
 
+### GuiBuildingDragDropObject
+
+Definition type: Type
+
+### GuiBuildingDragDropObject.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### GuiBuildingDragDropObject.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### GuiClaimant
 
 Definition type: Type
@@ -60999,6 +67533,20 @@ Return type: bool
 Definition type: Function
 Return type: [unregistered]
 
+### GuiDistrictDragDropObject
+
+Definition type: Type
+
+### GuiDistrictDragDropObject.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### GuiDistrictDragDropObject.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### GuiGameRule
 
 Definition type: Type
@@ -61106,12 +67654,37 @@ Return type: [unregistered]
 Definition type: Function
 Return type: bool
 
+### GuiLaw.CanEnactOrPropose
+
+Definition type: Function
+Return type: bool
+
+### GuiLaw.CanManuallyChange
+
+Definition type: Function
+Return type: bool
+
+### GuiLaw.CanPropose
+
+Definition type: Function
+Return type: bool
+
 ### GuiLaw.Enact
 
 Definition type: Function
 Return type: void
 
+### GuiLaw.EnactNoConfirmation
+
+Definition type: Function
+Return type: void
+
 ### GuiLaw.GetCanEnactDescription
+
+Definition type: Function
+Return type: CString
+
+### GuiLaw.GetCanProposeDescription
 
 Definition type: Function
 Return type: CString
@@ -61130,6 +67703,11 @@ Return type: CString
 
 Definition type: Function
 Return type: [unregistered]
+
+### GuiLaw.GetProposeEffectDescription
+
+Definition type: Function
+Return type: CString
 
 ### GuiLaw.GetShortCostString
 
@@ -61155,6 +67733,11 @@ Return type: bool
 
 Definition type: Function
 Return type: bool
+
+### GuiLaw.Propose
+
+Definition type: Function
+Return type: void
 
 ### GuiLaw.Self
 
@@ -61250,6 +67833,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### GuiLawGroup.GetNumberOfAvailableLaws( Arg0 )
+
+Definition type: Function
+Return type: int32
+
 ### GuiLawGroup.GetPreviousLevel
 
 Definition type: Function
@@ -61266,11 +67854,6 @@ Definition type: Function
 Return type: bool
 
 ### GuiLawGroup.IsAvailable
-
-Definition type: Function
-Return type: bool
-
-### GuiLawGroup.IsNewAvailable
 
 Definition type: Function
 Return type: bool
@@ -61984,27 +68567,27 @@ Return type: HoldingType
 ### Holding.GetConstructionBuilding
 
 Definition type: Promote
-Return type: Building
+Return type: BuildingType
 
-### Holding.GetCurrentGreatBuildingType
-
-Definition type: Promote
-Return type: Building
-
-### Holding.GetCurrentSpecialBuildingType
+### Holding.GetCurrentGreatDistrictType
 
 Definition type: Promote
-Return type: Building
+Return type: DistrictType
+
+### Holding.GetCurrentSpecialDistrictType
+
+Definition type: Promote
+Return type: DistrictType
 
 ### Holding.GetDuchyBuildingType
 
 Definition type: Promote
-Return type: Building
+Return type: DistrictType
 
-### Holding.GetGreatBuildingType
+### Holding.GetGreatDistrictType
 
 Definition type: Promote
-Return type: Building
+Return type: DistrictType
 
 ### Holding.GetHolder
 
@@ -62016,20 +68599,35 @@ Return type: Character
 Definition type: Promote
 Return type: Character
 
-### Holding.GetPrimaryBuildingType
+### Holding.GetPrimaryDistrictType
 
 Definition type: Promote
-Return type: Building
+Return type: DistrictType
 
 ### Holding.GetProvince
 
 Definition type: Promote
 Return type: Province
 
-### Holding.GetSpecialBuildingType
+### Holding.GetSpecialDistrictType
 
 Definition type: Promote
-Return type: Building
+Return type: DistrictType
+
+### Holding.GetTaxBreakdownTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### Holding.GetTradePostDistrict
+
+Definition type: Promote
+Return type: District
+
+### Holding.GetTradePostTitle
+
+Definition type: Promote
+Return type: Title
 
 ### Holding.GetType
 
@@ -62041,7 +68639,12 @@ Return type: HoldingType
 Definition type: Function
 Return type: [unregistered]
 
-### Holding.CanConstructAnyBuilding( Arg0 )
+### Holding.CanCharacterHaveTradePost( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### Holding.CanConstructAnyDistrict( Arg0 )
 
 Definition type: Function
 Return type: bool
@@ -62052,6 +68655,11 @@ Definition type: Function
 Return type: CFixedPoint
 
 ### Holding.GetBarterGoodsIncomeTooltip
+
+Definition type: Function
+Return type: CString
+
+### Holding.GetCharacterCannotHaveTradePostReason( Arg0 )
 
 Definition type: Function
 Return type: CString
@@ -62076,12 +68684,12 @@ Return type: [unregistered]
 Definition type: Function
 Return type: int32
 
-### Holding.GetCurrentGreatBuildingType
+### Holding.GetCurrentGreatDistrictType
 
 Definition type: Function
 Return type: [unregistered]
 
-### Holding.GetCurrentSpecialBuildingType
+### Holding.GetCurrentSpecialDistrictType
 
 Definition type: Function
 Return type: [unregistered]
@@ -62091,7 +68699,27 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
-### Holding.GetGreatBuildingType
+### Holding.GetFoodRequirement
+
+Definition type: Function
+Return type: int32
+
+### Holding.GetFoodRequirementDesc
+
+Definition type: Function
+Return type: CString
+
+### Holding.GetFoodSupply
+
+Definition type: Function
+Return type: int32
+
+### Holding.GetFoodSupplyDesc
+
+Definition type: Function
+Return type: CString
+
+### Holding.GetGreatDistrictType
 
 Definition type: Function
 Return type: [unregistered]
@@ -62141,7 +68769,7 @@ Return type: CString
 Definition type: Function
 Return type: CString
 
-### Holding.GetPrimaryBuildingType
+### Holding.GetPrimaryDistrictType
 
 Definition type: Function
 Return type: [unregistered]
@@ -62151,12 +68779,12 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
-### Holding.GetSpecialBuildingType
+### Holding.GetSpecialDistrictType
 
 Definition type: Function
 Return type: [unregistered]
 
-### Holding.GetTaxTooltip
+### Holding.GetTaxBreakdownTooltip
 
 Definition type: Function
 Return type: [unregistered]
@@ -62165,6 +68793,16 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CString
+
+### Holding.GetTradePostDistrict
+
+Definition type: Function
+Return type: [unregistered]
+
+### Holding.GetTradePostTitle
+
+Definition type: Function
+Return type: [unregistered]
 
 ### Holding.GetType
 
@@ -62186,27 +68824,27 @@ Return type: float
 Definition type: Function
 Return type: bool
 
-### Holding.HasDuchyBuildingSlot
+### Holding.HasConstructedTradePost
 
 Definition type: Function
 Return type: bool
 
-### Holding.HasGreatBuildingSlot
+### Holding.HasTradePostDistrictSlot
 
 Definition type: Function
 Return type: bool
 
-### Holding.HasSpecialBuildingSlot
-
-Definition type: Function
-Return type: bool
-
-### Holding.IsConstructionInProgress
+### Holding.IsConstructingTradePost
 
 Definition type: Function
 Return type: bool
 
 ### Holding.IsEmpty
+
+Definition type: Function
+Return type: bool
+
+### Holding.IsHoldingConstructionInProgress
 
 Definition type: Function
 Return type: bool
@@ -62235,6 +68873,11 @@ Return type: bool
 
 Definition type: Function
 Return type: [unregistered]
+
+### Holding.IsTradePostConstructionInProgress
+
+Definition type: Function
+Return type: bool
 
 ### Holding.IsValidForLesseeOrHolder
 
@@ -62273,12 +68916,17 @@ Return type: Title
 ### HoldingItem.GetConstructionBuilding
 
 Definition type: Promote
-Return type: Building
+Return type: BuildingType
 
 ### HoldingItem.GetHolding
 
 Definition type: Promote
 Return type: Holding
+
+### HoldingItem.GetTaxBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
 
 ### HoldingItem.AccessSelf
 
@@ -62309,6 +68957,11 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CString
+
+### HoldingItem.GetTaxBreakdown
+
+Definition type: Function
+Return type: [unregistered]
 
 ### HoldingItem.IsRealmCapital
 
@@ -62354,11 +69007,6 @@ Return type: MenAtArmsType
 Definition type: Promote
 Return type: Terrain
 
-### HoldingStatus.GetTimedModifier
-
-Definition type: Promote
-Return type: ModifierItem
-
 ### HoldingStatus.AccessSelf
 
 Definition type: Function
@@ -62385,11 +69033,6 @@ Definition type: Function
 Return type: [unregistered]
 
 ### HoldingStatus.GetTerrainType
-
-Definition type: Function
-Return type: [unregistered]
-
-### HoldingStatus.GetTimedModifier
 
 Definition type: Function
 Return type: [unregistered]
@@ -62424,11 +69067,6 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
-### HoldingStatus.IsTimedModifier
-
-Definition type: Function
-Return type: bool
-
 ### HoldingStatus.IsWinterLevel
 
 Definition type: Function
@@ -62443,10 +69081,10 @@ Return type: [unregistered]
 
 Definition type: Type
 
-### HoldingType.GetPrimaryBuildingType
+### HoldingType.GetPrimaryDistrictType
 
 Definition type: Promote
-Return type: Building
+Return type: DistrictType
 
 ### HoldingType.AccessSelf
 
@@ -62473,7 +69111,7 @@ Return type: CString
 Definition type: Function
 Return type: CString
 
-### HoldingType.GetPrimaryBuildingType
+### HoldingType.GetPrimaryDistrictType
 
 Definition type: Function
 Return type: [unregistered]
@@ -62502,10 +69140,15 @@ Return type: [unregistered]
 
 Definition type: Type
 
-### HoldingTypeItem.GetBuilding
+### HoldingTypeItem.AccessAsPotentialItem
 
 Definition type: Promote
-Return type: Building
+Return type: GUIPotentialItem
+
+### HoldingTypeItem.GetDistrictType
+
+Definition type: Promote
+Return type: DistrictType
 
 ### HoldingTypeItem.GetHoldingType
 
@@ -62517,17 +69160,22 @@ Return type: HoldingType
 Definition type: Promote
 Return type: Province
 
+### HoldingTypeItem.AccessAsPotentialItem
+
+Definition type: Function
+Return type: [unregistered]
+
 ### HoldingTypeItem.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
 
-### HoldingTypeItem.CanConstructBuilding
+### HoldingTypeItem.CanConstructDistrict
 
 Definition type: Function
 Return type: bool
 
-### HoldingTypeItem.GetTooltip
+### HoldingTypeItem.GetTooltip( Arg0 )
 
 Definition type: Function
 Return type: CString
@@ -62561,6 +69209,11 @@ Definition type: Type
 Definition type: Promote
 Return type: CountyDataBreakdowns
 
+### HoldingView.AccessCountyControlBar
+
+Definition type: Promote
+Return type: ComplexBar
+
 ### HoldingView.AccessCountyFertilityBar
 
 Definition type: Promote
@@ -62570,6 +69223,16 @@ Return type: ComplexBar
 
 Definition type: Promote
 Return type: ValueBreakdown
+
+### HoldingView.AccessPopularOpinionBar
+
+Definition type: Promote
+Return type: ComplexBar
+
+### HoldingView.AccessProvinceSizeBar
+
+Definition type: Promote
+Return type: ComplexBar
 
 ### HoldingView.GetCountyTitle
 
@@ -62581,30 +69244,50 @@ Return type: Title
 Definition type: Promote
 Return type: Character
 
+### HoldingView.GetDistrict
+
+Definition type: Promote
+Return type: District
+
 ### HoldingView.GetFaction
 
 Definition type: Promote
 Return type: Faction
 
-### HoldingView.GetGUIDuchyCapitalBuilding
+### HoldingView.GetGUIDuchyCapitalDistrict
 
 Definition type: Promote
-Return type: GUIBuildingItem
+Return type: GUIDistrictItem
 
-### HoldingView.GetGUIGreatBuilding
-
-Definition type: Promote
-Return type: GUIBuildingItem
-
-### HoldingView.GetGUIHoldingBuilding
+### HoldingView.GetGUIEntrepotDistrict
 
 Definition type: Promote
-Return type: GUIBuildingItem
+Return type: GUIDistrictItem
 
-### HoldingView.GetGUISpecialBuilding
+### HoldingView.GetGUIGreatDistrict
 
 Definition type: Promote
-Return type: GUIBuildingItem
+Return type: GUIDistrictItem
+
+### HoldingView.GetGUIHoldingDistrict
+
+Definition type: Promote
+Return type: GUIDistrictItem
+
+### HoldingView.GetGUIResourceDistrict
+
+Definition type: Promote
+Return type: GUIDistrictItem
+
+### HoldingView.GetGUISpecialDistrict
+
+Definition type: Promote
+Return type: GUIDistrictItem
+
+### HoldingView.GetGUITradePostDistrict
+
+Definition type: Promote
+Return type: GUIDistrictItem
 
 ### HoldingView.GetHolder
 
@@ -62616,10 +69299,10 @@ Return type: Character
 Definition type: Promote
 Return type: Holding
 
-### HoldingView.GetHoldingBuilding
+### HoldingView.GetHoldingDistrict
 
 Definition type: Promote
-Return type: Building
+Return type: District
 
 ### HoldingView.GetProvince
 
@@ -62636,12 +69319,27 @@ Return type: Title
 Definition type: Promote
 Return type: Character
 
+### HoldingView.GetTopProductionItem
+
+Definition type: Promote
+Return type: GUIProductionItem
+
 ### HoldingView.GetTrack
 
 Definition type: Promote
 Return type: GUITrackItem
 
+### HoldingView.GetViewedDistrictType
+
+Definition type: Promote
+Return type: DistrictType
+
 ### HoldingView.AccessCountyBreakdowns
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.AccessCountyControlBar
 
 Definition type: Function
 Return type: [unregistered]
@@ -62656,12 +69354,32 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### HoldingView.AccessPopularOpinionBar
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.AccessProvinceSizeBar
+
+Definition type: Function
+Return type: [unregistered]
+
 ### HoldingView.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
 
-### HoldingView.CanCancelConstruction
+### HoldingView.CalcNumOccupiedBuildSlots
+
+Definition type: Function
+Return type: int32
+
+### HoldingView.CanCancelHoldingConstruction
+
+Definition type: Function
+Return type: bool
+
+### HoldingView.CanDrag
 
 Definition type: Function
 Return type: bool
@@ -62677,6 +69395,11 @@ Definition type: Function
 Return type: bool
 
 ### HoldingView.CanNewHoldingBeConstructed
+
+Definition type: Function
+Return type: bool
+
+### HoldingView.CanReplaceDistrict
 
 Definition type: Function
 Return type: bool
@@ -62706,27 +69429,37 @@ Return type: void
 Definition type: Function
 Return type: void
 
-### HoldingView.CloseSubwindows
+### HoldingView.CloseTracksView
 
 Definition type: Function
 Return type: void
+
+### HoldingView.EstimateTotalNumAvailableBuildSlots
+
+Definition type: Function
+Return type: int32
 
 ### HoldingView.GetAllFactionNames
 
 Definition type: Function
 Return type: CString
 
-### HoldingView.GetBuildings
+### HoldingView.GetBuildSlotBreakdown
+
+Definition type: Function
+Return type: CString
+
+### HoldingView.GetBuildingItems
 
 Definition type: Function
 Return type: [unregistered]
 
-### HoldingView.GetConstructionProgressForSlot( Arg0 )
+### HoldingView.GetConstructionProgressForNewHolding
 
 Definition type: Function
 Return type: CFixedPoint
 
-### HoldingView.GetConstructionTimeLeftForSlot( Arg0 )
+### HoldingView.GetConstructionTimeLeftForNewHolding
 
 Definition type: Function
 Return type: CString
@@ -62766,7 +69499,47 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### HoldingView.GetDistrict
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetDistricts
+
+Definition type: Function
+Return type: [unregistered]
+
 ### HoldingView.GetFaction
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetGUIDuchyCapitalDistrict
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetGUIEntrepotDistrict
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetGUIGreatDistrict
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetGUIResourceDistrict
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetGUISpecialDistrict
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetGUITradePostDistrict
 
 Definition type: Function
 Return type: [unregistered]
@@ -62806,11 +69579,6 @@ Return type: CFixedPoint
 Definition type: Function
 Return type: [unregistered]
 
-### HoldingView.GetHoldingBuilding
-
-Definition type: Function
-Return type: [unregistered]
-
 ### HoldingView.GetHoldingConstructionTooltip
 
 Definition type: Function
@@ -62820,6 +69588,16 @@ Return type: CString
 
 Definition type: Function
 Return type: CString
+
+### HoldingView.GetHoldingDistrict
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetHoldingModifiers
+
+Definition type: Function
+Return type: [unregistered]
 
 ### HoldingView.GetHoldingStatuses
 
@@ -62831,10 +69609,20 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
-### HoldingView.GetHoldingUnderConstructionTooltip
+### HoldingView.GetHoldingUnderConstructionTooltip( Arg0 )
 
 Definition type: Function
 Return type: CString
+
+### HoldingView.GetLockedBuildings
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetNonPrimaryBuildingItems
+
+Definition type: Function
+Return type: [unregistered]
 
 ### HoldingView.GetOccupiedInfo
 
@@ -62842,6 +69630,16 @@ Definition type: Function
 Return type: CString
 
 ### HoldingView.GetPotentialBuildings
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetPotentialDistricts
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetProductionItems
 
 Definition type: Function
 Return type: [unregistered]
@@ -62876,6 +69674,16 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### HoldingView.GetTopProductionItem
+
+Definition type: Function
+Return type: [unregistered]
+
+### HoldingView.GetTrack
+
+Definition type: Function
+Return type: [unregistered]
+
 ### HoldingView.GetTracksViewLabel
 
 Definition type: Function
@@ -62885,6 +69693,11 @@ Return type: CString
 
 Definition type: Function
 Return type: CString
+
+### HoldingView.GetViewedDistrictType
+
+Definition type: Function
+Return type: [unregistered]
 
 ### HoldingView.GoToLocation
 
@@ -62896,6 +69709,11 @@ Return type: void
 Definition type: Function
 Return type: void
 
+### HoldingView.HasAnySpecialDistrictSlot
+
+Definition type: Function
+Return type: bool
+
 ### HoldingView.HasControlOfHolding( Arg0 )
 
 Definition type: Function
@@ -62906,12 +69724,17 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
-### HoldingView.HasDuchyCapitalBuildingSlot
+### HoldingView.HasDuchyCapitalDistrictSlot
 
 Definition type: Function
 Return type: bool
 
-### HoldingView.HasGreatBuildingSlot
+### HoldingView.HasEntrepotDistrictSlot
+
+Definition type: Function
+Return type: bool
+
+### HoldingView.HasGreatDistrictSlot
 
 Definition type: Function
 Return type: bool
@@ -62926,7 +69749,12 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
-### HoldingView.HasSpecialBuildingSlot
+### HoldingView.HasResourceDistrictSlot
+
+Definition type: Function
+Return type: bool
+
+### HoldingView.HasSpecialDistrictSlot
 
 Definition type: Function
 Return type: bool
@@ -62936,7 +69764,17 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### HoldingView.HasTradePostDistrictSlot
+
+Definition type: Function
+Return type: bool
+
 ### HoldingView.IsBeingConstructed
+
+Definition type: Function
+Return type: bool
+
+### HoldingView.IsBuildingTracksViewShown
 
 Definition type: Function
 Return type: bool
@@ -62946,7 +69784,22 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
-### HoldingView.IsSelectingBuildingToConstruct
+### HoldingView.IsReplacingBuilding
+
+Definition type: Function
+Return type: bool
+
+### HoldingView.IsReplacingConstruction
+
+Definition type: Function
+Return type: bool
+
+### HoldingView.IsReplacingDistrict
+
+Definition type: Function
+Return type: bool
+
+### HoldingView.IsSelectingConstruction
 
 Definition type: Function
 Return type: bool
@@ -62961,17 +69814,27 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### HoldingView.IsSelectingNewDistrict
+
+Definition type: Function
+Return type: bool
+
+### HoldingView.IsViewingNewDistrict
+
+Definition type: Function
+Return type: bool
+
 ### HoldingView.NextHolding
 
 Definition type: Function
 Return type: void
 
-### HoldingView.OnClickHoldingBuilding
+### HoldingView.OnClickHoldingCancelDistrict
 
 Definition type: Function
 Return type: void
 
-### HoldingView.OnClickHoldingCancelBuilding
+### HoldingView.OnClickHoldingDistrict
 
 Definition type: Function
 Return type: void
@@ -62982,6 +69845,21 @@ Definition type: Function
 Return type: void
 
 ### HoldingView.OnGotoFaction
+
+Definition type: Function
+Return type: void
+
+### HoldingView.OnMouseEnterDraggable
+
+Definition type: Function
+Return type: void
+
+### HoldingView.OnMouseStartDragging
+
+Definition type: Function
+Return type: void
+
+### HoldingView.OnReplaceDistrict
 
 Definition type: Function
 Return type: void
@@ -63006,6 +69884,11 @@ Return type: bool
 Definition type: Function
 Return type: void
 
+### HoldingView.ReturnToDistrictView
+
+Definition type: Function
+Return type: void
+
 ### HoldingView.Self
 
 Definition type: Function
@@ -63017,6 +69900,46 @@ Definition type: Function
 Return type: void
 
 ### HoldingView.SetRealmCapital
+
+Definition type: Function
+Return type: void
+
+### HoldingView.SetViewToDuchyCapitalDistrict
+
+Definition type: Function
+Return type: void
+
+### HoldingView.SetViewToEntrepotDistrict
+
+Definition type: Function
+Return type: void
+
+### HoldingView.SetViewToGreatDistrict
+
+Definition type: Function
+Return type: void
+
+### HoldingView.SetViewToHoldingDistrict
+
+Definition type: Function
+Return type: void
+
+### HoldingView.SetViewToResourceDistrict
+
+Definition type: Function
+Return type: void
+
+### HoldingView.SetViewToSpecialDistrict
+
+Definition type: Function
+Return type: void
+
+### HoldingView.SetViewToTradePostDistrict
+
+Definition type: Function
+Return type: void
+
+### HoldingView.SetViewedDistrictType( Arg0 )
 
 Definition type: Function
 Return type: void
@@ -63103,7 +70026,7 @@ Return type: [unregistered]
 ### HolyOrder.GetCostDescForPlayer
 
 Definition type: Function
-Return type: [unregistered]
+Return type: CString
 
 ### HolyOrder.GetCurrentSoldiers
 
@@ -63173,7 +70096,7 @@ Return type: [unregistered]
 ### HolyOrder.GetSoldiersRatioForProgressBar
 
 Definition type: Function
-Return type: [unregistered]
+Return type: float
 
 ### HolyOrder.GetTenet
 
@@ -63198,7 +70121,7 @@ Return type: bool
 ### HolyOrder.IsHiredByLocalPlayer
 
 Definition type: Function
-Return type: [unregistered]
+Return type: bool
 
 ### HolyOrder.IsMilitary
 
@@ -63208,7 +70131,7 @@ Return type: bool
 ### HolyOrder.IsPlayerPatron
 
 Definition type: Function
-Return type: [unregistered]
+Return type: bool
 
 ### HolyOrder.IsPledgedToGreatHolyWar
 
@@ -63286,7 +70209,7 @@ Return type: Inventory
 ### HolySite.GetRelatedBuildingType
 
 Definition type: Promote
-Return type: Building
+Return type: BuildingType
 
 ### HolySite.GetType
 
@@ -63392,6 +70315,11 @@ Return type: bool
 
 Definition type: Function
 Return type: [unregistered]
+
+### HolySite.ToggleView( Arg0 )
+
+Definition type: Function
+Return type: void
 
 ### HolySiteCreationWindow
 
@@ -64345,6 +71273,11 @@ Return type: bool
 Definition type: Function
 Return type: [unregistered]
 
+### HouseAspiration.UpgradesAutomatically
+
+Definition type: Function
+Return type: bool
+
 ### HouseAspirationLevel
 
 Definition type: Type
@@ -64417,6 +71350,11 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: [unregistered]
+
+### HouseAspirationWindow.GetSelectedHouseAspirationCanUpgradeDesc
+
+Definition type: Function
+Return type: CString
 
 ### HouseAspirationWindow.GetSelectedHouseAspirationCooldown
 
@@ -64666,6 +71604,11 @@ Definition type: Function
 Return type: [unregistered]
 
 ### HouseRelation.IsIndexAtRelationChange( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### HouseRelation.IsValid
 
 Definition type: Function
 Return type: bool
@@ -65064,6 +72007,55 @@ Definition type: Function
 Return type: bool
 
 ### HouseUnityStage.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### HouseUnityType
+
+Definition type: Type
+
+### HouseUnityType.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### HouseUnityType.GetButtonLabel
+
+Definition type: Function
+Return type: CString
+
+### HouseUnityType.GetConcept
+
+Definition type: Function
+Return type: CString
+
+### HouseUnityType.GetIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### HouseUnityType.GetKey
+
+Definition type: Function
+Return type: CString
+
+### HouseUnityType.GetLevelConcept
+
+Definition type: Function
+Return type: CString
+
+### HouseUnityType.GetShortName
+
+Definition type: Function
+Return type: CString
+
+### HouseUnityType.IsValid
+
+Definition type: Function
+Return type: bool
+
+### HouseUnityType.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -65764,6 +72756,11 @@ Return type: ComplexBar
 Definition type: Promote
 Return type: MeritItem
 
+### InGameBottomBar.GetOngoingVotingSession
+
+Definition type: Promote
+Return type: VotingSession
+
 ### InGameBottomBar.GetSelectedInspiration
 
 Definition type: Promote
@@ -65869,6 +72866,11 @@ Return type: CFixedPoint
 Definition type: Function
 Return type: [unregistered]
 
+### InGameBottomBar.GetOngoingVotingSession
+
+Definition type: Function
+Return type: [unregistered]
+
 ### InGameBottomBar.GetOwnedCountiesInDynasticCycleCount
 
 Definition type: Function
@@ -65919,6 +72921,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: bool
 
+### InGameBottomBar.HasOngoingVotingSession
+
+Definition type: Function
+Return type: bool
+
 ### InGameBottomBar.HasSelectedInspiration
 
 Definition type: Function
@@ -65929,15 +72936,15 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### InGameBottomBar.OpenVotingSessionInfo
+
+Definition type: Function
+Return type: void
+
 ### InGameBottomBar.Self
 
 Definition type: Function
 Return type: [unregistered]
-
-### InGameBottomBar.ShouldShowBlocInHUD
-
-Definition type: Function
-Return type: bool
 
 ### InGameBottomBar.ShouldShowDiarchyInHUD
 
@@ -65980,6 +72987,11 @@ Definition type: Function
 Return type: bool
 
 ### InGameBottomBar.ShouldShowRadianceInHUD
+
+Definition type: Function
+Return type: bool
+
+### InGameBottomBar.ShouldShowVotingSessionWidget
 
 Definition type: Function
 Return type: bool
@@ -67257,6 +74269,11 @@ Return type: SkillSchemeGroup
 Definition type: Promote
 Return type: SkillSchemeGroup
 
+### IntrigueWindow.GetTradeSchemes
+
+Definition type: Promote
+Return type: SkillSchemeGroup
+
 ### IntrigueWindow.AccessSelf
 
 Definition type: Function
@@ -67884,6 +74901,11 @@ Return type: int32
 Definition type: Function
 Return type: [unregistered]
 
+### InventoryView.GetSlotAvailabilityTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
+
 ### InventoryView.GetSortedArtifacts
 
 Definition type: Function
@@ -67910,6 +74932,11 @@ Definition type: Function
 Return type: bool
 
 ### InventoryView.IsSelectedSlot( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### InventoryView.IsSlotAvailable( Arg0 )
 
 Definition type: Function
 Return type: bool
@@ -68570,6 +75597,50 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### LandlessRulerFilterWindow
+
+Definition type: Type
+
+### LandlessRulerFilterWindow.GetSelectedGovernment
+
+Definition type: Promote
+Return type: GovernmentType
+
+### LandlessRulerFilterWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### LandlessRulerFilterWindow.GetFoldedGovernmentsDesc( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### LandlessRulerFilterWindow.GetGovernmentFilters
+
+Definition type: Function
+Return type: [unregistered]
+
+### LandlessRulerFilterWindow.GetSelectedGovernment
+
+Definition type: Function
+Return type: [unregistered]
+
+### LandlessRulerFilterWindow.HasSelectedGovernment
+
+Definition type: Function
+Return type: bool
+
+### LandlessRulerFilterWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### LandlessRulerFilterWindow.SetSelectedGovernment( Arg0 )
+
+Definition type: Function
+Return type: void
+
 ### LandlessRulersMapIcon
 
 Definition type: Type
@@ -68682,20 +75753,35 @@ Definition type: Type
 Definition type: Promote
 Return type: LawGroup
 
+### Law.MakeScope
+
+Definition type: Promote
+Return type: Scope
+
 ### Law.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
 
-### Law.GetAddLawConfirmationButtonText
+### Law.Custom( Arg0 )
 
 Definition type: Function
 Return type: CString
 
-### Law.GetAddLawConfirmationTitle
+### Law.GetAddLawConfirmationButtonText( Arg0 )
 
 Definition type: Function
 Return type: CString
+
+### Law.GetAddLawConfirmationTitle( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### Law.GetAiApprovalRating( Arg0 )
+
+Definition type: Function
+Return type: int32
 
 ### Law.GetEffectDescription
 
@@ -68767,6 +75853,11 @@ Return type: CString
 Definition type: Function
 Return type: CString
 
+### Law.GetSmallIcon
+
+Definition type: Function
+Return type: [unregistered]
+
 ### Law.GetSubName
 
 Definition type: Function
@@ -68783,6 +75874,11 @@ Definition type: Function
 Return type: bool
 
 ### Law.HasIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### Law.HasSmallIcon
 
 Definition type: Function
 Return type: [unregistered]
@@ -68807,6 +75903,270 @@ Return type: CString
 Definition type: Function
 Return type: [unregistered]
 
+### Law.UsesAiApproval
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow
+
+Definition type: Type
+
+### LawChangeWindow.AccessApprovalBar
+
+Definition type: Promote
+Return type: ComplexBar
+
+### LawChangeWindow.AccessLawGroup
+
+Definition type: Promote
+Return type: GuiLawGroup
+
+### LawChangeWindow.GetCurrentLaw
+
+Definition type: Promote
+Return type: GuiLaw
+
+### LawChangeWindow.GetDynastyHouse
+
+Definition type: Promote
+Return type: DynastyHouse
+
+### LawChangeWindow.GetProposedLaw
+
+Definition type: Promote
+Return type: Law
+
+### LawChangeWindow.GetProposedLawGroup
+
+Definition type: Promote
+Return type: LawGroup
+
+### LawChangeWindow.GetSelectedLaw
+
+Definition type: Promote
+Return type: GuiLaw
+
+### LawChangeWindow.GetVotingSession
+
+Definition type: Promote
+Return type: VotingSession
+
+### LawChangeWindow.AccessApprovalBar
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.AccessLawGroup
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.ApproveProposal
+
+Definition type: Function
+Return type: Command
+
+### LawChangeWindow.ChangeWithVotingSession
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.Close
+
+Definition type: Function
+Return type: void
+
+### LawChangeWindow.GetAppointmentLaws
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetApprovalThreshold
+
+Definition type: Function
+Return type: int32
+
+### LawChangeWindow.GetApprovalThresholdPercent
+
+Definition type: Function
+Return type: CString
+
+### LawChangeWindow.GetApprovingMembers
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetDissentingMembers
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetDynastyHouse
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetElectiveLaws
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetLineOfSuccession
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetMajorAssembly
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetMinorAssembly
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetNumberOfApprovers
+
+Definition type: Function
+Return type: int32
+
+### LawChangeWindow.GetNumberOfDissenters
+
+Definition type: Function
+Return type: int32
+
+### LawChangeWindow.GetOtherLaws
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetPartitionLaws
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetPowerfulVassals
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetProposedLaw
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetProposedLawGroup
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetSingleHeirLaws
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetTitles
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.GetVotingSession
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.HasVotedApprove( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.HasVotedReject( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.HasVotedUndecided( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.HasVotingSession
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.IsCurrentlyProposedLaw( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.IsProposer( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.IsTabShown( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.LawUsesPowerfulVassalApproval
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.OnTabChanged
+
+Definition type: Function
+Return type: void
+
+### LawChangeWindow.RejectProposal
+
+Definition type: Function
+Return type: Command
+
+### LawChangeWindow.RulerHasAssembly
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### LawChangeWindow.SetTab( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### LawChangeWindow.ShouldShowVotingSessionResult
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.WouldVoteApprove( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.WouldVoteReject( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### LawChangeWindow.WouldVoteUndecided( Arg0 )
+
+Definition type: Function
+Return type: bool
+
 ### LawGroup
 
 Definition type: Type
@@ -68815,6 +76175,11 @@ Definition type: Type
 
 Definition type: Function
 Return type: [unregistered]
+
+### LawGroup.CanProposeNewLaw( Arg0 )
+
+Definition type: Function
+Return type: bool
 
 ### LawGroup.CanRulerChange( Arg0 )
 
@@ -69108,6 +76473,75 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### LedgerDistrictItem
+
+Definition type: Type
+
+### LedgerDistrictItem.GetDistrictType
+
+Definition type: Promote
+Return type: DistrictType
+
+### LedgerDistrictItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### LedgerDistrictItem.CanConstruct
+
+Definition type: Function
+Return type: bool
+
+### LedgerDistrictItem.GetConstructingProgress
+
+Definition type: Function
+Return type: CFixedPoint
+
+### LedgerDistrictItem.GetLevel
+
+Definition type: Function
+Return type: int32
+
+### LedgerDistrictItem.GetTooltip
+
+Definition type: Function
+Return type: CString
+
+### LedgerDistrictItem.IsActive
+
+Definition type: Function
+Return type: bool
+
+### LedgerDistrictItem.IsConstruction
+
+Definition type: Function
+Return type: bool
+
+### LedgerDistrictItem.IsDistrictDisabled
+
+Definition type: Function
+Return type: bool
+
+### LedgerDistrictItem.IsDistrictRuined
+
+Definition type: Function
+Return type: bool
+
+### LedgerDistrictItem.IsValid
+
+Definition type: Function
+Return type: bool
+
+### LedgerDistrictItem.OnClick
+
+Definition type: Function
+Return type: void
+
+### LedgerDistrictItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### LedgerDynastyHouseItem
 
 Definition type: Type
@@ -69248,37 +76682,77 @@ Return type: [unregistered]
 
 Definition type: Type
 
-### LedgerProvinceItem.GetGUIDuchyCapitalBuilding
+### LedgerProvinceItem.GetDuchyCapitalDistrict
 
 Definition type: Promote
-Return type: GUIBuildingItem
+Return type: LedgerDistrictItem
 
-### LedgerProvinceItem.GetGUIGreatBuilding
-
-Definition type: Promote
-Return type: GUIBuildingItem
-
-### LedgerProvinceItem.GetGUIHoldingBuilding
+### LedgerProvinceItem.GetEntrepotDistrict
 
 Definition type: Promote
-Return type: GUIBuildingItem
+Return type: LedgerDistrictItem
 
-### LedgerProvinceItem.GetGUISpecialBuilding
+### LedgerProvinceItem.GetGreatDistrict
 
 Definition type: Promote
-Return type: GUIBuildingItem
+Return type: LedgerDistrictItem
+
+### LedgerProvinceItem.GetHolding
+
+Definition type: Promote
+Return type: Holding
+
+### LedgerProvinceItem.GetHoldingDistrict
+
+Definition type: Promote
+Return type: LedgerDistrictItem
+
+### LedgerProvinceItem.GetLootBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
 
 ### LedgerProvinceItem.GetProvince
 
 Definition type: Promote
 Return type: Province
 
+### LedgerProvinceItem.GetResourceDistrict
+
+Definition type: Promote
+Return type: LedgerDistrictItem
+
+### LedgerProvinceItem.GetSpecialDistrict
+
+Definition type: Promote
+Return type: LedgerDistrictItem
+
+### LedgerProvinceItem.GetTaxBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### LedgerProvinceItem.GetTradePostDistrict
+
+Definition type: Promote
+Return type: LedgerDistrictItem
+
 ### LedgerProvinceItem.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
 
-### LedgerProvinceItem.GetBuildings
+### LedgerProvinceItem.CanConstructInHolding
+
+Definition type: Function
+Return type: bool
+
+### LedgerProvinceItem.GetDistricts
+
+Definition type: Function
+Return type: [unregistered]
+
+### LedgerProvinceItem.GetHolding
 
 Definition type: Function
 Return type: [unregistered]
@@ -69389,6 +76863,16 @@ Return type: [unregistered]
 
 Definition type: Type
 
+### LedgerWindow.AccessCountyBreakdowns
+
+Definition type: Promote
+Return type: CountyDataBreakdowns
+
+### LedgerWindow.AccessCountyComplexBars
+
+Definition type: Promote
+Return type: CountyComplexBars
+
 ### LedgerWindow.GetCategory( Arg0 )
 
 Definition type: Promote
@@ -69398,6 +76882,16 @@ Return type: CharacterListFilterCategory
 
 Definition type: Promote
 Return type: LedgerListFilter
+
+### LedgerWindow.AccessCountyBreakdowns
+
+Definition type: Function
+Return type: [unregistered]
+
+### LedgerWindow.AccessCountyComplexBars
+
+Definition type: Function
+Return type: [unregistered]
 
 ### LedgerWindow.AccessSelf
 
@@ -72388,6 +79882,21 @@ Return type: RegimentWinterModifier
 Definition type: Function
 Return type: [unregistered]
 
+### MenAtArmsType.CalcHighMonthlyCostBreakdown( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### MenAtArmsType.CalcLowMonthlyCostBreakdown( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### MenAtArmsType.Custom( Arg0 )
+
+Definition type: Function
+Return type: CString
+
 ### MenAtArmsType.FightsInMainPhase
 
 Definition type: Function
@@ -72601,6 +80110,16 @@ Return type: Title
 
 Definition type: Function
 Return type: [unregistered]
+
+### MenAtArmsTypeView.CalcHighMonthlyCostBreakdown
+
+Definition type: Function
+Return type: CString
+
+### MenAtArmsTypeView.CalcLowMonthlyCostBreakdown
+
+Definition type: Function
+Return type: CString
 
 ### MenAtArmsTypeView.CanCreate
 
@@ -72847,7 +80366,12 @@ Return type: bool
 ### MercenaryCompany.GetCostDesc
 
 Definition type: Function
-Return type: [unregistered]
+Return type: CString
+
+### MercenaryCompany.GetCostTooltip
+
+Definition type: Function
+Return type: CString
 
 ### MercenaryCompany.GetCulture
 
@@ -72862,12 +80386,12 @@ Return type: int32
 ### MercenaryCompany.GetHireDurationDesc
 
 Definition type: Function
-Return type: [unregistered]
+Return type: CString
 
 ### MercenaryCompany.GetHiredTimeLeft
 
 Definition type: Function
-Return type: [unregistered]
+Return type: CString
 
 ### MercenaryCompany.GetHomeCounty
 
@@ -72902,12 +80426,27 @@ Return type: [unregistered]
 ### MercenaryCompany.GetSoldiersRatioForProgressBar
 
 Definition type: Function
-Return type: [unregistered]
+Return type: float
 
 ### MercenaryCompany.GetTitle
 
 Definition type: Function
 Return type: [unregistered]
+
+### MercenaryCompany.IsAvailableCanAfford
+
+Definition type: Function
+Return type: bool
+
+### MercenaryCompany.IsAvailableWouldBankrupt
+
+Definition type: Function
+Return type: bool
+
+### MercenaryCompany.IsAvailableWouldPutInDebt
+
+Definition type: Function
+Return type: bool
 
 ### MercenaryCompany.IsHired
 
@@ -72917,7 +80456,17 @@ Return type: bool
 ### MercenaryCompany.IsHiredByLocalPlayer
 
 Definition type: Function
-Return type: [unregistered]
+Return type: bool
+
+### MercenaryCompany.IsHiredNotByPlayer
+
+Definition type: Function
+Return type: bool
+
+### MercenaryCompany.IsUnavailable
+
+Definition type: Function
+Return type: bool
 
 ### MercenaryCompany.Self
 
@@ -74736,6 +82285,11 @@ Return type: ValueBreakdown
 Definition type: Promote
 Return type: Character
 
+### MyRealmWindow.GetCompanySizeLawGroup
+
+Definition type: Promote
+Return type: GuiLawGroup
+
 ### MyRealmWindow.GetDisplayedDiarch
 
 Definition type: Promote
@@ -74790,6 +82344,11 @@ Return type: ValueBreakdown
 
 Definition type: Promote
 Return type: ValueBreakdown
+
+### MyRealmWindow.GetPatronBeneficiaries
+
+Definition type: Promote
+Return type: BeneficiaryCharacterList
 
 ### MyRealmWindow.GetPowerfulVassals
 
@@ -74916,6 +82475,11 @@ Return type: CFixedPoint
 Definition type: Function
 Return type: [unregistered]
 
+### MyRealmWindow.GetCompanySizeLawGroup
+
+Definition type: Function
+Return type: [unregistered]
+
 ### MyRealmWindow.GetDesignateTooltip
 
 Definition type: Function
@@ -75001,6 +82565,11 @@ Return type: int32
 Definition type: Function
 Return type: int32
 
+### MyRealmWindow.GetPatronBeneficiaries
+
+Definition type: Function
+Return type: [unregistered]
+
 ### MyRealmWindow.GetPowerfulVassalLawApproves
 
 Definition type: Function
@@ -75042,6 +82611,11 @@ Definition type: Function
 Return type: [unregistered]
 
 ### MyRealmWindow.GetTitlesCanVote
+
+Definition type: Function
+Return type: [unregistered]
+
+### MyRealmWindow.GetTradeMarketDomainItems
 
 Definition type: Function
 Return type: [unregistered]
@@ -76186,6 +83760,11 @@ Definition type: Function
 Return type: [unregistered]
 
 ### Outliner.GetPlayers
+
+Definition type: Function
+Return type: [unregistered]
+
+### Outliner.GetTradeRouteItems
 
 Definition type: Function
 Return type: [unregistered]
@@ -78545,6 +86124,11 @@ Return type: Legend
 Definition type: Promote
 Return type: Holding
 
+### Province.GetLootBreakdownTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
 ### Province.GetMaaOriginHere
 
 Definition type: Promote
@@ -78569,6 +86153,11 @@ Return type: Terrain
 
 Definition type: Promote
 Return type: Title
+
+### Province.GetTradeMarket
+
+Definition type: Promote
+Return type: TradeMarket
 
 ### Province.MakeScope
 
@@ -78685,6 +86274,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: CString
 
+### Province.GetFocusGoodPotentialTooltip
+
+Definition type: Function
+Return type: CString
+
 ### Province.GetFortLevel
 
 Definition type: Function
@@ -78735,20 +86329,35 @@ Return type: [unregistered]
 Definition type: Function
 Return type: CFixedPoint
 
+### Province.GetLootBreakdownTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
 ### Province.GetLootTime( Arg0 )
 
 Definition type: Function
 Return type: int32
 
-### Province.GetLootTooltip
-
-Definition type: Function
-Return type: CString
-
 ### Province.GetMaaOriginHere
 
 Definition type: Function
 Return type: [unregistered]
+
+### Province.GetMaxProvinceSize
+
+Definition type: Function
+Return type: CFixedPoint
+
+### Province.GetMaxProvinceSizeValue
+
+Definition type: Function
+Return type: CFixedPoint
+
+### Province.GetMonthlyProvinceSizeChange
+
+Definition type: Function
+Return type: CFixedPoint
 
 ### Province.GetName
 
@@ -78759,6 +86368,46 @@ Return type: CString
 
 Definition type: Function
 Return type: CString
+
+### Province.GetNextSizeLevelValue
+
+Definition type: Function
+Return type: CFixedPoint
+
+### Province.GetProvinceSizeBaseline
+
+Definition type: Function
+Return type: CFixedPoint
+
+### Province.GetProvinceSizeBaselineLevel
+
+Definition type: Function
+Return type: int32
+
+### Province.GetProvinceSizeLevel
+
+Definition type: Function
+Return type: int32
+
+### Province.GetProvinceSizeLevelMax
+
+Definition type: Function
+Return type: int32
+
+### Province.GetProvinceSizeMapModeTooltip
+
+Definition type: Function
+Return type: CString
+
+### Province.GetProvinceSizeName
+
+Definition type: Function
+Return type: CString
+
+### Province.GetProvinceSizeValue
+
+Definition type: Function
+Return type: CFixedPoint
 
 ### Province.GetSiege
 
@@ -78801,6 +86450,16 @@ Definition type: Function
 Return type: CString
 
 ### Province.GetTitle
+
+Definition type: Function
+Return type: [unregistered]
+
+### Province.GetTopProductionTooltip
+
+Definition type: Function
+Return type: CString
+
+### Province.GetTradeMarket
 
 Definition type: Function
 Return type: [unregistered]
@@ -78905,7 +86564,7 @@ Return type: void
 Definition type: Function
 Return type: Command
 
-### Province.RebuildGreatBuilding( Arg0 )
+### Province.RebuildGreatDistrict( Arg0 )
 
 Definition type: Function
 Return type: Command
@@ -78949,6 +86608,11 @@ Return type: CombatMapIcon
 Definition type: Promote
 Return type: Character
 
+### ProvinceIcon.GetGreatProjectIcon
+
+Definition type: Promote
+Return type: GreatProjectMapIcon
+
 ### ProvinceIcon.GetHolding
 
 Definition type: Promote
@@ -78980,6 +86644,11 @@ Definition type: Promote
 Return type: Siege
 
 ### ProvinceIcon.GetTitle
+
+Definition type: Promote
+Return type: Title
+
+### ProvinceIcon.GetTradePostTitle
 
 Definition type: Promote
 Return type: Title
@@ -79029,6 +86698,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### ProvinceIcon.GetGreatProjectIcon
+
+Definition type: Function
+Return type: [unregistered]
+
 ### ProvinceIcon.GetHolding
 
 Definition type: Function
@@ -79074,6 +86748,21 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### ProvinceIcon.GetTradePostTitle
+
+Definition type: Function
+Return type: [unregistered]
+
+### ProvinceIcon.GetTradeRouteEndPoints
+
+Definition type: Function
+Return type: [unregistered]
+
+### ProvinceIcon.GetTraders
+
+Definition type: Function
+Return type: [unregistered]
+
 ### ProvinceIcon.GetUnitIcon
 
 Definition type: Function
@@ -79099,6 +86788,11 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### ProvinceIcon.HasBuiltTradePost
+
+Definition type: Function
+Return type: bool
+
 ### ProvinceIcon.HasCharacter
 
 Definition type: Function
@@ -79120,6 +86814,11 @@ Definition type: Function
 Return type: bool
 
 ### ProvinceIcon.HasDomicile
+
+Definition type: Function
+Return type: bool
+
+### ProvinceIcon.HasGreatProjects
 
 Definition type: Function
 Return type: bool
@@ -79164,6 +86863,26 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### ProvinceIcon.HasTradePostBuiltByFocusCharacter
+
+Definition type: Function
+Return type: bool
+
+### ProvinceIcon.HasTradePostBuiltByPlayer
+
+Definition type: Function
+Return type: bool
+
+### ProvinceIcon.HasTradeRouteEndPoint
+
+Definition type: Function
+Return type: bool
+
+### ProvinceIcon.HasTraders
+
+Definition type: Function
+Return type: bool
+
 ### ProvinceIcon.HasUnits
 
 Definition type: Function
@@ -79180,6 +86899,11 @@ Definition type: Function
 Return type: void
 
 ### ProvinceIcon.OnRallyPointClick
+
+Definition type: Function
+Return type: void
+
+### ProvinceIcon.OnTradeRouteEndPointClick( Arg0 )
 
 Definition type: Function
 Return type: void
@@ -79563,6 +87287,174 @@ Definition type: Function
 Return type: CString
 
 ### PuppetType.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### QueueOrConstructionItem
+
+Definition type: Type
+
+### QueueOrConstructionItem.GetBuildingType
+
+Definition type: Promote
+Return type: BuildingType
+
+### QueueOrConstructionItem.GetConstructionEndDate
+
+Definition type: Promote
+Return type: Date
+
+### QueueOrConstructionItem.GetDistrict
+
+Definition type: Promote
+Return type: District
+
+### QueueOrConstructionItem.GetDragDropObject
+
+Definition type: Promote
+Return type: QueueOrConstructionItemDragDropObject
+
+### QueueOrConstructionItem.GetHolding
+
+Definition type: Promote
+Return type: Holding
+
+### QueueOrConstructionItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### QueueOrConstructionItem.AddAboveDropHighlight
+
+Definition type: Function
+Return type: void
+
+### QueueOrConstructionItem.AddBelowDropHighlight
+
+Definition type: Function
+Return type: void
+
+### QueueOrConstructionItem.CanCancel
+
+Definition type: Function
+Return type: bool
+
+### QueueOrConstructionItem.DropAbove( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### QueueOrConstructionItem.DropBelow( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### QueueOrConstructionItem.GetBuildingType
+
+Definition type: Function
+Return type: [unregistered]
+
+### QueueOrConstructionItem.GetCancelTooltip
+
+Definition type: Function
+Return type: CString
+
+### QueueOrConstructionItem.GetConstructingProgress
+
+Definition type: Function
+Return type: CFixedPoint
+
+### QueueOrConstructionItem.GetConstructionEndDate
+
+Definition type: Function
+Return type: [unregistered]
+
+### QueueOrConstructionItem.GetDetailsTooltip
+
+Definition type: Function
+Return type: CString
+
+### QueueOrConstructionItem.GetDistrict
+
+Definition type: Function
+Return type: [unregistered]
+
+### QueueOrConstructionItem.GetDragDropObject
+
+Definition type: Function
+Return type: [unregistered]
+
+### QueueOrConstructionItem.GetHolding
+
+Definition type: Function
+Return type: [unregistered]
+
+### QueueOrConstructionItem.GetLocalQueuePosition
+
+Definition type: Function
+Return type: int32
+
+### QueueOrConstructionItem.GetWhatText
+
+Definition type: Function
+Return type: CString
+
+### QueueOrConstructionItem.GetWhatTextNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### QueueOrConstructionItem.HasAboveDropHighlight
+
+Definition type: Function
+Return type: bool
+
+### QueueOrConstructionItem.HasBelowDropHighlight
+
+Definition type: Function
+Return type: bool
+
+### QueueOrConstructionItem.IsActiveConstruction
+
+Definition type: Function
+Return type: bool
+
+### QueueOrConstructionItem.IsDistrict
+
+Definition type: Function
+Return type: bool
+
+### QueueOrConstructionItem.OnCancelClick
+
+Definition type: Function
+Return type: void
+
+### QueueOrConstructionItem.OnClick
+
+Definition type: Function
+Return type: void
+
+### QueueOrConstructionItem.RemoveDropHighlight
+
+Definition type: Function
+Return type: void
+
+### QueueOrConstructionItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### QueueOrConstructionItemDragDropObject
+
+Definition type: Type
+
+### QueueOrConstructionItemDragDropObject.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### QueueOrConstructionItemDragDropObject.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -80259,6 +88151,80 @@ Return type: bool
 Definition type: Function
 Return type: [unregistered]
 
+### RecommendedGood
+
+Definition type: Type
+
+### RecommendedGood.GetBestBuyMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### RecommendedGood.GetBestSellMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### RecommendedGood.GetExtraStopMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### RecommendedGood.GetTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### RecommendedGood.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### RecommendedGood.GetBestBuyMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### RecommendedGood.GetBestSellMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### RecommendedGood.GetExtraStopMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### RecommendedGood.GetProfit
+
+Definition type: Function
+Return type: CFixedPoint
+
+### RecommendedGood.GetTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### RecommendedGood.GetTradeableAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### RecommendedGood.HasExtraStopMarket
+
+Definition type: Function
+Return type: bool
+
+### RecommendedGood.IsExtraStopSell
+
+Definition type: Function
+Return type: bool
+
+### RecommendedGood.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### RecordedCommand
 
 Definition type: Type
@@ -80411,7 +88377,12 @@ Return type: int32
 Definition type: Function
 Return type: int32
 
-### Regiment.CalcMaintenanceCost
+### Regiment.CalcHighMonthlyCostBreakdown
+
+Definition type: Function
+Return type: CString
+
+### Regiment.CalcLowMonthlyCostBreakdown
 
 Definition type: Function
 Return type: CString
@@ -80517,11 +88488,6 @@ Definition type: Function
 Return type: CString
 
 ### Regiment.GetTotalCostString
-
-Definition type: Function
-Return type: CString
-
-### Regiment.GetTotalCostTooltip
 
 Definition type: Function
 Return type: CString
@@ -80847,6 +88813,79 @@ Definition type: Function
 Return type: bool
 
 ### RegimentWinterModifier.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### RelevantTradeMarket
+
+Definition type: Type
+
+### RelevantTradeMarket.GetMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### RelevantTradeMarket.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### RelevantTradeMarket.GetHoldings
+
+Definition type: Function
+Return type: [unregistered]
+
+### RelevantTradeMarket.GetMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### RelevantTradeMarket.IsExpanded
+
+Definition type: Function
+Return type: bool
+
+### RelevantTradeMarket.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### RelevantTradeMarket.ToggleExpanded
+
+Definition type: Function
+Return type: void
+
+### RelevantTradeMarketHolding
+
+Definition type: Type
+
+### RelevantTradeMarketHolding.GetBarony
+
+Definition type: Promote
+Return type: Title
+
+### RelevantTradeMarketHolding.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### RelevantTradeMarketHolding.GetBarony
+
+Definition type: Function
+Return type: [unregistered]
+
+### RelevantTradeMarketHolding.GetMarketPriority
+
+Definition type: Function
+Return type: int32
+
+### RelevantTradeMarketHolding.GetNeeds
+
+Definition type: Function
+Return type: [unregistered]
+
+### RelevantTradeMarketHolding.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -81380,6 +89419,35 @@ Definition type: Function
 Return type: void
 
 ### ReplacePillarWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### RepublicHouse
+
+Definition type: Type
+
+### RepublicHouse.GetHouse
+
+Definition type: Promote
+Return type: DynastyHouse
+
+### RepublicHouse.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### RepublicHouse.GetAssemblyMemberCount
+
+Definition type: Function
+Return type: int32
+
+### RepublicHouse.GetHouse
+
+Definition type: Function
+Return type: [unregistered]
+
+### RepublicHouse.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -83661,6 +91729,54 @@ Return type: bool
 Definition type: Function
 Return type: void
 
+### Road
+
+Definition type: Type
+
+### Road.MakeScope
+
+Definition type: Promote
+Return type: Scope
+
+### Road.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### Road.GetName
+
+Definition type: Function
+Return type: CString
+
+### Road.GetNameNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### Road.GetTier
+
+Definition type: Function
+Return type: int32
+
+### Road.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### RoadType
+
+Definition type: Type
+
+### RoadType.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### RoadType.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### RoyalCourtScreenshotWindow
 
 Definition type: Type
@@ -83979,6 +92095,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
+### RoyalCourtWindow.GetSlotAvailabilityTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
+
 ### RoyalCourtWindow.GetSortedArtifactForSelectedSlot
 
 Definition type: Function
@@ -84065,6 +92186,11 @@ Definition type: Function
 Return type: bool
 
 ### RoyalCourtWindow.IsSelectedSlot( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### RoyalCourtWindow.IsSlotAvailable( Arg0 )
 
 Definition type: Function
 Return type: bool
@@ -84337,7 +92463,7 @@ Return type: void
 ### RulerDesignerSaveWindow.GetDefaultSaveName
 
 Definition type: Function
-Return type: [unregistered]
+Return type: CString
 
 ### RulerDesignerSaveWindow.GetSavedRulers
 
@@ -85966,7 +94092,7 @@ Return type: CString
 ### SaveRulerItem.GetFilename
 
 Definition type: Function
-Return type: [unregistered]
+Return type: CString
 
 ### SaveRulerItem.GetGuiSkills
 
@@ -86562,6 +94688,11 @@ Return type: void
 Definition type: Function
 Return type: void
 
+### SchemeItem.TriggerPushForAdvantages
+
+Definition type: Function
+Return type: Command
+
 ### SchemeItem.TriggerSchemeHudClick
 
 Definition type: Function
@@ -86724,6 +94855,11 @@ Definition type: Function
 Return type: bool
 
 ### SchemeType.IsPolitical
+
+Definition type: Function
+Return type: bool
+
+### SchemeType.IsTrade
 
 Definition type: Function
 Return type: bool
@@ -88061,7 +96197,7 @@ Definition type: Type
 ### SilkRoadSituationIcon.GetBazaarBuilding
 
 Definition type: Promote
-Return type: Building
+Return type: BuildingType
 
 ### SilkRoadSituationIcon.GetInnovation
 
@@ -89571,6 +97707,11 @@ Return type: Situation
 Definition type: Promote
 Return type: SituationSubRegion
 
+### SituationParticipantGroup.GetTopParticipant
+
+Definition type: Promote
+Return type: Character
+
 ### SituationParticipantGroup.GetType
 
 Definition type: Promote
@@ -89617,6 +97758,11 @@ Definition type: Function
 Return type: [unregistered]
 
 ### SituationParticipantGroup.GetSubRegion
+
+Definition type: Function
+Return type: [unregistered]
+
+### SituationParticipantGroup.GetTopParticipant
 
 Definition type: Function
 Return type: [unregistered]
@@ -89999,7 +98145,7 @@ Definition type: Type
 ### SituationSubRegion.GetBazaarBuilding
 
 Definition type: Promote
-Return type: Building
+Return type: BuildingType
 
 ### SituationSubRegion.GetCenterProvince
 
@@ -90500,6 +98646,11 @@ Return type: int32
 Definition type: Function
 Return type: CString
 
+### SkillItem.GetNameRaw
+
+Definition type: Function
+Return type: CString
+
 ### SkillItem.GetSkill
 
 Definition type: Function
@@ -90765,6 +98916,11 @@ Definition type: Function
 Return type: [unregistered]
 
 ### StaticModifier.HasValidIcon
+
+Definition type: Function
+Return type: bool
+
+### StaticModifier.IsStacking
 
 Definition type: Function
 Return type: bool
@@ -92056,6 +100212,11 @@ Return type: bool
 Definition type: Function
 Return type: bool
 
+### SubjectContract.IsBeneficiaryRelationship
+
+Definition type: Function
+Return type: bool
+
 ### SubjectContract.IsBlockedFromModification
 
 Definition type: Function
@@ -92971,85 +101132,6 @@ Return type: [unregistered]
 Definition type: Function
 Return type: [unregistered]
 
-### SuccessionLawChangeWindow
-
-Definition type: Type
-
-### SuccessionLawChangeWindow.AccessLawGroup
-
-Definition type: Promote
-Return type: GuiLawGroup
-
-### SuccessionLawChangeWindow.GetDynastyHouse
-
-Definition type: Promote
-Return type: DynastyHouse
-
-### SuccessionLawChangeWindow.GetSelectedLaw
-
-Definition type: Promote
-Return type: GuiLaw
-
-### SuccessionLawChangeWindow.AccessLawGroup
-
-Definition type: Function
-Return type: [unregistered]
-
-### SuccessionLawChangeWindow.AccessSelf
-
-Definition type: Function
-Return type: [unregistered]
-
-### SuccessionLawChangeWindow.Close
-
-Definition type: Function
-Return type: void
-
-### SuccessionLawChangeWindow.GetAppointmentLaws
-
-Definition type: Function
-Return type: [unregistered]
-
-### SuccessionLawChangeWindow.GetDynastyHouse
-
-Definition type: Function
-Return type: [unregistered]
-
-### SuccessionLawChangeWindow.GetLineOfSuccession
-
-Definition type: Function
-Return type: [unregistered]
-
-### SuccessionLawChangeWindow.GetOtherLaws
-
-Definition type: Function
-Return type: [unregistered]
-
-### SuccessionLawChangeWindow.GetPartitionLaws
-
-Definition type: Function
-Return type: [unregistered]
-
-### SuccessionLawChangeWindow.GetPowerfulVassals
-
-Definition type: Function
-Return type: [unregistered]
-
-### SuccessionLawChangeWindow.GetSingleHeirLaws
-
-Definition type: Function
-Return type: [unregistered]
-
-### SuccessionLawChangeWindow.GetTitles
-
-Definition type: Function
-Return type: [unregistered]
-
-### SuccessionLawChangeWindow.Self
-
-Definition type: Function
-Return type: [unregistered]
-
 ### SuggestionItem
 
 Definition type: Type
@@ -93355,6 +101437,11 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CString
+
+### TaskContractType.HasGroup( Arg0 )
+
+Definition type: Function
+Return type: bool
 
 ### TaskContractType.Self
 
@@ -94727,6 +102814,11 @@ Return type: Culture
 Definition type: Promote
 Return type: Faith
 
+### Title.GetEffectiveAppointmentTitle
+
+Definition type: Promote
+Return type: Title
+
 ### Title.GetFaction
 
 Definition type: Promote
@@ -94801,6 +102893,21 @@ Return type: Rite
 
 Definition type: Promote
 Return type: CoatOfArms
+
+### Title.GetTitleType
+
+Definition type: Promote
+Return type: TitleType
+
+### Title.GetTradeMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### Title.GetTradeMarketCapitalTitle
+
+Definition type: Promote
+Return type: Title
 
 ### Title.MakeScope
 
@@ -94902,11 +103009,6 @@ Return type: CString
 Definition type: Function
 Return type: CFixedPoint
 
-### Title.GetAverageDevelopment
-
-Definition type: Function
-Return type: CFixedPoint
-
 ### Title.GetAverageFertility
 
 Definition type: Function
@@ -94918,6 +103020,11 @@ Definition type: Function
 Return type: CFixedPoint
 
 ### Title.GetAverageOpinionFor( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### Title.GetAverageProsperity
 
 Definition type: Function
 Return type: CFixedPoint
@@ -95056,6 +103163,11 @@ Return type: [unregistered]
 
 Definition type: Function
 Return type: CFixedPoint
+
+### Title.GetEffectiveAppointmentTitle
+
+Definition type: Function
+Return type: [unregistered]
 
 ### Title.GetFaction
 
@@ -95247,17 +103359,22 @@ Return type: int32
 Definition type: Function
 Return type: int32
 
+### Title.GetNumberOfDistricts
+
+Definition type: Function
+Return type: int32
+
 ### Title.GetNumberOfHoldings
 
 Definition type: Function
 Return type: int32
 
-### Title.GetNumberOfSpecialBuildingSlots
+### Title.GetNumberOfSpecialDistrictSlots
 
 Definition type: Function
 Return type: int32
 
-### Title.GetNumberOfSpecialBuildings
+### Title.GetNumberOfSpecialDistricts
 
 Definition type: Function
 Return type: int32
@@ -95303,6 +103420,11 @@ Definition type: Function
 Return type: [unregistered]
 
 ### Title.GetSuccessionDescription
+
+Definition type: Function
+Return type: CString
+
+### Title.GetSuccessionLawText
 
 Definition type: Function
 Return type: CString
@@ -95357,6 +103479,11 @@ Return type: int32
 Definition type: Function
 Return type: CString
 
+### Title.GetTitleType
+
+Definition type: Function
+Return type: [unregistered]
+
 ### Title.GetTotalIncome
 
 Definition type: Function
@@ -95376,6 +103503,16 @@ Return type: CFixedPoint
 
 Definition type: Function
 Return type: CString
+
+### Title.GetTradeMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### Title.GetTradeMarketCapitalTitle
+
+Definition type: Function
+Return type: [unregistered]
 
 ### Title.HasClericalElector
 
@@ -95438,6 +103575,16 @@ Definition type: Function
 Return type: bool
 
 ### Title.HasSuccessionOrder( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### Title.HasTradeMarket
+
+Definition type: Function
+Return type: bool
+
+### Title.HasTradeMarketCapital
 
 Definition type: Function
 Return type: bool
@@ -95523,6 +103670,11 @@ Definition type: Function
 Return type: bool
 
 ### Title.IsLanded
+
+Definition type: Function
+Return type: bool
+
+### Title.IsLeadingTitleInConfederation
 
 Definition type: Function
 Return type: bool
@@ -96033,6 +104185,40 @@ Return type: bool
 Definition type: Function
 Return type: [unregistered]
 
+### TitleType
+
+Definition type: Type
+
+### TitleType.MakeScope
+
+Definition type: Promote
+Return type: Scope
+
+### TitleType.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TitleType.Custom( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TitleType.GetName
+
+Definition type: Function
+Return type: CString
+
+### TitleType.GetNameNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### TitleType.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### TitleViewWindow
 
 Definition type: Type
@@ -96041,6 +104227,11 @@ Definition type: Type
 
 Definition type: Promote
 Return type: ValueBreakdown
+
+### TitleViewWindow.GetFollowAppointmentTitle
+
+Definition type: Promote
+Return type: Title
 
 ### TitleViewWindow.GetHiredTroopsItem
 
@@ -96147,6 +104338,11 @@ Return type: CString
 Definition type: Function
 Return type: [unregistered]
 
+### TitleViewWindow.GetFollowAppointmentTitle
+
+Definition type: Function
+Return type: [unregistered]
+
 ### TitleViewWindow.GetGainText
 
 Definition type: Function
@@ -96216,11 +104412,6 @@ Return type: CString
 
 Definition type: Function
 Return type: int32
-
-### TitleViewWindow.GetPrimaryAppointmentTitles
-
-Definition type: Function
-Return type: [unregistered]
 
 ### TitleViewWindow.GetPrimaryTitleText
 
@@ -96357,6 +104548,11 @@ Return type: void
 Definition type: Function
 Return type: [unregistered]
 
+### TitleViewWindow.ShouldShowFollowAppointment
+
+Definition type: Function
+Return type: bool
+
 ### TitleViewWindow.ShowAppointment
 
 Definition type: Function
@@ -96470,6 +104666,45 @@ Return type: int32
 Definition type: Function
 Return type: [unregistered]
 
+### TollLevel
+
+Definition type: Type
+
+### TollLevel.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TollLevel.Custom( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TollLevel.GetDatabaseIndex
+
+Definition type: Function
+Return type: int32
+
+### TollLevel.GetMarketOwnerTollRate
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TollLevel.GetName
+
+Definition type: Function
+Return type: CString
+
+### TollLevel.GetRouteOwnerTollRate
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TollLevel.Self
+
+Definition type: Function
+Return type: [unregistered]
+
 ### TooltipInfo
 
 Definition type: Type
@@ -96485,6 +104720,4610 @@ Definition type: Function
 Return type: CVector4f
 
 ### TooltipInfo.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TopProducedGoodMapIcon
+
+Definition type: Type
+
+### TopProducedGoodMapIcon.GetGood
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TopProducedGoodMapIcon.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TopProducedGoodMapIcon.GetGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### TopProducedGoodMapIcon.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeBalance
+
+Definition type: Type
+
+### TradeBalance.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeBalance.GetDeficit
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetDeficitExcludingImport
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetEntrepotProduction
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetExploitativeExports
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetExport
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetImport
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetImportOnlyNeed
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetMarketBalance
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetMarketBalanceMagnitude
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetNeed
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetSurplus
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetTotalProduction
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetUnconsumedProduction
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.GetUnfulfilledNeedExcludingImportOnly
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeBalance.HasDeficit
+
+Definition type: Function
+Return type: bool
+
+### TradeBalance.HasMarketSurplus
+
+Definition type: Function
+Return type: bool
+
+### TradeBalance.HasSurplus
+
+Definition type: Function
+Return type: bool
+
+### TradeBalance.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodCategory
+
+Definition type: Type
+
+### TradeGoodCategory.MakeScope
+
+Definition type: Promote
+Return type: Scope
+
+### TradeGoodCategory.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodCategory.Custom( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetColor
+
+Definition type: Function
+Return type: CVector4f
+
+### TradeGoodCategory.GetDesc
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodCategory.GetIndex
+
+Definition type: Function
+Return type: int32
+
+### TradeGoodCategory.GetKey
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetMonthlyXpGain( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeGoodCategory.GetName
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetNameNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetNameWithIcon
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetNameWithIconNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetPredictedTimeForNextLevel( Arg0 )
+
+Definition type: Function
+Return type: int32
+
+### TradeGoodCategory.GetSmallIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodCategory.GetTextIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodCategory.GetTextIconNoFormat
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodCategory.GetTradeGoodCategoryActiveEffectsDesc( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetTradeGoodCategoryEffectsPerLevelDesc( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetTradeGoodCategoryExperienceDesc( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetTradeGoodCategoryLevel( Arg0 )
+
+Definition type: Function
+Return type: int32
+
+### TradeGoodCategory.GetTradeGoodCategoryMaxLevel
+
+Definition type: Function
+Return type: int32
+
+### TradeGoodCategory.GetTradeGoodCategoryTypesDesc( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetTradeGoodCategoryXp( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeGoodCategory.GetTradeGoodCategoryXpDeclineDesc( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetTradeGoodCategoryXpDesc( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.GetTradeGoodCategoryXpProgress( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeGoodCategory.GetTradeGoodCategoryXpProgression( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeGoodCategory.GetTradeGoodTypes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodCategory.GetTradeGoodTypesCount
+
+Definition type: Function
+Return type: int32
+
+### TradeGoodCategory.HasIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodCategory.HasSmallIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodCategory.IsActivelyTradedGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeGoodCategory.IsMaxLevel( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeGoodCategory.IsValid
+
+Definition type: Function
+Return type: bool
+
+### TradeGoodCategory.Localize( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodCategory.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodType
+
+Definition type: Type
+
+### TradeGoodType.GetNeedCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### TradeGoodType.MakeScope
+
+Definition type: Promote
+Return type: Scope
+
+### TradeGoodType.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodType.Custom( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodType.GetCategories
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodType.GetDesc
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodType.GetIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodType.GetName
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodType.GetNameNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodType.GetNameWithIcon
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodType.GetNameWithIconNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodType.GetNeedCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodType.GetSmallIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodType.GetTextIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodType.GetTextIconNoFormat
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodType.HasIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodType.HasSmallIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodType.IsAloneInNeedCategory
+
+Definition type: Function
+Return type: bool
+
+### TradeGoodType.IsBasic
+
+Definition type: Function
+Return type: bool
+
+### TradeGoodType.PlaySelectSound
+
+Definition type: Function
+Return type: void
+
+### TradeGoodType.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodWindow
+
+Definition type: Type
+
+### TradeGoodWindow.GetSelectedTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeGoodWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodWindow.Close
+
+Definition type: Function
+Return type: void
+
+### TradeGoodWindow.GetMapSubmode
+
+Definition type: Function
+Return type: CString
+
+### TradeGoodWindow.GetSelectedTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodWindow.HasSelectedTradeGoodType
+
+Definition type: Function
+Return type: bool
+
+### TradeGoodWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeGoodWindow.SetMapSubmode( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeGoodWindow.SetSelectedTradeGoodType( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeMapIconGood
+
+Definition type: Type
+
+### TradeMapIconGood.GetCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### TradeMapIconGood.GetTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeMapIconGood.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMapIconGood.GetAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMapIconGood.GetBuildingNeeds
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMapIconGood.GetCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMapIconGood.GetOwnHoldingsNeed
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMapIconGood.GetTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMapIconGood.IsCategory
+
+Definition type: Function
+Return type: bool
+
+### TradeMapIconGood.IsHighlighted
+
+Definition type: Function
+Return type: bool
+
+### TradeMapIconGood.IsReducedByExistingClaims
+
+Definition type: Function
+Return type: bool
+
+### TradeMapIconGood.IsReducedByExploitativeMonopoly
+
+Definition type: Function
+Return type: bool
+
+### TradeMapIconGood.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket
+
+Definition type: Type
+
+### TradeMarket.GetBuyPriceDescForGood( Arg0, Arg1 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarket.GetCategoryMonopoly( Arg0 )
+
+Definition type: Promote
+Return type: TradeMonopoly
+
+### TradeMarket.GetCompleteTradeMonopoly
+
+Definition type: Promote
+Return type: TradeMonopoly
+
+### TradeMarket.GetExploitingMonopolyForCategory( Arg0 )
+
+Definition type: Promote
+Return type: TradeMonopoly
+
+### TradeMarket.GetExploitingMonopolyForGood( Arg0 )
+
+Definition type: Promote
+Return type: TradeMonopoly
+
+### TradeMarket.GetGoodMonopoly( Arg0 )
+
+Definition type: Promote
+Return type: TradeMonopoly
+
+### TradeMarket.GetLocationTitle
+
+Definition type: Promote
+Return type: Title
+
+### TradeMarket.GetNextTollChangeDate
+
+Definition type: Promote
+Return type: Date
+
+### TradeMarket.GetSellPriceDescForGood( Arg0, Arg1 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarket.GetTollLevel
+
+Definition type: Promote
+Return type: TollLevel
+
+### TradeMarket.GetTollLevelForCharacter( Arg0 )
+
+Definition type: Promote
+Return type: TollLevel
+
+### TradeMarket.GetTopRealmNeed
+
+Definition type: Promote
+Return type: TradeMarketRealmNeed
+
+### TradeMarket.GetTradeBalanceForGood( Arg0 )
+
+Definition type: Promote
+Return type: TradeBalance
+
+### TradeMarket.MakeScope
+
+Definition type: Promote
+Return type: Scope
+
+### TradeMarket.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.AnyBasicAloneGoodHasBalance
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.AnyNonBasicAloneGoodHasBalance
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.CategoryHasGoodsWithBalance( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.CharacterHasTollException( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.CompleteTradeMonopolyIsExploitative
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.Custom( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeMarket.GetAvgProsperity
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetBalanceForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetBuyPriceDescForGood( Arg0, Arg1 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetBuyPriceForGood( Arg0, Arg1 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetCategoryMonopoly( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetCommissionRouteCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GetCompleteTradeMonopoly
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetCurrentTollIndex
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GetCurrentTradePostCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GetDeficitForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetDistributionRouteCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GetExemptionReason( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeMarket.GetExploitativeExportsForCategory( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetExploitativeExportsForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetExploitingMonopolyForCategory( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetExploitingMonopolyForGood( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetFulfillmentPriorityForBarony( Arg0 )
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GetFulfillmentPriorityForCounty( Arg0 )
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GetFulfillmentPriorityInCounty( Arg0 )
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GetGoodMonopoly( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetHiddenRealmNeedCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GetHiddenRealmNeeds
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetImportForCategory( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetImportForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetLocalSurplusForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetLocationTitle
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetMapModeClickTooltip
+
+Definition type: Function
+Return type: CString
+
+### TradeMarket.GetMarketTooltip
+
+Definition type: Function
+Return type: CString
+
+### TradeMarket.GetMaxTradePostCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GetName
+
+Definition type: Function
+Return type: CString
+
+### TradeMarket.GetNameNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### TradeMarket.GetNeedForCategory( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetNetBalanceMagnitudeForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetNextTollChangeDate
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetProductionUsedForCategory( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetProfitRouteCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GetProsperityPriceEffectsDesc
+
+Definition type: Function
+Return type: CString
+
+### TradeMarket.GetRealmNeeds
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetRecommendedTradeGoodTypes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetSellPriceDescForGood( Arg0, Arg1 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetSellPriceForGood( Arg0, Arg1 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetShortName
+
+Definition type: Function
+Return type: CString
+
+### TradeMarket.GetShortNameNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### TradeMarket.GetSurplusForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetTitles
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetTollLevel
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetTollLevelForCharacter( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetTopGoodsBySurplus
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetTopRealmNeed
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetTopRecommendedTradeGoodTypes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetTradeBalanceForGood( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetTradeGoodsWithBalances
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetTradeMonopolies
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.GetTradeRouteCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GetUnfulfilledNeedForCategory( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarket.GetUniqueRouteOwnerCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarket.GoodIsUnderMonopoly( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.HasCompleteTradeMonopoly
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.HasEntrepotNeedForGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.HasExploitingMonopolyForCategory( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.HasExploitingMonopolyForGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.HasNetSurplusForGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.HasTradeBalanceForGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.IsCharacterExemptFromTolls( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.IsCharacterMarketOwner( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.IsHomeTradeMarketForMerchant( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.IsHovered
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.IsSelected
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.IsTollChangeOnCooldownForCharacter( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.IsValid
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.OnMouseEnter
+
+Definition type: Function
+Return type: void
+
+### TradeMarket.OnMouseLeave
+
+Definition type: Function
+Return type: void
+
+### TradeMarket.PlayerHasExploitativeAccessToGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.PlayerHasHoldingsInMarket
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarket.ShouldShowDeficitForGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarket.ShouldShowSurplusForGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketGood
+
+Definition type: Type
+
+### TradeMarketGood.GetBuildingNeedsBreakdownTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketGood.GetCategoryUseBreakdownTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketGood.GetEntrepotNeedsBreakdownTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketGood.GetExportsBreakdownTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketGood.GetImportsBreakdownTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketGood.GetNetDistributionExportsBreakdownTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketGood.GetNetDistributionImportsBreakdownTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketGood.GetProductionBreakdownTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketGood.GetTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeMarketGood.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGood.GetBuildingNeeds
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketGood.GetBuildingNeedsBreakdownTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGood.GetCategoryConsumption
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketGood.GetCategoryUseBreakdownTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGood.GetDisplayExport
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketGood.GetDisplayImport
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketGood.GetEntrepotNeedsBreakdownTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGood.GetExportsBreakdownTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGood.GetImportsBreakdownTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGood.GetNetDistributionExport
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketGood.GetNetDistributionExportsBreakdownTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGood.GetNetDistributionImport
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketGood.GetNetDistributionImportsBreakdownTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGood.GetProductionBreakdownTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGood.GetTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGood.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGroup
+
+Definition type: Type
+
+### TradeMarketGroup.GetTradeMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### TradeMarketGroup.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGroup.GetCounties
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGroup.GetTradeMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGroup.IsExpanded
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketGroup.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketGroup.ToggleExpanded
+
+Definition type: Function
+Return type: void
+
+### TradeMarketIcon
+
+Definition type: Type
+
+### TradeMarketIcon.GetBuyShareForFocusedGood
+
+Definition type: Promote
+Return type: TradeMarketShare
+
+### TradeMarketIcon.GetFocusedGood
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeMarketIcon.GetSellShareForFocusedGood
+
+Definition type: Promote
+Return type: TradeMarketShare
+
+### TradeMarketIcon.GetTradeMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### TradeMarketIcon.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetAccessibleDeficitForFocusedGood
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketIcon.GetAccessibleSurplusForFocusedGood
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketIcon.GetAccessibleSurpluses
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetBuyPaymentForFocusedGood
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketIcon.GetBuyPriceForFocusedGood
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketIcon.GetBuyShareForFocusedGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetCurrentTradePostCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketIcon.GetFocusedGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetFocusedGoodDistributionBalanceDesc
+
+Definition type: Function
+Return type: CString
+
+### TradeMarketIcon.GetHiddenSurplusCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketIcon.GetHiddenSurpluses
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetHiddenUnmetNeedCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketIcon.GetHiddenUnmetNeeds
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetMaxBuyForFocusedGood
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketIcon.GetMaxSellForFocusedGood
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketIcon.GetMaximumTradePostCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketIcon.GetMerchantsInMarketCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketIcon.GetPlayerMonopolies
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetPlayerRouteBuys
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetPlayerRouteSells
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetSellPaymentForFocusedGood
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketIcon.GetSellPriceForFocusedGood
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketIcon.GetSellShareForFocusedGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetTaskContracts
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetTimedModifiers
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetTradeMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetUnmetNeeds
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.GetUnreachableSurplusCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketIcon.HasAccessibleSurpluses
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasBuyPaymentForFocusedGood
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasFocusedGood
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasFocusedGoodDistributionBalance
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasHighlightedHiddenSurplus
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasHighlightedHiddenUnmetNeed
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasNeedsFirstMarket
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasPlayerHolding
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasPlayerRouteBuys
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasPlayerRouteSells
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasPlayerRouteTrades
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasPlayerTradePost
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasSellPaymentForFocusedGood
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasUnmetNeeds
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.HasUnreachableSurplus
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsBuyLimitedByCapacityForFocusedGood
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsFocusedGoodBoughtOnOtherPlayerRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsFocusedGoodDeficit
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsFocusedGoodSoldOnOtherPlayerRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsFocusedGoodSurplus
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsInMarketsMapMode
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsInNeedsMode
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsOnDraftRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsOnPlayerRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsPickingProfitStartMarket
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsPlanningRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.IsSellLimitedByCapacityForFocusedGood
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketIcon.ShouldShowBanner
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.ShouldShowDetails
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketIcon.ShowEntrepotIcon
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow
+
+Definition type: Type
+
+### TradeMarketInteractionWindow.GetCharacterInteractionConfirmationWindow
+
+Definition type: Promote
+Return type: CharacterInteractionConfirmationWindow
+
+### TradeMarketInteractionWindow.GetMarketGoodBalance( Arg0 )
+
+Definition type: Promote
+Return type: TradeMarketGood
+
+### TradeMarketInteractionWindow.GetSelectedTradeMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### TradeMarketInteractionWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketInteractionWindow.CanPickTradeGoodType( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow.CanSendOffer
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow.Close
+
+Definition type: Function
+Return type: void
+
+### TradeMarketInteractionWindow.GetAvailableTradeMarkets
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketInteractionWindow.GetCanSendDescription
+
+Definition type: Function
+Return type: CString
+
+### TradeMarketInteractionWindow.GetCharacterInteractionConfirmationWindow
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketInteractionWindow.GetMarketGoodBalance( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketInteractionWindow.GetSelectedTollIndex
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketInteractionWindow.GetSelectedTradeMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketInteractionWindow.GetTradeGoodTypePickBlockers( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeMarketInteractionWindow.HasSelectedTradeMarket
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow.HasTradeMarkets
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow.IsCompleteMonopoly
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow.IsExploitativeMonopoly
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow.IsGrantTollInteraction
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow.IsMonopolyInteraction
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow.IsRequestTollInteraction
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow.IsTollLevelInteractionValid
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow.IsTradeMarketSelected( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketInteractionWindow.SelectTradeMarket( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeMarketInteractionWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketInteractionWindow.Send
+
+Definition type: Function
+Return type: void
+
+### TradeMarketInteractionWindow.SetSelectedTollIndex( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeMarketInteractionWindow.ToggleCompleteMonopoly
+
+Definition type: Function
+Return type: void
+
+### TradeMarketInteractionWindow.ToggleExploitativeMonopoly
+
+Definition type: Function
+Return type: void
+
+### TradeMarketItem
+
+Definition type: Type
+
+### TradeMarketItem.GetCompetitivenessBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketItem.GetTradeMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### TradeMarketItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketItem.GetBlockingMonopolies
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketItem.GetCompetitivenessBreakdown
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketItem.GetTimedModifiers
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketItem.GetTradeMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchant
+
+Definition type: Type
+
+### TradeMarketMerchant.GetCompetitivenessTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketMerchant.GetMerchant
+
+Definition type: Promote
+Return type: Character
+
+### TradeMarketMerchant.GetSelectedGoodShare
+
+Definition type: Promote
+Return type: TradeMarketShare
+
+### TradeMarketMerchant.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchant.GetCompetitivenessTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchant.GetMerchant
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchant.GetSelectedGoodRouteCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketMerchant.GetSelectedGoodRoutes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchant.GetSelectedGoodShare
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchant.GetSelectedGoodTradeAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketMerchant.GetTradeRoutesInMarket
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketMerchant.HasCommissionRouteInMarket
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketMerchant.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchantsList
+
+Definition type: Type
+
+### TradeMarketMerchantsList.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchantsList.GetBuyingMerchants
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchantsList.GetSellingMerchants
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchantsList.GetSortOptionIndex
+
+Definition type: Function
+Return type: CVector2i
+
+### TradeMarketMerchantsList.GetSortOptions
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchantsList.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketMerchantsList.SortMerchants
+
+Definition type: Function
+Return type: void
+
+### TradeMarketMerchantsList.ToggleSortOrder
+
+Definition type: Function
+Return type: void
+
+### TradeMarketRealmNeed
+
+Definition type: Type
+
+### TradeMarketRealmNeed.GetCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### TradeMarketRealmNeed.GetExploitingMonopoly
+
+Definition type: Promote
+Return type: TradeMonopoly
+
+### TradeMarketRealmNeed.GetTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeMarketRealmNeed.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketRealmNeed.GetCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketRealmNeed.GetExploitativeExports
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketRealmNeed.GetExploitingMonopoly
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketRealmNeed.GetHiddenHoldingCount
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketRealmNeed.GetHoldings
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketRealmNeed.GetTotalUnmet
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketRealmNeed.GetTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketRealmNeed.IsCategory
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketRealmNeed.IsExploited
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketRealmNeed.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketShare
+
+Definition type: Type
+
+### TradeMarketShare.GetCategoryPart
+
+Definition type: Promote
+Return type: TradeMarketSharePart
+
+### TradeMarketShare.GetGood
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeMarketShare.GetGoodPart
+
+Definition type: Promote
+Return type: TradeMarketSharePart
+
+### TradeMarketShare.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketShare.GetAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketShare.GetCategoryPart
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketShare.GetGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketShare.GetGoodPart
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketShare.GetPool
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketShare.GetShare
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketShare.HasCategoryPart
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketShare.IsContested
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketShare.IsSell
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketShare.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketSharePart
+
+Definition type: Type
+
+### TradeMarketSharePart.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketSharePart.GetAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketSharePart.GetPool
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketSharePart.GetShare
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketSharePart.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketUnmetNeed
+
+Definition type: Type
+
+### TradeMarketUnmetNeed.GetCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### TradeMarketUnmetNeed.GetExploitingMonopoly
+
+Definition type: Promote
+Return type: TradeMonopoly
+
+### TradeMarketUnmetNeed.GetTitle
+
+Definition type: Promote
+Return type: Title
+
+### TradeMarketUnmetNeed.GetTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeMarketUnmetNeed.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketUnmetNeed.GetBuildings
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketUnmetNeed.GetCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketUnmetNeed.GetExploitativeExports
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketUnmetNeed.GetExploitingMonopoly
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketUnmetNeed.GetMarketPriority
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketUnmetNeed.GetTitle
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketUnmetNeed.GetTotalUnmet
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketUnmetNeed.GetTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketUnmetNeed.IsCategory
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketUnmetNeed.IsExploited
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketUnmetNeed.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketUnmetNeedBuilding
+
+Definition type: Type
+
+### TradeMarketUnmetNeedBuilding.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketUnmetNeedBuilding.GetBuildingName
+
+Definition type: Function
+Return type: CString
+
+### TradeMarketUnmetNeedBuilding.GetFulfillmentOrder
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketUnmetNeedBuilding.GetUnmetAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketUnmetNeedBuilding.IsDisabled
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketUnmetNeedBuilding.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow
+
+Definition type: Type
+
+### TradeMarketWindow.GetAvgProsperityTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketWindow.GetDistributionExportsBreakdownTooltip( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketWindow.GetDistributionImportsBreakdownTooltip( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketWindow.GetGoodBalanceBreakdownTooltip( Arg0 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketWindow.GetGoodBalanceItem( Arg0 )
+
+Definition type: Promote
+Return type: TradeMarketGood
+
+### TradeMarketWindow.GetMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### TradeMarketWindow.GetNeedsList
+
+Definition type: Promote
+Return type: TradeNeedsList
+
+### TradeMarketWindow.GetPlayerCompetitivenessTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeMarketWindow.GetPlayerPotentialShareForActiveSide
+
+Definition type: Promote
+Return type: TradeMarketShare
+
+### TradeMarketWindow.GetPlayerShareForActiveSide
+
+Definition type: Promote
+Return type: TradeMarketShare
+
+### TradeMarketWindow.GetSelectedTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeMarketWindow.GetTradeMarketMerchantsList
+
+Definition type: Promote
+Return type: TradeMarketMerchantsList
+
+### TradeMarketWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.CalcRouteTollRateForCharacter( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.ChangeTollLevelCommand
+
+Definition type: Function
+Return type: Command
+
+### TradeMarketWindow.Close
+
+Definition type: Function
+Return type: void
+
+### TradeMarketWindow.GetActiveSideMerchants
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetActiveSideTotalCompetitiveness
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetActualShareForActiveSide( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetAvgProsperityTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetBuildingNeedsForCategory( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetCategoryDeficitFlowForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetCategorySupplyGoods( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetCategoryUseForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetCommissionRoutes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetDeficitFlowForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetDisplayBalanceForCategory( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetDisplayBalanceForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetDisplayBalanceMagnitudeForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetDistributionExportForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetDistributionExportsBreakdownTooltip( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetDistributionImportForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetDistributionImportsBreakdownTooltip( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetDistributionRoutes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetGoodBalanceBreakdownTooltip( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetGoodBalanceItem( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetLastTollIncome
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetNeedsList
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetPlayerCompetitivenessTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetPlayerPotentialShareForActiveSide
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetPlayerRouteCountForActiveSide
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketWindow.GetPlayerShareForActiveSide
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetPlayerUnmetNeedsForCategory( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetPlayerUnmetNeedsForGood( Arg0 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetPredictedTollIncome( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetProfitRoutes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetSelectedTollIndex
+
+Definition type: Function
+Return type: int32
+
+### TradeMarketWindow.GetSelectedTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetSurplusFlowForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMarketWindow.GetTimedModifiers
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.GetTradeMarketMerchantsList
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.HasBuyingSide
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.HasCategorySupplyGoods( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.HasDisplaySurplusForGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.HasPlayerUnmetNeedsForCategory( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.HasPlayerUnmetNeedsForGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.HasSelectedTradeGoodType
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.HasSellingSide
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.HasUnmetNeedsForCategory( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.HasUnmetNeedsForGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.IsGoodNeededByPlayerHoldings( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.IsMerchantsSortOrderDescending
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.IsNetBalanceMode
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.IsPlayerTradingGoodInMarket( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.IsShowingBuyers
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.IsShowingNeeds
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.IsShowingSellers
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.IsTradePostsRequested
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.PlayerHasRoutesForActiveSide
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMarketWindow.SetBalanceMode( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeMarketWindow.SetSelectedTollIndex( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeMarketWindow.SetSelectedTradeGoodType( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeMarketWindow.SetShowBuyers
+
+Definition type: Function
+Return type: void
+
+### TradeMarketWindow.SetShowNeeds
+
+Definition type: Function
+Return type: void
+
+### TradeMarketWindow.SetShowSellers
+
+Definition type: Function
+Return type: void
+
+### TradeMarketWindow.SetTradePostsRequested( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeMarketWindow.ShowsSurplusFlowForGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMarketWindow.ToggleNeedsListScope
+
+Definition type: Function
+Return type: void
+
+### TradeMonopoly
+
+Definition type: Type
+
+### TradeMonopoly.GetOwningCharacter
+
+Definition type: Promote
+Return type: Character
+
+### TradeMonopoly.GetOwningConfederation
+
+Definition type: Promote
+Return type: Confederation
+
+### TradeMonopoly.GetOwningTitle
+
+Definition type: Promote
+Return type: Title
+
+### TradeMonopoly.GetTradeGoodCategoryType
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### TradeMonopoly.GetTradeMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### TradeMonopoly.MakeScope
+
+Definition type: Promote
+Return type: Scope
+
+### TradeMonopoly.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMonopoly.CanCharacterTrade( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMonopoly.Custom( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeMonopoly.GetExploitativeExports
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeMonopoly.GetID
+
+Definition type: Function
+Return type: uint32
+
+### TradeMonopoly.GetName
+
+Definition type: Function
+Return type: CString
+
+### TradeMonopoly.GetOwningCharacter
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMonopoly.GetOwningConfederation
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMonopoly.GetOwningTitle
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMonopoly.GetTradeGoodCategoryType
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMonopoly.GetTradeMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMonopoly.GetType
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeMonopoly.HasOwningCharacter
+
+Definition type: Function
+Return type: bool
+
+### TradeMonopoly.HasOwningConfederation
+
+Definition type: Function
+Return type: bool
+
+### TradeMonopoly.HasOwningTitle
+
+Definition type: Function
+Return type: bool
+
+### TradeMonopoly.HasTradeGoodCategoryType( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeMonopoly.IsCategoryMonopoly
+
+Definition type: Function
+Return type: bool
+
+### TradeMonopoly.IsComplete
+
+Definition type: Function
+Return type: bool
+
+### TradeMonopoly.IsExploitative
+
+Definition type: Function
+Return type: bool
+
+### TradeMonopoly.IsValid
+
+Definition type: Function
+Return type: bool
+
+### TradeMonopoly.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeed
+
+Definition type: Type
+
+### TradeNeed.GetCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### TradeNeed.GetColumn
+
+Definition type: Promote
+Return type: TradeNeedColumn
+
+### TradeNeed.GetGood
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeNeed.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeed.GetCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeed.GetColumn
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeed.GetGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeed.IsCategory
+
+Definition type: Function
+Return type: bool
+
+### TradeNeed.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedAmounts
+
+Definition type: Type
+
+### TradeNeedAmounts.GetCategory
+
+Definition type: Promote
+Return type: TradeNeedColumn
+
+### TradeNeedAmounts.GetGood
+
+Definition type: Promote
+Return type: TradeNeedColumn
+
+### TradeNeedAmounts.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedAmounts.GetCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedAmounts.GetGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedAmounts.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedAmounts.ShowsCategoryColumn
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedAmounts.ShowsNeedAmounts
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedColumn
+
+Definition type: Type
+
+### TradeNeedColumn.GetSourcesTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeNeedColumn.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedColumn.GetAlreadyMetNeed
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeNeedColumn.GetCoveredByDraft
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeNeedColumn.GetDraftGoods
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedColumn.GetGrossNeed
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeNeedColumn.GetRemainingNeed
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeNeedColumn.GetSourcesTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedColumn.GetUnmetNeed
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeNeedColumn.HasNeed
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedColumn.IsCoveredByDraft
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedColumn.IsMet
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedColumn.IsMetByDraft
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedColumn.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedGoodAmount
+
+Definition type: Type
+
+### TradeNeedGoodAmount.GetTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeNeedGoodAmount.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedGoodAmount.GetAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeNeedGoodAmount.GetTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedGoodAmount.HasGood
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedGoodAmount.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsCounty
+
+Definition type: Type
+
+### TradeNeedsCounty.GetAmounts
+
+Definition type: Promote
+Return type: TradeNeedAmounts
+
+### TradeNeedsCounty.GetCounty
+
+Definition type: Promote
+Return type: Title
+
+### TradeNeedsCounty.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsCounty.GetAmounts
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsCounty.GetCounty
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsCounty.GetHoldings
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsCounty.IsExpanded
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsCounty.IsListed
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsCounty.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsCounty.ToggleExpanded
+
+Definition type: Function
+Return type: void
+
+### TradeNeedsHolding
+
+Definition type: Type
+
+### TradeNeedsHolding.GetAmounts
+
+Definition type: Promote
+Return type: TradeNeedAmounts
+
+### TradeNeedsHolding.GetBarony
+
+Definition type: Promote
+Return type: Title
+
+### TradeNeedsHolding.GetHolding
+
+Definition type: Promote
+Return type: Holding
+
+### TradeNeedsHolding.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsHolding.GetAmounts
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsHolding.GetBarony
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsHolding.GetCollapsedBaronies
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsHolding.GetCollapsedBaroniesCount
+
+Definition type: Function
+Return type: int32
+
+### TradeNeedsHolding.GetDisplayName
+
+Definition type: Function
+Return type: CString
+
+### TradeNeedsHolding.GetHolding
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsHolding.GetMarketPriority
+
+Definition type: Function
+Return type: int32
+
+### TradeNeedsHolding.IsEntrepot
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsHolding.IsListed
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsHolding.IsShown
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsHolding.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsHolding.StandsInForCollapsedBaronies
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsList
+
+Definition type: Type
+
+### TradeNeedsList.GetCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### TradeNeedsList.GetGood
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeNeedsList.GetMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### TradeNeedsList.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsList.AreCountiesCollapsible
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsList.DoesMarketNeedGood
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsList.GetCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsList.GetCounties
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsList.GetGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsList.GetHoldings
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsList.GetMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsList.HasGood
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsList.IsShowingWholeMarket
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsList.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeNeedsList.ShouldShowCounties
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsList.ShouldShowHoldings
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsList.ShouldShowNoNeedMessage
+
+Definition type: Function
+Return type: bool
+
+### TradeNeedsList.ShowsCategoryColumn
+
+Definition type: Function
+Return type: bool
+
+### TradePostIcon
+
+Definition type: Type
+
+### TradePostIcon.GetProvince
+
+Definition type: Promote
+Return type: Province
+
+### TradePostIcon.GetTradePostTitle
+
+Definition type: Promote
+Return type: Title
+
+### TradePostIcon.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradePostIcon.GetProvince
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradePostIcon.GetTradePostTitle
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradePostIcon.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoute
+
+Definition type: Type
+
+### TradeRoute.GetCommissionExpirationDate
+
+Definition type: Promote
+Return type: Date
+
+### TradeRoute.GetCommissioner
+
+Definition type: Promote
+Return type: Character
+
+### TradeRoute.GetEstablishedDate
+
+Definition type: Promote
+Return type: Date
+
+### TradeRoute.GetOwner
+
+Definition type: Promote
+Return type: Character
+
+### TradeRoute.GetPrimaryGood
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeRoute.GetTrader
+
+Definition type: Promote
+Return type: Character
+
+### TradeRoute.MakeScope
+
+Definition type: Promote
+Return type: Scope
+
+### TradeRoute.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoute.CreateClearTraderCommand
+
+Definition type: Function
+Return type: Command
+
+### TradeRoute.Custom( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeRoute.CyclePanMarketLocations
+
+Definition type: Function
+Return type: void
+
+### TradeRoute.DestroyTradeRouteCommand
+
+Definition type: Function
+Return type: Command
+
+### TradeRoute.GetCommissionExpirationDate
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoute.GetCommissionTimeRemaining
+
+Definition type: Function
+Return type: CString
+
+### TradeRoute.GetCommissioner
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoute.GetCurrentCapacity
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRoute.GetEstablishedDate
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoute.GetGoldEarnedLastTick
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRoute.GetMarkets
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoute.GetMaxCapacity
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRoute.GetName
+
+Definition type: Function
+Return type: CString
+
+### TradeRoute.GetNameNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### TradeRoute.GetNameNumber
+
+Definition type: Function
+Return type: int32
+
+### TradeRoute.GetOwner
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoute.GetPrimaryGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoute.GetProfitInMarket( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRoute.GetSellAmountForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRoute.GetSuspendReasonDesc
+
+Definition type: Function
+Return type: CString
+
+### TradeRoute.GetTimedModifiers
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoute.GetTradeGoods
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoute.GetTrader
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoute.HasAnyTransactionForGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRoute.HasAnyTransactionInMarket( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRoute.HasPrimaryGood
+
+Definition type: Function
+Return type: bool
+
+### TradeRoute.HasPurchaseTransactionForTradeGoodInMarket( Arg0, Arg1 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRoute.HasSellTransactionForTradeGoodInMarket( Arg0, Arg1 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRoute.IsCommissionRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeRoute.IsDistributionRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeRoute.IsProfitRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeRoute.IsSuspended
+
+Definition type: Function
+Return type: bool
+
+### TradeRoute.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteDraft
+
+Definition type: Type
+
+### TradeRouteDraft.GetPrimaryGood
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeRouteDraft.GetPurchaseTransactionForGoodInMarket( Arg0, Arg1 )
+
+Definition type: Promote
+Return type: TradeTransaction
+
+### TradeRouteDraft.GetSellTransactionForGoodInMarket( Arg0, Arg1 )
+
+Definition type: Promote
+Return type: TradeTransaction
+
+### TradeRouteDraft.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteDraft.ContainsChangesFromSource
+
+Definition type: Function
+Return type: bool
+
+### TradeRouteDraft.GetExpectedProfitForGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRouteDraft.GetName
+
+Definition type: Function
+Return type: CString
+
+### TradeRouteDraft.GetPossibleTradeGoodTypes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteDraft.GetPrimaryGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteDraft.GetProfitInMarket( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRouteDraft.GetPurchaseTransactionForGoodInMarket( Arg0, Arg1 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteDraft.GetPurchasedAmountOfGood( Arg0 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRouteDraft.GetSellAmountForGoodInMarket( Arg0, Arg1 )
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRouteDraft.GetSellTransactionForGoodInMarket( Arg0, Arg1 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteDraft.GetTotalExpectedProfit
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRouteDraft.GetTotalPurchased
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRouteDraft.GetTradeGoods
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteDraft.HasPurchaseTransactionForGoodInMarket( Arg0, Arg1 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRouteDraft.HasSellTransactionForGoodInMarket( Arg0, Arg1 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRouteDraft.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem
+
+Definition type: Type
+
+### TradeRouteItem.AccessTrader
+
+Definition type: Promote
+Return type: TraderItem
+
+### TradeRouteItem.GetBuyTransactionBreakdownTooltip( Arg0, Arg1 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeRouteItem.GetDisplayCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### TradeRouteItem.GetFocusTradeGoodNeedCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### TradeRouteItem.GetMaxTradeGoodsOnRouteTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeRouteItem.GetMaxTradeMarketsOnRouteTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeRouteItem.GetSellTransactionBreakdownTooltip( Arg0, Arg1 )
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeRouteItem.GetTradeCapacityTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeRouteItem.GetTradeRoute
+
+Definition type: Promote
+Return type: TradeRoute
+
+### TradeRouteItem.GetTrader
+
+Definition type: Promote
+Return type: TraderItem
+
+### TradeRouteItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.AccessTrader
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.GetBuyTransactionBreakdownTooltip( Arg0, Arg1 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.GetDisplayCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.GetFocusTradeGoodNeedCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.GetMarkets
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.GetMarketsSize
+
+Definition type: Function
+Return type: int32
+
+### TradeRouteItem.GetMaxTradeGoodsOnRouteTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.GetMaxTradeMarketsOnRouteTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.GetPrimaryGoodTooltip
+
+Definition type: Function
+Return type: CString
+
+### TradeRouteItem.GetSellTransactionBreakdownTooltip( Arg0, Arg1 )
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.GetTimedModifiers
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.GetTotalPurchased
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRouteItem.GetTradeCapacityTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.GetTradeRoute
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.GetTrader
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteMarketNeeds
+
+Definition type: Type
+
+### TradeRouteMarketNeeds.GetMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### TradeRouteMarketNeeds.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteMarketNeeds.GetMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteMarketNeeds.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteNeed
+
+Definition type: Type
+
+### TradeRouteNeed.GetCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### TradeRouteNeed.GetColumn
+
+Definition type: Promote
+Return type: TradeNeedColumn
+
+### TradeRouteNeed.GetGood
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeRouteNeed.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteNeed.GetCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteNeed.GetColumn
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteNeed.GetCounties
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteNeed.GetGood
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteNeed.IsCategory
+
+Definition type: Function
+Return type: bool
+
+### TradeRouteNeed.IsExpanded
+
+Definition type: Function
+Return type: bool
+
+### TradeRouteNeed.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRouteNeed.ToggleExpanded
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner
+
+Definition type: Type
+
+### TradeRoutePlanner.AccessTraderCharacterList
+
+Definition type: Promote
+Return type: TraderCharacterList
+
+### TradeRoutePlanner.GetCompetitivenessBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeRoutePlanner.GetCurrentNeedsMarket
+
+Definition type: Promote
+Return type: TradeMarket
+
+### TradeRoutePlanner.GetCurrentProfitBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeRoutePlanner.GetCurrentRouteLengthBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeRoutePlanner.GetExpectedProfitBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeRoutePlanner.GetMaxRouteLengthBreakdown
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeRoutePlanner.GetNeedsList
+
+Definition type: Promote
+Return type: TradeNeedsList
+
+### TradeRoutePlanner.GetSelectedNeedCategory
+
+Definition type: Promote
+Return type: TradeGoodCategory
+
+### TradeRoutePlanner.GetSelectedTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeRoutePlanner.GetTradeRoute
+
+Definition type: Promote
+Return type: TradeRoute
+
+### TradeRoutePlanner.GetTradeRouteDraft
+
+Definition type: Promote
+Return type: TradeRouteDraft
+
+### TradeRoutePlanner.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.AccessTradeRouteItems
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.AccessTraderCharacterList
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.AddOrReplaceTradeGoodType( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.AddRecommendedTradeToRoute( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.AddSelectedTradeGoodTypeToRoute
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.AddTradeMarketToRoute( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.CanAddSelectedTradeGoodTypeToRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.CanAddTradeGoodTypeToRoute( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.CanClearTradeGoods
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.CanClearTradeMarkets
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.ClearTradeGoods
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.ClearTradeMarkets
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.ClearTraderSelection
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.Close
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.ConfirmTradeRoute
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.CreateTradeRouteCommand
+
+Definition type: Function
+Return type: Command
+
+### TradeRoutePlanner.DecrementNeedsMarketIndex
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.EditTradeRouteCommand
+
+Definition type: Function
+Return type: Command
+
+### TradeRoutePlanner.GetAddTradeGoodTypeToRouteDisabledTooltip( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeRoutePlanner.GetAverageRoadTier
+
+Definition type: Function
+Return type: int32
+
+### TradeRoutePlanner.GetBestTrades
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetCompetitivenessBreakdown
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetConfirmTradeRouteEffects
+
+Definition type: Function
+Return type: CString
+
+### TradeRoutePlanner.GetCreateTradeRouteCostDescription
+
+Definition type: Function
+Return type: CString
+
+### TradeRoutePlanner.GetCurrentNeedsMarket
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetCurrentProfit
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRoutePlanner.GetCurrentProfitBreakdown
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetCurrentRouteLength
+
+Definition type: Function
+Return type: int32
+
+### TradeRoutePlanner.GetCurrentRouteLengthBreakdown
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetEditTradeRouteCostDescription
+
+Definition type: Function
+Return type: CString
+
+### TradeRoutePlanner.GetExpectedProfitBreakdown
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetMaxRouteLengthBreakdown
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetMaxTradeGoodsOnRoute
+
+Definition type: Function
+Return type: int32
+
+### TradeRoutePlanner.GetMaxTradeMarketsOnRoute
+
+Definition type: Function
+Return type: int32
+
+### TradeRoutePlanner.GetMaxTradeRouteLength
+
+Definition type: Function
+Return type: int32
+
+### TradeRoutePlanner.GetName
+
+Definition type: Function
+Return type: CString
+
+### TradeRoutePlanner.GetNeedsList
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetRecommendedNeeds
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetRecommendedTradeGoodTypes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetRoadsDescription
+
+Definition type: Function
+Return type: CString
+
+### TradeRoutePlanner.GetRoadsOnRoute
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetRouteNeeds
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetRouteNeedsMarkets
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetSelectedNeedCategory
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetSelectedTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetTradeCapacityOnRoute
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeRoutePlanner.GetTradeGoodTypesOnRoute
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.GetTradeMarketsOnRoute
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.HasCurrentNeedsMarket
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.HasEnoughTradeMarketsOnRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.HasNextNeedsMarket
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.HasPreviousNeedsMarket
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.HasPrimaryGood
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.HasRecommendedTradeGoodTypesToShow
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.HasRouteNeeds
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.HasSelectedNeedCategory
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.HasSelectedTradeGoodType
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.HasStartMarket
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.HasSurplusDeficitPair( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.IncrementNeedsMarketIndex
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.IsChangingPrimaryGood
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.IsCurrentRouteDistributionTradeRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.IsCurrentRouteProfitTradeRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.IsEditingTradeRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.IsInNeedsMode
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.IsInProfitMode
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.IsOverMaxRouteLength
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.IsPrimaryGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.IsRouteNeedsMarketSelected( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.IsShowingAllRouteNeeds
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.IsWithinMaxRouteLength
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.MoveTradeGoodToIndex( Arg0, Arg1 )
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.RemoveTradeGoodTypeFromRoute( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.RemoveTradeMarketFromRoute( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.RouteContainsTradeGood( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.RouteContainsTradeMarket( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.SelectRouteNeedsMarket( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeRoutePlanner.SetSelectedTradeGoodTypeReplacingCarriedGood( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.ShouldShowNeedsCategory( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.ShouldShowTradeGoodList
+
+Definition type: Function
+Return type: bool
+
+### TradeRoutePlanner.ToggleShowAllMarketNeeds
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.ToggleShowAllRouteNeeds
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.ToggleShowTradeGoodList
+
+Definition type: Function
+Return type: void
+
+### TradeRoutePlanner.ToggleTraderSelection
+
+Definition type: Function
+Return type: void
+
+### TradeTaskType
+
+Definition type: Type
+
+### TradeTaskType.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeTaskType.GetIcon
+
+Definition type: Function
+Return type: CString
+
+### TradeTaskType.GetIndex
+
+Definition type: Function
+Return type: int32
+
+### TradeTaskType.GetKey
+
+Definition type: Function
+Return type: CString
+
+### TradeTaskType.IsValid
+
+Definition type: Function
+Return type: bool
+
+### TradeTaskType.Localize( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TradeTaskType.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeTransaction
+
+Definition type: Type
+
+### TradeTransaction.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeTransaction.GetAmount
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeTransaction.GetPPU
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeTransaction.GetTransactionSubtotal
+
+Definition type: Function
+Return type: CFixedPoint
+
+### TradeTransaction.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow
+
+Definition type: Type
+
+### TradeWindow.AccessTraderCharacterList
+
+Definition type: Promote
+Return type: TraderCharacterList
+
+### TradeWindow.GetCharacter
+
+Definition type: Promote
+Return type: Character
+
+### TradeWindow.GetCharacterMaxRouteLengthTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeWindow.GetCharacterMaxTradeGoodsPerRouteTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeWindow.GetCharacterMaxTradeMarketsPerRouteTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeWindow.GetCharacterMaxTradeRoutesTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeWindow.GetCharacterTradeCapacityTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeWindow.GetCharacterTradeCompetitivenessTooltip
+
+Definition type: Promote
+Return type: ValueBreakdown
+
+### TradeWindow.GetClientCharacterList
+
+Definition type: Promote
+Return type: ClientCharacterList
+
+### TradeWindow.GetCompetitorsLeaderboard
+
+Definition type: Promote
+Return type: CompetitorsLeaderboard
+
+### TradeWindow.GetSelectedTradeGoodType
+
+Definition type: Promote
+Return type: TradeGoodType
+
+### TradeWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.AccessTraderCharacterList
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.CanPlanNewTradeRoute
+
+Definition type: Function
+Return type: bool
+
+### TradeWindow.ClearHoveredTradeRoute
+
+Definition type: Function
+Return type: void
+
+### TradeWindow.EditTradeRoute( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeWindow.GetCharacter
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetCharacterMaxRouteLengthTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetCharacterMaxTradeGoodsPerRouteTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetCharacterMaxTradeMarketsPerRouteTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetCharacterMaxTradeRoutesTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetCharacterTradeCapacityTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetCharacterTradeCompetitivenessTooltip
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetClientCharacterList
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetCommissionedRoutes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetCompetitorsLeaderboard
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetDistributionRoutes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetIssuedCommissionRoutes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetPlanNewTradeRouteDisabledTooltip
+
+Definition type: Function
+Return type: CString
+
+### TradeWindow.GetProfitRoutes
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetRelevantTradeMarkets
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetSelectedTradeGoodType
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.GetTradeCategories
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.IsShowClients
+
+Definition type: Function
+Return type: bool
+
+### TradeWindow.IsShowTradeExperience
+
+Definition type: Function
+Return type: bool
+
+### TradeWindow.IsShowTradeRoutes
+
+Definition type: Function
+Return type: bool
+
+### TradeWindow.OnDecisionClick( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeWindow.PlanNewTradeRoute
+
+Definition type: Function
+Return type: void
+
+### TradeWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TradeWindow.SetHoveredTradeRoute( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeWindow.SetSelectedTradeGoodType( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TradeWindow.SetShowClients
+
+Definition type: Function
+Return type: void
+
+### TradeWindow.SetShowTradeExperience
+
+Definition type: Function
+Return type: void
+
+### TradeWindow.SetShowTradeRoutes
+
+Definition type: Function
+Return type: void
+
+### TraderCharacterList
+
+Definition type: Type
+
+### TraderCharacterList.AccessCharacterList
+
+Definition type: Promote
+Return type: CharacterSelectionList
+
+### TraderCharacterList.AccessCharacterList
+
+Definition type: Function
+Return type: [unregistered]
+
+### TraderCharacterList.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TraderCharacterList.Close
+
+Definition type: Function
+Return type: void
+
+### TraderCharacterList.IsOpen
+
+Definition type: Function
+Return type: bool
+
+### TraderCharacterList.Open
+
+Definition type: Function
+Return type: void
+
+### TraderCharacterList.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TraderCharacterList.Toggle( Arg0, Arg1 )
+
+Definition type: Function
+Return type: void
+
+### TraderCharacterList.ToggleDraft( Arg0, Arg1 )
+
+Definition type: Function
+Return type: void
+
+### TraderItem
+
+Definition type: Type
+
+### TraderItem.GetCharacter
+
+Definition type: Promote
+Return type: Character
+
+### TraderItem.GetSelectedTask
+
+Definition type: Promote
+Return type: TraderTaskItem
+
+### TraderItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TraderItem.GetAnimation
+
+Definition type: Function
+Return type: CString
+
+### TraderItem.GetCharacter
+
+Definition type: Function
+Return type: [unregistered]
+
+### TraderItem.GetModifierDescForTask( Arg0 )
+
+Definition type: Function
+Return type: CString
+
+### TraderItem.GetSelectedTask
+
+Definition type: Function
+Return type: [unregistered]
+
+### TraderItem.GetTasks
+
+Definition type: Function
+Return type: [unregistered]
+
+### TraderItem.HasSelectedTask
+
+Definition type: Function
+Return type: bool
+
+### TraderItem.SelectTask( Arg0 )
+
+Definition type: Function
+Return type: void
+
+### TraderItem.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### TraderTaskItem
+
+Definition type: Type
+
+### TraderTaskItem.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### TraderTaskItem.GetDescription
+
+Definition type: Function
+Return type: CString
+
+### TraderTaskItem.GetIcon
+
+Definition type: Function
+Return type: [unregistered]
+
+### TraderTaskItem.GetName
+
+Definition type: Function
+Return type: CString
+
+### TraderTaskItem.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -97467,6 +110306,11 @@ Return type: void
 
 Definition type: Function
 Return type: [unregistered]
+
+### TravelPlanData.UsesProvisions
+
+Definition type: Function
+Return type: bool
 
 ### TravelPlanDestination
 
@@ -98500,6 +111344,11 @@ Return type: CString
 Definition type: Function
 Return type: CString
 
+### Tutorial.GetStepKey
+
+Definition type: Function
+Return type: CString
+
 ### Tutorial.GetStepName
 
 Definition type: Function
@@ -98662,46 +111511,46 @@ Return type: [unregistered]
 Definition type: Function
 Return type: void
 
-### UniqueBuildingIcon
+### UniqueDistrictIcon
 
 Definition type: Type
 
-### UniqueBuildingIcon.GetBuildingType
+### UniqueDistrictIcon.GetDistrictType
 
 Definition type: Promote
-Return type: Building
+Return type: DistrictType
 
-### UniqueBuildingIcon.AccessSelf
+### UniqueDistrictIcon.AccessSelf
 
 Definition type: Function
 Return type: [unregistered]
 
-### UniqueBuildingIcon.CanConstruct
+### UniqueDistrictIcon.CanConstruct
 
 Definition type: Function
 Return type: bool
 
-### UniqueBuildingIcon.GetBuildingType
+### UniqueDistrictIcon.GetDistrictType
 
 Definition type: Function
 Return type: [unregistered]
 
-### UniqueBuildingIcon.GetEffect
+### UniqueDistrictIcon.GetEffect
 
 Definition type: Function
 Return type: CString
 
-### UniqueBuildingIcon.IsBuilt
+### UniqueDistrictIcon.IsBuilt
 
 Definition type: Function
 Return type: bool
 
-### UniqueBuildingIcon.IsEnabled
+### UniqueDistrictIcon.IsEnabled
 
 Definition type: Function
 Return type: bool
 
-### UniqueBuildingIcon.Self
+### UniqueDistrictIcon.Self
 
 Definition type: Function
 Return type: [unregistered]
@@ -99026,6 +111875,11 @@ Return type: [unregistered]
 Definition type: Function
 Return type: CFixedPoint
 
+### ValueBreakdown.GetIntegerValue
+
+Definition type: Function
+Return type: int32
+
 ### ValueBreakdown.GetName
 
 Definition type: Function
@@ -99320,6 +112174,204 @@ Return type: bool
 
 Definition type: Function
 Return type: [unregistered]
+
+### VotingSession
+
+Definition type: Type
+
+### VotingSession.GetEndDate
+
+Definition type: Promote
+Return type: Date
+
+### VotingSession.GetNewLaw
+
+Definition type: Promote
+Return type: Law
+
+### VotingSession.GetProposer
+
+Definition type: Promote
+Return type: Character
+
+### VotingSession.GetStartDate
+
+Definition type: Promote
+Return type: Date
+
+### VotingSession.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSession.CanVote( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### VotingSession.GetEndDate
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSession.GetName
+
+Definition type: Function
+Return type: CString
+
+### VotingSession.GetNameNoTooltip
+
+Definition type: Function
+Return type: CString
+
+### VotingSession.GetNewLaw
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSession.GetProgress
+
+Definition type: Function
+Return type: CFixedPoint
+
+### VotingSession.GetProposer
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSession.GetStartDate
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSession.GetTimeRemaining
+
+Definition type: Function
+Return type: CString
+
+### VotingSession.HasVoted( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### VotingSession.IsApprovingChange( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### VotingSession.IsRejectingChange( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### VotingSession.IsUndecided( Arg0 )
+
+Definition type: Function
+Return type: bool
+
+### VotingSession.IsValid
+
+Definition type: Function
+Return type: bool
+
+### VotingSession.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSessionResultWindow
+
+Definition type: Type
+
+### VotingSessionResultWindow.AccessResultApprovalBar
+
+Definition type: Promote
+Return type: ComplexBar
+
+### VotingSessionResultWindow.GetResultEndDate
+
+Definition type: Promote
+Return type: Date
+
+### VotingSessionResultWindow.GetResultProposedLaw
+
+Definition type: Promote
+Return type: Law
+
+### VotingSessionResultWindow.AccessResultApprovalBar
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSessionResultWindow.AccessSelf
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSessionResultWindow.ClearResult
+
+Definition type: Function
+Return type: void
+
+### VotingSessionResultWindow.Close
+
+Definition type: Function
+Return type: void
+
+### VotingSessionResultWindow.GetNumberOfApprovals
+
+Definition type: Function
+Return type: int32
+
+### VotingSessionResultWindow.GetNumberOfRejections
+
+Definition type: Function
+Return type: int32
+
+### VotingSessionResultWindow.GetResultApprovalThreshold
+
+Definition type: Function
+Return type: int32
+
+### VotingSessionResultWindow.GetResultApproveVoters
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSessionResultWindow.GetResultEndDate
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSessionResultWindow.GetResultProposedLaw
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSessionResultWindow.GetResultRejectVoters
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSessionResultWindow.HasVotingResult
+
+Definition type: Function
+Return type: bool
+
+### VotingSessionResultWindow.ResultProposalPassed
+
+Definition type: Function
+Return type: bool
+
+### VotingSessionResultWindow.Self
+
+Definition type: Function
+Return type: [unregistered]
+
+### VotingSessionResultWindow.SetViewedResult
+
+Definition type: Function
+Return type: void
 
 ### War
 

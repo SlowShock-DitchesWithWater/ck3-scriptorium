@@ -165,7 +165,7 @@ GAME_LAYER_META: dict[str, dict[str, object]] = {
         "display": "权威层 effects（全量 effect 签名）",
         "when": "写任何 effect 调用前，查权威签名、参数与 Supported Scopes；"
                 "与 wiki（Effects/Commands/Effects list）冲突时以此为准。",
-        "summary": "游戏 1.20.0 debug dump 全量 effects 清单，含用法示例与作用域。",
+        "summary": "游戏 debug dump 全量 effects 清单，含用法示例与作用域。",
         "keywords": ["effects", "Supported Scopes", "usage"],
     },
     "game:triggers.md": {
