@@ -20,6 +20,9 @@ python scripts\run.py --page Scripting
   三通道统一版本标注（extract_game_version：code_revisions.log →
   debug.log → 基准默认）→ catalog 游戏层区块 → 质量门。mod 侧同构入口
   是 `scripts/copy_room.py --build`（§7.6）。
+- `--auto`（仅与 `--stage game`/`--build` 连用）：先经 `headless_dump.py`
+  无头驱动游戏 exe 导出两条 dump 命令（§7.7），再走上述流程——
+  "进游戏开控制台"的手动步骤从刷新链路中消失。
 - `--force`：传给 crawl，忽略已抓记录强制重抓。
 - 各阶段脚本也可直接执行：`scripts/crawl.py --page X` 等。
 
@@ -313,6 +316,29 @@ raw 与 pages 用同一函数，同名一一对应。例：`Scripting` →
   README.md 除外）；KB 可随时按三步重建（`copy_room/README.md`）。
 - 权威级：该 mod 范围内最高（子 mod 运行在父 mod 环境）；查原版回
   `game_docs/`（AGENTS §0、配方 F）。
+
+## 7.7 无头 dump 导出器（scripts/headless_dump.py，2026-11-19 新增）
+
+机制依据：游戏自带官方文档 `game\_commandline_options.info`——
+`-run_console_action=<命令>`（启动即执行该控制台命令随后退出）、
+`-nographics`、`-mod="<.mod 文件>"`。
+
+- 调用方：`run.py --stage game --auto`（原版，导出后接三通道刷新链）与
+  `copy_room.py --build --auto`（三步连做：mod 加载态导出→建 KB→**重跑
+  原版导出恢复 Documents logs**，防止 dump 源解析按 mtime 误用合并视图）。
+- 实测约束（Steam 版）：一次启动只能挂一条 action（早期态对
+  dump_data_types 报 Unknown command 且首条失败即中止），故每次导出两次
+  游戏启动、每条命令进程自行退出（脚本另做残留进程兜底检查，只警告不击杀）；
+  需 Steam 客户端在运行；**`-mod` 路径必须正斜杠**（反斜杠形式被游戏静默
+  忽略、导出的是原版清单——copy_room 的无声失败防护会对"全清单条目数与
+  原版一致"告警）；产物与手动控制台导出逐字节等价（game_layer --check
+  实证）。
+- exe 解析：`--game-root` > local_paths.json 的 `game_exe` > `game_dir`
+  推导（Steam 版布局，game\ 上一级即安装目录）> `CK3_GAME_DIR` 推导。
+  Microsoft Store / Game Pass 版（WindowsApps 布局）未实测——用
+  `game_exe` 键适配。
+- 进程检测按字节匹配 tasklist 输出（本机代码页为 GBK，text=True 在
+  UTF-8 模式下解码线程崩掉得到空输出——实测踩坑）。
 
 ## 8. 后续工单的衔接点
 

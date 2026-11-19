@@ -6,6 +6,10 @@
   --list              枚举可建的 mod：Steam 工坊（多库发现）+ Documents 本地 mod
   --build --id N      为工坊 mod N 建 KB（签名层+结构层+地图层+差异报告）
   --build --path P    为本地/任意 mod 文件夹 P 建 KB（--name 覆盖命名）
+  --auto              与 --build 连用：三步连做——①无头导出 mod 加载态 dump
+                      （scripts/headless_dump.py，Steam 版实测）→②建 KB→
+                      ③无头重跑原版两条 dump 命令恢复 Documents logs
+                      （防止后续 run.py --stage game 误用合并视图）
   --sync              把抄写室指引区块（静态）写进/修复 catalog.md
   --check             校验 catalog 抄写室区块在位且一致（CI 跑；KB 为本地产物不影响判定）
 
@@ -113,7 +117,36 @@ def slugify(s: str) -> str:
 
 # ------------------------------------------------ 建 KB
 
-def build(mod: dict, dump_dir: Path | None) -> int:
+def resolve_modfile(mod: dict) -> Path:
+    """把 discover_mods 的 mod 记录解析为无头 -mod 用的 .mod 文件路径。
+
+    优先 Documents\\mod\\ugc_<工坊id>.mod（工坊订阅描述符），退而求其次
+    mod 文件夹内的 descriptor.mod。都没有则报错退出。
+    """
+    if mod.get("id"):
+        ugc = PARADOX_MODS / f"ugc_{mod['id']}.mod"
+        if ugc.is_file():
+            return ugc
+    desc = Path(mod["path"]) / "descriptor.mod"
+    if desc.is_file():
+        return desc
+    raise SystemExit(
+        f"[copy_room] --auto 需要 .mod 描述符文件，未找到 {ugc} 或 {desc}。"
+        "可手动跑：python scripts/headless_dump.py --mod <你的 .mod 文件>")
+
+
+def build(mod: dict, dump_dir: Path | None, auto: bool = False) -> int:
+    from headless_dump import run_dump as headless_run  # 延迟导入：仅 --auto 需要
+
+    if auto:
+        # 三步之一：无头导出 mod 加载态 dump（Documents logs 变为合并视图）
+        modfile = resolve_modfile(mod)
+        print(f"[copy_room] --auto 步骤 1/3：无头导出 mod 加载态 dump（{modfile.name}）…")
+        if headless_run(modfile) != 0:
+            print("[copy_room] 无头导出失败，中止（可改用手动导出后去掉 --auto 重试）")
+            return 2
+        dump_dir = None   # 用刚导出的 Documents dump
+
     slug = slugify(mod["name"])
     dirname = f"{mod['id']}-{slug}" if mod.get("id") else slug
     target = COPY_ROOM / dirname
@@ -168,6 +201,29 @@ def build(mod: dict, dump_dir: Path | None) -> int:
     write_diff(target, mod)
     write_readme(target, mod, sig_out.is_dir())
     print(f"[copy_room] 完成：{target.name}")
+
+    # 无声失败防护：mod 没加载上时无头导出照样"成功"，产物却是原版清单
+    # （2026-11-19 实踩：-mod 路径反斜杠形式被游戏静默忽略）。全部清单
+    # 条目数与原版一致即高度可疑，提示人工核对。
+    if sig_out.is_dir():
+        van = config.REPO_ROOT / "game_docs" / "script_docs"
+        diffs = [f.name for f in sorted(sig_out.glob("*.md"))
+                 if (van / f.name).is_file() and
+                 f.read_text(encoding="utf-8").count("\n### ") !=
+                 (van / f.name).read_text(encoding="utf-8").count("\n### ")]
+        if not diffs:
+            print("[copy_room] 警告：签名层全部清单条目数与原版一致——mod 加载态"
+                  "可能未生效（-mod 路径须正斜杠；核对 mod 与当前游戏版本兼容性）")
+
+    if auto:
+        # 三步之三：恢复原版 dump——Documents logs 此刻是 mod 合并视图，
+        # 而 run.py --stage game 按 mtime 取较新 dump，不恢复会被误当原版
+        print("[copy_room] --auto 步骤 3/3：无头重跑原版 dump（恢复 Documents logs）…")
+        if headless_run(None) != 0:
+            print("[copy_room] 警告：原版 dump 恢复失败！Documents logs 仍是 mod "
+                  "合并视图——下次原版刷新前务必先手动恢复："
+                  "python scripts/headless_dump.py")
+            return 3
     return 0
 
 
@@ -316,10 +372,13 @@ def main(argv: list[str] | None = None) -> int:
                       "path": str(p), "origin": "path", "version": ""}
         if target is None:
             print("用法：--build --id <工坊id> | --build --path <mod文件夹> "
-                  "[--name <名字>] [--dump <dump目录>]")
+                  "[--name <名字>] [--dump <dump目录>] [--auto]")
+            return 2
+        if "--auto" in args and "--dump" in args:
+            print("[copy_room] --auto（自动导出）与 --dump（指定目录）互斥")
             return 2
         dump = Path(args[args.index("--dump") + 1]) if "--dump" in args else None
-        return build(target, dump)
+        return build(target, dump, auto="--auto" in args)
     if "--sync" in args:
         return sync()
     if "--check" in args:

@@ -160,17 +160,21 @@ CK3——完整重建见**手册 A**。
 
 :: —— 3. 游戏权威层（零网络；需要本机游戏）——
 ::    仓库已随附游戏层（见快照表）；本步骤仅用于 CK3 版本更新后刷新。
-::    一条命令捷径（自动跑下面 3/4/4b/5 步：自动定位 dump 目录与游戏
-::    版本，随后并入 catalog 并跑质量门）：
-<python> scripts\run.py --stage game
+::    一条命令捷径（Steam 版）：无头驱动游戏 exe 导出两条 dump 命令
+::    （游戏启动两次、无窗口、执行完自动退出；需 Steam 客户端在运行），
+::    随后自动跑下面 3/4/4b/5 步 + catalog + 质量门：
+<python> scripts\run.py --stage game --auto
 ::    它在底下做的事（等价手动形式），三步：
-::    a) 给 CK3 加启动参数 -debug_mode（Steam 启动选项里加）后启动。
-::    b) 开控制台（` 键）执行两个命令——各写一部分，缺一不可：
+::    a) 导出 dump——两种方式任选：
+::       - 无头（Steam 版，已实测）：
+<python> scripts\headless_dump.py
+::       - 或手动：给 CK3 加启动参数 -debug_mode 启动，开控制台（` 键）
+::         执行两个命令——各写一部分，缺一不可：
 ::         script_docs      → 7 个清单 .log
 ::         dump_data_types  → data_types\ 下 5 个 .txt
-::       导出落在 %USERPROFILE%\Documents\Paradox Interactive\
-::       Crusader Kings III\logs\（已按 CK3 1.20 实测）
-::    c) 用 --source 直接指向该目录，无需拷贝（目录里的其他运行时日志
+::       两种方式导出都落在 %USERPROFILE%\Documents\Paradox Interactive\
+::       Crusader Kings III\logs\
+::    b) 用 --source 直接指向该目录，无需拷贝（目录里的其他运行时日志
 ::       会被自动忽略）：
 <python> scripts\game_layer.py --source "%USERPROFILE%\Documents\Paradox Interactive\Crusader Kings III\logs"
 ::    成功的样子：game_docs\script_docs\ 下出现 12 个 .md，manifest.json
@@ -186,6 +190,11 @@ CK3——完整重建见**手册 A**。
 ::    可选：--game-version "<你的版本>"——写入 manifest/catalog 的版本标注
 ::    （默认自动从 dump 提取，失败用内置基准；run.py --stage game
 ::    会统一传三通道）
+::    平台说明：以上路径为 **Steam 版**布局——游戏 exe 在安装目录的
+::    binaries\ck3.exe，与 game\ 文件夹相邻。Microsoft Store / Game Pass
+::    PC 版装在 WindowsApps 下、目录布局与权限不同且不依赖 Steam 客户端
+::    ——把 game_dir（无头导出另加 game_exe）写进 local_paths.json 指向它
+::    即可；该平台未经本仓库实测。
 
 :: —— 4b. 地图知识层（零网络；免参配置同上）——
 <python> scripts\map_layer.py --game-dir "<你的 CK3 安装目录>\game"
@@ -202,13 +211,15 @@ CK3——完整重建见**手册 A**。
 ### 手册 B：游戏版本更新后刷新
 
 ```bat
-:: 1. 换新版本游戏重跑两条 dump 命令（控制台，-debug_mode；导出落在
-::    Documents\...\Crusader Kings III\logs\）
-:: 2. 三通道一条命令重刷新（签名+结构+地图层，随后 catalog 游戏层区块
-::    + 质量门；零网络。自动取较新的 dump——仓库 game logs\ 或 Documents
-::    logs\——并从 dump 自身提取游戏版本、三通道统一标注）：
-<python> scripts\run.py --stage game
-::    等价手动形式（它在底下跑的命令）：
+:: 1+2. 一条命令全包（Steam 版）：在新版游戏上无头导出 dump（游戏启动
+::    两次、执行完自动退出；需 Steam 客户端在运行）+ 三通道重刷新
+::    （签名+结构+地图层，随后 catalog 游戏层区块 + 质量门）：
+<python> scripts\run.py --stage game --auto
+::    手动替代：自己导出 dump——无头 <python> scripts\headless_dump.py
+::    （Steam 版，已实测），或进游戏控制台（-debug_mode，跑齐
+::    script_docs 与 dump_data_types 两条）——再跑
+::    <python> scripts\run.py --stage game 重建。
+::    重建在底下跑的命令：
 ::      <python> scripts\game_layer.py --source "<dump 目录>"
 ::      <python> scripts\vanilla_index.py --game-dir "<你的 CK3 安装目录>\game"
 ::      <python> scripts\map_layer.py --game-dir "<你的 CK3 安装目录>\game"
@@ -245,13 +256,15 @@ CK3——完整重建见**手册 A**。
 :: 1) 枚举本机可建的 mod（Steam 工坊多库 + 本地）：
 <python> scripts\copy_room.py --list
 
-:: 2) 带目标 mod 启动游戏（-debug_mode），控制台跑齐两条命令
-::    （script_docs 与 dump_data_types——dump 是"原版+mod"合并视图，
-::    两条都要），退出游戏。
-
-:: 3) 在 copy_room\<mod-id>\ 下建 mod 知识库（签名+结构+地图三通道
-::    + DIFF_vs_vanilla.md；本地 mod 用 --path，dump 副本在别处用 --dump）：
-<python> scripts\copy_room.py --build --id 2887120253
+:: 2+3) 一条命令三步连做（Steam 版）：无头导出 mod 加载态 dump（游戏带
+::    -mod=<该 mod 的 .mod 文件> 启动两次、执行完自动退出——dump 是
+::    "原版+mod"合并视图）→ 在 copy_room\<mod-id>\ 下建 KB → 无头重跑
+::    原版 dump 恢复 Documents logs（防止后续 --stage game 误用合并视图）：
+<python> scripts\copy_room.py --build --id 2887120253 --auto
+::    步骤 2 的手动替代：带目标 mod 启动游戏（-debug_mode），控制台跑齐
+::    两条命令（script_docs 与 dump_data_types），退出后去掉 --auto 构建
+::    （本地 mod 用 --path，dump 副本在别处用 --dump）：
+::      <python> scripts\copy_room.py --build --id 2887120253
 ```
 
 检索约定：在该 mod 的范围内，mod 知识库优先于 `game_docs\`（子 mod

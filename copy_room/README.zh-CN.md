@@ -35,18 +35,29 @@ data_types +245；代码侧原生清单零变化）——dump 通道对 mod 有�
 :: 1) 看本机有哪些 mod 可建（工坊 + 本地，含 id/名字/路径）：
 python scripts\copy_room.py --list
 
-:: 2) 带目标 mod 启动游戏（-debug_mode），控制台跑 script_docs 和
-::    dump_data_types，退出游戏（dump 落在 Documents\...\logs\）
+:: 2+3) 一条命令三步连做（Steam 版）：无头导出 mod 加载态 dump（游戏带
+::    -mod=<该 mod 的 .mod 文件> 启动两次、执行完自动退出；需 Steam 客户端
+::    在运行）→ 建 KB → 无头重跑原版 dump 恢复 Documents logs（防止后续
+::    --stage game 误用合并视图）：
+python scripts\copy_room.py --build --id 2887120253 --auto
 
-:: 3) 建 mod 知识库（--id 取自 --list；或 --path 直接指 mod 文件夹，
-::    本地 mod 可用 --name 覆盖命名；--dump 指定其他 dump 目录）：
-python scripts\copy_room.py --build --id 2887120253
+::    导出步骤的手动替代：带目标 mod 启动游戏（-debug_mode），控制台跑齐
+::    script_docs 与 dump_data_types 两条命令，退出后去掉 --auto 构建
+::    （--id 取自 --list；--path 直接指 mod 文件夹、--name 覆盖命名、
+::    --dump 指定其他 dump 目录）。
 
 :: 4) 校验 catalog 抄写室区块（可选）：
 python scripts\copy_room.py --check
 ```
 
-签名层缺失（没跑过第 2 步）时 build 仍会完成结构层并留提示，补跑 dump 后
+平台说明：无头导出按 **Steam 版**布局解析（游戏 exe 在安装目录的
+`binaries\ck3.exe`，与 `game\` 文件夹相邻）。Microsoft Store / Game Pass
+PC 版装在 WindowsApps 下、布局不同且不依赖 Steam 客户端——在
+`scripts\state\local_paths.json` 写 `game_exe`（及 `game_dir`）适配；
+未经本仓库实测。一次启动只执行一条控制命令（执行完游戏即退出），因此
+每次导出都是两次游戏启动。
+
+签名层缺失（导出步骤没做）时 build 仍会完成结构层并留提示，补跑 dump 后
 重新 --build 即可。
 
 ## catalog 索引约定

@@ -9,7 +9,10 @@
     python scripts/run.py --stage game                # 原版游戏层三通道一条命令刷新：
                                                       # game_layer → vanilla_index → map_layer
                                                       # → catalog（游戏层区块）→ 质量门
-                                                      # （mod 侧同构入口：scripts/copy_room.py --build）
+    python scripts/run.py --stage game --auto         # 同上，且先无头驱动游戏导出两条
+                                                      # dump 命令（scripts/headless_dump.py，
+                                                      # Steam 版实测；免手动进游戏开控制台）
+                                                      # （mod 侧同构入口：copy_room.py --build --auto）
 
 各阶段可独立重复运行且幂等（详见 docs/pipeline.md）。
 """
@@ -103,10 +106,24 @@ def main(argv: list[str] | None = None) -> int:
                     help="执行到哪个阶段/只跑哪个阶段；game=原版游戏层三通道")
     ap.add_argument("--force", action="store_true",
                     help="传给 crawl：忽略已抓记录强制重抓")
+    ap.add_argument("--auto", action="store_true",
+                    help="--stage game 专用：先无头驱动游戏 exe 导出两条 dump 命令"
+                         "（需 Steam 版游戏安装与 Steam 客户端在运行；"
+                         "见 scripts/headless_dump.py）")
     args = ap.parse_args(argv)
 
     if args.stage == "game":
+        if args.auto:
+            from headless_dump import run_dump as headless_run  # 延迟导入
+            print("===== 无头导出 dump（--auto）=====", flush=True)
+            rc = headless_run(None)
+            if rc != 0:
+                print(f"===== 无头导出失败（退出码 {rc}），中止 =====")
+                return rc
         return refresh_game_layers()
+    if args.auto:
+        print("[run] --auto 仅与 --stage game 组合使用")
+        return 2
     plan = STAGES if args.stage == "all" else (args.stage,)
     rc = 0
     for stage in plan:

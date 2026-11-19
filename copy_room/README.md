@@ -40,18 +40,30 @@ unchanged) — the dump channel works for mods and is required.
 :: 1) List mods available on this machine (workshop + local, with id/name/path):
 python scripts\copy_room.py --list
 
-:: 2) Launch the game with the target mod (-debug_mode), run BOTH console
-::    commands (script_docs and dump_data_types), quit (the dump lands in
-::    Documents\...\logs\).
+:: 2+3) One command, three steps (STEAM version): headless export of the
+::    mod-loaded dump (the game starts twice with -mod=<its .mod file> and
+::    exits on its own; Steam client must be running) -> build the KB ->
+::    headless re-export of the vanilla dump (restores Documents logs so a
+::    later --stage game never picks up the merged view):
+python scripts\copy_room.py --build --id 2887120253 --auto
 
-:: 3) Build the mod KB (--id from --list; or --path pointing straight at a
-::    mod folder; --name overrides naming for local mods; --dump selects a
-::    dump copy elsewhere):
-python scripts\copy_room.py --build --id 2887120253
+::    Manual alternative for the export step: launch the game with the target
+::    mod (-debug_mode), run BOTH console commands (script_docs and
+::    dump_data_types), quit; then build without --auto (--path for local mod
+::    folders, --name to override naming, --dump to select a dump copy
+::    elsewhere).
 
 :: 4) Verify the catalog's Copy Room section (optional):
 python scripts\copy_room.py --check
 ```
+
+Platform note: the headless exporter follows the **Steam-version** layout
+(the game exe at `binaries\ck3.exe`, next to the `game\` folder of the
+install directory). The Microsoft Store / Game Pass PC edition installs
+under WindowsApps with a different layout and does not need the Steam
+client — set `game_exe` (and `game_dir`) in `scripts\state\local_paths.json`
+to adapt; untested here. One launch runs ONE console command (the game exits
+after each), which is why every export means two game starts.
 
 If the signature layer is missing (step 2 never ran), `--build` still
 completes the structure layer and leaves a notice; re-run `--build` after

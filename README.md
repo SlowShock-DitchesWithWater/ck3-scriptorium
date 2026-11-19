@@ -180,18 +180,22 @@ top of `catalog.md` and in each entry's source line.
 :: —— 3. Game authority layer (offline; needs the game installed locally) ——
 ::    The repo already ships a game layer (see Snapshot); run these steps only
 ::    to REFRESH it after a CK3 version update.
-::    One-command shortcut (runs steps 3+4+5 below, resolves the dump folder
-::    and the game version automatically, then updates catalog + gate):
-<python> scripts\run.py --stage game
-::    What it does under the hood (equivalent manual form), in three steps:
-::    a) Launch CK3 with -debug_mode (add it to Steam launch options).
-::    b) Open the console (` key) and run BOTH commands — each writes a
-::       different part, both are required:
+::    One-command shortcut (STEAM version; drives the game exe headlessly to
+::    export both dump commands — the game starts twice with no window and
+::    exits on its own — then runs steps 3+4+5, catalog + gate; the Steam
+::    client must be running):
+<python> scripts\run.py --stage game --auto
+::    Manual form (what it does), three steps:
+::    a) Export the dump — either way:
+::       - headless (STEAM version, tested):
+<python> scripts\headless_dump.py
+::       - or by hand: launch CK3 with -debug_mode, open the console (` key),
+::         run BOTH commands — each writes a different part, both are required:
 ::         script_docs      -> the 7 list .log files
 ::         dump_data_types  -> the 5 .txt files under data_types\
-::       The export lands in %USERPROFILE%\Documents\Paradox Interactive\
-::       Crusader Kings III\logs\   (verified against CK3 1.20)
-::    c) Point --source straight at that folder — no copying needed (the
+::       Either way the export lands in %USERPROFILE%\Documents\Paradox
+::       Interactive\Crusader Kings III\logs\
+::    b) Point --source straight at that folder — no copying needed (the
 ::       other files there are runtime logs, ignored automatically):
 <python> scripts\game_layer.py --source "%USERPROFILE%\Documents\Paradox Interactive\Crusader Kings III\logs"
 ::    Success looks like: 12 .md files under game_docs\script_docs\ and a new
@@ -204,6 +208,12 @@ top of `catalog.md` and in each entry's source line.
 ::    game-dir configuration (pick one; option 3 is recommended for long-term local use):
 ::    1) pass --game-dir every time; 2) the CK3_GAME_DIR environment variable;
 ::    3) scripts\state\local_paths.json containing {"game_dir": "<path>"} (that directory is gitignored)
+::    PLATFORM NOTE: the paths above follow the STEAM-version layout — the
+::    game exe is binaries\ck3.exe next to the game\ folder inside the
+::    install directory. The Microsoft Store / Game Pass PC edition installs
+::    under WindowsApps with a different layout and permissions, and does not
+::    need the Steam client; point game_dir (and, for the headless exporter,
+::    game_exe) in scripts\state\local_paths.json at it. Untested here.
 
 :: —— 5. Map knowledge layer (offline; same game-dir configuration as above) ——
 <python> scripts\map_layer.py --game-dir "<your CK3 install directory>\game"
@@ -223,14 +233,15 @@ Single-page full run (debugging): `<python> scripts\run.py --page Scripting`.
 ### Manual B: refresh after a game update
 
 ```bat
-:: 1. Re-run script_docs + dump_data_types on the new game version (console,
-::    -debug_mode; the export lands in Documents\...\Crusader Kings III\logs\)
-:: 2. Rebuild all three game channels in one command (signature + structure
-::    + map layers, then catalog game-layer section + quality gate; offline.
-::    It picks the newer dump automatically — repo game logs\ or Documents
-::    logs\ — and extracts the game version from the dump itself):
-<python> scripts\run.py --stage game
-::    Equivalent manual form (what it runs under the hood):
+:: 1+2. One command does it all (STEAM version): headless dump export on the
+::    new game version (game starts twice, exits on its own; Steam client
+::    running) + rebuild of all three game channels + catalog + gate:
+<python> scripts\run.py --stage game --auto
+::    Manual alternative: export the dump yourself — headless via
+::    <python> scripts\headless_dump.py  (STEAM version, tested), or in-game
+::    console (-debug_mode, run BOTH script_docs and dump_data_types) — then
+::    rebuild with <python> scripts\run.py --stage game
+::    What the rebuild runs under the hood:
 ::      <python> scripts\game_layer.py --source "<dump folder>"
 ::      <python> scripts\vanilla_index.py --game-dir "<your CK3 install directory>\game"
 ::      <python> scripts\map_layer.py --game-dir "<your CK3 install directory>\game"
@@ -269,14 +280,17 @@ vanilla (details in `copy_room\README.md`):
 :: 1) List mods found on this machine (Steam workshop, multi-library, + local):
 <python> scripts\copy_room.py --list
 
-:: 2) Launch CK3 with the target mod enabled (-debug_mode), run BOTH console
-::    commands (script_docs AND dump_data_types), quit — the dump is a
-::    "vanilla + mod" merged view, so both commands are required.
-
-:: 3) Build the mod KB under copy_room\<mod-id>\ (signature + structure
-::    + map channels + DIFF_vs_vanilla.md; --path for local mod folders,
-::    --dump to point at a dump copy elsewhere):
-<python> scripts\copy_room.py --build --id 2887120253
+:: 2+3) One command, three steps (STEAM version): headless export of the
+::    mod-loaded dump (the game starts twice with -mod=<its .mod file> and
+::    exits on its own — the dump is a "vanilla + mod" merged view) → build
+::    the KB under copy_room\<mod-id>\ → headless re-export of the VANILLA
+::    dump so a later --stage game never picks up the merged view:
+<python> scripts\copy_room.py --build --id 2887120253 --auto
+::    Manual alternative for step 2: launch CK3 with the target mod enabled
+::    (-debug_mode), run BOTH console commands (script_docs AND
+::    dump_data_types), quit; then build without --auto (--path for local
+::    mod folders, --dump to point at a dump copy elsewhere):
+::      <python> scripts\copy_room.py --build --id 2887120253
 ```
 
 Retrieval convention: for that mod's scope, the mod KB outranks `game_docs\`

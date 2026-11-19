@@ -47,6 +47,7 @@ KNOWN_ROOTS = {
 # 仓库外（用户本机游戏安装目录）顶层目录首段 → EXTERNAL，不做存在性检查
 EXTERNAL_ROOTS = {
     "game", "common", "events", "history", "gui", "gfx", "localization",
+    "binaries",
 }
 # 仓库外裸文件名（如目标站点的 robots.txt）→ EXTERNAL，不检查
 EXTERNAL_BARE_NAMES = {"robots.txt"}
